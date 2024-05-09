@@ -1,0 +1,290 @@
+FAQs As screen:
+    Height: =Max(App.Height, App.DesignHeight)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =UpdateContext({resetFAQGallery:{}});UpdateContext({resetFAQGallery:First(FAQ)})
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Group2 As group:
+        Height: =44
+        Width: =44
+        X: =0
+        Y: =0
+        ZIndex: =1
+
+        Rectangle15_3 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(62,96,170,0)
+            Height: =44
+            OnSelect: =Navigate(Home,ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =44
+            ZIndex: =8
+
+        icon1_4 As icon.ChevronLeft:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =32
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(Home,ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =20
+            X: =12
+            Y: =6
+            ZIndex: =9
+
+    Label2_5 As label:
+        Align: =LayoutAlignItems.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Lighter
+        Height: =44
+        HoverBorderColor: =Label2_5.BorderColor
+        HoverColor: =Label2_5.Color
+        HoverFill: =Label2_5.Fill
+        PressedBorderColor: =Label2_5.BorderColor
+        PressedColor: =Label2_5.Color
+        PressedFill: =Label2_5.Fill
+        Size: =18
+        Text: ="FAQ"
+        Width: =1024
+        ZIndex: =2
+
+    Gallery4 As gallery.galleryVertical:
+        '#CopilotOverlayLabel': ="Filtrada"
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Default: =resetFAQGallery
+        DisabledBorderColor: =Gallery4.BorderColor
+        DisabledFill: =Gallery4.Fill
+        Height: =683.451088681357
+        HoverBorderColor: =Gallery4.BorderColor
+        HoverFill: =Gallery4.Fill
+        Items: =Filter(FAQ,ID=Gallery3.Selected.ID)
+        Layout: =Layout.Vertical
+        PressedBorderColor: =Gallery4.BorderColor
+        PressedFill: =Gallery4.Fill
+        TemplateFill: =RGBA(229, 229, 229, 0)
+        TemplatePadding: =0
+        TemplateSize: =479.664386207399
+        Width: =704.257114955357
+        X: =319.742885044643
+        Y: =42.54891131864315
+        ZIndex: =4
+
+        Label18 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =127.94694778905625
+            HoverBorderColor: =Label18.BorderColor
+            HoverColor: =Label18.Color
+            HoverFill: =Label18.Fill
+            OnSelect: =x
+            PaddingBottom: =0
+            PaddingLeft: =24
+            PaddingRight: =15
+            PaddingTop: =0
+            PressedBorderColor: =Label18.BorderColor
+            PressedColor: =Label18.Color
+            PressedFill: =Label18.Fill
+            Size: =13
+            Text: =ThisItem.Answer
+            Width: =704.257114955357
+            Y: =552
+            ZIndex: =4
+
+        Image10 As image:
+            ApplyEXIFOrientation: =false
+            AutoDisableOnSelect: =false
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =479.664386207399
+            Image: =ThisItem.'Image[image]'
+            ImagePosition: =ImagePosition.Fill
+            Width: =704
+            ZIndex: =6
+
+    Gallery3 As gallery.galleryVertical:
+        '#CopilotOverlayLabel': ="Filtrada"
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Default: =resetFAQGallery
+        DisabledBorderColor: =Gallery3.BorderColor
+        DisabledFill: =Gallery3.Fill
+        Height: =669
+        HoverBorderColor: =Gallery3.BorderColor
+        HoverFill: =Gallery3.Fill
+        Items: =FAQ
+        Layout: =Layout.Vertical
+        PressedBorderColor: =Gallery3.BorderColor
+        PressedFill: =Gallery3.Fill
+        ShowScrollbar: =false
+        TemplateFill: =RGBA(229, 229, 229, 0)
+        TemplatePadding: =0
+        TemplateSize: =96.6067040029551
+        Width: =320
+        Y: =99
+        ZIndex: =5
+
+        Rectangle11 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisabledFill: =Rectangle11.Fill
+            Fill: =RGBA(205, 209, 213, 1)
+            Height: =96.6067040029551
+            HoverFill: =Rectangle11.Fill
+            PressedFill: =Rectangle11.Fill
+            TabIndex: =0
+            Visible: =If(ThisItem.IsSelected,true,false)
+            Width: =320
+            ZIndex: =1
+
+        Label12 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =96.6067040029547
+            HoverBorderColor: =Label12.BorderColor
+            HoverColor: =Label12.Color
+            HoverFill: =Label12.Fill
+            LineHeight: =1.3
+            PaddingLeft: =26
+            PaddingRight: =20
+            PaddingTop: =3
+            PressedBorderColor: =Label12.BorderColor
+            PressedColor: =Label12.Color
+            PressedFill: =Label12.Fill
+            Size: =12
+            Text: =ThisItem.Question
+            Width: =281
+            ZIndex: =2
+
+        icon4 As icon.ChevronRight:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =32
+            Icon: =Icon.ChevronRight
+            TabIndex: =0
+            Visible: =If(ThisItem.IsSelected,true,false)
+            Width: =24
+            X: =281.1830985915493
+            Y: =32
+            ZIndex: =3
+
+        Rectangle5 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisabledFill: =Rectangle5.Fill
+            Fill: =RGBA(205, 209, 213, 1)
+            Height: =2
+            HoverFill: =Rectangle5.Fill
+            PressedFill: =Rectangle5.Fill
+            TabIndex: =0
+            Width: =320
+            Y: =94.6067040029551
+            ZIndex: =4
+
+    Rectangle2_5 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        Height: =44
+        TabIndex: =0
+        Width: =1024
+        ZIndex: =6
+
+    Label2_7 As label:
+        Align: =LayoutAlignItems.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Lighter
+        Height: =44
+        HoverBorderColor: =Label2_7.BorderColor
+        HoverColor: =Label2_7.Color
+        HoverFill: =Label2_7.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label2_7.BorderColor
+        PressedColor: =Label2_7.Color
+        PressedFill: =Label2_7.Fill
+        Size: =18
+        Text: ="FAQ"
+        Width: =1024
+        ZIndex: =7
+
+    TextBox1 As label:
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =54
+        HoverBorderColor: =TextBox1.BorderColor
+        HoverColor: =TextBox1.Color
+        HoverFill: =TextBox1.Fill
+        PaddingLeft: =24
+        PressedBorderColor: =TextBox1.BorderColor
+        PressedColor: =TextBox1.Color
+        PressedFill: =TextBox1.Fill
+        Size: =18
+        Text: ="Questions"
+        Width: =320
+        Y: =44
+        ZIndex: =10
+
+    Rectangle5_2 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledFill: =Rectangle5_2.Fill
+        Fill: =RGBA(205, 209, 213, 1)
+        Height: =1
+        HoverFill: =Rectangle5_2.Fill
+        PressedFill: =Rectangle5_2.Fill
+        TabIndex: =0
+        Width: =320
+        Y: =98.16367570319458
+        ZIndex: =11
+
+    Rectangle5_3 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledFill: =Rectangle5_3.Fill
+        Fill: =RGBA(205, 209, 213, 1)
+        Height: =724.5373134328358
+        HoverFill: =Rectangle5_3.Fill
+        PressedFill: =Rectangle5_3.Fill
+        TabIndex: =0
+        Width: =2
+        X: =319.65364354697095
+        Y: =43.462686567164155
+        ZIndex: =12
+
+    TextBox1_1 As label:
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =55
+        HoverBorderColor: =TextBox1_1.BorderColor
+        HoverColor: =TextBox1_1.Color
+        HoverFill: =TextBox1_1.Fill
+        PaddingLeft: =24
+        PressedBorderColor: =TextBox1_1.BorderColor
+        PressedColor: =TextBox1_1.Color
+        PressedFill: =TextBox1_1.Fill
+        Size: =18
+        Text: ="Answer"
+        Width: =673
+        X: =321
+        Y: =531.1249999999999
+        ZIndex: =13
+
+    Rectangle2 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledFill: =Rectangle2.Fill
+        Fill: =RGBA(205, 209, 213, 1)
+        Height: =2
+        HoverFill: =Rectangle2.Fill
+        PressedFill: =Rectangle2.Fill
+        TabIndex: =0
+        Width: =704
+        X: =320
+        Y: =520.2397602397596
+        ZIndex: =14
+

@@ -1,0 +1,640 @@
+Features_8 As screen:
+    BackgroundImage: =minicargadorHitachi
+    Height: =Max(App.Height, App.DesignHeight)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Group26_1 As group:
+        Height: =80
+        Width: =80
+        X: =617
+        Y: =320
+        ZIndex: =1
+
+        Circle2_6 As circle:
+            BorderColor: =RGBA(204, 204, 204, 1)
+            DisabledFill: =Circle2_6.Fill
+            Fill: =RGBA(205, 209, 213, 1)
+            Height: =80
+            HoverFill: =Circle2_6.Fill
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
+            PressedFill: =Circle2_6.Fill
+            TabIndex: =0
+            Width: =80
+            X: =617
+            Y: =320
+            ZIndex: =24
+
+        icon11_2 As icon.Add:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =55
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
+            TabIndex: =0
+            Width: =55
+            X: =629.9615384615384
+            Y: =332.96153846153845
+            ZIndex: =25
+
+    Group10_4 As group:
+        Height: =44
+        Width: =44
+        X: =0
+        Y: =0
+        ZIndex: =4
+
+        Rectangle15_4 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(62,96,170,0)
+            Height: =44
+            OnSelect: =Navigate(Home, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =44
+            ZIndex: =22
+
+        icon1_5 As icon.ChevronLeft:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =32
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(Home, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =20
+            X: =12
+            Y: =6
+            ZIndex: =23
+
+    Group24_1 As group:
+        Height: =80
+        Width: =80
+        X: =36
+        Y: =319
+        ZIndex: =5
+
+        Circle2_5 As circle:
+            BorderColor: =RGBA(133, 133, 133, 1)
+            DisabledFill: =Circle2_5.Fill
+            Fill: =RGBA(205, 209, 213, 1)
+            Height: =80
+            HoverFill: =Circle2_5.Fill
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
+            PressedFill: =Circle2_5.Fill
+            TabIndex: =0
+            Width: =80
+            X: =828
+            Y: =292
+            ZIndex: =26
+
+        icon9_1 As icon.Add:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =55
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
+            TabIndex: =0
+            Width: =55
+            X: =841
+            Y: =298
+            ZIndex: =27
+
+    Group25_1 As group:
+        Height: =80
+        Width: =80
+        X: =300
+        Y: =298
+        ZIndex: =6
+
+        Circle2_4 As circle:
+            BorderColor: =RGBA(204, 204, 204, 1)
+            DisabledFill: =Circle2_4.Fill
+            Fill: =RGBA(205, 209, 213, 1)
+            Height: =80
+            HoverFill: =Circle2_4.Fill
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
+            PressedFill: =Circle2_4.Fill
+            TabIndex: =0
+            Width: =80
+            X: =300
+            Y: =298
+            ZIndex: =28
+
+        icon10_1 As icon.Add:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =55
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
+            TabIndex: =0
+            Width: =55
+            X: =313
+            Y: =311
+            ZIndex: =30
+
+    Group28_1 As group:
+        Height: =80
+        Width: =80
+        X: =761
+        Y: =612
+        ZIndex: =7
+
+        Circle2_7 As circle:
+            BorderColor: =RGBA(204, 204, 204, 1)
+            DisabledFill: =Circle2_7.Fill
+            Fill: =RGBA(205, 209, 213, 1)
+            Height: =80
+            HoverFill: =Circle2_7.Fill
+            OnSelect: |-
+                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
+            PressedFill: =Circle2_7.Fill
+            TabIndex: =0
+            Width: =80
+            X: =761
+            Y: =612
+            ZIndex: =31
+
+        icon11_3 As icon.Add:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =55
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Width: =55
+            X: =773.8846153846154
+            Y: =625.1153846153846
+            ZIndex: =32
+
+    Group1_1 As group:
+        Height: =254.70129870129898
+        Width: =291
+        X: =356.896103896104
+        Y: =370.298701298701
+        ZIndex: =8
+
+        Rectangle4_9 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_9.Fill
+            Fill: =RGBA(32, 54, 71, 1)
+            Height: =254.7012987012987
+            HoverFill: =Rectangle4_9.Fill
+            PressedFill: =Rectangle4_9.Fill
+            TabIndex: =0
+            Visible: =pop2
+            Width: =291
+            X: =356.8961038961039
+            Y: =370.2987012987013
+            ZIndex: =37
+
+        Label8_7 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+            Height: =71.53108593534068
+            HoverBorderColor: =Label8_7.BorderColor
+            HoverColor: =Label8_7.Color
+            HoverFill: =Label8_7.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label8_7.BorderColor
+            PressedColor: =Label8_7.Color
+            PressedFill: =Label8_7.Fill
+            Size: =18
+            Text: =First(Filter(Feature,Text(Id)="2")).FeatureTitle
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =pop2
+            Width: =223.68085106383
+            X: =389.2152528322739
+            Y: =398.4689140646593
+            ZIndex: =38
+
+        Label9_8 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =130.80851063829698
+            HoverBorderColor: =Label9_8.BorderColor
+            HoverColor: =Label9_8.Color
+            HoverFill: =Label9_8.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_8.BorderColor
+            PressedColor: =Label9_8.Color
+            PressedFill: =Label9_8.Fill
+            Size: =13
+            Text: =First(Filter(Feature,Text(Id)="2")).FeatureDescription
+            Visible: =pop2
+            Width: =221.744680851064
+            X: =387.0416666666667
+            Y: =488.41666666666685
+            ZIndex: =39
+
+        icon14_1 As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(242, 242, 242, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop2
+            Width: =28
+            X: =609
+            Y: =380
+            ZIndex: =46
+
+    Group8_2 As group:
+        Height: =212.61538461538498
+        Width: =291
+        X: =348.609638554218
+        Y: =346.146987951809
+        ZIndex: =9
+
+        Rectangle4_6 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_6.Fill
+            Fill: =RGBA(32, 54, 71, 1)
+            Height: =212.61538461538453
+            HoverFill: =Rectangle4_6.Fill
+            PressedFill: =Rectangle4_6.Fill
+            TabIndex: =0
+            Visible: =pop3
+            Width: =291
+            X: =348.6096385542181
+            Y: =346.1469879518089
+            ZIndex: =47
+
+        Label9_3 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =109.44812084467162
+            HoverBorderColor: =Label9_3.BorderColor
+            HoverColor: =Label9_3.Color
+            HoverFill: =Label9_3.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_3.BorderColor
+            PressedColor: =Label9_3.Color
+            PressedFill: =Label9_3.Fill
+            Size: =13
+            Text: =First(Filter(Feature,Text(Id)="3")).FeatureDescription
+            Visible: =pop3
+            Width: =212.29727169382318
+            X: =383.04313609116513
+            Y: =435.31425172252193
+            ZIndex: =48
+
+        Label8_3 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+            Height: =40.28571428571459
+            HoverBorderColor: =Label8_3.BorderColor
+            HoverColor: =Label8_3.Color
+            HoverFill: =Label8_3.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label8_3.BorderColor
+            PressedColor: =Label8_3.Color
+            PressedFill: =Label8_3.Fill
+            Size: =18
+            Text: =First(Filter(Feature,Text(Id)="3")).FeatureTitle
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =pop3
+            Width: =223.9556650246306
+            X: =380.65397352958814
+            Y: =373.8612736660939
+            ZIndex: =49
+
+        Rectangle9_2 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =44
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop3
+            Width: =44
+            X: =593.0546934992731
+            Y: =348.33380113862193
+            ZIndex: =50
+
+        icon12_3 As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(242, 242, 242, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop3
+            Width: =28
+            X: =607
+            Y: =356.33380113862193
+            ZIndex: =51
+
+    Group18_1 As group:
+        Height: =269.489880240777
+        Width: =291
+        X: =501
+        Y: =375
+        ZIndex: =11
+
+        icon12_5 As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(242, 242, 242, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =40.03473227206936
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop1
+            Width: =28
+            X: =753.445054945055
+            Y: =389.56522637998904
+            ZIndex: =52
+
+        Rectangle9_3 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =62.91172214182337
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop1
+            Width: =44
+            X: =745.445054945055
+            Y: =378.12673144511103
+            ZIndex: =53
+
+        Rectangle4_10 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_10.Fill
+            Fill: =RGBA(32, 54, 71, 1)
+            Height: =269
+            HoverFill: =Rectangle4_10.Fill
+            PressedFill: =Rectangle4_10.Fill
+            TabIndex: =0
+            Visible: =pop1
+            Width: =291
+            X: =501
+            Y: =375
+            ZIndex: =54
+
+        Label8_8 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+            Height: =57.600992350630925
+            HoverBorderColor: =Label8_8.BorderColor
+            HoverColor: =Label8_8.Color
+            HoverFill: =Label8_8.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label8_8.BorderColor
+            PressedColor: =Label8_8.Color
+            PressedFill: =Label8_8.Fill
+            Size: =18
+            Text: =First(Filter(Feature,Text(Id)="1")).FeatureTitle
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =pop1
+            Width: =223.955665024631
+            X: =533.04433497537
+            Y: =404.48128705959203
+            ZIndex: =55
+
+        Label9_6 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =156.49022198919746
+            HoverBorderColor: =Label9_6.BorderColor
+            HoverColor: =Label9_6.Color
+            HoverFill: =Label9_6.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_6.BorderColor
+            PressedColor: =Label9_6.Color
+            PressedFill: =Label9_6.Fill
+            Size: =13
+            Text: =First(Filter(Feature,Text(Id)="1")).FeatureDescription
+            Visible: =pop1
+            Width: =212.297271693823
+            X: =535.433497536947
+            Y: =487.99965825158005
+            ZIndex: =56
+
+        icon12_4 As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(242, 242, 242, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop1
+            Width: =28
+            X: =756.101449275362
+            Y: =386.898550724638
+            ZIndex: =57
+
+    Rectangle2_6 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        Height: =44
+        TabIndex: =0
+        Width: =1024
+        ZIndex: =14
+
+    Image4_4 As image:
+        ApplyEXIFOrientation: =false
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Image: =x
+        OnSelect: =Navigate(Home,ScreenTransition.Fade)
+        Width: =25
+        X: =799
+        Y: =106
+        ZIndex: =15
+
+    Label2_6 As label:
+        Align: =LayoutAlignItems.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Lighter
+        Height: =44
+        HoverBorderColor: =Label2_6.BorderColor
+        HoverColor: =Label2_6.Color
+        HoverFill: =Label2_6.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label2_6.BorderColor
+        PressedColor: =Label2_6.Color
+        PressedFill: =Label2_6.Fill
+        Size: =18
+        Text: ="EXCAVADORA"
+        Width: =1024
+        ZIndex: =16
+
+    Rectangle15_8 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(62,96,170,0)
+        Height: =44
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+        TabIndex: =0
+        Visible: =pop2
+        Width: =44
+        X: =582
+        Y: =386
+        ZIndex: =33
+
+    Rectangle10_1 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =44
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+        TabIndex: =0
+        Width: =44
+        X: =573
+        Y: =387
+        ZIndex: =34
+
+    Group4_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =59
+
+        Rectangle4_8 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_8.Fill
+            Fill: =RGBA(32, 54, 71, 1)
+            Height: =109
+            HoverFill: =Rectangle4_8.Fill
+            PressedFill: =Rectangle4_8.Fill
+            TabIndex: =0
+            Visible: =pop4
+            Width: =234
+            X: =758
+            Y: =179
+            ZIndex: =40
+
+        Rectangle15_11 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(62,96,170,0)
+            Height: =50
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop4
+            Width: =20
+            X: =767
+            Y: =225
+            ZIndex: =43
+
+        Rectangle8_1 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =109
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Width: =251
+            X: =753
+            Y: =179
+            ZIndex: =44
+
+        icon7_1 As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(245, 246, 247, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop4
+            Width: =43
+            X: =942
+            Y: =186
+            ZIndex: =45
+
+        Label8_9 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+            Height: =72
+            HoverBorderColor: =Label8_9.BorderColor
+            HoverColor: =Label8_9.Color
+            HoverFill: =Label8_9.Fill
+            OnSelect: |-
+                =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BC83920C3-FF3E-430B-8431-8D65492C4F85%7D&file=banco%20de%20solenoides.xlsx&action=default&mobileredirect=true")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label8_9.BorderColor
+            PressedColor: =Label8_9.Color
+            PressedFill: =Label8_9.Fill
+            Size: =18
+            Text: ="BANCO DE SOLENOIDES"
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =pop4
+            Width: =162
+            X: =789
+            Y: =199
+            ZIndex: =58
+

@@ -1,0 +1,306 @@
+CompareProducts As screen:
+    Height: =Max(App.Height, App.DesignHeight)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =UpdateContext({resetMainGallery:{}});
+        UpdateContext({resetMainGallery:First(CompareProduct)})
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Group10_3 As group:
+        Height: =44
+        Width: =44
+        X: =0
+        Y: =0
+        ZIndex: =1
+
+        Rectangle15_2 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(62,96,170,0)
+            Height: =44
+            OnSelect: =Navigate(Home, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =44
+            ZIndex: =4
+
+        icon1_3 As icon.ChevronLeft:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =32
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(Home, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =20
+            X: =12
+            Y: =6
+            ZIndex: =5
+
+    Rectangle2_4 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        Height: =44
+        TabIndex: =0
+        Width: =1024
+        ZIndex: =2
+
+    Label2_4 As label:
+        Align: =LayoutAlignItems.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Lighter
+        Height: =44
+        HoverBorderColor: =Label2_4.BorderColor
+        HoverColor: =Label2_4.Color
+        HoverFill: =Label2_4.Fill
+        PressedBorderColor: =Label2_4.BorderColor
+        PressedColor: =Label2_4.Color
+        PressedFill: =Label2_4.Fill
+        Size: =18
+        Text: ="Compare"
+        Width: =1024
+        ZIndex: =3
+
+    Subtitle1_2 As label:
+        Align: =LayoutAlignItems.Center
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Lighter
+        Height: =48.760009765625
+        HoverBorderColor: =Subtitle1_2.BorderColor
+        HoverColor: =Subtitle1_2.Color
+        HoverFill: =Subtitle1_2.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingTop: =0
+        PressedBorderColor: =Subtitle1_2.BorderColor
+        PressedColor: =Subtitle1_2.Color
+        PressedFill: =Subtitle1_2.Fill
+        Size: =18
+        Text: ="Surface tablets"
+        Width: =753.6111111111111
+        Wrap: =false
+        X: =135.1944444444445
+        Y: =57
+        ZIndex: =6
+
+    Gallery5 As gallery.galleryVertical:
+        '#CopilotOverlayLabel': ="Filtrada"
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =Gallery5.BorderColor
+        DisabledFill: =Gallery5.Fill
+        Height: =404.7027132010764
+        HoverBorderColor: =Gallery5.BorderColor
+        HoverFill: =Gallery5.Fill
+        Items: =Compare
+        Layout: =Layout.Vertical
+        PressedBorderColor: =Gallery5.BorderColor
+        PressedFill: =Gallery5.Fill
+        ShowScrollbar: =false
+        TemplateSize: =240.90699542875632
+        Width: =954.922193739149
+        X: =34.96669514973962
+        Y: =363.2972867989236
+        ZIndex: =7
+
+        Subtitle1_3 As label:
+            Align: =TextPosition.Left
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(179, 179, 179, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =36.666666666666515
+            HoverBorderColor: =Subtitle1_3.BorderColor
+            HoverColor: =Subtitle1_3.Color
+            HoverFill: =Subtitle1_3.Fill
+            PaddingLeft: =0
+            PressedBorderColor: =Subtitle1_3.BorderColor
+            PressedColor: =Subtitle1_3.Color
+            PressedFill: =Subtitle1_3.Fill
+            Text: =ThisItem.Col1
+            Width: =260
+            Wrap: =false
+            ZIndex: =1
+
+        Subtitle1_4 As label:
+            Align: =TextPosition.Left
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =177.906995428756
+            HoverBorderColor: =Subtitle1_4.BorderColor
+            HoverColor: =Subtitle1_4.Color
+            HoverFill: =Subtitle1_4.Fill
+            PaddingLeft: =0
+            PressedBorderColor: =Subtitle1_4.BorderColor
+            PressedColor: =Subtitle1_4.Color
+            PressedFill: =Subtitle1_4.Fill
+            Size: =13
+            Text: =ThisItem.Col2
+            VerticalAlign: =VerticalAlign.Top
+            Width: =275
+            Y: =63
+            ZIndex: =2
+
+        Subtitle1_6 As label:
+            Align: =TextPosition.Left
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =167.5137085137074
+            HoverBorderColor: =Subtitle1_6.BorderColor
+            HoverColor: =Subtitle1_6.Color
+            HoverFill: =Subtitle1_6.Fill
+            PaddingLeft: =0
+            PressedBorderColor: =Subtitle1_6.BorderColor
+            PressedColor: =Subtitle1_6.Color
+            PressedFill: =Subtitle1_6.Fill
+            Size: =13
+            Text: =ThisItem.Col3
+            VerticalAlign: =VerticalAlign.Top
+            Width: =267.777777777778
+            X: =332.5555555555559
+            Y: =62.486291486292586
+            ZIndex: =4
+
+        Subtitle1_8 As label:
+            Align: =TextPosition.Left
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =168
+            HoverBorderColor: =Subtitle1_8.BorderColor
+            HoverColor: =Subtitle1_8.Color
+            HoverFill: =Subtitle1_8.Fill
+            PaddingLeft: =0
+            PressedBorderColor: =Subtitle1_8.BorderColor
+            PressedColor: =Subtitle1_8.Color
+            PressedFill: =Subtitle1_8.Fill
+            Size: =13
+            Text: =ThisItem.Col4
+            VerticalAlign: =VerticalAlign.Top
+            Width: =269.13431495126997
+            X: =675.7878787878787
+            Y: =62
+            ZIndex: =6
+
+        Rectangle1_1 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisabledFill: =Rectangle1_1.Fill
+            Fill: =RGBA(205, 209, 213, 1)
+            Height: =2
+            HoverFill: =Rectangle1_1.Fill
+            PressedFill: =Rectangle1_1.Fill
+            TabIndex: =0
+            Width: =926
+            X: =1
+            Y: =37.58730158730159
+            ZIndex: =7
+
+    Image9 As image:
+        ApplyEXIFOrientation: =false
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =186.70581900917327
+        Image: =surface_book
+        OnSelect: |-
+            =If(Gallery5.Selected.Col2="The most powerful Surface laptop to handle any task",UpdateContext({rec1:true,rec2:false,rec3:false}))
+        Width: =259.12504577636735
+        X: =48.8791758219404
+        Y: =132.864375955774
+        ZIndex: =8
+
+    Label10 As label:
+        Align: =LayoutAlignItems.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =67.89302509424466
+        HoverBorderColor: =Label10.BorderColor
+        HoverColor: =Label10.Color
+        HoverFill: =Label10.Fill
+        OnSelect: |-
+            =If(Gallery5.Selected.Col2="The most powerful Surface laptop to handle any task",UpdateContext({rec1:true,rec2:false,rec3:false}))
+        PressedBorderColor: =Label10.BorderColor
+        PressedColor: =Label10.Color
+        PressedFill: =Label10.Fill
+        Size: =13
+        Text: ="Surface Book"
+        Width: =231.96783573866958
+        X: =48.8791758219404
+        Y: =294.88133607270424
+        ZIndex: =10
+
+    Image9_1 As image:
+        ApplyEXIFOrientation: =false
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =213.0364111803868
+        Image: =surface_pro4
+        OnSelect: |-
+            =If(Gallery5.Selected.Col3="The perfect balance of size and power for working on the go",UpdateContext({rec1:false,rec2:true,rec3:false}))
+        Width: =278.38504855578736
+        X: =384.5458577473955
+        Y: =118.863822027092
+        ZIndex: =11
+
+    Label10_1 As label:
+        Align: =LayoutAlignItems.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =69.09149307143997
+        HoverBorderColor: =Label10_1.BorderColor
+        HoverColor: =Label10_1.Color
+        HoverFill: =Label10_1.Fill
+        OnSelect: |-
+            =If(Gallery5.Selected.Col3="The perfect balance of size and power for working on the go",UpdateContext({rec1:false,rec2:true,rec3:false}))
+        PressedBorderColor: =Label10_1.BorderColor
+        PressedColor: =Label10_1.Color
+        PressedFill: =Label10_1.Fill
+        Size: =13
+        Text: ="Surface Pro 4"
+        Width: =206.0750483645045
+        X: =397.333333333333
+        Y: =294.88133607270424
+        ZIndex: =12
+
+    Image9_2 As image:
+        ApplyEXIFOrientation: =false
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =205.0
+        Image: =surface
+        OnSelect: |-
+            =If(Gallery5.Selected.Col4="The smallest and most compact member of the Surface family",UpdateContext({rec1:false,rec2:false,rec3:true}))
+        Width: =277.0
+        X: =718.5
+        Y: =123
+        ZIndex: =13
+
+    Label10_2 As label:
+        Align: =LayoutAlignItems.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =65
+        HoverBorderColor: =Label10_2.BorderColor
+        HoverColor: =Label10_2.Color
+        HoverFill: =Label10_2.Fill
+        OnSelect: |-
+            =If(Gallery5.Selected.Col4="The smallest and most compact member of the Surface family",UpdateContext({rec1:false,rec2:false,rec3:true}))
+        PressedBorderColor: =Label10_2.BorderColor
+        PressedColor: =Label10_2.Color
+        PressedFill: =Label10_2.Fill
+        Size: =13
+        Text: ="Surface Pro 3"
+        Width: =198
+        X: =740.333333333333
+        Y: =294.88133607270424
+        ZIndex: =14
+

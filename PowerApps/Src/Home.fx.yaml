@@ -1,0 +1,277 @@
+Home As screen:
+    BackgroundImage: =
+    Height: =Max(App.Height, App.DesignHeight)
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Group6 As group:
+        Height: =539
+        Width: =1024
+        X: =0
+        Y: =-1.33580806970312e-15
+        ZIndex: =1
+
+        Image1 As image:
+            ApplyEXIFOrientation: =false
+            AutoDisableOnSelect: =false
+            BorderColor: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =537
+            Image: ='Captura de pantalla 2024-04-24 090742'
+            OnSelect: =Navigate(Video, ScreenTransition.Fade)
+            Width: =1024
+            Y: =44
+            ZIndex: =8
+
+        Image2_1 As image:
+            ApplyEXIFOrientation: =false
+            AutoDisableOnSelect: =false
+            BorderColor: =RGBA(133, 133, 133, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =118.05883104215908
+            Image: =play_icon
+            OnSelect: =Navigate(Video, ScreenTransition.Fade)
+            Width: =130
+            X: =447
+            Y: =235
+            ZIndex: =9
+
+    Group27 As group:
+        Height: =162.78573172432993
+        Width: =162.78573172433
+        X: =33.5
+        Y: =494
+        ZIndex: =3
+
+        Circle3 As circle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(255, 255, 255, .2)
+            Height: =162.78573172433028
+            TabIndex: =0
+            Width: =162.78573172433028
+            X: =33.5
+            Y: =494
+            ZIndex: =19
+
+        Circle1 As circle:
+            BorderColor: =RGBA(242, 242, 242, 1)
+            Fill: =RGBA(100, 118, 132, 1)
+            Height: =144.6984281994047
+            OnSelect: =Navigate(Versatility, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =144.6984281994047
+            X: =42.3426817232969
+            Y: =502.52687166175116
+            ZIndex: =20
+
+        Label1_4 As label:
+            Align: =LayoutAlignItems.Center
+            BorderColor: =RGBA(255, 255, 255, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Lighter
+            Height: =45.21825881231397
+            HoverBorderColor: =Label1_4.BorderColor
+            HoverColor: =Label1_4.Color
+            HoverFill: =Label1_4.Fill
+            OnSelect: =Navigate(Versatility, ScreenTransition.Fade)
+            PaddingLeft: =15
+            PaddingRight: =15
+            PressedBorderColor: =Label1_4.BorderColor
+            PressedColor: =Label1_4.Color
+            PressedFill: =Label1_4.Fill
+            Size: =16
+            Text: ="Zonas Excavadora"
+            Width: =172
+            X: =33
+            Y: =552.2669563552965
+            ZIndex: =21
+
+    Group32 As group:
+        Height: =162.78573172432993
+        Width: =162.78573172433
+        X: =233.185402487411
+        Y: =494
+        ZIndex: =6
+
+        Circle3_1 As circle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(255, 255, 255, .2)
+            Height: =162.78573172433028
+            TabIndex: =0
+            Width: =162.78573172433028
+            X: =233.185402487411
+            Y: =494
+            ZIndex: =28
+
+        Circle1_1 As circle:
+            BorderColor: =RGBA(242, 242, 242, 1)
+            Fill: =RGBA(100, 118, 132, 1)
+            Height: =144.6984281994047
+            OnSelect: =Navigate(Features, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =144.6984281994047
+            X: =241.762516658953
+            Y: =503.0436517624628
+            ZIndex: =29
+
+        Label1_5 As label:
+            Align: =LayoutAlignItems.Center
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 45, 179,0)
+            FontWeight: =FontWeight.Lighter
+            Height: =45.21825881231397
+            HoverBorderColor: =Label1_5.BorderColor
+            HoverColor: =Label1_5.Color
+            HoverFill: =Label1_5.Fill
+            OnSelect: =Navigate(Features, ScreenTransition.Fade)
+            PaddingLeft: =15
+            PaddingRight: =15
+            PressedBorderColor: =Label1_5.BorderColor
+            PressedColor: =Label1_5.Color
+            PressedFill: =Label1_5.Fill
+            Size: =16
+            Text: ="Excavadora"
+            Width: =161.55837898513786
+            X: =233.443792537767
+            Y: =553.7731274180562
+            ZIndex: =30
+
+    Rectangle14 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledFill: =Rectangle14.Fill
+        Fill: =RGBA(32, 54, 71, 1)
+        Height: =232
+        HoverFill: =Rectangle14.Fill
+        PressedFill: =Rectangle14.Fill
+        TabIndex: =0
+        Width: =1024
+        Y: =536
+        ZIndex: =10
+
+    Image3 As image:
+        ApplyEXIFOrientation: =false
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =68.1428571428571
+        Image: ='Captura de pantalla 2024-01-12 082706'
+        Width: =198
+        X: =218
+        Y: =670.333333333334
+        ZIndex: =11
+
+    Label2 As label:
+        Align: =TextPosition.Left
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Lighter
+        Height: =77
+        HoverBorderColor: =Label2.BorderColor
+        HoverColor: =Label2.Color
+        HoverFill: =Label2.Fill
+        PressedBorderColor: =Label2.BorderColor
+        PressedColor: =Label2.Color
+        PressedFill: =Label2.Fill
+        Size: =18
+        Text: ="TEMPARIO"
+        Width: =138
+        X: =37.5
+        Y: =663.5
+        ZIndex: =12
+
+    Label1_8 As label:
+        Align: =TextPosition.Left
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =55.55555555555566
+        HoverBorderColor: =Label1_8.BorderColor
+        HoverColor: =Label1_8.Color
+        HoverFill: =Label1_8.Fill
+        OnSelect: =
+        PaddingLeft: =15
+        PaddingRight: =15
+        PressedBorderColor: =Label1_8.BorderColor
+        PressedColor: =Label1_8.Color
+        PressedFill: =Label1_8.Fill
+        Size: =13
+        Text: |-
+            ="EN PARTEQUIPOS
+            OFRECEMOS SOLUCIONES PARA TUS PROYECTOS"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =582.75
+        X: =428.75
+        Y: =681
+        ZIndex: =13
+
+    Rectangle1_4 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledFill: =Rectangle1_4.Fill
+        Fill: =RGBA(205, 209, 213, 1)
+        Height: =60
+        HoverFill: =Rectangle1_4.Fill
+        PressedFill: =Rectangle1_4.Fill
+        TabIndex: =0
+        Width: =2
+        X: =193.75
+        Y: =673
+        ZIndex: =14
+
+    Group32_1 As group:
+        Height: =162.78573172432993
+        Width: =162.78573172433
+        X: =19.81459751258899
+        Y: =20
+        ZIndex: =31
+
+        Circle3_2 As circle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(255, 255, 255, .2)
+            Height: =162.78573172433028
+            TabIndex: =0
+            Width: =162.78573172433028
+            X: =434
+            Y: =493
+            ZIndex: =32
+
+        Circle1_2 As circle:
+            BorderColor: =RGBA(242, 242, 242, 1)
+            Fill: =RGBA(100, 118, 132, 1)
+            Height: =144.6984281994047
+            OnSelect: =Navigate(Features_8, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =144.6984281994047
+            X: =443
+            Y: =505
+            ZIndex: =33
+
+        Label1_6 As label:
+            Align: =LayoutAlignItems.Center
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 45, 179,0)
+            FontWeight: =FontWeight.Lighter
+            Height: =45.21825881231397
+            HoverBorderColor: =Label1_6.BorderColor
+            HoverColor: =Label1_6.Color
+            HoverFill: =Label1_6.Fill
+            OnSelect: =Navigate(Features_8, ScreenTransition.Fade)
+            PaddingLeft: =15
+            PaddingRight: =15
+            PressedBorderColor: =Label1_6.BorderColor
+            PressedColor: =Label1_6.Color
+            PressedFill: =Label1_6.Fill
+            Size: =16
+            Text: ="MiniCargador"
+            Width: =161.55837898513786
+            X: =434
+            Y: =551
+            ZIndex: =34
+

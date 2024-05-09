@@ -1,0 +1,797 @@
+Features_7 As screen:
+    BackgroundImage: ='Captura de pantalla 2024-05-06 162206'
+    Height: =Max(App.Height, App.DesignHeight)
+    ImagePosition: =ImagePosition.Center
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Group26_3 As group:
+        Height: =80
+        Width: =80
+        X: =617
+        Y: =320
+        ZIndex: =1
+
+        Circle2_21 As circle:
+            BorderColor: =RGBA(204, 204, 204, 1)
+            DisabledFill: =Circle2_21.Fill
+            Fill: =RGBA(205, 209, 213, 1)
+            Height: =80
+            HoverFill: =Circle2_21.Fill
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
+            PressedFill: =Circle2_21.Fill
+            TabIndex: =0
+            Width: =80
+            X: =423
+            Y: =541
+            ZIndex: =24
+
+        icon11_7 As icon.Add:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =55
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
+            TabIndex: =0
+            Width: =55
+            X: =435
+            Y: =553
+            ZIndex: =25
+
+    Group10_6 As group:
+        Height: =44
+        Width: =44
+        X: =0
+        Y: =0
+        ZIndex: =4
+
+        Rectangle15_9 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(62,96,170,0)
+            Height: =44
+            OnSelect: =Navigate(Home, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =44
+            ZIndex: =22
+
+        icon1_7 As icon.ChevronLeft:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =32
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(Features, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =20
+            X: =12
+            Y: =6
+            ZIndex: =23
+
+    Group25_3 As group:
+        Height: =80
+        Width: =80
+        X: =300
+        Y: =298
+        ZIndex: =6
+
+        Circle2_19 As circle:
+            BorderColor: =RGBA(204, 204, 204, 1)
+            DisabledFill: =Circle2_19.Fill
+            Fill: =RGBA(205, 209, 213, 1)
+            Height: =80
+            HoverFill: =Circle2_19.Fill
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
+            PressedFill: =Circle2_19.Fill
+            TabIndex: =0
+            Width: =80
+            X: =544
+            Y: =315
+            ZIndex: =28
+
+        icon10_3 As icon.Add:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =55
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
+            TabIndex: =0
+            Width: =55
+            X: =561
+            Y: =323
+            ZIndex: =30
+
+    Group28_3 As group:
+        Height: =80
+        Width: =80
+        X: =761
+        Y: =612
+        ZIndex: =7
+
+        Circle2_20 As circle:
+            BorderColor: =RGBA(204, 204, 204, 1)
+            DisabledFill: =Circle2_20.Fill
+            Fill: =RGBA(205, 209, 213, 1)
+            Height: =80
+            HoverFill: =Circle2_20.Fill
+            OnSelect: |-
+                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
+            PressedFill: =Circle2_20.Fill
+            TabIndex: =0
+            Width: =80
+            X: =828
+            Y: =481
+            ZIndex: =31
+
+        icon11_6 As icon.Add:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =55
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Width: =55
+            X: =840
+            Y: =494
+            ZIndex: =32
+
+    Group1_4 As group:
+        Height: =254.70129870129898
+        Width: =291
+        X: =356.896103896104
+        Y: =370.298701298701
+        ZIndex: =8
+
+        Rectangle4_17 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_17.Fill
+            Fill: =RGBA(32, 54, 71, 1)
+            Height: =318
+            HoverFill: =Rectangle4_17.Fill
+            PressedFill: =Rectangle4_17.Fill
+            TabIndex: =0
+            Visible: =pop2
+            Width: =291
+            X: =114
+            Y: =372
+            ZIndex: =37
+
+        Label8_24 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+            Height: =56
+            HoverBorderColor: =Label8_24.BorderColor
+            HoverColor: =Label8_24.Color
+            HoverFill: =Label8_24.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label8_24.BorderColor
+            PressedColor: =Label8_24.Color
+            PressedFill: =Label8_24.Fill
+            Size: =13
+            Text: ="Zona 3 (derecha)"
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =pop2
+            Width: =98
+            X: =134
+            Y: =418
+            ZIndex: =38
+
+        Label9_36 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =50
+            HoverBorderColor: =Label9_36.BorderColor
+            HoverColor: =Label9_36.Color
+            HoverFill: =Label9_36.Fill
+            OnSelect: |-
+                =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B135E99F2-6E81-4AE6-8C53-70945A94D5F7%7D&file=tren%20de%20rodaje.xlsx&action=default&mobileredirect=true")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_36.BorderColor
+            PressedColor: =Label9_36.Color
+            PressedFill: =Label9_36.Fill
+            Size: =10
+            Text: ="TREN DE RODAJE"
+            Visible: =pop2
+            Width: =112
+            X: =126
+            Y: =501
+            ZIndex: =39
+
+        icon14_3 As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(242, 242, 242, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =35
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop2
+            Width: =28
+            X: =367
+            Y: =385
+            ZIndex: =46
+
+    Group8_4 As group:
+        Height: =212.61538461538498
+        Width: =291
+        X: =348.609638554218
+        Y: =346.146987951809
+        ZIndex: =9
+
+        Rectangle4_15 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_15.Fill
+            Fill: =RGBA(32, 54, 71, 1)
+            Height: =212
+            HoverFill: =Rectangle4_15.Fill
+            PressedFill: =Rectangle4_15.Fill
+            TabIndex: =0
+            Visible: =pop3
+            Width: =376
+            X: =189
+            Y: =103
+            ZIndex: =47
+
+        Label9_32 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =35
+            HoverBorderColor: =Label9_32.BorderColor
+            HoverColor: =Label9_32.Color
+            HoverFill: =Label9_32.Fill
+            OnSelect: |-
+                =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2Fbomba%20hidraulica&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_32.BorderColor
+            PressedColor: =Label9_32.Color
+            PressedFill: =Label9_32.Fill
+            Size: =10
+            Text: ="BOMBA HIDRAULICA"
+            Visible: =pop3
+            Width: =124
+            X: =219
+            Y: =172
+            ZIndex: =48
+
+        Label8_20 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+            Height: =34
+            HoverBorderColor: =Label8_20.BorderColor
+            HoverColor: =Label8_20.Color
+            HoverFill: =Label8_20.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label8_20.BorderColor
+            PressedColor: =Label8_20.Color
+            PressedFill: =Label8_20.Fill
+            Size: =13
+            Text: ="ZONA 4"
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =pop3
+            Width: =142
+            X: =241
+            Y: =130
+            ZIndex: =49
+
+        Rectangle9_6 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =44
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop3
+            Width: =56
+            X: =507
+            Y: =105
+            ZIndex: =50
+
+        icon12_9 As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(242, 242, 242, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop3
+            Width: =36
+            X: =525
+            Y: =113
+            ZIndex: =51
+
+    Group18_3 As group:
+        Height: =269.489880240777
+        Width: =291
+        X: =501
+        Y: =375
+        ZIndex: =11
+
+        icon12_11 As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(242, 242, 242, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =40.03473227206936
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop1
+            Width: =28
+            X: =785
+            Y: =483
+            ZIndex: =52
+
+        Rectangle9_7 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =62.91172214182337
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop1
+            Width: =44
+            X: =777
+            Y: =472
+            ZIndex: =53
+
+        Rectangle4_18 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_18.Fill
+            Fill: =RGBA(32, 54, 71, 1)
+            Height: =269
+            HoverFill: =Rectangle4_18.Fill
+            PressedFill: =Rectangle4_18.Fill
+            TabIndex: =0
+            Visible: =pop1
+            Width: =405
+            X: =418
+            Y: =469
+            ZIndex: =54
+
+        Label8_26 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+            Height: =36
+            HoverBorderColor: =Label8_26.BorderColor
+            HoverColor: =Label8_26.Color
+            HoverFill: =Label8_26.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label8_26.BorderColor
+            PressedColor: =Label8_26.Color
+            PressedFill: =Label8_26.Fill
+            Size: =18
+            Text: ="ZONA 2"
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =pop1
+            Width: =132
+            X: =429
+            Y: =490
+            ZIndex: =55
+
+        Label9_37 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =Label9_37.BorderColor
+            HoverColor: =Label9_37.Color
+            HoverFill: =Label9_37.Fill
+            OnSelect: |-
+                =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2Ftanque%20hidraulico&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_37.BorderColor
+            PressedColor: =Label9_37.Color
+            PressedFill: =Label9_37.Fill
+            Size: =9
+            Text: ="TANQUE HIDRAULICO"
+            Tooltip: ="Seleccione"
+            Visible: =pop1
+            Width: =151
+            X: =431
+            Y: =525
+            ZIndex: =56
+
+        icon12_10 As icon.Cancel:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(242, 242, 242, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop1
+            Width: =28
+            X: =788
+            Y: =480
+            ZIndex: =57
+
+    Rectangle2_8 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        Height: =44
+        TabIndex: =0
+        Width: =1024
+        ZIndex: =14
+
+    Image4_6 As image:
+        ApplyEXIFOrientation: =false
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Image: =x
+        OnSelect: =Navigate(Home,ScreenTransition.Fade)
+        Width: =25
+        X: =799
+        Y: =106
+        ZIndex: =15
+
+    Label2_9 As label:
+        Align: =LayoutAlignItems.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Lighter
+        Height: =44
+        HoverBorderColor: =Label2_9.BorderColor
+        HoverColor: =Label2_9.Color
+        HoverFill: =Label2_9.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label2_9.BorderColor
+        PressedColor: =Label2_9.Color
+        PressedFill: =Label2_9.Fill
+        Size: =18
+        Text: ="EXCAVADORA"
+        Width: =1024
+        ZIndex: =16
+
+    Rectangle15_15 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(62,96,170,0)
+        Height: =55
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+        TabIndex: =0
+        Visible: =pop2
+        Width: =44
+        X: =340
+        Y: =441
+        ZIndex: =33
+
+    Rectangle10_3 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =55
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+        TabIndex: =0
+        Width: =44
+        X: =331
+        Y: =442
+        ZIndex: =34
+
+    Label9_41 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        HoverBorderColor: =Label9_41.BorderColor
+        HoverColor: =Label9_41.Color
+        HoverFill: =Label9_41.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2Ftanque%20de%20combustible&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_41.BorderColor
+        PressedColor: =Label9_41.Color
+        PressedFill: =Label9_41.Fill
+        Size: =9
+        Text: ="TANQUE COMBUSTIBLE"
+        Visible: =pop1
+        Width: =151
+        X: =431
+        Y: =592
+        ZIndex: =61
+
+    Label9_43 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        HoverBorderColor: =Label9_43.BorderColor
+        HoverColor: =Label9_43.Color
+        HoverFill: =Label9_43.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2FBanco%20de%20valvulas&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_43.BorderColor
+        PressedColor: =Label9_43.Color
+        PressedFill: =Label9_43.Fill
+        Size: =9
+        Text: ="BANCO DE VALVULAS"
+        Visible: =pop1
+        Width: =151
+        X: =427
+        Y: =646
+        ZIndex: =62
+
+    Label9_44 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        HoverBorderColor: =Label9_44.BorderColor
+        HoverColor: =Label9_44.Color
+        HoverFill: =Label9_44.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2Fbanco%20de%20solenoides&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_44.BorderColor
+        PressedColor: =Label9_44.Color
+        PressedFill: =Label9_44.Fill
+        Size: =9
+        Text: ="BANCO DE SOLENOIDES"
+        Visible: =pop1
+        Width: =151
+        X: =429
+        Y: =694
+        ZIndex: =63
+
+    Label9_38 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        HoverBorderColor: =Label9_38.BorderColor
+        HoverColor: =Label9_38.Color
+        HoverFill: =Label9_38.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2FGiro&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_38.BorderColor
+        PressedColor: =Label9_38.Color
+        PressedFill: =Label9_38.Fill
+        Size: =9
+        Text: ="MOTOR DE GIRO Y REDUCTOR DE GIRO"
+        Visible: =pop1
+        Width: =151
+        X: =651
+        Y: =525
+        ZIndex: =64
+
+    Label9_42 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        HoverBorderColor: =Label9_42.BorderColor
+        HoverColor: =Label9_42.Color
+        HoverFill: =Label9_42.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2FCenter%20Joint&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_42.BorderColor
+        PressedColor: =Label9_42.Color
+        PressedFill: =Label9_42.Fill
+        Size: =9
+        Text: ="CENTER JOINT"
+        Visible: =pop1
+        Width: =151
+        X: =651
+        Y: =592
+        ZIndex: =65
+
+    Label8_25 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+        Height: =48
+        HoverBorderColor: =Label8_25.BorderColor
+        HoverColor: =Label8_25.Color
+        HoverFill: =Label8_25.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label8_25.BorderColor
+        PressedColor: =Label8_25.Color
+        PressedFill: =Label8_25.Fill
+        Size: =13
+        Text: ="Zona 6 (izquierda)"
+        VerticalAlign: =VerticalAlign.Top
+        Visible: =pop2
+        Width: =118
+        X: =256
+        Y: =422
+        ZIndex: =66
+
+    Label9_39 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =50
+        HoverBorderColor: =Label9_39.BorderColor
+        HoverColor: =Label9_39.Color
+        HoverFill: =Label9_39.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BD3A726DE-865E-4CEF-A67B-41AE85143179%7D&file=traslacion.xlsx&action=default&mobileredirect=true")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_39.BorderColor
+        PressedColor: =Label9_39.Color
+        PressedFill: =Label9_39.Fill
+        Size: =10
+        Text: ="TRASLACION"
+        Visible: =pop2
+        Width: =112
+        X: =120
+        Y: =572
+        ZIndex: =67
+
+    Label9_35 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =50
+        HoverBorderColor: =Label9_35.BorderColor
+        HoverColor: =Label9_35.Color
+        HoverFill: =Label9_35.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B135E99F2-6E81-4AE6-8C53-70945A94D5F7%7D&file=tren%20de%20rodaje.xlsx&action=default&mobileredirect=true")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_35.BorderColor
+        PressedColor: =Label9_35.Color
+        PressedFill: =Label9_35.Fill
+        Size: =10
+        Text: ="TREN DE RODAJE"
+        Visible: =pop2
+        Width: =112
+        X: =276
+        Y: =497
+        ZIndex: =68
+
+    Label9_40 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =50
+        HoverBorderColor: =Label9_40.BorderColor
+        HoverColor: =Label9_40.Color
+        HoverFill: =Label9_40.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BD3A726DE-865E-4CEF-A67B-41AE85143179%7D&file=traslacion.xlsx&action=default&mobileredirect=true")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_40.BorderColor
+        PressedColor: =Label9_40.Color
+        PressedFill: =Label9_40.Fill
+        Size: =10
+        Text: ="TRASLACION"
+        Visible: =pop2
+        Width: =112
+        X: =280
+        Y: =578
+        ZIndex: =69
+
+    Label9_34 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =35
+        HoverBorderColor: =Label9_34.BorderColor
+        HoverColor: =Label9_34.Color
+        HoverFill: =Label9_34.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2Fbomba%20hidraulica&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_34.BorderColor
+        PressedColor: =Label9_34.Color
+        PressedFill: =Label9_34.Fill
+        Size: =10
+        Text: ="BOMBA PILOTO"
+        Visible: =pop3
+        Width: =124
+        X: =219
+        Y: =219
+        ZIndex: =70
+
+    Label9_33 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =35
+        HoverBorderColor: =Label9_33.BorderColor
+        HoverColor: =Label9_33.Color
+        HoverFill: =Label9_33.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BC83920C3-FF3E-430B-8431-8D65492C4F85%7D&file=banco%20de%20solenoides.xlsx&action=default&mobileredirect=true")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_33.BorderColor
+        PressedColor: =Label9_33.Color
+        PressedFill: =Label9_33.Fill
+        Size: =10
+        Text: ="BANCO DE SOLENOIDES"
+        Visible: =pop3
+        Width: =124
+        X: =388
+        Y: =172
+        ZIndex: =71
+
