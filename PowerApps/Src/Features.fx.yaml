@@ -591,14 +591,14 @@ Features As screen:
         BorderColor: =RGBA(133, 133, 133, 1)
         DisabledFill: =Circle2_15.Fill
         Fill: =RGBA(205, 209, 213, 1)
-        Height: =50
+        Height: =96
         HoverFill: =Circle2_15.Fill
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
         PressedFill: =Circle2_15.Fill
         TabIndex: =0
-        Width: =172
-        X: =612
+        Width: =207
+        X: =598
         Y: =570
         ZIndex: =85
 
@@ -607,25 +607,28 @@ Features As screen:
         Color: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =29
+        Height: =46
         Icon: =Icon.Add
-        OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
+        OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
         TabIndex: =0
         Width: =67
-        X: =711
-        Y: =579
+        X: =733
+        Y: =597
         ZIndex: =86
 
     Label3_5 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =29
-        OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
-        Size: =13
-        Text: ="ZONA 6"
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
+        Size: =10
+        Text: |-
+            ="ZONA 6
+            TREN DE RODAJE  TRASLACIÓN"
         Tooltip: ="ZONA 1"
-        Width: =82
+        Width: =119
         X: =632
         Y: =579
         ZIndex: =87

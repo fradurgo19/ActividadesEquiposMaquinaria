@@ -1,12 +1,12 @@
-Features_9 As screen:
-    BackgroundImage: ='Tren de rodaje'
+Features_10 As screen:
+    BackgroundImage: =Tren
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
 
-    Rectangle2_13 As rectangle:
+    Rectangle2_14 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(100, 118, 132, 1)
         Height: =44
@@ -14,35 +14,35 @@ Features_9 As screen:
         Width: =1024
         ZIndex: =2
 
-    Label2_14 As label:
+    Label2_15 As label:
         Align: =LayoutAlignItems.Center
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Lighter
         Height: =44
-        HoverBorderColor: =Label2_14.BorderColor
-        HoverColor: =Label2_14.Color
-        HoverFill: =Label2_14.Fill
+        HoverBorderColor: =Label2_15.BorderColor
+        HoverColor: =Label2_15.Color
+        HoverFill: =Label2_15.Fill
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
-        PressedBorderColor: =Label2_14.BorderColor
-        PressedColor: =Label2_14.Color
-        PressedFill: =Label2_14.Fill
+        PressedBorderColor: =Label2_15.BorderColor
+        PressedColor: =Label2_15.Color
+        PressedFill: =Label2_15.Fill
         Size: =18
         Text: ="EXCAVADORA"
         Width: =1024
         ZIndex: =3
 
-    Group10_11 As group:
+    Group10_12 As group:
         Height: =44
         Width: =44
         X: =0
         Y: =0
         ZIndex: =4
 
-        Rectangle15_22 As rectangle:
+        Rectangle15_23 As rectangle:
             BorderColor: =RGBA(32, 54, 71, 1)
             Fill: =RGBA(62,96,170,0)
             Height: =44
@@ -51,7 +51,7 @@ Features_9 As screen:
             Width: =44
             ZIndex: =4
 
-        icon1_12 As icon.ChevronLeft:
+        icon1_13 As icon.ChevronLeft:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -65,22 +65,22 @@ Features_9 As screen:
             Y: =6
             ZIndex: =5
 
-    Circle2_42 As circle:
+    Circle2_44 As circle:
         BorderColor: =RGBA(204, 204, 204, 1)
-        DisabledFill: =Circle2_42.Fill
+        DisabledFill: =Circle2_44.Fill
         Fill: =RGBA(255, 255, 255, 1)
         Height: =80
-        HoverFill: =Circle2_42.Fill
+        HoverFill: =Circle2_44.Fill
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
-        PressedFill: =Circle2_42.Fill
+        PressedFill: =Circle2_44.Fill
         TabIndex: =0
         Width: =213
-        X: =153
-        Y: =185
+        X: =431
+        Y: =216
         ZIndex: =23
 
-    icon11_21 As icon.Add:
+    icon11_22 As icon.Add:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -91,11 +91,11 @@ Features_9 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         TabIndex: =0
         Width: =43
-        X: =164
-        Y: =205
+        X: =442
+        Y: =236
         ZIndex: =24
 
-    Label1_18 As label:
+    Label1_19 As label:
         Align: =Align.Center
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
@@ -108,25 +108,25 @@ Features_9 As screen:
         Size: =10
         Text: ="TRASLACIÓN"
         Width: =133
-        X: =207
-        Y: =208
+        X: =485
+        Y: =239
         ZIndex: =25
 
-    Group21_1 As group:
+    Group21_2 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =45
 
-        Rectangle4_39 As rectangle:
+        Rectangle4_47 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
-            DisabledFill: =Rectangle4_39.Fill
+            DisabledFill: =Rectangle4_47.Fill
             Fill: =RGBA(32, 54, 71, 1)
             Height: =118
-            HoverFill: =Rectangle4_39.Fill
-            PressedFill: =Rectangle4_39.Fill
+            HoverFill: =Rectangle4_47.Fill
+            PressedFill: =Rectangle4_47.Fill
             TabIndex: =0
             Visible: =pop4
             Width: =413
@@ -134,21 +134,21 @@ Features_9 As screen:
             Y: =541
             ZIndex: =33
 
-        Label8_59 As label:
+        Label8_65 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
             Height: =37
-            HoverBorderColor: =Label8_59.BorderColor
-            HoverColor: =Label8_59.Color
-            HoverFill: =Label8_59.Fill
+            HoverBorderColor: =Label8_65.BorderColor
+            HoverColor: =Label8_65.Color
+            HoverFill: =Label8_65.Fill
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedBorderColor: =Label8_59.BorderColor
-            PressedColor: =Label8_59.Color
-            PressedFill: =Label8_59.Fill
+            PressedBorderColor: =Label8_65.BorderColor
+            PressedColor: =Label8_65.Color
+            PressedFill: =Label8_65.Fill
             Size: =18
             Text: ="ZONA 2"
             VerticalAlign: =VerticalAlign.Top
@@ -158,24 +158,24 @@ Features_9 As screen:
             Y: =548
             ZIndex: =34
 
-        Label9_101 As label:
+        Label9_108 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Height: =30
-            HoverBorderColor: =Label9_101.BorderColor
-            HoverColor: =Label9_101.Color
-            HoverFill: =Label9_101.Fill
+            HoverBorderColor: =Label9_108.BorderColor
+            HoverColor: =Label9_108.Color
+            HoverFill: =Label9_108.Fill
             OnSelect: |-
                 =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B0CB2BA7C-E960-445F-8F66-50947DDDD501%7D&file=Banco%20de%20valvulas.xlsx&action=default&mobileredirect=true")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedBorderColor: =Label9_101.BorderColor
-            PressedColor: =Label9_101.Color
-            PressedFill: =Label9_101.Fill
+            PressedBorderColor: =Label9_108.BorderColor
+            PressedColor: =Label9_108.Color
+            PressedFill: =Label9_108.Fill
             Size: =11
             Text: ="BANCO DE VÁLVULAS"
             Tooltip: ="Seleccione"
@@ -185,7 +185,7 @@ Features_9 As screen:
             Y: =604
             ZIndex: =35
 
-        icon12_29 As icon.Cancel:
+        icon12_39 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -201,21 +201,21 @@ Features_9 As screen:
             Y: =548
             ZIndex: =36
 
-    Group4_2 As group:
+    Group4_3 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =82
 
-        Rectangle4_40 As rectangle:
+        Rectangle4_43 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
-            DisabledFill: =Rectangle4_40.Fill
+            DisabledFill: =Rectangle4_43.Fill
             Fill: =RGBA(32, 54, 71, 1)
             Height: =117
-            HoverFill: =Rectangle4_40.Fill
-            PressedFill: =Rectangle4_40.Fill
+            HoverFill: =Rectangle4_43.Fill
+            PressedFill: =Rectangle4_43.Fill
             TabIndex: =0
             Visible: =pop2
             Width: =405
@@ -223,21 +223,21 @@ Features_9 As screen:
             Y: =44
             ZIndex: =16
 
-        Label8_60 As label:
+        Label8_61 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
             Height: =27
-            HoverBorderColor: =Label8_60.BorderColor
-            HoverColor: =Label8_60.Color
-            HoverFill: =Label8_60.Fill
+            HoverBorderColor: =Label8_61.BorderColor
+            HoverColor: =Label8_61.Color
+            HoverFill: =Label8_61.Fill
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedBorderColor: =Label8_60.BorderColor
-            PressedColor: =Label8_60.Color
-            PressedFill: =Label8_60.Fill
+            PressedBorderColor: =Label8_61.BorderColor
+            PressedColor: =Label8_61.Color
+            PressedFill: =Label8_61.Fill
             Size: =18
             Text: ="ZONA 2"
             VerticalAlign: =VerticalAlign.Top
@@ -247,24 +247,24 @@ Features_9 As screen:
             Y: =51
             ZIndex: =17
 
-        Label9_102 As label:
+        Label9_105 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Height: =25
-            HoverBorderColor: =Label9_102.BorderColor
-            HoverColor: =Label9_102.Color
-            HoverFill: =Label9_102.Fill
+            HoverBorderColor: =Label9_105.BorderColor
+            HoverColor: =Label9_105.Color
+            HoverFill: =Label9_105.Fill
             OnSelect: |-
                 =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B97D9A04F-7881-45D0-ABD1-2A2825E8B33C%7D&file=Tanque%20hidraulico.xlsx&action=default&mobileredirect=true")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedBorderColor: =Label9_102.BorderColor
-            PressedColor: =Label9_102.Color
-            PressedFill: =Label9_102.Fill
+            PressedBorderColor: =Label9_105.BorderColor
+            PressedColor: =Label9_105.Color
+            PressedFill: =Label9_105.Fill
             Size: =11
             Text: ="TANQUE HIDRAULICO"
             Tooltip: ="Seleccione"
@@ -274,7 +274,7 @@ Features_9 As screen:
             Y: =108
             ZIndex: =18
 
-        icon12_33 As icon.Cancel:
+        icon12_34 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -290,14 +290,14 @@ Features_9 As screen:
             Y: =51
             ZIndex: =19
 
-    Group9_1 As group:
+    Group9_2 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =83
 
-        icon12_32 As icon.Cancel:
+        icon12_36 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -313,7 +313,7 @@ Features_9 As screen:
             Y: =59
             ZIndex: =8
 
-        Rectangle9_16 As rectangle:
+        Rectangle9_17 As rectangle:
             BorderColor: =RGBA(32, 54, 71, 1)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =25
@@ -326,46 +326,46 @@ Features_9 As screen:
             Y: =53
             ZIndex: =9
 
-        Rectangle4_41 As rectangle:
+        Rectangle4_44 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
-            DisabledFill: =Rectangle4_41.Fill
+            DisabledFill: =Rectangle4_44.Fill
             Fill: =RGBA(32, 54, 71, 1)
             Height: =139
-            HoverFill: =Rectangle4_41.Fill
-            PressedFill: =Rectangle4_41.Fill
+            HoverFill: =Rectangle4_44.Fill
+            PressedFill: =Rectangle4_44.Fill
             TabIndex: =0
             Visible: =pop1
             Width: =405
-            X: =619
-            Y: =51
+            X: =32
+            Y: =465
             ZIndex: =10
 
-        Label8_57 As label:
+        Label8_62 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
             Height: =36
-            HoverBorderColor: =Label8_57.BorderColor
-            HoverColor: =Label8_57.Color
-            HoverFill: =Label8_57.Fill
+            HoverBorderColor: =Label8_62.BorderColor
+            HoverColor: =Label8_62.Color
+            HoverFill: =Label8_62.Fill
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedBorderColor: =Label8_57.BorderColor
-            PressedColor: =Label8_57.Color
-            PressedFill: =Label8_57.Fill
+            PressedBorderColor: =Label8_62.BorderColor
+            PressedColor: =Label8_62.Color
+            PressedFill: =Label8_62.Fill
             Size: =18
-            Text: ="ZONA 3"
+            Text: ="ZONA 6"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop1
             Width: =132
-            X: =630
-            Y: =64
+            X: =43
+            Y: =478
             ZIndex: =11
 
-        icon12_24 As icon.Cancel:
+        icon12_35 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -377,59 +377,59 @@ Features_9 As screen:
             TabIndex: =0
             Visible: =pop1
             Width: =53
-            X: =964
-            Y: =58
+            X: =377
+            Y: =472
             ZIndex: =12
 
-        Label9_71 As label:
+        Label9_72 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Height: =64
-            HoverBorderColor: =Label9_71.BorderColor
-            HoverColor: =Label9_71.Color
-            HoverFill: =Label9_71.Fill
+            HoverBorderColor: =Label9_72.BorderColor
+            HoverColor: =Label9_72.Color
+            HoverFill: =Label9_72.Fill
             OnSelect: |-
                 =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B135E99F2-6E81-4AE6-8C53-70945A94D5F7%7D&file=tren%20de%20rodaje.xlsx&action=default&mobileredirect=true&wdsle=0")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedBorderColor: =Label9_71.BorderColor
-            PressedColor: =Label9_71.Color
-            PressedFill: =Label9_71.Fill
+            PressedBorderColor: =Label9_72.BorderColor
+            PressedColor: =Label9_72.Color
+            PressedFill: =Label9_72.Fill
             Size: =11
             Text: ="TREN DE RODAJE"
             Visible: =pop1
             Width: =253
-            X: =633
-            Y: =100
+            X: =46
+            Y: =514
             ZIndex: =20
 
-    Group11_1 As group:
+    Group11_2 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =85
 
-        Circle2_41 As circle:
+        Circle2_43 As circle:
             BorderColor: =RGBA(204, 204, 204, 1)
-            DisabledFill: =Circle2_41.Fill
+            DisabledFill: =Circle2_43.Fill
             Fill: =RGBA(255, 255, 255, 1)
             Height: =92
-            HoverFill: =Circle2_41.Fill
+            HoverFill: =Circle2_43.Fill
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
-            PressedFill: =Circle2_41.Fill
+            PressedFill: =Circle2_43.Fill
             TabIndex: =0
             Width: =216
-            X: =701
-            Y: =239
+            X: =189
+            Y: =336
             ZIndex: =6
 
-        icon11_19 As icon.Add:
+        icon11_20 As icon.Add:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -440,11 +440,11 @@ Features_9 As screen:
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
             TabIndex: =0
             Width: =37
-            X: =705
-            Y: =264
+            X: =193
+            Y: =361
             ZIndex: =7
 
-        Label1_14 As label:
+        Label1_15 As label:
             Align: =Align.Center
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
@@ -457,84 +457,84 @@ Features_9 As screen:
             Size: =10
             Text: ="TREN DE RODAJE"
             Width: =143
-            X: =754
-            Y: =268
+            X: =242
+            Y: =365
             ZIndex: =21
 
-    Group15_1 As group:
+    Group15_2 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =93
 
-        Rectangle4_42 As rectangle:
+        Rectangle4_46 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
-            DisabledFill: =Rectangle4_42.Fill
+            DisabledFill: =Rectangle4_46.Fill
             Fill: =RGBA(32, 54, 71, 1)
             Height: =117
-            HoverFill: =Rectangle4_42.Fill
-            PressedFill: =Rectangle4_42.Fill
+            HoverFill: =Rectangle4_46.Fill
+            PressedFill: =Rectangle4_46.Fill
             TabIndex: =0
             Visible: =pop3
             Width: =405
-            X: =34
-            Y: =307
+            X: =619
+            Y: =311
             ZIndex: =26
 
-        Label8_58 As label:
+        Label8_64 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
             Height: =27
-            HoverBorderColor: =Label8_58.BorderColor
-            HoverColor: =Label8_58.Color
-            HoverFill: =Label8_58.Fill
+            HoverBorderColor: =Label8_64.BorderColor
+            HoverColor: =Label8_64.Color
+            HoverFill: =Label8_64.Fill
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedBorderColor: =Label8_58.BorderColor
-            PressedColor: =Label8_58.Color
-            PressedFill: =Label8_58.Fill
+            PressedBorderColor: =Label8_64.BorderColor
+            PressedColor: =Label8_64.Color
+            PressedFill: =Label8_64.Fill
             Size: =18
-            Text: ="ZONA 3"
+            Text: ="ZONA 6"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop3
             Width: =132
-            X: =78
-            Y: =314
+            X: =663
+            Y: =318
             ZIndex: =27
 
-        Label9_103 As label:
+        Label9_107 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Height: =22
-            HoverBorderColor: =Label9_103.BorderColor
-            HoverColor: =Label9_103.Color
-            HoverFill: =Label9_103.Fill
+            HoverBorderColor: =Label9_107.BorderColor
+            HoverColor: =Label9_107.Color
+            HoverFill: =Label9_107.Fill
             OnSelect: |-
                 =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BD3A726DE-865E-4CEF-A67B-41AE85143179%7D&file=traslacion.xlsx&action=default&mobileredirect=true&wdsle=0")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedBorderColor: =Label9_103.BorderColor
-            PressedColor: =Label9_103.Color
-            PressedFill: =Label9_103.Fill
+            PressedBorderColor: =Label9_107.BorderColor
+            PressedColor: =Label9_107.Color
+            PressedFill: =Label9_107.Fill
             Size: =11
             Text: ="TRASLACIÓN"
             Tooltip: ="Seleccione"
             Visible: =pop3
             Width: =188
-            X: =53
-            Y: =379
+            X: =638
+            Y: =383
             ZIndex: =28
 
-        icon12_31 As icon.Cancel:
+        icon12_38 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -546,46 +546,46 @@ Features_9 As screen:
             TabIndex: =0
             Visible: =pop3
             Width: =35
-            X: =382
-            Y: =314
+            X: =967
+            Y: =318
             ZIndex: =29
 
-    Group19_1 As group:
+    Group19_2 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =107
 
-        Rectangle4_38 As rectangle:
+        Rectangle4_45 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
-            DisabledFill: =Rectangle4_38.Fill
+            DisabledFill: =Rectangle4_45.Fill
             Fill: =RGBA(32, 54, 71, 1)
             Height: =117
-            HoverFill: =Rectangle4_38.Fill
-            PressedFill: =Rectangle4_38.Fill
+            HoverFill: =Rectangle4_45.Fill
+            PressedFill: =Rectangle4_45.Fill
             TabIndex: =0
             Visible: =pop5
             Width: =405
             Y: =178
             ZIndex: =40
 
-        Label8_56 As label:
+        Label8_63 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
             Height: =27
-            HoverBorderColor: =Label8_56.BorderColor
-            HoverColor: =Label8_56.Color
-            HoverFill: =Label8_56.Fill
+            HoverBorderColor: =Label8_63.BorderColor
+            HoverColor: =Label8_63.Color
+            HoverFill: =Label8_63.Fill
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedBorderColor: =Label8_56.BorderColor
-            PressedColor: =Label8_56.Color
-            PressedFill: =Label8_56.Fill
+            PressedBorderColor: =Label8_63.BorderColor
+            PressedColor: =Label8_63.Color
+            PressedFill: =Label8_63.Fill
             Size: =18
             Text: ="ZONA 2"
             VerticalAlign: =VerticalAlign.Top
@@ -595,24 +595,24 @@ Features_9 As screen:
             Y: =185
             ZIndex: =41
 
-        Label9_104 As label:
+        Label9_106 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
             Height: =26
-            HoverBorderColor: =Label9_104.BorderColor
-            HoverColor: =Label9_104.Color
-            HoverFill: =Label9_104.Fill
+            HoverBorderColor: =Label9_106.BorderColor
+            HoverColor: =Label9_106.Color
+            HoverFill: =Label9_106.Fill
             OnSelect: |-
                 =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BC83920C3-FF3E-430B-8431-8D65492C4F85%7D&file=banco%20de%20solenoides.xlsx&action=default&mobileredirect=true")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            PressedBorderColor: =Label9_104.BorderColor
-            PressedColor: =Label9_104.Color
-            PressedFill: =Label9_104.Fill
+            PressedBorderColor: =Label9_106.BorderColor
+            PressedColor: =Label9_106.Color
+            PressedFill: =Label9_106.Fill
             Size: =11
             Text: ="BANCO DE SOLENOIDE"
             Tooltip: ="Seleccione"
@@ -622,7 +622,7 @@ Features_9 As screen:
             Y: =242
             ZIndex: =42
 
-        icon12_30 As icon.Cancel:
+        icon12_37 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
