@@ -687,15 +687,15 @@ Features As screen:
             BorderColor: =RGBA(133, 133, 133, 1)
             DisabledFill: =Circle2_14.Fill
             Fill: =RGBA(205, 209, 213, 1)
-            Height: =50
+            Height: =92
             HoverFill: =Circle2_14.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             PressedFill: =Circle2_14.Fill
             TabIndex: =0
-            Width: =172
-            X: =381
-            Y: =391
+            Width: =199
+            X: =323
+            Y: =359
             ZIndex: =82
 
         icon9_6 As icon.Add:
@@ -703,27 +703,33 @@ Features As screen:
             Color: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =29
+            Height: =53
             Icon: =Icon.Add
-            OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
+            OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =67
-            X: =480
-            Y: =400
+            Width: =44
+            X: =455
+            Y: =375
             ZIndex: =83
 
         Label3_4 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Height: =29
-            OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
-            Size: =13
-            Text: ="ZONA 4"
+            FontWeight: =FontWeight.Bold
+            Height: =103
+            OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
+            Size: =11
+            Text: |-
+                ="ZONA 4 
+                BOMBAS 
+                FILTROS 
+                BANCO
+                "
             Tooltip: ="ZONA 1"
-            Width: =82
-            X: =401
-            Y: =400
+            Width: =77
+            X: =367
+            Y: =354
             ZIndex: =84
 
     Group13 As group:
