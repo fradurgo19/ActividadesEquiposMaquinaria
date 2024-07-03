@@ -1,7 +1,6 @@
 Features_9 As screen:
     BackgroundImage: ='Tren de rodaje'
     Height: =Max(App.Height, App.DesignHeight)
-    ImagePosition: =ImagePosition.Stretch
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
@@ -102,8 +101,8 @@ Features_9 As screen:
         PressedFill: =Circle2_42.Fill
         TabIndex: =0
         Width: =213
-        X: =477
-        Y: =336
+        X: =441
+        Y: =463
         ZIndex: =23
 
     icon11_21 As icon.Add:
@@ -117,8 +116,8 @@ Features_9 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         TabIndex: =0
         Width: =43
-        X: =488
-        Y: =356
+        X: =452
+        Y: =483
         ZIndex: =24
 
     Label1_18 As label:
@@ -134,8 +133,8 @@ Features_9 As screen:
         Size: =10
         Text: ="TANQUE COMBUSTIBLE"
         Width: =133
-        X: =531
-        Y: =359
+        X: =495
+        Y: =486
         ZIndex: =25
 
     Group21_1 As group:
@@ -417,7 +416,7 @@ Features_9 As screen:
             HoverColor: =Label9_71.Color
             HoverFill: =Label9_71.Fill
             OnSelect: |-
-                =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2FGiro&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+                =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B135E99F2-6E81-4AE6-8C53-70945A94D5F7%7D&file=tren%20de%20rodaje.xlsx&action=default&mobileredirect=true&wdsle=0")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -426,7 +425,7 @@ Features_9 As screen:
             PressedColor: =Label9_71.Color
             PressedFill: =Label9_71.Fill
             Size: =11
-            Text: ="MOTOR DE GIRO Y REDUCTOR DE GIRO"
+            Text: ="TREN DE RODAJE"
             Visible: =pop1
             Width: =253
             X: =633
@@ -451,8 +450,8 @@ Features_9 As screen:
             PressedFill: =Circle2_41.Fill
             TabIndex: =0
             Width: =216
-            X: =590
-            Y: =203
+            X: =701
+            Y: =239
             ZIndex: =6
 
         icon11_19 As icon.Add:
@@ -466,8 +465,8 @@ Features_9 As screen:
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
             TabIndex: =0
             Width: =37
-            X: =597
-            Y: =225
+            X: =705
+            Y: =264
             ZIndex: =7
 
         Label1_14 As label:
@@ -481,10 +480,10 @@ Features_9 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
             Size: =10
-            Text: ="MOTOR/REDUCTOR DE GIRO"
+            Text: ="TREN DE RODAJE"
             Width: =143
-            X: =643
-            Y: =233
+            X: =754
+            Y: =268
             ZIndex: =21
 
     Group12_1 As group:
@@ -648,8 +647,8 @@ Features_9 As screen:
             PressedFill: =Circle2_44.Fill
             TabIndex: =0
             Width: =213
-            X: =150
-            Y: =454
+            X: =455
+            Y: =259
             ZIndex: =30
 
         icon11_20 As icon.Add:
@@ -663,8 +662,8 @@ Features_9 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false})
             TabIndex: =0
             Width: =43
-            X: =161
-            Y: =474
+            X: =453
+            Y: =280
             ZIndex: =31
 
         Label1_16 As label:
@@ -680,8 +679,8 @@ Features_9 As screen:
             Size: =10
             Text: ="BANCO DE VÁLVULAS"
             Width: =133
-            X: =204
-            Y: =477
+            X: =502
+            Y: =284
             ZIndex: =32
 
     Group19_1 As group:
@@ -790,8 +789,8 @@ Features_9 As screen:
             PressedFill: =Circle2_40.Fill
             TabIndex: =0
             Width: =213
-            X: =32
-            Y: =301
+            X: =219
+            Y: =359
             ZIndex: =37
 
         icon11_23 As icon.Add:
@@ -805,8 +804,8 @@ Features_9 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true})
             TabIndex: =0
             Width: =43
-            X: =43
-            Y: =321
+            X: =230
+            Y: =379
             ZIndex: =38
 
         Label1_15 As label:
@@ -822,7 +821,7 @@ Features_9 As screen:
             Size: =10
             Text: ="BANCO DE SOLENOIDE"
             Width: =133
-            X: =86
-            Y: =324
+            X: =273
+            Y: =382
             ZIndex: =39
 
