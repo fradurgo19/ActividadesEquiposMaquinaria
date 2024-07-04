@@ -1,6 +1,7 @@
 Features_10 As screen:
-    BackgroundImage: =Tren
+    BackgroundImage: =Tren1
     Height: =Max(App.Height, App.DesignHeight)
+    ImagePosition: =ImagePosition.Center
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
@@ -479,8 +480,8 @@ Features_10 As screen:
             TabIndex: =0
             Visible: =pop3
             Width: =405
-            X: =619
-            Y: =311
+            X: =593
+            Y: =71
             ZIndex: =26
 
         Label8_64 As label:
@@ -503,8 +504,8 @@ Features_10 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop3
             Width: =132
-            X: =663
-            Y: =318
+            X: =637
+            Y: =78
             ZIndex: =27
 
         Label9_107 As label:
@@ -530,8 +531,8 @@ Features_10 As screen:
             Tooltip: ="Seleccione"
             Visible: =pop3
             Width: =188
-            X: =638
-            Y: =383
+            X: =612
+            Y: =143
             ZIndex: =28
 
         icon12_38 As icon.Cancel:
@@ -546,8 +547,8 @@ Features_10 As screen:
             TabIndex: =0
             Visible: =pop3
             Width: =35
-            X: =967
-            Y: =318
+            X: =941
+            Y: =78
             ZIndex: =29
 
     Group19_2 As group:
