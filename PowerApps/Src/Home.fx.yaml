@@ -38,57 +38,6 @@ Home As screen:
             Y: =235
             ZIndex: =9
 
-    Group27 As group:
-        Height: =162.78573172432993
-        Width: =162.78573172433
-        X: =33.5
-        Y: =494
-        ZIndex: =3
-
-        Circle3 As circle:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Fill: =RGBA(255, 255, 255, .2)
-            Height: =162.78573172433028
-            TabIndex: =0
-            Width: =162.78573172433028
-            X: =33.5
-            Y: =494
-            ZIndex: =19
-
-        Circle1 As circle:
-            BorderColor: =RGBA(242, 242, 242, 1)
-            Fill: =RGBA(100, 118, 132, 1)
-            Height: =144.6984281994047
-            OnSelect: =Navigate(Versatility, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =144.6984281994047
-            X: =42.3426817232969
-            Y: =502.52687166175116
-            ZIndex: =20
-
-        Label1_4 As label:
-            Align: =LayoutAlignItems.Center
-            BorderColor: =RGBA(255, 255, 255, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Lighter
-            Height: =45.21825881231397
-            HoverBorderColor: =Label1_4.BorderColor
-            HoverColor: =Label1_4.Color
-            HoverFill: =Label1_4.Fill
-            OnSelect: =Navigate(Versatility, ScreenTransition.Fade)
-            PaddingLeft: =15
-            PaddingRight: =15
-            PressedBorderColor: =Label1_4.BorderColor
-            PressedColor: =Label1_4.Color
-            PressedFill: =Label1_4.Fill
-            Size: =16
-            Text: ="Zonas Excavadora"
-            Width: =172
-            X: =33
-            Y: =552.2669563552965
-            ZIndex: =21
-
     Group32 As group:
         Height: =162.78573172432993
         Width: =162.78573172433
@@ -102,7 +51,7 @@ Home As screen:
             Height: =162.78573172433028
             TabIndex: =0
             Width: =162.78573172433028
-            X: =233.185402487411
+            X: =33
             Y: =494
             ZIndex: =28
 
@@ -113,8 +62,8 @@ Home As screen:
             OnSelect: =Navigate(Features, ScreenTransition.Fade)
             TabIndex: =0
             Width: =144.6984281994047
-            X: =241.762516658953
-            Y: =503.0436517624628
+            X: =41
+            Y: =503
             ZIndex: =29
 
         Label1_5 As label:
@@ -137,8 +86,8 @@ Home As screen:
             Size: =16
             Text: ="Excavadora"
             Width: =161.55837898513786
-            X: =233.443792537767
-            Y: =553.7731274180562
+            X: =33
+            Y: =553
             ZIndex: =30
 
     Rectangle14 As rectangle:
@@ -236,8 +185,8 @@ Home As screen:
             Height: =162.78573172433028
             TabIndex: =0
             Width: =162.78573172433028
-            X: =434
-            Y: =493
+            X: =236
+            Y: =494
             ZIndex: =32
 
         Circle1_2 As circle:
@@ -247,8 +196,8 @@ Home As screen:
             OnSelect: =Navigate(Features_8, ScreenTransition.Fade)
             TabIndex: =0
             Width: =144.6984281994047
-            X: =443
-            Y: =505
+            X: =245
+            Y: =506
             ZIndex: =33
 
         Label1_6 As label:
@@ -271,7 +220,7 @@ Home As screen:
             Size: =16
             Text: ="MiniCargador"
             Width: =161.55837898513786
-            X: =434
-            Y: =551
+            X: =236
+            Y: =552
             ZIndex: =34
 
