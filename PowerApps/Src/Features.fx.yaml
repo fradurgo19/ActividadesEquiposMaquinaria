@@ -408,14 +408,14 @@ Features As screen:
         BorderColor: =RGBA(133, 133, 133, 1)
         DisabledFill: =Circle2_3.Fill
         Fill: =RGBA(205, 209, 213, 1)
-        Height: =50
+        Height: =150
         HoverFill: =Circle2_3.Fill
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
         PressedFill: =Circle2_3.Fill
         TabIndex: =0
-        Width: =172
-        X: =852
+        Width: =208
+        X: =816
         Y: =536
         ZIndex: =73
 
@@ -480,22 +480,26 @@ Features As screen:
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
         TabIndex: =0
         Width: =67
-        X: =951
-        Y: =545
+        X: =957
+        Y: =588
         ZIndex: =74
 
     Label3_1 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =29
+        FontWeight: =FontWeight.Bold
+        Height: =101
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
-        Size: =13
-        Text: ="ZONA 5"
+        Size: =11
+        Text: |-
+            ="ZONA 5  Motores de traslación
+            Contrapesa
+            Tornamesa"
         Tooltip: ="ZONA 1"
-        Width: =82
-        X: =872
-        Y: =545
+        Width: =120
+        X: =860
+        Y: =560
         ZIndex: =75
 
     Circle2_12 As circle:
@@ -687,7 +691,7 @@ Features As screen:
             BorderColor: =RGBA(133, 133, 133, 1)
             DisabledFill: =Circle2_14.Fill
             Fill: =RGBA(205, 209, 213, 1)
-            Height: =92
+            Height: =195
             HoverFill: =Circle2_14.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
@@ -695,7 +699,7 @@ Features As screen:
             TabIndex: =0
             Width: =199
             X: =323
-            Y: =359
+            Y: =288
             ZIndex: =82
 
         icon9_6 As icon.Add:
@@ -703,13 +707,13 @@ Features As screen:
             Color: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =53
+            Height: =82
             Icon: =Icon.Add
             OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
             TabIndex: =0
             Width: =44
             X: =455
-            Y: =375
+            Y: =332
             ZIndex: =83
 
         Label3_4 As label:
@@ -717,19 +721,19 @@ Features As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =103
+            Height: =158
             OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
             Size: =11
             Text: |-
                 ="ZONA 4 
-                BOMBAS 
+                BOMBA HIDRAULICA, COMBUSTIBLE
                 FILTROS 
                 BANCO
                 "
             Tooltip: ="ZONA 1"
             Width: =77
             X: =367
-            Y: =354
+            Y: =299
             ZIndex: =84
 
     Group13 As group:
