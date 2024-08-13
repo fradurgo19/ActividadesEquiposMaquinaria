@@ -7,6 +7,39 @@ Features_11 As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image11 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =219
+        Image: ='Captura de pantalla 2024-08-13 102103'
+        Width: =227
+        X: =4
+        Y: =14
+        ZIndex: =1
+
+    Image10 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =64
+        Image: ='Captura de pantalla 2024-08-13 101432'
+        Width: =86
+        X: =32
+        Y: =203
+        ZIndex: =2
+
+    Image9 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =83
+        Image: ='Captura de pantalla 2024-08-13 101506'
+        Width: =96
+        X: =118
+        Y: =193
+        ZIndex: =3
+
     Image14 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -16,7 +49,37 @@ Features_11 As screen:
         Width: =246
         X: =732
         Y: =62
-        ZIndex: =1
+        ZIndex: =4
+
+    Group10_10 As group:
+        Height: =44
+        Width: =44
+        X: =0
+        Y: =0
+        ZIndex: =4
+
+        Rectangle15_24 As rectangle:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(62,96,170,0)
+            Height: =44
+            OnSelect: =Navigate(Home, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =44
+            ZIndex: =8
+
+        icon1_11 As icon.ChevronLeft:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =32
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(Features, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =20
+            X: =12
+            Y: =6
+            ZIndex: =9
 
     Image5 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -25,9 +88,9 @@ Features_11 As screen:
         Height: =167
         Image: ='Captura de pantalla 2024-08-13 092817'
         Width: =207
-        X: =512
-        Y: =48
-        ZIndex: =2
+        X: =438
+        Y: =36
+        ZIndex: =5
 
     Rectangle2_12 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -35,7 +98,7 @@ Features_11 As screen:
         Height: =44
         TabIndex: =0
         Width: =1024
-        ZIndex: =3
+        ZIndex: =6
 
     Label2_13 As label:
         Align: =LayoutAlignItems.Center
@@ -56,37 +119,7 @@ Features_11 As screen:
         Size: =18
         Text: ="EXCAVADORA"
         Width: =1024
-        ZIndex: =4
-
-    Group10_10 As group:
-        Height: =44
-        Width: =44
-        X: =0
-        Y: =0
-        ZIndex: =4
-
-        Rectangle15_24 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Fill: =RGBA(62,96,170,0)
-            Height: =44
-            OnSelect: =Navigate(Home, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =44
-            ZIndex: =5
-
-        icon1_11 As icon.ChevronLeft:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =32
-            Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(Features, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =20
-            X: =12
-            Y: =6
-            ZIndex: =6
+        ZIndex: =7
 
     Label9_74 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -111,7 +144,7 @@ Features_11 As screen:
         Width: =124
         X: =219
         Y: =219
-        ZIndex: =14
+        ZIndex: =17
 
     Circle2_45 As circle:
         BorderColor: =RGBA(204, 204, 204, 1)
@@ -126,7 +159,7 @@ Features_11 As screen:
         Width: =213
         X: =477
         Y: =336
-        ZIndex: =24
+        ZIndex: =27
 
     icon11_24 As icon.Add:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -139,9 +172,9 @@ Features_11 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         TabIndex: =0
         Width: =43
-        X: =589
-        Y: =421
-        ZIndex: =25
+        X: =777
+        Y: =384
+        ZIndex: =28
 
     Label1_20 As label:
         Align: =Align.Center
@@ -156,9 +189,9 @@ Features_11 As screen:
         Size: =10
         Text: ="TANQUE COMBUSTIBLE"
         Width: =133
-        X: =629
-        Y: =424
-        ZIndex: =26
+        X: =817
+        Y: =387
+        ZIndex: =29
 
     Group9_3 As group:
         Height: =5
@@ -181,7 +214,7 @@ Features_11 As screen:
             Width: =28
             X: =986
             Y: =60
-            ZIndex: =9
+            ZIndex: =12
 
         Rectangle9_14 As rectangle:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -194,7 +227,7 @@ Features_11 As screen:
             Width: =44
             X: =978
             Y: =53
-            ZIndex: =10
+            ZIndex: =13
 
         Rectangle4_30 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 255)
@@ -209,7 +242,7 @@ Features_11 As screen:
             Width: =334
             X: =690
             Y: =51
-            ZIndex: =11
+            ZIndex: =14
 
         Label8_45 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -235,7 +268,7 @@ Features_11 As screen:
             Width: =209
             X: =702
             Y: =65
-            ZIndex: =12
+            ZIndex: =15
 
         icon12_21 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -251,7 +284,7 @@ Features_11 As screen:
             Width: =53
             X: =964
             Y: =59
-            ZIndex: =13
+            ZIndex: =16
 
         Label9_52 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -277,7 +310,7 @@ Features_11 As screen:
             Width: =149
             X: =700
             Y: =104
-            ZIndex: =21
+            ZIndex: =24
 
     Group22_1 As group:
         Height: =5
@@ -299,7 +332,7 @@ Features_11 As screen:
             Width: =405
             X: =271
             Y: =44
-            ZIndex: =17
+            ZIndex: =20
 
         Label8_66 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -323,7 +356,7 @@ Features_11 As screen:
             Width: =132
             X: =315
             Y: =51
-            ZIndex: =18
+            ZIndex: =21
 
         Label9_109 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -350,7 +383,7 @@ Features_11 As screen:
             Width: =195
             X: =305
             Y: =111
-            ZIndex: =19
+            ZIndex: =22
 
         icon12_40 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -366,7 +399,7 @@ Features_11 As screen:
             Width: =35
             X: =619
             Y: =51
-            ZIndex: =20
+            ZIndex: =23
 
     Group23_1 As group:
         Height: =5
@@ -380,21 +413,21 @@ Features_11 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_50.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =180
+            Height: =111
             HoverFill: =Rectangle4_50.Fill
             PressedFill: =Rectangle4_50.Fill
             TabIndex: =0
             Visible: =pop3
             Width: =405
-            X: =481
-            Y: =424
-            ZIndex: =27
+            X: =596
+            Y: =457
+            ZIndex: =30
 
         Label8_68 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =42
+            Height: =26
             HoverBorderColor: =Label8_68.BorderColor
             HoverColor: =Label8_68.Color
             HoverFill: =Label8_68.Fill
@@ -406,20 +439,20 @@ Features_11 As screen:
             PressedColor: =Label8_68.Color
             PressedFill: =Label8_68.Fill
             Size: =18
-            Text: ="ZONA 2"
+            Text: ="ZONA 4"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop3
             Width: =132
-            X: =525
-            Y: =435
-            ZIndex: =28
+            X: =640
+            Y: =464
+            ZIndex: =31
 
         Label9_111 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =34
+            Height: =21
             HoverBorderColor: =Label9_111.BorderColor
             HoverColor: =Label9_111.Color
             HoverFill: =Label9_111.Fill
@@ -437,37 +470,25 @@ Features_11 As screen:
             Tooltip: ="Seleccione"
             Visible: =pop3
             Width: =188
-            X: =500
-            Y: =535
-            ZIndex: =29
+            X: =615
+            Y: =525
+            ZIndex: =32
 
         icon12_42 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =42
+            Height: =26
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop3
             Width: =35
-            X: =829
-            Y: =435
-            ZIndex: =30
-
-        Image8_1 As image:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =123
-            Image: ='spare-part-fuel-tank-Hitachi-Serbatoio-Gasolio---1_common--15091623231963919300-fotor-bg-remover-2024050912346'
-            Visible: =pop3
-            Width: =113
-            X: =700
-            Y: =454
-            ZIndex: =46
+            X: =944
+            Y: =464
+            ZIndex: =33
 
     Group24_2 As group:
         Height: =5
@@ -481,21 +502,20 @@ Features_11 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_51.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =211
+            Height: =133
             HoverFill: =Rectangle4_51.Fill
             PressedFill: =Rectangle4_51.Fill
             TabIndex: =0
             Visible: =pop4
             Width: =413
-            X: =118
-            Y: =541
-            ZIndex: =34
+            X: =12
+            Y: =522
+            ZIndex: =37
 
         Label8_69 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =66
             HoverBorderColor: =Label8_69.BorderColor
             HoverColor: =Label8_69.Color
             HoverFill: =Label8_69.Fill
@@ -507,20 +527,20 @@ Features_11 As screen:
             PressedColor: =Label8_69.Color
             PressedFill: =Label8_69.Fill
             Size: =18
-            Text: ="ZONA 2"
+            Text: ="ZONA 4"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
             Width: =229
-            X: =145
-            Y: =553
-            ZIndex: =35
+            X: =38
+            Y: =548
+            ZIndex: =38
 
         Label9_112 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =50
+            Height: =31
             HoverBorderColor: =Label9_112.BorderColor
             HoverColor: =Label9_112.Color
             HoverFill: =Label9_112.Fill
@@ -534,41 +554,29 @@ Features_11 As screen:
             PressedColor: =Label9_112.Color
             PressedFill: =Label9_112.Fill
             Size: =11
-            Text: ="BANCO DE VÁLVULAS"
+            Text: ="FILTRO PILOTO"
             Tooltip: ="Seleccione"
             Visible: =pop4
             Width: =177
-            X: =140
-            Y: =653
-            ZIndex: =36
+            X: =33
+            Y: =609
+            ZIndex: =39
 
         icon12_43 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =39
+            Height: =24
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop4
             Width: =35
-            X: =479
-            Y: =553
-            ZIndex: =37
-
-        Image12_1 As image:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =134
-            Image: ='Control-Valves-fotor-bg-remover-20240509123915'
-            Visible: =pop4
-            Width: =181
-            X: =321
-            Y: =604
-            ZIndex: =47
+            X: =372
+            Y: =548
+            ZIndex: =40
 
     Group25_2 As group:
         Height: =5
@@ -582,20 +590,20 @@ Features_11 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_49.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =184
+            Height: =130
             HoverFill: =Rectangle4_49.Fill
             PressedFill: =Rectangle4_49.Fill
             TabIndex: =0
             Visible: =pop5
             Width: =405
-            Y: =111
-            ZIndex: =41
+            Y: =137
+            ZIndex: =44
 
         Label8_67 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =42
+            Height: =30
             HoverBorderColor: =Label8_67.BorderColor
             HoverColor: =Label8_67.Color
             HoverFill: =Label8_67.Fill
@@ -607,20 +615,20 @@ Features_11 As screen:
             PressedColor: =Label8_67.Color
             PressedFill: =Label8_67.Fill
             Size: =18
-            Text: ="ZONA 2"
+            Text: ="ZONA 4"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop5
             Width: =132
             X: =44
-            Y: =122
-            ZIndex: =42
+            Y: =145
+            ZIndex: =45
 
         Label9_110 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =41
+            Height: =29
             HoverBorderColor: =Label9_110.BorderColor
             HoverColor: =Label9_110.Color
             HoverFill: =Label9_110.Fill
@@ -634,20 +642,20 @@ Features_11 As screen:
             PressedColor: =Label9_110.Color
             PressedFill: =Label9_110.Fill
             Size: =11
-            Text: ="BANCO DE SOLENOIDE"
+            Text: ="FILTROS DE MOTOR"
             Tooltip: ="Seleccione"
             Visible: =pop5
             Width: =211
             X: =12
-            Y: =190
-            ZIndex: =43
+            Y: =193
+            ZIndex: =46
 
         icon12_41 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =42
+            Height: =30
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false})
@@ -655,20 +663,8 @@ Features_11 As screen:
             Visible: =pop5
             Width: =35
             X: =348
-            Y: =122
-            ZIndex: =44
-
-        Image13_1 As image:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =135
-            Image: =Solenoide
-            Visible: =pop5
-            Width: =132
-            X: =205
-            Y: =141
-            ZIndex: =48
+            Y: =145
+            ZIndex: =47
 
     Group11_3 As group:
         Height: =5
@@ -688,9 +684,9 @@ Features_11 As screen:
             PressedFill: =Circle2_34.Fill
             TabIndex: =0
             Width: =216
-            X: =488
-            Y: =211
-            ZIndex: =7
+            X: =770
+            Y: =266
+            ZIndex: =10
 
         icon11_15 As icon.Add:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -703,9 +699,9 @@ Features_11 As screen:
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
             TabIndex: =0
             Width: =37
-            X: =495
-            Y: =233
-            ZIndex: =8
+            X: =777
+            Y: =288
+            ZIndex: =11
 
         Label1_9 As label:
             Align: =Align.Center
@@ -720,9 +716,9 @@ Features_11 As screen:
             Size: =10
             Text: ="BOMBA HIDRAULICA"
             Width: =143
-            X: =535
-            Y: =231
-            ZIndex: =22
+            X: =817
+            Y: =286
+            ZIndex: =25
 
     Group12_1 As group:
         Height: =5
@@ -742,9 +738,9 @@ Features_11 As screen:
             PressedFill: =Circle2_33.Fill
             TabIndex: =0
             Width: =213
-            X: =263
-            Y: =167
-            ZIndex: =15
+            X: =401
+            Y: =199
+            ZIndex: =18
 
         icon11_14 As icon.Add:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -757,9 +753,9 @@ Features_11 As screen:
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false})
             TabIndex: =0
             Width: =43
-            X: =274
-            Y: =187
-            ZIndex: =16
+            X: =412
+            Y: =219
+            ZIndex: =19
 
         Label1_16 As label:
             Align: =Align.Center
@@ -774,9 +770,9 @@ Features_11 As screen:
             Size: =10
             Text: ="BOMBA PILOTO"
             Width: =133
-            X: =317
-            Y: =190
-            ZIndex: =23
+            X: =455
+            Y: =222
+            ZIndex: =26
 
     Group18_2 As group:
         Height: =5
@@ -796,9 +792,9 @@ Features_11 As screen:
             PressedFill: =Circle2_46.Fill
             TabIndex: =0
             Width: =213
-            X: =150
-            Y: =454
-            ZIndex: =31
+            X: =32
+            Y: =417
+            ZIndex: =34
 
         icon11_25 As icon.Add:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -811,9 +807,9 @@ Features_11 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false})
             TabIndex: =0
             Width: =43
-            X: =161
-            Y: =474
-            ZIndex: =32
+            X: =43
+            Y: =437
+            ZIndex: =35
 
         Label1_21 As label:
             Align: =Align.Center
@@ -826,11 +822,11 @@ Features_11 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false})
             Size: =10
-            Text: ="BANCO DE VÁLVULAS"
+            Text: ="FILTRO PILOTO"
             Width: =133
-            X: =204
-            Y: =477
-            ZIndex: =33
+            X: =86
+            Y: =440
+            ZIndex: =36
 
     Group20_1 As group:
         Height: =5
@@ -852,7 +848,7 @@ Features_11 As screen:
             Width: =213
             X: =32
             Y: =301
-            ZIndex: =38
+            ZIndex: =41
 
         icon11_23 As icon.Add:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -867,7 +863,7 @@ Features_11 As screen:
             Width: =43
             X: =43
             Y: =321
-            ZIndex: =39
+            ZIndex: =42
 
         Label1_17 As label:
             Align: =Align.Center
@@ -880,9 +876,9 @@ Features_11 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true})
             Size: =10
-            Text: ="BANCO DE SOLENOIDE"
+            Text: ="FILTROS DE MOTOR"
             Width: =133
             X: =86
             Y: =324
-            ZIndex: =40
+            ZIndex: =43
 
