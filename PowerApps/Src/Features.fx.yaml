@@ -701,6 +701,57 @@ Features As screen:
         Y: =51
         ZIndex: =94
 
+    Group13 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =94
+
+        Circle2_16 As circle:
+            BorderColor: =RGBA(133, 133, 133, 1)
+            DisabledFill: =Circle2_16.Fill
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =130
+            HoverFill: =Circle2_16.Fill
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
+            PressedFill: =Circle2_16.Fill
+            TabIndex: =0
+            Width: =224
+            X: =787
+            Y: =164
+            ZIndex: =88
+
+        icon9_8 As icon.Add:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(32, 54, 71, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =32
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =48
+            X: =968
+            Y: =214
+            ZIndex: =89
+
+        Label3_6 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =98
+            OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
+            Size: =8
+            Text: ="ZONA 2 Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
+            Tooltip: ="ZONA 1"
+            Width: =145
+            X: =827
+            Y: =180
+            ZIndex: =90
+
     Group14 As group:
         Height: =5
         Width: =5
@@ -754,57 +805,6 @@ Features As screen:
             X: =285
             Y: =374
             ZIndex: =84
-
-    Group13 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =94
-
-        Circle2_16 As circle:
-            BorderColor: =RGBA(133, 133, 133, 1)
-            DisabledFill: =Circle2_16.Fill
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =130
-            HoverFill: =Circle2_16.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-            PressedFill: =Circle2_16.Fill
-            TabIndex: =0
-            Width: =224
-            X: =787
-            Y: =164
-            ZIndex: =88
-
-        icon9_8 As icon.Add:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(32, 54, 71, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =32
-            Icon: =Icon.Add
-            OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =48
-            X: =968
-            Y: =214
-            ZIndex: =89
-
-        Label3_6 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Bold
-            Height: =98
-            OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
-            Size: =8
-            Text: ="ZONA 2 Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
-            Tooltip: ="ZONA 1"
-            Width: =145
-            X: =827
-            Y: =180
-            ZIndex: =90
 
     icon9_11 As icon.Add:
         BorderColor: =RGBA(32, 54, 71, 1)
