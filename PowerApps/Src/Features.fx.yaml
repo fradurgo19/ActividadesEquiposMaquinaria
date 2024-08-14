@@ -500,7 +500,7 @@ Features As screen:
             ="ZONA 5 Motores de traslación
             Contrapesa
             Tornamesa"
-        Tooltip: ="ZONA 1"
+        Tooltip: ="ZONA 5"
         Width: =160.08
         X: =862
         Y: =470
@@ -548,7 +548,7 @@ Features As screen:
         Text: |-
             ="ZONA 3 
             Tren de rodaje y Traslación"
-        Tooltip: ="ZONA 1"
+        Tooltip: ="ZONA 3"
         Width: =146
         X: =822
         Y: =655
@@ -596,7 +596,7 @@ Features As screen:
         Text: |-
             ="ZONA 9 Cabina Silla, Consolas, Joystick, Monitor, Computadores y Cableados (Harness)
             Vidrios"
-        Tooltip: ="ZONA 1"
+        Tooltip: ="ZONA 9"
         Width: =177.42
         X: =667
         Y: =186
@@ -644,7 +644,7 @@ Features As screen:
         Text: |-
             ="ZONA 6
             Tren de rodaje y Traslación"
-        Tooltip: ="ZONA 1"
+        Tooltip: ="ZONA 6"
         Width: =140
         X: =1121
         Y: =556
@@ -692,7 +692,7 @@ Features As screen:
         Text: |-
             ="ZONA 8 Boom, Cilindros Boom. Stick,
             Cilindro Stick, Balde, Cilindro Balde y Biela"
-        Tooltip: ="ZONA 1"
+        Tooltip: ="ZONA 8"
         Width: =165.41
         X: =48.02
         Y: =149
@@ -709,8 +709,8 @@ Features As screen:
         PressedFill: =Circle2_19.Fill
         TabIndex: =0
         Width: =288.14
-        X: =887
-        Y: =38
+        X: =862
+        Y: =44
         ZIndex: =94
 
     Group13 As group:
@@ -760,7 +760,7 @@ Features As screen:
             PaddingTop: =6.67
             Size: =10.67
             Text: ="ZONA 2 Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
-            Tooltip: ="ZONA 1"
+            Tooltip: ="ZONA 2"
             Width: =193.43
             X: =1108
             Y: =215
@@ -816,7 +816,7 @@ Features As screen:
                 ="ZONA 4 
                 Bombas hidráulicas, Bomba Piloto, Filtros de motor, Filtro piloto, Banco de solenoides y Bomba transferencia combustible
                 "
-            Tooltip: ="ZONA 1"
+            Tooltip: ="ZONA 4"
             Width: =242.79
             X: =386
             Y: =394
@@ -832,8 +832,8 @@ Features As screen:
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
         TabIndex: =0
         Width: =89.38
-        X: =1106
-        Y: =81
+        X: =1081
+        Y: =87
         ZIndex: =95
 
     Label3_8 As label:
@@ -852,9 +852,9 @@ Features As screen:
             baterias
             tanque de expansion
             valvula de amortiguación piloto"
-        Tooltip: ="ZONA 1"
+        Tooltip: ="ZONA 7"
         Width: =189.43
-        X: =945.79
-        Y: =55
+        X: =920
+        Y: =61
         ZIndex: =96
 
