@@ -29,8 +29,8 @@ Features_11 As screen:
         PressedFill: =Circle2_45.Fill
         TabIndex: =0
         Width: =288.14
-        X: =1036.51
-        Y: =364
+        X: =1015
+        Y: =415
         ZIndex: =2
 
     Image18 As image:
@@ -40,19 +40,18 @@ Features_11 As screen:
         Height: =143
         Image: ='Filtro_piloto-removebg-preview'
         Width: =237.45
-        X: =572.28
-        Y: =392
+        X: =568
+        Y: =509
         ZIndex: =3
 
     Image16 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =171
+        Height: =222
         Image: ='Bomba-piloto2-1-removebg-preview'
-        Width: =352.17
-        X: =488.24
-        Y: =46
+        Width: =361
+        X: =512
         ZIndex: =4
 
     Group10_10 As group:
@@ -131,7 +130,7 @@ Features_11 As screen:
         PressedBorderColor: =Label2_13.BorderColor
         PressedColor: =Label2_13.Color
         PressedFill: =Label2_13.Fill
-        Size: =20.01
+        Size: =16
         Text: ="EXCAVADORA Bombas hidráulicas, Bomba Piloto, Filtros de motor, Filtro piloto, Banco de solenoides y Bomba transferencia combustible"
         Width: =1280.63
         X: =84.04
@@ -148,8 +147,8 @@ Features_11 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         TabIndex: =0
         Width: =57.36
-        X: =1051.18
-        Y: =392
+        X: =1029
+        Y: =443
         ZIndex: =27
 
     Label1_20 As label:
@@ -159,7 +158,7 @@ Features_11 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
         FontWeight: =FontWeight.Bold
-        Height: =35
+        Height: =51
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         PaddingRight: =6.67
@@ -167,8 +166,8 @@ Features_11 As screen:
         Size: =13.34
         Text: ="BOMBA COMBUSTIBLE"
         Width: =177.42
-        X: =1113.88
-        Y: =388
+        X: =1092
+        Y: =439
         ZIndex: =28
 
     Group9_3 As group:
@@ -316,7 +315,7 @@ Features_11 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =28
+            Height: =35
             HoverBorderColor: =Label8_66.BorderColor
             HoverColor: =Label8_66.Color
             HoverFill: =Label8_66.Fill
@@ -677,8 +676,8 @@ Features_11 As screen:
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
             TabIndex: =0
             Width: =49.36
-            X: =1036.51
-            Y: =288
+            X: =1036
+            Y: =302
             ZIndex: =12
 
         Label1_9 As label:
@@ -696,8 +695,8 @@ Features_11 As screen:
             Size: =13.34
             Text: ="BOMBA HIDRAULICA"
             Width: =190.76
-            X: =1089.87
-            Y: =286
+            X: =1099
+            Y: =306
             ZIndex: =25
 
     Group12_1 As group:
@@ -718,8 +717,8 @@ Features_11 As screen:
             PressedFill: =Circle2_33.Fill
             TabIndex: =0
             Width: =284.14
-            X: =534.93
-            Y: =199
+            X: =550
+            Y: =179
             ZIndex: =18
 
         icon11_14 As icon.Add:
@@ -733,8 +732,8 @@ Features_11 As screen:
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false})
             TabIndex: =0
             Width: =57.36
-            X: =549.6
-            Y: =219
+            X: =572
+            Y: =205
             ZIndex: =19
 
         Label1_16 As label:
@@ -752,8 +751,8 @@ Features_11 As screen:
             Size: =13.34
             Text: ="BOMBA PILOTO"
             Width: =177.42
-            X: =606.96
-            Y: =222
+            X: =619
+            Y: =207
             ZIndex: =26
 
     Group18_2 As group:
@@ -774,8 +773,8 @@ Features_11 As screen:
             PressedFill: =Circle2_46.Fill
             TabIndex: =0
             Width: =284.14
-            X: =544.27
-            Y: =290
+            X: =544
+            Y: =350
             ZIndex: =33
 
         icon11_25 As icon.Add:
@@ -789,8 +788,8 @@ Features_11 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false})
             TabIndex: =0
             Width: =57.36
-            X: =558.94
-            Y: =310
+            X: =559
+            Y: =370
             ZIndex: =34
 
         Label1_21 As label:
@@ -808,8 +807,8 @@ Features_11 As screen:
             Size: =13.34
             Text: ="FILTRO PILOTO"
             Width: =177.42
-            X: =616.3
-            Y: =313
+            X: =616
+            Y: =373
             ZIndex: =35
 
     Group20_1 As group:

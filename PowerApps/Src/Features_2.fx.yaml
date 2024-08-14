@@ -192,7 +192,7 @@ Features_2 As screen:
         Circle2_8 As circle:
             BorderColor: =RGBA(133, 133, 133, 1)
             DisabledFill: =Circle2_8.Fill
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(204, 231, 246, 1)
             Height: =138.73
             HoverFill: =Circle2_8.Fill
             OnSelect: |-
@@ -210,7 +210,7 @@ Features_2 As screen:
             Color: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =35
+            Height: =63
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
@@ -225,7 +225,7 @@ Features_2 As screen:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(204, 231, 246, 1)
             FontWeight: =FontWeight.Bold
             Height: =58
             PaddingRight: =6.67
@@ -247,7 +247,7 @@ Features_2 As screen:
         Circle2_11 As circle:
             BorderColor: =RGBA(255, 255, 255, 1)
             DisabledFill: =Circle2_11.Fill
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(204, 231, 246, 1)
             Height: =134.73
             HoverFill: =Circle2_11.Fill
             OnSelect: |-
@@ -279,7 +279,7 @@ Features_2 As screen:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(204, 231, 246, 1)
             FontWeight: =FontWeight.Bold
             Height: =50
             PaddingRight: =6.67
