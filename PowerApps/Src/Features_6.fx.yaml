@@ -102,8 +102,8 @@ Features_6 As screen:
         PressedFill: =Circle2_48.Fill
         TabIndex: =0
         Width: =213
-        X: =477
-        Y: =336
+        X: =79
+        Y: =557
         ZIndex: =23
 
     icon11_29 As icon.Add:
@@ -117,8 +117,8 @@ Features_6 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         TabIndex: =0
         Width: =43
-        X: =488
-        Y: =356
+        X: =90
+        Y: =577
         ZIndex: =24
 
     Label1_26 As label:
@@ -132,10 +132,12 @@ Features_6 As screen:
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         Size: =10
-        Text: ="TANQUE COMBUSTIBLE"
+        Text: |-
+            ="Balde
+            "
         Width: =133
-        X: =531
-        Y: =359
+        X: =133
+        Y: =580
         ZIndex: =25
 
     Group9_4 As group:
@@ -277,21 +279,21 @@ Features_6 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_52.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =125
+            Height: =97
             HoverFill: =Rectangle4_52.Fill
             PressedFill: =Rectangle4_52.Fill
             TabIndex: =0
             Visible: =pop2
             Width: =347
             X: =213
-            Y: =452
+            Y: =420
             ZIndex: =16
 
         Label8_70 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =28
+            Height: =27
             HoverBorderColor: =Label8_70.BorderColor
             HoverColor: =Label8_70.Color
             HoverFill: =Label8_70.Fill
@@ -308,7 +310,7 @@ Features_6 As screen:
             Visible: =pop2
             Width: =113
             X: =257
-            Y: =459
+            Y: =427
             ZIndex: =17
 
         Label9_113 As label:
@@ -316,7 +318,7 @@ Features_6 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =26
+            Height: =20
             HoverBorderColor: =Label9_113.BorderColor
             HoverColor: =Label9_113.Color
             HoverFill: =Label9_113.Fill
@@ -334,8 +336,8 @@ Features_6 As screen:
             Tooltip: ="Seleccione"
             Visible: =pop2
             Width: =167
-            X: =247
-            Y: =519
+            X: =248
+            Y: =480
             ZIndex: =18
 
         icon12_44 As icon.Cancel:
@@ -343,15 +345,15 @@ Features_6 As screen:
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =28
+            Height: =21
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop2
             Width: =29
-            X: =517
-            Y: =464
+            X: =497
+            Y: =433
             ZIndex: =19
 
     Group23_2 As group:
@@ -366,21 +368,21 @@ Features_6 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_54.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =180
+            Height: =116
             HoverFill: =Rectangle4_54.Fill
             PressedFill: =Rectangle4_54.Fill
             TabIndex: =0
             Visible: =pop3
-            Width: =405
-            X: =481
-            Y: =424
+            Width: =270
+            X: =290
+            Y: =577
             ZIndex: =26
 
         Label8_72 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =42
+            Height: =27
             HoverBorderColor: =Label8_72.BorderColor
             HoverColor: =Label8_72.Color
             HoverFill: =Label8_72.Fill
@@ -392,12 +394,12 @@ Features_6 As screen:
             PressedColor: =Label8_72.Color
             PressedFill: =Label8_72.Fill
             Size: =18
-            Text: ="ZONA 2"
+            Text: ="ZONA 8"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop3
-            Width: =132
-            X: =525
-            Y: =435
+            Width: =88
+            X: =319
+            Y: =584
             ZIndex: =27
 
         Label9_115 As label:
@@ -405,12 +407,12 @@ Features_6 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =34
+            Height: =41
             HoverBorderColor: =Label9_115.BorderColor
             HoverColor: =Label9_115.Color
             HoverFill: =Label9_115.Fill
             OnSelect: |-
-                =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B367DEFA3-DF24-47CA-B056-DCED4AA928ED%7D&file=Tanque%20de%20combustible.xlsx&action=default&mobileredirect=true")
+                =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BD49F6ECB-D780-44C2-92C1-A6B3B0425C68%7D&file=balde%20y%20articulaciones%20balde.xlsx&action=default&mobileredirect=true")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -419,12 +421,14 @@ Features_6 As screen:
             PressedColor: =Label9_115.Color
             PressedFill: =Label9_115.Fill
             Size: =11
-            Text: ="TANQUE COMBUSTIBLE"
+            Text: |-
+                ="Balde
+                "
             Tooltip: ="Seleccione"
             Visible: =pop3
-            Width: =188
-            X: =500
-            Y: =535
+            Width: =192
+            X: =303
+            Y: =630
             ZIndex: =28
 
         icon12_47 As icon.Cancel:
@@ -432,28 +436,16 @@ Features_6 As screen:
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =42
+            Height: =27
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop3
-            Width: =35
-            X: =829
-            Y: =435
+            Width: =23
+            X: =522
+            Y: =584
             ZIndex: =29
-
-        Image8_1 As image:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =123
-            Image: ='spare-part-fuel-tank-Hitachi-Serbatoio-Gasolio---1_common--15091623231963919300-fotor-bg-remover-2024050912346'
-            Visible: =pop3
-            Width: =113
-            X: =700
-            Y: =454
-            ZIndex: =46
 
     Group24_3 As group:
         Height: =5
@@ -540,7 +532,7 @@ Features_6 As screen:
             TabIndex: =0
             Visible: =pop4
             Width: =28
-            X: =302
+            X: =292
             Y: =495
             ZIndex: =36
 
