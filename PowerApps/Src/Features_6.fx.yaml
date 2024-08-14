@@ -3,6 +3,7 @@ Features_6 As screen:
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnHidden: =
     OnVisible: |-
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
@@ -759,15 +760,15 @@ Features_6 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_36.Fill
             Fill: =RGBA(197, 242, 63, 1)
-            Height: =62
+            Height: =76
             HoverFill: =Circle2_36.Fill
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
             PressedFill: =Circle2_36.Fill
             TabIndex: =0
-            Width: =246
+            Width: =238
             X: =287
-            Y: =250
+            Y: =244
             ZIndex: =6
 
         icon11_27 As icon.Add:
@@ -780,8 +781,8 @@ Features_6 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =49
-            X: =299
+            Width: =56
+            X: =301
             Y: =266
             ZIndex: =7
 
@@ -799,8 +800,8 @@ Features_6 As screen:
             PaddingTop: =6.67
             Size: =13.34
             Text: ="Stick"
-            Width: =94
-            X: =348
+            Width: =107
+            X: =357
             Y: =263
             ZIndex: =21
 
