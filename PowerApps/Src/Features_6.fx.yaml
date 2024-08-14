@@ -152,7 +152,7 @@ Features_6 As screen:
         PressedFill: =Circle2_55.Fill
         TabIndex: =0
         Width: =185
-        Y: =88
+        Y: =122
         ZIndex: =44
 
     icon11_36 As icon.Add:
@@ -167,7 +167,7 @@ Features_6 As screen:
         TabIndex: =0
         Width: =32
         X: =147
-        Y: =114
+        Y: =148
         ZIndex: =45
 
     Group9_4 As group:
@@ -301,7 +301,7 @@ Features_6 As screen:
         Text: ="Cilindro de Stick"
         Width: =122
         X: =19
-        Y: =122
+        Y: =156
         ZIndex: =46
 
     Group22_2 As group:
@@ -322,8 +322,8 @@ Features_6 As screen:
             TabIndex: =0
             Visible: =pop2
             Width: =347
-            X: =465
-            Y: =163
+            X: =367
+            Y: =263
             ZIndex: =16
 
         Label8_70 As label:
@@ -346,8 +346,8 @@ Features_6 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop2
             Width: =113
-            X: =509
-            Y: =170
+            X: =411
+            Y: =270
             ZIndex: =17
 
         Label9_113 As label:
@@ -373,8 +373,8 @@ Features_6 As screen:
             Tooltip: ="Seleccione"
             Visible: =pop2
             Width: =167
-            X: =500
-            Y: =223
+            X: =402
+            Y: =323
             ZIndex: =18
 
         icon12_44 As icon.Cancel:
@@ -389,8 +389,8 @@ Features_6 As screen:
             TabIndex: =0
             Visible: =pop2
             Width: =29
-            X: =749
-            Y: =176
+            X: =651
+            Y: =276
             ZIndex: =19
 
     Rectangle4_33 As rectangle:
@@ -404,7 +404,8 @@ Features_6 As screen:
         TabIndex: =0
         Visible: =pop6
         Width: =334
-        Y: =171
+        X: =327
+        Y: =297
         ZIndex: =47
 
     Group23_2 As group:
@@ -518,8 +519,8 @@ Features_6 As screen:
         VerticalAlign: =VerticalAlign.Top
         Visible: =pop6
         Width: =209
-        X: =8
-        Y: =180
+        X: =335
+        Y: =306
         ZIndex: =48
 
     Group24_3 As group:
@@ -540,8 +541,8 @@ Features_6 As screen:
             TabIndex: =0
             Visible: =pop4
             Width: =324
-            X: =371
-            Y: =480
+            X: =246
+            Y: =377
             ZIndex: =33
 
         Label8_73 As label:
@@ -564,8 +565,8 @@ Features_6 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
             Width: =180
-            X: =403
-            Y: =495
+            X: =278
+            Y: =392
             ZIndex: =34
 
         Label9_116 As label:
@@ -591,8 +592,8 @@ Features_6 As screen:
             Tooltip: ="Seleccione"
             Visible: =pop4
             Width: =139
-            X: =399
-            Y: =562
+            X: =274
+            Y: =459
             ZIndex: =35
 
         icon12_48 As icon.Cancel:
@@ -607,8 +608,8 @@ Features_6 As screen:
             TabIndex: =0
             Visible: =pop4
             Width: =28
-            X: =655
-            Y: =495
+            X: =530
+            Y: =392
             ZIndex: =36
 
     icon12_55 As icon.Cancel:
@@ -623,8 +624,8 @@ Features_6 As screen:
         TabIndex: =0
         Visible: =pop6
         Width: =53
-        X: =274
-        Y: =178
+        X: =601
+        Y: =304
         ZIndex: =49
 
     Group25_3 As group:
@@ -645,7 +646,8 @@ Features_6 As screen:
             TabIndex: =0
             Visible: =pop5
             Width: =284
-            Y: =111
+            X: =327
+            Y: =256
             ZIndex: =40
 
         Label8_71 As label:
@@ -668,8 +670,8 @@ Features_6 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop5
             Width: =93
-            X: =31
-            Y: =118
+            X: =358
+            Y: =263
             ZIndex: =41
 
         Label9_114 As label:
@@ -695,8 +697,8 @@ Features_6 As screen:
             Tooltip: ="Seleccione"
             Visible: =pop5
             Width: =148
-            X: =8
-            Y: =163
+            X: =335
+            Y: =308
             ZIndex: =42
 
         icon12_46 As icon.Cancel:
@@ -711,8 +713,8 @@ Features_6 As screen:
             TabIndex: =0
             Visible: =pop5
             Width: =25
-            X: =244
-            Y: =118
+            X: =571
+            Y: =263
             ZIndex: =43
 
     Label9_55 As label:
@@ -737,8 +739,8 @@ Features_6 As screen:
         Text: ="Cilindro Stick"
         Visible: =pop6
         Width: =149
-        X: =7
-        Y: =217
+        X: =334
+        Y: =343
         ZIndex: =50
 
     Group11_4 As group:
@@ -813,8 +815,8 @@ Features_6 As screen:
             PressedFill: =Circle2_35.Fill
             TabIndex: =0
             Width: =169
-            X: =284
-            Y: =209
+            X: =246
+            Y: =116
             ZIndex: =14
 
         icon11_26 As icon.Add:
@@ -828,8 +830,8 @@ Features_6 As screen:
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
             Width: =34
-            X: =295
-            Y: =215
+            X: =261
+            Y: =133
             ZIndex: =15
 
         Label1_24 As label:
@@ -845,8 +847,8 @@ Features_6 As screen:
             Size: =10
             Text: ="Boom"
             Width: =67
-            X: =334
-            Y: =220
+            X: =300
+            Y: =138
             ZIndex: =22
 
     Group18_3 As group:
@@ -920,8 +922,8 @@ Features_6 As screen:
             PressedFill: =Circle2_47.Fill
             TabIndex: =0
             Width: =142
-            X: =312
-            Y: =56
+            X: =487
+            Y: =86
             ZIndex: =37
 
         icon11_28 As icon.Add:
@@ -935,8 +937,8 @@ Features_6 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             TabIndex: =0
             Width: =28
-            X: =329
-            Y: =67
+            X: =504
+            Y: =97
             ZIndex: =38
 
         Label1_25 As label:
@@ -952,7 +954,7 @@ Features_6 As screen:
             Size: =10
             Text: ="Cilindro del Boom"
             Width: =89
-            X: =357
-            Y: =70
+            X: =532
+            Y: =100
             ZIndex: =39
 
