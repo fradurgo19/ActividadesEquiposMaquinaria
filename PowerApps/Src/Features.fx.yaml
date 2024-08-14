@@ -641,14 +641,14 @@ Features As screen:
         BorderColor: =RGBA(133, 133, 133, 1)
         DisabledFill: =Circle2_17.Fill
         Fill: =RGBA(205, 209, 213, 1)
-        Height: =50
+        Height: =113
         HoverFill: =Circle2_17.Fill
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
         PressedFill: =Circle2_17.Fill
         TabIndex: =0
-        Width: =172
-        X: =120
+        Width: =225
+        X: =66
         Y: =238
         ZIndex: =91
 
@@ -663,21 +663,24 @@ Features As screen:
         TabIndex: =0
         Width: =67
         X: =219
-        Y: =247
+        Y: =283
         ZIndex: =92
 
     Label3_7 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =29
+        FontWeight: =FontWeight.Bold
+        Height: =73
         OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
-        Size: =13
-        Text: ="ZONA 8"
+        Size: =8
+        Text: |-
+            ="ZONA 8 Boom, Cilindros Boom. Stick,
+            Cilindro Stick, Balde, Cilindro Balde y Biela"
         Tooltip: ="ZONA 1"
-        Width: =82
-        X: =140
-        Y: =247
+        Width: =124
+        X: =95
+        Y: =257
         ZIndex: =93
 
     Circle2_19 As circle:
