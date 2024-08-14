@@ -1,5 +1,5 @@
 Features_2 As screen:
-    BackgroundImage: ='l_2232_2215_19_Hitachi EX210LC - New _71'
+    BackgroundImage: =Motor
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
@@ -200,8 +200,8 @@ Features_2 As screen:
             PressedFill: =Circle2_11.Fill
             TabIndex: =0
             Width: =240
-            X: =34
-            Y: =284
+            X: =302
+            Y: =470
             ZIndex: =24
 
         icon11_5 As icon.Add:
@@ -215,8 +215,8 @@ Features_2 As screen:
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             TabIndex: =0
             Width: =41
-            X: =206
-            Y: =300
+            X: =474
+            Y: =486
             ZIndex: =25
 
         Label1_7 As label:
@@ -229,8 +229,8 @@ Features_2 As screen:
             Size: =13
             Text: ="RADIADOR"
             Width: =116
-            X: =74
-            Y: =303
+            X: =342
+            Y: =489
             ZIndex: =73
 
     Group7 As group:
