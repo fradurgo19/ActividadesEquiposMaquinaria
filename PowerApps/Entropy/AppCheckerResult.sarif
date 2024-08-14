@@ -14024,6 +14024,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Boom"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Boom",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Boom",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Features_4.pop3"
                 }
               ],
