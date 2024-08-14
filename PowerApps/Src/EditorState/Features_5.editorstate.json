@@ -3443,7 +3443,14 @@
         },
         "Color",
         "DisabledColor",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": true,
@@ -3471,10 +3478,10 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Label\"",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Text",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         {
           "AFDDataSourceName": "",
@@ -3511,10 +3518,10 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "Align!Left",
+          "AutoRuleBindingString": "",
           "InvariantPropertyName": "Align",
           "IsLockable": false,
-          "NameMapSourceSchema": "*[]"
+          "NameMapSourceSchema": "?"
         },
         "Font",
         "BorderStyle",
