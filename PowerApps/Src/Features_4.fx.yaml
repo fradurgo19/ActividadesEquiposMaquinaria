@@ -7,6 +7,50 @@ Features_4 As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image17 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =263
+        Image: =Tornamesa
+        Width: =527
+        X: =113
+        Y: =64
+        ZIndex: =1
+
+    Image19 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =362
+        Image: =Traslasion
+        Width: =470
+        X: =136
+        Y: =316
+        ZIndex: =2
+
+    Rectangle2_8 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(100, 118, 132, 1)
+        Height: =44
+        TabIndex: =0
+        Width: =1024
+        ZIndex: =3
+
+    Image4_6 As image:
+        ApplyEXIFOrientation: =false
+        AutoDisableOnSelect: =false
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Image: =x
+        OnSelect: =Navigate(Home,ScreenTransition.Fade)
+        Width: =25
+        X: =799
+        Y: =106
+        ZIndex: =4
+
     Group10_6 As group:
         Height: =44
         Width: =44
@@ -21,7 +65,7 @@ Features_4 As screen:
             OnSelect: =Navigate(Home, ScreenTransition.Fade)
             TabIndex: =0
             Width: =44
-            ZIndex: =22
+            ZIndex: =6
 
         icon1_7 As icon.ChevronLeft:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -35,29 +79,7 @@ Features_4 As screen:
             Width: =20
             X: =12
             Y: =6
-            ZIndex: =23
-
-    Rectangle2_8 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Fill: =RGBA(100, 118, 132, 1)
-        Height: =44
-        TabIndex: =0
-        Width: =1024
-        ZIndex: =14
-
-    Image4_6 As image:
-        ApplyEXIFOrientation: =false
-        AutoDisableOnSelect: =false
-        BorderColor: =RGBA(32, 54, 71, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =25
-        Image: =x
-        OnSelect: =Navigate(Home,ScreenTransition.Fade)
-        Width: =25
-        X: =799
-        Y: =106
-        ZIndex: =15
+            ZIndex: =7
 
     Label2_9 As label:
         Align: =LayoutAlignItems.Center
@@ -77,9 +99,9 @@ Features_4 As screen:
         PressedFill: =Label2_9.Fill
         Size: =18
         Text: |-
-            ="EXCAVADORA: MOTOR Y RADIADOR"
+            ="EXCAVADORA: TRASLASIÓN"
         Width: =1024
-        ZIndex: =16
+        ZIndex: =5
 
     Rectangle15_15 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -92,7 +114,7 @@ Features_4 As screen:
         Width: =44
         X: =782
         Y: =610
-        ZIndex: =33
+        ZIndex: =12
 
     Rectangle10_3 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -104,7 +126,7 @@ Features_4 As screen:
         Width: =44
         X: =773
         Y: =611
-        ZIndex: =34
+        ZIndex: =13
 
     Label9_32 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -129,7 +151,7 @@ Features_4 As screen:
         Width: =151
         X: =427
         Y: =646
-        ZIndex: =62
+        ZIndex: =23
 
     Label9_33 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -154,7 +176,7 @@ Features_4 As screen:
         Width: =151
         X: =429
         Y: =694
-        ZIndex: =63
+        ZIndex: =24
 
     Label9_25 As label:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -174,13 +196,12 @@ Features_4 As screen:
         PressedBorderColor: =Label9_25.BorderColor
         PressedColor: =Label9_25.Color
         PressedFill: =Label9_25.Fill
-        Size: =10
-        Text: ="ZONA 1"
+        Text: ="ZONA 5"
         Visible: =pop2
         Width: =123
         X: =80
         Y: =436
-        ZIndex: =74
+        ZIndex: =27
 
     Group5_1 As group:
         Height: =5
@@ -202,7 +223,7 @@ Features_4 As screen:
             Width: =240
             X: =34
             Y: =284
-            ZIndex: =24
+            ZIndex: =8
 
         icon11_6 As icon.Add:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -217,7 +238,7 @@ Features_4 As screen:
             Width: =41
             X: =206
             Y: =300
-            ZIndex: =25
+            ZIndex: =9
 
         Label1_22 As label:
             Align: =Align.Center
@@ -226,12 +247,13 @@ Features_4 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
+            Height: =74
             Size: =13
-            Text: ="RADIADOR"
-            Width: =116
-            X: =74
-            Y: =303
-            ZIndex: =73
+            Text: ="TRASLASIÓN TORNAMESA CONTRAPESA"
+            Width: =178
+            X: =12
+            Y: =281
+            ZIndex: =26
 
     Group7_1 As group:
         Height: =5
@@ -252,9 +274,9 @@ Features_4 As screen:
             TabIndex: =0
             Tooltip: ="MOTOR"
             Width: =289
-            X: =510
-            Y: =355
-            ZIndex: =26
+            X: =593
+            Y: =348
+            ZIndex: =10
 
         icon9_10 As icon.Add:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -266,10 +288,11 @@ Features_4 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             TabIndex: =0
+            Visible: =false
             Width: =56
             X: =710
             Y: =391
-            ZIndex: =27
+            ZIndex: =11
 
         Label1_1 As label:
             Align: =Align.Center
@@ -281,10 +304,11 @@ Features_4 As screen:
             Height: =58
             Size: =13
             Text: ="MOTOR"
+            Visible: =false
             Width: =132
             X: =578
             Y: =378
-            ZIndex: =72
+            ZIndex: =25
 
     Group17_1 As group:
         Height: =5
@@ -306,7 +330,7 @@ Features_4 As screen:
             Width: =495
             X: =475
             Y: =114
-            ZIndex: =40
+            ZIndex: =16
 
         Rectangle15_14 As rectangle:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -319,7 +343,7 @@ Features_4 As screen:
             Width: =42
             X: =494
             Y: =194
-            ZIndex: =43
+            ZIndex: =17
 
         Rectangle8_3 As rectangle:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -331,7 +355,7 @@ Features_4 As screen:
             Width: =531
             X: =464
             Y: =4
-            ZIndex: =44
+            ZIndex: =18
 
         icon7_3 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -347,7 +371,7 @@ Features_4 As screen:
             Width: =62
             X: =892
             Y: =126
-            ZIndex: =45
+            ZIndex: =19
 
         Label8_17 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -374,7 +398,7 @@ Features_4 As screen:
             Width: =380
             X: =494
             Y: =227
-            ZIndex: =58
+            ZIndex: =21
 
         Label8_16 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -400,7 +424,7 @@ Features_4 As screen:
             Width: =343
             X: =492
             Y: =129
-            ZIndex: =60
+            ZIndex: =22
 
         Image2_2 As image:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -413,7 +437,7 @@ Features_4 As screen:
             Width: =265
             X: =597
             Y: =129
-            ZIndex: =75
+            ZIndex: =28
 
     Group1_2 As group:
         Height: =5
@@ -433,9 +457,9 @@ Features_4 As screen:
             TabIndex: =0
             Visible: =pop2
             Width: =424
-            X: =68
-            Y: =421
-            ZIndex: =37
+            X: =64
+            Y: =391
+            ZIndex: =14
 
         Label9_26 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -447,7 +471,7 @@ Features_4 As screen:
             HoverColor: =Label9_26.Color
             HoverFill: =Label9_26.Fill
             OnSelect: |-
-                =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?login_hint=analista%2Emantenimiento%40partequipos%2Ecom&id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2FEnfriadores&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+                =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BD3A726DE-865E-4CEF-A67B-41AE85143179%7D&file=traslacion.xlsx&action=default&mobileredirect=true")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -455,15 +479,15 @@ Features_4 As screen:
             PressedBorderColor: =Label9_26.BorderColor
             PressedColor: =Label9_26.Color
             PressedFill: =Label9_26.Fill
-            Size: =10
+            Size: =12
             Text: |-
-                ="RADIADOR  Presione
+                ="TRASLASIÓN TORNAMESA CONTRAPESA
                 "
             Visible: =pop2
             Width: =163
-            X: =84
-            Y: =550
-            ZIndex: =39
+            X: =80
+            Y: =530
+            ZIndex: =15
 
         icon14_3 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -479,17 +503,5 @@ Features_4 As screen:
             Width: =45
             X: =400
             Y: =432
-            ZIndex: =46
-
-        Image4_1 As image:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =241
-            Image: ='Captura de pantalla 2024-05-09 104446-fotor-bg-remover-20240509105347'
-            Visible: =pop2
-            Width: =150
-            X: =226
-            Y: =454
-            ZIndex: =76
+            ZIndex: =20
 
