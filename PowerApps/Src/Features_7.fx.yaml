@@ -1,5 +1,5 @@
 Features_7 As screen:
-    BackgroundImage: =
+    BackgroundImage: =Cabina
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
@@ -645,7 +645,8 @@ Features_7 As screen:
             TabIndex: =0
             Visible: =pop5
             Width: =284
-            Y: =111
+            X: =740
+            Y: =180
             ZIndex: =40
 
         Label8_75 As label:
@@ -668,8 +669,8 @@ Features_7 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop5
             Width: =93
-            X: =31
-            Y: =118
+            X: =771
+            Y: =187
             ZIndex: =41
 
         Label9_118 As label:
@@ -682,7 +683,7 @@ Features_7 As screen:
             HoverColor: =Label9_118.Color
             HoverFill: =Label9_118.Fill
             OnSelect: |-
-                =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B3201F579-1A9B-44C7-83E4-253D540427C3%7D&file=cilindros%20boom.xlsx&action=default&mobileredirect=true")
+                =Launch("https://partequipos2.sharepoint.com/sites/servicioposventa")
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
@@ -691,12 +692,12 @@ Features_7 As screen:
             PressedColor: =Label9_118.Color
             PressedFill: =Label9_118.Fill
             Size: =11
-            Text: ="Cilindro del Boom"
+            Text: ="Cabina"
             Tooltip: ="Seleccione"
             Visible: =pop5
             Width: =148
-            X: =8
-            Y: =163
+            X: =748
+            Y: =232
             ZIndex: =42
 
         icon12_52 As icon.Cancel:
@@ -711,8 +712,8 @@ Features_7 As screen:
             TabIndex: =0
             Visible: =pop5
             Width: =25
-            X: =244
-            Y: =118
+            X: =984
+            Y: =187
             ZIndex: =43
 
     Label9_56 As label:
@@ -921,8 +922,8 @@ Features_7 As screen:
             PressedFill: =Circle2_52.Fill
             TabIndex: =0
             Width: =142
-            X: =269
-            Y: =146
+            X: =761
+            Y: =106
             ZIndex: =37
 
         icon11_33 As icon.Add:
@@ -936,8 +937,8 @@ Features_7 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             TabIndex: =0
             Width: =28
-            X: =292
-            Y: =172
+            X: =774
+            Y: =123
             ZIndex: =38
 
         Label1_30 As label:
@@ -951,9 +952,9 @@ Features_7 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             Size: =10
-            Text: ="Cilindro del Boom"
+            Text: ="Cabina"
             Width: =89
-            X: =358
-            Y: =174
+            X: =802
+            Y: =120
             ZIndex: =39
 
