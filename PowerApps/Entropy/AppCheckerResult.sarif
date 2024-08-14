@@ -11084,6 +11084,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Tren de rodaje"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Tren de rodaje",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Tren de rodaje",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Captura de pantalla 2024-04-04 130223"
                 }
               ],

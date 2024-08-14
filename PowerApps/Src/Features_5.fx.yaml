@@ -22,11 +22,11 @@ Features_5 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =224
+        Height: =636
         Image: =Enfriador
-        Width: =302
+        Width: =1014
         X: =10
-        Y: =50
+        Y: =78
         ZIndex: =2
 
     Rectangle2_9 As rectangle:
@@ -214,15 +214,15 @@ Features_5 As screen:
             BorderColor: =RGBA(255, 255, 255, 1)
             DisabledFill: =Circle2_20.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =80
+            Height: =123
             HoverFill: =Circle2_20.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             PressedFill: =Circle2_20.Fill
             TabIndex: =0
-            Width: =240
-            X: =34
-            Y: =284
+            Width: =242
+            X: =32
+            Y: =268
             ZIndex: =8
 
         icon11_7 As icon.Add:
@@ -251,8 +251,8 @@ Features_5 As screen:
             Size: =13
             Text: ="ENFRIADOR ACEITRE HIDRAULICO"
             Width: =178
-            X: =12
-            Y: =281
+            X: =34
+            Y: =288
             ZIndex: =26
 
     Group7_2 As group:
@@ -289,8 +289,8 @@ Features_5 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             TabIndex: =0
             Width: =56
-            X: =710
-            Y: =391
+            X: =783
+            Y: =382
             ZIndex: =11
 
         Label1_2 As label:
@@ -304,7 +304,7 @@ Features_5 As screen:
             Size: =13
             Text: ="RADIADOR"
             Width: =132
-            X: =578
+            X: =656
             Y: =378
             ZIndex: =25
 
