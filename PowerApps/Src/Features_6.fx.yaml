@@ -282,8 +282,8 @@ Features_6 As screen:
             PressedBorderColor: =Label9_53.BorderColor
             PressedColor: =Label9_53.Color
             PressedFill: =Label9_53.Fill
-            Size: =13.34
-            Text: ="Stick "
+            Size: =15
+            Text: ="Stick 👆"
             Visible: =pop1
             Width: =198.76
             X: =456.22
@@ -321,13 +321,13 @@ Features_6 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_52.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =97
+            Height: =168
             HoverFill: =Rectangle4_52.Fill
             PressedFill: =Rectangle4_52.Fill
             TabIndex: =0
             Visible: =pop2
-            Width: =462.89
-            X: =489.57
+            Width: =398
+            X: =553
             Y: =263
             ZIndex: =16
 
@@ -335,7 +335,7 @@ Features_6 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =27
+            Height: =47
             HoverBorderColor: =Label8_70.BorderColor
             HoverColor: =Label8_70.Color
             HoverFill: =Label8_70.Fill
@@ -350,9 +350,9 @@ Features_6 As screen:
             Text: ="ZONA 8"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop2
-            Width: =150.74
-            X: =548.27
-            Y: =270
+            Width: =130
+            X: =603
+            Y: =275
             ZIndex: =17
 
         Label9_113 As label:
@@ -360,7 +360,7 @@ Features_6 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =20
+            Height: =35
             HoverBorderColor: =Label9_113.BorderColor
             HoverColor: =Label9_113.Color
             HoverFill: =Label9_113.Fill
@@ -373,13 +373,13 @@ Features_6 As screen:
             PressedBorderColor: =Label9_113.BorderColor
             PressedColor: =Label9_113.Color
             PressedFill: =Label9_113.Fill
-            Size: =14.67
-            Text: ="Boom"
+            Size: =16
+            Text: ="Boom 👆"
             Tooltip: ="Seleccione"
             Visible: =pop2
-            Width: =222.78
-            X: =536.26
-            Y: =323
+            Width: =192
+            X: =593
+            Y: =367
             ZIndex: =18
 
         icon12_44 As icon.Cancel:
@@ -387,15 +387,15 @@ Features_6 As screen:
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =21
+            Height: =36
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop2
-            Width: =38.69
-            X: =868.42
-            Y: =276
+            Width: =33
+            X: =879
+            Y: =286
             ZIndex: =19
 
     Rectangle4_33 As rectangle:
@@ -409,8 +409,8 @@ Features_6 As screen:
         TabIndex: =0
         Visible: =pop6
         Width: =445.55
-        X: =436.21
-        Y: =297
+        X: =478
+        Y: =329
         ZIndex: =47
 
     Group23_2 As group:
@@ -425,13 +425,13 @@ Features_6 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_54.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =116
+            Height: =133
             HoverFill: =Rectangle4_54.Fill
             PressedFill: =Rectangle4_54.Fill
             TabIndex: =0
             Visible: =pop3
-            Width: =360.18
-            X: =294.81
+            Width: =360
+            X: =295
             Y: =622
             ZIndex: =26
 
@@ -439,7 +439,7 @@ Features_6 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =27
+            Height: =31
             HoverBorderColor: =Label8_72.BorderColor
             HoverColor: =Label8_72.Color
             HoverFill: =Label8_72.Fill
@@ -454,9 +454,9 @@ Features_6 As screen:
             Text: ="ZONA 8"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop3
-            Width: =117.39
-            X: =333.5
-            Y: =629
+            Width: =117
+            X: =334
+            Y: =630
             ZIndex: =27
 
         Label9_115 As label:
@@ -464,7 +464,7 @@ Features_6 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =41
+            Height: =47
             HoverBorderColor: =Label9_115.BorderColor
             HoverColor: =Label9_115.Color
             HoverFill: =Label9_115.Fill
@@ -479,13 +479,13 @@ Features_6 As screen:
             PressedFill: =Label9_115.Fill
             Size: =14.67
             Text: |-
-                ="Balde
+                ="Balde 👆
                 "
             Tooltip: ="Seleccione"
             Visible: =pop3
-            Width: =256.13
-            X: =312.15
-            Y: =675
+            Width: =256
+            X: =312
+            Y: =683
             ZIndex: =28
 
         icon12_47 As icon.Cancel:
@@ -493,15 +493,15 @@ Features_6 As screen:
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =27
+            Height: =31
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop3
-            Width: =30.68
-            X: =604.29
-            Y: =629
+            Width: =31
+            X: =604
+            Y: =630
             ZIndex: =29
 
     Label8_48 As label:
@@ -524,8 +524,8 @@ Features_6 As screen:
         VerticalAlign: =VerticalAlign.Top
         Visible: =pop6
         Width: =278.8
-        X: =446.88
-        Y: =306
+        X: =499
+        Y: =342
         ZIndex: =48
 
     Group24_3 As group:
@@ -579,7 +579,7 @@ Features_6 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =29
+            Height: =39
             HoverBorderColor: =Label9_116.BorderColor
             HoverColor: =Label9_116.Color
             HoverFill: =Label9_116.Fill
@@ -593,12 +593,12 @@ Features_6 As screen:
             PressedColor: =Label9_116.Color
             PressedFill: =Label9_116.Fill
             Size: =14.67
-            Text: ="Cilindros del Balde"
+            Text: ="Cilindros del Balde 👆"
             Tooltip: ="Seleccione"
             Visible: =pop4
-            Width: =185.42
+            Width: =245
             X: =365.51
-            Y: =459
+            Y: =448
             ZIndex: =35
 
         icon12_48 As icon.Cancel:
@@ -629,8 +629,8 @@ Features_6 As screen:
         TabIndex: =0
         Visible: =pop6
         Width: =70.7
-        X: =801.72
-        Y: =304
+        X: =854
+        Y: =340
         ZIndex: =49
 
     Group25_3 As group:
@@ -645,21 +645,21 @@ Features_6 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_53.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =122
+            Height: =151
             HoverFill: =Rectangle4_53.Fill
             PressedFill: =Rectangle4_53.Fill
             TabIndex: =0
             Visible: =pop5
             Width: =378.85
-            X: =436.21
-            Y: =256
+            X: =572
+            Y: =280
             ZIndex: =40
 
         Label8_71 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =28
+            Height: =34
             HoverBorderColor: =Label8_71.BorderColor
             HoverColor: =Label8_71.Color
             HoverFill: =Label8_71.Fill
@@ -675,8 +675,8 @@ Features_6 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop5
             Width: =124.06
-            X: =477.57
-            Y: =263
+            X: =613
+            Y: =287
             ZIndex: =41
 
         Label9_114 As label:
@@ -684,7 +684,7 @@ Features_6 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =27
+            Height: =35
             HoverBorderColor: =Label9_114.BorderColor
             HoverColor: =Label9_114.Color
             HoverFill: =Label9_114.Fill
@@ -698,12 +698,12 @@ Features_6 As screen:
             PressedColor: =Label9_114.Color
             PressedFill: =Label9_114.Fill
             Size: =14.67
-            Text: ="Cilindro del Boom"
+            Text: ="Cilindro del Boom 👆"
             Tooltip: ="Seleccione"
             Visible: =pop5
-            Width: =197.43
-            X: =446.88
-            Y: =308
+            Width: =242
+            X: =582
+            Y: =332
             ZIndex: =42
 
         icon12_46 As icon.Cancel:
@@ -711,15 +711,15 @@ Features_6 As screen:
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =28
+            Height: =34
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false})
             TabIndex: =0
             Visible: =pop5
             Width: =33.35
-            X: =761.71
-            Y: =263
+            X: =897
+            Y: =287
             ZIndex: =43
 
     Label9_55 As label:
@@ -741,11 +741,11 @@ Features_6 As screen:
         PressedColor: =Label9_55.Color
         PressedFill: =Label9_55.Fill
         Size: =13.34
-        Text: ="Cilindro Stick"
+        Text: ="Cilindro Stick 👆"
         Visible: =pop6
         Width: =198.76
-        X: =445.55
-        Y: =343
+        X: =497
+        Y: =379
         ZIndex: =50
 
     Group11_4 As group:
