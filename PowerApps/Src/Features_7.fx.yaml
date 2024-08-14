@@ -1,6 +1,7 @@
 Features_7 As screen:
     BackgroundImage: =Cabina
     Height: =Max(App.Height, App.DesignHeight)
+    ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
