@@ -12,7 +12,7 @@ Features_4 As screen:
         Fill: =RGBA(100, 118, 132, 1)
         Height: =44
         TabIndex: =0
-        Width: =1024
+        Width: =1366
         ZIndex: =3
 
     Image4_6 As image:
@@ -24,8 +24,8 @@ Features_4 As screen:
         Height: =25
         Image: =x
         OnSelect: =Navigate(Home,ScreenTransition.Fade)
-        Width: =25
-        X: =799
+        Width: =33.35
+        X: =1065.85
         Y: =106
         ZIndex: =4
 
@@ -42,7 +42,7 @@ Features_4 As screen:
             Height: =44
             OnSelect: =Navigate(Home, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =44
+            Width: =58.7
             ZIndex: =6
 
         icon1_7 As icon.ChevronLeft:
@@ -54,8 +54,8 @@ Features_4 As screen:
             Icon: =Icon.ChevronLeft
             OnSelect: =Navigate(Features, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =20
-            X: =12
+            Width: =26.68
+            X: =16.01
             Y: =6
             ZIndex: =7
 
@@ -75,10 +75,10 @@ Features_4 As screen:
         PressedBorderColor: =Label2_9.BorderColor
         PressedColor: =Label2_9.Color
         PressedFill: =Label2_9.Fill
-        Size: =16
+        Size: =21.34
         Text: |-
             ="EXCAVADORA: Motores de traslación, Contrapesa y Tornamesa"
-        Width: =1024
+        Width: =1366
         ZIndex: =5
 
     Rectangle15_15 As rectangle:
@@ -89,8 +89,8 @@ Features_4 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
         TabIndex: =0
         Visible: =pop2
-        Width: =44
-        X: =782
+        Width: =58.7
+        X: =1043.18
         Y: =610
         ZIndex: =12
 
@@ -101,8 +101,8 @@ Features_4 As screen:
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
         TabIndex: =0
-        Width: =44
-        X: =773
+        Width: =58.7
+        X: =1031.17
         Y: =611
         ZIndex: =13
 
@@ -123,11 +123,11 @@ Features_4 As screen:
         PressedBorderColor: =Label9_32.BorderColor
         PressedColor: =Label9_32.Color
         PressedFill: =Label9_32.Fill
-        Size: =9
+        Size: =12.01
         Text: ="BANCO DE VALVULAS"
         Visible: =pop1
-        Width: =151
-        X: =427
+        Width: =201.43
+        X: =569.61
         Y: =646
         ZIndex: =23
 
@@ -148,11 +148,11 @@ Features_4 As screen:
         PressedBorderColor: =Label9_33.BorderColor
         PressedColor: =Label9_33.Color
         PressedFill: =Label9_33.Fill
-        Size: =9
+        Size: =12.01
         Text: ="BANCO DE SOLENOIDES"
         Visible: =pop1
-        Width: =151
-        X: =429
+        Width: =201.43
+        X: =572.28
         Y: =694
         ZIndex: =24
 
@@ -174,10 +174,11 @@ Features_4 As screen:
         PressedBorderColor: =Label9_25.BorderColor
         PressedColor: =Label9_25.Color
         PressedFill: =Label9_25.Fill
+        Size: =18.68
         Text: ="ZONA 5"
         Visible: =pop2
-        Width: =123
-        X: =80
+        Width: =164.08
+        X: =106.72
         Y: =436
         ZIndex: =27
 
@@ -187,8 +188,8 @@ Features_4 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =459
         Image: ='TORNAMESA-removebg-preview'
-        Width: =526
-        X: =284
+        Width: =701.68
+        X: =378.85
         Y: =97
         ZIndex: =29
 
@@ -203,13 +204,13 @@ Features_4 As screen:
             BorderColor: =RGBA(255, 255, 255, 1)
             DisabledFill: =Circle2_18.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =144
+            Height: =192.09
             HoverFill: =Circle2_18.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             PressedFill: =Circle2_18.Fill
             TabIndex: =0
-            Width: =262
+            Width: =349.5
             Y: =247
             ZIndex: =8
 
@@ -223,8 +224,8 @@ Features_4 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             TabIndex: =0
-            Width: =41
-            X: =206
+            Width: =54.69
+            X: =274.8
             Y: =300
             ZIndex: =9
 
@@ -236,10 +237,12 @@ Features_4 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
             Height: =74
-            Size: =13
+            PaddingRight: =6.67
+            PaddingTop: =6.67
+            Size: =17.34
             Text: ="TRASLASIÓN TORNAMESA CONTRAPESA"
-            Width: =178
-            X: =32
+            Width: =237.45
+            X: =42.69
             Y: =287
             ZIndex: =26
 
@@ -254,15 +257,15 @@ Features_4 As screen:
             BorderColor: =RGBA(133, 133, 133, 1)
             DisabledFill: =Circle2_9.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =104
+            Height: =138.73
             HoverFill: =Circle2_9.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             PressedFill: =Circle2_9.Fill
             TabIndex: =0
             Tooltip: ="MOTOR"
-            Width: =289
-            X: =735
+            Width: =385.52
+            X: =980.48
             Y: =304
             ZIndex: =10
 
@@ -277,8 +280,8 @@ Features_4 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             TabIndex: =0
             Visible: =false
-            Width: =56
-            X: =710
+            Width: =74.7
+            X: =947.13
             Y: =391
             ZIndex: =11
 
@@ -290,11 +293,13 @@ Features_4 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
             Height: =58
-            Size: =13
+            PaddingRight: =6.67
+            PaddingTop: =6.67
+            Size: =17.34
             Text: ="MOTOR"
             Visible: =false
-            Width: =132
-            X: =578
+            Width: =176.09
+            X: =771.04
             Y: =378
             ZIndex: =25
 
@@ -315,8 +320,8 @@ Features_4 As screen:
             PressedFill: =Rectangle4_14.Fill
             TabIndex: =0
             Visible: =pop4
-            Width: =495
-            X: =475
+            Width: =660.32
+            X: =633.64
             Y: =114
             ZIndex: =16
 
@@ -328,8 +333,8 @@ Features_4 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop4
-            Width: =42
-            X: =494
+            Width: =56.03
+            X: =658.99
             Y: =194
             ZIndex: =17
 
@@ -340,8 +345,8 @@ Features_4 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
-            Width: =531
-            X: =464
+            Width: =708.35
+            X: =618.97
             Y: =4
             ZIndex: =18
 
@@ -356,8 +361,8 @@ Features_4 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop4
-            Width: =62
-            X: =892
+            Width: =82.71
+            X: =1189.91
             Y: =126
             ZIndex: =19
 
@@ -379,12 +384,12 @@ Features_4 As screen:
             PressedBorderColor: =Label8_17.BorderColor
             PressedColor: =Label8_17.Color
             PressedFill: =Label8_17.Fill
-            Size: =13
+            Size: =17.34
             Text: ="MOTOR"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
-            Width: =380
-            X: =494
+            Width: =506.91
+            X: =658.99
             Y: =227
             ZIndex: =21
 
@@ -405,12 +410,12 @@ Features_4 As screen:
             PressedBorderColor: =Label8_16.BorderColor
             PressedColor: =Label8_16.Color
             PressedFill: =Label8_16.Fill
-            Size: =15
+            Size: =20.01
             Text: ="ZONA 1"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
-            Width: =343
-            X: =492
+            Width: =457.56
+            X: =656.32
             Y: =129
             ZIndex: =22
 
@@ -422,8 +427,8 @@ Features_4 As screen:
             Height: =171
             Image: ='Captura de pantalla 2024-05-08 171319-fotor-bg-remover-20240508171657'
             Visible: =pop4
-            Width: =265
-            X: =597
+            Width: =353.51
+            X: =796.39
             Y: =129
             ZIndex: =28
 
@@ -444,8 +449,8 @@ Features_4 As screen:
             PressedFill: =Rectangle4_15.Fill
             TabIndex: =0
             Visible: =pop2
-            Width: =424
-            X: =64
+            Width: =565.61
+            X: =85.38
             Y: =391
             ZIndex: =14
 
@@ -467,13 +472,13 @@ Features_4 As screen:
             PressedBorderColor: =Label9_26.BorderColor
             PressedColor: =Label9_26.Color
             PressedFill: =Label9_26.Fill
-            Size: =12
+            Size: =16.01
             Text: |-
                 ="TRASLASIÓN TORNAMESA CONTRAPESA
                 "
             Visible: =pop2
-            Width: =163
-            X: =80
+            Width: =217.44
+            X: =106.72
             Y: =530
             ZIndex: =15
 
@@ -488,8 +493,8 @@ Features_4 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop2
-            Width: =45
-            X: =400
+            Width: =60.03
+            X: =533.59
             Y: =432
             ZIndex: =20
 

@@ -17,14 +17,14 @@ Features_8 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_6.Fill
             Fill: =RGBA(205, 209, 213, 1)
-            Height: =80
+            Height: =106.72
             HoverFill: =Circle2_6.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             PressedFill: =Circle2_6.Fill
             TabIndex: =0
-            Width: =80
-            X: =617
+            Width: =106.72
+            X: =823.07
             Y: =320
             ZIndex: =24
 
@@ -38,8 +38,8 @@ Features_8 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             TabIndex: =0
-            Width: =55
-            X: =629.9615384615384
+            Width: =73.37
+            X: =840.36
             Y: =332.96153846153845
             ZIndex: =25
 
@@ -56,7 +56,7 @@ Features_8 As screen:
             Height: =44
             OnSelect: =Navigate(Home, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =44
+            Width: =58.7
             ZIndex: =22
 
         icon1_5 As icon.ChevronLeft:
@@ -68,8 +68,8 @@ Features_8 As screen:
             Icon: =Icon.ChevronLeft
             OnSelect: =Navigate(Home, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =20
-            X: =12
+            Width: =26.68
+            X: =16.01
             Y: =6
             ZIndex: =23
 
@@ -84,14 +84,14 @@ Features_8 As screen:
             BorderColor: =RGBA(133, 133, 133, 1)
             DisabledFill: =Circle2_5.Fill
             Fill: =RGBA(205, 209, 213, 1)
-            Height: =80
+            Height: =106.72
             HoverFill: =Circle2_5.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             PressedFill: =Circle2_5.Fill
             TabIndex: =0
-            Width: =80
-            X: =828
+            Width: =106.72
+            X: =1104.54
             Y: =292
             ZIndex: =26
 
@@ -105,8 +105,8 @@ Features_8 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             TabIndex: =0
-            Width: =55
-            X: =841
+            Width: =73.37
+            X: =1121.88
             Y: =298
             ZIndex: =27
 
@@ -121,14 +121,14 @@ Features_8 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_4.Fill
             Fill: =RGBA(205, 209, 213, 1)
-            Height: =80
+            Height: =106.72
             HoverFill: =Circle2_4.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
             PressedFill: =Circle2_4.Fill
             TabIndex: =0
-            Width: =80
-            X: =300
+            Width: =106.72
+            X: =400.2
             Y: =298
             ZIndex: =28
 
@@ -142,8 +142,8 @@ Features_8 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
             TabIndex: =0
-            Width: =55
-            X: =313
+            Width: =73.37
+            X: =417.54
             Y: =311
             ZIndex: =30
 
@@ -158,14 +158,14 @@ Features_8 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_7.Fill
             Fill: =RGBA(205, 209, 213, 1)
-            Height: =80
+            Height: =106.72
             HoverFill: =Circle2_7.Fill
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
             PressedFill: =Circle2_7.Fill
             TabIndex: =0
-            Width: =80
-            X: =761
+            Width: =106.72
+            X: =1015.16
             Y: =612
             ZIndex: =31
 
@@ -179,8 +179,8 @@ Features_8 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
-            Width: =55
-            X: =773.8846153846154
+            Width: =73.37
+            X: =1032.35
             Y: =625.1153846153846
             ZIndex: =32
 
@@ -201,8 +201,8 @@ Features_8 As screen:
             PressedFill: =Rectangle4_9.Fill
             TabIndex: =0
             Visible: =pop2
-            Width: =291
-            X: =356.8961038961039
+            Width: =388.19
+            X: =476.09
             Y: =370.2987012987013
             ZIndex: =37
 
@@ -221,12 +221,12 @@ Features_8 As screen:
             PressedBorderColor: =Label8_7.BorderColor
             PressedColor: =Label8_7.Color
             PressedFill: =Label8_7.Fill
-            Size: =18
+            Size: =24.01
             Text: =First(Filter(Feature,Text(Id)="2")).FeatureTitle
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop2
-            Width: =223.68085106383
-            X: =389.2152528322739
+            Width: =298.39
+            X: =519.21
             Y: =398.4689140646593
             ZIndex: =38
 
@@ -245,11 +245,11 @@ Features_8 As screen:
             PressedBorderColor: =Label9_8.BorderColor
             PressedColor: =Label9_8.Color
             PressedFill: =Label9_8.Fill
-            Size: =13
+            Size: =17.34
             Text: =First(Filter(Feature,Text(Id)="2")).FeatureDescription
             Visible: =pop2
-            Width: =221.744680851064
-            X: =387.0416666666667
+            Width: =295.8
+            X: =516.31
             Y: =488.41666666666685
             ZIndex: =39
 
@@ -264,8 +264,8 @@ Features_8 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop2
-            Width: =28
-            X: =609
+            Width: =37.35
+            X: =812.4
             Y: =380
             ZIndex: =46
 
@@ -286,8 +286,8 @@ Features_8 As screen:
             PressedFill: =Rectangle4_6.Fill
             TabIndex: =0
             Visible: =pop3
-            Width: =291
-            X: =348.6096385542181
+            Width: =388.19
+            X: =465.04
             Y: =346.1469879518089
             ZIndex: =47
 
@@ -306,11 +306,11 @@ Features_8 As screen:
             PressedBorderColor: =Label9_3.BorderColor
             PressedColor: =Label9_3.Color
             PressedFill: =Label9_3.Fill
-            Size: =13
+            Size: =17.34
             Text: =First(Filter(Feature,Text(Id)="3")).FeatureDescription
             Visible: =pop3
-            Width: =212.29727169382318
-            X: =383.04313609116513
+            Width: =283.2
+            X: =510.97
             Y: =435.31425172252193
             ZIndex: =48
 
@@ -329,12 +329,12 @@ Features_8 As screen:
             PressedBorderColor: =Label8_3.BorderColor
             PressedColor: =Label8_3.Color
             PressedFill: =Label8_3.Fill
-            Size: =18
+            Size: =24.01
             Text: =First(Filter(Feature,Text(Id)="3")).FeatureTitle
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop3
-            Width: =223.9556650246306
-            X: =380.65397352958814
+            Width: =298.75
+            X: =507.79
             Y: =373.8612736660939
             ZIndex: =49
 
@@ -346,8 +346,8 @@ Features_8 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop3
-            Width: =44
-            X: =593.0546934992731
+            Width: =58.7
+            X: =791.13
             Y: =348.33380113862193
             ZIndex: =50
 
@@ -362,8 +362,8 @@ Features_8 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop3
-            Width: =28
-            X: =607
+            Width: =37.35
+            X: =809.73
             Y: =356.33380113862193
             ZIndex: =51
 
@@ -385,8 +385,8 @@ Features_8 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop1
-            Width: =28
-            X: =753.445054945055
+            Width: =37.35
+            X: =1005.08
             Y: =389.56522637998904
             ZIndex: =52
 
@@ -398,8 +398,8 @@ Features_8 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop1
-            Width: =44
-            X: =745.445054945055
+            Width: =58.7
+            X: =994.41
             Y: =378.12673144511103
             ZIndex: =53
 
@@ -413,8 +413,8 @@ Features_8 As screen:
             PressedFill: =Rectangle4_10.Fill
             TabIndex: =0
             Visible: =pop1
-            Width: =291
-            X: =501
+            Width: =388.19
+            X: =668.33
             Y: =375
             ZIndex: =54
 
@@ -433,12 +433,12 @@ Features_8 As screen:
             PressedBorderColor: =Label8_8.BorderColor
             PressedColor: =Label8_8.Color
             PressedFill: =Label8_8.Fill
-            Size: =18
+            Size: =24.01
             Text: =First(Filter(Feature,Text(Id)="1")).FeatureTitle
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop1
-            Width: =223.955665024631
-            X: =533.04433497537
+            Width: =298.75
+            X: =711.07
             Y: =404.48128705959203
             ZIndex: =55
 
@@ -457,11 +457,11 @@ Features_8 As screen:
             PressedBorderColor: =Label9_6.BorderColor
             PressedColor: =Label9_6.Color
             PressedFill: =Label9_6.Fill
-            Size: =13
+            Size: =17.34
             Text: =First(Filter(Feature,Text(Id)="1")).FeatureDescription
             Visible: =pop1
-            Width: =212.297271693823
-            X: =535.433497536947
+            Width: =283.2
+            X: =714.26
             Y: =487.99965825158005
             ZIndex: =56
 
@@ -476,8 +476,8 @@ Features_8 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop1
-            Width: =28
-            X: =756.101449275362
+            Width: =37.35
+            X: =1008.63
             Y: =386.898550724638
             ZIndex: =57
 
@@ -486,7 +486,7 @@ Features_8 As screen:
         Fill: =RGBA(100, 118, 132, 1)
         Height: =44
         TabIndex: =0
-        Width: =1024
+        Width: =1366
         ZIndex: =14
 
     Image4_4 As image:
@@ -498,8 +498,8 @@ Features_8 As screen:
         Height: =25
         Image: =x
         OnSelect: =Navigate(Home,ScreenTransition.Fade)
-        Width: =25
-        X: =799
+        Width: =33.35
+        X: =1065.85
         Y: =106
         ZIndex: =15
 
@@ -519,9 +519,9 @@ Features_8 As screen:
         PressedBorderColor: =Label2_6.BorderColor
         PressedColor: =Label2_6.Color
         PressedFill: =Label2_6.Fill
-        Size: =18
+        Size: =24.01
         Text: ="EXCAVADORA"
-        Width: =1024
+        Width: =1366
         ZIndex: =16
 
     Rectangle15_8 As rectangle:
@@ -532,8 +532,8 @@ Features_8 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
         TabIndex: =0
         Visible: =pop2
-        Width: =44
-        X: =582
+        Width: =58.7
+        X: =776.38
         Y: =386
         ZIndex: =33
 
@@ -544,8 +544,8 @@ Features_8 As screen:
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
         TabIndex: =0
-        Width: =44
-        X: =573
+        Width: =58.7
+        X: =764.37
         Y: =387
         ZIndex: =34
 
@@ -566,8 +566,8 @@ Features_8 As screen:
             PressedFill: =Rectangle4_8.Fill
             TabIndex: =0
             Visible: =pop4
-            Width: =234
-            X: =758
+            Width: =312.15
+            X: =1011.16
             Y: =179
             ZIndex: =40
 
@@ -579,8 +579,8 @@ Features_8 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop4
-            Width: =20
-            X: =767
+            Width: =26.68
+            X: =1023.17
             Y: =225
             ZIndex: =43
 
@@ -591,8 +591,8 @@ Features_8 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
-            Width: =251
-            X: =753
+            Width: =334.83
+            X: =1004.49
             Y: =179
             ZIndex: =44
 
@@ -607,8 +607,8 @@ Features_8 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop4
-            Width: =43
-            X: =942
+            Width: =57.36
+            X: =1256.61
             Y: =186
             ZIndex: =45
 
@@ -629,12 +629,12 @@ Features_8 As screen:
             PressedBorderColor: =Label8_9.BorderColor
             PressedColor: =Label8_9.Color
             PressedFill: =Label8_9.Fill
-            Size: =18
+            Size: =24.01
             Text: ="BANCO DE SOLENOIDES"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
-            Width: =162
-            X: =789
+            Width: =216.11
+            X: =1052.51
             Y: =199
             ZIndex: =58
 

@@ -20,7 +20,7 @@ Features_2 As screen:
             Height: =44
             OnSelect: =Navigate(Home, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =44
+            Width: =58.7
             ZIndex: =22
 
         icon1_6 As icon.ChevronLeft:
@@ -32,8 +32,8 @@ Features_2 As screen:
             Icon: =Icon.ChevronLeft
             OnSelect: =Navigate(Features, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =20
-            X: =12
+            Width: =26.68
+            X: =16.01
             Y: =6
             ZIndex: =23
 
@@ -42,7 +42,7 @@ Features_2 As screen:
         Fill: =RGBA(100, 118, 132, 1)
         Height: =44
         TabIndex: =0
-        Width: =1024
+        Width: =1366
         ZIndex: =14
 
     Image4_5 As image:
@@ -54,8 +54,8 @@ Features_2 As screen:
         Height: =25
         Image: =x
         OnSelect: =Navigate(Home,ScreenTransition.Fade)
-        Width: =25
-        X: =799
+        Width: =33.35
+        X: =1065.85
         Y: =106
         ZIndex: =15
 
@@ -75,10 +75,10 @@ Features_2 As screen:
         PressedBorderColor: =Label2_8.BorderColor
         PressedColor: =Label2_8.Color
         PressedFill: =Label2_8.Fill
-        Size: =18
+        Size: =24.01
         Text: |-
             ="EXCAVADORA: Motor y Radiador"
-        Width: =1024
+        Width: =1366
         ZIndex: =16
 
     Rectangle15_13 As rectangle:
@@ -89,8 +89,8 @@ Features_2 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
         TabIndex: =0
         Visible: =pop2
-        Width: =44
-        X: =782
+        Width: =58.7
+        X: =1043.18
         Y: =610
         ZIndex: =33
 
@@ -101,8 +101,8 @@ Features_2 As screen:
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
         TabIndex: =0
-        Width: =44
-        X: =773
+        Width: =58.7
+        X: =1031.17
         Y: =611
         ZIndex: =34
 
@@ -123,11 +123,11 @@ Features_2 As screen:
         PressedBorderColor: =Label9_30.BorderColor
         PressedColor: =Label9_30.Color
         PressedFill: =Label9_30.Fill
-        Size: =9
+        Size: =12.01
         Text: ="BANCO DE VALVULAS"
         Visible: =pop1
-        Width: =151
-        X: =427
+        Width: =201.43
+        X: =569.61
         Y: =646
         ZIndex: =62
 
@@ -148,11 +148,11 @@ Features_2 As screen:
         PressedBorderColor: =Label9_31.BorderColor
         PressedColor: =Label9_31.Color
         PressedFill: =Label9_31.Fill
-        Size: =9
+        Size: =12.01
         Text: ="BANCO DE SOLENOIDES"
         Visible: =pop1
-        Width: =151
-        X: =429
+        Width: =201.43
+        X: =572.28
         Y: =694
         ZIndex: =63
 
@@ -174,11 +174,11 @@ Features_2 As screen:
         PressedBorderColor: =Label9_24.BorderColor
         PressedColor: =Label9_24.Color
         PressedFill: =Label9_24.Fill
-        Size: =10
+        Size: =13.34
         Text: ="ZONA 1"
         Visible: =pop2
-        Width: =123
-        X: =80
+        Width: =164.08
+        X: =106.72
         Y: =436
         ZIndex: =74
 
@@ -193,15 +193,15 @@ Features_2 As screen:
             BorderColor: =RGBA(133, 133, 133, 1)
             DisabledFill: =Circle2_8.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =104
+            Height: =138.73
             HoverFill: =Circle2_8.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             PressedFill: =Circle2_8.Fill
             TabIndex: =0
             Tooltip: ="MOTOR"
-            Width: =289
-            X: =510
+            Width: =385.52
+            X: =680.33
             Y: =355
             ZIndex: =26
 
@@ -215,8 +215,8 @@ Features_2 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             TabIndex: =0
-            Width: =56
-            X: =710
+            Width: =74.7
+            X: =947.13
             Y: =391
             ZIndex: =27
 
@@ -228,10 +228,12 @@ Features_2 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
             Height: =58
-            Size: =13
+            PaddingRight: =6.67
+            PaddingTop: =6.67
+            Size: =17.34
             Text: ="MOTOR"
-            Width: =132
-            X: =578
+            Width: =176.09
+            X: =771.04
             Y: =378
             ZIndex: =72
 
@@ -246,14 +248,14 @@ Features_2 As screen:
             BorderColor: =RGBA(255, 255, 255, 1)
             DisabledFill: =Circle2_11.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =101
+            Height: =134.73
             HoverFill: =Circle2_11.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             PressedFill: =Circle2_11.Fill
             TabIndex: =0
-            Width: =258
-            X: =84
+            Width: =344.17
+            X: =112.05
             Y: =520
             ZIndex: =24
 
@@ -267,8 +269,8 @@ Features_2 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             TabIndex: =0
-            Width: =44
-            X: =270
+            Width: =58.7
+            X: =360.18
             Y: =545
             ZIndex: =25
 
@@ -280,10 +282,12 @@ Features_2 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
             Height: =50
-            Size: =13
+            PaddingRight: =6.67
+            PaddingTop: =6.67
+            Size: =17.34
             Text: ="RADIADOR"
-            Width: =124
-            X: =133
+            Width: =165.41
+            X: =177.42
             Y: =550
             ZIndex: =73
 
@@ -304,8 +308,8 @@ Features_2 As screen:
             PressedFill: =Rectangle4_12.Fill
             TabIndex: =0
             Visible: =pop4
-            Width: =495
-            X: =475
+            Width: =660.32
+            X: =633.64
             Y: =114
             ZIndex: =40
 
@@ -317,8 +321,8 @@ Features_2 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop4
-            Width: =42
-            X: =494
+            Width: =56.03
+            X: =658.99
             Y: =194
             ZIndex: =43
 
@@ -329,8 +333,8 @@ Features_2 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
-            Width: =531
-            X: =464
+            Width: =708.35
+            X: =618.97
             Y: =4
             ZIndex: =44
 
@@ -345,8 +349,8 @@ Features_2 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop4
-            Width: =62
-            X: =892
+            Width: =82.71
+            X: =1189.91
             Y: =126
             ZIndex: =45
 
@@ -368,12 +372,12 @@ Features_2 As screen:
             PressedBorderColor: =Label8_15.BorderColor
             PressedColor: =Label8_15.Color
             PressedFill: =Label8_15.Fill
-            Size: =13
+            Size: =17.34
             Text: ="MOTOR"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
-            Width: =380
-            X: =494
+            Width: =506.91
+            X: =658.99
             Y: =227
             ZIndex: =58
 
@@ -394,12 +398,12 @@ Features_2 As screen:
             PressedBorderColor: =Label8_14.BorderColor
             PressedColor: =Label8_14.Color
             PressedFill: =Label8_14.Fill
-            Size: =15
+            Size: =20.01
             Text: ="ZONA 1"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
-            Width: =343
-            X: =492
+            Width: =457.56
+            X: =656.32
             Y: =129
             ZIndex: =60
 
@@ -411,8 +415,8 @@ Features_2 As screen:
             Height: =171
             Image: ='Captura de pantalla 2024-05-08 171319-fotor-bg-remover-20240508171657'
             Visible: =pop4
-            Width: =265
-            X: =597
+            Width: =353.51
+            X: =796.39
             Y: =129
             ZIndex: =75
 
@@ -433,8 +437,8 @@ Features_2 As screen:
             PressedFill: =Rectangle4_13.Fill
             TabIndex: =0
             Visible: =pop2
-            Width: =424
-            X: =68
+            Width: =565.61
+            X: =90.71
             Y: =421
             ZIndex: =37
 
@@ -456,13 +460,13 @@ Features_2 As screen:
             PressedBorderColor: =Label9_23.BorderColor
             PressedColor: =Label9_23.Color
             PressedFill: =Label9_23.Fill
-            Size: =10
+            Size: =13.34
             Text: |-
                 ="RADIADOR  Presione
                 "
             Visible: =pop2
-            Width: =163
-            X: =84
+            Width: =217.44
+            X: =112.05
             Y: =550
             ZIndex: =39
 
@@ -477,8 +481,8 @@ Features_2 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop2
-            Width: =45
-            X: =400
+            Width: =60.03
+            X: =533.59
             Y: =432
             ZIndex: =46
 
@@ -489,8 +493,8 @@ Features_2 As screen:
             Height: =241
             Image: ='Captura de pantalla 2024-05-09 104446-fotor-bg-remover-20240509105347'
             Visible: =pop2
-            Width: =150
-            X: =226
+            Width: =200.1
+            X: =301.48
             Y: =454
             ZIndex: =76
 

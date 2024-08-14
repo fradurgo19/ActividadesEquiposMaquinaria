@@ -17,7 +17,7 @@ Video As screen:
         Reset: =a_start
         ShowControls: =false
         Start: =a_start
-        Width: =1024
+        Width: =1366
         ZIndex: =1
 
     Group16 As group:
@@ -33,8 +33,8 @@ Video As screen:
             Height: =51.777777777777835
             OnSelect: =Navigate(Home,ScreenTransition.Fade)
             TabIndex: =0
-            Width: =51.77777777777783
-            X: =972.2222222222222
+            Width: =69.07
+            X: =1296.93
             Y: =1.1111111111111107
             ZIndex: =3
 
@@ -47,8 +47,8 @@ Video As screen:
             Icon: =Icon.Cancel
             OnSelect: =Navigate(Home,ScreenTransition.Fade)
             TabIndex: =0
-            Width: =32
-            X: =982.1111111111111
+            Width: =42.69
+            X: =1310.12
             Y: =11.000000000000028
             ZIndex: =4
 

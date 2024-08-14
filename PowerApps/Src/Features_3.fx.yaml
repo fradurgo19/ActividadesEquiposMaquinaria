@@ -12,7 +12,7 @@ Features_3 As screen:
         Fill: =RGBA(100, 118, 132, 1)
         Height: =44
         TabIndex: =0
-        Width: =1024
+        Width: =1366
         ZIndex: =2
 
     Label2_12 As label:
@@ -31,10 +31,11 @@ Features_3 As screen:
         PressedBorderColor: =Label2_12.BorderColor
         PressedColor: =Label2_12.Color
         PressedFill: =Label2_12.Fill
+        Size: =18.68
         Text: |-
             ="EXCAVADORA: Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
-        Width: =961
-        X: =62
+        Width: =1281.96
+        X: =82.71
         ZIndex: =3
 
     Group10_9 As group:
@@ -50,7 +51,7 @@ Features_3 As screen:
             Height: =44
             OnSelect: =Navigate(Home, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =44
+            Width: =58.7
             ZIndex: =4
 
         icon1_10 As icon.ChevronLeft:
@@ -62,8 +63,8 @@ Features_3 As screen:
             Icon: =Icon.ChevronLeft
             OnSelect: =Navigate(Features, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =20
-            X: =12
+            Width: =26.68
+            X: =16.01
             Y: =6
             ZIndex: =5
 
@@ -84,11 +85,11 @@ Features_3 As screen:
         PressedBorderColor: =Label9_73.BorderColor
         PressedColor: =Label9_73.Color
         PressedFill: =Label9_73.Fill
-        Size: =10
+        Size: =13.34
         Text: ="BOMBA PILOTO"
         Visible: =pop3
-        Width: =124
-        X: =219
+        Width: =165.41
+        X: =292.14
         Y: =219
         ZIndex: =13
 
@@ -96,14 +97,14 @@ Features_3 As screen:
         BorderColor: =RGBA(204, 204, 204, 1)
         DisabledFill: =Circle2_37.Fill
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =80
+        Height: =106.72
         HoverFill: =Circle2_37.Fill
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
         PressedFill: =Circle2_37.Fill
         TabIndex: =0
-        Width: =213
-        X: =477
+        Width: =284.14
+        X: =636.31
         Y: =336
         ZIndex: =23
 
@@ -117,8 +118,8 @@ Features_3 As screen:
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
-        Width: =43
-        X: =488
+        Width: =57.36
+        X: =650.98
         Y: =356
         ZIndex: =24
 
@@ -132,10 +133,12 @@ Features_3 As screen:
         Height: =35
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop6:false})
-        Size: =10
+        PaddingRight: =6.67
+        PaddingTop: =6.67
+        Size: =13.34
         Text: ="Tanque Combustible"
-        Width: =133
-        X: =531
+        Width: =177.42
+        X: =708.35
         Y: =359
         ZIndex: =25
 
@@ -157,8 +160,8 @@ Features_3 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop1
-            Width: =28
-            X: =986
+            Width: =37.35
+            X: =1315.31
             Y: =60
             ZIndex: =8
 
@@ -170,8 +173,8 @@ Features_3 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop1
-            Width: =44
-            X: =978
+            Width: =58.7
+            X: =1304.64
             Y: =53
             ZIndex: =9
 
@@ -185,8 +188,8 @@ Features_3 As screen:
             PressedFill: =Rectangle4_29.Fill
             TabIndex: =0
             Visible: =pop1
-            Width: =334
-            X: =690
+            Width: =445.55
+            X: =920.45
             Y: =51
             ZIndex: =10
 
@@ -205,12 +208,12 @@ Features_3 As screen:
             PressedBorderColor: =Label8_44.BorderColor
             PressedColor: =Label8_44.Color
             PressedFill: =Label8_44.Fill
-            Size: =15
+            Size: =20.01
             Text: ="ZONA 2"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop1
-            Width: =209
-            X: =702
+            Width: =278.8
+            X: =936.46
             Y: =65
             ZIndex: =11
 
@@ -225,8 +228,8 @@ Features_3 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
             Visible: =pop1
-            Width: =53
-            X: =964
+            Width: =70.7
+            X: =1285.96
             Y: =59
             ZIndex: =12
 
@@ -248,11 +251,11 @@ Features_3 As screen:
             PressedBorderColor: =Label9_51.BorderColor
             PressedColor: =Label9_51.Color
             PressedFill: =Label9_51.Fill
-            Size: =10
+            Size: =13.34
             Text: ="MOTOR DE GIRO Y REDUCTOR DE GIRO"
             Visible: =pop1
-            Width: =149
-            X: =700
+            Width: =198.76
+            X: =933.79
             Y: =104
             ZIndex: =20
 
@@ -262,7 +265,8 @@ Features_3 As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             Image: ='Giro-fotor-bg-remover-20240509113834'
             Visible: =pop1
-            X: =863
+            Width: =133.4
+            X: =1151.23
             Y: =80
             ZIndex: =44
 
@@ -283,8 +287,8 @@ Features_3 As screen:
             PressedFill: =Rectangle4_34.Fill
             TabIndex: =0
             Visible: =pop2
-            Width: =405
-            X: =265
+            Width: =540.26
+            X: =353.51
             Y: =36
             ZIndex: =16
 
@@ -303,12 +307,12 @@ Features_3 As screen:
             PressedBorderColor: =Label8_52.BorderColor
             PressedColor: =Label8_52.Color
             PressedFill: =Label8_52.Fill
-            Size: =18
+            Size: =24.01
             Text: ="ZONA 2"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop2
-            Width: =132
-            X: =315
+            Width: =176.09
+            X: =420.21
             Y: =51
             ZIndex: =17
 
@@ -330,12 +334,12 @@ Features_3 As screen:
             PressedBorderColor: =Label9_97.BorderColor
             PressedColor: =Label9_97.Color
             PressedFill: =Label9_97.Fill
-            Size: =11
+            Size: =14.67
             Text: ="TANQUE HIDRAULICO"
             Tooltip: ="Seleccione"
             Visible: =pop2
-            Width: =195
-            X: =305
+            Width: =260.13
+            X: =406.87
             Y: =111
             ZIndex: =18
 
@@ -350,8 +354,8 @@ Features_3 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop2
-            Width: =35
-            X: =619
+            Width: =46.69
+            X: =825.74
             Y: =51
             ZIndex: =19
 
@@ -361,7 +365,8 @@ Features_3 As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             Image: ='Tanque-fotor-bg-remover-2024050912241'
             Visible: =pop2
-            X: =502
+            Width: =133.4
+            X: =669.66
             Y: =53
             ZIndex: =45
 
@@ -382,8 +387,8 @@ Features_3 As screen:
             PressedFill: =Rectangle4_35.Fill
             TabIndex: =0
             Visible: =pop3
-            Width: =405
-            X: =481
+            Width: =540.26
+            X: =641.65
             Y: =424
             ZIndex: =26
 
@@ -402,12 +407,12 @@ Features_3 As screen:
             PressedBorderColor: =Label8_53.BorderColor
             PressedColor: =Label8_53.Color
             PressedFill: =Label8_53.Fill
-            Size: =18
+            Size: =24.01
             Text: ="ZONA 2"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop3
-            Width: =132
-            X: =525
+            Width: =176.09
+            X: =700.34
             Y: =435
             ZIndex: =27
 
@@ -429,12 +434,12 @@ Features_3 As screen:
             PressedBorderColor: =Label9_98.BorderColor
             PressedColor: =Label9_98.Color
             PressedFill: =Label9_98.Fill
-            Size: =11
+            Size: =14.67
             Text: ="TANQUE COMBUSTIBLE"
             Tooltip: ="Seleccione"
             Visible: =pop3
-            Width: =188
-            X: =500
+            Width: =250.79
+            X: =666.99
             Y: =535
             ZIndex: =28
 
@@ -449,8 +454,8 @@ Features_3 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop3
-            Width: =35
-            X: =829
+            Width: =46.69
+            X: =1105.87
             Y: =435
             ZIndex: =29
 
@@ -461,8 +466,8 @@ Features_3 As screen:
             Height: =123
             Image: ='spare-part-fuel-tank-Hitachi-Serbatoio-Gasolio---1_common--15091623231963919300-fotor-bg-remover-2024050912346'
             Visible: =pop3
-            Width: =113
-            X: =700
+            Width: =150.74
+            X: =933.79
             Y: =454
             ZIndex: =46
 
@@ -483,8 +488,8 @@ Features_3 As screen:
             PressedFill: =Rectangle4_36.Fill
             TabIndex: =0
             Visible: =pop4
-            Width: =413
-            X: =118
+            Width: =550.94
+            X: =157.41
             Y: =541
             ZIndex: =33
 
@@ -503,12 +508,12 @@ Features_3 As screen:
             PressedBorderColor: =Label8_54.BorderColor
             PressedColor: =Label8_54.Color
             PressedFill: =Label8_54.Fill
-            Size: =18
+            Size: =24.01
             Text: ="ZONA 2"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
-            Width: =229
-            X: =145
+            Width: =305.48
+            X: =193.43
             Y: =550
             ZIndex: =34
 
@@ -530,12 +535,12 @@ Features_3 As screen:
             PressedBorderColor: =Label9_99.BorderColor
             PressedColor: =Label9_99.Color
             PressedFill: =Label9_99.Fill
-            Size: =11
+            Size: =14.67
             Text: ="Banco de Válvulas"
             Tooltip: ="Seleccione"
             Visible: =pop4
-            Width: =177
-            X: =140
+            Width: =236.12
+            X: =186.76
             Y: =621
             ZIndex: =35
 
@@ -550,8 +555,8 @@ Features_3 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop4
-            Width: =35
-            X: =479
+            Width: =46.69
+            X: =638.98
             Y: =550
             ZIndex: =36
 
@@ -562,8 +567,8 @@ Features_3 As screen:
             Height: =96
             Image: ='Control-Valves-fotor-bg-remover-20240509123915'
             Visible: =pop4
-            Width: =181
-            X: =321
+            Width: =241.45
+            X: =428.21
             Y: =586
             ZIndex: =47
 
@@ -579,12 +584,12 @@ Features_3 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_37.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =126
+            Height: =145
             HoverFill: =Rectangle4_37.Fill
             PressedFill: =Rectangle4_37.Fill
             TabIndex: =0
             Visible: =pop5
-            Width: =405
+            Width: =540.26
             Y: =35
             ZIndex: =40
 
@@ -592,7 +597,7 @@ Features_3 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =29
+            Height: =39
             HoverBorderColor: =Label8_55.BorderColor
             HoverColor: =Label8_55.Color
             HoverFill: =Label8_55.Fill
@@ -603,12 +608,12 @@ Features_3 As screen:
             PressedBorderColor: =Label8_55.BorderColor
             PressedColor: =Label8_55.Color
             PressedFill: =Label8_55.Fill
-            Size: =18
+            Size: =24.01
             Text: ="ZONA 2"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop5
-            Width: =132
-            X: =44
+            Width: =176.09
+            X: =58.7
             Y: =47
             ZIndex: =41
 
@@ -630,13 +635,13 @@ Features_3 As screen:
             PressedBorderColor: =Label9_100.BorderColor
             PressedColor: =Label9_100.Color
             PressedFill: =Label9_100.Fill
-            Size: =11
+            Size: =14.67
             Text: ="BANCO DE SOLENOIDE"
             Tooltip: ="Seleccione"
             Visible: =pop5
-            Width: =211
-            X: =12
-            Y: =93
+            Width: =281.47
+            X: =16
+            Y: =111
             ZIndex: =42
 
         icon12_28 As icon.Cancel:
@@ -650,8 +655,8 @@ Features_3 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false})
             TabIndex: =0
             Visible: =pop5
-            Width: =35
-            X: =348
+            Width: =46.69
+            X: =464.23
             Y: =47
             ZIndex: =43
 
@@ -662,8 +667,8 @@ Features_3 As screen:
             Height: =92
             Image: =Solenoide
             Visible: =pop5
-            Width: =132
-            X: =205
+            Width: =176.09
+            X: =273.47
             Y: =60
             ZIndex: =48
 
@@ -671,14 +676,14 @@ Features_3 As screen:
         BorderColor: =RGBA(204, 204, 204, 1)
         DisabledFill: =Circle2_57.Fill
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =80
+        Height: =106.72
         HoverFill: =Circle2_57.Fill
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
         PressedFill: =Circle2_57.Fill
         TabIndex: =0
-        Width: =213
-        X: =270
+        Width: =284.14
+        X: =360.18
         Y: =295
         ZIndex: =50
 
@@ -692,8 +697,8 @@ Features_3 As screen:
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
         TabIndex: =0
-        Width: =43
-        X: =281
+        Width: =57.36
+        X: =374.85
         Y: =315
         ZIndex: =51
 
@@ -707,10 +712,12 @@ Features_3 As screen:
         Height: =35
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
-        Size: =10
+        PaddingRight: =6.67
+        PaddingTop: =6.67
+        Size: =13.34
         Text: ="Center Joint"
-        Width: =133
-        X: =324
+        Width: =177.42
+        X: =432.21
         Y: =318
         ZIndex: =52
 
@@ -724,8 +731,8 @@ Features_3 As screen:
         PressedFill: =Rectangle4_61.Fill
         TabIndex: =0
         Visible: =pop6
-        Width: =405
-        X: =421
+        Width: =540.26
+        X: =561.61
         Y: =472
         ZIndex: =53
 
@@ -744,12 +751,12 @@ Features_3 As screen:
         PressedBorderColor: =Label8_78.BorderColor
         PressedColor: =Label8_78.Color
         PressedFill: =Label8_78.Fill
-        Size: =18
+        Size: =24.01
         Text: ="ZONA 2"
         VerticalAlign: =VerticalAlign.Top
         Visible: =pop6
-        Width: =132
-        X: =465
+        Width: =176.09
+        X: =620.3
         Y: =483
         ZIndex: =54
 
@@ -771,12 +778,12 @@ Features_3 As screen:
         PressedBorderColor: =Label9_121.BorderColor
         PressedColor: =Label9_121.Color
         PressedFill: =Label9_121.Fill
-        Size: =11
+        Size: =14.67
         Text: ="Center Joint"
         Tooltip: ="Seleccione"
         Visible: =pop6
-        Width: =188
-        X: =454
+        Width: =250.79
+        X: =605.63
         Y: =534
         ZIndex: =55
 
@@ -791,8 +798,8 @@ Features_3 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Visible: =pop6
-        Width: =35
-        X: =769
+        Width: =46.69
+        X: =1025.83
         Y: =483
         ZIndex: =56
 
@@ -807,14 +814,14 @@ Features_3 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_31.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =92
+            Height: =122.73
             HoverFill: =Circle2_31.Fill
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             PressedFill: =Circle2_31.Fill
             TabIndex: =0
-            Width: =216
-            X: =488
+            Width: =288.14
+            X: =650.98
             Y: =211
             ZIndex: =6
 
@@ -828,8 +835,8 @@ Features_3 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =37
-            X: =495
+            Width: =49.36
+            X: =660.32
             Y: =233
             ZIndex: =7
 
@@ -840,13 +847,15 @@ Features_3 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
-            Height: =35
+            Height: =54
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false}) 
-            Size: =10
+            PaddingRight: =6.67
+            PaddingTop: =6.67
+            Size: =13.34
             Text: ="Motor de Giro/ Reductor de Giro"
-            Width: =143
-            X: =541
+            Width: =190.76
+            X: =721.69
             Y: =241
             ZIndex: =21
 
@@ -861,14 +870,14 @@ Features_3 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_32.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =80
+            Height: =106.72
             HoverFill: =Circle2_32.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             PressedFill: =Circle2_32.Fill
             TabIndex: =0
-            Width: =213
-            X: =263
+            Width: =284.14
+            X: =350.84
             Y: =167
             ZIndex: =14
 
@@ -882,8 +891,8 @@ Features_3 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =43
-            X: =274
+            Width: =57.36
+            X: =365.51
             Y: =187
             ZIndex: =15
 
@@ -897,10 +906,12 @@ Features_3 As screen:
             Height: =35
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
-            Size: =10
+            PaddingRight: =6.67
+            PaddingTop: =6.67
+            Size: =13.34
             Text: ="Tanque Hidraulico"
-            Width: =133
-            X: =317
+            Width: =177.42
+            X: =422.87
             Y: =190
             ZIndex: =22
 
@@ -915,14 +926,14 @@ Features_3 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_38.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =93
+            Height: =124.06
             HoverFill: =Circle2_38.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             PressedFill: =Circle2_38.Fill
             TabIndex: =0
-            Width: =291
-            X: =83
+            Width: =388.19
+            X: =110.72
             Y: =511
             ZIndex: =30
 
@@ -936,8 +947,8 @@ Features_3 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =58
-            X: =94
+            Width: =77.37
+            X: =125.39
             Y: =531
             ZIndex: =31
 
@@ -950,10 +961,12 @@ Features_3 As screen:
             FontWeight: =FontWeight.Bold
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
-            Size: =10
+            PaddingRight: =6.67
+            PaddingTop: =6.67
+            Size: =13.34
             Text: ="Banco de Vávulas"
-            Width: =181
-            X: =137
+            Width: =241.45
+            X: =182.76
             Y: =534
             ZIndex: =32
 
@@ -968,14 +981,14 @@ Features_3 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_39.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =80
+            Height: =106.72
             HoverFill: =Circle2_39.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             PressedFill: =Circle2_39.Fill
             TabIndex: =0
-            Width: =213
-            X: =32
+            Width: =284.14
+            X: =42.69
             Y: =301
             ZIndex: =37
 
@@ -989,8 +1002,8 @@ Features_3 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             TabIndex: =0
-            Width: =43
-            X: =43
+            Width: =57.36
+            X: =57.36
             Y: =321
             ZIndex: =38
 
@@ -1001,13 +1014,15 @@ Features_3 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
-            Height: =35
+            Height: =70
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
-            Size: =10
+            PaddingRight: =6.67
+            PaddingTop: =6.67
+            Size: =13.34
             Text: ="BANCO DE SOLENOIDE"
-            Width: =133
-            X: =86
+            Width: =177.42
+            X: =114.72
             Y: =324
             ZIndex: =39
 
