@@ -1,5 +1,5 @@
 Features_7 As screen:
-    BackgroundImage: ='hitachi-zx200-5g-excavators-removebg-preview'
+    BackgroundImage: =
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
@@ -322,8 +322,8 @@ Features_7 As screen:
             TabIndex: =0
             Visible: =pop2
             Width: =347
-            X: =213
-            Y: =420
+            X: =270
+            Y: =427
             ZIndex: =16
 
         Label8_74 As label:
@@ -346,8 +346,8 @@ Features_7 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop2
             Width: =113
-            X: =257
-            Y: =427
+            X: =314
+            Y: =434
             ZIndex: =17
 
         Label9_117 As label:
@@ -373,8 +373,8 @@ Features_7 As screen:
             Tooltip: ="Seleccione"
             Visible: =pop2
             Width: =167
-            X: =248
-            Y: =480
+            X: =305
+            Y: =487
             ZIndex: =18
 
         icon12_49 As icon.Cancel:
@@ -389,8 +389,8 @@ Features_7 As screen:
             TabIndex: =0
             Visible: =pop2
             Width: =29
-            X: =497
-            Y: =433
+            X: =554
+            Y: =440
             ZIndex: =19
 
     Rectangle4_58 As rectangle:
