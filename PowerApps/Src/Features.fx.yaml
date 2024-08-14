@@ -463,7 +463,7 @@ Features As screen:
             Height: =47
             OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
             Size: =10
-            Text: ="ZONA 1 MOTOR RADIADOR"
+            Text: ="ZONA 1 Motor y Radiador"
             Tooltip: ="ZONA 1"
             Width: =82
             X: =836
@@ -712,8 +712,8 @@ Features As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             PressedFill: =Circle2_14.Fill
             TabIndex: =0
-            Width: =199
-            X: =323
+            Width: =281
+            X: =241
             Y: =288
             ZIndex: =82
 
@@ -726,8 +726,8 @@ Features As screen:
             Icon: =Icon.Add
             OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =44
-            X: =455
+            Width: =62
+            X: =427
             Y: =332
             ZIndex: =83
 
@@ -736,18 +736,16 @@ Features As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =158
+            Height: =180
             OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
             Size: =11
             Text: |-
                 ="ZONA 4 
-                BOMBA HIDRAULICA, COMBUSTIBLE
-                FILTROS 
-                BANCO
+                Bombas hidráulicas, Bomba Piloto, Filtros de motor, Filtro piloto, Banco de solenoides y Bomba transferencia combustible
                 "
             Tooltip: ="ZONA 1"
-            Width: =122
-            X: =343
+            Width: =182
+            X: =270
             Y: =299
             ZIndex: =84
 
@@ -795,9 +793,7 @@ Features As screen:
             Height: =98
             OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
             Size: =10
-            Text: |-
-                ="ZONA 2 TANQUES BANCOS
-                GIRO BOMBAS"
+            Text: ="ZONA 2 Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
             Tooltip: ="ZONA 1"
             Width: =145
             X: =816
