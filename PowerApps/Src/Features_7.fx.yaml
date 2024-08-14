@@ -171,8 +171,8 @@ Features_7 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:true})
         TabIndex: =0
         Width: =42.69
-        X: =520.25
-        Y: =178
+        X: =519
+        Y: =190
         ZIndex: =45
 
     Group9_5 As group:
@@ -285,11 +285,11 @@ Features_7 As screen:
             PressedColor: =Label9_54.Color
             PressedFill: =Label9_54.Fill
             Size: =13.34
-            Text: ="Silla"
+            Text: ="Silla 👆"
             Visible: =pop1
             Width: =198.76
-            X: =525.59
-            Y: =553
+            X: =538
+            Y: =543
             ZIndex: =20
 
     Label1_34 As label:
@@ -339,7 +339,7 @@ Features_7 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =27
+            Height: =46
             HoverBorderColor: =Label8_74.BorderColor
             HoverColor: =Label8_74.Color
             HoverFill: =Label8_74.Fill
@@ -378,7 +378,7 @@ Features_7 As screen:
             PressedColor: =Label9_117.Color
             PressedFill: =Label9_117.Fill
             Size: =14.67
-            Text: ="Joystick"
+            Text: ="Joystick 👆"
             Tooltip: ="Seleccione"
             Visible: =pop2
             Width: =222.78
@@ -663,7 +663,7 @@ Features_7 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =28
+            Height: =45
             HoverBorderColor: =Label8_75.BorderColor
             HoverColor: =Label8_75.Color
             HoverFill: =Label8_75.Fill
@@ -702,7 +702,7 @@ Features_7 As screen:
             PressedColor: =Label9_118.Color
             PressedFill: =Label9_118.Fill
             Size: =14.67
-            Text: ="Cabina"
+            Text: ="Cabina 👆"
             Tooltip: ="Seleccione"
             Visible: =pop5
             Width: =118.72
@@ -745,7 +745,7 @@ Features_7 As screen:
         PressedColor: =Label9_56.Color
         PressedFill: =Label9_56.Fill
         Size: =13.34
-        Text: ="Monitor"
+        Text: ="Monitor 👆"
         Visible: =pop6
         Width: =198.76
         X: =262.79
@@ -835,12 +835,12 @@ Features_7 As screen:
             Color: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =27
+            Height: =45
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =45.36
+            Width: =52
             X: =807.06
             Y: =285
             ZIndex: =15
@@ -949,12 +949,12 @@ Features_7 As screen:
             Color: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =29
+            Height: =40
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             TabIndex: =0
-            Width: =37.35
+            Width: =37
             X: =1032.5
             Y: =123
             ZIndex: =38

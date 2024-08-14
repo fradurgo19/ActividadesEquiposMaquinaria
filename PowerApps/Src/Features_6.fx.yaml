@@ -321,21 +321,21 @@ Features_6 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_52.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =168
+            Height: =127
             HoverFill: =Rectangle4_52.Fill
             PressedFill: =Rectangle4_52.Fill
             TabIndex: =0
             Visible: =pop2
             Width: =398
             X: =553
-            Y: =263
+            Y: =304
             ZIndex: =16
 
         Label8_70 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =47
+            Height: =36
             HoverBorderColor: =Label8_70.BorderColor
             HoverColor: =Label8_70.Color
             HoverFill: =Label8_70.Fill
@@ -352,7 +352,7 @@ Features_6 As screen:
             Visible: =pop2
             Width: =130
             X: =603
-            Y: =275
+            Y: =313
             ZIndex: =17
 
         Label9_113 As label:
@@ -360,7 +360,7 @@ Features_6 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =35
+            Height: =26
             HoverBorderColor: =Label9_113.BorderColor
             HoverColor: =Label9_113.Color
             HoverFill: =Label9_113.Fill
@@ -379,7 +379,7 @@ Features_6 As screen:
             Visible: =pop2
             Width: =192
             X: =593
-            Y: =367
+            Y: =383
             ZIndex: =18
 
         icon12_44 As icon.Cancel:
@@ -387,7 +387,7 @@ Features_6 As screen:
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =36
+            Height: =27
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
@@ -395,7 +395,7 @@ Features_6 As screen:
             Visible: =pop2
             Width: =33
             X: =879
-            Y: =286
+            Y: =321
             ZIndex: =19
 
     Rectangle4_33 As rectangle:
@@ -439,7 +439,7 @@ Features_6 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =31
+            Height: =53
             HoverBorderColor: =Label8_72.BorderColor
             HoverColor: =Label8_72.Color
             HoverFill: =Label8_72.Fill
@@ -454,7 +454,7 @@ Features_6 As screen:
             Text: ="ZONA 8"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop3
-            Width: =117
+            Width: =122
             X: =334
             Y: =630
             ZIndex: =27
