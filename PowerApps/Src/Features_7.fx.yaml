@@ -101,6 +101,7 @@ Features_7 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         PressedFill: =Circle2_53.Fill
         TabIndex: =0
+        Visible: =false
         Width: =213
         X: =79
         Y: =536
@@ -135,6 +136,7 @@ Features_7 As screen:
         Text: |-
             ="Balde
             "
+        Visible: =false
         Width: =97
         X: =123
         Y: =558
@@ -870,6 +872,7 @@ Features_7 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false})
             PressedFill: =Circle2_54.Fill
             TabIndex: =0
+            Visible: =false
             Width: =213
             X: =23
             Y: =437
@@ -885,6 +888,7 @@ Features_7 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             TabIndex: =0
+            Visible: =false
             Width: =43
             X: =190
             Y: =459
@@ -902,6 +906,7 @@ Features_7 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             Size: =10
             Text: ="Cilindro del Balde"
+            Visible: =false
             Width: =133
             X: =50
             Y: =457
