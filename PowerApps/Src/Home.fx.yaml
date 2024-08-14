@@ -1,42 +1,8 @@
 Home As screen:
-    BackgroundImage: =
+    BackgroundImage: ='Captura de pantalla 2024-04-04 130223_1'
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     Width: =Max(App.Width, App.DesignWidth)
-
-    Group6 As group:
-        Height: =539
-        Width: =1024
-        X: =0
-        Y: =-1.33580806970312e-15
-        ZIndex: =1
-
-        Image1 As image:
-            ApplyEXIFOrientation: =false
-            AutoDisableOnSelect: =false
-            BorderColor: =RGBA(32, 54, 71, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =537
-            Image: ='Captura de pantalla 2024-04-24 090742'
-            OnSelect: =Navigate(Video, ScreenTransition.Fade)
-            Width: =1024
-            Y: =44
-            ZIndex: =8
-
-        Image2_1 As image:
-            ApplyEXIFOrientation: =false
-            AutoDisableOnSelect: =false
-            BorderColor: =RGBA(133, 133, 133, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =118.05883104215908
-            Image: =play_icon
-            OnSelect: =Navigate(Video, ScreenTransition.Fade)
-            Width: =130
-            X: =447
-            Y: =235
-            ZIndex: =9
 
     Group32 As group:
         Height: =162.78573172432993
