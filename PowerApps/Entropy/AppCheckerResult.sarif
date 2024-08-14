@@ -15104,6 +15104,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Captura de pantalla 2024-04-04 130223_1"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Captura de pantalla 2024-04-04 130223_1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Captura de pantalla 2024-04-04 130223_1",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.grifo"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.grifo",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "grifo",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Features_4.pop3"
                 }
               ],

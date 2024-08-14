@@ -214,7 +214,7 @@ Features_6 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_31.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =115
+            Height: =138
             HoverFill: =Rectangle4_31.Fill
             PressedFill: =Rectangle4_31.Fill
             TabIndex: =0
@@ -283,7 +283,7 @@ Features_6 As screen:
             PressedColor: =Label9_53.Color
             PressedFill: =Label9_53.Fill
             Size: =13.34
-            Text: ="Stick"
+            Text: ="Stick "
             Visible: =pop1
             Width: =198.76
             X: =456.22
@@ -775,12 +775,12 @@ Features_6 As screen:
             Color: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =22
+            Height: =38
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =43
+            Width: =49
             X: =299
             Y: =266
             ZIndex: =7
