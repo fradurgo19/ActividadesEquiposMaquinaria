@@ -415,8 +415,8 @@ Features As screen:
         PressedFill: =Circle2_3.Fill
         TabIndex: =0
         Width: =208
-        X: =816
-        Y: =622
+        X: =561
+        Y: =486
         ZIndex: =73
 
     Group3 As group:
@@ -462,7 +462,7 @@ Features As screen:
             FontWeight: =FontWeight.Bold
             Height: =47
             OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
-            Size: =10
+            Size: =8
             Text: ="ZONA 1 Motor y Radiador"
             Tooltip: ="ZONA 1"
             Width: =82
@@ -480,8 +480,8 @@ Features As screen:
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
         TabIndex: =0
         Width: =67
-        X: =957
-        Y: =636
+        X: =702
+        Y: =500
         ZIndex: =74
 
     Label3_1 As label:
@@ -498,8 +498,8 @@ Features As screen:
             Tornamesa"
         Tooltip: ="ZONA 1"
         Width: =120
-        X: =860
-        Y: =608
+        X: =605
+        Y: =472
         ZIndex: =75
 
     Circle2_12 As circle:
@@ -559,8 +559,8 @@ Features As screen:
         PressedFill: =Circle2_13.Fill
         TabIndex: =0
         Width: =172
-        X: =586
-        Y: =442
+        X: =423
+        Y: =141
         ZIndex: =79
 
     icon9_5 As icon.Add:
@@ -573,8 +573,8 @@ Features As screen:
         OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
         TabIndex: =0
         Width: =67
-        X: =685
-        Y: =451
+        X: =522
+        Y: =150
         ZIndex: =80
 
     Label3_3 As label:
@@ -587,8 +587,8 @@ Features As screen:
         Text: ="ZONA 9"
         Tooltip: ="ZONA 1"
         Width: =82
-        X: =606
-        Y: =451
+        X: =443
+        Y: =150
         ZIndex: =81
 
     Circle2_15 As circle:
@@ -690,7 +690,7 @@ Features As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
         PressedFill: =Circle2_19.Fill
         TabIndex: =0
-        Width: =172
+        Width: =216
         X: =583
         Y: =247
         ZIndex: =94
@@ -810,8 +810,8 @@ Features As screen:
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
         TabIndex: =0
         Width: =67
-        X: =690
-        Y: =297
+        X: =732
+        Y: =289
         ZIndex: =95
 
     Label3_8 As label:
@@ -819,13 +819,18 @@ Features As screen:
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
-        Height: =69
+        Height: =100
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
-        Size: =11
-        Text: ="ZONA 7 ENFRIADORES BATERIAS"
+        Size: =8
+        Text: |-
+            ="ZONA 7 Filtro de aire
+            enfriadores
+            baterias
+            tanque de expansion
+            valvula de amortiguación piloto"
         Tooltip: ="ZONA 1"
-        Width: =112
-        X: =598
-        Y: =269
+        Width: =142
+        X: =609
+        Y: =251
         ZIndex: =96
 
