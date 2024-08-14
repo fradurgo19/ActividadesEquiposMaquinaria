@@ -684,7 +684,7 @@ Features As screen:
         BorderColor: =RGBA(133, 133, 133, 1)
         DisabledFill: =Circle2_19.Fill
         Fill: =RGBA(205, 209, 213, 1)
-        Height: =150
+        Height: =113
         HoverFill: =Circle2_19.Fill
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
@@ -692,7 +692,7 @@ Features As screen:
         TabIndex: =0
         Width: =172
         X: =583
-        Y: =219
+        Y: =247
         ZIndex: =94
 
     Group14 As group:
@@ -814,8 +814,8 @@ Features As screen:
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
         TabIndex: =0
         Width: =67
-        X: =688
-        Y: =283
+        X: =690
+        Y: =297
         ZIndex: =95
 
     Label3_8 As label:
@@ -823,13 +823,13 @@ Features As screen:
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
-        Height: =119
+        Height: =69
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
         Size: =11
         Text: ="ZONA 7 ENFRIADORES BATERIAS"
         Tooltip: ="ZONA 1"
         Width: =112
         X: =598
-        Y: =238
+        Y: =269
         ZIndex: =96
 
