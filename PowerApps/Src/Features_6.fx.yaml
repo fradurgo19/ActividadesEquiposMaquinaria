@@ -96,7 +96,7 @@ Features_6 As screen:
     Circle2_48 As circle:
         BorderColor: =RGBA(204, 204, 204, 1)
         DisabledFill: =Circle2_48.Fill
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(197, 242, 63, 1)
         Height: =106.72
         HoverFill: =Circle2_48.Fill
         OnSelect: |-
@@ -119,8 +119,8 @@ Features_6 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Width: =57.36
-        X: =258.79
-        Y: =537
+        X: =254
+        Y: =551
         ZIndex: =24
 
     Label1_26 As label:
@@ -128,7 +128,7 @@ Features_6 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(197, 242, 63, 1)
         FontWeight: =FontWeight.Bold
         Height: =35
         OnSelect: |-
@@ -140,14 +140,14 @@ Features_6 As screen:
             ="Balde
             "
         Width: =129.4
-        X: =117.39
-        Y: =539
+        X: =117
+        Y: =554
         ZIndex: =25
 
     Circle2_55 As circle:
         BorderColor: =RGBA(204, 204, 204, 1)
         DisabledFill: =Circle2_55.Fill
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(197, 242, 63, 1)
         Height: =122.73
         HoverFill: =Circle2_55.Fill
         OnSelect: |-
@@ -169,8 +169,8 @@ Features_6 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:true})
         TabIndex: =0
         Width: =42.69
-        X: =196.1
-        Y: =148
+        X: =188
+        Y: =158
         ZIndex: =45
 
     Group9_4 As group:
@@ -295,7 +295,7 @@ Features_6 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(197, 242, 63, 1)
         FontWeight: =FontWeight.Bold
         Height: =35
         OnSelect: |-
@@ -758,16 +758,16 @@ Features_6 As screen:
         Circle2_36 As circle:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_36.Fill
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =122.73
+            Fill: =RGBA(197, 242, 63, 1)
+            Height: =62
             HoverFill: =Circle2_36.Fill
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
             PressedFill: =Circle2_36.Fill
             TabIndex: =0
-            Width: =246.79
-            X: =160.08
-            Y: =246
+            Width: =246
+            X: =287
+            Y: =250
             ZIndex: =6
 
         icon11_27 As icon.Add:
@@ -775,14 +775,14 @@ Features_6 As screen:
             Color: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =43
+            Height: =22
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =42.69
-            X: =168.08
-            Y: =268
+            Width: =43
+            X: =299
+            Y: =266
             ZIndex: =7
 
         Label1_4 As label:
@@ -790,18 +790,18 @@ Features_6 As screen:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(197, 242, 63, 1)
             FontWeight: =FontWeight.Bold
-            Height: =35
+            Height: =18
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             PaddingRight: =6.67
             PaddingTop: =6.67
             Size: =13.34
             Text: ="Stick"
-            Width: =94.71
-            X: =221.44
-            Y: =272
+            Width: =94
+            X: =348
+            Y: =263
             ZIndex: =21
 
     Group12_2 As group:
@@ -814,7 +814,7 @@ Features_6 As screen:
         Circle2_35 As circle:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_35.Fill
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(197, 242, 63, 1)
             Height: =76.04
             HoverFill: =Circle2_35.Fill
             OnSelect: |-
@@ -831,13 +831,13 @@ Features_6 As screen:
             Color: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =27
+            Height: =35
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =45.36
-            X: =348.17
+            Width: =50
+            X: =342
             Y: =133
             ZIndex: =15
 
@@ -846,7 +846,7 @@ Features_6 As screen:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(197, 242, 63, 1)
             FontWeight: =FontWeight.Bold
             Height: =24
             OnSelect: |-
@@ -870,7 +870,7 @@ Features_6 As screen:
         Circle2_49 As circle:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_49.Fill
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(197, 242, 63, 1)
             Height: =106.72
             HoverFill: =Circle2_49.Fill
             OnSelect: |-
@@ -892,8 +892,8 @@ Features_6 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             TabIndex: =0
             Width: =57.36
-            X: =222.78
-            Y: =384
+            X: =218
+            Y: =395
             ZIndex: =31
 
         Label1_27 As label:
@@ -901,7 +901,7 @@ Features_6 As screen:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(197, 242, 63, 1)
             FontWeight: =FontWeight.Bold
             Height: =35
             OnSelect: |-
@@ -925,15 +925,15 @@ Features_6 As screen:
         Circle2_47 As circle:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_47.Fill
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =82.71
+            Fill: =RGBA(197, 242, 63, 1)
+            Height: =82
             HoverFill: =Circle2_47.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true})
             PressedFill: =Circle2_47.Fill
             TabIndex: =0
-            Width: =189.43
-            X: =649.65
+            Width: =238
+            X: =650
             Y: =86
             ZIndex: =37
 
@@ -942,13 +942,13 @@ Features_6 As screen:
             Color: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =29
+            Height: =41
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             TabIndex: =0
-            Width: =37.35
-            X: =672.33
+            Width: =47
+            X: =678
             Y: =97
             ZIndex: =38
 
@@ -957,17 +957,17 @@ Features_6 As screen:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(197, 242, 63, 1)
             FontWeight: =FontWeight.Bold
-            Height: =27
+            Height: =59
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             PaddingRight: =6.67
             PaddingTop: =6.67
             Size: =13.34
             Text: ="Cilindro del Boom"
-            Width: =118.72
-            X: =709.68
-            Y: =100
+            Width: =136
+            X: =725
+            Y: =97
             ZIndex: =39
 
