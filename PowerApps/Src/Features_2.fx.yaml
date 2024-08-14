@@ -329,13 +329,13 @@ Features_2 As screen:
         Rectangle8_2 As rectangle:
             BorderColor: =RGBA(32, 54, 71, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =296
+            Height: =194
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Width: =708.35
             X: =618.97
-            Y: =4
+            Y: =106
             ZIndex: =44
 
         icon7_2 As icon.Cancel:
