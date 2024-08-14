@@ -407,7 +407,7 @@ Features As screen:
     Circle2_3 As circle:
         BorderColor: =RGBA(133, 133, 133, 1)
         DisabledFill: =Circle2_3.Fill
-        Fill: =RGBA(205, 209, 213, 1)
+        Fill: =RGBA(34, 242, 242, 1)
         Height: =72
         HoverFill: =Circle2_3.Fill
         OnSelect: |-
@@ -429,7 +429,7 @@ Features As screen:
         Circle2_2 As circle:
             BorderColor: =RGBA(133, 133, 133, 1)
             DisabledFill: =Circle2_2.Fill
-            Fill: =RGBA(205, 209, 213, 1)
+            Fill: =RGBA(204, 231, 246, 1)
             Height: =81
             HoverFill: =Circle2_2.Fill
             OnSelect: |-
@@ -505,7 +505,7 @@ Features As screen:
     Circle2_12 As circle:
         BorderColor: =RGBA(133, 133, 133, 1)
         DisabledFill: =Circle2_12.Fill
-        Fill: =RGBA(205, 209, 213, 1)
+        Fill: =RGBA(27, 242, 66, 1)
         Height: =74
         HoverFill: =Circle2_12.Fill
         OnSelect: |-
@@ -551,7 +551,7 @@ Features As screen:
     Circle2_13 As circle:
         BorderColor: =RGBA(133, 133, 133, 1)
         DisabledFill: =Circle2_13.Fill
-        Fill: =RGBA(205, 209, 213, 1)
+        Fill: =RGBA(232, 244, 217, 1)
         Height: =97
         HoverFill: =Circle2_13.Fill
         OnSelect: |-
@@ -559,8 +559,8 @@ Features As screen:
         PressedFill: =Circle2_13.Fill
         TabIndex: =0
         Width: =220
-        X: =357
-        Y: =141
+        X: =219
+        Y: =142
         ZIndex: =79
 
     icon9_5 As icon.Add:
@@ -573,8 +573,8 @@ Features As screen:
         OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
         TabIndex: =0
         Width: =67
-        X: =520
-        Y: =174
+        X: =379
+        Y: =176
         ZIndex: =80
 
     Label3_3 As label:
@@ -590,14 +590,14 @@ Features As screen:
             Vidrios"
         Tooltip: ="ZONA 1"
         Width: =133
-        X: =392
-        Y: =150
+        X: =251
+        Y: =152
         ZIndex: =81
 
     Circle2_15 As circle:
         BorderColor: =RGBA(133, 133, 133, 1)
         DisabledFill: =Circle2_15.Fill
-        Fill: =RGBA(205, 209, 213, 1)
+        Fill: =RGBA(84, 163, 232, 1)
         Height: =62
         HoverFill: =Circle2_15.Fill
         OnSelect: |-
@@ -643,7 +643,7 @@ Features As screen:
     Circle2_17 As circle:
         BorderColor: =RGBA(133, 133, 133, 1)
         DisabledFill: =Circle2_17.Fill
-        Fill: =RGBA(205, 209, 213, 1)
+        Fill: =RGBA(197, 242, 63, 1)
         Height: =113
         HoverFill: =Circle2_17.Fill
         OnSelect: |-
@@ -689,7 +689,7 @@ Features As screen:
     Circle2_19 As circle:
         BorderColor: =RGBA(133, 133, 133, 1)
         DisabledFill: =Circle2_19.Fill
-        Fill: =RGBA(205, 209, 213, 1)
+        Fill: =RGBA(250, 155, 112, 1)
         Height: =113
         HoverFill: =Circle2_19.Fill
         OnSelect: |-
@@ -711,7 +711,7 @@ Features As screen:
         Circle2_14 As circle:
             BorderColor: =RGBA(133, 133, 133, 1)
             DisabledFill: =Circle2_14.Fill
-            Fill: =RGBA(205, 209, 213, 1)
+            Fill: =RGBA(205, 35, 235, 1)
             Height: =126
             HoverFill: =Circle2_14.Fill
             OnSelect: |-
@@ -733,8 +733,8 @@ Features As screen:
             OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
             TabIndex: =0
             Width: =62
-            X: =442
-            Y: =395
+            X: =465
+            Y: =400
             ZIndex: =83
 
         Label3_4 As label:
@@ -765,7 +765,7 @@ Features As screen:
         Circle2_16 As circle:
             BorderColor: =RGBA(133, 133, 133, 1)
             DisabledFill: =Circle2_16.Fill
-            Fill: =RGBA(205, 209, 213, 1)
+            Fill: =RGBA(255, 255, 0, 1)
             Height: =130
             HoverFill: =Circle2_16.Fill
             OnSelect: |-

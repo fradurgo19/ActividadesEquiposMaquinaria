@@ -915,15 +915,15 @@ Features_3 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_38.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =80
+            Height: =93
             HoverFill: =Circle2_38.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             PressedFill: =Circle2_38.Fill
             TabIndex: =0
-            Width: =213
-            X: =150
-            Y: =454
+            Width: =291
+            X: =83
+            Y: =511
             ZIndex: =30
 
         icon11_17 As icon.Add:
@@ -931,14 +931,14 @@ Features_3 As screen:
             Color: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =38
+            Height: =44
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =43
-            X: =161
-            Y: =474
+            Width: =58
+            X: =94
+            Y: =531
             ZIndex: =31
 
         Label1_12 As label:
@@ -948,14 +948,13 @@ Features_3 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
-            Height: =35
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             Size: =10
             Text: ="Banco de Vávulas"
-            Width: =133
-            X: =204
-            Y: =477
+            Width: =181
+            X: =137
+            Y: =534
             ZIndex: =32
 
     Group20 As group:
