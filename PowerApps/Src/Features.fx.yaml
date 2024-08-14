@@ -680,6 +680,21 @@ Features As screen:
         Y: =247
         ZIndex: =93
 
+    Circle2_19 As circle:
+        BorderColor: =RGBA(133, 133, 133, 1)
+        DisabledFill: =Circle2_19.Fill
+        Fill: =RGBA(205, 209, 213, 1)
+        Height: =150
+        HoverFill: =Circle2_19.Fill
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
+        PressedFill: =Circle2_19.Fill
+        TabIndex: =0
+        Width: =172
+        X: =583
+        Y: =219
+        ZIndex: =94
+
     Group14 As group:
         Height: =5
         Width: =5
@@ -731,8 +746,8 @@ Features As screen:
                 BANCO
                 "
             Tooltip: ="ZONA 1"
-            Width: =77
-            X: =367
+            Width: =122
+            X: =343
             Y: =299
             ZIndex: =84
 
@@ -786,4 +801,33 @@ Features As screen:
             X: =836
             Y: =424
             ZIndex: =90
+
+    icon9_11 As icon.Add:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =29
+        Icon: =Icon.Add
+        OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
+        TabIndex: =0
+        Width: =67
+        X: =688
+        Y: =283
+        ZIndex: =95
+
+    Label3_8 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =119
+        OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
+        Size: =11
+        Text: ="ZONA 7 ENFRIADORES BATERIAS"
+        Tooltip: ="ZONA 1"
+        Width: =112
+        X: =598
+        Y: =238
+        ZIndex: =96
 
