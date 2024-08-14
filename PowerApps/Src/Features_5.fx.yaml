@@ -7,6 +7,28 @@ Features_5 As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image21 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =277
+        Image: ='Captura de pantalla 2024-08-14 094926'
+        Width: =466
+        X: =522
+        Y: =78
+        ZIndex: =1
+
+    Image20 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =224
+        Image: =Enfriador
+        Width: =302
+        X: =10
+        Y: =50
+        ZIndex: =2
+
     Rectangle2_9 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(100, 118, 132, 1)
@@ -266,7 +288,6 @@ Features_5 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             TabIndex: =0
-            Visible: =false
             Width: =56
             X: =710
             Y: =391
@@ -281,8 +302,7 @@ Features_5 As screen:
             FontWeight: =FontWeight.Bold
             Height: =58
             Size: =13
-            Text: ="MOTOR"
-            Visible: =false
+            Text: ="RADIADOR"
             Width: =132
             X: =578
             Y: =378
@@ -300,39 +320,39 @@ Features_5 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_16.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =189
+            Height: =160
             HoverFill: =Rectangle4_16.Fill
             PressedFill: =Rectangle4_16.Fill
             TabIndex: =0
             Visible: =pop4
             Width: =495
             X: =475
-            Y: =114
+            Y: =108
             ZIndex: =16
 
         Rectangle15_16 As rectangle:
             BorderColor: =RGBA(32, 54, 71, 1)
             Fill: =RGBA(62,96,170,0)
-            Height: =87
+            Height: =75
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop4
             Width: =42
             X: =494
-            Y: =194
+            Y: =175
             ZIndex: =17
 
         Rectangle8_4 As rectangle:
             BorderColor: =RGBA(32, 54, 71, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =296
+            Height: =286
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Width: =531
-            X: =464
-            Y: =4
+            X: =457
+            Y: =69
             ZIndex: =18
 
         icon7_4 As icon.Cancel:
@@ -340,7 +360,7 @@ Features_5 As screen:
             Color: =RGBA(245, 246, 247, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =49
+            Height: =62
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
@@ -348,7 +368,7 @@ Features_5 As screen:
             Visible: =pop4
             Width: =62
             X: =892
-            Y: =126
+            Y: =117
             ZIndex: =19
 
         Label8_19 As label:
@@ -356,7 +376,7 @@ Features_5 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
             FontWeight: =FontWeight.Bold
-            Height: =54
+            Height: =46
             HoverBorderColor: =Label8_19.BorderColor
             HoverColor: =Label8_19.Color
             HoverFill: =Label8_19.Fill
@@ -370,12 +390,12 @@ Features_5 As screen:
             PressedColor: =Label8_19.Color
             PressedFill: =Label8_19.Fill
             Size: =13
-            Text: ="MOTOR"
+            Text: ="RADIADOR"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
             Width: =380
             X: =494
-            Y: =227
+            Y: =204
             ZIndex: =21
 
         Label8_18 As label:
@@ -383,7 +403,7 @@ Features_5 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
             FontWeight: =FontWeight.Bold
-            Height: =46
+            Height: =39
             HoverBorderColor: =Label8_18.BorderColor
             HoverColor: =Label8_18.Color
             HoverFill: =Label8_18.Fill
@@ -396,26 +416,13 @@ Features_5 As screen:
             PressedColor: =Label8_18.Color
             PressedFill: =Label8_18.Fill
             Size: =15
-            Text: ="ZONA 1"
+            Text: ="ZONA 7"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
             Width: =343
             X: =492
-            Y: =129
+            Y: =121
             ZIndex: =22
-
-        Image2_3 As image:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(0, 0, 0, 1)
-            Height: =171
-            Image: ='Captura de pantalla 2024-05-08 171319-fotor-bg-remover-20240508171657'
-            Visible: =pop4
-            Width: =265
-            X: =597
-            Y: =129
-            ZIndex: =28
 
     Group1_3 As group:
         Height: =5
