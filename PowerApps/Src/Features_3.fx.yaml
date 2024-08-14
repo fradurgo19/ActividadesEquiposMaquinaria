@@ -133,7 +133,7 @@ Features_3 As screen:
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop6:false})
         Size: =10
-        Text: ="TANQUE COMBUSTIBLE"
+        Text: ="Tanque Combustible"
         Width: =133
         X: =531
         Y: =359
@@ -222,7 +222,7 @@ Features_3 As screen:
             Height: =27
             Icon: =Icon.Cancel
             OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
             Visible: =pop1
             Width: =53
@@ -788,7 +788,7 @@ Features_3 As screen:
         Height: =42
         Icon: =Icon.Cancel
         OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Visible: =pop6
         Width: =35
@@ -844,7 +844,7 @@ Features_3 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false}) 
             Size: =10
-            Text: ="MOTOR/REDUCTOR DE GIRO"
+            Text: ="Motor de Giro/ Reductor de Giro"
             Width: =143
             X: =541
             Y: =241
@@ -898,7 +898,7 @@ Features_3 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             Size: =10
-            Text: ="TANQUE HIDRAULICO"
+            Text: ="Tanque Hidraulico"
             Width: =133
             X: =317
             Y: =190
