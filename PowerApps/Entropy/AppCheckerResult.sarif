@@ -14354,6 +14354,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Zaxis2001"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Zaxis2001",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Zaxis2001",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Captura de pantalla 2024-05-06 162206"
                 }
               ],
