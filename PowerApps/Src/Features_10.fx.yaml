@@ -68,7 +68,7 @@ Features_10 As screen:
     Circle2_44 As circle:
         BorderColor: =RGBA(204, 204, 204, 1)
         DisabledFill: =Circle2_44.Fill
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(84, 163, 232, 1)
         Height: =106.72
         HoverFill: =Circle2_44.Fill
         OnSelect: |-
@@ -91,8 +91,8 @@ Features_10 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         TabIndex: =0
         Width: =57.36
-        X: =589.62
-        Y: =236
+        X: =596
+        Y: =250
         ZIndex: =24
 
     Label1_19 As label:
@@ -100,7 +100,7 @@ Features_10 As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(84, 163, 232, 1)
         FontWeight: =FontWeight.Bold
         Height: =35
         OnSelect: |-
@@ -110,8 +110,8 @@ Features_10 As screen:
         Size: =13.34
         Text: ="TRASLACIÓN"
         Width: =177.42
-        X: =646.98
-        Y: =239
+        X: =659
+        Y: =254
         ZIndex: =25
 
     Group21_2 As group:
@@ -419,7 +419,7 @@ Features_10 As screen:
         Circle2_43 As circle:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_43.Fill
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(84, 163, 232, 1)
             Height: =122.73
             HoverFill: =Circle2_43.Fill
             OnSelect: |-
@@ -442,8 +442,8 @@ Features_10 As screen:
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
             TabIndex: =0
             Width: =49.36
-            X: =257.46
-            Y: =361
+            X: =272
+            Y: =369
             ZIndex: =7
 
         Label1_15 As label:
@@ -451,7 +451,7 @@ Features_10 As screen:
             BorderColor: =RGBA(32, 54, 71, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(84, 163, 232, 1)
             FontWeight: =FontWeight.Bold
             Height: =35
             OnSelect: |-
@@ -461,8 +461,8 @@ Features_10 As screen:
             Size: =13.34
             Text: ="TREN DE RODAJE"
             Width: =190.76
-            X: =322.82
-            Y: =365
+            X: =326
+            Y: =379
             ZIndex: =21
 
     Group15_2 As group:
