@@ -1,5 +1,5 @@
 Features_3 As screen:
-    BackgroundImage: ='tata-hitachi-zaxis-370lch-excavator'
+    BackgroundImage: =zx5_200_06
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
@@ -99,7 +99,7 @@ Features_3 As screen:
         Height: =80
         HoverFill: =Circle2_37.Fill
         OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
+            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
         PressedFill: =Circle2_37.Fill
         TabIndex: =0
         Width: =213
@@ -115,7 +115,7 @@ Features_3 As screen:
         Height: =38
         Icon: =Icon.Add
         OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
+            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Width: =43
         X: =488
@@ -131,7 +131,7 @@ Features_3 As screen:
         FontWeight: =FontWeight.Bold
         Height: =35
         OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
+            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop6:false})
         Size: =10
         Text: ="TANQUE COMBUSTIBLE"
         Width: =133
@@ -284,8 +284,8 @@ Features_3 As screen:
             TabIndex: =0
             Visible: =pop2
             Width: =405
-            X: =271
-            Y: =44
+            X: =265
+            Y: =36
             ZIndex: =16
 
         Label8_52 As label:
@@ -478,7 +478,7 @@ Features_3 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_36.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =211
+            Height: =151
             HoverFill: =Rectangle4_36.Fill
             PressedFill: =Rectangle4_36.Fill
             TabIndex: =0
@@ -492,7 +492,7 @@ Features_3 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =66
+            Height: =47
             HoverBorderColor: =Label8_54.BorderColor
             HoverColor: =Label8_54.Color
             HoverFill: =Label8_54.Fill
@@ -509,7 +509,7 @@ Features_3 As screen:
             Visible: =pop4
             Width: =229
             X: =145
-            Y: =553
+            Y: =550
             ZIndex: =34
 
         Label9_99 As label:
@@ -517,7 +517,7 @@ Features_3 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =50
+            Height: =36
             HoverBorderColor: =Label9_99.BorderColor
             HoverColor: =Label9_99.Color
             HoverFill: =Label9_99.Fill
@@ -531,12 +531,12 @@ Features_3 As screen:
             PressedColor: =Label9_99.Color
             PressedFill: =Label9_99.Fill
             Size: =11
-            Text: ="BANCO DE VÁLVULAS"
+            Text: ="Banco de Válvulas"
             Tooltip: ="Seleccione"
             Visible: =pop4
             Width: =177
             X: =140
-            Y: =653
+            Y: =621
             ZIndex: =35
 
         icon12_27 As icon.Cancel:
@@ -544,7 +544,7 @@ Features_3 As screen:
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =39
+            Height: =28
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
@@ -552,19 +552,19 @@ Features_3 As screen:
             Visible: =pop4
             Width: =35
             X: =479
-            Y: =553
+            Y: =550
             ZIndex: =36
 
         Image12 As image:
             BorderColor: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =134
+            Height: =96
             Image: ='Control-Valves-fotor-bg-remover-20240509123915'
             Visible: =pop4
             Width: =181
             X: =321
-            Y: =604
+            Y: =586
             ZIndex: =47
 
     Group25 As group:
@@ -579,20 +579,20 @@ Features_3 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_37.Fill
             Fill: =RGBA(32, 54, 71, 1)
-            Height: =184
+            Height: =126
             HoverFill: =Rectangle4_37.Fill
             PressedFill: =Rectangle4_37.Fill
             TabIndex: =0
             Visible: =pop5
             Width: =405
-            Y: =111
+            Y: =35
             ZIndex: =40
 
         Label8_55 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =42
+            Height: =29
             HoverBorderColor: =Label8_55.BorderColor
             HoverColor: =Label8_55.Color
             HoverFill: =Label8_55.Fill
@@ -609,7 +609,7 @@ Features_3 As screen:
             Visible: =pop5
             Width: =132
             X: =44
-            Y: =122
+            Y: =47
             ZIndex: =41
 
         Label9_100 As label:
@@ -617,7 +617,7 @@ Features_3 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =41
+            Height: =28
             HoverBorderColor: =Label9_100.BorderColor
             HoverColor: =Label9_100.Color
             HoverFill: =Label9_100.Fill
@@ -636,7 +636,7 @@ Features_3 As screen:
             Visible: =pop5
             Width: =211
             X: =12
-            Y: =190
+            Y: =93
             ZIndex: =42
 
         icon12_28 As icon.Cancel:
@@ -644,7 +644,7 @@ Features_3 As screen:
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =42
+            Height: =29
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false})
@@ -652,20 +652,149 @@ Features_3 As screen:
             Visible: =pop5
             Width: =35
             X: =348
-            Y: =122
+            Y: =47
             ZIndex: =43
 
         Image13 As image:
             BorderColor: =RGBA(32, 54, 71, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =135
+            Height: =92
             Image: =Solenoide
             Visible: =pop5
             Width: =132
             X: =205
-            Y: =141
+            Y: =60
             ZIndex: =48
+
+    Circle2_57 As circle:
+        BorderColor: =RGBA(204, 204, 204, 1)
+        DisabledFill: =Circle2_57.Fill
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =80
+        HoverFill: =Circle2_57.Fill
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
+        PressedFill: =Circle2_57.Fill
+        TabIndex: =0
+        Width: =213
+        X: =270
+        Y: =295
+        ZIndex: =50
+
+    icon11_38 As icon.Add:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =38
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
+        TabIndex: =0
+        Width: =43
+        X: =281
+        Y: =315
+        ZIndex: =51
+
+    Label1_35 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
+        Size: =10
+        Text: ="Center Joint"
+        Width: =133
+        X: =324
+        Y: =318
+        ZIndex: =52
+
+    Rectangle4_61 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 255)
+        BorderThickness: =5
+        DisabledFill: =Rectangle4_61.Fill
+        Fill: =RGBA(32, 54, 71, 1)
+        Height: =125
+        HoverFill: =Rectangle4_61.Fill
+        PressedFill: =Rectangle4_61.Fill
+        TabIndex: =0
+        Visible: =pop6
+        Width: =405
+        X: =421
+        Y: =472
+        ZIndex: =53
+
+    Label8_78 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+        Height: =42
+        HoverBorderColor: =Label8_78.BorderColor
+        HoverColor: =Label8_78.Color
+        HoverFill: =Label8_78.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label8_78.BorderColor
+        PressedColor: =Label8_78.Color
+        PressedFill: =Label8_78.Fill
+        Size: =18
+        Text: ="ZONA 2"
+        VerticalAlign: =VerticalAlign.Top
+        Visible: =pop6
+        Width: =132
+        X: =465
+        Y: =483
+        ZIndex: =54
+
+    Label9_121 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =34
+        HoverBorderColor: =Label9_121.BorderColor
+        HoverColor: =Label9_121.Color
+        HoverFill: =Label9_121.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BD78DC54A-B41D-471E-B781-57A17A413898%7D&file=Center%20Joint.xlsx&action=default&mobileredirect=true")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_121.BorderColor
+        PressedColor: =Label9_121.Color
+        PressedFill: =Label9_121.Fill
+        Size: =11
+        Text: ="Center Joint"
+        Tooltip: ="Seleccione"
+        Visible: =pop6
+        Width: =188
+        X: =454
+        Y: =534
+        ZIndex: =55
+
+    icon12_57 As icon.Cancel:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(242, 242, 242, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Icon: =Icon.Cancel
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+        TabIndex: =0
+        Visible: =pop6
+        Width: =35
+        X: =769
+        Y: =483
+        ZIndex: =56
 
     Group11 As group:
         Height: =5
@@ -681,7 +810,7 @@ Features_3 As screen:
             Height: =92
             HoverFill: =Circle2_31.Fill
             OnSelect: |-
-                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
+                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             PressedFill: =Circle2_31.Fill
             TabIndex: =0
             Width: =216
@@ -697,7 +826,7 @@ Features_3 As screen:
             Height: =43
             Icon: =Icon.Add
             OnSelect: |-
-                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
+                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
             Width: =37
             X: =495
@@ -713,7 +842,7 @@ Features_3 As screen:
             FontWeight: =FontWeight.Bold
             Height: =35
             OnSelect: |-
-                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
+                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false}) 
             Size: =10
             Text: ="MOTOR/REDUCTOR DE GIRO"
             Width: =143
@@ -735,7 +864,7 @@ Features_3 As screen:
             Height: =80
             HoverFill: =Circle2_32.Fill
             OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false})
+                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             PressedFill: =Circle2_32.Fill
             TabIndex: =0
             Width: =213
@@ -751,7 +880,7 @@ Features_3 As screen:
             Height: =38
             Icon: =Icon.Add
             OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false})
+                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
             Width: =43
             X: =274
@@ -767,7 +896,7 @@ Features_3 As screen:
             FontWeight: =FontWeight.Bold
             Height: =35
             OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false})
+                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             Size: =10
             Text: ="TANQUE HIDRAULICO"
             Width: =133
@@ -789,7 +918,7 @@ Features_3 As screen:
             Height: =80
             HoverFill: =Circle2_38.Fill
             OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false})
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             PressedFill: =Circle2_38.Fill
             TabIndex: =0
             Width: =213
@@ -805,7 +934,7 @@ Features_3 As screen:
             Height: =38
             Icon: =Icon.Add
             OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false})
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             TabIndex: =0
             Width: =43
             X: =161
@@ -821,9 +950,9 @@ Features_3 As screen:
             FontWeight: =FontWeight.Bold
             Height: =35
             OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false})
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             Size: =10
-            Text: ="BANCO DE VÁLVULAS"
+            Text: ="Banco de Vávulas"
             Width: =133
             X: =204
             Y: =477
@@ -843,7 +972,7 @@ Features_3 As screen:
             Height: =80
             HoverFill: =Circle2_39.Fill
             OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true})
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             PressedFill: =Circle2_39.Fill
             TabIndex: =0
             Width: =213
@@ -859,7 +988,7 @@ Features_3 As screen:
             Height: =38
             Icon: =Icon.Add
             OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true})
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             TabIndex: =0
             Width: =43
             X: =43
@@ -875,7 +1004,7 @@ Features_3 As screen:
             FontWeight: =FontWeight.Bold
             Height: =35
             OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true})
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             Size: =10
             Text: ="BANCO DE SOLENOIDE"
             Width: =133

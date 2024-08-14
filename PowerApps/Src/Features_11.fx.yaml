@@ -7,16 +7,15 @@ Features_11 As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
 
-    Image5 As image:
+    Image10 As image:
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(204, 204, 204, 1)
-        Height: =210
-        Image: ='remove-1234'
-        Width: =255
-        X: =25
-        Y: =120
+        Height: =291
+        Image: ='images-removebg-preview'
+        Width: =281
+        X: =14
+        Y: =145
         ZIndex: =1
 
     Circle2_45 As circle:
@@ -154,7 +153,7 @@ Features_11 As screen:
         Width: =43
         X: =788
         Y: =392
-        ZIndex: =28
+        ZIndex: =27
 
     Label1_20 As label:
         Align: =Align.Center
@@ -171,7 +170,7 @@ Features_11 As screen:
         Width: =133
         X: =835
         Y: =388
-        ZIndex: =29
+        ZIndex: =28
 
     Group9_3 As group:
         Height: =5
@@ -290,7 +289,7 @@ Features_11 As screen:
             Width: =149
             X: =700
             Y: =104
-            ZIndex: =25
+            ZIndex: =24
 
     Group22_1 As group:
         Height: =5
@@ -312,7 +311,7 @@ Features_11 As screen:
             Width: =405
             X: =271
             Y: =44
-            ZIndex: =21
+            ZIndex: =20
 
         Label8_66 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -336,7 +335,7 @@ Features_11 As screen:
             Width: =132
             X: =315
             Y: =51
-            ZIndex: =22
+            ZIndex: =21
 
         Label9_109 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -363,7 +362,7 @@ Features_11 As screen:
             Width: =195
             X: =305
             Y: =111
-            ZIndex: =23
+            ZIndex: =22
 
         icon12_40 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -379,7 +378,7 @@ Features_11 As screen:
             Width: =35
             X: =619
             Y: =51
-            ZIndex: =24
+            ZIndex: =23
 
     Group23_1 As group:
         Height: =5
@@ -401,7 +400,7 @@ Features_11 As screen:
             Width: =405
             X: =596
             Y: =457
-            ZIndex: =30
+            ZIndex: =29
 
         Label8_68 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -425,7 +424,7 @@ Features_11 As screen:
             Width: =132
             X: =640
             Y: =464
-            ZIndex: =31
+            ZIndex: =30
 
         Label9_111 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -452,7 +451,7 @@ Features_11 As screen:
             Width: =188
             X: =615
             Y: =525
-            ZIndex: =32
+            ZIndex: =31
 
         icon12_42 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -468,7 +467,7 @@ Features_11 As screen:
             Width: =35
             X: =944
             Y: =464
-            ZIndex: =33
+            ZIndex: =32
 
     Group24_2 As group:
         Height: =5
@@ -490,7 +489,7 @@ Features_11 As screen:
             Width: =413
             X: =295
             Y: =334
-            ZIndex: =37
+            ZIndex: =36
 
         Label8_69 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -513,7 +512,7 @@ Features_11 As screen:
             Width: =229
             X: =321
             Y: =360
-            ZIndex: =38
+            ZIndex: =37
 
         Label9_112 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -540,7 +539,7 @@ Features_11 As screen:
             Width: =177
             X: =316
             Y: =421
-            ZIndex: =39
+            ZIndex: =38
 
         icon12_43 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -556,7 +555,7 @@ Features_11 As screen:
             Width: =35
             X: =655
             Y: =360
-            ZIndex: =40
+            ZIndex: =39
 
     Group25_2 As group:
         Height: =5
@@ -577,7 +576,7 @@ Features_11 As screen:
             Visible: =pop5
             Width: =405
             Y: =137
-            ZIndex: =44
+            ZIndex: =43
 
         Label8_67 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -601,7 +600,7 @@ Features_11 As screen:
             Width: =132
             X: =44
             Y: =145
-            ZIndex: =45
+            ZIndex: =44
 
         Label9_110 As label:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -628,7 +627,7 @@ Features_11 As screen:
             Width: =211
             X: =12
             Y: =193
-            ZIndex: =46
+            ZIndex: =45
 
         icon12_41 As icon.Cancel:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -644,7 +643,7 @@ Features_11 As screen:
             Width: =35
             X: =348
             Y: =145
-            ZIndex: =47
+            ZIndex: =46
 
     Group11_3 As group:
         Height: =5
@@ -698,7 +697,7 @@ Features_11 As screen:
             Width: =143
             X: =817
             Y: =286
-            ZIndex: =26
+            ZIndex: =25
 
     Group12_1 As group:
         Height: =5
@@ -720,7 +719,7 @@ Features_11 As screen:
             Width: =213
             X: =401
             Y: =199
-            ZIndex: =19
+            ZIndex: =18
 
         icon11_14 As icon.Add:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -735,7 +734,7 @@ Features_11 As screen:
             Width: =43
             X: =412
             Y: =219
-            ZIndex: =20
+            ZIndex: =19
 
         Label1_16 As label:
             Align: =Align.Center
@@ -752,7 +751,7 @@ Features_11 As screen:
             Width: =133
             X: =455
             Y: =222
-            ZIndex: =27
+            ZIndex: =26
 
     Group18_2 As group:
         Height: =5
@@ -774,7 +773,7 @@ Features_11 As screen:
             Width: =213
             X: =408
             Y: =290
-            ZIndex: =34
+            ZIndex: =33
 
         icon11_25 As icon.Add:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -789,7 +788,7 @@ Features_11 As screen:
             Width: =43
             X: =419
             Y: =310
-            ZIndex: =35
+            ZIndex: =34
 
         Label1_21 As label:
             Align: =Align.Center
@@ -806,7 +805,7 @@ Features_11 As screen:
             Width: =133
             X: =462
             Y: =313
-            ZIndex: =36
+            ZIndex: =35
 
     Group20_1 As group:
         Height: =5
@@ -828,7 +827,7 @@ Features_11 As screen:
             Width: =213
             X: =32
             Y: =385
-            ZIndex: =41
+            ZIndex: =40
 
         icon11_23 As icon.Add:
             BorderColor: =RGBA(32, 54, 71, 1)
@@ -843,7 +842,7 @@ Features_11 As screen:
             Width: =43
             X: =43
             Y: =405
-            ZIndex: =42
+            ZIndex: =41
 
         Label1_17 As label:
             Align: =Align.Center
@@ -860,5 +859,5 @@ Features_11 As screen:
             Width: =133
             X: =86
             Y: =408
-            ZIndex: =43
+            ZIndex: =42
 
