@@ -14,7 +14,7 @@ Home As screen:
         Circle3_1 As circle:
             BorderColor: =RGBA(32, 54, 71, 1)
             Fill: =RGBA(255, 255, 255, .2)
-            Height: =187
+            Height: =157
             TabIndex: =0
             Width: =217
             X: =44
@@ -24,12 +24,12 @@ Home As screen:
         Circle1_1 As circle:
             BorderColor: =RGBA(242, 242, 242, 1)
             Fill: =RGBA(100, 118, 132, 1)
-            Height: =166
+            Height: =139
             OnSelect: =Navigate(Features, ScreenTransition.Fade)
             TabIndex: =0
             Width: =193
-            X: =55
-            Y: =515
+            X: =57
+            Y: =504
             ZIndex: =29
 
         Label1_5 As label:
@@ -39,7 +39,7 @@ Home As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(0, 45, 179,0)
             FontWeight: =FontWeight.Lighter
-            Height: =39
+            Height: =33
             HoverBorderColor: =Label1_5.BorderColor
             HoverColor: =Label1_5.Color
             HoverFill: =Label1_5.Fill
@@ -53,8 +53,8 @@ Home As screen:
             Size: =21.34
             Text: ="Excavadora"
             Width: =215
-            X: =44
-            Y: =545
+            X: =46
+            Y: =565
             ZIndex: =30
 
     Rectangle14 As rectangle:
@@ -108,7 +108,7 @@ Home As screen:
         BorderColor: =RGBA(32, 54, 71, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =55.55555555555566
+        Height: =73
         HoverBorderColor: =Label1_8.BorderColor
         HoverColor: =Label1_8.Color
         HoverFill: =Label1_8.Fill
@@ -126,7 +126,7 @@ Home As screen:
         VerticalAlign: =VerticalAlign.Top
         Width: =777.38
         X: =571.95
-        Y: =681
+        Y: =663
         ZIndex: =13
 
     Rectangle1_4 As rectangle:
@@ -152,22 +152,22 @@ Home As screen:
         Circle3_2 As circle:
             BorderColor: =RGBA(32, 54, 71, 1)
             Fill: =RGBA(255, 255, 255, .2)
-            Height: =179
+            Height: =159
             TabIndex: =0
             Width: =217
             X: =315
-            Y: =494
+            Y: =504
             ZIndex: =32
 
         Circle1_2 As circle:
             BorderColor: =RGBA(242, 242, 242, 1)
             Fill: =RGBA(100, 118, 132, 1)
-            Height: =159
+            Height: =141
             OnSelect: =Navigate(Features_8, ScreenTransition.Fade)
             TabIndex: =0
             Width: =193
-            X: =327
-            Y: =504
+            X: =326
+            Y: =510
             ZIndex: =33
 
         Label1_6 As label:
@@ -177,7 +177,7 @@ Home As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(0, 45, 179,0)
             FontWeight: =FontWeight.Lighter
-            Height: =37
+            Height: =33
             HoverBorderColor: =Label1_6.BorderColor
             HoverColor: =Label1_6.Color
             HoverFill: =Label1_6.Fill
@@ -191,8 +191,8 @@ Home As screen:
             Size: =21.34
             Text: ="MiniCargador"
             Width: =215
-            X: =315
-            Y: =542
+            X: =316
+            Y: =564
             ZIndex: =34
 
     Image17 As image:
