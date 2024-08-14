@@ -1,33 +1,11 @@
 Features_5 As screen:
-    BackgroundImage: =
+    BackgroundImage: =Enfriador
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     OnVisible: |-
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
-
-    Image21 As image:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =277
-        Image: ='Captura de pantalla 2024-08-14 094926'
-        Width: =466
-        X: =522
-        Y: =78
-        ZIndex: =1
-
-    Image20 As image:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =636
-        Image: =Enfriador
-        Width: =1014
-        X: =10
-        Y: =78
-        ZIndex: =2
 
     Rectangle2_9 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -99,7 +77,7 @@ Features_5 As screen:
         PressedFill: =Label2_10.Fill
         Size: =16
         Text: |-
-            ="EXCAVADORA: Filtro de aire enfriadores baterias tanque de expansion valvula de amortiguación piloto"
+            ="EXCAVADORA: Filtro de aire, enfriadores, baterias, tanque de expansion y valvula de amortiguación piloto"
         Width: =980
         X: =44
         ZIndex: =5
@@ -237,8 +215,8 @@ Features_5 As screen:
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             TabIndex: =0
             Width: =41
-            X: =206
-            Y: =300
+            X: =215
+            Y: =303
             ZIndex: =9
 
         Label1_23 As label:
@@ -248,12 +226,12 @@ Features_5 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255, 255, 255, 1)
             FontWeight: =FontWeight.Bold
-            Height: =74
+            Height: =70
             Size: =13
             Text: ="ENFRIADOR ACEITRE HIDRAULICO"
-            Width: =178
-            X: =34
-            Y: =288
+            Width: =151
+            X: =64
+            Y: =293
             ZIndex: =26
 
     Group7_2 As group:
@@ -347,7 +325,7 @@ Features_5 As screen:
         Rectangle8_4 As rectangle:
             BorderColor: =RGBA(32, 54, 71, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =286
+            Height: =135
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
