@@ -31,7 +31,7 @@ Features_7 As screen:
         PressedColor: =Label2_17.Color
         PressedFill: =Label2_17.Fill
         Text: |-
-            ="EXCAVADORA: Cabina Silla, Consolas, Joystick, Monitor, Computadores y Cableados (Harness) Vidrios"
+            ="EXCAVADORA: Cabina, Silla, Consolas, Joystick, Monitor, Computadores y Cableados (Harness) Vidrios"
         Width: =961
         X: =62
         ZIndex: =3
@@ -342,7 +342,7 @@ Features_7 As screen:
             PressedColor: =Label8_74.Color
             PressedFill: =Label8_74.Fill
             Size: =18
-            Text: ="ZONA 8"
+            Text: ="ZONA 9"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop2
             Width: =113
@@ -369,7 +369,7 @@ Features_7 As screen:
             PressedColor: =Label9_117.Color
             PressedFill: =Label9_117.Fill
             Size: =11
-            Text: ="Boom"
+            Text: ="Joystick"
             Tooltip: ="Seleccione"
             Visible: =pop2
             Width: =167
@@ -814,8 +814,8 @@ Features_7 As screen:
             PressedFill: =Circle2_50.Fill
             TabIndex: =0
             Width: =169
-            X: =278
-            Y: =293
+            X: =594
+            Y: =279
             ZIndex: =14
 
         icon11_31 As icon.Add:
@@ -829,8 +829,8 @@ Features_7 As screen:
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
             Width: =34
-            X: =289
-            Y: =299
+            X: =605
+            Y: =285
             ZIndex: =15
 
         Label1_28 As label:
@@ -844,10 +844,10 @@ Features_7 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             Size: =10
-            Text: ="Boom"
+            Text: ="Joystick"
             Width: =67
-            X: =328
-            Y: =304
+            X: =644
+            Y: =290
             ZIndex: =22
 
     Group18_4 As group:
