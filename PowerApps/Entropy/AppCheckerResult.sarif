@@ -15194,6 +15194,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Features_2.pop5"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Features_2.pop5",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "pop5",
+                "module": "Features_2",
+                "type": "Features_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Features_2.pop6"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Features_2.pop6",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "pop6",
+                "module": "Features_2",
+                "type": "Features_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Features_5.pop3"
                 }
               ],
