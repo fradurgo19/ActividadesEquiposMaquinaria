@@ -17,7 +17,7 @@ Home As screen:
             BorderThickness: =2
             DisabledFill: =RGBA(202, 80, 16, 1)
             Fill: =RGBA(255, 255, 255, .2)
-            Height: =157
+            Height: =169
             HoverFill: =RGBA(202, 80, 16, 1)
             PressedFill: =RGBA(202, 80, 16, 1)
             TabIndex: =0
@@ -30,14 +30,14 @@ Home As screen:
             BorderColor: =RGBA(242, 242, 242, 1)
             DisabledFill: =RGBA(202, 80, 16, 1)
             Fill: =RGBA(202, 80, 16, 1)
-            Height: =139
+            Height: =149
             HoverFill: =RGBA(202, 80, 16, 1)
             OnSelect: =Navigate(Features, ScreenTransition.Fade)
             PressedFill: =RGBA(202, 80, 16, 1)
             TabIndex: =0
             Width: =193
             X: =57
-            Y: =504
+            Y: =505
             ZIndex: =29
 
         Label1_5 As label:
@@ -48,7 +48,7 @@ Home As screen:
             Fill: =RGBA(0, 45, 179,0)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Lighter
-            Height: =73
+            Height: =79
             HoverBorderColor: =Label1_5.BorderColor
             HoverColor: =Label1_5.Color
             HoverFill: =Label1_5.Fill
@@ -63,7 +63,7 @@ Home As screen:
             Text: ="Excavadora"
             Width: =215
             X: =46
-            Y: =536
+            Y: =540
             ZIndex: =30
 
     Rectangle14 As rectangle:
@@ -179,27 +179,27 @@ Home As screen:
             BorderThickness: =2
             DisabledFill: =RGBA(202, 80, 16, 1)
             Fill: =RGBA(255, 255, 255, .2)
-            Height: =159
+            Height: =153
             HoverFill: =RGBA(202, 80, 16, 1)
             PressedFill: =RGBA(202, 80, 16, 1)
             TabIndex: =0
             Width: =217
-            X: =315
-            Y: =504
+            X: =302
+            Y: =510
             ZIndex: =32
 
         Circle1_2 As circle:
             BorderColor: =RGBA(242, 242, 242, 1)
             DisabledFill: =RGBA(202, 80, 16, 1)
             Fill: =RGBA(202, 80, 16, 1)
-            Height: =141
+            Height: =136
             HoverFill: =RGBA(202, 80, 16, 1)
             OnSelect: =Navigate(Features_8, ScreenTransition.Fade)
             PressedFill: =RGBA(202, 80, 16, 1)
             TabIndex: =0
             Width: =193
-            X: =326
-            Y: =510
+            X: =314
+            Y: =516
             ZIndex: =33
 
         Label1_6 As label:
@@ -210,7 +210,7 @@ Home As screen:
             Fill: =RGBA(0, 45, 179,0)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Lighter
-            Height: =60
+            Height: =58
             HoverBorderColor: =Label1_6.BorderColor
             HoverColor: =Label1_6.Color
             HoverFill: =Label1_6.Fill
@@ -224,7 +224,7 @@ Home As screen:
             Size: =21.34
             Text: ="MiniCargador"
             Width: =215
-            X: =316
-            Y: =549
+            X: =304
+            Y: =553
             ZIndex: =34
 
