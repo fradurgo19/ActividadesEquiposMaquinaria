@@ -188,7 +188,7 @@ Features_7 As screen:
         BorderColor: =RGBA(204, 204, 204, 1)
         DisabledFill: =Circle2_56.Fill
         Fill: =RGBA(247, 247, 37, 1)
-        Height: =122.73
+        Height: =102
         HoverFill: =Circle2_56.Fill
         OnSelect: |-
             =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
@@ -963,7 +963,7 @@ Features_7 As screen:
             Size: =13.34
             Text: ="Silla"
             Width: =116
-            X: =1059
+            X: =1069
             Y: =554
             ZIndex: =21
 
@@ -1008,8 +1008,8 @@ Features_7 As screen:
             PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Width: =52
-            X: =807.06
-            Y: =285
+            X: =816
+            Y: =291
             ZIndex: =15
 
         Label1_28 As label:
@@ -1029,8 +1029,8 @@ Features_7 As screen:
             Size: =13.34
             Text: ="Joystick"
             Width: =98
-            X: =859.09
-            Y: =290
+            X: =875
+            Y: =299
             ZIndex: =22
 
     Group18_4 As group:
@@ -1160,13 +1160,12 @@ Features_7 As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
-            Height: =43
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             Size: =13.34
             Text: ="Cabina"
-            Width: =118.72
-            X: =1069.86
-            Y: =120
+            Width: =99
+            X: =1086
+            Y: =123
             ZIndex: =39
 
