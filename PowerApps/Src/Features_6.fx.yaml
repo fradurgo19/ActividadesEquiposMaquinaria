@@ -91,36 +91,6 @@ Features_6 As screen:
             Y: =6
             ZIndex: =5
 
-    Label9_75 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        Height: =35
-        HoverBorderColor: =Label9_75.BorderColor
-        HoverColor: =Label9_75.Color
-        HoverFill: =Label9_75.Fill
-        OnSelect: |-
-            =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2Fbomba%20hidraulica&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        PressedBorderColor: =Label9_75.BorderColor
-        PressedColor: =Label9_75.Color
-        PressedFill: =Label9_75.Fill
-        Size: =13.34
-        Text: ="BOMBA PILOTO"
-        Visible: =pop3
-        Width: =165.41
-        X: =292.14
-        Y: =219
-        ZIndex: =13
-
     Circle2_48 As circle:
         BorderColor: =RGBA(204, 204, 204, 1)
         DisabledFill: =Circle2_48.Fill
@@ -405,8 +375,8 @@ Features_6 As screen:
             TabIndex: =0
             Visible: =pop2
             Width: =398
-            X: =553
-            Y: =304
+            X: =552
+            Y: =172
             ZIndex: =16
 
         Label8_70 As label:
@@ -430,8 +400,8 @@ Features_6 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop2
             Width: =130
-            X: =603
-            Y: =313
+            X: =602
+            Y: =181
             ZIndex: =17
 
         Label9_113 As label:
@@ -462,8 +432,8 @@ Features_6 As screen:
             Tooltip: ="Seleccione"
             Visible: =pop2
             Width: =192
-            X: =593
-            Y: =383
+            X: =592
+            Y: =251
             ZIndex: =18
 
         icon12_44 As icon.Cancel:
@@ -486,8 +456,8 @@ Features_6 As screen:
             TabIndex: =0
             Visible: =pop2
             Width: =33
-            X: =879
-            Y: =321
+            X: =878
+            Y: =189
             ZIndex: =19
 
     Rectangle4_33 As rectangle:
@@ -495,14 +465,14 @@ Features_6 As screen:
         BorderThickness: =5
         DisabledFill: =Rectangle4_33.Fill
         Fill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-        Height: =103
+        Height: =129
         HoverFill: =Rectangle4_33.Fill
         PressedFill: =Rectangle4_33.Fill
         TabIndex: =0
         Visible: =pop6
         Width: =445.55
-        X: =451
-        Y: =501
+        X: =365
+        Y: =351
         ZIndex: =47
 
     Group23_2 As group:
@@ -631,8 +601,8 @@ Features_6 As screen:
         VerticalAlign: =VerticalAlign.Top
         Visible: =pop6
         Width: =278.8
-        X: =472
-        Y: =514
+        X: =386
+        Y: =364
         ZIndex: =48
 
     Group24_3 As group:
@@ -758,8 +728,8 @@ Features_6 As screen:
         TabIndex: =0
         Visible: =pop6
         Width: =70.7
-        X: =827
-        Y: =512
+        X: =741
+        Y: =362
         ZIndex: =49
 
     Group25_3 As group:
@@ -892,8 +862,8 @@ Features_6 As screen:
         Text: ="Cilindro Stick 👆"
         Visible: =pop6
         Width: =198.76
-        X: =470
-        Y: =551
+        X: =384
+        Y: =401
         ZIndex: =50
 
     Group11_4 As group:
