@@ -1,1 +1,42 @@
-{}
+{
+  "8dd9bd68-4de9-440c-a0b7-1cd1e308fd31": {
+    "connectionRef": {
+      "displayName": "Servicios espaciales",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1675/1.0.1675.3608/microsoftspatialservices/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_microsoftspatialservices"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Serviciosespaciales"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "8dd9bd68-4de9-440c-a0b7-1cd1e308fd31"
+  },
+  "fa43f398-a7d1-4044-88ea-fdcc79e464d0": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://partequipos2.sharepoint.com/sites/servicioposventa": {
+        "dataSources": {
+          "Documentos": {
+            "tableName": "89c5691d-421f-4f7c-bb2b-24cc8019d62f"
+          },
+          "Documentos_1": {
+            "tableName": "89c5691d-421f-4f7c-bb2b-24cc8019d62f"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Documentos",
+      "Documentos_1"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "fa43f398-a7d1-4044-88ea-fdcc79e464d0"
+  }
+}
