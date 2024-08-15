@@ -2,6 +2,8 @@ Features_10 As screen:
     BackgroundImage: =Tralacion
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnHidden: |-
+        =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false})
     OnVisible: |-
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
