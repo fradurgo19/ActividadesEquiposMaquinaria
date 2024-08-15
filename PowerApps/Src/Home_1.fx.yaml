@@ -89,3 +89,108 @@ Home_1 As screen:
         Y: =673
         ZIndex: =14
 
+    Label1_36 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(101, 128, 187, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        FontWeight: =FontWeight.Bold
+        Height: =76
+        Size: =30
+        Text: ="Bienvenido a la App"
+        Width: =640
+        X: =316
+        Y: =76
+        ZIndex: =18
+
+    GroupBackground_7 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =18
+
+        BienvenidaFondo_2 As rectangle:
+            BorderColor: =RGBA(51, 51, 51, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderColor: =BienvenidaFondo_2.BorderColor
+            Height: =60
+            Width: =1366
+            ZIndex: =15
+
+        Bienvenida_2 As label:
+            BorderColor: =RGBA(51, 51, 51, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderColor: =Bienvenida_2.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =32
+            HoverBorderColor: =Bienvenida_2.BorderColor
+            HoverColor: =Bienvenida_2.Color
+            HoverFill: =Bienvenida_2.Fill
+            LineHeight: =0
+            PressedBorderColor: =Bienvenida_2.BorderColor
+            PressedColor: =Bienvenida_2.Color
+            PressedFill: =Bienvenida_2.Fill
+            Size: =18
+            Text: ="Actividades Maquinaria"
+            Width: =350
+            X: =54
+            Y: =14
+            ZIndex: =16
+
+        ImageLogo_2 As image:
+            BorderColor: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            FocusedBorderColor: =ImageLogo_2.BorderColor
+            Height: =76
+            Image: =Logo
+            Width: =352
+            X: =1013
+            ZIndex: =17
+
+    ButtonCanvas3 As Botón:
+        Align: =""
+        BasePaletteColor: =RGBA(249, 83, 109, 1)
+        BorderStyle: =""
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =80
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =Set(varCargar, true);Set(varTiempo, true)
+        Text: ="Ingresar"
+        VerticalAlign: =""
+        Width: =208
+        X: =532
+        Y: =415
+        ZIndex: =19
+
+    Timer1 As timer:
+        AutoStart: =varTiempo
+        Color: =RGBA(255,255,255,1)
+        Duration: =5000
+        Fill: =RGBA(62,96,170,1)
+        Height: =70
+        OnTimerEnd: =Set(varCargar,false);Navigate(Home,ScreenTransition.Fade)
+        Visible: =false
+        Width: =280
+        X: =945
+        Y: =360
+        ZIndex: =20
+
+    Image15_1 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =401
+        Image: =giphy4
+        Visible: =varCargar
+        Width: =1366
+        Y: =135
+        ZIndex: =21
+
