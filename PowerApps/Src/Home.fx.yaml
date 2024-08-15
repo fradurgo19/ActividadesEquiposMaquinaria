@@ -1,8 +1,7 @@
 Home As screen:
     BackgroundImage: ='excavator_view003 (1)'
-    Fill: =RGBA(255,255,255,1)
     Height: =Max(App.Height, App.DesignHeight)
-    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
+    LoadingSpinnerColor: =RGBA(202, 80, 16, 1)
     Width: =Max(App.Width, App.DesignWidth)
 
     Group32 As group:
@@ -13,9 +12,14 @@ Home As screen:
         ZIndex: =6
 
         Circle3_1 As circle:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(202, 80, 16, 1)
             Fill: =RGBA(255, 255, 255, .2)
             Height: =157
+            HoverFill: =RGBA(202, 80, 16, 1)
+            PressedFill: =RGBA(202, 80, 16, 1)
             TabIndex: =0
             Width: =217
             X: =44
@@ -24,9 +28,12 @@ Home As screen:
 
         Circle1_1 As circle:
             BorderColor: =RGBA(242, 242, 242, 1)
-            Fill: =RGBA(211, 66, 9, 1)
+            DisabledFill: =RGBA(202, 80, 16, 1)
+            Fill: =RGBA(202, 80, 16, 1)
             Height: =139
+            HoverFill: =RGBA(202, 80, 16, 1)
             OnSelect: =Navigate(Features, ScreenTransition.Fade)
+            PressedFill: =RGBA(202, 80, 16, 1)
             TabIndex: =0
             Width: =193
             X: =57
@@ -39,6 +46,7 @@ Home As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(0, 45, 179,0)
+            Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Lighter
             Height: =73
             HoverBorderColor: =Label1_5.BorderColor
@@ -59,9 +67,9 @@ Home As screen:
             ZIndex: =30
 
     Rectangle14 As rectangle:
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
         DisabledFill: =Rectangle14.Fill
-        Fill: =RGBA(131, 24, 75, 1)
+        Fill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
         Height: =232
         HoverFill: =Rectangle14.Fill
         PressedFill: =Rectangle14.Fill
@@ -73,11 +81,18 @@ Home As screen:
     Image3 As image:
         ApplyEXIFOrientation: =false
         AutoDisableOnSelect: =false
-        BorderColor: =RGBA(131, 24, 75, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
         Height: =68.1428571428571
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
         Image: ='Captura de pantalla 2024-01-12 082706'
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =264.13
         X: =290.81
         Y: =670.333333333334
@@ -87,6 +102,7 @@ Home As screen:
         Align: =TextPosition.Left
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Lighter
         Height: =77
         HoverBorderColor: =Label2.BorderColor
@@ -106,9 +122,14 @@ Home As screen:
 
     Label1_8 As label:
         Align: =TextPosition.Left
-        BorderColor: =RGBA(131, 24, 75, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
         Height: =103
         HoverBorderColor: =Label1_8.BorderColor
         HoverColor: =Label1_8.Color
@@ -129,12 +150,15 @@ Home As screen:
         ZIndex: =13
 
     Rectangle1_4 As rectangle:
-        BorderColor: =RGBA(131, 24, 75, 1)
-        DisabledFill: =Rectangle1_4.Fill
-        Fill: =RGBA(255, 211, 205, 1)
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(202, 80, 16, 1)
+        FocusedBorderThickness: =4
         Height: =60
-        HoverFill: =Rectangle1_4.Fill
-        PressedFill: =Rectangle1_4.Fill
+        HoverFill: =RGBA(202, 80, 16, 1)
+        PressedFill: =RGBA(202, 80, 16, 1)
         TabIndex: =0
         Width: =2.67
         X: =258.46
@@ -149,9 +173,14 @@ Home As screen:
         ZIndex: =31
 
         Circle3_2 As circle:
-            BorderColor: =RGBA(131, 24, 75, 1)
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledFill: =RGBA(202, 80, 16, 1)
             Fill: =RGBA(255, 255, 255, .2)
             Height: =159
+            HoverFill: =RGBA(202, 80, 16, 1)
+            PressedFill: =RGBA(202, 80, 16, 1)
             TabIndex: =0
             Width: =217
             X: =315
@@ -160,9 +189,12 @@ Home As screen:
 
         Circle1_2 As circle:
             BorderColor: =RGBA(242, 242, 242, 1)
-            Fill: =RGBA(211, 66, 9, 1)
+            DisabledFill: =RGBA(202, 80, 16, 1)
+            Fill: =RGBA(202, 80, 16, 1)
             Height: =141
+            HoverFill: =RGBA(202, 80, 16, 1)
             OnSelect: =Navigate(Features_8, ScreenTransition.Fade)
+            PressedFill: =RGBA(202, 80, 16, 1)
             TabIndex: =0
             Width: =193
             X: =326
@@ -175,6 +207,7 @@ Home As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(0, 45, 179,0)
+            Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Lighter
             Height: =60
             HoverBorderColor: =Label1_6.BorderColor
