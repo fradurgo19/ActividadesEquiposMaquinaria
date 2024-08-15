@@ -12434,6 +12434,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Logo"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Logo",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Logo",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Features_10.pop6"
                 }
               ],

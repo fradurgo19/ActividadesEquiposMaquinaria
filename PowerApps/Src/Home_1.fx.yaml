@@ -19,7 +19,7 @@ Home_1 As screen:
         PressedFill: =RGBA(0, 0, 0, 0)
         Visible: =varCargar
         Width: =1366
-        ZIndex: =1
+        ZIndex: =2
 
     Rectangle14_1 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -31,7 +31,7 @@ Home_1 As screen:
         TabIndex: =0
         Width: =1366
         Y: =536
-        ZIndex: =2
+        ZIndex: =3
 
     Image3_1 As image:
         ApplyEXIFOrientation: =false
@@ -51,7 +51,7 @@ Home_1 As screen:
         Width: =264.13
         X: =290.81
         Y: =670.333333333334
-        ZIndex: =3
+        ZIndex: =4
 
     Label2_1 As label:
         Align: =TextPosition.Left
@@ -73,7 +73,7 @@ Home_1 As screen:
         Width: =184.09
         X: =50.02
         Y: =663.5
-        ZIndex: =4
+        ZIndex: =5
 
     Label1_38 As label:
         Align: =TextPosition.Left
@@ -101,7 +101,7 @@ Home_1 As screen:
         Width: =777.38
         X: =571.95
         Y: =576
-        ZIndex: =5
+        ZIndex: =6
 
     Rectangle1_5 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -117,7 +117,7 @@ Home_1 As screen:
         Width: =2.67
         X: =258.46
         Y: =673
-        ZIndex: =6
+        ZIndex: =7
 
     Label1_36 As label:
         Align: =Align.Center
@@ -134,8 +134,8 @@ Home_1 As screen:
         Size: =30
         Text: ="Bienvenido a la App"
         Width: =640
-        X: =343
-        Y: =76
+        X: =352
+        Y: =91
         ZIndex: =10
 
     ButtonCanvas3 As Botón:
@@ -196,11 +196,11 @@ Home_1 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             FocusedBorderColor: =BienvenidaFondo_2.BorderColor
             FocusedBorderThickness: =4
-            Height: =60
+            Height: =62
             HoverFill: =RGBA(202, 80, 16, 1)
             PressedFill: =RGBA(202, 80, 16, 1)
             Width: =1366
-            ZIndex: =7
+            ZIndex: =8
 
         Bienvenida_2 As label:
             BorderColor: =RGBA(51, 51, 51, 1)
@@ -213,7 +213,7 @@ Home_1 As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
-            Height: =32
+            Height: =26
             HoverBorderColor: =Bienvenida_2.BorderColor
             HoverColor: =Bienvenida_2.Color
             HoverFill: =Bienvenida_2.Fill
@@ -225,24 +225,6 @@ Home_1 As screen:
             Text: ="Actividades Maquinaria"
             Width: =350
             X: =54
-            Y: =14
-            ZIndex: =8
-
-        ImageLogo_2 As image:
-            BorderColor: =RGBA(51, 51, 51, 1)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderColor: =ImageLogo_2.BorderColor
-            FocusedBorderThickness: =4
-            Height: =76
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Image: =Logo
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            Width: =352
-            X: =1013
+            Y: =12
             ZIndex: =9
 
