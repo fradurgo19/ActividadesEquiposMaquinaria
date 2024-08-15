@@ -2,7 +2,7 @@ Features_6 As screen:
     BackgroundImage: =excavator_view004
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
     OnHidden: |-
         =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false})
     OnVisible: |-
@@ -10,8 +10,8 @@ Features_6 As screen:
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle2_15 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Fill: =RGBA(100, 118, 132, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(211, 66, 9, 1)
         Height: =44
         TabIndex: =0
         Width: =1366
@@ -48,7 +48,7 @@ Features_6 As screen:
         ZIndex: =4
 
         Rectangle15_25 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(62,96,170,0)
             Height: =44
             OnSelect: =Navigate(Home, ScreenTransition.Fade)
@@ -57,7 +57,7 @@ Features_6 As screen:
             ZIndex: =4
 
         icon1_14 As icon.ChevronLeft:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -71,7 +71,7 @@ Features_6 As screen:
             ZIndex: =5
 
     Label9_75 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =35
@@ -111,8 +111,8 @@ Features_6 As screen:
         ZIndex: =23
 
     icon11_29 As icon.Add:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(131, 24, 75, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =38
@@ -127,7 +127,7 @@ Features_6 As screen:
 
     Label1_26 As label:
         Align: =Align.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(197, 242, 63, 1)
@@ -135,8 +135,6 @@ Features_6 As screen:
         Height: =35
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
-        PaddingRight: =6.67
-        PaddingTop: =6.67
         Size: =13.34
         Text: |-
             ="Balde
@@ -153,7 +151,7 @@ Features_6 As screen:
         Height: =122.73
         HoverFill: =Circle2_55.Fill
         OnSelect: |-
-            =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:true})
         PressedFill: =Circle2_55.Fill
         TabIndex: =0
         Width: =246.79
@@ -161,8 +159,8 @@ Features_6 As screen:
         ZIndex: =44
 
     icon11_36 As icon.Add:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Color: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Color: =RGBA(131, 24, 75, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =43
@@ -183,45 +181,45 @@ Features_6 As screen:
         ZIndex: =45
 
         icon12_45 As icon.Cancel:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =26
+            Height: =21
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop1
-            Width: =37.35
+            Width: =37
             X: =824.4
-            Y: =341
+            Y: =337
             ZIndex: =8
 
         Rectangle9_15 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =27
+            Height: =22
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop1
-            Width: =58.7
+            Width: =58
             X: =823.07
-            Y: =501
+            Y: =465
             ZIndex: =9
 
         Rectangle4_31 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
             DisabledFill: =Rectangle4_31.Fill
-            Fill: =RGBA(32, 54, 71, 1)
-            Height: =138
+            Fill: =RGBA(131, 24, 75, 1)
+            Height: =111
             HoverFill: =Rectangle4_31.Fill
             PressedFill: =Rectangle4_31.Fill
             TabIndex: =0
             Visible: =pop1
-            Width: =445.55
+            Width: =445
             X: =442.88
             Y: =321
             ZIndex: =10
@@ -230,7 +228,7 @@ Features_6 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Height: =39
+            Height: =31
             HoverBorderColor: =Label8_46.BorderColor
             HoverColor: =Label8_46.Color
             HoverFill: =Label8_46.Fill
@@ -245,33 +243,33 @@ Features_6 As screen:
             Text: ="ZONA 8"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop1
-            Width: =278.8
+            Width: =278
             X: =458.89
-            Y: =335
+            Y: =332
             ZIndex: =11
 
         icon12_23 As icon.Cancel:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =27
+            Height: =37
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
             Visible: =pop1
-            Width: =70.7
+            Width: =70
             X: =808.39
-            Y: =329
+            Y: =327
             ZIndex: =12
 
         Label9_53 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
-            Height: =57
+            Height: =46
             HoverBorderColor: =Label9_53.BorderColor
             HoverColor: =Label9_53.Color
             HoverFill: =Label9_53.Fill
@@ -287,14 +285,14 @@ Features_6 As screen:
             Size: =15
             Text: ="Stick 👆"
             Visible: =pop1
-            Width: =198.76
+            Width: =198
             X: =456.22
-            Y: =374
+            Y: =364
             ZIndex: =20
 
     Label1_33 As label:
         Align: =Align.Center
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(197, 242, 63, 1)
@@ -302,8 +300,6 @@ Features_6 As screen:
         Height: =35
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:true})
-        PaddingRight: =6.67
-        PaddingTop: =6.67
         Size: =13.34
         Text: ="Cilindro de Stick"
         Width: =162.75
@@ -322,7 +318,7 @@ Features_6 As screen:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
             DisabledFill: =Rectangle4_52.Fill
-            Fill: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(131, 24, 75, 1)
             Height: =127
             HoverFill: =Rectangle4_52.Fill
             PressedFill: =Rectangle4_52.Fill
@@ -348,7 +344,7 @@ Features_6 As screen:
             PressedBorderColor: =Label8_70.BorderColor
             PressedColor: =Label8_70.Color
             PressedFill: =Label8_70.Fill
-            Size: =24.01
+            Size: =18
             Text: ="ZONA 8"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop2
@@ -358,7 +354,7 @@ Features_6 As screen:
             ZIndex: =17
 
         Label9_113 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
@@ -385,7 +381,7 @@ Features_6 As screen:
             ZIndex: =18
 
         icon12_44 As icon.Cancel:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -404,15 +400,15 @@ Features_6 As screen:
         BorderColor: =RGBA(255, 255, 255, 255)
         BorderThickness: =5
         DisabledFill: =Rectangle4_33.Fill
-        Fill: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(131, 24, 75, 1)
         Height: =103
         HoverFill: =Rectangle4_33.Fill
         PressedFill: =Rectangle4_33.Fill
         TabIndex: =0
         Visible: =pop6
         Width: =445.55
-        X: =478
-        Y: =329
+        X: =451
+        Y: =501
         ZIndex: =47
 
     Group23_2 As group:
@@ -426,7 +422,7 @@ Features_6 As screen:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
             DisabledFill: =Rectangle4_54.Fill
-            Fill: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(131, 24, 75, 1)
             Height: =133
             HoverFill: =Rectangle4_54.Fill
             PressedFill: =Rectangle4_54.Fill
@@ -452,7 +448,7 @@ Features_6 As screen:
             PressedBorderColor: =Label8_72.BorderColor
             PressedColor: =Label8_72.Color
             PressedFill: =Label8_72.Fill
-            Size: =24.01
+            Size: =18
             Text: ="ZONA 8"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop3
@@ -462,7 +458,7 @@ Features_6 As screen:
             ZIndex: =27
 
         Label9_115 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
@@ -491,7 +487,7 @@ Features_6 As screen:
             ZIndex: =28
 
         icon12_47 As icon.Cancel:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -526,8 +522,8 @@ Features_6 As screen:
         VerticalAlign: =VerticalAlign.Top
         Visible: =pop6
         Width: =278.8
-        X: =499
-        Y: =342
+        X: =472
+        Y: =514
         ZIndex: =48
 
     Group24_3 As group:
@@ -541,7 +537,7 @@ Features_6 As screen:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
             DisabledFill: =Rectangle4_55.Fill
-            Fill: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(131, 24, 75, 1)
             Height: =124
             HoverFill: =Rectangle4_55.Fill
             PressedFill: =Rectangle4_55.Fill
@@ -567,7 +563,7 @@ Features_6 As screen:
             PressedBorderColor: =Label8_73.BorderColor
             PressedColor: =Label8_73.Color
             PressedFill: =Label8_73.Fill
-            Size: =24.01
+            Size: =18
             Text: ="ZONA 8"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
@@ -577,7 +573,7 @@ Features_6 As screen:
             ZIndex: =34
 
         Label9_116 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
@@ -604,7 +600,7 @@ Features_6 As screen:
             ZIndex: =35
 
         icon12_48 As icon.Cancel:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -620,19 +616,19 @@ Features_6 As screen:
             ZIndex: =36
 
     icon12_55 As icon.Cancel:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(242, 242, 242, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =27
+        Height: =39
         Icon: =Icon.Cancel
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Visible: =pop6
         Width: =70.7
-        X: =854
-        Y: =340
+        X: =827
+        Y: =512
         ZIndex: =49
 
     Group25_3 As group:
@@ -646,7 +642,7 @@ Features_6 As screen:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
             DisabledFill: =Rectangle4_53.Fill
-            Fill: =RGBA(32, 54, 71, 1)
+            Fill: =RGBA(131, 24, 75, 1)
             Height: =151
             HoverFill: =Rectangle4_53.Fill
             PressedFill: =Rectangle4_53.Fill
@@ -672,7 +668,7 @@ Features_6 As screen:
             PressedBorderColor: =Label8_71.BorderColor
             PressedColor: =Label8_71.Color
             PressedFill: =Label8_71.Fill
-            Size: =24.01
+            Size: =18
             Text: ="ZONA 8"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop5
@@ -682,7 +678,7 @@ Features_6 As screen:
             ZIndex: =41
 
         Label9_114 As label:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             FontWeight: =FontWeight.Bold
@@ -709,7 +705,7 @@ Features_6 As screen:
             ZIndex: =42
 
         icon12_46 As icon.Cancel:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
@@ -725,7 +721,7 @@ Features_6 As screen:
             ZIndex: =43
 
     Label9_55 As label:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
@@ -746,8 +742,8 @@ Features_6 As screen:
         Text: ="Cilindro Stick 👆"
         Visible: =pop6
         Width: =198.76
-        X: =497
-        Y: =379
+        X: =470
+        Y: =551
         ZIndex: =50
 
     Group11_4 As group:
@@ -773,8 +769,8 @@ Features_6 As screen:
             ZIndex: =6
 
         icon11_27 As icon.Add:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =38
@@ -789,7 +785,7 @@ Features_6 As screen:
 
         Label1_4 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(197, 242, 63, 1)
@@ -797,8 +793,6 @@ Features_6 As screen:
             Height: =18
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
-            PaddingRight: =6.67
-            PaddingTop: =6.67
             Size: =13.34
             Text: ="Stick"
             Width: =107
@@ -829,8 +823,8 @@ Features_6 As screen:
             ZIndex: =14
 
         icon11_26 As icon.Add:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =35
@@ -845,7 +839,7 @@ Features_6 As screen:
 
         Label1_24 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(197, 242, 63, 1)
@@ -853,8 +847,6 @@ Features_6 As screen:
             Height: =24
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
-            PaddingRight: =6.67
-            PaddingTop: =6.67
             Size: =13.34
             Text: ="Boom"
             Width: =89.38
@@ -884,8 +876,8 @@ Features_6 As screen:
             ZIndex: =30
 
         icon11_30 As icon.Add:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =38
@@ -900,7 +892,7 @@ Features_6 As screen:
 
         Label1_27 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(197, 242, 63, 1)
@@ -908,8 +900,6 @@ Features_6 As screen:
             Height: =35
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
-            PaddingRight: =6.67
-            PaddingTop: =6.67
             Size: =13.34
             Text: ="Cilindro del Balde"
             Width: =177.42
@@ -940,8 +930,8 @@ Features_6 As screen:
             ZIndex: =37
 
         icon11_28 As icon.Add:
-            BorderColor: =RGBA(32, 54, 71, 1)
-            Color: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
+            Color: =RGBA(131, 24, 75, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =41
@@ -956,7 +946,7 @@ Features_6 As screen:
 
         Label1_25 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(197, 242, 63, 1)
@@ -964,8 +954,6 @@ Features_6 As screen:
             Height: =59
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
-            PaddingRight: =6.67
-            PaddingTop: =6.67
             Size: =13.34
             Text: ="Cilindro del Boom"
             Width: =136

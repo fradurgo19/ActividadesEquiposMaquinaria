@@ -1,6 +1,7 @@
 Video As screen:
+    Fill: =RGBA(255,255,255,1)
     Height: =Max(App.Height, App.DesignHeight)
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
     OnVisible: |-
         =UpdateContext({a_start:false});
         UpdateContext({a_start:true})
@@ -8,8 +9,8 @@ Video As screen:
 
     Video2 As videoPlayback:
         AutoStart: =true
-        BorderColor: =RGBA(32, 54, 71, 1)
-        Fill: =RGBA(100, 118, 132, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
+        Fill: =RGBA(211, 66, 9, 1)
         Height: =768
         ImagePosition: =ImagePosition.Fit
         Loop: =true
@@ -28,7 +29,7 @@ Video As screen:
         ZIndex: =2
 
         Rectangle15_6 As rectangle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(62,96,170,0)
             Height: =51.777777777777835
             OnSelect: =Navigate(Home,ScreenTransition.Fade)
@@ -39,7 +40,7 @@ Video As screen:
             ZIndex: =3
 
         icon2 As icon.Cancel:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Color: =RGBA(255, 255, 255, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)

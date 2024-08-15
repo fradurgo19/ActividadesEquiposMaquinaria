@@ -1,7 +1,8 @@
 Home As screen:
     BackgroundImage: ='excavator_view003 (1)'
+    Fill: =RGBA(255,255,255,1)
     Height: =Max(App.Height, App.DesignHeight)
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
     Width: =Max(App.Width, App.DesignWidth)
 
     Group32 As group:
@@ -12,7 +13,7 @@ Home As screen:
         ZIndex: =6
 
         Circle3_1 As circle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(255, 255, 255, .2)
             Height: =157
             TabIndex: =0
@@ -23,7 +24,7 @@ Home As screen:
 
         Circle1_1 As circle:
             BorderColor: =RGBA(242, 242, 242, 1)
-            Fill: =RGBA(100, 118, 132, 1)
+            Fill: =RGBA(211, 66, 9, 1)
             Height: =139
             OnSelect: =Navigate(Features, ScreenTransition.Fade)
             TabIndex: =0
@@ -58,9 +59,9 @@ Home As screen:
             ZIndex: =30
 
     Rectangle14 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         DisabledFill: =Rectangle14.Fill
-        Fill: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(131, 24, 75, 1)
         Height: =232
         HoverFill: =Rectangle14.Fill
         PressedFill: =Rectangle14.Fill
@@ -72,7 +73,7 @@ Home As screen:
     Image3 As image:
         ApplyEXIFOrientation: =false
         AutoDisableOnSelect: =false
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =68.1428571428571
@@ -96,7 +97,7 @@ Home As screen:
         PressedBorderColor: =Label2.BorderColor
         PressedColor: =Label2.Color
         PressedFill: =Label2.Fill
-        Size: =24.01
+        Size: =18
         Text: ="TEMPARIO"
         Width: =184.09
         X: =50.02
@@ -105,7 +106,7 @@ Home As screen:
 
     Label1_8 As label:
         Align: =TextPosition.Left
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =103
@@ -115,11 +116,10 @@ Home As screen:
         OnSelect: =
         PaddingLeft: =15
         PaddingRight: =20.01
-        PaddingTop: =6.67
         PressedBorderColor: =Label1_8.BorderColor
         PressedColor: =Label1_8.Color
         PressedFill: =Label1_8.Fill
-        Size: =17.34
+        Size: =13
         Text: |-
             ="🚀 Navegación Rápida: Encuentra la parte exacta que necesitas sin esfuerzo.🎯 Selección Precisa: Profundiza en los componentes y subcomponentes específicos."
         VerticalAlign: =VerticalAlign.Top
@@ -129,9 +129,9 @@ Home As screen:
         ZIndex: =13
 
     Rectangle1_4 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         DisabledFill: =Rectangle1_4.Fill
-        Fill: =RGBA(205, 209, 213, 1)
+        Fill: =RGBA(255, 211, 205, 1)
         Height: =60
         HoverFill: =Rectangle1_4.Fill
         PressedFill: =Rectangle1_4.Fill
@@ -149,7 +149,7 @@ Home As screen:
         ZIndex: =31
 
         Circle3_2 As circle:
-            BorderColor: =RGBA(32, 54, 71, 1)
+            BorderColor: =RGBA(131, 24, 75, 1)
             Fill: =RGBA(255, 255, 255, .2)
             Height: =159
             TabIndex: =0
@@ -160,7 +160,7 @@ Home As screen:
 
         Circle1_2 As circle:
             BorderColor: =RGBA(242, 242, 242, 1)
-            Fill: =RGBA(100, 118, 132, 1)
+            Fill: =RGBA(211, 66, 9, 1)
             Height: =141
             OnSelect: =Navigate(Features_8, ScreenTransition.Fade)
             TabIndex: =0

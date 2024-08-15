@@ -1,11 +1,12 @@
 Home_1 As screen:
     BackgroundImage: =
+    Fill: =RGBA(255,255,255,1)
     Height: =Max(App.Height, App.DesignHeight)
-    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    LoadingSpinnerColor: =RGBA(211, 66, 9, 1)
     Width: =Max(App.Width, App.DesignWidth)
 
     Image15_1 As image:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =536
@@ -15,9 +16,9 @@ Home_1 As screen:
         ZIndex: =1
 
     Rectangle14_1 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         DisabledFill: =Rectangle14_1.Fill
-        Fill: =RGBA(32, 54, 71, 1)
+        Fill: =RGBA(131, 24, 75, 1)
         Height: =232
         HoverFill: =Rectangle14_1.Fill
         PressedFill: =Rectangle14_1.Fill
@@ -29,7 +30,7 @@ Home_1 As screen:
     Image3_1 As image:
         ApplyEXIFOrientation: =false
         AutoDisableOnSelect: =false
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =68.1428571428571
@@ -53,7 +54,7 @@ Home_1 As screen:
         PressedBorderColor: =Label2_1.BorderColor
         PressedColor: =Label2_1.Color
         PressedFill: =Label2_1.Fill
-        Size: =24.01
+        Size: =18
         Text: ="TEMPARIO"
         Width: =184.09
         X: =50.02
@@ -62,7 +63,7 @@ Home_1 As screen:
 
     Label1_38 As label:
         Align: =TextPosition.Left
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =157
@@ -72,11 +73,10 @@ Home_1 As screen:
         OnSelect: =
         PaddingLeft: =15
         PaddingRight: =20.01
-        PaddingTop: =6.67
         PressedBorderColor: =Label1_38.BorderColor
         PressedColor: =Label1_38.Color
         PressedFill: =Label1_38.Fill
-        Size: =17.34
+        Size: =13
         Text: ="🔧 Actividades Mantenimiento Maquinaria es tu herramienta esencial para el mantenimiento y reparación de máquinas. Navega por las partes de la maquinaria, selecciona componentes específicos y accede a actividades detalladas de reparación o instalación con solo un clic."
         VerticalAlign: =VerticalAlign.Top
         Width: =777.38
@@ -85,9 +85,9 @@ Home_1 As screen:
         ZIndex: =5
 
     Rectangle1_5 As rectangle:
-        BorderColor: =RGBA(32, 54, 71, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         DisabledFill: =Rectangle1_5.Fill
-        Fill: =RGBA(205, 209, 213, 1)
+        Fill: =RGBA(255, 211, 205, 1)
         Height: =60
         HoverFill: =Rectangle1_5.Fill
         PressedFill: =Rectangle1_5.Fill
@@ -99,9 +99,9 @@ Home_1 As screen:
 
     Label1_36 As label:
         Align: =Align.Center
-        BorderColor: =RGBA(101, 128, 187, 1)
+        BorderColor: =RGBA(131, 24, 75, 1)
         Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
         Height: =76
         Size: =30
@@ -132,10 +132,11 @@ Home_1 As screen:
 
     Timer1 As timer:
         AutoStart: =varTiempo
-        Color: =RGBA(255,255,255,1)
         Duration: =5000
-        Fill: =RGBA(62,96,170,1)
+        Fill: =RGBA(211, 66, 9, 1)
         Height: =70
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(211, 66, 9, 1), -20%)
         OnTimerEnd: =Set(varCargar,false);Navigate(Home,ScreenTransition.Fade)
         Visible: =false
         Width: =280
