@@ -140,51 +140,6 @@ Features_8 As screen:
             Y: =298
             ZIndex: =27
 
-    Group25_1 As group:
-        Height: =80
-        Width: =80
-        X: =300
-        Y: =298
-        ZIndex: =6
-
-        Circle2_4 As circle:
-            BorderColor: =RGBA(204, 204, 204, 1)
-            DisabledFill: =Circle2_4.Fill
-            Fill: =ColorFade(RGBA(202, 80, 16, 1), -50%)
-            Height: =106.72
-            HoverFill: =Circle2_4.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
-            PressedFill: =Circle2_4.Fill
-            TabIndex: =0
-            Width: =106.72
-            X: =401
-            Y: =284
-            ZIndex: =28
-
-        icon10_1 As icon.Add:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(202, 80, 16, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =55
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            TabIndex: =0
-            Width: =73.37
-            X: =417.54
-            Y: =311
-            ZIndex: =30
-
     Group28_1 As group:
         Height: =80
         Width: =80
@@ -644,6 +599,44 @@ Features_8 As screen:
         Text: ="EXCAVADORA"
         Width: =1366
         ZIndex: =16
+
+    Circle2_4 As circle:
+        BorderColor: =RGBA(204, 204, 204, 1)
+        DisabledFill: =Circle2_4.Fill
+        Fill: =ColorFade(RGBA(202, 80, 16, 1), -50%)
+        Height: =106.72
+        HoverFill: =Circle2_4.Fill
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
+        PressedFill: =Circle2_4.Fill
+        TabIndex: =0
+        Width: =106.72
+        X: =401
+        Y: =284
+        ZIndex: =28
+
+    icon10_1 As icon.Add:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(202, 80, 16, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =55
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        TabIndex: =0
+        Width: =73.37
+        X: =417.54
+        Y: =311
+        ZIndex: =30
 
     Rectangle15_8 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
