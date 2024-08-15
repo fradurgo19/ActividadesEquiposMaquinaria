@@ -1162,7 +1162,7 @@ Features_3 As screen:
             TabIndex: =0
             Width: =77.37
             X: =125.39
-            Y: =531
+            Y: =544
             ZIndex: =31
 
         Label1_12 As label:
@@ -1182,8 +1182,8 @@ Features_3 As screen:
             Size: =13.34
             Text: ="Banco de Vávulas"
             Width: =241.45
-            X: =182.76
-            Y: =534
+            X: =212
+            Y: =544
             ZIndex: =32
 
     Group20 As group:
@@ -1243,13 +1243,13 @@ Features_3 As screen:
             FocusedBorderThickness: =4
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
-            Height: =70
+            Height: =54
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             Size: =13.34
-            Text: ="BANCO DE SOLENOIDE"
+            Text: ="Banco de Solenoide"
             Width: =177.42
-            X: =114.72
+            X: =117
             Y: =324
             ZIndex: =39
 
