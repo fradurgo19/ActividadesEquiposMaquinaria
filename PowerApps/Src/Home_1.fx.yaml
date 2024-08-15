@@ -4,6 +4,16 @@ Home_1 As screen:
     LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image15_1 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =536
+        Image: =Cargar
+        Visible: =varCargar
+        Width: =1366
+        ZIndex: =1
+
     Rectangle14_1 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
         DisabledFill: =Rectangle14_1.Fill
@@ -14,7 +24,7 @@ Home_1 As screen:
         TabIndex: =0
         Width: =1366
         Y: =536
-        ZIndex: =10
+        ZIndex: =2
 
     Image3_1 As image:
         ApplyEXIFOrientation: =false
@@ -27,7 +37,7 @@ Home_1 As screen:
         Width: =264.13
         X: =290.81
         Y: =670.333333333334
-        ZIndex: =11
+        ZIndex: =3
 
     Label2_1 As label:
         Align: =TextPosition.Left
@@ -48,7 +58,7 @@ Home_1 As screen:
         Width: =184.09
         X: =50.02
         Y: =663.5
-        ZIndex: =12
+        ZIndex: =4
 
     Label1_38 As label:
         Align: =TextPosition.Left
@@ -74,7 +84,7 @@ Home_1 As screen:
         Width: =777.38
         X: =571.95
         Y: =663
-        ZIndex: =13
+        ZIndex: =5
 
     Rectangle1_5 As rectangle:
         BorderColor: =RGBA(32, 54, 71, 1)
@@ -87,7 +97,7 @@ Home_1 As screen:
         Width: =2.67
         X: =258.46
         Y: =673
-        ZIndex: =14
+        ZIndex: =6
 
     Label1_36 As label:
         Align: =Align.Center
@@ -99,9 +109,41 @@ Home_1 As screen:
         Size: =30
         Text: ="Bienvenido a la App"
         Width: =640
-        X: =316
+        X: =343
         Y: =76
-        ZIndex: =18
+        ZIndex: =10
+
+    ButtonCanvas3 As Botón:
+        Align: =""
+        BasePaletteColor: =RGBA(249, 83, 109, 1)
+        BorderStyle: =""
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =80
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =Set(varCargar, true);Set(varTiempo, true)
+        Text: ="Ingresar"
+        VerticalAlign: =""
+        Width: =208
+        X: =568
+        Y: =415
+        ZIndex: =11
+
+    Timer1 As timer:
+        AutoStart: =varTiempo
+        Color: =RGBA(255,255,255,1)
+        Duration: =5000
+        Fill: =RGBA(62,96,170,1)
+        Height: =70
+        OnTimerEnd: =Set(varCargar,false);Navigate(Home,ScreenTransition.Fade)
+        Visible: =false
+        Width: =280
+        X: =945
+        Y: =360
+        ZIndex: =12
 
     GroupBackground_7 As group:
         Height: =5
@@ -116,7 +158,7 @@ Home_1 As screen:
             FocusedBorderColor: =BienvenidaFondo_2.BorderColor
             Height: =60
             Width: =1366
-            ZIndex: =15
+            ZIndex: =7
 
         Bienvenida_2 As label:
             BorderColor: =RGBA(51, 51, 51, 1)
@@ -138,7 +180,7 @@ Home_1 As screen:
             Width: =350
             X: =54
             Y: =14
-            ZIndex: =16
+            ZIndex: =8
 
         ImageLogo_2 As image:
             BorderColor: =RGBA(51, 51, 51, 1)
@@ -149,48 +191,5 @@ Home_1 As screen:
             Image: =Logo
             Width: =352
             X: =1013
-            ZIndex: =17
-
-    ButtonCanvas3 As Botón:
-        Align: =""
-        BasePaletteColor: =RGBA(249, 83, 109, 1)
-        BorderStyle: =""
-        DisplayMode: =DisplayMode.Edit
-        FontColor: =
-        Height: =80
-        Icon: =""
-        IconRotation: =0
-        IconStyle: ="Outline"
-        Layout: ="Icon before"
-        OnSelect: =Set(varCargar, true);Set(varTiempo, true)
-        Text: ="Ingresar"
-        VerticalAlign: =""
-        Width: =208
-        X: =532
-        Y: =415
-        ZIndex: =19
-
-    Timer1 As timer:
-        AutoStart: =varTiempo
-        Color: =RGBA(255,255,255,1)
-        Duration: =5000
-        Fill: =RGBA(62,96,170,1)
-        Height: =70
-        OnTimerEnd: =Set(varCargar,false);Navigate(Home,ScreenTransition.Fade)
-        Visible: =false
-        Width: =280
-        X: =945
-        Y: =360
-        ZIndex: =20
-
-    Image15_1 As image:
-        BorderColor: =RGBA(32, 54, 71, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =401
-        Image: =giphy4
-        Visible: =varCargar
-        Width: =1366
-        Y: =135
-        ZIndex: =21
+            ZIndex: =9
 
