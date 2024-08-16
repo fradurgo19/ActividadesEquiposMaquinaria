@@ -101,7 +101,7 @@ Features_3 As screen:
         BorderColor: =RGBA(204, 204, 204, 1)
         DisabledFill: =Circle2_37.Fill
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =106.72
+        Height: =84
         HoverFill: =Circle2_37.Fill
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
@@ -109,7 +109,7 @@ Features_3 As screen:
         TabIndex: =0
         Width: =284.14
         X: =636.31
-        Y: =336
+        Y: =340
         ZIndex: =23
 
     icon11_16 As icon.Add:
@@ -689,7 +689,7 @@ Features_3 As screen:
         BorderColor: =RGBA(204, 204, 204, 1)
         DisabledFill: =Circle2_57.Fill
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =106.72
+        Height: =86
         HoverFill: =Circle2_57.Fill
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
@@ -828,13 +828,13 @@ Features_3 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_31.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =122.73
+            Height: =104
             HoverFill: =Circle2_31.Fill
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             PressedFill: =Circle2_31.Fill
             TabIndex: =0
-            Width: =288.14
+            Width: =288
             X: =650.98
             Y: =211
             ZIndex: =6
@@ -844,14 +844,14 @@ Features_3 As screen:
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =43
+            Height: =37
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =49.36
+            Width: =49
             X: =660.32
-            Y: =233
+            Y: =230
             ZIndex: =7
 
         Label1_3 As label:
@@ -862,14 +862,14 @@ Features_3 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =54
+            Height: =46
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false}) 
             Size: =13.34
             Text: ="Motor de Giro/ Reductor de Giro"
-            Width: =190.76
+            Width: =190
             X: =721.69
-            Y: =241
+            Y: =237
             ZIndex: =21
 
     Group12 As group:
@@ -883,13 +883,13 @@ Features_3 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_32.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =106.72
+            Height: =87
             HoverFill: =Circle2_32.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             PressedFill: =Circle2_32.Fill
             TabIndex: =0
-            Width: =284.14
+            Width: =284
             X: =350.84
             Y: =167
             ZIndex: =14
@@ -899,14 +899,14 @@ Features_3 As screen:
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =38
+            Height: =31
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =57.36
+            Width: =57
             X: =365.51
-            Y: =187
+            Y: =184
             ZIndex: =15
 
         Label1_10 As label:
@@ -917,14 +917,14 @@ Features_3 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =35
+            Height: =29
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             Size: =13.34
             Text: ="Tanque Hidraulico"
-            Width: =177.42
+            Width: =177
             X: =422.87
-            Y: =190
+            Y: =186
             ZIndex: =22
 
     Group18 As group:
@@ -938,15 +938,15 @@ Features_3 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_38.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =124.06
+            Height: =109
             HoverFill: =Circle2_38.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             PressedFill: =Circle2_38.Fill
             TabIndex: =0
-            Width: =388.19
+            Width: =388
             X: =110.72
-            Y: =511
+            Y: =525
             ZIndex: =30
 
         icon11_17 As icon.Add:
@@ -954,14 +954,14 @@ Features_3 As screen:
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =44
+            Height: =39
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             TabIndex: =0
-            Width: =77.37
-            X: =125.39
-            Y: =544
+            Width: =77
+            X: =143
+            Y: =553
             ZIndex: =31
 
         Label1_12 As label:
@@ -972,13 +972,14 @@ Features_3 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
+            Height: =35
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             Size: =13.34
             Text: ="Banco de Vávulas"
-            Width: =241.45
+            Width: =241
             X: =212
-            Y: =544
+            Y: =553
             ZIndex: =32
 
     Group20 As group:
@@ -992,13 +993,13 @@ Features_3 As screen:
             BorderColor: =RGBA(204, 204, 204, 1)
             DisabledFill: =Circle2_39.Fill
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =106.72
+            Height: =93
             HoverFill: =Circle2_39.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             PressedFill: =Circle2_39.Fill
             TabIndex: =0
-            Width: =284.14
+            Width: =284
             X: =42.69
             Y: =301
             ZIndex: =37
@@ -1008,14 +1009,14 @@ Features_3 As screen:
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =38
+            Height: =33
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             TabIndex: =0
-            Width: =57.36
+            Width: =57
             X: =68
-            Y: =340
+            Y: =335
             ZIndex: =38
 
         Label1_13 As label:
@@ -1026,13 +1027,13 @@ Features_3 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =54
+            Height: =47
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             Size: =13.34
             Text: ="Banco de Solenoide"
-            Width: =177.42
+            Width: =177
             X: =117
-            Y: =324
+            Y: =321
             ZIndex: =39
 
