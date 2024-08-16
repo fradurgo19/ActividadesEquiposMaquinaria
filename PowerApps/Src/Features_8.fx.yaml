@@ -185,104 +185,6 @@ Features_8 As screen:
             Y: =637
             ZIndex: =32
 
-    Group1_1 As group:
-        Height: =254.70129870129898
-        Width: =291
-        X: =356.896103896104
-        Y: =370.298701298701
-        ZIndex: =8
-
-        Rectangle4_9 As rectangle:
-            BorderColor: =RGBA(255, 255, 255, 255)
-            BorderThickness: =5
-            DisabledFill: =Rectangle4_9.Fill
-            Fill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            Height: =254.7012987012987
-            HoverFill: =Rectangle4_9.Fill
-            PressedFill: =Rectangle4_9.Fill
-            TabIndex: =0
-            Visible: =pop2
-            Width: =388.19
-            X: =476.09
-            Y: =370.2987012987013
-            ZIndex: =37
-
-        Label8_7 As label:
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Font: =Font.'Segoe UI'
-            Height: =71.53108593534068
-            HoverBorderColor: =Label8_7.BorderColor
-            HoverColor: =Label8_7.Color
-            HoverFill: =Label8_7.Fill
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Label8_7.BorderColor
-            PressedColor: =Label8_7.Color
-            PressedFill: =Label8_7.Fill
-            Size: =18
-            Text: =First(Filter(Feature,Text(Id)="2")).FeatureTitle
-            VerticalAlign: =VerticalAlign.Top
-            Visible: =pop2
-            Width: =298.39
-            X: =519.21
-            Y: =398.4689140646593
-            ZIndex: =38
-
-        Label9_8 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =130.80851063829698
-            HoverBorderColor: =Label9_8.BorderColor
-            HoverColor: =Label9_8.Color
-            HoverFill: =Label9_8.Fill
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Label9_8.BorderColor
-            PressedColor: =Label9_8.Color
-            PressedFill: =Label9_8.Fill
-            Size: =13
-            Text: =First(Filter(Feature,Text(Id)="2")).FeatureDescription
-            Visible: =pop2
-            Width: =295.8
-            X: =516.31
-            Y: =488.41666666666685
-            ZIndex: =39
-
-        icon14_1 As icon.Cancel:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(242, 242, 242, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =28
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.Cancel
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            TabIndex: =0
-            Visible: =pop2
-            Width: =37.35
-            X: =812.4
-            Y: =380
-            ZIndex: =46
-
     Group8_2 As group:
         Height: =212.61538461538498
         Width: =291
@@ -326,7 +228,7 @@ Features_8 As screen:
             PressedColor: =Label9_3.Color
             PressedFill: =Label9_3.Fill
             Size: =13
-            Text: =First(Filter(Feature,Text(Id)="3")).FeatureDescription
+            Text: =
             Visible: =pop3
             Width: =283.2
             X: =510.97
@@ -350,7 +252,7 @@ Features_8 As screen:
             PressedColor: =Label8_3.Color
             PressedFill: =Label8_3.Fill
             Size: =18
-            Text: =First(Filter(Feature,Text(Id)="3")).FeatureTitle
+            Text: =
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop3
             Width: =298.75
@@ -400,148 +302,6 @@ Features_8 As screen:
             X: =809.73
             Y: =356.33380113862193
             ZIndex: =51
-
-    Group18_1 As group:
-        Height: =269.489880240777
-        Width: =291
-        X: =501
-        Y: =375
-        ZIndex: =11
-
-        icon12_5 As icon.Cancel:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(242, 242, 242, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =40.03473227206936
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.Cancel
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            TabIndex: =0
-            Visible: =pop1
-            Width: =37.35
-            X: =1005.08
-            Y: =389.56522637998904
-            ZIndex: =52
-
-        Rectangle9_3 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =62.91172214182337
-            HoverFill: =RGBA(202, 80, 16, 1)
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            PressedFill: =RGBA(202, 80, 16, 1)
-            TabIndex: =0
-            Visible: =pop1
-            Width: =58.7
-            X: =994.41
-            Y: =378.12673144511103
-            ZIndex: =53
-
-        Rectangle4_10 As rectangle:
-            BorderColor: =RGBA(255, 255, 255, 255)
-            BorderThickness: =5
-            DisabledFill: =Rectangle4_10.Fill
-            Fill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            Height: =269
-            HoverFill: =Rectangle4_10.Fill
-            PressedFill: =Rectangle4_10.Fill
-            TabIndex: =0
-            Visible: =pop1
-            Width: =388.19
-            X: =668.33
-            Y: =375
-            ZIndex: =54
-
-        Label8_8 As label:
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Font: =Font.'Segoe UI'
-            Height: =57.600992350630925
-            HoverBorderColor: =Label8_8.BorderColor
-            HoverColor: =Label8_8.Color
-            HoverFill: =Label8_8.Fill
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Label8_8.BorderColor
-            PressedColor: =Label8_8.Color
-            PressedFill: =Label8_8.Fill
-            Size: =18
-            Text: =First(Filter(Feature,Text(Id)="1")).FeatureTitle
-            VerticalAlign: =VerticalAlign.Top
-            Visible: =pop1
-            Width: =298.75
-            X: =711.07
-            Y: =404.48128705959203
-            ZIndex: =55
-
-        Label9_6 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            Color: =RGBA(51, 51, 51, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
-            Height: =156.49022198919746
-            HoverBorderColor: =Label9_6.BorderColor
-            HoverColor: =Label9_6.Color
-            HoverFill: =Label9_6.Fill
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Label9_6.BorderColor
-            PressedColor: =Label9_6.Color
-            PressedFill: =Label9_6.Fill
-            Size: =13
-            Text: =First(Filter(Feature,Text(Id)="1")).FeatureDescription
-            Visible: =pop1
-            Width: =283.2
-            X: =714.26
-            Y: =487.99965825158005
-            ZIndex: =56
-
-        icon12_4 As icon.Cancel:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(242, 242, 242, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
-            Height: =28
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
-            Icon: =Icon.Cancel
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
-            TabIndex: =0
-            Visible: =pop1
-            Width: =37.35
-            X: =1008.63
-            Y: =386.898550724638
-            ZIndex: =57
 
     Rectangle2_6 As rectangle:
         BorderColor: =RGBA(0, 0, 0, 0)
