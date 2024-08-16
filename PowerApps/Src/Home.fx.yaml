@@ -218,14 +218,13 @@ Home As screen:
         Y: =604
         ZIndex: =36
 
-    Icon1 As icon.Leave:
+    Image1 As image:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Icon: =Icon.Leave
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Image: ='puerta-de-salida'
         OnSelect: =Exit()
-        X: =44
-        Y: =21
-        ZIndex: =37
+        X: =18
+        Y: =18
+        ZIndex: =38
 
