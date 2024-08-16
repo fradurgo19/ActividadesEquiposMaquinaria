@@ -2,7 +2,7 @@ Features_5 As screen:
     BackgroundImage: =Enfriador
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
-    LoadingSpinnerColor: =RGBA(202, 80, 16, 1)
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnHidden: |-
         =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false})
     OnVisible: |-
@@ -10,15 +10,9 @@ Features_5 As screen:
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle2_9 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledFill: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(202, 80, 16, 1)
-        FocusedBorderThickness: =4
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =App.Theme.Colors.Primary
         Height: =44
-        HoverFill: =RGBA(202, 80, 16, 1)
-        PressedFill: =RGBA(202, 80, 16, 1)
         TabIndex: =0
         Width: =1366
         ZIndex: =3
@@ -26,19 +20,12 @@ Features_5 As screen:
     Image4_7 As image:
         ApplyEXIFOrientation: =false
         AutoDisableOnSelect: =false
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledFill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =25
-        HoverBorderColor: =RGBA(0, 0, 0, 0)
-        HoverFill: =RGBA(0, 0, 0, 0)
         Image: =x
         OnSelect: =Navigate(Home,ScreenTransition.Fade)
-        PressedBorderColor: =RGBA(0, 0, 0, 0)
-        PressedFill: =RGBA(0, 0, 0, 0)
         Width: =33.35
         X: =1065.85
         Y: =106
@@ -52,36 +39,22 @@ Features_5 As screen:
         ZIndex: =4
 
         Rectangle15_10 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(166, 166, 166, 1)
+            BorderColor: =App.Theme.Colors.Darker40
             Fill: =RGBA(62,96,170,0)
-            FocusedBorderThickness: =4
             Height: =44
-            HoverFill: =RGBA(202, 80, 16, 1)
             OnSelect: =Navigate(Home, ScreenTransition.Fade)
-            PressedFill: =RGBA(202, 80, 16, 1)
             TabIndex: =0
             Width: =58.7
             ZIndex: =6
 
         icon1_8 As icon.ChevronLeft:
-            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =32
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.ChevronLeft
             OnSelect: =Navigate(Features, ScreenTransition.Fade)
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Width: =26.68
             X: =16.01
@@ -92,7 +65,7 @@ Features_5 As screen:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Segoe UI'
+        Font: =App.Theme.Font
         FontWeight: =FontWeight.Lighter
         Height: =50
         HoverBorderColor: =Label2_10.BorderColor
@@ -113,17 +86,11 @@ Features_5 As screen:
         ZIndex: =5
 
     Rectangle15_17 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledFill: =RGBA(166, 166, 166, 1)
+        BorderColor: =App.Theme.Colors.Darker40
         Fill: =RGBA(62,96,170,0)
-        FocusedBorderThickness: =4
         Height: =22
-        HoverFill: =RGBA(202, 80, 16, 1)
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-        PressedFill: =RGBA(202, 80, 16, 1)
         TabIndex: =0
         Visible: =pop2
         Width: =58.7
@@ -132,17 +99,11 @@ Features_5 As screen:
         ZIndex: =12
 
     Rectangle10_4 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledFill: =RGBA(166, 166, 166, 1)
+        BorderColor: =App.Theme.Colors.Darker40
         Fill: =RGBA(0, 0, 0, 0)
-        FocusedBorderThickness: =4
         Height: =22
-        HoverFill: =RGBA(202, 80, 16, 1)
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-        PressedFill: =RGBA(202, 80, 16, 1)
         TabIndex: =0
         Width: =58.7
         X: =1031.17
@@ -150,14 +111,10 @@ Features_5 As screen:
         ZIndex: =13
 
     Label9_34 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
+        Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         HoverBorderColor: =Label9_34.BorderColor
         HoverColor: =Label9_34.Color
@@ -180,14 +137,10 @@ Features_5 As screen:
         ZIndex: =23
 
     Label9_35 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
+        Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         HoverBorderColor: =Label9_35.BorderColor
         HoverColor: =Label9_35.Color
@@ -210,13 +163,10 @@ Features_5 As screen:
         ZIndex: =24
 
     Label9_27 As label:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderThickness: =2
+        BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
+        Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =23
         HoverBorderColor: =Label9_27.BorderColor
@@ -262,22 +212,14 @@ Features_5 As screen:
             ZIndex: =8
 
         icon11_7 As icon.Add:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(202, 80, 16, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =App.Theme.Colors.Darker30
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =48
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Width: =54.69
             X: =286.81
@@ -286,15 +228,11 @@ Features_5 As screen:
 
         Label1_23 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
+            BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(250, 155, 112, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
+            Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
             Height: =89
             Size: =13
@@ -328,22 +266,14 @@ Features_5 As screen:
             ZIndex: =10
 
         icon9_12 As icon.Add:
-            BorderColor: =RGBA(166, 166, 166, 1)
-            Color: =RGBA(202, 80, 16, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =App.Theme.Colors.Darker30
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =35
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Width: =74.7
             X: =1044.51
@@ -352,15 +282,11 @@ Features_5 As screen:
 
         Label1_2 As label:
             Align: =Align.Center
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
+            BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(0, 0, 0, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(250, 155, 112, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
+            Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
             Height: =58
             Size: =13
@@ -381,7 +307,7 @@ Features_5 As screen:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
             DisabledFill: =Rectangle4_16.Fill
-            Fill: =ColorFade(RGBA(202, 80, 16, 1), -30%)
+            Fill: =App.Theme.Colors.Darker30
             Height: =160
             HoverFill: =Rectangle4_16.Fill
             PressedFill: =Rectangle4_16.Fill
@@ -393,17 +319,11 @@ Features_5 As screen:
             ZIndex: =16
 
         Rectangle15_16 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(166, 166, 166, 1)
+            BorderColor: =App.Theme.Colors.Darker40
             Fill: =RGBA(62,96,170,0)
-            FocusedBorderThickness: =4
             Height: =75
-            HoverFill: =RGBA(202, 80, 16, 1)
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            PressedFill: =RGBA(202, 80, 16, 1)
             TabIndex: =0
             Visible: =pop4
             Width: =56.03
@@ -412,17 +332,11 @@ Features_5 As screen:
             ZIndex: =17
 
         Rectangle8_4 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderStyle: =BorderStyle.None
-            BorderThickness: =2
-            DisabledFill: =RGBA(166, 166, 166, 1)
+            BorderColor: =App.Theme.Colors.Darker40
             Fill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
             Height: =135
-            HoverFill: =RGBA(202, 80, 16, 1)
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            PressedFill: =RGBA(202, 80, 16, 1)
             TabIndex: =0
             Width: =708.35
             X: =609.63
@@ -430,22 +344,14 @@ Features_5 As screen:
             ZIndex: =18
 
         icon7_4 As icon.Cancel:
-            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(245, 246, 247, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =62
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Visible: =pop4
             Width: =82.71
@@ -457,7 +363,7 @@ Features_5 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Font: =Font.'Segoe UI'
+            Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
             Height: =46
             HoverBorderColor: =Label8_19.BorderColor
@@ -485,7 +391,7 @@ Features_5 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Font: =Font.'Segoe UI'
+            Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
             Height: =39
             HoverBorderColor: =Label8_18.BorderColor
@@ -531,13 +437,10 @@ Features_5 As screen:
             ZIndex: =14
 
         Label9_28 As label:
-            BorderColor: =RGBA(0, 0, 0, 0)
-            BorderThickness: =2
+            BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            FocusedBorderThickness: =4
-            Font: =Font.'Segoe UI'
+            Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
             Height: =51
             HoverBorderColor: =Label9_28.BorderColor
@@ -563,22 +466,14 @@ Features_5 As screen:
             ZIndex: =15
 
         icon14_4 As icon.Cancel:
-            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(242, 242, 242, 1)
-            DisabledBorderColor: =RGBA(0, 0, 0, 0)
-            DisabledColor: =RGBA(220, 220, 220, 1)
-            DisabledFill: =RGBA(0, 0, 0, 0)
-            FocusedBorderThickness: =4
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =72
-            HoverBorderColor: =RGBA(0, 0, 0, 0)
-            HoverColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            HoverFill: =RGBA(0, 0, 0, 0)
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            PressedBorderColor: =RGBA(0, 0, 0, 0)
-            PressedColor: =ColorFade(RGBA(202, 80, 16, 1), -30%)
-            PressedFill: =RGBA(0, 0, 0, 0)
             TabIndex: =0
             Visible: =pop2
             Width: =60.03
