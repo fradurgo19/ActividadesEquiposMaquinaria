@@ -4,7 +4,7 @@ Features_2 As screen:
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnHidden: |
-        =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false})
+        =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false});
     OnVisible: |-
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
@@ -254,11 +254,11 @@ Features_2 As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =60
+        TemplateSize: =82
         Visible: =pop4
         Width: =402
         X: =961
-        Y: =116
+        Y: =131
         ZIndex: =24
 
         Title3 As label:
@@ -285,7 +285,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =20
+            Height: =27
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -294,9 +294,9 @@ Features_2 As screen:
             Size: =9
             Text: =ThisItem.Actividad
             VerticalAlign: =VerticalAlign.Top
-            Width: =386
+            Width: =398
             X: =Title3.X
-            Y: =26
+            Y: =47
             ZIndex: =3
 
         Body2 As label:
@@ -354,21 +354,6 @@ Features_2 As screen:
             X: =132
             ZIndex: =8
 
-        CheckboxCanvas1 As Casilla:
-            AccessibleLabel: ="Selec"
-            BasePaletteColor: =
-            Checked: =false
-            DisplayMode: =DisplayMode.Edit
-            Height: =45
-            Label: =
-            OnCheck: =Collect(colAllSelectedItems, ThisItem)
-            OnSelect: =Select(Parent)
-            OnUncheck: =Remove(colAllSelectedItems, ThisItem)
-            Width: =44
-            X: =319
-            Y: =1
-            ZIndex: =9
-
         Icon1 As icon.Check:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =App.Theme.Colors.Darker30
@@ -381,6 +366,24 @@ Features_2 As screen:
             Width: =27
             X: =363
             ZIndex: =10
+
+        Checkbox1 As checkbox:
+            BorderColor: =App.Theme.Colors.Darker40
+            CheckboxBorderColor: =App.Theme.Colors.Primary
+            CheckmarkFill: =App.Theme.Colors.Primary
+            Color: =RGBA(0, 0, 0, 1)
+            Font: =App.Theme.Font
+            Height: =45
+            HoverColor: =App.Theme.Colors.Darker30
+            OnCheck: =Collect(colAllSelectedItems, Distinct('Cambio de motor diesel' , ThisItem))
+            OnSelect: =Select(Parent)
+            OnUncheck: =Remove(colAllSelectedItems, ThisItem)
+            Size: =13
+            Text: =
+            Width: =39
+            X: =312
+            Y: =12
+            ZIndex: =11
 
     Label1_37 As label:
         Align: =Align.Center

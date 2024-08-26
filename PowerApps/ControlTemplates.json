@@ -28,20 +28,19 @@
     "TemplateDisplayName": "Botón",
     "Version": "0.0.42"
   },
-  "Casilla": {
+  "checkbox": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/powercontrol/PowerApps_CoreControls_CheckboxCanvas",
+    "Id": "http://microsoft.com/appmagic/checkbox",
     "IsComponentTemplate": false,
     "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": true,
+    "IsPcfControl": false,
     "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": false,
+    "IsWidgetTemplate": true,
     "LastModifiedTimestamp": "0",
-    "Name": "PowerApps_CoreControls_CheckboxCanvas",
+    "Name": "checkbox",
     "OverridableProperties": {},
-    "TemplateDisplayName": "Casilla",
-    "Version": "0.0.26"
+    "Version": "2.1.0"
   },
   "circle": {
     "CustomGroupControlTemplateName": "",
