@@ -7,7 +7,13 @@ Resumen As screen:
     OnVisible: |-
         =ClearCollect(
             colDistinctItems,
-            Distinct(colAllSelectedItems, ID)
+            ForAll(
+                GroupBy(
+                    colAllSelectedItems,
+                    "Codigo Alterno"
+                ),
+                First(ThisRecord.GroupedItems)
+            )
         )
     Width: =Max(App.Width, App.DesignWidth)
 
