@@ -148,7 +148,7 @@ Features_2 As screen:
         Width: =201.43
         X: =569.61
         Y: =646
-        ZIndex: =16
+        ZIndex: =13
 
     Label9_31 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -228,7 +228,7 @@ Features_2 As screen:
         Width: =291
         X: =961
         Y: =68
-        ZIndex: =22
+        ZIndex: =21
 
     icon14_5 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -379,9 +379,9 @@ Features_2 As screen:
             Font: =App.Theme.Font
             Height: =45
             HoverColor: =App.Theme.Colors.Darker30
-            OnCheck: =Collect(colAllSelectedItems, ThisItem)
+            OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
             OnSelect: =Select(Parent)
-            OnUncheck: =Remove(colAllSelectedItems, ThisItem)
+            OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
             Size: =13
             Text: =
             Width: =39
@@ -531,7 +531,6 @@ Features_2 As screen:
         Height: =39
         OnSelect: |+
             =UpdateContext({ ShowIcon: false });
-            UpdateContext({varDeseleccionar: false});
             ForAll(
                 Gallery2.AllItems,
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
@@ -568,8 +567,8 @@ Features_2 As screen:
         Size: =15
         Text: ="Resumen"
         Width: =97
-        X: =135
-        Y: =61
+        X: =131
+        Y: =65
         ZIndex: =35
 
     Group5 As group:
@@ -701,7 +700,7 @@ Features_2 As screen:
             Width: =565
             X: =90.71
             Y: =421
-            ZIndex: =13
+            ZIndex: =14
 
         Label9_23 As label:
             BorderColor: =App.Theme.Colors.Darker40
@@ -730,7 +729,7 @@ Features_2 As screen:
             Width: =217
             X: =112.05
             Y: =511
-            ZIndex: =14
+            ZIndex: =15
 
         icon14_2 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
@@ -746,7 +745,7 @@ Features_2 As screen:
             Width: =60
             X: =533.59
             Y: =429
-            ZIndex: =15
+            ZIndex: =16
 
         Image4 As image:
             BorderColor: =App.Theme.Colors.Darker40
@@ -758,5 +757,5 @@ Features_2 As screen:
             Width: =200
             X: =301.48
             Y: =444
-            ZIndex: =21
+            ZIndex: =22
 
