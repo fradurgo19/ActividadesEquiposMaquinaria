@@ -503,6 +503,21 @@ Features_2 As screen:
         Y: =62
         ZIndex: =32
 
+    ButtonCanvas4_1 As Botón:
+        DisplayMode: =DisplayMode.Edit
+        Height: =44
+        OnSelect: |-
+            =ForAll(
+                Gallery2.AllItems,
+                Remove(colAllSelectedItems, ThisRecord)
+            )
+        Text: ="Selec Todo"
+        Visible: =pop4
+        Width: =83
+        X: =1108
+        Y: =68
+        ZIndex: =33
+
     Group5 As group:
         Height: =5
         Width: =5
