@@ -153,7 +153,7 @@ Resumen As screen:
     ButtonCanvas2 As Botón:
         DisplayMode: =DisplayMode.Edit
         Height: =32
-        OnSelect: =Clear(colAllSelectedItems)
+        OnSelect: =Clear(colAllSelectedItems);
         Text: ="Limpiar"
         Width: =96
         X: =731
