@@ -511,12 +511,13 @@ Features_2 As screen:
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
         Height: =39
-        OnSelect: |
+        OnSelect: |+
             =ForAll(
                 Gallery2.AllItems, 
                 Collect(colAllSelectedItems, ThisRecord)
             );
-            UpdateContext({ ShowIcon: true })
+            UpdateContext({ ShowIcon: true });UpdateContext({ varCheckboxChecked: !Checkbox1.Value });
+            
         Text: ="Selec Todo"
         Visible: =pop4
         Width: =35
