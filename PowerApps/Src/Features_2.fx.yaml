@@ -354,6 +354,18 @@ Features_2 As screen:
             X: =132
             ZIndex: =8
 
+        CheckboxCanvas1 As Casilla:
+            DisplayMode: =DisplayMode.Edit
+            Height: =29
+            Label: =
+            OnCheck: =Collect(colAllSelectedItems, ThisItem)
+            OnSelect: =Select(Parent)
+            OnUncheck: =Remove(colAllSelectedItems, ThisItem)
+            Width: =48
+            X: =316
+            Y: =10
+            ZIndex: =9
+
     Label1_37 As label:
         Align: =Align.Center
         BorderColor: =App.Theme.Colors.Darker40

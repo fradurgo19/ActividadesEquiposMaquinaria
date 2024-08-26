@@ -3,6 +3,7 @@ Home_1 As screen:
     Fill: =Color.White
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =App.Theme.Colors.Primary
+    OnVisible: =Clear(colAllSelectedItems)
     Width: =Max(App.Width, App.DesignWidth)
 
     Image15_1 As image:
