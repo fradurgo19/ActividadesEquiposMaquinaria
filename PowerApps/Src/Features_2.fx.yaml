@@ -3,7 +3,7 @@ Features_2 As screen:
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnHidden: |-
+    OnHidden: |
         =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false})
     OnVisible: |-
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
@@ -285,7 +285,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =28
+            Height: =20
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -296,7 +296,7 @@ Features_2 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =386
             X: =Title3.X
-            Y: =25
+            Y: =33
             ZIndex: =3
 
         Body2 As label:
@@ -362,8 +362,8 @@ Features_2 As screen:
             OnSelect: =Select(Parent)
             OnUncheck: =Remove(colAllSelectedItems, ThisItem)
             Width: =37
-            X: =316
-            Y: =5
+            X: =328
+            Y: =0
             ZIndex: =9
 
     Label1_37 As label:
@@ -482,20 +482,6 @@ Features_2 As screen:
         X: =741
         Y: =399
         ZIndex: =31
-
-    ButtonCanvas1 As Botón:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        OnSelect: |
-            =ForAll(
-                Gallery2.AllItems, 
-                Collect(colAllSelectedItems, ThisRecord)
-            )
-        Text: ="Selec Todo"
-        Width: =96
-        X: =1213
-        Y: =64
-        ZIndex: =32
 
     Group5 As group:
         Height: =5
