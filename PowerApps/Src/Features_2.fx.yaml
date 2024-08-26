@@ -355,21 +355,32 @@ Features_2 As screen:
             ZIndex: =8
 
         CheckboxCanvas1 As Casilla:
+            BasePaletteColor: =
             Checked: =
             DisplayMode: =DisplayMode.Edit
             Height: =25
             Label: =
-            OnCheck: |-
-                =If(
-                    !IsEmpty(Filter(colAllSelectedItems, ID = ThisItem.ID)),
-                    Collect(colAllSelectedItems, ThisItem)
-                )
+            OnCheck: |
+                =Collect(colAllSelectedItems, ThisItem)
             OnSelect: =Select(Parent)
             OnUncheck: =Remove(colAllSelectedItems, ThisItem)
             Width: =37
-            X: =342
-            Y: =0
+            X: =319
+            Y: =1
             ZIndex: =9
+
+        Icon1 As icon.Check:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =App.Theme.Colors.Darker30
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =26
+            Icon: =Icon.Check
+            OnSelect: =Select(Parent)
+            Visible: =ShowIcon
+            Width: =27
+            X: =356
+            ZIndex: =10
 
     Label1_37 As label:
         Align: =Align.Center
@@ -492,12 +503,13 @@ Features_2 As screen:
         BasePaletteColor: =RGBA(8, 222, 8, 1)
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
-        Height: =28
-        OnSelect: |-
+        Height: =39
+        OnSelect: |
             =ForAll(
                 Gallery2.AllItems, 
                 Collect(colAllSelectedItems, ThisRecord)
-            )
+            );
+            UpdateContext({ ShowIcon: true })
         Text: ="Selec Todo"
         Visible: =pop4
         Width: =37
@@ -510,11 +522,13 @@ Features_2 As screen:
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
         Height: =39
-        OnSelect: |-
+        OnSelect: |+
             =ForAll(
                 Gallery2.AllItems,
                 Remove(colAllSelectedItems, ThisRecord)
-            )
+            );
+            UpdateContext({ ShowIcon: false })
+            
         Text: ="Borrar Todo"
         Visible: =pop4
         Width: =49
