@@ -160,3 +160,13 @@ Resumen As screen:
         Y: =17
         ZIndex: =18
 
+    Image11 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Image: ='icons8-atrás-100'
+        OnSelect: =Back()
+        X: =1253
+        Y: =2
+        ZIndex: =19
+
