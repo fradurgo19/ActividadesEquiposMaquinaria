@@ -1,1 +1,24 @@
-{}
+{
+  "bf75668c-50fe-417d-a391-91cd6fccb008": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/jayawan/releases/v1.0.1697/1.0.1697.3786/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://partequipos2.sharepoint.com/sites/servicioposventa": {
+        "dataSources": {
+          "Cambio de motor diesel": {
+            "tableName": "329a3bc4-7234-4658-9ca7-60c279f5ee64"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Cambio de motor diesel"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "bf75668c-50fe-417d-a391-91cd6fccb008"
+  }
+}
