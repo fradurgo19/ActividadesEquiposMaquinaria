@@ -489,8 +489,10 @@ Features_2 As screen:
         ZIndex: =31
 
     ButtonCanvas4 As Botón:
+        BasePaletteColor: =RGBA(8, 222, 8, 1)
         DisplayMode: =DisplayMode.Edit
-        Height: =44
+        FontSize: =9
+        Height: =28
         OnSelect: |-
             =ForAll(
                 Gallery2.AllItems, 
@@ -498,24 +500,26 @@ Features_2 As screen:
             )
         Text: ="Selec Todo"
         Visible: =pop4
-        Width: =83
-        X: =1268
-        Y: =62
+        Width: =37
+        X: =1314
+        Y: =60
         ZIndex: =32
 
     ButtonCanvas4_1 As Botón:
+        BasePaletteColor: =RGBA(249, 83, 109, 1)
         DisplayMode: =DisplayMode.Edit
-        Height: =44
+        FontSize: =9
+        Height: =39
         OnSelect: |-
             =ForAll(
                 Gallery2.AllItems,
                 Remove(colAllSelectedItems, ThisRecord)
             )
-        Text: ="Selec Todo"
+        Text: ="Borrar Todo"
         Visible: =pop4
-        Width: =83
-        X: =1108
-        Y: =68
+        Width: =49
+        X: =1255
+        Y: =60
         ZIndex: =33
 
     Group5 As group:
