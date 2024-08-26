@@ -242,8 +242,8 @@ Features_2 As screen:
         TabIndex: =0
         Visible: =pop4
         Width: =42
-        X: =1309
-        Y: =12
+        X: =1210
+        Y: =56
         ZIndex: =23
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
@@ -487,7 +487,7 @@ Features_2 As screen:
 
     ButtonCanvas4 As Botón:
         DisplayMode: =DisplayMode.Edit
-        Height: =32
+        Height: =44
         OnSelect: |-
             =ForAll(
                 Gallery2.AllItems, 
@@ -495,9 +495,9 @@ Features_2 As screen:
             )
         Text: ="Selec Todo"
         Visible: =pop4
-        Width: =96
-        X: =1234
-        Y: =61
+        Width: =83
+        X: =1268
+        Y: =62
         ZIndex: =32
 
     Group5 As group:
