@@ -261,6 +261,20 @@ Features_2 As screen:
         Y: =131
         ZIndex: =24
 
+        Icon1 As icon.Check:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =App.Theme.Colors.Darker30
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =26
+            Icon: =Icon.Check
+            OnSelect: =Select(Parent)
+            Visible: =ShowIcon
+            Width: =27
+            X: =335
+            Y: =14
+            ZIndex: =1
+
         Title3 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -327,7 +341,7 @@ Features_2 As screen:
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =6
+            ZIndex: =5
 
         Rectangle2 As rectangle:
             BorderColor: =App.Theme.Colors.Darker40
@@ -336,7 +350,7 @@ Features_2 As screen:
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
             Width: =4
-            ZIndex: =7
+            ZIndex: =6
 
         Title3_1 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -355,39 +369,25 @@ Features_2 As screen:
             Width: =67
             X: =132
             Y: =7
-            ZIndex: =8
-
-        Icon1 As icon.Check:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =26
-            Icon: =Icon.Check
-            OnSelect: =Select(Parent)
-            Visible: =ShowIcon
-            Width: =27
-            X: =363
-            ZIndex: =10
+            ZIndex: =7
 
         Checkbox1 As checkbox:
             BorderColor: =App.Theme.Colors.Darker40
             CheckboxBorderColor: =App.Theme.Colors.Primary
             CheckmarkFill: =App.Theme.Colors.Primary
             Color: =RGBA(0, 0, 0, 1)
-            Default: =varDeseleccionar
+            Default: =
             Font: =App.Theme.Font
             Height: =45
             HoverColor: =App.Theme.Colors.Darker30
-            OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
+            OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true);Collect(colDatacajamenor, ThisItem)
             OnSelect: =Select(Parent)
-            OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
+            OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false);Clear(colDatacajamenor)
             Size: =13
             Text: =
             Width: =39
-            X: =312
-            Y: =5
-            ZIndex: =11
+            X: =311
+            ZIndex: =8
 
     Label1_37 As label:
         Align: =Align.Center
