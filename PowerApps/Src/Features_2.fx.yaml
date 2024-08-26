@@ -359,8 +359,11 @@ Features_2 As screen:
             DisplayMode: =DisplayMode.Edit
             Height: =25
             Label: =
-            OnCheck: |
-                =Collect(colAllSelectedItems, ThisItem)
+            OnCheck: |-
+                =If(
+                    !IsEmpty(Filter(colAllSelectedItems, ID = ThisItem.ID)),
+                    Collect(colAllSelectedItems, ThisItem)
+                )
             OnSelect: =Select(Parent)
             OnUncheck: =Remove(colAllSelectedItems, ThisItem)
             Width: =37
