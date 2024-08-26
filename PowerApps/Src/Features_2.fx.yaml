@@ -278,6 +278,7 @@ Features_2 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =104
             X: =4
+            Y: =7
             ZIndex: =2
 
         Subtitle2 As label:
@@ -316,6 +317,7 @@ Features_2 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =53
             X: =223
+            Y: =7
             ZIndex: =4
 
         Separator2 As rectangle:
@@ -352,6 +354,7 @@ Features_2 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =67
             X: =132
+            Y: =7
             ZIndex: =8
 
         Icon1 As icon.Check:
@@ -516,8 +519,8 @@ Features_2 As screen:
             UpdateContext({ ShowIcon: true })
         Text: ="Selec Todo"
         Visible: =pop4
-        Width: =49
-        X: =1314
+        Width: =35
+        X: =1315
         Y: =88
         ZIndex: =32
 
@@ -540,8 +543,8 @@ Features_2 As screen:
             
         Text: ="Borrar Todo"
         Visible: =pop4
-        Width: =49
-        X: =1252
+        Width: =33
+        X: =1271
         Y: =88
         ZIndex: =33
 
