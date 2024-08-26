@@ -286,6 +286,14 @@
           "InvariantPropertyName": "Label",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
+        },
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "Checked",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -305,6 +313,11 @@
         {
           "Category": "Data",
           "PropertyName": "Label",
+          "RuleProviderType": "User"
+        },
+        {
+          "Category": "Data",
+          "PropertyName": "Checked",
           "RuleProviderType": "User"
         },
         {
