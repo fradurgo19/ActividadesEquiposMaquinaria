@@ -4,6 +4,17 @@ Resumen As screen:
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnHidden: =
+    OnVisible: |
+        =ClearCollect(
+            colDistinctItems,
+            ForAll(
+                GroupBy(
+                    AddColumns(colAllSelectedItems, "UniqueId", ID),
+                    "UniqueId"
+                ),
+                First(ThisRecord.GroupedItems)
+            )
+        )
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle14_2 As rectangle:
