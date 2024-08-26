@@ -89,7 +89,7 @@ Resumen As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =61
+        TemplateSize: =43
         Width: =558
         X: =40
         Y: =102
@@ -106,6 +106,7 @@ Resumen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =9
             Text: =ThisItem.Actividad
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 173
@@ -123,12 +124,12 @@ Resumen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =12
+            Size: =9
             Text: =ThisItem.Id
             VerticalAlign: =VerticalAlign.Top
             Width: =31
             X: =27
-            Y: =32
+            Y: =16
             ZIndex: =3
 
         Separator5 As rectangle:
