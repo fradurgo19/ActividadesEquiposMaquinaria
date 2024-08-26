@@ -4,15 +4,17 @@ Resumen As screen:
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnHidden: =
-    OnVisible: |-
+    OnVisible: |
         =ClearCollect(
             colDistinctItems,
             ForAll(
-                GroupBy(
-                    colAllSelectedItems,
-                    "Codigo Alterno"
-                ),
-                First(ThisRecord.GroupedItems)
+                colAllSelectedItems,
+                If(
+                    IsBlank(
+                        LookUp(colDistinctItems, ID = ThisRecord.ID)
+                    ),
+                    Collect(colDistinctItems, ThisRecord)
+                )
             )
         )
     Width: =Max(App.Width, App.DesignWidth)
