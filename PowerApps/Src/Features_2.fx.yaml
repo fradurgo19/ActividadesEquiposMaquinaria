@@ -36,14 +36,14 @@ Features_2 As screen:
         BorderThickness: =5
         DisabledFill: =Rectangle4_18.Fill
         Fill: =RGBA(253, 207, 180, 1)
-        Height: =678
+        Height: =728
         HoverFill: =Rectangle4_18.Fill
         PressedFill: =Rectangle4_18.Fill
         TabIndex: =0
         Visible: =pop4
         Width: =417
         X: =947
-        Y: =56
+        Y: =6
         ZIndex: =3
 
     Label2_8 As label:
@@ -358,8 +358,7 @@ Features_2 As screen:
             DisplayMode: =DisplayMode.Edit
             Height: =33
             Label: =
-            OnCheck: |
-                =Collect(colAllSelectedItems, ThisItem)
+            OnCheck: =Collect(colAllSelectedItems, ThisItem)
             OnSelect: =Select(Parent)
             OnUncheck: =Remove(colAllSelectedItems, ThisItem)
             Width: =37
