@@ -76,8 +76,8 @@ Resumen As screen:
         Size: =15
         Text: ="Resumen"
         Width: =558
-        X: =40
-        Y: =17
+        X: =477
+        Y: =16
         ZIndex: =16
 
     "Gallery7 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -91,7 +91,7 @@ Resumen As screen:
         TemplatePadding: =0
         TemplateSize: =43
         Width: =558
-        X: =40
+        X: =477
         Y: =102
         ZIndex: =17
 
@@ -156,8 +156,8 @@ Resumen As screen:
         OnSelect: =Clear(colAllSelectedItems);
         Text: ="Limpiar"
         Width: =96
-        X: =731
-        Y: =17
+        X: =1192
+        Y: =29
         ZIndex: =18
 
     Image11 As image:
@@ -166,7 +166,21 @@ Resumen As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Image: ='icons8-atrás-100'
         OnSelect: =Back()
-        X: =1253
         Y: =2
         ZIndex: =19
+
+    Label4_1 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        Size: =15
+        Text: ="Atras"
+        Width: =73
+        X: =98
+        Y: =29
+        ZIndex: =20
 
