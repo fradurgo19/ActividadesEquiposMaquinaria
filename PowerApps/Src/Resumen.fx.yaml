@@ -62,42 +62,38 @@ Resumen As screen:
         Y: =681
         ZIndex: =14
 
-    "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+    Label4 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(253, 207, 180, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =65
+        Size: =15
+        Text: ="Resumen"
+        Width: =558
+        X: =40
+        Y: =17
+        ZIndex: =16
+
+    "Gallery7 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
         Fill: =RGBA(253, 207, 180, 1)
-        Height: =593
+        Height: =513
         Items: =colAllSelectedItems
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =76
-        Width: =529
-        X: =50
-        Y: =19
-        ZIndex: =15
+        TemplateSize: =70
+        Width: =558
+        X: =40
+        Y: =102
+        ZIndex: =17
 
-        Title8 As label:
+        Title10 As label:
             Color: =RGBA(50, 49, 48, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =29
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =9
-            Text: =ThisItem.Id
-            VerticalAlign: =VerticalAlign.Top
-            Width: =365
-            X: =15
-            Y: =35
-            ZIndex: =2
-
-        Subtitle5 As label:
-            Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -107,15 +103,32 @@ Resumen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
             Text: =ThisItem.Actividad
             VerticalAlign: =VerticalAlign.Top
-            Width: =Title8.Width
-            X: =16
-            Y: =7
+            Width: =Parent.TemplateWidth - 173
+            X: =27
+            ZIndex: =2
+
+        Subtitle7 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =26
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Id
+            VerticalAlign: =VerticalAlign.Top
+            Width: =31
+            X: =27
+            Y: =32
             ZIndex: =3
 
-        Separator4 As rectangle:
+        Separator5 As rectangle:
             BorderColor: =App.Theme.Colors.Darker40
             Fill: =RGBA(255, 255, 255, 1)
             Height: =8
@@ -124,10 +137,10 @@ Resumen As screen:
             Y: =Parent.TemplateHeight - Self.Height
             ZIndex: =5
 
-        Rectangle3 As rectangle:
+        Rectangle4 As rectangle:
             BorderColor: =App.Theme.Colors.Darker40
             Fill: =App.Theme.Colors.Darker30
-            Height: =Parent.TemplateHeight - Separator4.Height
+            Height: =Parent.TemplateHeight - Separator5.Height
             OnSelect: =Select(Parent)
             Visible: =ThisItem.IsSelected
             Width: =4
