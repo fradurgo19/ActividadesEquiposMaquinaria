@@ -355,14 +355,14 @@ Features_2 As screen:
             ZIndex: =8
 
         CheckboxCanvas1 As Casilla:
-            Checked: =ThisItem.ID in colCambioDiesel.ID
+            Checked: =
             DisplayMode: =DisplayMode.Edit
             Height: =25
             Label: =
             OnCheck: |
-                =Collect(colAllSelectedItems, ThisItem);Collect(colCambioDiesel, ThisItem)
+                =Collect(colAllSelectedItems, ThisItem)
             OnSelect: =Select(Parent)
-            OnUncheck: =Remove(colAllSelectedItems, ThisItem);Clear(colCambioDiesel)
+            OnUncheck: =Remove(colAllSelectedItems, ThisItem)
             Width: =37
             X: =342
             Y: =0
@@ -499,22 +499,6 @@ Features_2 As screen:
         X: =1234
         Y: =61
         ZIndex: =32
-
-    CheckboxCanvas3 As Casilla:
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
-        Label: ="Selec. Todo"
-        OnCheck: =false
-        OnSelect: =
-        OnUncheck: |-
-            =ForAll(
-                Gallery2.AllItems,
-                Remove(colAllSelectedItems, ThisRecord)
-            )
-        Width: =160
-        X: =1034
-        Y: =44
-        ZIndex: =33
 
     Group5 As group:
         Height: =5
