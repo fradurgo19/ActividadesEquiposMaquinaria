@@ -1,0 +1,133 @@
+Resumen As screen:
+    BackgroundImage: =
+    Fill: =Color.White
+    Height: =Max(App.Height, App.DesignHeight)
+    LoadingSpinnerColor: =App.Theme.Colors.Primary
+    Width: =Max(App.Width, App.DesignWidth)
+
+    Rectangle14_2 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledFill: =Rectangle14_2.Fill
+        Fill: =App.Theme.Colors.Darker30
+        Height: =105
+        HoverFill: =Rectangle14_2.Fill
+        PressedFill: =Rectangle14_2.Fill
+        TabIndex: =0
+        Width: =1366
+        Y: =663
+        ZIndex: =10
+
+    Image3_2 As image:
+        ApplyEXIFOrientation: =false
+        AutoDisableOnSelect: =false
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =68.1428571428571
+        Image: ='Captura de pantalla 2024-01-12 082706'
+        Width: =264.13
+        X: =290.81
+        Y: =678
+        ZIndex: =11
+
+    Label2_3 As label:
+        Align: =TextPosition.Left
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Lighter
+        Height: =77
+        HoverBorderColor: =Label2_3.BorderColor
+        HoverColor: =Label2_3.Color
+        HoverFill: =Label2_3.Fill
+        PaddingRight: =6.67
+        PaddingTop: =6.67
+        PressedBorderColor: =Label2_3.BorderColor
+        PressedColor: =Label2_3.Color
+        PressedFill: =Label2_3.Fill
+        Size: =18
+        Text: ="RESUMEN"
+        Width: =121
+        X: =50.02
+        Y: =671
+        ZIndex: =12
+
+    Rectangle1_6 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =App.Theme.Colors.Primary
+        Height: =60
+        TabIndex: =0
+        Width: =2.67
+        X: =258.46
+        Y: =681
+        ZIndex: =14
+
+    "Gallery5 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =App.Theme.Colors.Darker40
+        DelayItemLoading: =true
+        Height: =353
+        Items: =colAllSelectedItems
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =91
+        Width: =504
+        X: =50
+        Y: =19
+        ZIndex: =15
+
+        Title8 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =29
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Id
+            VerticalAlign: =VerticalAlign.Top
+            Width: =365
+            X: =15
+            Y: =35
+            ZIndex: =2
+
+        Subtitle5 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =12
+            Text: =ThisItem.Actividad
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title8.Width
+            X: =16
+            Y: =7
+            ZIndex: =3
+
+        Separator4 As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle3 As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =App.Theme.Colors.Darker30
+            Height: =Parent.TemplateHeight - Separator4.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+

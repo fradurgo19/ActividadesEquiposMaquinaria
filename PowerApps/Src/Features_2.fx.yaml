@@ -356,14 +356,15 @@ Features_2 As screen:
 
         CheckboxCanvas1 As Casilla:
             DisplayMode: =DisplayMode.Edit
-            Height: =29
+            Height: =33
             Label: =
-            OnCheck: =Collect(colAllSelectedItems, ThisItem)
+            OnCheck: |
+                =Collect(colAllSelectedItems, ThisItem)
             OnSelect: =Select(Parent)
             OnUncheck: =Remove(colAllSelectedItems, ThisItem)
-            Width: =48
+            Width: =37
             X: =316
-            Y: =10
+            Y: =5
             ZIndex: =9
 
     Label1_37 As label:
