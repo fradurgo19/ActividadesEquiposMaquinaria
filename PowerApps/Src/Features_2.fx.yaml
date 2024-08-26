@@ -537,6 +537,16 @@ Features_2 As screen:
         Y: =60
         ZIndex: =33
 
+    Image2 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Image: ='icons8-resumen-64'
+        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+        X: =112
+        Y: =56
+        ZIndex: =34
+
     Group5 As group:
         Height: =5
         Width: =5
