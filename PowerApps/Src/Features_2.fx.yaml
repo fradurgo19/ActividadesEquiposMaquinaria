@@ -249,15 +249,16 @@ Features_2 As screen:
     "Gallery2 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
-        Height: =598
+        Fill: =RGBA(214, 221, 224, 1)
+        Height: =586
         Items: ='Cambio de motor diesel'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =82
         Visible: =pop4
-        Width: =402
-        X: =961
+        Width: =416
+        X: =947
         Y: =131
         ZIndex: =24
 
