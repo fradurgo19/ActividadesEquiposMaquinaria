@@ -534,8 +534,9 @@ Features_2 As screen:
             UpdateContext({varDeseleccionar: false});
             ForAll(
                 Gallery2.AllItems,
-                Remove(colAllSelectedItems, ThisRecord)
-            );
+                RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
+            )
+            
             
             
             
