@@ -372,17 +372,18 @@ Features_2 As screen:
             CheckboxBorderColor: =App.Theme.Colors.Primary
             CheckmarkFill: =App.Theme.Colors.Primary
             Color: =RGBA(0, 0, 0, 1)
+            Default: =varDeseleccionar
             Font: =App.Theme.Font
             Height: =45
             HoverColor: =App.Theme.Colors.Darker30
-            OnCheck: =Collect(colAllSelectedItems, Distinct('Cambio de motor diesel' , ThisItem))
+            OnCheck: =Collect(colAllSelectedItems, ThisItem)
             OnSelect: =Select(Parent)
             OnUncheck: =Remove(colAllSelectedItems, ThisItem)
             Size: =13
             Text: =
             Width: =39
             X: =312
-            Y: =12
+            Y: =5
             ZIndex: =11
 
     Label1_37 As label:
@@ -530,7 +531,9 @@ Features_2 As screen:
                 Gallery2.AllItems,
                 Remove(colAllSelectedItems, ThisRecord)
             );
-            UpdateContext({ ShowIcon: false })
+            UpdateContext({ ShowIcon: false });
+            UpdateContext({varDeseleccionar: false})
+            
             
             
         Text: ="Borrar Todo"
