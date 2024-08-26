@@ -483,6 +483,20 @@ Features_2 As screen:
         Y: =399
         ZIndex: =31
 
+    ButtonCanvas1 As Botón:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |
+            =ForAll(
+                Gallery2, // gal_Galeria1 es el nombre de la galería
+                Collect(colAllSelectedItems, Thisitem)
+            )
+        Text: ="Selec Todo"
+        Width: =96
+        X: =1213
+        Y: =12
+        ZIndex: =32
+
     Group5 As group:
         Height: =5
         Width: =5
