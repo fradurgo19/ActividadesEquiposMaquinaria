@@ -36,14 +36,14 @@ Features_2 As screen:
         BorderThickness: =5
         DisabledFill: =Rectangle4_18.Fill
         Fill: =RGBA(253, 207, 180, 1)
-        Height: =728
+        Height: =690
         HoverFill: =Rectangle4_18.Fill
         PressedFill: =Rectangle4_18.Fill
         TabIndex: =0
         Visible: =pop4
         Width: =417
         X: =947
-        Y: =6
+        Y: =44
         ZIndex: =3
 
     Label2_8 As label:
@@ -355,14 +355,14 @@ Features_2 As screen:
             ZIndex: =8
 
         CheckboxCanvas1 As Casilla:
-            Checked: =
+            Checked: =ThisItem.ID in colCambioDiesel.ID
             DisplayMode: =DisplayMode.Edit
             Height: =25
             Label: =
             OnCheck: |
-                =Collect(colAllSelectedItems, ThisItem)
+                =Collect(colAllSelectedItems, ThisItem);Collect(colCambioDiesel, ThisItem)
             OnSelect: =Select(Parent)
-            OnUncheck: =Remove(colAllSelectedItems, ThisItem)
+            OnUncheck: =Remove(colAllSelectedItems, ThisItem);Clear(colCambioDiesel)
             Width: =37
             X: =342
             Y: =0
@@ -484,6 +484,37 @@ Features_2 As screen:
         X: =741
         Y: =399
         ZIndex: =31
+
+    ButtonCanvas4 As Botón:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        OnSelect: |-
+            =ForAll(
+                Gallery2.AllItems, 
+                Collect(colAllSelectedItems, ThisRecord)
+            )
+        Text: ="Selec Todo"
+        Visible: =pop4
+        Width: =96
+        X: =1194
+        Y: =64
+        ZIndex: =32
+
+    CheckboxCanvas3 As Casilla:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Label: ="Selec. Todo"
+        OnCheck: =false
+        OnSelect: =
+        OnUncheck: |-
+            =ForAll(
+                Gallery2.AllItems,
+                Remove(colAllSelectedItems, ThisRecord)
+            )
+        Width: =160
+        X: =1034
+        Y: =44
+        ZIndex: =33
 
     Group5 As group:
         Height: =5
