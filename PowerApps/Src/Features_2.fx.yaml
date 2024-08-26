@@ -527,12 +527,13 @@ Features_2 As screen:
         FontSize: =9
         Height: =39
         OnSelect: |+
-            =ForAll(
+            =UpdateContext({ ShowIcon: false });
+            UpdateContext({varDeseleccionar: false});
+            ForAll(
                 Gallery2.AllItems,
                 Remove(colAllSelectedItems, ThisRecord)
             );
-            UpdateContext({ ShowIcon: false });
-            UpdateContext({varDeseleccionar: false})
+            
             
             
             
