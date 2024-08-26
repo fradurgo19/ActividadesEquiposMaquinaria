@@ -271,7 +271,7 @@ Features_2 As screen:
             OnSelect: =Select(Parent)
             Visible: =ShowIcon
             Width: =27
-            X: =335
+            X: =359
             Y: =14
             ZIndex: =1
 
@@ -291,8 +291,8 @@ Features_2 As screen:
                 ="Codigo: "&ThisItem.Codigo
             VerticalAlign: =VerticalAlign.Top
             Width: =104
-            X: =4
-            Y: =7
+            X: =93
+            Y: =6
             ZIndex: =2
 
         Subtitle2 As label:
@@ -310,8 +310,8 @@ Features_2 As screen:
             Text: =ThisItem.Actividad
             VerticalAlign: =VerticalAlign.Top
             Width: =398
-            X: =Title3.X
-            Y: =50
+            X: =4
+            Y: =47
             ZIndex: =3
 
         Body2 As label:
@@ -319,7 +319,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =15
+            Height: =14
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -330,8 +330,8 @@ Features_2 As screen:
                 ="ID: "&ThisItem.Id
             VerticalAlign: =VerticalAlign.Top
             Width: =53
-            X: =223
-            Y: =7
+            X: =16
+            Y: =6
             ZIndex: =4
 
         Separator2 As rectangle:
@@ -367,8 +367,8 @@ Features_2 As screen:
             Text: =ThisItem.'Codigo Alterno'
             VerticalAlign: =VerticalAlign.Top
             Width: =67
-            X: =132
-            Y: =7
+            X: =215
+            Y: =6
             ZIndex: =7
 
         Checkbox1 As checkbox:
@@ -380,9 +380,9 @@ Features_2 As screen:
             Font: =App.Theme.Font
             Height: =45
             HoverColor: =App.Theme.Colors.Darker30
-            OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true);Collect(colDatacajamenor, ThisItem)
+            OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
             OnSelect: =Select(Parent)
-            OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false);Clear(colDatacajamenor)
+            OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
             Size: =13
             Text: =
             Width: =39
@@ -534,7 +534,19 @@ Features_2 As screen:
             ForAll(
                 Gallery2.AllItems,
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
+            );
+            If(
+                Checkbox1.Value,
+                UpdateContext({ Checkbox1State: "Uncheck" }),
+                UpdateContext({ Checkbox1State: "Check" })
+            );
+            If(
+                Checkbox1State = "Check",
+                Check(Checkbox1),
+                Uncheck(Checkbox1)
             )
+            
+            
             
             
             
@@ -564,6 +576,7 @@ Features_2 As screen:
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =46
+        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
         Size: =15
         Text: ="Resumen"
         Width: =97
