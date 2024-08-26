@@ -5,18 +5,7 @@ Resumen As screen:
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnHidden: =
     OnVisible: |
-        =ClearCollect(
-            colDistinctItems,
-            ForAll(
-                colAllSelectedItems,
-                If(
-                    IsBlank(
-                        LookUp(colDistinctItems, ID = ThisRecord.ID)
-                    ),
-                    Collect(colDistinctItems, ThisRecord)
-                )
-            )
-        )
+        =
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle14_2 As rectangle:
@@ -96,7 +85,7 @@ Resumen As screen:
         DelayItemLoading: =true
         Fill: =RGBA(253, 207, 180, 1)
         Height: =415
-        Items: =colDistinctItems
+        Items: =colAllSelectedItems
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -117,7 +106,7 @@ Resumen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Text: =ThisItem.Value
+            Text: =ThisItem.Actividad
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 173
             X: =27
@@ -135,7 +124,7 @@ Resumen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =12
-            Text: =ThisItem.Value
+            Text: =ThisItem.Id
             VerticalAlign: =VerticalAlign.Top
             Width: =31
             X: =27
