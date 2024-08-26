@@ -254,7 +254,7 @@ Features_2 As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =61
+        TemplateSize: =68
         Visible: =pop4
         Width: =390
         X: =961
@@ -296,7 +296,7 @@ Features_2 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =386
             X: =Title3.X
-            Y: =33
+            Y: =26
             ZIndex: =3
 
         Body2 As label:
@@ -356,13 +356,13 @@ Features_2 As screen:
 
         CheckboxCanvas1 As Casilla:
             DisplayMode: =DisplayMode.Edit
-            Height: =33
+            Height: =25
             Label: =
             OnCheck: =Collect(colAllSelectedItems, ThisItem)
             OnSelect: =Select(Parent)
             OnUncheck: =Remove(colAllSelectedItems, ThisItem)
             Width: =37
-            X: =328
+            X: =342
             Y: =0
             ZIndex: =9
 
