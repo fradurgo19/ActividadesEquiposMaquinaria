@@ -511,7 +511,7 @@ Features_2 As screen:
         BasePaletteColor: =RGBA(8, 222, 8, 1)
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
-        Height: =39
+        Height: =43
         OnSelect: |+
             =ForAll(
                 Gallery2.AllItems, 
@@ -521,8 +521,8 @@ Features_2 As screen:
             
         Text: ="Selec Todo"
         Visible: =pop4
-        Width: =35
-        X: =1315
+        Width: =46
+        X: =1303
         Y: =88
         ZIndex: =32
 
@@ -530,7 +530,7 @@ Features_2 As screen:
         BasePaletteColor: =RGBA(249, 83, 109, 1)
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
-        Height: =39
+        Height: =43
         OnSelect: |+
             =UpdateContext({ ShowIcon: false });
             ForAll(
@@ -548,8 +548,8 @@ Features_2 As screen:
             
         Text: ="Borrar Todo"
         Visible: =pop4
-        Width: =33
-        X: =1271
+        Width: =41
+        X: =1252
         Y: =88
         ZIndex: =33
 
