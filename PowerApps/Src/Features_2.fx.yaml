@@ -241,7 +241,7 @@ Features_2 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =20
+        Height: =28
         HoverBorderColor: =Label9_29.BorderColor
         HoverColor: =Label9_29.Color
         HoverFill: =Label9_29.Fill
@@ -252,12 +252,12 @@ Features_2 As screen:
         PressedBorderColor: =Label9_29.BorderColor
         PressedColor: =Label9_29.Color
         PressedFill: =Label9_29.Fill
-        Size: =10
+        Size: =15
         Text: ="Cambio de motor diesel"
         Visible: =pop4
-        Width: =291
+        Width: =246
         X: =961
-        Y: =68
+        Y: =98
         ZIndex: =20
 
     icon14_5 As icon.Cancel:
@@ -281,7 +281,7 @@ Features_2 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
         Fill: =RGBA(253, 207, 180, 1)
-        Height: =584
+        Height: =571
         Items: ='Cambio de motor diesel'
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -290,7 +290,7 @@ Features_2 As screen:
         Visible: =pop4
         Width: =416
         X: =947
-        Y: =138
+        Y: =151
         ZIndex: =22
 
         Icon1 As icon.Check:
@@ -436,7 +436,7 @@ Features_2 As screen:
         Text: ="Selec Todo"
         Visible: =pop4
         Width: =46
-        X: =1303
+        X: =1294
         Y: =88
         ZIndex: =23
 
@@ -463,7 +463,7 @@ Features_2 As screen:
         Text: ="Borrar Todo"
         Visible: =pop4
         Width: =41
-        X: =1252
+        X: =1240
         Y: =88
         ZIndex: =24
 
@@ -843,7 +843,7 @@ Features_2 As screen:
         PressedBorderColor: =Label9_36.BorderColor
         PressedColor: =Label9_36.Color
         PressedFill: =Label9_36.Fill
-        Size: =10
+        Size: =15
         Text: ="Reparar Motor"
         Visible: =pop1
         Width: =174
@@ -1013,37 +1013,37 @@ Features_2 As screen:
             ZIndex: =8
 
     ButtonCanvas4_2 As Botón:
-        BasePaletteColor: =RGBA(74, 247, 74, 1)
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
         Height: =43
         OnSelect: |+
             =ForAll(
-                Gallery2.AllItems, 
+                Gallery2_1.AllItems, 
                 Collect(colAllSelectedItems, ThisRecord)
             );
-            UpdateContext({ ShowIcon: true });UpdateContext({ varCheckboxChecked: !Checkbox1.Value });
+            UpdateContext({ ShowIcon: true });UpdateContext({ varCheckboxChecked: !Checkbox1_1.Value });
             
         Text: ="Selec Todo"
         Visible: =pop1
         Width: =46
-        X: =1275
+        X: =1310
         Y: =99
         ZIndex: =54
 
     ButtonCanvas4_3 As Botón:
-        BasePaletteColor: =RGBA(242, 17, 17, 1)
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
         Height: =43
         OnSelect: |+
             =UpdateContext({ ShowIcon: false });
             ForAll(
-                Gallery2.AllItems,
+                Gallery2_1.AllItems,
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
             );
             
-            UpdateContext({ varCheckboxChecked: !Checkbox1.Value });
+            UpdateContext({ varCheckboxChecked: !Checkbox1_1.Value });
             
             
             
@@ -1054,62 +1054,9 @@ Features_2 As screen:
         Text: ="Borrar Todo"
         Visible: =pop1
         Width: =41
-        X: =1224
+        X: =1259
         Y: =99
         ZIndex: =55
-
-    Group5 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =75
-
-        Circle2_11 As circle:
-            BorderColor: =RGBA(255, 255, 255, 1)
-            DisabledFill: =Circle2_11.Fill
-            Fill: =RGBA(204, 231, 246, 1)
-            Height: =138
-            HoverFill: =Circle2_11.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
-            PressedFill: =Circle2_11.Fill
-            TabIndex: =0
-            Width: =344
-            X: =64
-            Y: =158
-            ZIndex: =11
-
-        icon11_5 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =29
-            Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
-            TabIndex: =0
-            Width: =29
-            X: =254
-            Y: =168
-            ZIndex: =12
-
-        Label1_7 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(204, 231, 246, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =30
-            Size: =13
-            Text: ="RADIADOR"
-            Width: =114
-            X: =79
-            Y: =210
-            ZIndex: =19
 
     Group7 As group:
         Height: =5
@@ -1166,6 +1113,59 @@ Features_2 As screen:
             X: =614
             Y: =55
             ZIndex: =32
+
+    Group5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =75
+
+        Circle2_11 As circle:
+            BorderColor: =RGBA(255, 255, 255, 1)
+            DisabledFill: =Circle2_11.Fill
+            Fill: =RGBA(204, 231, 246, 1)
+            Height: =138
+            HoverFill: =Circle2_11.Fill
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
+            PressedFill: =Circle2_11.Fill
+            TabIndex: =0
+            Width: =344
+            X: =64
+            Y: =158
+            ZIndex: =11
+
+        icon11_5 As icon.Add:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =App.Theme.Colors.Darker30
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =29
+            Icon: =Icon.Add
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
+            TabIndex: =0
+            Width: =29
+            X: =254
+            Y: =168
+            ZIndex: =12
+
+        Label1_7 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(204, 231, 246, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            Size: =13
+            Text: ="RADIADOR"
+            Width: =114
+            X: =79
+            Y: =210
+            ZIndex: =19
 
     Group1 As group:
         Height: =5
