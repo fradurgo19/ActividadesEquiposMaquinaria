@@ -100,7 +100,7 @@ Resumen As screen:
         ZIndex: =17
 
         Title10 As label:
-            Color: =RGBA(50, 49, 48, 1)
+            Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -119,7 +119,7 @@ Resumen As screen:
             ZIndex: =2
 
         Subtitle7 As label:
-            Color: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -156,7 +156,7 @@ Resumen As screen:
             ZIndex: =6
 
         Title10_1 As label:
-            Color: =RGBA(50, 49, 48, 1)
+            Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -175,7 +175,7 @@ Resumen As screen:
             ZIndex: =7
 
         Title10_2 As label:
-            Color: =RGBA(50, 49, 48, 1)
+            Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
@@ -194,7 +194,7 @@ Resumen As screen:
             ZIndex: =8
 
         Title10_3 As label:
-            Color: =RGBA(50, 49, 48, 1)
+            Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
