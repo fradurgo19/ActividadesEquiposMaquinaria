@@ -104,16 +104,16 @@ Resumen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =Self.Size * 1.8
+            Height: =16
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
             Size: =9
-            Text: =ThisItem.Actividad
+            Text: =ThisItem.Value.Codigo
             VerticalAlign: =VerticalAlign.Top
-            Width: =Parent.TemplateWidth - 173
+            Width: =45
             X: =46
             Y: =3
             ZIndex: =2
@@ -130,7 +130,7 @@ Resumen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =9
-            Text: =ThisItem.Id
+            Text: =ThisItem.Value.Id
             VerticalAlign: =VerticalAlign.Top
             Width: =31
             X: =15
@@ -154,6 +154,63 @@ Resumen As screen:
             Visible: =ThisItem.IsSelected
             Width: =4
             ZIndex: =6
+
+        Title10_1 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =15
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: =ThisItem.Value.'Codigo Alterno'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =72
+            X: =106
+            Y: =4
+            ZIndex: =7
+
+        Title10_2 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =16
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: =ThisItem.Value.Actividad
+            VerticalAlign: =VerticalAlign.Top
+            Width: =173
+            X: =195
+            Y: =3
+            ZIndex: =8
+
+        Title10_3 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =10
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: =ThisItem.Value.Tiempo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =106
+            X: =451
+            Y: =9
+            ZIndex: =9
 
     ButtonCanvas2 As Botón:
         DisplayMode: =DisplayMode.Edit
