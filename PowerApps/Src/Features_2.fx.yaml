@@ -422,10 +422,11 @@ Features_2 As screen:
             ZIndex: =8
 
     ButtonCanvas4 As Botón:
-        BasePaletteColor: =RGBA(139, 245, 115, 1)
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
         Height: =43
+        Layout: ='ButtonCanvas.Layout'.IconAfter
         OnSelect: |+
             =ForAll(
                 Gallery2.AllItems, 
@@ -436,12 +437,12 @@ Features_2 As screen:
         Text: ="Selec Todo"
         Visible: =pop4
         Width: =46
-        X: =1294
-        Y: =88
+        X: =1310
+        Y: =94
         ZIndex: =23
 
     ButtonCanvas4_1 As Botón:
-        BasePaletteColor: =RGBA(240, 22, 22, 1)
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
         Height: =43
@@ -463,8 +464,8 @@ Features_2 As screen:
         Text: ="Borrar Todo"
         Visible: =pop4
         Width: =41
-        X: =1240
-        Y: =88
+        X: =1259
+        Y: =93
         ZIndex: =24
 
     Label1_37 As label:
@@ -598,8 +599,8 @@ Features_2 As screen:
         Size: =11
         Text: ="7-10 t"
         Width: =61
-        X: =193
-        Y: =167
+        X: =577
+        Y: =641
         ZIndex: =35
 
     Label1_43 As label:
@@ -616,8 +617,8 @@ Features_2 As screen:
         Size: =11
         Text: ="13-19 t"
         Width: =61
-        X: =193
-        Y: =208
+        X: =577
+        Y: =682
         ZIndex: =36
 
     icon11_8 As icon.Add:
@@ -631,8 +632,8 @@ Features_2 As screen:
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
         TabIndex: =0
         Width: =29
-        X: =254
-        Y: =204
+        X: =647
+        Y: =683
         ZIndex: =37
 
     Label1_44 As label:
@@ -649,8 +650,8 @@ Features_2 As screen:
         Size: =11
         Text: ="20-26 t"
         Width: =61
-        X: =193
-        Y: =251
+        X: =577
+        Y: =725
         ZIndex: =38
 
     icon11_9 As icon.Add:
@@ -664,8 +665,8 @@ Features_2 As screen:
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
         TabIndex: =0
         Width: =29
-        X: =254
-        Y: =253
+        X: =646
+        Y: =719
         ZIndex: =39
 
     Label1_45 As label:
@@ -682,8 +683,8 @@ Features_2 As screen:
         Size: =11
         Text: ="27-35 t"
         Width: =61
-        X: =291
-        Y: =210
+        X: =685
+        Y: =685
         ZIndex: =40
 
     icon11_10 As icon.Add:
@@ -697,8 +698,8 @@ Features_2 As screen:
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
         TabIndex: =0
         Width: =29
-        X: =364
-        Y: =207
+        X: =746
+        Y: =683
         ZIndex: =41
 
     Label9_24 As label:
@@ -1132,8 +1133,8 @@ Features_2 As screen:
             PressedFill: =Circle2_11.Fill
             TabIndex: =0
             Width: =344
-            X: =64
-            Y: =158
+            X: =455
+            Y: =630
             ZIndex: =11
 
         icon11_5 As icon.Add:
@@ -1147,8 +1148,8 @@ Features_2 As screen:
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             TabIndex: =0
             Width: =29
-            X: =254
-            Y: =168
+            X: =647
+            Y: =643
             ZIndex: =12
 
         Label1_7 As label:
@@ -1163,8 +1164,8 @@ Features_2 As screen:
             Size: =13
             Text: ="RADIADOR"
             Width: =114
-            X: =79
-            Y: =210
+            X: =469
+            Y: =684
             ZIndex: =19
 
     Group1 As group:
