@@ -9,6 +9,20 @@ Features_2 As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});Set(varCheckboxChecked, false)
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image35 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =538
+        Image: ='motor2-removebg'
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =780
+        X: =586
+        ZIndex: =1
+
     Image36 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -21,7 +35,7 @@ Features_2 As screen:
         RadiusTopRight: =50
         Width: =457
         Y: =306
-        ZIndex: =1
+        ZIndex: =2
 
     Image37 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -36,20 +50,6 @@ Features_2 As screen:
         Width: =331
         X: =324
         Y: =217
-        ZIndex: =2
-
-    Image35 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =538
-        Image: ='motor2-removebg'
-        RadiusBottomLeft: =50
-        RadiusBottomRight: =50
-        RadiusTopLeft: =50
-        RadiusTopRight: =50
-        Width: =780
-        X: =586
         ZIndex: =3
 
     Image33 As image:
@@ -253,7 +253,7 @@ Features_2 As screen:
         PressedColor: =Label9_29.Color
         PressedFill: =Label9_29.Fill
         Size: =10
-        Text: ="Cambio de motor diesel 7-10 t"
+        Text: ="Cambio de motor diesel"
         Visible: =pop4
         Width: =291
         X: =961
@@ -743,6 +743,24 @@ Features_2 As screen:
         Y: =58
         ZIndex: =47
 
+    Label1_46 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(204, 231, 246, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
+        Size: =11
+        Text: ="Cambio de motor diesel"
+        Width: =171
+        X: =374
+        Y: =55
+        ZIndex: =48
+
     Group2 As group:
         Height: =5
         Width: =5
@@ -774,6 +792,24 @@ Features_2 As screen:
             X: =97
             Y: =88
             ZIndex: =26
+
+    Label1_47 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(204, 231, 246, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
+        Size: =11
+        Text: ="Reparar motor"
+        Width: =171
+        X: =383
+        Y: =108
+        ZIndex: =49
 
     Group5 As group:
         Height: =5
@@ -846,8 +882,8 @@ Features_2 As screen:
             PressedFill: =Circle2_8.Fill
             TabIndex: =0
             Tooltip: ="MOTOR"
-            Width: =396
-            X: =430
+            Width: =556
+            X: =270
             Y: =40
             ZIndex: =13
 
@@ -864,8 +900,8 @@ Features_2 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             Size: =13
             Text: ="MOTOR"
-            Width: =87
-            X: =459
+            Width: =122
+            X: =286
             Y: =86
             ZIndex: =18
 
@@ -879,9 +915,9 @@ Features_2 As screen:
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             TabIndex: =0
-            Width: =33
-            X: =623
-            Y: =54
+            Width: =46
+            X: =614
+            Y: =55
             ZIndex: =32
 
     Group1 As group:
