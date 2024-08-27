@@ -66,10 +66,11 @@ Resumen As screen:
         ZIndex: =14
 
     Label4 As label:
+        Align: =Align.Center
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(253, 207, 180, 1)
+        Fill: =RGBA(111, 183, 242, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =65
@@ -88,7 +89,6 @@ Resumen As screen:
         Height: =415
         Items: |-
             =Distinct(colAllSelectedItems, {Id: Id, Codigo: Codigo, 'Codigo Alterno': 'Codigo Alterno', Actividad: Actividad,  Tiempo:Tiempo})
-             
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
