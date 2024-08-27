@@ -23,11 +23,11 @@ Features_2 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =146
+        Height: =352
         Image: ='Radiador2-removebg'
-        Width: =131
-        X: =260
-        Y: =459
+        Width: =398
+        X: =247
+        Y: =266
         ZIndex: =2
 
     Image35 As image:
@@ -453,32 +453,6 @@ Features_2 As screen:
         Y: =88
         ZIndex: =24
 
-    Image2 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Image: ='icons8-resumen-64'
-        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
-        X: =42
-        Y: =38
-        ZIndex: =25
-
-    Label4_2 As label:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =46
-        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
-        Size: =15
-        Text: ="Resumen"
-        Width: =97
-        X: =131
-        Y: =65
-        ZIndex: =26
-
     Label1_37 As label:
         Align: =Align.Center
         BorderColor: =App.Theme.Colors.Darker40
@@ -754,6 +728,38 @@ Features_2 As screen:
         X: =741
         Y: =58
         ZIndex: =47
+
+    Group2 As group:
+        Height: =5
+        Width: =5
+        X: =80
+        Y: =80
+        ZIndex: =48
+
+        Image2 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Image: ='icons8-resumen-64'
+            OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+            Y: =56
+            ZIndex: =25
+
+        Label4_2 As label:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =46
+            OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+            Size: =15
+            Text: ="Resumen"
+            Width: =97
+            X: =97
+            Y: =88
+            ZIndex: =26
 
     Group5 As group:
         Height: =5

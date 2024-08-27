@@ -135,7 +135,7 @@ Features_3 As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =35
+        Height: =50
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop6:false})
         Size: =13.34
@@ -370,11 +370,12 @@ Features_3 As screen:
             BorderColor: =App.Theme.Colors.Darker40
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =137
             Image: ='Tanque-fotor-bg-remover-2024050912241'
             Visible: =pop2
-            Width: =133.4
-            X: =669.66
-            Y: =53
+            Width: =160
+            X: =650
+            Y: =29
             ZIndex: =45
 
     Group23 As group:
