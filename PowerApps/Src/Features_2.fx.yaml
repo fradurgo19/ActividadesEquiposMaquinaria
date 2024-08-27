@@ -6,8 +6,8 @@ Features_2 As screen:
     OnHidden: |+
         =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false});Reset(Checkbox1_1)
         
-    OnVisible: |-
-        =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});Set(varCheckboxChecked, false)
+    OnVisible: |
+        =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});Set(varCheckboxChecked, false);ForAll(Gallery2.AllItems, Reset(Checkbox1))
     Width: =Max(App.Width, App.DesignWidth)
 
     Image35 As image:
@@ -454,7 +454,7 @@ Features_2 As screen:
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
             );
             
-            UpdateContext({ varCheckboxChecked: !Checkbox1.Value });Reset(Checkbox1)
+            UpdateContext({ varCheckboxChecked: !Checkbox1.Value })
             
             
             
