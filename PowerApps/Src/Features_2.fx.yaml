@@ -422,7 +422,7 @@ Features_2 As screen:
             ZIndex: =8
 
     ButtonCanvas4 As Botón:
-        BasePaletteColor: =RGBA(8, 222, 8, 1)
+        BasePaletteColor: =RGBA(139, 245, 115, 1)
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
         Height: =43
@@ -441,7 +441,7 @@ Features_2 As screen:
         ZIndex: =23
 
     ButtonCanvas4_1 As Botón:
-        BasePaletteColor: =RGBA(249, 83, 109, 1)
+        BasePaletteColor: =RGBA(240, 22, 22, 1)
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
         Height: =43
@@ -803,13 +803,260 @@ Features_2 As screen:
         FontWeight: =FontWeight.Bold
         Height: =43
         OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
+            =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
         Size: =11
         Text: ="Reparar motor"
         Width: =171
         X: =383
         Y: =108
         ZIndex: =49
+
+    Rectangle4_19 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 255)
+        BorderThickness: =5
+        DisabledFill: =Rectangle4_19.Fill
+        Fill: =RGBA(253, 207, 180, 1)
+        Height: =710
+        HoverFill: =Rectangle4_19.Fill
+        PressedFill: =Rectangle4_19.Fill
+        TabIndex: =0
+        Visible: =pop1
+        Width: =417
+        X: =949
+        Y: =45
+        ZIndex: =50
+
+    Label9_36 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =21
+        HoverBorderColor: =Label9_36.BorderColor
+        HoverColor: =Label9_36.Color
+        HoverFill: =Label9_36.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_36.BorderColor
+        PressedColor: =Label9_36.Color
+        PressedFill: =Label9_36.Fill
+        Size: =10
+        Text: ="Reparar Motor"
+        Visible: =pop1
+        Width: =174
+        X: =983
+        Y: =105
+        ZIndex: =51
+
+    icon14_6 As icon.Cancel:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, 1)
+        Height: =32
+        Icon: =Icon.Cancel
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+        TabIndex: =0
+        Visible: =pop1
+        Width: =42
+        X: =1314
+        Y: =54
+        ZIndex: =52
+
+    "Gallery2_1 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
+        BorderColor: =App.Theme.Colors.Darker40
+        DelayItemLoading: =true
+        Fill: =RGBA(253, 207, 180, 1)
+        Height: =588
+        Items: ='Reparar motor'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =82
+        Visible: =pop1
+        Width: =402
+        X: =961
+        Y: =156
+        ZIndex: =53
+
+        Icon1_1 As icon.Check:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =App.Theme.Colors.Darker30
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =26
+            Icon: =Icon.CheckBadge
+            OnSelect: =Select(Parent)
+            Visible: =ShowIcon
+            Width: =27
+            X: =359
+            Y: =14
+            ZIndex: =1
+
+        Title3_2 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="Codigo: "&ThisItem.Codigo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =104
+            X: =93
+            Y: =6
+            ZIndex: =2
+
+        Subtitle2_1 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =24
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: =ThisItem.Actividad
+            VerticalAlign: =VerticalAlign.Top
+            Width: =398
+            X: =4
+            Y: =47
+            ZIndex: =3
+
+        Body2_1 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =14
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="ID: "&ThisItem.Id
+            VerticalAlign: =VerticalAlign.Top
+            Width: =53
+            X: =16
+            Y: =6
+            ZIndex: =4
+
+        Separator2_1 As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle2_1 As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =App.Theme.Colors.Darker30
+            Height: =Parent.TemplateHeight - Separator2_1.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+
+        Title3_3 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =25
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: =ThisItem.'Codigo Alterno'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =67
+            X: =215
+            Y: =6
+            ZIndex: =7
+
+        Checkbox1_1 As checkbox:
+            BorderColor: =App.Theme.Colors.Darker40
+            CheckboxBorderColor: =App.Theme.Colors.Primary
+            CheckmarkFill: =App.Theme.Colors.Primary
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =varCheckboxChecked
+            Font: =App.Theme.Font
+            Height: =45
+            HoverColor: =App.Theme.Colors.Darker30
+            OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
+            OnSelect: =Select(Parent)
+            OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
+            Size: =13
+            Text: =
+            Width: =39
+            X: =311
+            ZIndex: =8
+
+    ButtonCanvas4_2 As Botón:
+        BasePaletteColor: =RGBA(74, 247, 74, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =9
+        Height: =43
+        OnSelect: |+
+            =ForAll(
+                Gallery2.AllItems, 
+                Collect(colAllSelectedItems, ThisRecord)
+            );
+            UpdateContext({ ShowIcon: true });UpdateContext({ varCheckboxChecked: !Checkbox1.Value });
+            
+        Text: ="Selec Todo"
+        Visible: =pop1
+        Width: =46
+        X: =1275
+        Y: =99
+        ZIndex: =54
+
+    ButtonCanvas4_3 As Botón:
+        BasePaletteColor: =RGBA(242, 17, 17, 1)
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =9
+        Height: =43
+        OnSelect: |+
+            =UpdateContext({ ShowIcon: false });
+            ForAll(
+                Gallery2.AllItems,
+                RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
+            );
+            
+            UpdateContext({ varCheckboxChecked: !Checkbox1.Value });
+            
+            
+            
+            
+            
+            
+            
+        Text: ="Borrar Todo"
+        Visible: =pop1
+        Width: =41
+        X: =1224
+        Y: =99
+        ZIndex: =55
 
     Group5 As group:
         Height: =5
