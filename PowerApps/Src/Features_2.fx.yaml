@@ -4,10 +4,10 @@ Features_2 As screen:
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnHidden: |+
-        =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false});Reset(Checkbox1_1)
+        =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false});
         
     OnVisible: |
-        =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});Set(varCheckboxChecked, false);ForAll(Gallery2.AllItems, Reset(Checkbox1))
+        =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});Set(varCheckboxChecked, false)
     Width: =Max(App.Width, App.DesignWidth)
 
     Image35 As image:
@@ -206,8 +206,8 @@ Features_2 As screen:
         Text: ="BANCO DE VALVULAS"
         Visible: =pop1
         Width: =201.43
-        X: =569.61
-        Y: =646
+        X: =465
+        Y: =542
         ZIndex: =16
 
     Label9_31 As label:
@@ -232,8 +232,8 @@ Features_2 As screen:
         Text: ="BANCO DE SOLENOIDES"
         Visible: =pop1
         Width: =201.43
-        X: =572.28
-        Y: =694
+        X: =528
+        Y: =549
         ZIndex: =17
 
     Label9_29 As label:
