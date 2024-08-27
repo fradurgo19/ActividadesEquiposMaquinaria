@@ -174,34 +174,7 @@ Features_2 As screen:
         Width: =201.43
         X: =572.28
         Y: =694
-        ZIndex: =16
-
-    Label9_24 As label:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =23
-        HoverBorderColor: =Label9_24.BorderColor
-        HoverColor: =Label9_24.Color
-        HoverFill: =Label9_24.Fill
-        OnSelect: |-
-            =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B135E99F2-6E81-4AE6-8C53-70945A94D5F7%7D&file=tren%20de%20rodaje.xlsx&action=default&mobileredirect=true")
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        PressedBorderColor: =Label9_24.BorderColor
-        PressedColor: =Label9_24.Color
-        PressedFill: =Label9_24.Fill
-        Size: =16
-        Text: ="ZONA 1"
-        Visible: =pop2
-        Width: =164.08
-        X: =106.72
-        Y: =436
-        ZIndex: =19
+        ZIndex: =13
 
     Label9_29 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -228,7 +201,7 @@ Features_2 As screen:
         Width: =291
         X: =961
         Y: =68
-        ZIndex: =20
+        ZIndex: =16
 
     icon14_5 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -245,7 +218,7 @@ Features_2 As screen:
         Width: =42
         X: =1314
         Y: =50
-        ZIndex: =22
+        ZIndex: =17
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
@@ -261,7 +234,7 @@ Features_2 As screen:
         Width: =416
         X: =947
         Y: =138
-        ZIndex: =23
+        ZIndex: =18
 
         Icon1 As icon.Check:
             BorderColor: =App.Theme.Colors.Darker40
@@ -408,7 +381,7 @@ Features_2 As screen:
         Width: =46
         X: =1303
         Y: =88
-        ZIndex: =24
+        ZIndex: =19
 
     ButtonCanvas4_1 As Botón:
         BasePaletteColor: =RGBA(249, 83, 109, 1)
@@ -435,7 +408,7 @@ Features_2 As screen:
         Width: =41
         X: =1252
         Y: =88
-        ZIndex: =25
+        ZIndex: =20
 
     Image2 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -445,7 +418,7 @@ Features_2 As screen:
         OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
         X: =42
         Y: =38
-        ZIndex: =26
+        ZIndex: =21
 
     Label4_2 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -461,7 +434,7 @@ Features_2 As screen:
         Width: =97
         X: =131
         Y: =65
-        ZIndex: =27
+        ZIndex: =22
 
     Label1_37 As label:
         Align: =Align.Center
@@ -479,7 +452,7 @@ Features_2 As screen:
         Width: =52
         X: =520
         Y: =370
-        ZIndex: =28
+        ZIndex: =23
 
     Label1_39 As label:
         Align: =Align.Center
@@ -497,7 +470,7 @@ Features_2 As screen:
         Width: =62
         X: =515
         Y: =412
-        ZIndex: =29
+        ZIndex: =24
 
     Label1_40 As label:
         Align: =Align.Center
@@ -515,7 +488,7 @@ Features_2 As screen:
         Width: =70
         X: =509
         Y: =459
-        ZIndex: =30
+        ZIndex: =25
 
     icon9_14 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -530,7 +503,7 @@ Features_2 As screen:
         Width: =32
         X: =587
         Y: =458
-        ZIndex: =31
+        ZIndex: =26
 
     icon9_13 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -545,7 +518,7 @@ Features_2 As screen:
         Width: =32
         X: =586
         Y: =413
-        ZIndex: =32
+        ZIndex: =27
 
     icon9_15 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -560,7 +533,7 @@ Features_2 As screen:
         Width: =32
         X: =688
         Y: =366
-        ZIndex: =34
+        ZIndex: =29
 
     Label1_41 As label:
         Align: =Align.Center
@@ -578,7 +551,7 @@ Features_2 As screen:
         Width: =61
         X: =627
         Y: =365
-        ZIndex: =35
+        ZIndex: =30
 
     Label1_42 As label:
         Align: =Align.Center
@@ -596,7 +569,7 @@ Features_2 As screen:
         Width: =61
         X: =221
         Y: =205
-        ZIndex: =36
+        ZIndex: =31
 
     Label1_43 As label:
         Align: =Align.Center
@@ -614,7 +587,7 @@ Features_2 As screen:
         Width: =61
         X: =221
         Y: =246
-        ZIndex: =37
+        ZIndex: =32
 
     icon11_8 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -629,7 +602,7 @@ Features_2 As screen:
         Width: =29
         X: =289
         Y: =243
-        ZIndex: =38
+        ZIndex: =33
 
     Label1_44 As label:
         Align: =Align.Center
@@ -647,7 +620,7 @@ Features_2 As screen:
         Width: =61
         X: =221
         Y: =289
-        ZIndex: =39
+        ZIndex: =34
 
     icon11_9 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -662,7 +635,7 @@ Features_2 As screen:
         Width: =29
         X: =289
         Y: =286
-        ZIndex: =40
+        ZIndex: =35
 
     Label1_45 As label:
         Align: =Align.Center
@@ -680,7 +653,7 @@ Features_2 As screen:
         Width: =61
         X: =221
         Y: =331
-        ZIndex: =41
+        ZIndex: =36
 
     icon11_10 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -695,6 +668,33 @@ Features_2 As screen:
         Width: =29
         X: =289
         Y: =328
+        ZIndex: =37
+
+    Label9_24 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =23
+        HoverBorderColor: =Label9_24.BorderColor
+        HoverColor: =Label9_24.Color
+        HoverFill: =Label9_24.Fill
+        OnSelect: |-
+            =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B135E99F2-6E81-4AE6-8C53-70945A94D5F7%7D&file=tren%20de%20rodaje.xlsx&action=default&mobileredirect=true")
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_24.BorderColor
+        PressedColor: =Label9_24.Color
+        PressedFill: =Label9_24.Fill
+        Size: =16
+        Text: ="ZONA 1"
+        Visible: =pop2
+        Width: =164.08
+        X: =106
+        Y: =526
         ZIndex: =42
 
     Group5 As group:
@@ -748,7 +748,7 @@ Features_2 As screen:
             Width: =114
             X: =106
             Y: =261
-            ZIndex: =18
+            ZIndex: =15
 
     Group7 As group:
         Height: =5
@@ -789,7 +789,7 @@ Features_2 As screen:
             Width: =87
             X: =430
             Y: =405
-            ZIndex: =17
+            ZIndex: =14
 
         icon9_2 As icon.Add:
             BorderColor: =App.Theme.Colors.Darker40
@@ -804,7 +804,7 @@ Features_2 As screen:
             Width: =33
             X: =585
             Y: =367
-            ZIndex: =33
+            ZIndex: =28
 
     Group1 As group:
         Height: =5
@@ -825,8 +825,8 @@ Features_2 As screen:
             Visible: =pop2
             Width: =565
             X: =90.71
-            Y: =421
-            ZIndex: =13
+            Y: =502
+            ZIndex: =38
 
         Label9_23 As label:
             BorderColor: =App.Theme.Colors.Darker40
@@ -853,9 +853,21 @@ Features_2 As screen:
                 "
             Visible: =pop2
             Width: =217
-            X: =112.05
-            Y: =511
-            ZIndex: =14
+            X: =110
+            Y: =597
+            ZIndex: =39
+
+        Image4 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =168
+            Image: ='Captura de pantalla 2024-05-09 104446-fotor-bg-remover-20240509105347'
+            Visible: =pop2
+            Width: =200
+            X: =328
+            Y: =538
+            ZIndex: =40
 
         icon14_2 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
@@ -869,19 +881,7 @@ Features_2 As screen:
             TabIndex: =0
             Visible: =pop2
             Width: =60
-            X: =533.59
-            Y: =429
-            ZIndex: =15
-
-        Image4 As image:
-            BorderColor: =App.Theme.Colors.Darker40
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =168
-            Image: ='Captura de pantalla 2024-05-09 104446-fotor-bg-remover-20240509105347'
-            Visible: =pop2
-            Width: =200
-            X: =301.48
-            Y: =444
-            ZIndex: =21
+            X: =586
+            Y: =511
+            ZIndex: =41
 
