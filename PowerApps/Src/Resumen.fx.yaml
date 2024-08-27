@@ -84,7 +84,7 @@ Resumen As screen:
         BorderColor: =App.Theme.Colors.Darker40
         BorderThickness: =1
         DelayItemLoading: =true
-        Fill: =RGBA(253, 207, 180, 1)
+        Fill: =RGBA(111, 183, 242, 1)
         Height: =415
         Items: |-
             =Distinct(colAllSelectedItems, {Id: Id, Codigo: Codigo, 'Codigo Alterno': 'Codigo Alterno', Actividad: Actividad,  Tiempo:Tiempo})
@@ -93,7 +93,7 @@ Resumen As screen:
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
         TemplatePadding: =0
-        TemplateSize: =43
+        TemplateSize: =31
         Width: =558
         X: =477
         Y: =102
@@ -110,7 +110,7 @@ Resumen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
+            Size: =8
             Text: =ThisItem.Value.Codigo
             VerticalAlign: =VerticalAlign.Top
             Width: =45
@@ -129,7 +129,7 @@ Resumen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
+            Size: =8
             Text: =ThisItem.Value.Id
             VerticalAlign: =VerticalAlign.Top
             Width: =31
@@ -166,7 +166,7 @@ Resumen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
+            Size: =8
             Text: =ThisItem.Value.'Codigo Alterno'
             VerticalAlign: =VerticalAlign.Top
             Width: =72
@@ -185,10 +185,10 @@ Resumen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
+            Size: =8
             Text: =ThisItem.Value.Actividad
             VerticalAlign: =VerticalAlign.Top
-            Width: =230
+            Width: =297
             X: =201
             Y: =3
             ZIndex: =8
@@ -204,12 +204,11 @@ Resumen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
+            Size: =8
             Text: =ThisItem.Value.Tiempo
             VerticalAlign: =VerticalAlign.Top
             Width: =37
-            X: =476
-            Y: =4
+            X: =521
             ZIndex: =9
 
     ButtonCanvas2 As Botón:
