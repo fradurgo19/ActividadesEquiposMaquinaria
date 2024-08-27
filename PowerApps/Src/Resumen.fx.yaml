@@ -73,11 +73,11 @@ Resumen As screen:
         Fill: =RGBA(111, 183, 242, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =65
+        Height: =45
         Size: =15
         Text: ="Resumen"
-        Width: =558
-        X: =477
+        Width: =582
+        X: =453
         Y: =16
         ZIndex: =16
 
@@ -86,7 +86,7 @@ Resumen As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Fill: =RGBA(111, 183, 242, 1)
-        Height: =415
+        Height: =546
         Items: |
             =Sort(
                 Distinct(colAllSelectedItems, {Id: Id, Codigo: Codigo, 'Codigo Alterno': 'Codigo Alterno', Actividad: Actividad, Tiempo: Tiempo}),
@@ -97,8 +97,8 @@ Resumen As screen:
         ShowNavigation: =true
         TemplatePadding: =0
         TemplateSize: =31
-        Width: =558
-        X: =477
+        Width: =581
+        X: =453
         Y: =102
         ZIndex: =17
 
@@ -248,4 +248,20 @@ Resumen As screen:
         X: =98
         Y: =29
         ZIndex: =20
+
+    Label4_3 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(111, 183, 242, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        Size: =15
+        Text: ="Resumen"
+        Width: =582
+        X: =452
+        Y: =75
+        ZIndex: =21
 
