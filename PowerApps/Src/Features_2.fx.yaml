@@ -454,7 +454,7 @@ Features_2 As screen:
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
             );
             
-            UpdateContext({ varCheckboxChecked: !Checkbox1.Value })
+            UpdateContext({ varCheckboxChecked: !Checkbox1.Value });Set(varResetCheckbox, false); Set(varResetCheckbox,true)
             
             
             
