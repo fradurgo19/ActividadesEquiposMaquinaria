@@ -86,7 +86,9 @@ Resumen As screen:
         DelayItemLoading: =true
         Fill: =RGBA(253, 207, 180, 1)
         Height: =415
-        Items: =colAllSelectedItems
+        Items: |-
+            =Distinct(colAllSelectedItems, {Id: ID, Codigo: Codigo, 'Codigo Alterno': 'Codigo Alterno', Actividad: Actividad,  Tiempo:Tiempo})
+             
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowNavigation: =true
