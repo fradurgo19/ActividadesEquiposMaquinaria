@@ -15,6 +15,10 @@ Features_2 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =462
         Image: =radiador1
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
         Width: =457
         Y: =306
         ZIndex: =1
@@ -23,11 +27,15 @@ Features_2 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =352
+        Height: =309
         Image: ='Radiador2-removebg'
-        Width: =398
-        X: =247
-        Y: =266
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =331
+        X: =324
+        Y: =217
         ZIndex: =2
 
     Image35 As image:
@@ -36,6 +44,10 @@ Features_2 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =538
         Image: ='motor2-removebg'
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
         Width: =780
         X: =586
         ZIndex: =3
@@ -47,6 +59,10 @@ Features_2 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =397
         Image: ='motor1-removebg'
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
         Width: =422
         X: =750
         Y: =331
