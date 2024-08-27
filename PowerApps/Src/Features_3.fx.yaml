@@ -1,5 +1,5 @@
 Features_3 As screen:
-    BackgroundImage: =zx5_200_06
+    BackgroundImage: =
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
@@ -19,8 +19,8 @@ Features_3 As screen:
             =
             true
         Width: =201
-        X: =521
-        Y: =101
+        X: =506
+        Y: =96
         ZIndex: =1
 
     Image40 As image:
@@ -148,8 +148,8 @@ Features_3 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Width: =57.36
-        X: =775
-        Y: =635
+        X: =781
+        Y: =644
         ZIndex: =25
 
     Label1_11 As label:
@@ -887,8 +887,8 @@ Features_3 As screen:
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
             Width: =49
-            X: =660.32
-            Y: =230
+            X: =667
+            Y: =241
             ZIndex: =8
 
         Label1_3 As label:
@@ -943,7 +943,7 @@ Features_3 As screen:
             TabIndex: =0
             Width: =57
             X: =775
-            Y: =498
+            Y: =503
             ZIndex: =16
 
         Label1_10 As label:
@@ -997,8 +997,8 @@ Features_3 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
             TabIndex: =0
             Width: =77
-            X: =143
-            Y: =553
+            X: =145
+            Y: =560
             ZIndex: =32
 
         Label1_12 As label:

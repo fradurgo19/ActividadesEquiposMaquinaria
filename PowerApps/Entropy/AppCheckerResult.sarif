@@ -15524,6 +15524,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.zx5_200_06"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.zx5_200_06",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "zx5_200_06",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Captura de pantalla 2024-04-04 130223_1"
                 }
               ],
