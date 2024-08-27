@@ -9,47 +9,47 @@ Features_2 As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});Set(varCheckboxChecked, false)
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image36 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =462
+        Image: =radiador1
+        Width: =457
+        Y: =306
+        ZIndex: =1
+
+    Image37 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =146
+        Image: ='Radiador2-removebg'
+        Width: =131
+        X: =260
+        Y: =459
+        ZIndex: =2
+
     Image35 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =768
+        Height: =538
         Image: ='motor2-removebg'
-        Width: =807
-        X: =559
-        ZIndex: =1
-
-    Image33 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =359
-        Image: ='motor1-removebg'
-        Width: =513
-        X: =510
-        Y: =43
-        ZIndex: =2
-
-    Image4_5 As image:
-        ApplyEXIFOrientation: =false
-        AutoDisableOnSelect: =false
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =25
-        Image: =x
-        OnSelect: =Navigate(Home,ScreenTransition.Fade)
-        Width: =33.35
-        X: =1065.85
-        Y: =106
+        Width: =780
+        X: =586
         ZIndex: =3
 
-    Rectangle2_7 As rectangle:
-        BorderColor: =App.Theme.Colors.Darker40
-        Fill: =App.Theme.Colors.Primary
-        Height: =44
-        TabIndex: =0
-        Width: =1366
+    Image33 As image:
+        BorderColor: =Color.YellowGreen
+        BorderStyle: =BorderStyle.Dotted
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =397
+        Image: ='motor1-removebg'
+        Width: =422
+        X: =750
+        Y: =331
         ZIndex: =4
 
     Group10_5 As group:
@@ -66,7 +66,7 @@ Features_2 As screen:
             OnSelect: =Navigate(Features, ScreenTransition.Fade)
             TabIndex: =0
             Width: =58.7
-            ZIndex: =7
+            ZIndex: =9
 
         icon1_6 As icon.ChevronLeft:
             BorderColor: =App.Theme.Colors.Darker40
@@ -80,7 +80,29 @@ Features_2 As screen:
             Width: =26.68
             X: =16.01
             Y: =6
-            ZIndex: =8
+            ZIndex: =10
+
+    Image4_5 As image:
+        ApplyEXIFOrientation: =false
+        AutoDisableOnSelect: =false
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Image: =x
+        OnSelect: =Navigate(Home,ScreenTransition.Fade)
+        Width: =33.35
+        X: =1065.85
+        Y: =106
+        ZIndex: =5
+
+    Rectangle2_7 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =App.Theme.Colors.Primary
+        Height: =44
+        TabIndex: =0
+        Width: =1366
+        ZIndex: =6
 
     Rectangle4_18 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 255)
@@ -95,7 +117,7 @@ Features_2 As screen:
         Width: =417
         X: =947
         Y: =44
-        ZIndex: =5
+        ZIndex: =7
 
     Label2_8 As label:
         Align: =LayoutAlignItems.Center
@@ -118,7 +140,7 @@ Features_2 As screen:
         Text: |-
             ="EXCAVADORA: Motor y Radiador"
         Width: =1366
-        ZIndex: =6
+        ZIndex: =8
 
     Rectangle15_13 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
@@ -131,7 +153,7 @@ Features_2 As screen:
         Width: =58.7
         X: =1043.18
         Y: =610
-        ZIndex: =12
+        ZIndex: =14
 
     Rectangle10_2 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
@@ -143,7 +165,7 @@ Features_2 As screen:
         Width: =58.7
         X: =1031.17
         Y: =611
-        ZIndex: =13
+        ZIndex: =15
 
     Label9_30 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -169,7 +191,7 @@ Features_2 As screen:
         Width: =201.43
         X: =569.61
         Y: =646
-        ZIndex: =14
+        ZIndex: =16
 
     Label9_31 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -195,7 +217,7 @@ Features_2 As screen:
         Width: =201.43
         X: =572.28
         Y: =694
-        ZIndex: =15
+        ZIndex: =17
 
     Label9_29 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -222,7 +244,7 @@ Features_2 As screen:
         Width: =291
         X: =961
         Y: =68
-        ZIndex: =18
+        ZIndex: =20
 
     icon14_5 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -239,7 +261,7 @@ Features_2 As screen:
         Width: =42
         X: =1314
         Y: =50
-        ZIndex: =19
+        ZIndex: =21
 
     "Gallery2 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
@@ -255,7 +277,7 @@ Features_2 As screen:
         Width: =416
         X: =947
         Y: =138
-        ZIndex: =20
+        ZIndex: =22
 
         Icon1 As icon.Check:
             BorderColor: =App.Theme.Colors.Darker40
@@ -402,7 +424,7 @@ Features_2 As screen:
         Width: =46
         X: =1303
         Y: =88
-        ZIndex: =21
+        ZIndex: =23
 
     ButtonCanvas4_1 As Botón:
         BasePaletteColor: =RGBA(249, 83, 109, 1)
@@ -429,7 +451,7 @@ Features_2 As screen:
         Width: =41
         X: =1252
         Y: =88
-        ZIndex: =22
+        ZIndex: =24
 
     Image2 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -439,7 +461,7 @@ Features_2 As screen:
         OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
         X: =42
         Y: =38
-        ZIndex: =23
+        ZIndex: =25
 
     Label4_2 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -455,7 +477,7 @@ Features_2 As screen:
         Width: =97
         X: =131
         Y: =65
-        ZIndex: =24
+        ZIndex: =26
 
     Label1_37 As label:
         Align: =Align.Center
@@ -471,9 +493,9 @@ Features_2 As screen:
         Size: =11
         Text: ="7-10 t"
         Width: =52
-        X: =520
-        Y: =370
-        ZIndex: =25
+        X: =557
+        Y: =58
+        ZIndex: =27
 
     Label1_39 As label:
         Align: =Align.Center
@@ -489,9 +511,9 @@ Features_2 As screen:
         Size: =11
         Text: ="13-19 t"
         Width: =62
-        X: =515
-        Y: =412
-        ZIndex: =26
+        X: =552
+        Y: =100
+        ZIndex: =28
 
     Label1_40 As label:
         Align: =Align.Center
@@ -507,9 +529,9 @@ Features_2 As screen:
         Size: =11
         Text: ="20-26 t"
         Width: =70
-        X: =509
-        Y: =459
-        ZIndex: =27
+        X: =546
+        Y: =147
+        ZIndex: =29
 
     icon9_14 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -522,9 +544,9 @@ Features_2 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
         TabIndex: =0
         Width: =32
-        X: =587
-        Y: =458
-        ZIndex: =28
+        X: =627
+        Y: =143
+        ZIndex: =30
 
     icon9_13 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -537,9 +559,9 @@ Features_2 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
         TabIndex: =0
         Width: =32
-        X: =586
-        Y: =413
-        ZIndex: =29
+        X: =626
+        Y: =98
+        ZIndex: =31
 
     icon9_15 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -554,7 +576,7 @@ Features_2 As screen:
         Width: =32
         X: =688
         Y: =366
-        ZIndex: =31
+        ZIndex: =33
 
     Label1_41 As label:
         Align: =Align.Center
@@ -570,9 +592,9 @@ Features_2 As screen:
         Size: =11
         Text: ="27-35 t"
         Width: =61
-        X: =627
-        Y: =365
-        ZIndex: =32
+        X: =671
+        Y: =60
+        ZIndex: =34
 
     Label1_42 As label:
         Align: =Align.Center
@@ -588,9 +610,9 @@ Features_2 As screen:
         Size: =11
         Text: ="7-10 t"
         Width: =61
-        X: =221
-        Y: =205
-        ZIndex: =33
+        X: =193
+        Y: =167
+        ZIndex: =35
 
     Label1_43 As label:
         Align: =Align.Center
@@ -606,9 +628,9 @@ Features_2 As screen:
         Size: =11
         Text: ="13-19 t"
         Width: =61
-        X: =221
-        Y: =246
-        ZIndex: =34
+        X: =193
+        Y: =208
+        ZIndex: =36
 
     icon11_8 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -621,9 +643,9 @@ Features_2 As screen:
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
         TabIndex: =0
         Width: =29
-        X: =289
-        Y: =243
-        ZIndex: =35
+        X: =254
+        Y: =204
+        ZIndex: =37
 
     Label1_44 As label:
         Align: =Align.Center
@@ -639,9 +661,9 @@ Features_2 As screen:
         Size: =11
         Text: ="20-26 t"
         Width: =61
-        X: =221
-        Y: =289
-        ZIndex: =36
+        X: =193
+        Y: =251
+        ZIndex: =38
 
     icon11_9 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -654,9 +676,9 @@ Features_2 As screen:
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
         TabIndex: =0
         Width: =29
-        X: =289
-        Y: =286
-        ZIndex: =37
+        X: =254
+        Y: =253
+        ZIndex: =39
 
     Label1_45 As label:
         Align: =Align.Center
@@ -672,9 +694,9 @@ Features_2 As screen:
         Size: =11
         Text: ="27-35 t"
         Width: =61
-        X: =221
-        Y: =331
-        ZIndex: =38
+        X: =291
+        Y: =210
+        ZIndex: =40
 
     icon11_10 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -687,9 +709,9 @@ Features_2 As screen:
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
         TabIndex: =0
         Width: =29
-        X: =289
-        Y: =328
-        ZIndex: =39
+        X: =364
+        Y: =207
+        ZIndex: =41
 
     Label9_24 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -716,7 +738,22 @@ Features_2 As screen:
         Width: =164.08
         X: =106
         Y: =526
-        ZIndex: =44
+        ZIndex: =46
+
+    icon9_16 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =33
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
+        TabIndex: =0
+        Width: =32
+        X: =741
+        Y: =58
+        ZIndex: =47
 
     Group5 As group:
         Height: =5
@@ -729,31 +766,31 @@ Features_2 As screen:
             BorderColor: =RGBA(255, 255, 255, 1)
             DisabledFill: =Circle2_11.Fill
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =174
+            Height: =138
             HoverFill: =Circle2_11.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             PressedFill: =Circle2_11.Fill
             TabIndex: =0
             Width: =344
-            X: =90
-            Y: =193
-            ZIndex: =9
+            X: =64
+            Y: =158
+            ZIndex: =11
 
         icon11_5 As icon.Add:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =36
+            Height: =29
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             TabIndex: =0
             Width: =29
-            X: =289
-            Y: =202
-            ZIndex: =10
+            X: =254
+            Y: =168
+            ZIndex: =12
 
         Label1_7 As label:
             Align: =Align.Center
@@ -763,13 +800,13 @@ Features_2 As screen:
             Fill: =RGBA(204, 231, 246, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =38
+            Height: =30
             Size: =13
             Text: ="RADIADOR"
             Width: =114
-            X: =106
-            Y: =261
-            ZIndex: =17
+            X: =79
+            Y: =210
+            ZIndex: =19
 
     Group7 As group:
         Height: =5
@@ -782,7 +819,7 @@ Features_2 As screen:
             BorderColor: =RGBA(133, 133, 133, 1)
             DisabledFill: =Circle2_8.Fill
             Fill: =RGBA(204, 231, 246, 1)
-            Height: =156
+            Height: =144
             HoverFill: =Circle2_8.Fill
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
@@ -790,9 +827,9 @@ Features_2 As screen:
             TabIndex: =0
             Tooltip: ="MOTOR"
             Width: =396
-            X: =411
-            Y: =355
-            ZIndex: =11
+            X: =430
+            Y: =40
+            ZIndex: =13
 
         Label1 As label:
             Align: =Align.Center
@@ -802,30 +839,30 @@ Features_2 As screen:
             Fill: =RGBA(204, 231, 246, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =49
+            Height: =45
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             Size: =13
             Text: ="MOTOR"
             Width: =87
-            X: =430
-            Y: =405
-            ZIndex: =16
+            X: =459
+            Y: =86
+            ZIndex: =18
 
         icon9_2 As icon.Add:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =37
+            Height: =34
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             TabIndex: =0
             Width: =33
-            X: =585
-            Y: =367
-            ZIndex: =30
+            X: =623
+            Y: =54
+            ZIndex: =32
 
     Group1 As group:
         Height: =5
@@ -847,7 +884,7 @@ Features_2 As screen:
             Width: =565
             X: =90.71
             Y: =502
-            ZIndex: =40
+            ZIndex: =42
 
         Label9_23 As label:
             BorderColor: =App.Theme.Colors.Darker40
@@ -876,7 +913,7 @@ Features_2 As screen:
             Width: =217
             X: =110
             Y: =597
-            ZIndex: =41
+            ZIndex: =43
 
         Image4 As image:
             BorderColor: =App.Theme.Colors.Darker40
@@ -888,7 +925,7 @@ Features_2 As screen:
             Width: =200
             X: =328
             Y: =538
-            ZIndex: =42
+            ZIndex: =44
 
         icon14_2 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
@@ -904,5 +941,5 @@ Features_2 As screen:
             Width: =60
             X: =586
             Y: =511
-            ZIndex: =43
+            ZIndex: =45
 
