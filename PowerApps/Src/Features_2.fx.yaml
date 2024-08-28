@@ -287,7 +287,7 @@ Features_2 As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =82
+        TemplateSize: =79
         Visible: =pop4
         Width: =416
         X: =947
@@ -304,8 +304,8 @@ Features_2 As screen:
             OnSelect: =Select(Parent)
             Visible: =ShowIcon
             Width: =27
-            X: =359
-            Y: =14
+            X: =375
+            Y: =46
             ZIndex: =1
 
         Title3 As label:
@@ -313,7 +313,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =25
+            Height: =20
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -324,8 +324,8 @@ Features_2 As screen:
                 ="Codigo: "&ThisItem.Codigo
             VerticalAlign: =VerticalAlign.Top
             Width: =104
-            X: =93
-            Y: =6
+            X: =83
+            Y: =51
             ZIndex: =2
 
         Subtitle2 As label:
@@ -333,7 +333,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =24
+            Height: =33
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -342,9 +342,9 @@ Features_2 As screen:
             Size: =9
             Text: =ThisItem.Actividad
             VerticalAlign: =VerticalAlign.Top
-            Width: =398
+            Width: =412
             X: =4
-            Y: =47
+            Y: =5
             ZIndex: =3
 
         Body2 As label:
@@ -363,8 +363,8 @@ Features_2 As screen:
                 ="ID: "&ThisItem.Id
             VerticalAlign: =VerticalAlign.Top
             Width: =53
-            X: =16
-            Y: =6
+            X: =6
+            Y: =51
             ZIndex: =4
 
         Separator2 As rectangle:
@@ -390,7 +390,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =25
+            Height: =20
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -400,8 +400,8 @@ Features_2 As screen:
             Text: =ThisItem.'Codigo Alterno'
             VerticalAlign: =VerticalAlign.Top
             Width: =67
-            X: =215
-            Y: =6
+            X: =205
+            Y: =51
             ZIndex: =7
 
         Checkbox1 As checkbox:
@@ -411,7 +411,7 @@ Features_2 As screen:
             Color: =RGBA(0, 0, 0, 1)
             Default: =varCheckboxChecked
             Font: =App.Theme.Font
-            Height: =45
+            Height: =37
             HoverColor: =App.Theme.Colors.Darker30
             OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
             OnSelect: =Select(Parent)
@@ -419,7 +419,8 @@ Features_2 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =311
+            X: =321
+            Y: =38
             ZIndex: =8
 
     ButtonCanvas4 As Botón:
@@ -899,8 +900,8 @@ Features_2 As screen:
             OnSelect: =Select(Parent)
             Visible: =ShowIcon
             Width: =27
-            X: =359
-            Y: =14
+            X: =375
+            Y: =43
             ZIndex: =1
 
         Title3_2 As label:
@@ -908,7 +909,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =25
+            Height: =20
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -919,8 +920,8 @@ Features_2 As screen:
                 ="Codigo: "&ThisItem.Codigo
             VerticalAlign: =VerticalAlign.Top
             Width: =104
-            X: =93
-            Y: =6
+            X: =81
+            Y: =55
             ZIndex: =2
 
         Subtitle2_1 As label:
@@ -928,7 +929,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =24
+            Height: =43
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -939,7 +940,6 @@ Features_2 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =398
             X: =4
-            Y: =47
             ZIndex: =3
 
         Body2_1 As label:
@@ -959,7 +959,7 @@ Features_2 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =53
             X: =16
-            Y: =6
+            Y: =55
             ZIndex: =4
 
         Separator2_1 As rectangle:
@@ -985,7 +985,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =25
+            Height: =20
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -995,8 +995,8 @@ Features_2 As screen:
             Text: =ThisItem.'Codigo Alterno'
             VerticalAlign: =VerticalAlign.Top
             Width: =67
-            X: =215
-            Y: =6
+            X: =203
+            Y: =55
             ZIndex: =7
 
         Checkbox1_1 As checkbox:
@@ -1014,7 +1014,8 @@ Features_2 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =311
+            X: =320
+            Y: =35
             ZIndex: =8
 
     ButtonCanvas4_2 As Botón:
