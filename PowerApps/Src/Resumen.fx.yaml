@@ -89,7 +89,7 @@ Resumen As screen:
         Height: =546
         Items: |
             =Sort(
-                Distinct(colAllSelectedItems, {ID: ID, field_0: field_0 , field_2: 'field_2', field_4: field_4}),
+                Distinct(colAllSelectedItems, {ID: ID, field_0: field_0 , field_2: field_2, field_4: field_4}),
                 Value.ID
             )
         Layout: =Layout.Vertical
@@ -197,6 +197,7 @@ Resumen As screen:
             ZIndex: =8
 
         Title10_3 As label:
+            Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
@@ -209,7 +210,6 @@ Resumen As screen:
             PaddingTop: =0
             Size: =8
             Text: =ThisItem.Value.ID
-            VerticalAlign: =VerticalAlign.Top
             Width: =31
             X: =521
             ZIndex: =9
