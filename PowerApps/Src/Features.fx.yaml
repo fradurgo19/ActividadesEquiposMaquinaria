@@ -7,15 +7,15 @@ Features As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
 
-    Image19 As image:
+    Image23 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =722
-        Image: ='captura_de_pantalla_2024-08-28_102024-removebg-preview'
-        Width: =402
-        Y: =46
-        ZIndex: =2
+        Height: =724
+        Image: ='Captura_de_pantalla_2024-08-28_123136-removebg-preview'
+        Width: =1366
+        Y: =44
+        ZIndex: =1
 
     Rectangle2_2 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
@@ -23,7 +23,7 @@ Features As screen:
         Height: =44
         TabIndex: =0
         Width: =1366
-        ZIndex: =3
+        ZIndex: =2
 
     Image4_3 As image:
         ApplyEXIFOrientation: =false
@@ -37,37 +37,7 @@ Features As screen:
         Width: =33.35
         X: =1065.85
         Y: =106
-        ZIndex: =4
-
-    Group10_1 As group:
-        Height: =44
-        Width: =44
-        X: =0
-        Y: =0
-        ZIndex: =4
-
-        Rectangle15_1 As rectangle:
-            BorderColor: =App.Theme.Colors.Darker40
-            Fill: =RGBA(62,96,170,0)
-            Height: =44
-            OnSelect: =Navigate(Home, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =58.7
-            ZIndex: =6
-
-        icon1_1 As icon.ChevronLeft:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =32
-            Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(Home, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =26.68
-            X: =16.01
-            Y: =6
-            ZIndex: =7
+        ZIndex: =3
 
     Label2_2 As label:
         Align: =LayoutAlignItems.Center
@@ -89,21 +59,52 @@ Features As screen:
         Size: =18
         Text: ="EXCAVADORA"
         Width: =1366
-        ZIndex: =5
+        ZIndex: =4
+
+    Group10_1 As group:
+        Height: =44
+        Width: =44
+        X: =0
+        Y: =0
+        ZIndex: =4
+
+        Rectangle15_1 As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =RGBA(62,96,170,0)
+            Height: =44
+            OnSelect: =Navigate(Home, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =58.7
+            ZIndex: =5
+
+        icon1_1 As icon.ChevronLeft:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =32
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(Home, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =26.68
+            X: =16.01
+            Y: =6
+            ZIndex: =6
 
     icon9 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =50
+        Fill: =RGBA(204, 231, 246, 1)
+        Height: =48
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =1141
-        Y: =319
-        ZIndex: =8
+        X: =372
+        Y: =648
+        ZIndex: =7
 
     Rectangle15_7 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
@@ -116,6 +117,18 @@ Features As screen:
         Width: =58.7
         X: =453.55
         Y: =441
+        ZIndex: =8
+
+    Rectangle10 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =55
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+        TabIndex: =0
+        Width: =58.7
+        X: =441.55
+        Y: =442
         ZIndex: =9
 
     Group8 As group:
@@ -138,7 +151,7 @@ Features As screen:
             Width: =501.58
             X: =252.12
             Y: =103
-            ZIndex: =11
+            ZIndex: =10
 
         Label9_2 As label:
             BorderColor: =App.Theme.Colors.Darker40
@@ -164,7 +177,7 @@ Features As screen:
             Width: =165.41
             X: =292.14
             Y: =172
-            ZIndex: =12
+            ZIndex: =11
 
         Label8_2 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -189,7 +202,7 @@ Features As screen:
             Width: =189.43
             X: =321.49
             Y: =130
-            ZIndex: =13
+            ZIndex: =12
 
         Rectangle9 As rectangle:
             BorderColor: =App.Theme.Colors.Darker40
@@ -202,7 +215,7 @@ Features As screen:
             Width: =74.7
             X: =676.33
             Y: =105
-            ZIndex: =14
+            ZIndex: =13
 
         icon12 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
@@ -218,19 +231,7 @@ Features As screen:
             Width: =48.02
             X: =700.34
             Y: =113
-            ZIndex: =15
-
-    Rectangle10 As rectangle:
-        BorderColor: =App.Theme.Colors.Darker40
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =55
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-        TabIndex: =0
-        Width: =58.7
-        X: =441.55
-        Y: =442
-        ZIndex: =10
+            ZIndex: =14
 
     Label9_10 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -256,7 +257,7 @@ Features As screen:
         Width: =201.43
         X: =569.61
         Y: =646
-        ZIndex: =16
+        ZIndex: =15
 
     Label9_11 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -282,7 +283,7 @@ Features As screen:
         Width: =201.43
         X: =572.28
         Y: =694
-        ZIndex: =17
+        ZIndex: =16
 
     Label8_12 As label:
         Color: =RGBA(255, 255, 255, 1)
@@ -307,7 +308,7 @@ Features As screen:
         Width: =157.41
         X: =341.5
         Y: =422
-        ZIndex: =18
+        ZIndex: =17
 
     Label9_14 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -333,7 +334,7 @@ Features As screen:
         Width: =149.41
         X: =160.08
         Y: =572
-        ZIndex: =19
+        ZIndex: =18
 
     Label9_15 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -359,7 +360,7 @@ Features As screen:
         Width: =149.41
         X: =368.18
         Y: =497
-        ZIndex: =20
+        ZIndex: =19
 
     Label9_16 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -385,7 +386,7 @@ Features As screen:
         Width: =149.41
         X: =373.52
         Y: =578
-        ZIndex: =21
+        ZIndex: =20
 
     Label9_17 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -411,7 +412,7 @@ Features As screen:
         Width: =165.41
         X: =292.14
         Y: =219
-        ZIndex: =22
+        ZIndex: =21
 
     Label9_18 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -437,7 +438,7 @@ Features As screen:
         Width: =165.41
         X: =517.59
         Y: =172
-        ZIndex: =23
+        ZIndex: =22
 
     Label3 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -452,23 +453,24 @@ Features As screen:
         Text: ="ZONA 1 Motor y Radiador"
         Tooltip: ="ZONA 1"
         Width: =109
-        X: =1032
-        Y: =322
-        ZIndex: =24
+        X: =263
+        Y: =648
+        ZIndex: =23
 
     icon9_3 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =50
+        Fill: =RGBA(34, 242, 242, 1)
+        Height: =60
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
         TabIndex: =0
-        Width: =50
-        X: =979
-        Y: =403
-        ZIndex: =25
+        Width: =44
+        X: =503
+        Y: =467
+        ZIndex: =24
 
     Label3_1 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -477,32 +479,31 @@ Features As screen:
         Fill: =RGBA(34, 242, 242, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =101
+        Height: =63
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
         Size: =10.67
         Text: |-
-            ="ZONA 5: Motores de traslación
-            Contrapesa
-            Tornamesa"
+            ="ZONA 5: Motores de traslación, Contrapesa y Tornamesa"
         Tooltip: ="ZONA 5"
         Width: =160.08
-        X: =819
-        Y: =383
-        ZIndex: =26
+        X: =344
+        Y: =467
+        ZIndex: =25
 
     icon9_4 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(27, 242, 66, 1)
         Height: =50
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_9, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =885
-        Y: =578
-        ZIndex: =27
+        X: =969
+        Y: =696
+        ZIndex: =26
 
     Label3_2 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -511,7 +512,7 @@ Features As screen:
         Fill: =RGBA(27, 242, 66, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =79
+        Height: =49
         OnSelect: =Navigate(Features_9, ScreenTransition.Fade)
         Size: =10.67
         Text: |-
@@ -519,9 +520,9 @@ Features As screen:
             Tren de rodaje y Traslación"
         Tooltip: ="ZONA 3"
         Width: =146
-        X: =739
-        Y: =560
-        ZIndex: =28
+        X: =1026
+        Y: =697
+        ZIndex: =27
 
     icon9_5 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -534,9 +535,9 @@ Features As screen:
         OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =623
-        Y: =173
-        ZIndex: =29
+        X: =438
+        Y: =84
+        ZIndex: =28
 
     Label3_3 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -553,23 +554,24 @@ Features As screen:
             Vidrios"
         Tooltip: ="ZONA 9"
         Width: =177.42
-        X: =437
-        Y: =149
-        ZIndex: =30
+        X: =252
+        Y: =60
+        ZIndex: =29
 
     icon9_6 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(29, 242, 224, 1)
         Height: =50
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =602
-        Y: =431
-        ZIndex: =31
+        X: =677
+        Y: =614
+        ZIndex: =30
 
     Label3_4 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -587,23 +589,24 @@ Features As screen:
             "
         Tooltip: ="ZONA 4"
         Width: =200
-        X: =402
-        Y: =407
-        ZIndex: =32
+        X: =527
+        Y: =664
+        ZIndex: =31
 
     icon9_7 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =50
+        Fill: =RGBA(84, 163, 232, 1)
+        Height: =67
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =1219
-        Y: =482
-        ZIndex: =33
+        X: =112
+        Y: =64
+        ZIndex: =32
 
     Label3_5 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -618,9 +621,8 @@ Features As screen:
         Text: ="Diagnostico"
         Tooltip: ="ZONA 6"
         Width: =112
-        X: =1107
-        Y: =474
-        ZIndex: =34
+        Y: =64
+        ZIndex: =33
 
     icon9_8 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -632,9 +634,9 @@ Features As screen:
         OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =1246
-        Y: =114
-        ZIndex: =35
+        X: =964
+        Y: =543
+        ZIndex: =34
 
     Label3_6 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -649,23 +651,24 @@ Features As screen:
         Text: ="ZONA 2 Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
         Tooltip: ="ZONA 2"
         Width: =193.43
-        X: =1053
-        Y: =69
-        ZIndex: =36
+        X: =1026
+        Y: =503
+        ZIndex: =35
 
     icon9_11 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(250, 155, 112, 1)
         Height: =50
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =259
-        Y: =574
-        ZIndex: =39
+        X: =842
+        Y: =503
+        ZIndex: =38
 
     Label3_8 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -685,9 +688,9 @@ Features As screen:
             válvula de amortiguación piloto"
         Tooltip: ="ZONA 7"
         Width: =189.43
-        X: =70
-        Y: =545
-        ZIndex: =40
+        X: =780
+        Y: =378
+        ZIndex: =39
 
     Group4 As group:
         Height: =5
@@ -707,9 +710,9 @@ Features As screen:
             OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
             TabIndex: =0
             Width: =50
-            X: =259
-            Y: =175
-            ZIndex: =37
+            X: =756
+            Y: =301
+            ZIndex: =36
 
         Label3_7 As label:
             BorderColor: =App.Theme.Colors.Darker40
@@ -725,7 +728,7 @@ Features As screen:
                 ="ZONA 8: Brazos, Balde y Cilindros"
             Tooltip: ="ZONA 8"
             Width: =165.41
-            X: =86
-            Y: =171
-            ZIndex: =38
+            X: =583
+            Y: =297
+            ZIndex: =37
 
