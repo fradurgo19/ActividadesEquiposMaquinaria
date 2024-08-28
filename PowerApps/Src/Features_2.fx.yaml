@@ -858,7 +858,7 @@ Features_2 As screen:
             PaddingTop: =0
             Size: =9
             Text: |-
-                ="ID: "&ThisItem.Id
+                ="ID: "&ThisItem.id
             VerticalAlign: =VerticalAlign.Top
             Width: =53
             X: =16
@@ -932,7 +932,7 @@ Features_2 As screen:
                 Gallery2_1.AllItems, 
                 Collect(colAllSelectedItems, ThisRecord)
             );
-            UpdateContext({ ShowIcon1: true });UpdateContext({ varCheckboxChecked1: !Checkbox1_1.Value });
+            UpdateContext({ varCheckboxChecked1: !Checkbox1_1.Value });
             
         Text: ="Selec Todo"
         Visible: =pop1
@@ -947,8 +947,7 @@ Features_2 As screen:
         FontSize: =9
         Height: =43
         OnSelect: |+
-            =UpdateContext({ ShowIcon1: false });
-            ForAll(
+            =ForAll(
                 Gallery2_1.AllItems,
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
             );

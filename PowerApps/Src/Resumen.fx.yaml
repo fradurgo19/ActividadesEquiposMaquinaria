@@ -89,8 +89,8 @@ Resumen As screen:
         Height: =546
         Items: |
             =Sort(
-                Distinct(colAllSelectedItems, {Id: Id, Codigo: Codigo, 'Codigo Alterno': 'Codigo Alterno', Actividad: Actividad, Tiempo: Tiempo}),
-                Value.field_0
+                Distinct(colAllSelectedItems, {ID: ID, field_0: field_0 , field_2: 'field_2', field_4: field_4}),
+                Value.ID
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -114,7 +114,7 @@ Resumen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =8
-            Text: =ThisItem.Value.Codigo
+            Text: =ThisItem.Value.field_2
             VerticalAlign: =VerticalAlign.Top
             Width: =45
             X: =58
@@ -133,7 +133,7 @@ Resumen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =8
-            Text: =ThisItem.Value.Id
+            Text: =ThisItem.Value.ID
             VerticalAlign: =VerticalAlign.Top
             Width: =31
             X: =15
@@ -170,7 +170,7 @@ Resumen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =8
-            Text: =ThisItem.Value.'Codigo Alterno'
+            Text: =ThisItem.Value.field_0
             VerticalAlign: =VerticalAlign.Top
             Width: =72
             X: =118
@@ -189,7 +189,7 @@ Resumen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =8
-            Text: =    ThisItem.Value.Actividad
+            Text: =    ThisItem.Value.field_4
             VerticalAlign: =VerticalAlign.Top
             Width: =301
             X: =201
@@ -208,7 +208,7 @@ Resumen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =8
-            Text: =ThisItem.Value.Tiempo
+            Text: =ThisItem.Value.ID
             VerticalAlign: =VerticalAlign.Top
             Width: =31
             X: =521
@@ -221,8 +221,7 @@ Resumen As screen:
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =19
             Icon: =Icon.Trash
-            OnSelect: |
-                =RemoveIf(colAllSelectedItems, Id = ThisItem.Value.Id)
+            OnSelect: =RemoveIf(colAllSelectedItems, field_0 = ThisItem.Value.field_0)
             Width: =42
             X: =581
             Y: =5
