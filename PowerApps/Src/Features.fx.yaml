@@ -656,51 +656,6 @@ Features As screen:
         Y: =556
         ZIndex: =87
 
-    Circle2_17 As circle:
-        BorderColor: =RGBA(133, 133, 133, 1)
-        DisabledFill: =Circle2_17.Fill
-        Fill: =RGBA(197, 242, 63, 1)
-        Height: =150.74
-        HoverFill: =Circle2_17.Fill
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false})
-        PressedFill: =Circle2_17.Fill
-        TabIndex: =0
-        Width: =300.15
-        X: =9.34
-        Y: =130
-        ZIndex: =91
-
-    icon9_9 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =69
-        Icon: =Icon.Add
-        OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
-        TabIndex: =0
-        Width: =89.38
-        X: =213.44
-        Y: =175
-        ZIndex: =92
-
-    Label3_7 As label:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =105
-        OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
-        Size: =10.67
-        Text: ="ZONA 8 Brazos, Balde y Cilindros"
-        Tooltip: ="ZONA 8"
-        Width: =165.41
-        X: =48.02
-        Y: =149
-        ZIndex: =93
-
     Circle2_19 As circle:
         BorderColor: =RGBA(133, 133, 133, 1)
         DisabledFill: =Circle2_19.Fill
@@ -857,4 +812,42 @@ Features As screen:
         X: =920
         Y: =61
         ZIndex: =96
+
+    Group4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =97
+
+        icon9_9 As icon.Add:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =App.Theme.Colors.Darker30
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =51
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =52
+            X: =221
+            Y: =161
+            ZIndex: =92
+
+        Label3_7 As label:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(197, 242, 63, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =62
+            OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
+            Size: =10.67
+            Text: ="ZONA 8 Brazos, Balde y Cilindros"
+            Tooltip: ="ZONA 8"
+            Width: =165.41
+            X: =48
+            Y: =157
+            ZIndex: =93
 
