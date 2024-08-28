@@ -259,86 +259,6 @@ Resumen As screen:
         Y: =29
         ZIndex: =20
 
-    Label4_3 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =App.Theme.Colors.Darker30
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =10
-        Text: ="Id"
-        Width: =46
-        X: =452
-        Y: =75
-        ZIndex: =21
-
-    Label4_4 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =App.Theme.Colors.Darker30
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =9
-        Text: ="Codigo"
-        Width: =71
-        X: =498
-        Y: =75
-        ZIndex: =22
-
-    Label4_5 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =App.Theme.Colors.Darker30
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =9
-        Text: ="Alterno"
-        Width: =62
-        X: =569
-        Y: =75
-        ZIndex: =23
-
-    Label4_6 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =App.Theme.Colors.Darker30
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =9
-        Text: ="Actividad"
-        Width: =323
-        X: =630
-        Y: =74
-        ZIndex: =24
-
-    Label4_7 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =App.Theme.Colors.Darker30
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =9
-        Text: ="Tiempo"
-        Width: =93
-        X: =954
-        Y: =75
-        ZIndex: =25
-
     TextCanvas1 As Texto:
         DisplayMode: =DisplayMode.Edit
         Height: =32
@@ -348,21 +268,108 @@ Resumen As screen:
         Y: =156
         ZIndex: =26
 
-    Label4_8 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =App.Theme.Colors.Darker30
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =9
-        Text: |-
-            ="Eliminar
-            "
-        Width: =67
-        X: =1047
-        Y: =75
-        ZIndex: =27
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =28
+
+        Label4_3 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =10
+            Text: ="Id"
+            Width: =46
+            X: =452
+            Y: =74
+            ZIndex: =21
+
+        Label4_4 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =9
+            Text: ="Codigo"
+            Width: =71
+            X: =498
+            Y: =74
+            ZIndex: =22
+
+        Label4_5 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =9
+            Text: ="Alterno"
+            Width: =62
+            X: =569
+            Y: =74
+            ZIndex: =23
+
+        Label4_6 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =27
+            Size: =9
+            Text: ="Actividad"
+            Width: =323
+            X: =631
+            Y: =74
+            ZIndex: =24
+
+        Label4_7 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =9
+            Text: ="Tiempo"
+            Width: =94
+            X: =953
+            Y: =74
+            ZIndex: =25
+
+        Label4_8 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =9
+            Text: |-
+                ="Eliminar
+                "
+            Width: =67
+            X: =1047
+            Y: =74
+            ZIndex: =27
 
