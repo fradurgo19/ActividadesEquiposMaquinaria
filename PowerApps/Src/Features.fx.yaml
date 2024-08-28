@@ -562,42 +562,28 @@ Features As screen:
         Y: =655
         ZIndex: =78
 
-    Circle2_13 As circle:
-        BorderColor: =RGBA(133, 133, 133, 1)
-        DisabledFill: =Circle2_13.Fill
-        Fill: =RGBA(247, 247, 37, 1)
-        Height: =129.4
-        HoverFill: =Circle2_13.Fill
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        PressedFill: =Circle2_13.Fill
-        TabIndex: =0
-        Width: =293.48
-        X: =613
-        Y: =177
-        ZIndex: =79
-
     icon9_5 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =69
+        Height: =50
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
         TabIndex: =0
-        Width: =89.38
-        X: =827
-        Y: =211
+        Width: =50
+        X: =602
+        Y: =162
         ZIndex: =80
 
     Label3_3 As label:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(247, 247, 37, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =110
+        Height: =95
         OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
         Size: =10.67
         Text: |-
@@ -605,8 +591,8 @@ Features As screen:
             Vidrios"
         Tooltip: ="ZONA 9"
         Width: =177.42
-        X: =667
-        Y: =186
+        X: =416
+        Y: =138
         ZIndex: =81
 
     Circle2_15 As circle:
@@ -655,21 +641,6 @@ Features As screen:
         X: =1121
         Y: =556
         ZIndex: =87
-
-    Circle2_19 As circle:
-        BorderColor: =RGBA(133, 133, 133, 1)
-        DisabledFill: =Circle2_19.Fill
-        Fill: =RGBA(250, 155, 112, 1)
-        Height: =150.74
-        HoverFill: =Circle2_19.Fill
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        PressedFill: =Circle2_19.Fill
-        TabIndex: =0
-        Width: =288.14
-        X: =862
-        Y: =44
-        ZIndex: =94
 
     Group13 As group:
         Height: =5
@@ -783,22 +754,23 @@ Features As screen:
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =62
+        Height: =50
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
         TabIndex: =0
-        Width: =89.38
-        X: =1073
-        Y: =79
+        Width: =50
+        X: =929
+        Y: =185
         ZIndex: =95
 
     Label3_8 As label:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(250, 155, 112, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =100
+        Height: =110
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
         Size: =10.67
         Text: |-
@@ -809,8 +781,8 @@ Features As screen:
             válvula de amortiguación piloto"
         Tooltip: ="ZONA 7"
         Width: =189.43
-        X: =920
-        Y: =61
+        X: =738
+        Y: =159
         ZIndex: =96
 
     Group4 As group:
@@ -825,11 +797,11 @@ Features As screen:
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =51
+            Height: =50
             Icon: =Icon.Add
             OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
             TabIndex: =0
-            Width: =52
+            Width: =50
             X: =221
             Y: =161
             ZIndex: =92
