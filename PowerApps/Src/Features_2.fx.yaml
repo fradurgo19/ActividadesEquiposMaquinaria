@@ -423,10 +423,12 @@ Features_2 As screen:
             ZIndex: =8
 
     ButtonCanvas4 As Botón:
+        Appearance: ='ButtonCanvas.Appearance'.Secondary
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
         Height: =43
+        IconStyle: ='ButtonCanvas.IconStyle'.Outline
         Layout: ='ButtonCanvas.Layout'.IconAfter
         OnSelect: |+
             =ForAll(
@@ -443,6 +445,7 @@ Features_2 As screen:
         ZIndex: =23
 
     ButtonCanvas4_1 As Botón:
+        Appearance: ='ButtonCanvas.Appearance'.Primary
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
@@ -817,7 +820,7 @@ Features_2 As screen:
         BorderColor: =RGBA(255, 255, 255, 255)
         BorderThickness: =5
         DisabledFill: =Rectangle4_19.Fill
-        Fill: =RGBA(253, 207, 180, 1)
+        Fill: =RGBA(152, 208, 70, 1)
         Height: =710
         HoverFill: =Rectangle4_19.Fill
         PressedFill: =Rectangle4_19.Fill
@@ -873,7 +876,7 @@ Features_2 As screen:
     "Gallery2_1 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
-        Fill: =RGBA(253, 207, 180, 1)
+        Fill: =RGBA(152, 208, 70, 1)
         Height: =588
         Items: ='Reparar motor'
         Layout: =Layout.Vertical
@@ -1015,6 +1018,7 @@ Features_2 As screen:
             ZIndex: =8
 
     ButtonCanvas4_2 As Botón:
+        Appearance: ='ButtonCanvas.Appearance'.Secondary
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
