@@ -322,7 +322,7 @@ Features_2 As screen:
             Height: =26
             Icon: =Icon.CheckBadge
             OnSelect: =Select(Parent)
-            Visible: =ShowIcon
+            Visible: =
             Width: =27
             X: =375
             Y: =46
@@ -456,7 +456,7 @@ Features_2 As screen:
                 Gallery2.AllItems, 
                 Collect(colAllSelectedItems, ThisRecord)
             );
-            UpdateContext({ ShowIcon: true });UpdateContext({ varCheckboxChecked: !Checkbox1.Value });
+            UpdateContext({ varCheckboxChecked: !Checkbox1.Value })
             
         Text: ="Selec Todo"
         Visible: =pop4
@@ -472,8 +472,7 @@ Features_2 As screen:
         FontSize: =9
         Height: =43
         OnSelect: |+
-            =UpdateContext({ ShowIcon: false });
-            ForAll(
+            =ForAll(
                 Gallery2.AllItems,
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
             );
@@ -792,20 +791,6 @@ Features_2 As screen:
         X: =961
         Y: =156
         ZIndex: =53
-
-        Icon1_1 As icon.Check:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =26
-            Icon: =Icon.CheckBadge
-            OnSelect: =Select(Parent)
-            Visible: =ShowIcon1
-            Width: =27
-            X: =375
-            Y: =43
-            ZIndex: =1
 
         Title3_2 As label:
             Color: =RGBA(0, 0, 0, 1)
