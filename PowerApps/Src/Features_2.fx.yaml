@@ -493,90 +493,6 @@ Features_2 As screen:
         Y: =93
         ZIndex: =24
 
-    Label1_37 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(204, 231, 246, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =32
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        Size: =11
-        Text: ="7-10 t"
-        Width: =52
-        X: =557
-        Y: =58
-        ZIndex: =27
-
-    Label1_39 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(204, 231, 246, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =34
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        Size: =11
-        Text: ="13-19 t"
-        Width: =62
-        X: =552
-        Y: =100
-        ZIndex: =28
-
-    Label1_40 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(204, 231, 246, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =32
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        Size: =11
-        Text: ="20-26 t"
-        Width: =70
-        X: =546
-        Y: =147
-        ZIndex: =29
-
-    icon9_14 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =33
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        TabIndex: =0
-        Width: =32
-        X: =627
-        Y: =143
-        ZIndex: =30
-
-    icon9_13 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =33
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        TabIndex: =0
-        Width: =32
-        X: =626
-        Y: =98
-        ZIndex: =31
-
     icon9_15 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
@@ -591,24 +507,6 @@ Features_2 As screen:
         X: =688
         Y: =366
         ZIndex: =33
-
-    Label1_41 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(204, 231, 246, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =30
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        Size: =11
-        Text: ="27-35 t"
-        Width: =61
-        X: =671
-        Y: =60
-        ZIndex: =34
 
     Label1_42 As label:
         Align: =Align.Center
@@ -753,21 +651,6 @@ Features_2 As screen:
         X: =106
         Y: =526
         ZIndex: =46
-
-    icon9_16 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =33
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        TabIndex: =0
-        Width: =32
-        X: =741
-        Y: =58
-        ZIndex: =47
 
     Label1_46 As label:
         Align: =Align.Center
@@ -1104,7 +987,7 @@ Features_2 As screen:
             TabIndex: =0
             Tooltip: ="MOTOR"
             Width: =556
-            X: =270
+            X: =242
             Y: =40
             ZIndex: =13
 
@@ -1122,8 +1005,8 @@ Features_2 As screen:
             Size: =13
             Text: ="MOTOR"
             Width: =122
-            X: =286
-            Y: =86
+            X: =270
+            Y: =72
             ZIndex: =18
 
         icon9_2 As icon.Add:
@@ -1131,12 +1014,12 @@ Features_2 As screen:
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =34
+            Height: =35
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             TabIndex: =0
-            Width: =46
+            Width: =33
             X: =614
             Y: =55
             ZIndex: =32
