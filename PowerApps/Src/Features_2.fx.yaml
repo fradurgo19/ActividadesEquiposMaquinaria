@@ -898,7 +898,7 @@ Features_2 As screen:
             Height: =26
             Icon: =Icon.CheckBadge
             OnSelect: =Select(Parent)
-            Visible: =ShowIcon
+            Visible: =ShowIcon1
             Width: =27
             X: =375
             Y: =43
@@ -1029,7 +1029,7 @@ Features_2 As screen:
                 Gallery2_1.AllItems, 
                 Collect(colAllSelectedItems, ThisRecord)
             );
-            UpdateContext({ ShowIcon: true });UpdateContext({ varCheckboxChecked: !Checkbox1_1.Value });
+            UpdateContext({ ShowIcon1: true });UpdateContext({ varCheckboxChecked: !Checkbox1_1.Value });
             
         Text: ="Selec Todo"
         Visible: =pop1
@@ -1044,7 +1044,7 @@ Features_2 As screen:
         FontSize: =9
         Height: =43
         OnSelect: |+
-            =UpdateContext({ ShowIcon: false });
+            =UpdateContext({ ShowIcon1: false });
             ForAll(
                 Gallery2_1.AllItems,
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
