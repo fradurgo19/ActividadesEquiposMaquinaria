@@ -3,9 +3,21 @@ Features_2 As screen:
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnHidden: |+
-        =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false});
-        
+    OnHidden: |
+        =UpdateContext(
+            {
+                pop1: false,
+                pop2: false,
+                pop3: false,
+                pop4: false,
+                pop5: false,
+                pop6: false
+            }
+        );
+        UpdateContext({ShowIcon1: false});
+        UpdateContext({varCheckboxChecked1: !Checkbox1_1.Value});
+        UpdateContext({ShowIcon1: false});
+        UpdateContext({varCheckboxChecked1: !Checkbox1_1.Value});
     OnVisible: |
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});Set(varCheckboxChecked, false)
     Width: =Max(App.Width, App.DesignWidth)
