@@ -7,24 +7,13 @@ Features As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
 
-    Image21 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =337
-        Image: =Cabina1
-        Width: =381
-        X: =418
-        Y: =46
-        ZIndex: =1
-
     Image19 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =325
+        Height: =722
         Image: ='captura_de_pantalla_2024-08-28_102024-removebg-preview'
-        Width: =368
+        Width: =402
         Y: =46
         ZIndex: =2
 
@@ -674,8 +663,8 @@ Features As screen:
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =942
-        Y: =113
+        X: =259
+        Y: =574
         ZIndex: =39
 
     Label3_8 As label:
@@ -696,8 +685,8 @@ Features As screen:
             válvula de amortiguación piloto"
         Tooltip: ="ZONA 7"
         Width: =189.43
-        X: =753
-        Y: =84
+        X: =70
+        Y: =545
         ZIndex: =40
 
     Group4 As group:

@@ -15134,6 +15134,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.Cabina1"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Cabina1",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Cabina1",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Captura de pantalla 2024-08-14 094926"
                 }
               ],
