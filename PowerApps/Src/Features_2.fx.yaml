@@ -1004,7 +1004,7 @@ Features_2 As screen:
             CheckboxBorderColor: =App.Theme.Colors.Primary
             CheckmarkFill: =App.Theme.Colors.Primary
             Color: =RGBA(0, 0, 0, 1)
-            Default: =varCheckboxChecked
+            Default: =varCheckboxChecked1
             Font: =App.Theme.Font
             Height: =45
             HoverColor: =App.Theme.Colors.Darker30
@@ -1029,7 +1029,7 @@ Features_2 As screen:
                 Gallery2_1.AllItems, 
                 Collect(colAllSelectedItems, ThisRecord)
             );
-            UpdateContext({ ShowIcon1: true });UpdateContext({ varCheckboxChecked: !Checkbox1_1.Value });
+            UpdateContext({ ShowIcon1: true });UpdateContext({ varCheckboxChecked1: !Checkbox1_1.Value });
             
         Text: ="Selec Todo"
         Visible: =pop1
@@ -1050,7 +1050,7 @@ Features_2 As screen:
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
             );
             
-            UpdateContext({ varCheckboxChecked: !Checkbox1_1.Value });
+            UpdateContext({ varCheckboxChecked1: !Checkbox1_1.Value });
             
             
             
