@@ -183,6 +183,20 @@ Features As screen:
         Width: =1366
         ZIndex: =16
 
+    icon9 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
+        TabIndex: =0
+        Width: =50
+        X: =1141
+        Y: =319
+        ZIndex: =27
+
     Rectangle15_7 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =RGBA(62,96,170,0)
@@ -415,151 +429,88 @@ Features As screen:
         Y: =172
         ZIndex: =71
 
-    Circle2_3 As circle:
-        BorderColor: =RGBA(133, 133, 133, 1)
-        DisabledFill: =Circle2_3.Fill
-        Fill: =RGBA(34, 242, 242, 1)
-        Height: =96.05
-        HoverFill: =Circle2_3.Fill
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        PressedFill: =Circle2_3.Fill
-        TabIndex: =0
-        Width: =277.47
-        X: =803
-        Y: =470
-        ZIndex: =73
-
-    Group3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =73
-
-        Circle2_2 As circle:
-            BorderColor: =RGBA(133, 133, 133, 1)
-            DisabledFill: =Circle2_2.Fill
-            Fill: =RGBA(204, 231, 246, 1)
-            Height: =108
-            HoverFill: =Circle2_2.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-            PressedFill: =Circle2_2.Fill
-            TabIndex: =0
-            Width: =229
-            X: =827
-            Y: =325
-            ZIndex: =26
-
-        icon9 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =63
-            Icon: =Icon.Add
-            OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =61
-            X: =980
-            Y: =345
-            ZIndex: =27
-
-        Label3 As label:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =47
-            OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
-            Size: =10.67
-            Text: ="ZONA 1 Motor y Radiador"
-            Tooltip: ="ZONA 1"
-            Width: =109
-            X: =857
-            Y: =350
-            ZIndex: =72
+    Label3 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(204, 231, 246, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =47
+        OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
+        Size: =10.67
+        Text: ="ZONA 1 Motor y Radiador"
+        Tooltip: ="ZONA 1"
+        Width: =109
+        X: =1032
+        Y: =322
+        ZIndex: =72
 
     icon9_3 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =60
+        Height: =50
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
         TabIndex: =0
-        Width: =89.38
-        X: =991
-        Y: =484
+        Width: =50
+        X: =979
+        Y: =403
         ZIndex: =74
 
     Label3_1 As label:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(34, 242, 242, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =101
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
         Size: =10.67
         Text: |-
-            ="ZONA 5 Motores de traslación
+            ="ZONA 5: Motores de traslación
             Contrapesa
             Tornamesa"
         Tooltip: ="ZONA 5"
         Width: =160.08
-        X: =862
-        Y: =470
+        X: =819
+        Y: =383
         ZIndex: =75
-
-    Circle2_12 As circle:
-        BorderColor: =RGBA(133, 133, 133, 1)
-        DisabledFill: =Circle2_12.Fill
-        Fill: =RGBA(27, 242, 66, 1)
-        Height: =98.71
-        HoverFill: =Circle2_12.Fill
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        PressedFill: =Circle2_12.Fill
-        TabIndex: =0
-        Width: =264.13
-        X: =771
-        Y: =646
-        ZIndex: =76
 
     icon9_4 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =69
+        Height: =50
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_9, ScreenTransition.Fade)
         TabIndex: =0
-        Width: =89.38
-        X: =945
-        Y: =655
+        Width: =50
+        X: =885
+        Y: =578
         ZIndex: =77
 
     Label3_2 As label:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(27, 242, 66, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =79
         OnSelect: =Navigate(Features_9, ScreenTransition.Fade)
         Size: =10.67
         Text: |-
-            ="ZONA 3 
+            ="ZONA 3 y 6:
             Tren de rodaje y Traslación"
         Tooltip: ="ZONA 3"
         Width: =146
-        X: =822
-        Y: =655
+        X: =739
+        Y: =560
         ZIndex: =78
 
     icon9_5 As icon.Add:
@@ -587,7 +538,7 @@ Features As screen:
         OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
         Size: =10.67
         Text: |-
-            ="ZONA 9 Cabina Silla, Consolas, Joystick, Monitor, Computadores y Cableados (Harness)
+            ="ZONA 9: Cabina Silla, Consolas, Joystick, Monitor, Computadores y Cableados (Harness)
             Vidrios"
         Tooltip: ="ZONA 9"
         Width: =177.42
@@ -595,159 +546,101 @@ Features As screen:
         Y: =138
         ZIndex: =81
 
-    Circle2_15 As circle:
-        BorderColor: =RGBA(133, 133, 133, 1)
-        DisabledFill: =Circle2_15.Fill
-        Fill: =RGBA(84, 163, 232, 1)
-        Height: =82.71
-        HoverFill: =Circle2_15.Fill
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        PressedFill: =Circle2_15.Fill
+    icon9_6 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
         TabIndex: =0
-        Width: =260.13
-        X: =1091
-        Y: =549
-        ZIndex: =85
+        Width: =50
+        X: =602
+        Y: =431
+        ZIndex: =83
+
+    Label3_4 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(29, 242, 224, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =99
+        OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
+        Size: =10.67
+        Text: |-
+            ="ZONA 4:
+            Bombas hidráulicas, Bomba Piloto, Filtros de motor, Filtro piloto, Banco de solenoides y Bomba transferencia combustible
+            "
+        Tooltip: ="ZONA 4"
+        Width: =200
+        X: =402
+        Y: =407
+        ZIndex: =84
 
     icon9_7 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =60
+        Height: =50
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
         TabIndex: =0
-        Width: =104.05
-        X: =1246
-        Y: =556
+        Width: =50
+        X: =1219
+        Y: =482
         ZIndex: =86
 
     Label3_5 As label:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(84, 163, 232, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =67
         OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
         Size: =10.67
-        Text: |-
-            ="ZONA 6
-            Tren de rodaje y Traslación"
+        Text: ="Diagnostico"
         Tooltip: ="ZONA 6"
-        Width: =140
-        X: =1121
-        Y: =556
+        Width: =112
+        X: =1107
+        Y: =474
         ZIndex: =87
 
-    Group13 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =94
+    icon9_8 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
+        TabIndex: =0
+        Width: =50
+        X: =1246
+        Y: =114
+        ZIndex: =89
 
-        Circle2_16 As circle:
-            BorderColor: =RGBA(133, 133, 133, 1)
-            DisabledFill: =Circle2_16.Fill
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =173.42
-            HoverFill: =Circle2_16.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-            PressedFill: =Circle2_16.Fill
-            TabIndex: =0
-            Width: =298.81
-            X: =1049
-            Y: =194
-            ZIndex: =88
-
-        icon9_8 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =62
-            Icon: =Icon.Add
-            OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =64.03
-            X: =1290
-            Y: =244
-            ZIndex: =89
-
-        Label3_6 As label:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =130
-            OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
-            Size: =10.67
-            Text: ="ZONA 2 Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
-            Tooltip: ="ZONA 2"
-            Width: =193.43
-            X: =1108
-            Y: =215
-            ZIndex: =90
-
-    Group14 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =94
-
-        Circle2_14 As circle:
-            BorderColor: =RGBA(133, 133, 133, 1)
-            DisabledFill: =Circle2_14.Fill
-            Fill: =RGBA(29, 242, 224, 1)
-            Height: =168.08
-            HoverFill: =Circle2_14.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-            PressedFill: =Circle2_14.Fill
-            TabIndex: =0
-            Width: =374.85
-            X: =341.5
-            Y: =367
-            ZIndex: =82
-
-        icon9_6 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =67
-            Icon: =Icon.Add
-            OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =82.71
-            X: =620
-            Y: =417
-            ZIndex: =83
-
-        Label3_4 As label:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =116
-            OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
-            Size: =10.67
-            Text: |-
-                ="ZONA 4 
-                Bombas hidráulicas, Bomba Piloto, Filtros de motor, Filtro piloto, Banco de solenoides y Bomba transferencia combustible
-                "
-            Tooltip: ="ZONA 4"
-            Width: =242.79
-            X: =386
-            Y: =394
-            ZIndex: =84
+    Label3_6 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =130
+        OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
+        Size: =10.67
+        Text: ="ZONA 2 Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
+        Tooltip: ="ZONA 2"
+        Width: =193.43
+        X: =1053
+        Y: =69
+        ZIndex: =90
 
     icon9_11 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -774,7 +667,7 @@ Features As screen:
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
         Size: =10.67
         Text: |-
-            ="ZONA 7 Filtro de aire
+            ="ZONA 7: Filtro de aire
             enfriadores
             baterías
             tanque de expansión
@@ -816,7 +709,8 @@ Features As screen:
             Height: =62
             OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
             Size: =10.67
-            Text: ="ZONA 8 Brazos, Balde y Cilindros"
+            Text: |-
+                ="ZONA 8: Brazos, Balde y Cilindros"
             Tooltip: ="ZONA 8"
             Width: =165.41
             X: =48
