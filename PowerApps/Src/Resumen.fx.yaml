@@ -189,7 +189,7 @@ Resumen As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =8
-            Text: =ThisItem.Value.Actividad
+            Text: =    ThisItem.Value.Actividad
             VerticalAlign: =VerticalAlign.Top
             Width: =301
             X: =201
@@ -222,7 +222,7 @@ Resumen As screen:
             Height: =19
             Icon: =Icon.Trash
             OnSelect: |
-                = Remove(colAllSelectedItems, ThisItem.Value)
+                =RemoveIf(colAllSelectedItems, Id = ThisItem.Value.Id)
             Width: =42
             X: =581
             ZIndex: =10
