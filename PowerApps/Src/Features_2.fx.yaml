@@ -294,12 +294,12 @@ Features_2 As screen:
         Fill: =RGBA(204, 231, 246, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =45
+        Height: =38
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
         Size: =13
         Text: ="MOTOR"
-        Width: =122
+        Width: =74
         X: =270
         Y: =88
         ZIndex: =18
@@ -730,8 +730,8 @@ Features_2 As screen:
         Size: =11
         Text: ="Cambio de motor diesel"
         Width: =171
-        X: =374
-        Y: =55
+        X: =393
+        Y: =56
         ZIndex: =48
 
     Group2 As group:
@@ -780,8 +780,8 @@ Features_2 As screen:
         Size: =11
         Text: ="Reparar motor"
         Width: =171
-        X: =383
-        Y: =108
+        X: =399
+        Y: =113
         ZIndex: =49
 
     Rectangle4_19 As rectangle:
