@@ -367,7 +367,7 @@ Features_2 As screen:
         DelayItemLoading: =true
         Fill: =RGBA(255, 191, 0, 1)
         Height: =571
-        Items: ='Cambio de motor diesel'
+        Items: =Motor
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -490,8 +490,27 @@ Features_2 As screen:
             Text: =
             Width: =39
             X: =363
-            Y: =17
+            Y: =34
             ZIndex: =8
+
+        Title3_4 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =20
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: =ThisItem.Tiempo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =67
+            X: =272
+            Y: =51
+            ZIndex: =9
 
     ButtonCanvas4 As Botón:
         Appearance: ='ButtonCanvas.Appearance'.Secondary
