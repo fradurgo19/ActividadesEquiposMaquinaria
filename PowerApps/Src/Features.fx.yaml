@@ -463,13 +463,13 @@ Features As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(34, 242, 242, 1)
-        Height: =63
+        Height: =50
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
         TabIndex: =0
-        Width: =42
-        X: =503
-        Y: =467
+        Width: =50
+        X: =504
+        Y: =479
         ZIndex: =24
 
     Label3_1 As label:
@@ -479,7 +479,7 @@ Features As screen:
         Fill: =RGBA(34, 242, 242, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =63
+        Height: =60
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
         Size: =10.67
         Text: |-
@@ -487,7 +487,7 @@ Features As screen:
         Tooltip: ="ZONA 5"
         Width: =160.08
         X: =344
-        Y: =467
+        Y: =470
         ZIndex: =25
 
     icon9_4 As icon.Add:
@@ -535,8 +535,8 @@ Features As screen:
         OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =438
-        Y: =84
+        X: =430
+        Y: =92
         ZIndex: =28
 
     Label3_3 As label:
@@ -599,13 +599,13 @@ Features As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(84, 163, 232, 1)
-        Height: =67
+        Height: =47
         Icon: =Icon.Add
         OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =112
-        Y: =64
+        X: =110
+        Y: =84
         ZIndex: =32
 
     Label3_5 As label:
@@ -705,13 +705,13 @@ Features As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(197, 242, 63, 1)
-            Height: =60
+            Height: =50
             Icon: =Icon.Add
             OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
             TabIndex: =0
             Width: =50
             X: =748
-            Y: =299
+            Y: =308
             ZIndex: =36
 
         Label3_7 As label:
