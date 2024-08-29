@@ -207,6 +207,7 @@ Resumen As screen:
             ZIndex: =10
 
         TextInput2 As text:
+            Align: =Align.Center
             BorderColor: =App.Theme.Colors.Darker40
             BorderThickness: =2
             Color: =RGBA(0, 0, 0, 1)
@@ -223,7 +224,7 @@ Resumen As screen:
             HoverFill: =App.Theme.Colors.Lighter70
             OnSelect: =Select(Parent)
             Size: =8
-            Width: =51
+            Width: =43
             X: =600
             Y: =6
             ZIndex: =11
