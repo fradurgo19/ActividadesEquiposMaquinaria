@@ -470,7 +470,7 @@ Resumen As screen:
         Height: =47
         Size: =13
         Text: |-
-            ="$ " &  Text(Sum (Value(Label4.Text)* 95000, "##,##"))
+            ="$ " & Text(Sum(Gallery7.AllItems, Value(Label4.Text) * 95000), "[$-en-US]#,###")
         Width: =117
         X: =1168
         Y: =192
