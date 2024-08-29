@@ -341,7 +341,7 @@ Features_2 As screen:
         Items: |-
             =Filter(
                 'Motor', 
-                Tipo = "Excavadora" && Tamaño = ComboBox1.Selected.Results && Solucion = ComboBox1_1.Selected.Results
+                Tipo = "Excavadora"  && Solucion = ComboBox1_1.Selected.Results && Tamaño = ComboBox1.Selected.Results
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -707,7 +707,11 @@ Features_2 As screen:
         DelayItemLoading: =true
         Fill: =RGBA(152, 208, 70, 1)
         Height: =588
-        Items: =Filter(Enfriadores, Tipo = "Excavadora")
+        Items: |-
+            =Filter(
+                'Enfriadores', 
+                Tipo = "Excavadora" && Solución = ComboBox1_3.Selected.Results && Tamaño = ComboBox1_2.Selected.Results 
+            )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
