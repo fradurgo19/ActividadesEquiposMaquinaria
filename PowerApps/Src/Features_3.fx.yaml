@@ -234,8 +234,8 @@ Features_3 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
         TabIndex: =0
         Width: =77
-        X: =145
-        Y: =560
+        X: =143
+        Y: =544
         ZIndex: =32
 
     Label1_12 As label:
@@ -246,7 +246,7 @@ Features_3 As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =35
+        Height: =25
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
         Size: =13.34
@@ -841,8 +841,8 @@ Features_3 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
         TabIndex: =0
         Width: =57.36
-        X: =203
-        Y: =410
+        X: =186
+        Y: =406
         ZIndex: =51
 
     Label1_35 As label:
