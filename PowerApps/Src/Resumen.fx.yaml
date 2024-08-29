@@ -111,7 +111,7 @@ Resumen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =25
+            Height: =34
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -148,7 +148,7 @@ Resumen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =25
+            Height: =38
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -158,7 +158,6 @@ Resumen As screen:
             Text: =ThisItem.Value.field_3
             Width: =61
             X: =118
-            Y: =4
             ZIndex: =7
 
         Title10_2 As label:
@@ -185,10 +184,10 @@ Resumen As screen:
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =19
+            Height: =21
             Icon: =Icon.Trash
             OnSelect: =RemoveIf(colAllSelectedItems, field_0 = ThisItem.Value.field_0)
-            Width: =42
+            Width: =37
             X: =787
             Y: =5
             ZIndex: =10
@@ -213,7 +212,7 @@ Resumen As screen:
             Size: =8
             Width: =57
             X: =634
-            Y: =6
+            Y: =2
             ZIndex: =11
 
         Subtitle7_1 As label:
@@ -249,8 +248,8 @@ Resumen As screen:
             Size: =8
             Text: |
                 =(ThisItem.Value.field_4) * Value(TextInput2.Text)
-            Width: =82
-            X: =692
+            Width: =72
+            X: =702
             Y: =6
             ZIndex: =14
 
