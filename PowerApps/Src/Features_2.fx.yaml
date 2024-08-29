@@ -15,7 +15,9 @@ Features_2 As screen:
             }
         );
         Reset(ComboBox1_1);
-        Reset(ComboBox1)
+        Reset(ComboBox1);
+        Reset(ComboBox2);
+        Reset(ComboBox1_2)
     OnVisible: |
         =UpdateContext(
             {
@@ -1054,7 +1056,7 @@ Features_2 As screen:
             Text: =
             Width: =39
             X: =356
-            Y: =35
+            Y: =28
             ZIndex: =8
 
     Group2 As group:
