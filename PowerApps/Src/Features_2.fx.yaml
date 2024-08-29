@@ -614,14 +614,13 @@ Features_2 As screen:
         BorderThickness: =5
         DisabledFill: =Rectangle4_19.Fill
         Fill: =RGBA(152, 208, 70, 1)
-        Height: =710
+        Height: =630
         HoverFill: =Rectangle4_19.Fill
         PressedFill: =Rectangle4_19.Fill
         TabIndex: =0
         Visible: =pop1
         Width: =417
-        X: =949
-        Y: =45
+        Y: =138
         ZIndex: =32
 
     Label9_36 As label:
@@ -630,7 +629,7 @@ Features_2 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =21
+        Height: =18
         HoverBorderColor: =Label9_36.BorderColor
         HoverColor: =Label9_36.Color
         HoverFill: =Label9_36.Fill
@@ -645,8 +644,8 @@ Features_2 As screen:
         Text: ="ENFRIADORES"
         Visible: =pop1
         Width: =174
-        X: =956
-        Y: =59
+        X: =8
+        Y: =152
         ZIndex: =33
 
     icon14_6 As icon.Cancel:
@@ -655,15 +654,15 @@ Features_2 As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(0, 0, 0, 1)
-        Height: =32
+        Height: =28
         Icon: =Icon.Cancel
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
         TabIndex: =0
         Visible: =pop1
         Width: =42
-        X: =1314
-        Y: =54
+        X: =366
+        Y: =148
         ZIndex: =34
 
     ButtonCanvas4_2 As Botón:
@@ -671,7 +670,7 @@ Features_2 As screen:
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
-        Height: =43
+        Height: =38
         OnSelect: |+
             =ForAll(
                 Gallery2_1.AllItems, 
@@ -682,22 +681,22 @@ Features_2 As screen:
         Text: ="Selec Todo"
         Visible: =pop1
         Width: =46
-        X: =1310
-        Y: =99
+        X: =362
+        Y: =194
         ZIndex: =35
 
     ButtonCanvas4_3 As Botón:
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
-        Height: =43
+        Height: =38
         OnSelect: |+
             =ForAll(
                 Gallery2_1.AllItems,
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
             );
             
-            UpdateContext({ varCheckboxChecked1: !Checkbox1_1.Value });
+            UpdateContext({ varCheckboxChecked1: !Checkbox1_1.Value });Reset(ComboBox2);Reset(ComboBox1_2)
             
             
             
@@ -708,8 +707,8 @@ Features_2 As screen:
         Text: ="Borrar Todo"
         Visible: =pop1
         Width: =41
-        X: =1259
-        Y: =99
+        X: =311
+        Y: =194
         ZIndex: =36
 
     icon11_8 As icon.Add:
@@ -835,7 +834,7 @@ Features_2 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
-        Height: =38
+        Height: =33
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Tamaño"
@@ -860,8 +859,8 @@ Features_2 As screen:
         Size: =10
         Visible: =pop1
         Width: =103
-        X: =1087
-        Y: =99
+        X: =139
+        Y: =194
         ZIndex: =41
 
     icon14_8 As icon.Cancel:
@@ -870,14 +869,14 @@ Features_2 As screen:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(52, 152, 47, 1)
-        Height: =32
+        Height: =28
         Icon: =Icon.Reset
         OnSelect: =Reset(ComboBox2);Reset(ComboBox1_2)
         TabIndex: =0
         Visible: =pop1
         Width: =42
-        X: =1262
-        Y: =56
+        X: =314
+        Y: =150
         ZIndex: =42
 
     ComboBox2 As combobox:
@@ -892,7 +891,7 @@ Features_2 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
-        Height: =39
+        Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Solución"
@@ -917,15 +916,15 @@ Features_2 As screen:
         Size: =10
         Visible: =pop1
         Width: =104
-        X: =968
-        Y: =103
+        X: =20
+        Y: =198
         ZIndex: =43
 
     "Gallery2_1 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
         Fill: =RGBA(152, 208, 70, 1)
-        Height: =588
+        Height: =521
         Items: |-
             =Filter(
                 Enfriadores, 
@@ -937,8 +936,8 @@ Features_2 As screen:
         TemplateSize: =82
         Visible: =pop1
         Width: =402
-        X: =961
-        Y: =156
+        X: =12
+        Y: =235
         ZIndex: =44
 
         Title3_2 As label:
