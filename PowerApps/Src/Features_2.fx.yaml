@@ -846,7 +846,7 @@ Features_2 As screen:
                 ForAll(
                     Distinct(
                         Enfriadores,
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -856,7 +856,7 @@ Features_2 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(Enfriadores,Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_2.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(Enfriadores,field_7),{Results:ThisRecord.Value}),Results),ComboBox1_2.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop1
@@ -902,7 +902,7 @@ Features_2 As screen:
                 ForAll(
                     Distinct(
                         Enfriadores,
-                        Solución
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -912,7 +912,7 @@ Features_2 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(Enfriadores,Solución),{Results:ThisRecord.Value}),Results),ComboBox2.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(Enfriadores,field_6),{Results:ThisRecord.Value}),Results),ComboBox2.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop1
