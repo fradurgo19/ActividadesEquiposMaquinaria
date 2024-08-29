@@ -3,7 +3,7 @@ Features_2 As screen:
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnHidden: |+
+    OnHidden: |-
         =UpdateContext(
             {
                 pop1: false,
@@ -14,7 +14,8 @@ Features_2 As screen:
                 pop6: false
             }
         );
-        
+        Reset(ComboBox1_1);
+        Reset(ComboBox1)
     OnVisible: |
         =UpdateContext(
             {
@@ -146,7 +147,7 @@ Features_2 As screen:
         BorderThickness: =5
         DisabledFill: =Rectangle4_18.Fill
         Fill: =RGBA(255, 191, 0, 1)
-        Height: =690
+        Height: =662
         HoverFill: =Rectangle4_18.Fill
         PressedFill: =Rectangle4_18.Fill
         TabIndex: =0
@@ -923,11 +924,11 @@ Features_2 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(Motor,Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
-        Size: =13
+        Size: =10
         Visible: =pop4
-        Width: =117
-        X: =1128
-        Y: =100
+        Width: =103
+        X: =1089
+        Y: =99
         ZIndex: =57
 
     ComboBox1_1 As combobox:
@@ -942,7 +943,7 @@ Features_2 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
-        Height: =38
+        Height: =39
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Solución"
@@ -963,9 +964,9 @@ Features_2 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(Motor,Solucion),{Results:ThisRecord.Value}),Results),ComboBox1_1.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
-        Size: =13
+        Size: =10
         Visible: =pop4
-        Width: =160
+        Width: =110
         X: =955
         Y: =99
         ZIndex: =58
