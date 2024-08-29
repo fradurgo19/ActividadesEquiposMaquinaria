@@ -989,6 +989,102 @@ Features_2 As screen:
         Y: =50
         ZIndex: =60
 
+    ComboBox1_2 As combobox:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Results"]
+        Font: =App.Theme.Font
+        Height: =38
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        InputTextPlaceholder: ="Tamaño"
+        Items: |-
+            =Filter(
+                ForAll(
+                    Distinct(
+                        Enfriadores,
+                        Tamaño
+                    ),
+                    {Results: ThisRecord.Value}
+                ),
+                Results
+            )
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =App.Theme.Colors.Darker30
+        SearchFields: =["Results"]
+        SearchItems: |-
+            =Search(Filter(ForAll(Distinct(Enfriadores,Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_2.SearchText,Results)
+        SelectionFill: =App.Theme.Colors.Primary
+        Size: =10
+        Visible: =pop1
+        Width: =103
+        X: =1095
+        Y: =105
+        ZIndex: =61
+
+    ComboBox1_3 As combobox:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Results"]
+        Font: =App.Theme.Font
+        Height: =39
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        InputTextPlaceholder: ="Solución"
+        IsSearchable: =false
+        Items: |-
+            =Filter(
+                ForAll(
+                    Distinct(
+                        Enfriadores,
+                        Solución
+                    ),
+                    {Results: ThisRecord.Value}
+                ),
+                Results
+            )
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =App.Theme.Colors.Darker30
+        SearchFields: =["Results"]
+        SearchItems: =[]
+        SelectionFill: =App.Theme.Colors.Primary
+        Size: =10
+        Visible: =pop1
+        Width: =110
+        X: =961
+        Y: =105
+        ZIndex: =62
+
+    icon14_8 As icon.Cancel:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(52, 152, 47, 1)
+        Height: =32
+        Icon: =Icon.Reset
+        OnSelect: =Reset(ComboBox1_3);Reset(ComboBox1_2)
+        TabIndex: =0
+        Visible: =pop1
+        Width: =42
+        X: =1262
+        Y: =56
+        ZIndex: =63
+
     Group1 As group:
         Height: =5
         Width: =5
