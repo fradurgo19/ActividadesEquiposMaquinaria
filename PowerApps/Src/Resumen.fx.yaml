@@ -470,8 +470,8 @@ Resumen As screen:
         Height: =41
         Size: =13
         Text: |-
-            ="$ " &  Sum (Value(Label4.Text)* 95000, "[ES] #####")
-        Width: =147
+            ="$ " &  Text(Sum (Value(Label4.Text)* 95000, "##,##"))
+        Width: =128
         X: =1168
         Y: =192
         ZIndex: =33
@@ -487,7 +487,7 @@ Resumen As screen:
         Height: =27
         Size: =12
         Text: ="Precio"
-        Width: =147
+        Width: =128
         X: =1168
         Y: =165
         ZIndex: =34
