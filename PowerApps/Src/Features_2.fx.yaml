@@ -926,8 +926,8 @@ Features_2 As screen:
         Size: =13
         Visible: =pop4
         Width: =117
-        X: =961
-        Y: =96
+        X: =1128
+        Y: =100
         ZIndex: =57
 
     ComboBox1_1 As combobox:
@@ -945,7 +945,7 @@ Features_2 As screen:
         Height: =38
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Tamaño"
+        InputTextPlaceholder: ="Solución"
         Items: |-
             =Filter(
                 ForAll(
@@ -965,9 +965,9 @@ Features_2 As screen:
         SelectionFill: =App.Theme.Colors.Primary
         Size: =13
         Visible: =pop4
-        Width: =117
-        X: =1103
-        Y: =96
+        Width: =160
+        X: =955
+        Y: =99
         ZIndex: =58
 
     Group1 As group:
