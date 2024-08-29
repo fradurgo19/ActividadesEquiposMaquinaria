@@ -3,7 +3,7 @@ Features_2 As screen:
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnHidden: |-
+    OnHidden: |
         =UpdateContext(
             {
                 pop1: false,
@@ -14,10 +14,6 @@ Features_2 As screen:
                 pop6: false
             }
         );
-        Reset(ComboBox1_1);
-        Reset(ComboBox1);
-        Reset(ComboBox2);
-        Reset(ComboBox1_2)
     OnVisible: |
         =UpdateContext(
             {
