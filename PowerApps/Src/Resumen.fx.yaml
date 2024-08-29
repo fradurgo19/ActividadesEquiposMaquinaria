@@ -76,7 +76,7 @@ Resumen As screen:
         Height: =45
         Size: =15
         Text: ="Resumen"
-        Width: =661
+        Width: =718
         X: =452
         Y: =29
         ZIndex: =16
@@ -220,7 +220,7 @@ Resumen As screen:
             Icon: =Icon.Trash
             OnSelect: =RemoveIf(colAllSelectedItems, field_0 = ThisItem.Value.field_0)
             Width: =42
-            X: =616
+            X: =676
             Y: =5
             ZIndex: =10
 
@@ -267,6 +267,22 @@ Resumen As screen:
         X: =260
         Y: =156
         ZIndex: =26
+
+    Label4_9 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =App.Theme.Colors.Darker30
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        Size: =9
+        Text: ="Cantidad"
+        Width: =70
+        X: =1033
+        Y: =74
+        ZIndex: =28
 
     Group3 As group:
         Height: =5
@@ -334,7 +350,7 @@ Resumen As screen:
             Height: =27
             Size: =9
             Text: ="Actividad"
-            Width: =323
+            Width: =347
             X: =631
             Y: =74
             ZIndex: =24
@@ -347,11 +363,11 @@ Resumen As screen:
             Fill: =App.Theme.Colors.Darker30
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =28
+            Height: =27
             Size: =9
             Text: ="Tiempo"
-            Width: =94
-            X: =953
+            Width: =55
+            X: =978
             Y: =74
             ZIndex: =25
 
@@ -369,7 +385,7 @@ Resumen As screen:
                 ="Eliminar
                 "
             Width: =67
-            X: =1047
+            X: =1103
             Y: =74
             ZIndex: =27
 
