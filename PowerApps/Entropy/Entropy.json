@@ -54,6 +54,8 @@
     "Circle2_9": 420,
     "Circle3_1": 438,
     "Circle3_2": 440,
+    "ComboBox1": 594,
+    "ComboBox1_1": 595,
     "Features": 273,
     "Features_10": 161,
     "Features_11": 72,
@@ -586,7 +588,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "08/29/2024 14:27:10",
+  "HeaderLastSavedDateTimeUTC": "08/29/2024 14:46:03",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "bf75668c-50fe-417d-a391-91cd6fccb008": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/0fa5409fa60044578535a9abe68eea8b\""
@@ -716,9 +718,10 @@
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
   "OrderDataSource": {
+    "ComboBoxSample": 2,
     "CustomGallerySample": 0,
     "Enfriadores": 1,
-    "Motor": 2
+    "Motor": 3
   },
   "OrderGroupControls": {
     "Group1": {
@@ -1175,8 +1178,9 @@
   },
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "checkbox": 7,
+    "checkbox": 8,
     "circle": 4,
+    "combobox": 7,
     "gallery": 6,
     "icon": 2,
     "image": 3,
@@ -1237,6 +1241,8 @@
     "Circle2_9": {},
     "Circle3_1": {},
     "Circle3_2": {},
+    "ComboBox1": {},
+    "ComboBox1_1": {},
     "Features": {},
     "Features_10": {},
     "Features_11": {},
@@ -1921,6 +1927,8 @@
     "Circle2_9": 201,
     "Circle3_1": 14,
     "Circle3_2": 17,
+    "ComboBox1": 0,
+    "ComboBox1_1": 0,
     "Features": 0,
     "Features_10": 0,
     "Features_11": 0,
@@ -2526,6 +2534,7 @@
     "ControlCount": {
       "checkbox": 2,
       "circle": 40,
+      "combobox": 1,
       "gallery": 3,
       "galleryTemplate": 3,
       "group": 80,

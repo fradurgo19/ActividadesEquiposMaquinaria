@@ -337,7 +337,11 @@ Features_2 As screen:
         DelayItemLoading: =true
         Fill: =RGBA(255, 191, 0, 1)
         Height: =571
-        Items: =Filter(Motor, Tipo = "Excavadora")
+        Items: |-
+            =Filter(
+                'Motor', 
+                Tipo = "Excavadora" && Tamaño = ComboBox1.Selected.Results && Solucion = ComboBox1_1.Selected.Results
+            )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -885,6 +889,86 @@ Features_2 As screen:
         X: =466
         Y: =610
         ZIndex: =56
+
+    ComboBox1 As combobox:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Results"]
+        Font: =App.Theme.Font
+        Height: =38
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        InputTextPlaceholder: ="Tamaño"
+        Items: |-
+            =Filter(
+                ForAll(
+                    Distinct(
+                        Motor,
+                        Tamaño
+                    ),
+                    {Results: ThisRecord.Value}
+                ),
+                Results
+            )
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =App.Theme.Colors.Darker30
+        SearchFields: =["Results"]
+        SearchItems: |-
+            =Search(Filter(ForAll(Distinct(Motor,Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1.SearchText,Results)
+        SelectionFill: =App.Theme.Colors.Primary
+        Size: =13
+        Visible: =pop4
+        Width: =117
+        X: =961
+        Y: =96
+        ZIndex: =57
+
+    ComboBox1_1 As combobox:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Results"]
+        Font: =App.Theme.Font
+        Height: =38
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        InputTextPlaceholder: ="Tamaño"
+        Items: |-
+            =Filter(
+                ForAll(
+                    Distinct(
+                        Motor,
+                        Solucion
+                    ),
+                    {Results: ThisRecord.Value}
+                ),
+                Results
+            )
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =App.Theme.Colors.Darker30
+        SearchFields: =["Results"]
+        SearchItems: |-
+            =Search(Filter(ForAll(Distinct(Motor,Solucion),{Results:ThisRecord.Value}),Results),ComboBox1_1.SearchText,Results)
+        SelectionFill: =App.Theme.Colors.Primary
+        Size: =13
+        Visible: =pop4
+        Width: =117
+        X: =1103
+        Y: =96
+        ZIndex: =58
 
     Group1 As group:
         Height: =5
