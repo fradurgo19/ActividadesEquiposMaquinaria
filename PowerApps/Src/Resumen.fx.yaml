@@ -65,22 +65,6 @@ Resumen As screen:
         Y: =681
         ZIndex: =14
 
-    Label4 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(0, 0, 0, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =45
-        Size: =15
-        Text: ="Resumen"
-        Width: =807
-        X: =326
-        Y: =29
-        ZIndex: =16
-
     "Gallery7 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         BorderThickness: =1
@@ -98,8 +82,8 @@ Resumen As screen:
         TemplatePadding: =0
         TemplateSize: =46
         Width: =844
-        X: =324
-        Y: =101
+        X: =288
+        Y: =73
         ZIndex: =17
 
         Title10 As label:
@@ -220,16 +204,15 @@ Resumen As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             FocusedBorderThickness: =4
             Font: =App.Theme.Font
-            Height: =23
+            Height: =38
             HintText: ="1"
             HoverBorderColor: =App.Theme.Colors.Darker40
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =App.Theme.Colors.Lighter70
             OnSelect: =Select(Parent)
             Size: =8
-            Width: =43
-            X: =635
-            Y: =6
+            Width: =69
+            X: =623
             ZIndex: =11
 
         Subtitle7_1 As label:
@@ -238,7 +221,7 @@ Resumen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =23
+            Height: =38
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -246,9 +229,8 @@ Resumen As screen:
             PaddingTop: =0
             Size: =8
             Text: =ThisItem.Value.field_4
-            Width: =44
-            X: =567
-            Y: =6
+            Width: =57
+            X: =566
             ZIndex: =13
 
         Subtitle7_2 As label:
@@ -257,7 +239,7 @@ Resumen As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =23
+            Height: =32
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -266,8 +248,8 @@ Resumen As screen:
             Size: =8
             Text: |
                 =(ThisItem.Value.field_4) * Value(TextInput2.Text)
-            Width: =44
-            X: =716
+            Width: =82
+            X: =692
             Y: =6
             ZIndex: =14
 
@@ -306,6 +288,19 @@ Resumen As screen:
         Y: =29
         ZIndex: =20
 
+    "TextInputCanvas1 As 'Entrada de texto'":
+        DisplayMode: =DisplayMode.Edit
+        Height: =60
+        Mode: ='TextInputCanvas.Mode'.SingleLine
+        TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
+        Type: ='TextInputCanvas.Type'.Text
+        Value: |
+            =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
+        Width: =78
+        X: =1176
+        Y: =128
+        ZIndex: =30
+
     Group3 As group:
         Height: =5
         Width: =5
@@ -325,8 +320,8 @@ Resumen As screen:
             Size: =10
             Text: ="Id"
             Width: =46
-            X: =326
-            Y: =74
+            X: =290
+            Y: =46
             ZIndex: =21
 
         Label4_4 As label:
@@ -341,8 +336,8 @@ Resumen As screen:
             Size: =9
             Text: ="Codigo"
             Width: =71
-            X: =372
-            Y: =74
+            X: =336
+            Y: =46
             ZIndex: =22
 
         Label4_5 As label:
@@ -357,8 +352,8 @@ Resumen As screen:
             Size: =9
             Text: ="Alterno"
             Width: =62
-            X: =443
-            Y: =74
+            X: =407
+            Y: =46
             ZIndex: =23
 
         Label4_6 As label:
@@ -373,8 +368,8 @@ Resumen As screen:
             Size: =9
             Text: ="Actividad"
             Width: =382
-            X: =505
-            Y: =74
+            X: =469
+            Y: =46
             ZIndex: =24
 
         Label4_7 As label:
@@ -389,8 +384,8 @@ Resumen As screen:
             Size: =9
             Text: ="Tiempo"
             Width: =55
-            X: =887
-            Y: =74
+            X: =851
+            Y: =46
             ZIndex: =25
 
         Label4_8 As label:
@@ -407,8 +402,8 @@ Resumen As screen:
                 ="Eliminar
                 "
             Width: =67
-            X: =1101
-            Y: =74
+            X: =1065
+            Y: =46
             ZIndex: =27
 
         Label4_9 As label:
@@ -423,8 +418,8 @@ Resumen As screen:
             Size: =9
             Text: ="Cantidad"
             Width: =70
-            X: =942
-            Y: =74
+            X: =906
+            Y: =46
             ZIndex: =28
 
         Label4_10 As label:
@@ -439,7 +434,22 @@ Resumen As screen:
             Size: =9
             Text: ="Total Tiempo"
             Width: =89
-            X: =1012
-            Y: =74
+            X: =976
+            Y: =46
             ZIndex: =29
+
+    Label4 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =43
+        Size: =13
+        Text: =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
+        Width: =78
+        X: =1176
+        Y: =223
+        ZIndex: =31
 
