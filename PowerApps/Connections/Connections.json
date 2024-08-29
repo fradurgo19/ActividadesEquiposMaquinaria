@@ -13,13 +13,17 @@
           },
           "Motor": {
             "tableName": "1385a2eb-6ffb-4b62-a57f-d4870a61e914"
+          },
+          "Motor de giro y reductor de giro": {
+            "tableName": "3ef94120-9b87-450d-88e1-d2c712312d66"
           }
         }
       }
     },
     "dataSources": [
       "Motor",
-      "Enfriadores"
+      "Enfriadores",
+      "Motor de giro y reductor de giro"
     ],
     "dependencies": {},
     "dependents": [],
