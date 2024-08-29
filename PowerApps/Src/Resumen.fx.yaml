@@ -430,15 +430,65 @@ Resumen As screen:
     Label4 As label:
         Align: =Align.Center
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
+        Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(240, 98, 15, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =48
+        Size: =13
+        Text: =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
+        Width: =117
+        X: =1213
+        Y: =148
+        ZIndex: =31
+
+    Label4_11 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =App.Theme.Colors.Darker30
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        Size: =12
+        Text: ="Total Horas"
+        Width: =117
+        X: =1213
+        Y: =121
+        ZIndex: =32
+
+    Label4_12 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(240, 98, 15, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =43
         Size: =13
-        Text: =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
-        Width: =78
-        X: =1208
-        Y: =148
-        ZIndex: =31
+        Text: |-
+            ="$ " &  Sum(Value(Label4.Text)* 95000, "####")
+        Width: =117
+        X: =1213
+        Y: =266
+        ZIndex: =33
+
+    Label4_13 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =App.Theme.Colors.Darker30
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        Size: =12
+        Text: ="Precio"
+        Width: =117
+        X: =1213
+        Y: =239
+        ZIndex: =34
 
