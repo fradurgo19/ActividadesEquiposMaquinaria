@@ -284,7 +284,7 @@ Features_2 As screen:
         Height: =50
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        Size: =13
+        Size: =12
         Text: ="MOTOR"
         Width: =111
         X: =655
@@ -604,8 +604,10 @@ Features_2 As screen:
             BorderColor: =App.Theme.Colors.Darker40
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =50
             Image: ='icons8-resumen-64'
             OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+            Width: =50
             Y: =56
             ZIndex: =25
 
@@ -618,11 +620,11 @@ Features_2 As screen:
             FontWeight: =FontWeight.Bold
             Height: =46
             OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
-            Size: =15
+            Size: =12
             Text: ="Resumen"
             Width: =97
-            X: =97
-            Y: =88
+            X: =42
+            Y: =59
             ZIndex: =26
 
     Label1_47 As label:

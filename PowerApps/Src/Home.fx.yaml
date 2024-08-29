@@ -222,8 +222,10 @@ Home As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =50
         Image: ='puerta-de-salida'
         OnSelect: =Exit()
+        Width: =50
         X: =18
         Y: =18
         ZIndex: =38

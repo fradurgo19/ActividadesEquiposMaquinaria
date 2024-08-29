@@ -267,8 +267,10 @@ Resumen As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =50
         Image: ='icons8-atrás-100'
         OnSelect: =Back()
+        Width: =50
         Y: =2
         ZIndex: =19
 
@@ -281,25 +283,12 @@ Resumen As screen:
         FontWeight: =FontWeight.Bold
         Height: =46
         OnSelect: =Back()
-        Size: =15
+        Size: =12
         Text: ="Atras"
         Width: =73
-        X: =98
-        Y: =29
+        X: =50
+        Y: =4
         ZIndex: =20
-
-    "TextInputCanvas1 As 'Entrada de texto'":
-        DisplayMode: =DisplayMode.Edit
-        Height: =60
-        Mode: ='TextInputCanvas.Mode'.SingleLine
-        TriggerOutput: ='TextInputCanvas.TriggerOutput'.Delayed
-        Type: ='TextInputCanvas.Type'.Text
-        Value: |
-            =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
-        Width: =78
-        X: =1176
-        Y: =128
-        ZIndex: =30
 
     Group3 As group:
         Height: =5
@@ -449,7 +438,7 @@ Resumen As screen:
         Size: =13
         Text: =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
         Width: =78
-        X: =1176
-        Y: =223
+        X: =1208
+        Y: =148
         ZIndex: =31
 
