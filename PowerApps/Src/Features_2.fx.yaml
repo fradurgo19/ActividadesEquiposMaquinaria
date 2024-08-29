@@ -184,14 +184,14 @@ Features_2 As screen:
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =29
+        Height: =47
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
         TabIndex: =0
-        Width: =29
-        X: =595
-        Y: =670
+        Width: =51
+        X: =487
+        Y: =502
         ZIndex: =12
 
     Rectangle15_13 As rectangle:
@@ -279,14 +279,14 @@ Features_2 As screen:
         Fill: =RGBA(204, 231, 246, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =38
+        Height: =50
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
         Size: =13
         Text: ="MOTOR"
-        Width: =74
-        X: =270
-        Y: =88
+        Width: =111
+        X: =655
+        Y: =59
         ZIndex: =18
 
     Label9_29 As label:
@@ -540,8 +540,8 @@ Features_2 As screen:
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
         TabIndex: =0
-        Width: =33
-        X: =577
+        Width: =50
+        X: =762
         Y: =64
         ZIndex: =32
 
@@ -587,24 +587,6 @@ Features_2 As screen:
         Y: =526
         ZIndex: =46
 
-    Label1_46 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(204, 231, 246, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =43
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        Size: =11
-        Text: ="Cambio de motor diesel"
-        Width: =171
-        X: =393
-        Y: =56
-        ZIndex: =48
-
     Group2 As group:
         Height: =5
         Width: =5
@@ -645,14 +627,14 @@ Features_2 As screen:
         Fill: =RGBA(204, 231, 246, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =43
+        Height: =50
         OnSelect: |-
             =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
         Size: =11
         Text: ="ENFRIADORES"
         Width: =127
-        X: =459
-        Y: =663
+        X: =519
+        Y: =610
         ZIndex: =49
 
     Rectangle4_19 As rectangle:
@@ -887,6 +869,21 @@ Features_2 As screen:
         X: =1259
         Y: =99
         ZIndex: =55
+
+    icon11_8 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
+        TabIndex: =0
+        Width: =50
+        X: =466
+        Y: =610
+        ZIndex: =56
 
     Group1 As group:
         Height: =5

@@ -11354,19 +11354,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_2.Label1_46.FocusedBorderThickness"
+                  "fullyQualifiedName": "Features_2.icon11_8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_2.Label1_46.FocusedBorderThickness",
+                  "fullyQualifiedName": "Features_2.icon11_8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "FocusedBorderThickness",
+                "member": "AccessibleLabel",
                 "module": "Features_2",
-                "type": "Features_2.Label1_46"
+                "type": "Features_2.icon11_8"
               }
             }
           ],
@@ -11376,38 +11376,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_2.Label1_46.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_2.Label1_46.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "Features_2",
-                "type": "Features_2.Label1_46"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
