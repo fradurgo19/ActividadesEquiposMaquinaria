@@ -228,49 +228,44 @@ Resumen As screen:
             Y: =6
             ZIndex: =11
 
-        TextInput2_1 As text:
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderThickness: =2
-            Color: =RGBA(0, 0, 0, 1)
-            Default: =(ThisItem.Value.field_4) * Value(TextInput2.Text)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        Subtitle7_1 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            FocusedBorderThickness: =4
             Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =23
-            HintText: ="1"
-            HoverBorderColor: =App.Theme.Colors.Darker40
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =App.Theme.Colors.Lighter70
             OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
             Size: =8
-            Width: =56
-            X: =677
-            Y: =6
-            ZIndex: =12
-
-        TextInput2_2 As text:
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderThickness: =2
-            Color: =RGBA(0, 0, 0, 1)
-            Default: =ThisItem.Value.field_4
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            FocusedBorderThickness: =4
-            Font: =App.Theme.Font
-            Height: =23
-            HintText: ="1"
-            HoverBorderColor: =App.Theme.Colors.Darker40
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =App.Theme.Colors.Lighter70
-            OnSelect: =Select(Parent)
-            Size: =8
-            Width: =46
-            X: =535
+            Text: =ThisItem.Value.field_4
+            Width: =44
+            X: =532
             Y: =6
             ZIndex: =13
+
+        Subtitle7_2 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =23
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =8
+            Text: |
+                =(ThisItem.Value.field_4) * Value(TextInput2.Text)
+            Width: =44
+            X: =681
+            Y: =6
+            ZIndex: =14
 
     ButtonCanvas2 As Botón:
         DisplayMode: =DisplayMode.Edit
