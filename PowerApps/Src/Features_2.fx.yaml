@@ -519,7 +519,7 @@ Features_2 As screen:
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
             );
             
-            UpdateContext({ varCheckboxChecked: !Checkbox1.Value });Set(varResetCheckbox, false);Reset(ComboBox2);Reset(ComboBox1_2)
+            UpdateContext({ varCheckboxChecked: !Checkbox1.Value });Set(varResetCheckbox, false);Reset(ComboBox1);Reset(ComboBox1_1)
             
             
             
