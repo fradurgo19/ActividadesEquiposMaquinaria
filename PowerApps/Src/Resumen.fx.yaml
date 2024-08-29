@@ -82,8 +82,8 @@ Resumen As screen:
         TemplatePadding: =0
         TemplateSize: =46
         Width: =844
-        X: =288
-        Y: =73
+        X: =284
+        Y: =34
         ZIndex: =17
 
         Title10 As label:
@@ -309,8 +309,8 @@ Resumen As screen:
             Size: =10
             Text: ="Id"
             Width: =46
-            X: =290
-            Y: =46
+            X: =286
+            Y: =6
             ZIndex: =21
 
         Label4_4 As label:
@@ -325,8 +325,8 @@ Resumen As screen:
             Size: =9
             Text: ="Codigo"
             Width: =71
-            X: =336
-            Y: =46
+            X: =332
+            Y: =6
             ZIndex: =22
 
         Label4_5 As label:
@@ -341,8 +341,8 @@ Resumen As screen:
             Size: =9
             Text: ="Alterno"
             Width: =62
-            X: =407
-            Y: =46
+            X: =403
+            Y: =6
             ZIndex: =23
 
         Label4_6 As label:
@@ -357,8 +357,8 @@ Resumen As screen:
             Size: =9
             Text: ="Actividad"
             Width: =382
-            X: =469
-            Y: =46
+            X: =465
+            Y: =6
             ZIndex: =24
 
         Label4_7 As label:
@@ -373,8 +373,8 @@ Resumen As screen:
             Size: =9
             Text: ="Tiempo"
             Width: =55
-            X: =851
-            Y: =46
+            X: =847
+            Y: =6
             ZIndex: =25
 
         Label4_8 As label:
@@ -391,8 +391,8 @@ Resumen As screen:
                 ="Eliminar
                 "
             Width: =67
-            X: =1065
-            Y: =46
+            X: =1061
+            Y: =6
             ZIndex: =27
 
         Label4_9 As label:
@@ -407,8 +407,8 @@ Resumen As screen:
             Size: =9
             Text: ="Cantidad"
             Width: =70
-            X: =906
-            Y: =46
+            X: =902
+            Y: =6
             ZIndex: =28
 
         Label4_10 As label:
@@ -423,8 +423,8 @@ Resumen As screen:
             Size: =9
             Text: ="Total Tiempo"
             Width: =89
-            X: =976
-            Y: =46
+            X: =972
+            Y: =6
             ZIndex: =29
 
     Label4 As label:
@@ -439,8 +439,8 @@ Resumen As screen:
         Size: =13
         Text: =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
         Width: =117
-        X: =1213
-        Y: =148
+        X: =1168
+        Y: =98
         ZIndex: =31
 
     Label4_11 As label:
@@ -455,8 +455,8 @@ Resumen As screen:
         Size: =12
         Text: ="Total Horas"
         Width: =117
-        X: =1213
-        Y: =121
+        X: =1168
+        Y: =71
         ZIndex: =32
 
     Label4_12 As label:
@@ -467,13 +467,13 @@ Resumen As screen:
         Fill: =RGBA(240, 98, 15, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =43
+        Height: =41
         Size: =13
         Text: |-
-            ="$ " &  Sum(Value(Label4.Text)* 95000, "####")
-        Width: =117
-        X: =1213
-        Y: =266
+            ="$ " &  Sum (Value(Label4.Text)* 95000, "[$-es-ES] ##,###")
+        Width: =147
+        X: =1168
+        Y: =192
         ZIndex: =33
 
     Label4_13 As label:
@@ -487,8 +487,8 @@ Resumen As screen:
         Height: =27
         Size: =12
         Text: ="Precio"
-        Width: =117
-        X: =1213
-        Y: =239
+        Width: =147
+        X: =1168
+        Y: =165
         ZIndex: =34
 
