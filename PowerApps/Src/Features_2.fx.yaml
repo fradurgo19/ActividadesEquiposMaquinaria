@@ -709,7 +709,7 @@ Features_2 As screen:
         Height: =588
         Items: |-
             =Filter(
-                'Enfriadores', 
+                Enfriadores, 
                 Tipo = "Excavadora" && Solución = ComboBox1_3.Selected.Results && Tamaño = ComboBox1_2.Selected.Results 
             )
         Layout: =Layout.Vertical
