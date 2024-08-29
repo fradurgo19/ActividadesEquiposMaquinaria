@@ -184,11 +184,11 @@ Resumen As screen:
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =21
+            Height: =29
             Icon: =Icon.Trash
             OnSelect: =RemoveIf(colAllSelectedItems, field_0 = ThisItem.Value.field_0)
-            Width: =37
-            X: =787
+            Width: =35
+            X: =791
             Y: =5
             ZIndex: =10
 
