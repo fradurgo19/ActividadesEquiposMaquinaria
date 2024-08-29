@@ -320,7 +320,7 @@ Features_2 As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(215, 58, 60, 1)
         Height: =32
         Icon: =Icon.Cancel
         OnSelect: |-
@@ -520,7 +520,7 @@ Features_2 As screen:
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
             );
             
-            UpdateContext({ varCheckboxChecked: !Checkbox1.Value });Set(varResetCheckbox, false); Set(varResetCheckbox,true);Reset(ComboBox1);Reset(ComboBox1_1)
+            UpdateContext({ varCheckboxChecked: !Checkbox1.Value });Set(varResetCheckbox, false); Set(varResetCheckbox,true);
             
             
             
@@ -969,6 +969,22 @@ Features_2 As screen:
         X: =955
         Y: =99
         ZIndex: =58
+
+    icon14_7 As icon.Cancel:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(52, 152, 47, 1)
+        Height: =32
+        Icon: =Icon.Reset
+        OnSelect: =Reset(ComboBox1_1);Reset(ComboBox1)
+        TabIndex: =0
+        Visible: =pop4
+        Width: =42
+        X: =1256
+        Y: =50
+        ZIndex: =60
 
     Group1 As group:
         Height: =5
