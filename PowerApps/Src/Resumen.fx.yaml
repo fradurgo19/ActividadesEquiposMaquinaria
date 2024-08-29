@@ -255,11 +255,11 @@ Resumen As screen:
 
     ButtonCanvas2 As Botón:
         DisplayMode: =DisplayMode.Edit
-        Height: =32
+        Height: =50
         OnSelect: =Clear(colAllSelectedItems);
         Text: ="Borrar"
-        Width: =96
-        X: =1270
+        Width: =120
+        X: =1165
         Y: =0
         ZIndex: =18
 
@@ -467,11 +467,11 @@ Resumen As screen:
         Fill: =RGBA(240, 98, 15, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =41
+        Height: =47
         Size: =13
         Text: |-
             ="$ " &  Text(Sum (Value(Label4.Text)* 95000, "##,##"))
-        Width: =128
+        Width: =117
         X: =1168
         Y: =192
         ZIndex: =33
@@ -487,7 +487,7 @@ Resumen As screen:
         Height: =27
         Size: =12
         Text: ="Precio"
-        Width: =128
+        Width: =117
         X: =1168
         Y: =165
         ZIndex: =34
