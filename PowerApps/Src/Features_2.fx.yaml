@@ -700,7 +700,7 @@ Features_2 As screen:
         DelayItemLoading: =true
         Fill: =RGBA(152, 208, 70, 1)
         Height: =588
-        Items: =Enfriadores
+        Items: =Filter(Enfriadores, Tipo = "Excavadora")
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
