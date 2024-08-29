@@ -204,15 +204,16 @@ Resumen As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             FocusedBorderThickness: =4
             Font: =App.Theme.Font
-            Height: =38
+            Height: =32
             HintText: ="1"
             HoverBorderColor: =App.Theme.Colors.Darker40
             HoverColor: =RGBA(0, 0, 0, 1)
             HoverFill: =App.Theme.Colors.Lighter70
             OnSelect: =Select(Parent)
             Size: =8
-            Width: =69
-            X: =623
+            Width: =57
+            X: =634
+            Y: =6
             ZIndex: =11
 
         Subtitle7_1 As label:
