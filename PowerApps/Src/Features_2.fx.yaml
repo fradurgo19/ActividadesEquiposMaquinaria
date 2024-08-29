@@ -179,21 +179,6 @@ Features_2 As screen:
         Width: =1366
         ZIndex: =8
 
-    Circle2_11 As circle:
-        BorderColor: =RGBA(255, 255, 255, 1)
-        DisabledFill: =Circle2_11.Fill
-        Fill: =RGBA(204, 231, 246, 1)
-        Height: =138
-        HoverFill: =Circle2_11.Fill
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
-        PressedFill: =Circle2_11.Fill
-        TabIndex: =0
-        Width: =344
-        X: =455
-        Y: =630
-        ZIndex: =11
-
     icon11_5 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
@@ -205,8 +190,8 @@ Features_2 As screen:
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
         TabIndex: =0
         Width: =29
-        X: =647
-        Y: =643
+        X: =595
+        Y: =670
         ZIndex: =12
 
     Rectangle15_13 As rectangle:
@@ -303,22 +288,6 @@ Features_2 As screen:
         X: =270
         Y: =88
         ZIndex: =18
-
-    Label1_7 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(204, 231, 246, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =30
-        Size: =13
-        Text: ="RADIADOR"
-        Width: =114
-        X: =469
-        Y: =684
-        ZIndex: =19
 
     Label9_29 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -591,123 +560,6 @@ Features_2 As screen:
         Y: =366
         ZIndex: =33
 
-    Label1_42 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(204, 231, 246, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =32
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        Size: =11
-        Text: ="7-10 t"
-        Width: =61
-        X: =577
-        Y: =641
-        ZIndex: =35
-
-    Label1_43 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(204, 231, 246, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =34
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        Size: =11
-        Text: ="13-19 t"
-        Width: =61
-        X: =577
-        Y: =682
-        ZIndex: =36
-
-    icon11_8 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =36
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
-        TabIndex: =0
-        Width: =29
-        X: =647
-        Y: =683
-        ZIndex: =37
-
-    Label1_44 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(204, 231, 246, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =32
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        Size: =11
-        Text: ="20-26 t"
-        Width: =61
-        X: =577
-        Y: =725
-        ZIndex: =38
-
-    icon11_9 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =36
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
-        TabIndex: =0
-        Width: =29
-        X: =646
-        Y: =719
-        ZIndex: =39
-
-    Label1_45 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(204, 231, 246, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =29
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-        Size: =11
-        Text: ="27-35 t"
-        Width: =61
-        X: =685
-        Y: =685
-        ZIndex: =40
-
-    icon11_10 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =36
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
-        TabIndex: =0
-        Width: =29
-        X: =746
-        Y: =683
-        ZIndex: =41
-
     Label9_24 As label:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(255, 255, 255, 1)
@@ -797,10 +649,10 @@ Features_2 As screen:
         OnSelect: |-
             =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
         Size: =11
-        Text: ="Reparar motor"
-        Width: =171
-        X: =399
-        Y: =113
+        Text: ="ENFRIADORES"
+        Width: =127
+        X: =459
+        Y: =663
         ZIndex: =49
 
     Rectangle4_19 As rectangle:
@@ -836,7 +688,7 @@ Features_2 As screen:
         PressedColor: =Label9_36.Color
         PressedFill: =Label9_36.Fill
         Size: =15
-        Text: ="Reparar Motor"
+        Text: ="ENFRIADORES"
         Visible: =pop1
         Width: =174
         X: =983
@@ -865,7 +717,7 @@ Features_2 As screen:
         DelayItemLoading: =true
         Fill: =RGBA(152, 208, 70, 1)
         Height: =588
-        Items: ='Reparar motor'
+        Items: =Motor
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
@@ -927,7 +779,7 @@ Features_2 As screen:
             PaddingTop: =0
             Size: =9
             Text: |-
-                ="ID: "&ThisItem.id
+                ="ID: "&ThisItem.Id
             VerticalAlign: =VerticalAlign.Top
             Width: =53
             X: =16
