@@ -858,6 +858,7 @@ Features_2 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(Enfriadores,field_7),{Results:ThisRecord.Value}),Results),ComboBox1_2.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop1
         Width: =103
@@ -914,6 +915,7 @@ Features_2 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(Enfriadores,field_6),{Results:ThisRecord.Value}),Results),ComboBox2.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop1
         Width: =104
