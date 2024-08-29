@@ -519,7 +519,7 @@ Features_2 As screen:
                 RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
             );
             
-            UpdateContext({ varCheckboxChecked: !Checkbox1.Value });Set(varResetCheckbox, false);
+            UpdateContext({ varCheckboxChecked: !Checkbox1.Value });Set(varResetCheckbox, false);Reset(ComboBox2);Reset(ComboBox1_2)
             
             
             
@@ -917,7 +917,7 @@ Features_2 As screen:
         Visible: =pop1
         Width: =104
         X: =20
-        Y: =198
+        Y: =191
         ZIndex: =43
 
     "Gallery2_1 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
