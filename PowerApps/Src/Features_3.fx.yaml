@@ -9,6 +9,17 @@ Features_3 As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image17 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =425
+        Image: ='Captura de pantalla 2024-08-29 163057'
+        Width: =713
+        X: =340
+        Y: =257
+        ZIndex: =1
+
     Image6_1 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -19,20 +30,20 @@ Features_3 As screen:
             =
             true
         Width: =201
-        X: =538
-        Y: =56
-        ZIndex: =1
+        X: =873
+        Y: =452
+        ZIndex: =2
 
     Image40 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =333
+        Height: =223
         Image: ='TanqueCombustible-removebg'
-        Width: =273
-        X: =541
-        Y: =435
-        ZIndex: =2
+        Width: =232
+        X: =719
+        Y: =145
+        ZIndex: =3
 
     Rectangle2_11 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
@@ -40,7 +51,37 @@ Features_3 As screen:
         Height: =44
         TabIndex: =0
         Width: =1366
-        ZIndex: =3
+        ZIndex: =4
+
+    Group10_9 As group:
+        Height: =44
+        Width: =44
+        X: =0
+        Y: =0
+        ZIndex: =4
+
+        Rectangle15_21 As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =RGBA(62,96,170,0)
+            Height: =44
+            OnSelect: =Navigate(Features, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =58.7
+            ZIndex: =6
+
+        icon1_10 As icon.ChevronLeft:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =32
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(Features, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =26.68
+            X: =16.01
+            Y: =6
+            ZIndex: =7
 
     Label2_12 As label:
         Align: =LayoutAlignItems.Center
@@ -64,51 +105,22 @@ Features_3 As screen:
             ="EXCAVADORA: Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
         Width: =1281.96
         X: =82.71
-        ZIndex: =4
-
-    Group10_9 As group:
-        Height: =44
-        Width: =44
-        X: =0
-        Y: =0
-        ZIndex: =4
-
-        Rectangle15_21 As rectangle:
-            BorderColor: =App.Theme.Colors.Darker40
-            Fill: =RGBA(62,96,170,0)
-            Height: =44
-            OnSelect: =Navigate(Features, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =58.7
-            ZIndex: =5
-
-        icon1_10 As icon.ChevronLeft:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =32
-            Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(Features, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =26.68
-            X: =16.01
-            Y: =6
-            ZIndex: =6
+        ZIndex: =5
 
     icon11_12 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =37
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Width: =49
-        X: =667
-        Y: =241
+        X: =1040
+        Y: =556
         ZIndex: =8
 
     Label9_73 As label:
@@ -137,6 +149,22 @@ Features_3 As screen:
         Y: =219
         ZIndex: =14
 
+    icon11_13 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =31
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
+        TabIndex: =0
+        Width: =57
+        X: =917
+        Y: =248
+        ZIndex: =16
+
     Label1_3 As label:
         Align: =Align.Center
         BorderColor: =App.Theme.Colors.Darker40
@@ -151,38 +179,42 @@ Features_3 As screen:
         Size: =13.34
         Text: ="Motor de Giro/ Reductor de Giro"
         Width: =190
-        X: =723
-        Y: =229
+        X: =1080
+        Y: =556
         ZIndex: =22
 
-    Circle2_37 As circle:
-        BorderColor: =RGBA(204, 204, 204, 1)
-        DisabledFill: =Circle2_37.Fill
+    Label1_10 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
-        Height: =84
-        HoverFill: =Circle2_37.Fill
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =29
         OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
-        PressedFill: =Circle2_37.Fill
-        TabIndex: =0
-        Width: =284.14
-        X: =752
-        Y: =621
-        ZIndex: =24
+            =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
+        Size: =13.34
+        Text: ="Tanque Hidraulico"
+        Width: =177
+        X: =972
+        Y: =249
+        ZIndex: =23
 
     icon11_16 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =38
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Width: =57.36
-        X: =781
-        Y: =644
+        X: =808
+        Y: =143
         ZIndex: =25
 
     Label1_11 As label:
@@ -193,15 +225,80 @@ Features_3 As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =50
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop6:false})
         Size: =13.34
         Text: ="Tanque Combustible"
-        Width: =177.42
-        X: =835
-        Y: =631
+        Width: =194
+        X: =859
+        Y: =143
         ZIndex: =26
+
+    icon11_17 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =39
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
+        TabIndex: =0
+        Width: =77
+        X: =145
+        Y: =560
+        ZIndex: =32
+
+    Label1_12 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =35
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
+        Size: =13.34
+        Text: ="Banco de Vávulas"
+        Width: =241
+        X: =212
+        Y: =553
+        ZIndex: =33
+
+    icon11_18 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =33
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
+        TabIndex: =0
+        Width: =57
+        X: =157
+        Y: =197
+        ZIndex: =39
+
+    Label1_13 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =47
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
+        Size: =13.34
+        Text: ="Banco de Solenoide"
+        Width: =177
+        X: =206
+        Y: =183
+        ZIndex: =40
 
     Group9 As group:
         Height: =5
@@ -744,21 +841,6 @@ Features_3 As screen:
             Y: =76
             ZIndex: =49
 
-    Circle2_57 As circle:
-        BorderColor: =RGBA(204, 204, 204, 1)
-        DisabledFill: =Circle2_57.Fill
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =86
-        HoverFill: =Circle2_57.Fill
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
-        PressedFill: =Circle2_57.Fill
-        TabIndex: =0
-        Width: =284.14
-        X: =42
-        Y: =166
-        ZIndex: =50
-
     icon11_38 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
@@ -770,8 +852,8 @@ Features_3 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
         TabIndex: =0
         Width: =57.36
-        X: =56
-        Y: =186
+        X: =203
+        Y: =410
         ZIndex: =51
 
     Label1_35 As label:
@@ -788,8 +870,8 @@ Features_3 As screen:
         Size: =13.34
         Text: ="Center Joint"
         Width: =177.42
-        X: =114
-        Y: =189
+        X: =238
+        Y: =410
         ZIndex: =52
 
     Rectangle4_61 As rectangle:
@@ -880,175 +962,10 @@ Features_3 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =165
+        Height: =120
         Image: =TamqueHidraulico2
-        Width: =313
-        X: =719
-        Y: =321
+        Width: =151
+        X: =869
+        Y: =266
         ZIndex: =57
-
-    Group12 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =86
-
-        Circle2_32 As circle:
-            BorderColor: =RGBA(204, 204, 204, 1)
-            DisabledFill: =Circle2_32.Fill
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =87
-            HoverFill: =Circle2_32.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
-            PressedFill: =Circle2_32.Fill
-            TabIndex: =0
-            Width: =284
-            X: =760
-            Y: =481
-            ZIndex: =15
-
-        icon11_13 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =31
-            Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
-            TabIndex: =0
-            Width: =57
-            X: =775
-            Y: =503
-            ZIndex: =16
-
-        Label1_10 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =29
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
-            Size: =13.34
-            Text: ="Tanque Hidraulico"
-            Width: =177
-            X: =832
-            Y: =500
-            ZIndex: =23
-
-    Group18 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =100
-
-        Circle2_38 As circle:
-            BorderColor: =RGBA(204, 204, 204, 1)
-            DisabledFill: =Circle2_38.Fill
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =109
-            HoverFill: =Circle2_38.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
-            PressedFill: =Circle2_38.Fill
-            TabIndex: =0
-            Width: =388
-            X: =110.72
-            Y: =525
-            ZIndex: =31
-
-        icon11_17 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =39
-            Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
-            TabIndex: =0
-            Width: =77
-            X: =145
-            Y: =560
-            ZIndex: =32
-
-        Label1_12 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =35
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
-            Size: =13.34
-            Text: ="Banco de Vávulas"
-            Width: =241
-            X: =212
-            Y: =553
-            ZIndex: =33
-
-    Group20 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =107
-
-        Circle2_39 As circle:
-            BorderColor: =RGBA(204, 204, 204, 1)
-            DisabledFill: =Circle2_39.Fill
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =93
-            HoverFill: =Circle2_39.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
-            PressedFill: =Circle2_39.Fill
-            TabIndex: =0
-            Width: =284
-            X: =42.69
-            Y: =301
-            ZIndex: =38
-
-        icon11_18 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =33
-            Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
-            TabIndex: =0
-            Width: =57
-            X: =68
-            Y: =335
-            ZIndex: =39
-
-        Label1_13 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =47
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
-            Size: =13.34
-            Text: ="Banco de Solenoide"
-            Width: =177
-            X: =117
-            Y: =321
-            ZIndex: =40
 
