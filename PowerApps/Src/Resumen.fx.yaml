@@ -14,6 +14,24 @@ Resumen As screen:
         )
     Width: =Max(App.Width, App.DesignWidth)
 
+    Rectangle1_1 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =Color.SkyBlue
+        Height: =356
+        Width: =412
+        X: =928
+        Y: =284
+        ZIndex: =1
+
+    Rectangle1 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =Color.Brown
+        Height: =188
+        Width: =412
+        X: =928
+        Y: =72
+        ZIndex: =2
+
     Rectangle14_2 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledFill: =Rectangle14_2.Fill
@@ -24,7 +42,7 @@ Resumen As screen:
         TabIndex: =0
         Width: =1366
         Y: =663
-        ZIndex: =10
+        ZIndex: =3
 
     Image3_2 As image:
         ApplyEXIFOrientation: =false
@@ -37,7 +55,7 @@ Resumen As screen:
         Width: =264.13
         X: =290.81
         Y: =678
-        ZIndex: =11
+        ZIndex: =4
 
     Label2_3 As label:
         Align: =TextPosition.Left
@@ -59,7 +77,7 @@ Resumen As screen:
         Width: =121
         X: =50.02
         Y: =671
-        ZIndex: =12
+        ZIndex: =5
 
     Rectangle1_6 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
@@ -69,7 +87,7 @@ Resumen As screen:
         Width: =2.67
         X: =258.46
         Y: =681
-        ZIndex: =14
+        ZIndex: =6
 
     "Gallery7 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
@@ -88,9 +106,9 @@ Resumen As screen:
         TemplatePadding: =0
         TemplateSize: =46
         Width: =844
-        X: =284
-        Y: =34
-        ZIndex: =17
+        X: =53
+        Y: =76
+        ZIndex: =7
 
         Title10 As label:
             Align: =Align.Center
@@ -262,12 +280,12 @@ Resumen As screen:
     ButtonCanvas2 As Botón:
         DisplayMode: =DisplayMode.Edit
         Height: =50
-        OnSelect: =Clear(colAllSelectedItems);Reset(ComboBox3)
+        OnSelect: =Clear(colAllSelectedItems);Reset(ComboBox3);Reset(TextInput1);Reset(TextInput1_1)
         Text: ="Borrar"
         Width: =120
-        X: =1165
+        X: =1010
         Y: =0
-        ZIndex: =18
+        ZIndex: =8
 
     Image11 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -278,7 +296,7 @@ Resumen As screen:
         OnSelect: =Back()
         Width: =50
         Y: =2
-        ZIndex: =19
+        ZIndex: =9
 
     Label4_1 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -294,144 +312,7 @@ Resumen As screen:
         Width: =73
         X: =50
         Y: =4
-        ZIndex: =20
-
-    Group3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =30
-
-        Label4_3 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Darker30
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =28
-            Size: =10
-            Text: ="Id"
-            Width: =48
-            X: =284
-            Y: =6
-            ZIndex: =21
-
-        Label4_4 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Darker30
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =28
-            Size: =9
-            Text: ="Codigo"
-            Width: =71
-            X: =332
-            Y: =6
-            ZIndex: =22
-
-        Label4_5 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Darker30
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =28
-            Size: =9
-            Text: ="Alterno"
-            Width: =62
-            X: =403
-            Y: =6
-            ZIndex: =23
-
-        Label4_6 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Darker30
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =28
-            Size: =9
-            Text: ="Actividad"
-            Width: =382
-            X: =465
-            Y: =6
-            ZIndex: =24
-
-        Label4_7 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Darker30
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =28
-            Size: =9
-            Text: ="Tiempo"
-            Width: =55
-            X: =847
-            Y: =6
-            ZIndex: =25
-
-        Label4_8 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Darker30
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =28
-            Size: =9
-            Text: |-
-                ="Eliminar
-                "
-            Width: =67
-            X: =1061
-            Y: =6
-            ZIndex: =27
-
-        Label4_9 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Darker30
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =28
-            Size: =9
-            Text: ="Cantidad"
-            Width: =70
-            X: =902
-            Y: =6
-            ZIndex: =28
-
-        Label4_10 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Darker30
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =28
-            Size: =9
-            Text: ="Total Tiempo"
-            Width: =89
-            X: =972
-            Y: =6
-            ZIndex: =29
+        ZIndex: =10
 
     Label4 As label:
         Align: =Align.Center
@@ -445,9 +326,9 @@ Resumen As screen:
         Size: =13
         Text: =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
         Width: =117
-        X: =1182
-        Y: =210
-        ZIndex: =31
+        X: =953
+        Y: =204
+        ZIndex: =19
 
     Label4_11 As label:
         Align: =Align.Center
@@ -461,9 +342,9 @@ Resumen As screen:
         Size: =12
         Text: ="Total Horas"
         Width: =117
-        X: =1182
-        Y: =183
-        ZIndex: =32
+        X: =953
+        Y: =177
+        ZIndex: =20
 
     Label4_12 As label:
         Align: =Align.Center
@@ -489,9 +370,9 @@ Resumen As screen:
             )
             
         Width: =117
-        X: =1182
-        Y: =304
-        ZIndex: =33
+        X: =1144
+        Y: =205
+        ZIndex: =21
 
     Label4_13 As label:
         Align: =Align.Center
@@ -505,9 +386,9 @@ Resumen As screen:
         Size: =12
         Text: ="Precio"
         Width: =117
-        X: =1182
-        Y: =277
-        ZIndex: =34
+        X: =1144
+        Y: =178
+        ZIndex: =22
 
     ComboBox3 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -524,6 +405,7 @@ Resumen As screen:
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
+        InputTextPlaceholder: ="Tipo de Servicio"
         Items: =colOpcionesValores.Opcion
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
@@ -533,7 +415,384 @@ Resumen As screen:
         SelectMultiple: =false
         Size: =13
         Width: =184
-        X: =1165
-        Y: =91
-        ZIndex: =36
+        X: =1028
+        Y: =121
+        ZIndex: =23
+
+    Button2_2 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(51, 59, 62, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =55
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
+        OnSelect: |-
+            =Launch("https://www.google.com/maps/dir//Colombia/@5.6449184,-76.81555,6z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8e15a43aae1594a3:0x9a0d9a04eff2a340!2m2!1d-74.297333!2d4.570868!3e0?entry=ttu")
+        PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Size: =15
+        Text: ="Ir a Google Maps"
+        Width: =169
+        X: =932
+        Y: =532
+        ZIndex: =24
+
+    TextCanvas1 As Texto:
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =RGBA(255, 255, 255, 1)
+        Height: =32
+        Size: =18
+        Text: ="Valor del Servicio"
+        Weight: ='TextCanvas.Weight'.Bold
+        Width: =164
+        X: =1048
+        Y: =76
+        ZIndex: =25
+
+    TextCanvas1_1 As Texto:
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =RGBA(255, 255, 255, 1)
+        Height: =32
+        Size: =18
+        Text: ="Desplazamiento"
+        Weight: ='TextCanvas.Weight'.Bold
+        Width: =164
+        X: =1049
+        Y: =286
+        ZIndex: =26
+
+    Label8 As label:
+        Align: =Align.Center
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(105, 121, 126, 1)
+        FocusedBorderThickness: =30
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =32
+        Size: =20
+        Text: |-
+            =Text(TotalDesplazamiento, "[$-es-ES]$ #.###")
+        Width: =182
+        X: =1130
+        Y: =542
+        ZIndex: =27
+
+    TextInput1 As text:
+        Align: =Align.Center
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        HintText: ="Hrs"
+        HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(105, 121, 126, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =84
+        X: =1228
+        Y: =434
+        ZIndex: =28
+
+    TextInput1_1 As text:
+        Align: =Align.Center
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =31
+        HintText: ="Kms"
+        HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(105, 121, 126, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Width: =84
+        X: =1228
+        Y: =478
+        ZIndex: =29
+
+    Label9_4 As label:
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(105, 121, 126, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =8
+        Text: ="Tiempo De Desplazamiento Hrs ( 1 Trayecto)"
+        Width: =236
+        X: =992
+        Y: =434
+        ZIndex: =30
+
+    Group3 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =30
+
+        Label4_3 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =10
+            Text: ="Id"
+            Width: =48
+            X: =53
+            Y: =48
+            ZIndex: =11
+
+        Label4_4 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =9
+            Text: ="Codigo"
+            Width: =71
+            X: =101
+            Y: =48
+            ZIndex: =12
+
+        Label4_5 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =9
+            Text: ="Alterno"
+            Width: =62
+            X: =172
+            Y: =48
+            ZIndex: =13
+
+        Label4_6 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =9
+            Text: ="Actividad"
+            Width: =382
+            X: =234
+            Y: =48
+            ZIndex: =14
+
+        Label4_7 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =9
+            Text: ="Tiempo"
+            Width: =55
+            X: =616
+            Y: =48
+            ZIndex: =15
+
+        Label4_8 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =9
+            Text: |-
+                ="Eliminar
+                "
+            Width: =67
+            X: =830
+            Y: =48
+            ZIndex: =16
+
+        Label4_9 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =9
+            Text: ="Cantidad"
+            Width: =70
+            X: =671
+            Y: =48
+            ZIndex: =17
+
+        Label4_10 As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =App.Theme.Colors.Darker30
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =28
+            Size: =9
+            Text: ="Total Tiempo"
+            Width: =89
+            X: =741
+            Y: =48
+            ZIndex: =18
+
+    Label9_5 As label:
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(105, 121, 126, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        Size: =8
+        Text: ="Kms Recorridos ( 1 Trayecto)"
+        Width: =236
+        X: =992
+        Y: =479
+        ZIndex: =31
+
+    Button1 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(87, 235, 168, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =55
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
+        OnSelect: |-
+            =// Calcular las variables basadas en las entradas del usuario
+            Set(Valor1, Value(TextInput1.Text) * 2 * 65000);
+            Set(Valor2, Value(TextInput1_1.Text) * 2 * 1600);
+            Set(TotalHoras, Value(TextInput1.Text) * 2 + 4);
+            
+            Set(Hospedaje, 
+                If(TotalHoras >= 9, 100000,0)
+            );
+            
+            Set(Alimentacion, 
+                If(TotalHoras >= 9, 80000 * 2, 
+                    If(TotalHoras > 6, 80000 / 2)
+                )
+            );
+            
+            // Suma total de desplazamiento
+            Set(TotalDesplazamiento, Valor1 + Valor2 + Hospedaje + Alimentacion);
+            
+            // Mostrar el resultado en Label8 con formato
+            Label8.Text = Text(TotalDesplazamiento, "[$-es-ES]$ #,###")
+        PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Size: =15
+        Text: ="Calcular Valor"
+        Width: =164
+        X: =1048
+        Y: =335
+        ZIndex: =32
+
+    Button1_1 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 0, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =41
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
+        OnSelect: =
+        PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+        RadiusBottomLeft: =100
+        RadiusBottomRight: =100
+        RadiusTopLeft: =100
+        RadiusTopRight: =100
+        Size: =8
+        Text: |-
+            ="El valor total de desplazamiento ya incluye: trayecto de ida y vuelta y gastos de desplazamiento."
+        Width: =412
+        X: =928
+        Y: =599
+        ZIndex: =33
 
