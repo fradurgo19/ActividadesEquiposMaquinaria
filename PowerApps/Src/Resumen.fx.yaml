@@ -458,8 +458,7 @@ Resumen As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =38
-        Text: |-
-            =Text(TotalDesplazamiento, "[$-es-ES]$ #.###")
+        Text: =varTextoLabel8
         Width: =192
         X: =1130
         Y: =442
@@ -587,7 +586,9 @@ Resumen As screen:
             Set(TotalDesplazamiento, Valor1 + Valor2 + Hospedaje + Alimentacion);
             
             // Mostrar el resultado en Label8 con formato
-            Label8.Text = Text(TotalDesplazamiento, "[$-es-ES]$ #,###")
+            Label8.Text = Text(TotalDesplazamiento, "[$-es-ES]$ #,###");
+            
+            Set(varTextoLabel8, Text(TotalDesplazamiento, "[$-es-ES]$ #.###"))
         PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
@@ -801,7 +802,7 @@ Resumen As screen:
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =52
         Icon: =Icon.Reload
-        OnSelect: =Reset(ComboBox3);Reset(TextInput1);Reset(TextInput1_1)
+        OnSelect: =Reset(ComboBox3);Reset(TextInput1);Reset(TextInput1_1);Set(varTextoLabel8, "Calcular Valor")
         Width: =56
         X: =1277
         Y: =13
@@ -837,7 +838,7 @@ Resumen As screen:
         Height: =38
         Text: |
             =Text(
-                Value(Label8.Text) + Value(Label4_12.Text),
+                Sum((Label8.Text) + Value(Label4_12.Text)),
                 "[$-es-ES]$ #,###"
             )
         Width: =192
