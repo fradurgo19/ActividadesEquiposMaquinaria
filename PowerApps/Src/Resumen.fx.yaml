@@ -262,7 +262,7 @@ Resumen As screen:
     ButtonCanvas2 As Botón:
         DisplayMode: =DisplayMode.Edit
         Height: =50
-        OnSelect: =Clear(colAllSelectedItems);
+        OnSelect: =Clear(colAllSelectedItems);Reset(ComboBox3)
         Text: ="Borrar"
         Width: =120
         X: =1165
@@ -475,9 +475,19 @@ Resumen As screen:
         FontWeight: =FontWeight.Bold
         Height: =47
         Size: =13
-        Text: |-
-            ="$ " & Text(Sum(Value(Label4.Text) * 116000
-            ), "[$-en-US]#,###")
+        Text: |+
+            ="$ " & Text(
+                Sum(
+                    Value(Label4.Text) * 
+                    If(
+                        !IsBlank(ComboBox3.Selected.Opcion),
+                        LookUp(colOpcionesValores, Opcion = ComboBox3.Selected.Opcion).Valor,
+                        0  // Valor predeterminado si no hay ninguna selección
+                    )
+                ),
+                "[$-en-US]#,###"
+            )
+            
         Width: =117
         X: =1182
         Y: =304
@@ -499,12 +509,31 @@ Resumen As screen:
         Y: =277
         ZIndex: =34
 
-    "ComboboxCanvas1 As 'Cuadro combinado'.pcfdataset":
-        DisplayMode: =DisplayMode.Edit
-        Height: =32
+    ComboBox3 As combobox:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Opcion"]
+        Font: =App.Theme.Font
+        Height: =34
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
         Items: =colOpcionesValores.Opcion
-        Width: =171
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =App.Theme.Colors.Darker30
+        SearchFields: =["Opcion"]
+        SearchItems: =Search(colOpcionesValores.Opcion,ComboBox3.SearchText,Opcion)
+        SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
+        Size: =13
+        Width: =184
         X: =1165
-        Y: =92
-        ZIndex: =35
+        Y: =91
+        ZIndex: =36
 
