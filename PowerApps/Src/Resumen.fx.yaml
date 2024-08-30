@@ -820,6 +820,7 @@ Resumen As screen:
         Height: =42
         Size: =12
         Text: ="Servicio y Desplazamiento"
+        Visible: =false
         Width: =220
         X: =928
         Y: =598
@@ -837,8 +838,9 @@ Resumen As screen:
         FontWeight: =FontWeight.Bold
         Height: =38
         Text: |+
-            =Text(Sum(Value(Label4_12.Text) + Value(Label8.Text),"[$-en-US]#,###"))
+            =Text(Sum(varTextoLabel8) + (Label4_12.Text),"[$-en-US] #,###")
             
+        Visible: =false
         Width: =192
         X: =1148
         Y: =599
