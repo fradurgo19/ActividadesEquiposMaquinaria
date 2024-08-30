@@ -821,7 +821,8 @@ Resumen As screen:
         Text: |
             ="$ " & Text(
                 Sum(
-                    Value(Label4_12.Text) * Value(Label8.Text)
+                    Value(Label4_12.Text),  // Convierte el texto en Label4_12 a número
+                    Value(Label8.Text)      // Convierte el texto en Label8 a número
                 ),
                 "[$-en-US]#,###"
             )
