@@ -3464,19 +3464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Resumen.ButtonCanvas2.AccessibleLabel"
+                  "fullyQualifiedName": "Resumen.Icon3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Resumen.ButtonCanvas2.AccessibleLabel",
+                  "fullyQualifiedName": "Resumen.Icon3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Resumen",
-                "type": "Resumen.ButtonCanvas2"
+                "type": "Resumen.Icon3"
               }
             }
           ],
@@ -14414,19 +14414,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Resumen.Icon1.AccessibleLabel"
+                  "fullyQualifiedName": "Resumen.Icon4.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Resumen.Icon1.AccessibleLabel",
+                  "fullyQualifiedName": "Resumen.Icon4.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Resumen",
-                "type": "Resumen.Icon1"
+                "type": "Resumen.Icon4"
               }
             }
           ],
@@ -14444,19 +14444,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Resumen.Icon1.TabIndex"
+                  "fullyQualifiedName": "Resumen.Icon3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Resumen.Icon1.TabIndex",
+                  "fullyQualifiedName": "Resumen.Icon3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "Resumen",
-                "type": "Resumen.Icon1"
+                "type": "Resumen.Icon3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Resumen.Icon4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Resumen.Icon4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Resumen",
+                "type": "Resumen.Icon4"
               }
             }
           ],
