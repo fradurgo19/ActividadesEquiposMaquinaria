@@ -824,18 +824,24 @@ Resumen As screen:
         Y: =598
         ZIndex: =35
 
-    Label5 As label:
-        BorderColor: =App.Theme.Colors.Darker40
+    Label8_1 As label:
+        Align: =Align.Center
+        BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(240, 98, 15, 1)
-        Font: =App.Theme.Font
-        Height: =42
-        Size: =13
+        FocusedBorderThickness: =30
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =38
         Text: |
-            =
+            =Text(
+                Value(Label8.Text) + Value(Label4_12.Text),
+                "[$-es-ES]$ #,###"
+            )
         Width: =192
         X: =1148
-        Y: =598
+        Y: =599
         ZIndex: =36
 
