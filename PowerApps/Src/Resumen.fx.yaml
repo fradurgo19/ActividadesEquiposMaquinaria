@@ -457,18 +457,6 @@ Resumen As screen:
         Y: =76
         ZIndex: =25
 
-    TextCanvas1_1 As Texto:
-        DisplayMode: =DisplayMode.Edit
-        FontColor: =RGBA(255, 255, 255, 1)
-        Height: =32
-        Size: =20
-        Text: ="Desplazamiento"
-        Weight: ='TextCanvas.Weight'.Bold
-        Width: =164
-        X: =1049
-        Y: =286
-        ZIndex: =26
-
     Label8 As label:
         Align: =Align.Center
         BorderThickness: =2
@@ -790,4 +778,16 @@ Resumen As screen:
         X: =928
         Y: =574
         ZIndex: =33
+
+    TextCanvas1_1 As Texto:
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =RGBA(255, 255, 255, 1)
+        Height: =32
+        Size: =20
+        Text: ="Desplazamiento"
+        Weight: ='TextCanvas.Weight'.Bold
+        Width: =164
+        X: =1043
+        Y: =288
+        ZIndex: =34
 
