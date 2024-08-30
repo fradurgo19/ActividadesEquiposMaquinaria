@@ -431,8 +431,8 @@ Resumen As screen:
         RadiusTopRight: =100
         Text: ="Ir a Google Maps"
         Width: =107
-        X: =936
-        Y: =506
+        X: =1066
+        Y: =10
         ZIndex: =24
 
     TextCanvas1 As Texto:
@@ -462,7 +462,7 @@ Resumen As screen:
             =Text(TotalDesplazamiento, "[$-es-ES]$ #.###")
         Width: =192
         X: =1130
-        Y: =449
+        Y: =442
         ZIndex: =27
 
     TextInput1 As text:
@@ -533,8 +533,8 @@ Resumen As screen:
         Height: =38
         Size: =11
         Text: ="Tiempo De Desplazamiento Hrs ( 1 Trayecto)"
-        Width: =284
-        X: =928
+        Width: =276
+        X: =936
         Y: =337
         ZIndex: =30
 
@@ -687,8 +687,8 @@ Resumen As screen:
         Height: =37
         Size: =12
         Text: ="Kms Recorridos ( 1 Trayecto)"
-        Width: =285
-        X: =928
+        Width: =277
+        X: =936
         Y: =386
         ZIndex: =31
 
@@ -806,4 +806,44 @@ Resumen As screen:
         X: =1277
         Y: =13
         ZIndex: =37
+
+    Label8_1 As label:
+        Align: =Align.Center
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(240, 98, 15, 1)
+        FocusedBorderThickness: =30
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =41
+        Text: |
+            ="$ " & Text(
+                Sum(
+                    Value(Label4_12.Text) * Value(Label8.Text)
+                ),
+                "[$-en-US]#,###"
+            )
+        Width: =192
+        X: =1130
+        Y: =500
+        ZIndex: =38
+
+    Label9_6 As label:
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =App.Theme.Colors.Darker30
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =41
+        Size: =12
+        Text: ="Servicio y Desplazamiento"
+        Width: =194
+        X: =936
+        Y: =500
+        ZIndex: =39
 
