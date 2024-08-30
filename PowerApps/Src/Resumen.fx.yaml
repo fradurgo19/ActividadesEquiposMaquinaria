@@ -280,7 +280,7 @@ Resumen As screen:
     ButtonCanvas2 As Botón:
         DisplayMode: =DisplayMode.Edit
         Height: =50
-        OnSelect: =Clear(colAllSelectedItems);Reset(ComboBox3);Reset(TextInput1);Reset(TextInput1_1)
+        OnSelect: =Reset(ComboBox3);Reset(TextInput1);Reset(TextInput1_1)
         Text: ="Borrar"
         Width: =120
         X: =1213
@@ -790,4 +790,17 @@ Resumen As screen:
         X: =1043
         Y: =288
         ZIndex: =34
+
+    Icon1 As icon.History:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =50
+        Icon: =Icon.History
+        OnSelect: =Clear(colAllSelectedItems);
+        Width: =59
+        X: =340
+        Y: =4
+        ZIndex: =35
 
