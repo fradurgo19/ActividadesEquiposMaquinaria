@@ -5,7 +5,13 @@ Resumen As screen:
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnHidden: =
     OnVisible: |
-        =
+        =ClearCollect(
+            colOpcionesValores,
+            { Opcion: "Mtto Correctivo", Valor: 145000 },
+            { Opcion: "Diagnostico", Valor: 145000 },
+            { Opcion: "Servicio Express / Mineria", Valor: 165000 },
+            { Opcion: "Reparacion de componentes", Valor: 110000 }
+        )
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle14_2 As rectangle:
@@ -439,8 +445,8 @@ Resumen As screen:
         Size: =13
         Text: =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
         Width: =117
-        X: =1168
-        Y: =98
+        X: =1182
+        Y: =210
         ZIndex: =31
 
     Label4_11 As label:
@@ -455,8 +461,8 @@ Resumen As screen:
         Size: =12
         Text: ="Total Horas"
         Width: =117
-        X: =1168
-        Y: =71
+        X: =1182
+        Y: =183
         ZIndex: =32
 
     Label4_12 As label:
@@ -473,8 +479,8 @@ Resumen As screen:
             ="$ " & Text(Sum(Value(Label4.Text) * 116000
             ), "[$-en-US]#,###")
         Width: =117
-        X: =1168
-        Y: =192
+        X: =1182
+        Y: =304
         ZIndex: =33
 
     Label4_13 As label:
@@ -489,7 +495,16 @@ Resumen As screen:
         Size: =12
         Text: ="Precio"
         Width: =117
-        X: =1168
-        Y: =165
+        X: =1182
+        Y: =277
         ZIndex: =34
+
+    "ComboboxCanvas1 As 'Cuadro combinado'.pcfdataset":
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Items: =["Mtto Correctivo", "Diagnostico", "Servicio Express / Mineria","Reparacion de componentes"]
+        Width: =171
+        X: =1165
+        Y: =92
+        ZIndex: =35
 
