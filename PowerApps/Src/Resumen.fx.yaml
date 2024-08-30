@@ -16,7 +16,7 @@ Resumen As screen:
 
     Rectangle1_1 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
-        Fill: =Color.Aqua
+        Fill: =Color.Aquamarine
         Height: =356
         Width: =412
         X: =928
@@ -451,7 +451,7 @@ Resumen As screen:
         DisplayMode: =DisplayMode.Edit
         FontColor: =RGBA(255, 255, 255, 1)
         Height: =32
-        Size: =18
+        Size: =20
         Text: ="Valor del Servicio"
         Weight: ='TextCanvas.Weight'.Bold
         Width: =164
@@ -463,7 +463,7 @@ Resumen As screen:
         DisplayMode: =DisplayMode.Edit
         FontColor: =RGBA(255, 255, 255, 1)
         Height: =32
-        Size: =18
+        Size: =20
         Text: ="Desplazamiento"
         Weight: ='TextCanvas.Weight'.Bold
         Width: =164
@@ -513,8 +513,8 @@ Resumen As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =84
-        X: =1238
+        Width: =109
+        X: =1213
         Y: =337
         ZIndex: =28
 
@@ -541,8 +541,8 @@ Resumen As screen:
         RadiusBottomRight: =0
         RadiusTopLeft: =0
         RadiusTopRight: =0
-        Width: =84
-        X: =1238
+        Width: =109
+        X: =1213
         Y: =386
         ZIndex: =29
 
@@ -558,7 +558,7 @@ Resumen As screen:
         Height: =38
         Size: =11
         Text: ="Tiempo De Desplazamiento Hrs ( 1 Trayecto)"
-        Width: =310
+        Width: =284
         X: =928
         Y: =337
         ZIndex: =30
@@ -712,7 +712,7 @@ Resumen As screen:
         Height: =37
         Size: =12
         Text: ="Kms Recorridos ( 1 Trayecto)"
-        Width: =310
+        Width: =285
         X: =928
         Y: =386
         ZIndex: =31
