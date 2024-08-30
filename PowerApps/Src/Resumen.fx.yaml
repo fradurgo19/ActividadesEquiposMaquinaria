@@ -16,7 +16,7 @@ Resumen As screen:
 
     Rectangle1_1 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
-        Fill: =Color.Aquamarine
+        Fill: =App.Theme.Colors.Darker30
         Height: =356
         Width: =412
         X: =928
@@ -25,7 +25,7 @@ Resumen As screen:
 
     Rectangle1 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
-        Fill: =Color.MediumAquaMarine
+        Fill: =App.Theme.Colors.Darker30
         Height: =200
         Width: =412
         X: =928
@@ -93,8 +93,8 @@ Resumen As screen:
         BorderColor: =App.Theme.Colors.Darker40
         BorderThickness: =1
         DelayItemLoading: =true
-        Fill: =RGBA(111, 183, 242, 1)
-        Height: =564
+        Fill: =App.Theme.Colors.Darker30
+        Height: =544
         Items: |
             =Sort(
                 Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4}),
@@ -107,7 +107,7 @@ Resumen As screen:
         TemplateSize: =46
         Width: =844
         X: =53
-        Y: =76
+        Y: =96
         ZIndex: =7
 
         Title10 As label:
@@ -205,7 +205,7 @@ Resumen As screen:
 
         Icon2 As icon.Trash:
             BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
+            Color: =Color.AliceBlue
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =27
@@ -283,8 +283,8 @@ Resumen As screen:
         OnSelect: =Clear(colAllSelectedItems);Reset(ComboBox3);Reset(TextInput1);Reset(TextInput1_1)
         Text: ="Borrar"
         Width: =120
-        X: =1010
-        Y: =0
+        X: =1213
+        Y: =4
         ZIndex: =8
 
     Image11 As image:
@@ -422,7 +422,7 @@ Resumen As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(51, 59, 62, 1)
+        Fill: =RGBA(87, 235, 168, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
@@ -580,7 +580,7 @@ Resumen As screen:
             Text: ="Id"
             Width: =48
             X: =53
-            Y: =48
+            Y: =69
             ZIndex: =11
 
         Label4_4 As label:
@@ -596,7 +596,7 @@ Resumen As screen:
             Text: ="Codigo"
             Width: =71
             X: =101
-            Y: =48
+            Y: =69
             ZIndex: =12
 
         Label4_5 As label:
@@ -612,7 +612,7 @@ Resumen As screen:
             Text: ="Alterno"
             Width: =62
             X: =172
-            Y: =48
+            Y: =69
             ZIndex: =13
 
         Label4_6 As label:
@@ -628,7 +628,7 @@ Resumen As screen:
             Text: ="Actividad"
             Width: =382
             X: =234
-            Y: =48
+            Y: =69
             ZIndex: =14
 
         Label4_7 As label:
@@ -644,7 +644,7 @@ Resumen As screen:
             Text: ="Tiempo"
             Width: =55
             X: =616
-            Y: =48
+            Y: =69
             ZIndex: =15
 
         Label4_8 As label:
@@ -662,7 +662,7 @@ Resumen As screen:
                 "
             Width: =67
             X: =830
-            Y: =48
+            Y: =69
             ZIndex: =16
 
         Label4_9 As label:
@@ -678,7 +678,7 @@ Resumen As screen:
             Text: ="Cantidad"
             Width: =70
             X: =671
-            Y: =48
+            Y: =69
             ZIndex: =17
 
         Label4_10 As label:
@@ -694,7 +694,7 @@ Resumen As screen:
             Text: ="Total Tiempo"
             Width: =89
             X: =741
-            Y: =48
+            Y: =69
             ZIndex: =18
 
     Label9_5 As label:
