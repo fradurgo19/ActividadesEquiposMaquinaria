@@ -833,10 +833,7 @@ Resumen As screen:
         Height: =42
         Size: =13
         Text: |
-            ="$ " & Text(
-                TotalDesplazamiento + Value(Label8.Text),  // Suma los valores numéricos
-                "[$-en-US]#,###"
-            )
+            =
         Width: =192
         X: =1148
         Y: =598
