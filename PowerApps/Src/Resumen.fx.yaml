@@ -477,15 +477,15 @@ Resumen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(105, 121, 126, 1)
+        Fill: =RGBA(240, 98, 15, 1)
         FocusedBorderThickness: =30
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =32
+        Height: =38
         Size: =13
         Text: |-
             =Text(TotalDesplazamiento, "[$-es-ES]$ #.###")
-        Width: =182
+        Width: =192
         X: =1130
         Y: =449
         ZIndex: =27
@@ -551,7 +551,7 @@ Resumen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(105, 121, 126, 1)
+        Fill: =App.Theme.Colors.Darker30
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
@@ -705,7 +705,7 @@ Resumen As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(105, 121, 126, 1)
+        Fill: =App.Theme.Colors.Darker30
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
