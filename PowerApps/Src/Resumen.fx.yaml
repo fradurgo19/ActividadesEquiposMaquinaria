@@ -836,11 +836,9 @@ Resumen As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =38
-        Text: |
-            =Text(
-                Sum((Label8.Text) + Value(Label4_12.Text)),
-                "[$-es-ES]$ #,###"
-            )
+        Text: |+
+            =Text(Sum(Value(Label4_12.Text) + Value(Label8.Text),"[$-en-US]#,###"))
+            
         Width: =192
         X: =1148
         Y: =599
