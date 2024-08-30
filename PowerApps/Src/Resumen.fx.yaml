@@ -17,7 +17,7 @@ Resumen As screen:
     Rectangle1_1 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =App.Theme.Colors.Darker30
-        Height: =356
+        Height: =290
         Width: =412
         X: =928
         Y: =284
@@ -749,7 +749,7 @@ Resumen As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =66
+        Height: =49
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
@@ -766,7 +766,7 @@ Resumen As screen:
             ="El valor total de desplazamiento ya incluye: trayecto de ida y vuelta y gastos de desplazamiento."
         Width: =412
         X: =928
-        Y: =574
+        Y: =520
         ZIndex: =33
 
     TextCanvas1_1 As Texto:
@@ -817,7 +817,7 @@ Resumen As screen:
         FocusedBorderThickness: =30
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =41
+        Height: =42
         Text: |
             ="$ " & Text(
                 Sum(
@@ -825,9 +825,9 @@ Resumen As screen:
                 ),
                 "[$-en-US]#,###"
             )
-        Width: =192
+        Width: =210
         X: =1130
-        Y: =500
+        Y: =598
         ZIndex: =38
 
     Label9_6 As label:
@@ -839,11 +839,11 @@ Resumen As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =41
+        Height: =42
         Size: =12
         Text: ="Servicio y Desplazamiento"
-        Width: =194
+        Width: =212
         X: =936
-        Y: =500
+        Y: =598
         ZIndex: =39
 
