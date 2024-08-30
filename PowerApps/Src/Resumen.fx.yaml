@@ -369,7 +369,7 @@ Resumen As screen:
                 "[$-en-US]#,###"
             )
             
-        Width: =117
+        Width: =155
         X: =1144
         Y: =205
         ZIndex: =21
@@ -385,7 +385,7 @@ Resumen As screen:
         Height: =27
         Size: =12
         Text: ="Precio"
-        Width: =117
+        Width: =155
         X: =1144
         Y: =178
         ZIndex: =22
@@ -428,7 +428,7 @@ Resumen As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =55
+        Height: =48
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
@@ -441,11 +441,10 @@ Resumen As screen:
         RadiusBottomRight: =100
         RadiusTopLeft: =100
         RadiusTopRight: =100
-        Size: =15
         Text: ="Ir a Google Maps"
-        Width: =169
-        X: =932
-        Y: =532
+        Width: =107
+        X: =936
+        Y: =506
         ZIndex: =24
 
     TextCanvas1 As Texto:
@@ -775,7 +774,7 @@ Resumen As screen:
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =41
+        Height: =66
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
@@ -787,11 +786,11 @@ Resumen As screen:
         RadiusBottomRight: =100
         RadiusTopLeft: =100
         RadiusTopRight: =100
-        Size: =8
+        Size: =11
         Text: |-
             ="El valor total de desplazamiento ya incluye: trayecto de ida y vuelta y gastos de desplazamiento."
         Width: =412
         X: =928
-        Y: =599
+        Y: =574
         ZIndex: =33
 
