@@ -834,7 +834,7 @@ Resumen As screen:
         Size: =13
         Text: |
             ="$ " & Text(
-                Value(Label4_12.Text) + Value(Label8.Text),  // Suma los valores numéricos
+                TotalDesplazamiento + Value(Label8.Text),  // Suma los valores numéricos
                 "[$-en-US]#,###"
             )
         Width: =192
