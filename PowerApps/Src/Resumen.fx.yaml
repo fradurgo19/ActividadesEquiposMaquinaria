@@ -842,7 +842,18 @@ Resumen As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =38
-        Text: =Sum(Value(Label4_12.Text) + Value(varTextoLabel8))
+        Text: |-
+            ="$ " & Text(
+                Sum(
+                    Value(Label4.Text) + (varTextoLabel8) *
+                    If(
+                        !IsBlank(ComboBox3.Selected.Opcion),
+                        LookUp(colOpcionesValores, Opcion = ComboBox3.Selected.Opcion).Valor,
+                        0  // Valor predeterminado si no hay ninguna selección
+                    )
+                ),
+                "[$-en-US]#,###"
+            )
         Width: =192
         X: =1148
         Y: =599
