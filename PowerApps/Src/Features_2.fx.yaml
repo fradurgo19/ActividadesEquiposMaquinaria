@@ -352,7 +352,7 @@ Features_2 As screen:
         Items: |-
             =Filter(
                 colFilteredEnmotor, 
-                Tipo = "Excavadora" && Solucion = ComboBox1_1.Selected.Results && Tamaño = ComboBox1.Selected.Results 
+                Tipo = "Excavadora" && Solución = ComboBox1_1.Selected.Results && Tamaño = ComboBox1.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -941,7 +941,7 @@ Features_2 As screen:
         Items: |-
             =Filter(
                 colFilteredEnfriadores, 
-                Tipo = "Excavadora" && Solucion = ComboBox2.Selected.Results && Tamaño = ComboBox1_2.Selected.Results 
+                Tipo = "Excavadora" && Solución = ComboBox2.Selected.Results && Tamaño = ComboBox1_2.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
