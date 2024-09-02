@@ -941,7 +941,7 @@ Features_2 As screen:
         Items: |-
             =Filter(
                 colFilteredEnfriadores, 
-                Tipo = "Excavadora" && Solución = ComboBox2.Selected.Results && Tamaño = ComboBox1_2.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2.Selected.Results && field_7 = ComboBox1_2.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
