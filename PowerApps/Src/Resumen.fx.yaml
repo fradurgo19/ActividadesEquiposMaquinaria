@@ -891,7 +891,8 @@ Resumen As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =38
-        Text: =Alimentacion
+        Text: |-
+            ="$ " & Text(Alimentacion,"[$-en-US]#,###")
         Width: =192
         X: =1130
         Y: =481
@@ -908,7 +909,8 @@ Resumen As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =38
-        Text: =Hospedaje
+        Text: |-
+            ="$ " & Text(Hospedaje,"[$-en-US]#,###")
         Width: =192
         X: =1130
         Y: =433
