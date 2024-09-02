@@ -4,14 +4,36 @@ Resumen As screen:
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnHidden: =
-    OnVisible: |
+    OnVisible: |+
         =ClearCollect(
             colOpcionesValores,
             { Opcion: "Mtto Correctivo", Valor: 145000 },
             { Opcion: "Diagnostico", Valor: 145000 },
             { Opcion: "Servicio Express / Mineria", Valor: 165000 },
             { Opcion: "Reparación de componentes", Valor: 110000 }
-        )
+        );
+        ClearCollect(
+            colResultado, // Nombre de la colección
+            {
+                Total: "$ " & Text(
+                    Sum(
+                        Value(Label4.Text) * 
+                        If(
+                            !IsBlank(ComboBox3.Selected.Opcion),
+                            LookUp(colOpcionesValores, Opcion = ComboBox3.Selected.Opcion).Valor,
+                            0  // Valor predeterminado si no hay ninguna selección
+                        )
+                    ),
+                    "[$-en-US]#,###"
+                )
+            }
+        );
+        
+        
+        Label8_1.Text = Concat(colResultado, Total, ", ")
+        
+        
+        
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle1_1 As rectangle:
@@ -839,7 +861,17 @@ Resumen As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =38
-        Text: =
+        Text: |-
+            ="$ " & Text(
+                Value(
+                    Substitute(
+                        First(colResultado).Total, 
+                        "$", 
+                        ""
+                    )
+                ) + Value(varTextoLabel8),
+                "[$-en-US]#,###"
+            )
         Width: =192
         X: =1148
         Y: =599
