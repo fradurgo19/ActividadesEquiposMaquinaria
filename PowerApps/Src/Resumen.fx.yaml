@@ -13,7 +13,7 @@ Resumen As screen:
             { Opcion: "Reparación de componentes", Valor: 110000 }
         );
         ClearCollect(
-            colResultado, // Nombre de la colección
+            colResultado, 
             {
                 Total: "$ " & Text(
                     Sum(
