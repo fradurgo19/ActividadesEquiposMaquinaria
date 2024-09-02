@@ -339,8 +339,8 @@ Features_2 As screen:
         Items: |
             =Filter(
                 Motor, 
-                Tipo = "Excavadora" & 
-                Solucion = ComboBox1_1.Selected.Results & 
+                Tipo = "Excavadora" &&
+                Solucion = ComboBox1_1.Selected.Results && 
                 Tamaño = ComboBox1.Selected.Results
             )
         Layout: =Layout.Vertical
