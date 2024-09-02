@@ -357,6 +357,9 @@ Resumen As screen:
                 "[$-en-US]#,###"
             )
             
+            
+            
+            
         Width: =155
         X: =1144
         Y: =205
@@ -839,7 +842,7 @@ Resumen As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =38
-        Text: =Sum(Value(Label4_12.Text) + Value(Label8.Text))
+        Text: =Sum(Value(Label4_12.Text) + Value(varTextoLabel8))
         Width: =192
         X: =1148
         Y: =599
