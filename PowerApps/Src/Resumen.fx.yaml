@@ -196,7 +196,7 @@ Resumen As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =8
+            Size: =10
             Text: =    ThisItem.Value.Title
             Width: =368
             X: =197
@@ -842,19 +842,7 @@ Resumen As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =38
-        Text: |-
-            ="$ " & Text(
-                Sum(
-                    Value(Label4.Text) + (varTextoLabel8) *
-                    If(
-                        !IsBlank(ComboBox3.Selected.Opcion),
-                        LookUp(colOpcionesValores, Opcion = ComboBox3.Selected.Opcion).Valor,
-                        0  // Valor predeterminado si no hay ninguna selección
-                    )
-                ),
-                "[$-en-US]#,###"
-            )
-        Visible: =false
+        Text: =
         Width: =192
         X: =1148
         Y: =599
