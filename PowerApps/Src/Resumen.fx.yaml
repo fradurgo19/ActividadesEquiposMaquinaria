@@ -38,8 +38,9 @@ Resumen As screen:
 
     Rectangle1_1 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
+        BorderThickness: =1
         Fill: =App.Theme.Colors.Darker30
-        Height: =356
+        Height: =366
         Width: =412
         X: =928
         Y: =284
@@ -116,7 +117,7 @@ Resumen As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Fill: =App.Theme.Colors.Darker30
-        Height: =544
+        Height: =554
         Items: |
             =Sort(
                 Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4}),
@@ -483,7 +484,7 @@ Resumen As screen:
         Text: =varTextoLabel8
         Width: =182
         X: =1158
-        Y: =555
+        Y: =567
         ZIndex: =25
 
     TextInput1 As text:
@@ -793,7 +794,7 @@ Resumen As screen:
             ="El valor total de desplazamiento ya incluye: trayecto de ida y vuelta y gastos de desplazamiento."
         Width: =412
         X: =928
-        Y: =598
+        Y: =613
         ZIndex: =31
 
     TextCanvas1_1 As Texto:
@@ -828,7 +829,7 @@ Resumen As screen:
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =52
         Icon: =Icon.Reload
-        OnSelect: =Reset(ComboBox3);Reset(TextInput1);Reset(TextInput1_1);Set(varTextoLabel8, "Calcular Valor")
+        OnSelect: =Reset(ComboBox3);Reset(TextInput1);Reset(TextInput1_1);Set(varTextoLabel8, "Calcular Valor");
         Width: =56
         X: =1277
         Y: =13
@@ -880,43 +881,6 @@ Resumen As screen:
         Y: =599
         ZIndex: =36
 
-    Label8_4 As label:
-        Align: =Align.Center
-        BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(240, 98, 15, 1)
-        FocusedBorderThickness: =30
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =36
-        Size: =10
-        Text: |-
-            ="$ " & Text(Alimentacion,"[$-en-US]#,###")
-        Width: =101
-        X: =1047
-        Y: =511
-        ZIndex: =37
-
-    Label8_5 As label:
-        Align: =Align.Center
-        BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(240, 98, 15, 1)
-        FocusedBorderThickness: =30
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Size: =10
-        Text: |-
-            ="$ " & Text(Hospedaje,"[$-en-US]#,###")
-        Width: =101
-        X: =1047
-        Y: =471
-        ZIndex: =38
-
     Label9_7 As label:
         BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =2
@@ -930,7 +894,7 @@ Resumen As screen:
         Height: =37
         Size: =10
         Text: ="Hospedaje"
-        Width: =114
+        Width: =95
         X: =933
         Y: =473
         ZIndex: =39
@@ -948,28 +912,10 @@ Resumen As screen:
         Height: =36
         Size: =10
         Text: ="Alimentación"
-        Width: =114
+        Width: =95
         X: =933
         Y: =511
         ZIndex: =40
-
-    Label8_6 As label:
-        Align: =Align.Center
-        BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(240, 98, 15, 1)
-        FocusedBorderThickness: =30
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Size: =10
-        Text: |-
-            ="$ " & Text(Valor1,"[$-en-US]#,###")
-        Width: =101
-        X: =1047
-        Y: =393
-        ZIndex: =41
 
     Label9_9 As label:
         BorderColor: =RGBA(255, 255, 255, 1)
@@ -984,29 +930,10 @@ Resumen As screen:
         Height: =39
         Size: =10
         Text: ="Recorrido"
-        Width: =114
+        Width: =95
         X: =933
         Y: =394
         ZIndex: =42
-
-    Label8_7 As label:
-        Align: =Align.Center
-        BorderThickness: =2
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(240, 98, 15, 1)
-        FocusedBorderThickness: =30
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =38
-        Size: =10
-        Text: |-
-            ="$ " & Text(Valor2,"[$-en-US]#,###")
-        Width: =101
-        X: =1047
-        Y: =433
-        ZIndex: =43
 
     Label9_12 As label:
         BorderColor: =RGBA(255, 255, 255, 1)
@@ -1021,7 +948,7 @@ Resumen As screen:
         Height: =37
         Size: =10
         Text: ="Kms"
-        Width: =114
+        Width: =95
         X: =933
         Y: =434
         ZIndex: =44
@@ -1041,6 +968,54 @@ Resumen As screen:
         Text: ="Total Desplazamiento"
         Width: =151
         X: =1006
-        Y: =555
+        Y: =567
         ZIndex: =45
+
+    ButtonCanvas1 As Botón:
+        DisplayMode: =DisplayMode.Edit
+        Height: =42
+        Icon: ="Airplane"
+        OnSelect: =
+        Text: |-
+            ="$ " & Text(Valor1,"[$-en-US]#,###")
+        Width: =158
+        X: =1028
+        Y: =391
+        ZIndex: =46
+
+    ButtonCanvas1_1 As Botón:
+        DisplayMode: =DisplayMode.Edit
+        Height: =36
+        Icon: ="ArrowExit"
+        OnSelect: =
+        Text: |-
+            ="$ " & Text(Valor2,"[$-en-US]#,###")
+        Width: =158
+        X: =1028
+        Y: =434
+        ZIndex: =47
+
+    ButtonCanvas1_2 As Botón:
+        DisplayMode: =DisplayMode.Edit
+        Height: =36
+        Icon: ="Home"
+        OnSelect: =
+        Text: |-
+            ="$ " & Text(Hospedaje,"[$-en-US]#,###")
+        Width: =158
+        X: =1028
+        Y: =470
+        ZIndex: =48
+
+    ButtonCanvas1_3 As Botón:
+        DisplayMode: =DisplayMode.Edit
+        Height: =45
+        Icon: ="ServiceBell"
+        OnSelect: =
+        Text: |-
+            ="$ " & Text(Alimentacion,"[$-en-US]#,###")
+        Width: =158
+        X: =1028
+        Y: =506
+        ZIndex: =49
 
