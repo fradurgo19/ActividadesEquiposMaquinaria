@@ -336,7 +336,8 @@ Resumen As screen:
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =48
-        Text: =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
+        Text: |
+            =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
         Width: =117
         X: =953
         Y: =204
@@ -595,7 +596,7 @@ Resumen As screen:
             =// Calcular las variables basadas en las entradas del usuario
             Set(Valor1, Value(TextInput1.Text) * 2 * 65000);
             Set(Valor2, Value(TextInput1_1.Text) * 2 * 1600);
-            Set(TotalHoras, Value(TextInput1.Text) * 2 * Value(Label4.Text));
+            Set(TotalHoras, Value(TextInput1.Text) * 2 + Value(Label4.Text));
             
             Set(Hospedaje, 
                 If(TotalHoras >= 9, 100000,0)
@@ -603,8 +604,8 @@ Resumen As screen:
             
             Set(Alimentacion, 
                 If(TotalHoras >= 9, 80000 * 2, 
-                    If(TotalHoras >=1 && TotalHoras <= 4, 40000),     
-                    If(TotalHoras >=5 && TotalHoras <= 8, 80000)
+                If(TotalHoras >=1 && TotalHoras <= 4, 40000),     
+                If(TotalHoras >=5 && TotalHoras <= 8, 80000)
                 )
             );
             
