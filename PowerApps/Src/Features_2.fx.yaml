@@ -352,7 +352,7 @@ Features_2 As screen:
         Items: |-
             =Filter(
                 colFilteredEnmotor, 
-                Tipo = "Excavadora" && Solución = ComboBox1_1.Selected.Results && Tamaño = ComboBox1.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox1_1.Selected.Results && field_7 = ComboBox1.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
