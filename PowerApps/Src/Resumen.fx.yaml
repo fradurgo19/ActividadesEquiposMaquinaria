@@ -566,7 +566,7 @@ Resumen As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
-        OnSelect: |
+        OnSelect: |+
             =// Calcular las variables basadas en las entradas del usuario
             Set(Valor1, Value(TextInput1.Text) * 2 * 65000);
             Set(Valor2, Value(TextInput1_1.Text) * 2 * 1600);
@@ -590,11 +590,7 @@ Resumen As screen:
             
             Set(varTextoLabel8, Text(TotalDesplazamiento, "[$-es-ES]$ #.###"));
             
-            // Suma total de desplazamiento
-            Set(TotalDesplazamientoyServicio, Value(TotalDesplazamiento) + Value(Label4_12.Text) );
             
-            // Mostrar el resultado en Label8 con formato
-            Label8_1.Text = Text(TotalDesplazamientoyServicio, "[$-es-ES]$ #,###")
         PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
@@ -843,9 +839,7 @@ Resumen As screen:
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
         Height: =38
-        Text: |+
-            =Sum((varTextoLabel8) + (Label4_12.Text),"[$-en-US] #,###")
-            
+        Text: =Sum(Value(Label4_12.Text) + Value(Label8.Text))
         Width: =192
         X: =1148
         Y: =599
