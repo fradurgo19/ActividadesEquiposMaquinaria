@@ -843,7 +843,7 @@ Features_2 As screen:
                 ForAll(
                     Distinct(
                         Enfriadores,
-                        field_7
+                        Tamaño
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -853,7 +853,7 @@ Features_2 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(Enfriadores,field_7),{Results:ThisRecord.Value}),Results),ComboBox1_2.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(Enfriadores,Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_2.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -900,7 +900,7 @@ Features_2 As screen:
                 ForAll(
                     Distinct(
                         Enfriadores,
-                        field_6
+                        Solución
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -910,7 +910,7 @@ Features_2 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(Enfriadores,field_6),{Results:ThisRecord.Value}),Results),ComboBox2.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(Enfriadores,Solución),{Results:ThisRecord.Value}),Results),ComboBox2.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -928,7 +928,7 @@ Features_2 As screen:
         Items: |-
             =Filter(
                 Enfriadores, 
-                field_5 = "Excavadora" && field_6 = ComboBox2.Selected.Results && field_7 = ComboBox1_2.Selected.Results 
+                Tipo = "Excavadora" && Solución = ComboBox2.Selected.Results && Tamaño = ComboBox1_2.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data

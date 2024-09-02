@@ -838,7 +838,7 @@ Resumen As screen:
         FontWeight: =FontWeight.Bold
         Height: =38
         Text: |+
-            =Text(Sum(varTextoLabel8) + (Label4_12.Text),"[$-en-US] #,###")
+            =Sum((varTextoLabel8) + (Label4_12.Text),"[$-en-US] #,###")
             
         Visible: =false
         Width: =192
