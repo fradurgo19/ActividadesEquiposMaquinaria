@@ -595,7 +595,7 @@ Resumen As screen:
             =// Calcular las variables basadas en las entradas del usuario
             Set(Valor1, Value(TextInput1.Text) * 2 * 65000);
             Set(Valor2, Value(TextInput1_1.Text) * 2 * 1600);
-            Set(TotalHoras, Value(TextInput1.Text) * 2 + 4);
+            Set(TotalHoras, Value(TextInput1.Text) * 2 * Value(Label4.Text));
             
             Set(Hospedaje, 
                 If(TotalHoras >= 9, 100000,0)
