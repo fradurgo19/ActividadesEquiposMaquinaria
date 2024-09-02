@@ -351,7 +351,7 @@ Features_2 As screen:
         Height: =571
         Items: |-
             =Filter(
-                Motor, 
+                colFilteredEnmotor, 
                 Tipo = "Excavadora" && Solucion = ComboBox1_1.Selected.Results && Tamaño = ComboBox1.Selected.Results 
             )
         Layout: =Layout.Vertical
