@@ -14,7 +14,7 @@ Features_2 As screen:
                 pop6: false
             }
         );
-    OnVisible: |
+    OnVisible: |+
         =UpdateContext(
             {
                 pop1: false,
@@ -27,6 +27,19 @@ Features_2 As screen:
             varCheckboxChecked,
             false
         );
+        ClearCollect(colFilteredEnfriadores,
+            Filter(
+                Enfriadores,
+                Tipo = "Excavadora"
+            )
+        );
+        ClearCollect(colFilteredEnmotor,
+            Filter(
+                Motor,
+                Tipo = "Excavadora"
+            )
+        )
+        
     Width: =Max(App.Width, App.DesignWidth)
 
     Image35 As image:
@@ -927,8 +940,8 @@ Features_2 As screen:
         Height: =521
         Items: |-
             =Filter(
-                Enfriadores, 
-                Tipo = "Excavadora" && Solución = ComboBox2.Selected.Results && Tamaño = ComboBox1_2.Selected.Results 
+                colFilteredEnfriadores, 
+                Tipo = "Excavadora" && Solucion = ComboBox2.Selected.Results && Tamaño = ComboBox1_2.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
