@@ -976,6 +976,7 @@ Resumen As screen:
         DisplayMode: =DisplayMode.Edit
         Height: =42
         Icon: ="Airplane"
+        Layout: ='ButtonCanvas.Layout'.IconBefore
         OnSelect: =
         Text: |-
             ="$ " & Text(Valor1,"[$-en-US]#,###")
