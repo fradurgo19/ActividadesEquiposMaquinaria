@@ -336,12 +336,10 @@ Features_2 As screen:
         DelayItemLoading: =true
         Fill: =RGBA(255, 191, 0, 1)
         Height: =571
-        Items: |
+        Items: |-
             =Filter(
                 Motor, 
-                Tipo = "Excavadora" &&
-                Solucion = ComboBox1_1.Selected.Results && 
-                Tamaño = ComboBox1.Selected.Results
+                Tipo = "Excavadora" && Solucion = ComboBox1_1.Selected.Results && Tamaño = ComboBox1.Selected.Results
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
