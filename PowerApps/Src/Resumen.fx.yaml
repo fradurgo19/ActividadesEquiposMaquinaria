@@ -39,7 +39,7 @@ Resumen As screen:
     Rectangle1_1 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =App.Theme.Colors.Darker30
-        Height: =290
+        Height: =356
         Width: =412
         X: =928
         Y: =284
@@ -483,7 +483,7 @@ Resumen As screen:
         Text: =varTextoLabel8
         Width: =192
         X: =1130
-        Y: =442
+        Y: =530
         ZIndex: =25
 
     TextInput1 As text:
@@ -543,6 +543,7 @@ Resumen As screen:
         ZIndex: =27
 
     Label9_4 As label:
+        BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -560,6 +561,7 @@ Resumen As screen:
         ZIndex: =28
 
     Label9_5 As label:
+        BorderColor: =RGBA(255, 255, 255, 1)
         BorderThickness: =2
         Color: =RGBA(255, 255, 255, 1)
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -624,7 +626,7 @@ Resumen As screen:
         Text: ="Calcular Valor"
         Width: =107
         X: =936
-        Y: =447
+        Y: =527
         ZIndex: =30
 
     Group3 As group:
@@ -791,7 +793,7 @@ Resumen As screen:
             ="El valor total de desplazamiento ya incluye: trayecto de ida y vuelta y gastos de desplazamiento."
         Width: =412
         X: =928
-        Y: =520
+        Y: =584
         ZIndex: =31
 
     TextCanvas1_1 As Texto:
@@ -877,4 +879,74 @@ Resumen As screen:
         X: =1148
         Y: =599
         ZIndex: =36
+
+    Label8_4 As label:
+        Align: =Align.Center
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(240, 98, 15, 1)
+        FocusedBorderThickness: =30
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =38
+        Text: =Alimentacion
+        Width: =192
+        X: =1130
+        Y: =481
+        ZIndex: =37
+
+    Label8_5 As label:
+        Align: =Align.Center
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(240, 98, 15, 1)
+        FocusedBorderThickness: =30
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =38
+        Text: =Hospedaje
+        Width: =192
+        X: =1130
+        Y: =433
+        ZIndex: =38
+
+    Label9_7 As label:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =App.Theme.Colors.Darker30
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        Size: =12
+        Text: ="Hospedaje"
+        Width: =194
+        X: =936
+        Y: =434
+        ZIndex: =39
+
+    Label9_8 As label:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =App.Theme.Colors.Darker30
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =36
+        Size: =12
+        Text: ="Alimentación"
+        Width: =194
+        X: =936
+        Y: =481
+        ZIndex: =40
 
