@@ -1526,7 +1526,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredTanqueHidraulico,field_6=ComboBox2_3.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_5.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredTanqueDeCombustible,field_6=ComboBox2_3.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_5.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1599,7 +1599,7 @@ Features_3 As screen:
         Height: =565
         Items: |-
             =Filter(
-                colFilteredTanqueHidraulico, 
+                colFilteredTanqueDeCombustible, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_3.Selected.Results && field_7 = ComboBox1_5.Selected.Results 
             )
         Layout: =Layout.Vertical
