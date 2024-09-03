@@ -30,8 +30,8 @@ Features_3 As screen:
             =
             true
         Width: =151
-        X: =428
-        Y: =300
+        X: =441
+        Y: =298
         ZIndex: =2
 
     Image40 As image:
@@ -163,8 +163,8 @@ Features_3 As screen:
         Size: =13.34
         Text: ="Motor de Giro/ Reductor de Giro"
         Width: =190
-        X: =102
-        Y: =329
+        X: =58
+        Y: =325
         ZIndex: =10
 
     icon11_17 As icon.Add:
@@ -179,8 +179,8 @@ Features_3 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
         TabIndex: =0
         Width: =77
-        X: =861
-        Y: =323
+        X: =769
+        Y: =361
         ZIndex: =15
 
     Label1_12 As label:
@@ -197,8 +197,8 @@ Features_3 As screen:
         Size: =13.34
         Text: ="Banco de Vávulas"
         Width: =167
-        X: =923
-        Y: =331
+        X: =831
+        Y: =369
         ZIndex: =16
 
     icon11_18 As icon.Add:
@@ -212,8 +212,8 @@ Features_3 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
         TabIndex: =0
         Width: =57
-        X: =157
-        Y: =197
+        X: =40
+        Y: =226
         ZIndex: =17
 
     Label1_13 As label:
@@ -230,8 +230,8 @@ Features_3 As screen:
         Size: =13.34
         Text: ="Banco de Solenoide"
         Width: =177
-        X: =206
-        Y: =183
+        X: =89
+        Y: =212
         ZIndex: =18
 
     icon11_38 As icon.Add:
@@ -246,8 +246,8 @@ Features_3 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
         TabIndex: =0
         Width: =57.36
-        X: =186
-        Y: =406
+        X: =250
+        Y: =407
         ZIndex: =25
 
     Label1_35 As label:
@@ -264,8 +264,8 @@ Features_3 As screen:
         Size: =13.34
         Text: ="Center Joint"
         Width: =117
-        X: =238
-        Y: =410
+        X: =131
+        Y: =406
         ZIndex: =26
 
     Image39 As image:
@@ -700,18 +700,6 @@ Features_3 As screen:
             Y: =550
             ZIndex: =36
 
-        Image12 As image:
-            BorderColor: =App.Theme.Colors.Darker40
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =96
-            Image: ='Control-Valves-fotor-bg-remover-20240509123915'
-            Visible: =pop4
-            Width: =241.45
-            X: =428.21
-            Y: =586
-            ZIndex: =37
-
     icon11_13 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
@@ -848,6 +836,17 @@ Features_3 As screen:
         Y: =58
         ZIndex: =50
 
+    Image12_1 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =114
+        Image: ='Control-Valves-fotor-bg-remover-20240509123915'
+        Width: =120
+        X: =635
+        Y: =327
+        ZIndex: =51
+
     Group6 As group:
         Height: =5
         Width: =5
@@ -938,4 +937,15 @@ Features_3 As screen:
             X: =355
             Y: =650
             ZIndex: =41
+
+    Image13_1 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =62
+        Image: =Solenoide
+        Width: =60
+        X: =413
+        Y: =319
+        ZIndex: =52
 
