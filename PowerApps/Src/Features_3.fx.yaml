@@ -1151,7 +1151,7 @@ Features_3 As screen:
         Visible: =pop2
         Width: =46
         X: =1301
-        Y: =146
+        Y: =128
         ZIndex: =55
 
     ButtonCanvas4_7 As Botón:
@@ -1177,7 +1177,7 @@ Features_3 As screen:
         Visible: =pop2
         Width: =41
         X: =1250
-        Y: =146
+        Y: =128
         ZIndex: =56
 
     ComboBox1_4 As combobox:
@@ -1201,7 +1201,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredMotorGiro,
+                            colFilteredTanqueHidraulico,
                             field_6 = ComboBox2_2.Selected.Results
                         ),
                         field_7
@@ -1221,7 +1221,7 @@ Features_3 As screen:
         Visible: =pop2
         Width: =103
         X: =1051
-        Y: =149
+        Y: =131
         ZIndex: =57
 
     icon14_12 As icon.Cancel:
@@ -1260,7 +1260,7 @@ Features_3 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredMotorGiro,
+                        colFilteredTanqueHidraulico,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -1271,23 +1271,23 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredMotorGiro,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_2.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredTanqueHidraulico,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_2.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop2
         Width: =104
         X: =932
-        Y: =146
+        Y: =128
         ZIndex: =59
 
     "Gallery2_3 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
         Fill: =Color.LimeGreen
-        Height: =537
+        Height: =545
         Items: |-
             =Filter(
-                colFilteredMotorGiro, 
+                colFilteredTanqueHidraulico, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_2.Selected.Results && field_7 = ComboBox1_4.Selected.Results 
             )
         Layout: =Layout.Vertical
@@ -1297,7 +1297,7 @@ Features_3 As screen:
         Visible: =pop2
         Width: =430
         X: =920
-        Y: =193
+        Y: =185
         ZIndex: =60
 
         Title3_7 As label:
