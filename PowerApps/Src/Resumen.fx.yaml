@@ -605,9 +605,7 @@ Resumen As screen:
             Set(HorasRestantes, Mod(TotalHoras, 9));
             
             // Calcular Hospedaje
-            Set(Hospedaje, 
-                If(TotalHoras >= 9, DiasCompletos * 100000 + If(HorasRestantes > 0, 100000, 0), 0)
-            );
+            Set(Hospedaje, DiasCompletos * 100000);
             
             // Calcular Alimentacion
             Set(Alimentacion, 
