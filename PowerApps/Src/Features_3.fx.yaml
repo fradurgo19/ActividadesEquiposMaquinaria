@@ -860,7 +860,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnfriadores,field_6=ComboBox2_1.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_3.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredMotorGiro,field_6=ComboBox2_1.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_3.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
