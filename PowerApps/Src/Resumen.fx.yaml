@@ -300,17 +300,6 @@ Resumen As screen:
             Y: =6
             ZIndex: =14
 
-    Image11 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =50
-        Image: ='icons8-atrás-100'
-        OnSelect: =Back()
-        Width: =50
-        Y: =2
-        ZIndex: =8
-
     Label4_1 As label:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
@@ -323,7 +312,7 @@ Resumen As screen:
         Size: =12
         Text: ="Atras"
         Width: =73
-        X: =50
+        X: =66
         Y: =4
         ZIndex: =9
 
@@ -1032,4 +1021,15 @@ Resumen As screen:
         X: =1028
         Y: =506
         ZIndex: =49
+
+    Image7 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =57
+        Image: =Avtivi
+        OnSelect: =Back()
+        Width: =70
+        Y: =2
+        ZIndex: =50
 
