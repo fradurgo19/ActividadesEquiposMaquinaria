@@ -1513,7 +1513,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredTanqueHidraulico,
+                            colFilteredTanqueDeCombustible,
                             field_6 = ComboBox2_3.Selected.Results
                         ),
                         field_7
@@ -1572,7 +1572,7 @@ Features_3 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredTanqueHidraulico,
+                        colFilteredTanqueDeCombustible,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -1583,7 +1583,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredTanqueHidraulico,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_3.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredTanqueDeCombustible,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_3.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop3
