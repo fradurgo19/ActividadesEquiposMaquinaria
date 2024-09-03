@@ -103,7 +103,7 @@ Features_3 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Lighter
-        Height: =44
+        Height: =48
         HoverBorderColor: =Label2_12.BorderColor
         HoverColor: =Label2_12.Color
         HoverFill: =Label2_12.Fill
@@ -117,8 +117,8 @@ Features_3 As screen:
         Size: =13
         Text: |-
             ="EXCAVADORA: Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
-        Width: =1281.96
-        X: =82.71
+        Width: =1113
+        X: =250
         ZIndex: =5
 
     icon11_12 As icon.Add:
@@ -1123,18 +1123,6 @@ Features_3 As screen:
             Y: =28
             ZIndex: =8
 
-    Image2_1 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =50
-        Image: ='icons8-resumen-64'
-        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
-        Width: =50
-        X: =2
-        Y: =50
-        ZIndex: =55
-
     Label4_14 As label:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
@@ -1147,7 +1135,19 @@ Features_3 As screen:
         Size: =12
         Text: ="Resumen"
         Width: =97
-        X: =44
-        Y: =53
+        X: =30
+        Y: =101
         ZIndex: =56
+
+    Image24_1 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =38
+        Image: ='icons8-estimar'
+        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+        Width: =74
+        X: =41
+        Y: =68
+        ZIndex: =57
 
