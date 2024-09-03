@@ -617,7 +617,8 @@ Features_3 As screen:
             PressedFill: =Rectangle4_36.Fill
             TabIndex: =0
             Visible: =pop4
-            Width: =524
+            Width: =420
+            X: =104
             Y: =48
             ZIndex: =43
 
@@ -641,8 +642,8 @@ Features_3 As screen:
             Text: ="ZONA 2"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
-            Width: =305
-            X: =28
+            Width: =244
+            X: =126
             Y: =83
             ZIndex: =44
 
@@ -669,8 +670,8 @@ Features_3 As screen:
             Text: ="Banco de Válvulas 👆"
             Tooltip: ="Seleccione"
             Visible: =pop4
-            Width: =262
-            X: =8
+            Width: =210
+            X: =110
             Y: =185
             ZIndex: =45
 
@@ -685,8 +686,8 @@ Features_3 As screen:
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop4
-            Width: =42
-            X: =459
+            Width: =34
+            X: =472
             Y: =64
             ZIndex: =46
 
@@ -727,7 +728,8 @@ Features_3 As screen:
             PressedFill: =Rectangle4_37.Fill
             TabIndex: =0
             Visible: =pop5
-            Width: =473
+            Width: =391
+            X: =82
             Y: =56
             ZIndex: =39
 
@@ -736,7 +738,7 @@ Features_3 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
             Font: =App.Theme.Font
-            Height: =41
+            Height: =39
             HoverBorderColor: =Label8_55.BorderColor
             HoverColor: =Label8_55.Color
             HoverFill: =Label8_55.Fill
@@ -751,8 +753,8 @@ Features_3 As screen:
             Text: ="ZONA 2"
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop5
-            Width: =90
-            X: =27
+            Width: =144
+            X: =104
             Y: =63
             ZIndex: =40
 
@@ -762,7 +764,7 @@ Features_3 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =31
+            Height: =55
             HoverBorderColor: =Label9_100.BorderColor
             HoverColor: =Label9_100.Color
             HoverFill: =Label9_100.Fill
@@ -779,9 +781,9 @@ Features_3 As screen:
             Text: ="BANCO DE SOLENOIDE 👆"
             Tooltip: ="Seleccione"
             Visible: =pop5
-            Width: =266
-            X: =24
-            Y: =103
+            Width: =262
+            X: =105
+            Y: =133
             ZIndex: =41
 
         icon12_28 As icon.Cancel:
@@ -789,15 +791,15 @@ Features_3 As screen:
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =20
+            Height: =29
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false})
             TabIndex: =0
             Visible: =pop5
-            Width: =24
-            X: =408
-            Y: =68
+            Width: =27
+            X: =430
+            Y: =65
             ZIndex: =42
 
     ButtonCanvas4_5 As Botón:
@@ -1130,13 +1132,12 @@ Features_3 As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =46
+        Height: =33
         OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
         Size: =12
         Text: ="Resumen"
-        Width: =97
-        X: =30
-        Y: =101
+        Width: =82
+        Y: =86
         ZIndex: =56
 
     Image24_1 As image:
@@ -1146,8 +1147,8 @@ Features_3 As screen:
         Height: =38
         Image: ='icons8-estimar'
         OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
-        Width: =74
-        X: =41
-        Y: =68
+        Width: =72
+        X: =5
+        Y: =50
         ZIndex: =57
 
