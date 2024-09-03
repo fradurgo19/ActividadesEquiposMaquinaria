@@ -337,8 +337,7 @@ Resumen As screen:
         FontWeight: =FontWeight.Bold
         Height: =48
         Text: |+
-            =
-            Round(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 0)
+            =RoundUp(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 0)
             
         Width: =117
         X: =953
@@ -601,7 +600,7 @@ Resumen As screen:
             Set(TotalHoras, Value(TextInput1.Text) * 2 + Value(Label4.Text));
             
             // Calcular los días completos y horas restantes
-            Set(DiasCompletos, RoundUp(TotalHoras / 9, 0));
+            Set(DiasCompletos, Int(TotalHoras / 9));
             Set(HorasRestantes, Mod(TotalHoras, 9));
             
             // Calcular Hospedaje
