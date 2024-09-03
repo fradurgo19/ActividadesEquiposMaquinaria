@@ -7,16 +7,6 @@ Features As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
 
-    Image23 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =724
-        Image: ='Captura_de_pantalla_2024-08-28_123136-removebg-preview'
-        Width: =1366
-        Y: =44
-        ZIndex: =1
-
     Rectangle2_2 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =App.Theme.Colors.Primary
