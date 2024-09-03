@@ -600,13 +600,20 @@ Resumen As screen:
             Set(Valor2, Value(TextInput1_1.Text) * 2 * 1600);
             Set(TotalHoras, Value(TextInput1.Text) * 2 + Value(Label4.Text));
             
+            // Calcular los días completos y horas restantes
+            Set(DiasCompletos, RoundDown(TotalHoras / 9, 0));
+            Set(HorasRestantes, Mod(TotalHoras, 9));
+            
+            // Calcular Hospedaje
             Set(Hospedaje, 
-                If(TotalHoras >= 9, 100000,0)
+                If(TotalHoras >= 9, DiasCompletos * 100000 + If(HorasRestantes > 0, 100000, 0), 0)
             );
             
             // Calcular Alimentacion
             Set(Alimentacion, 
-                If(TotalHoras >= 9, 80000 * 2, 
+                If(TotalHoras >= 9, DiasCompletos * 160000 + 
+                    If(HorasRestantes >= 5 && HorasRestantes <= 8, 80000, 
+                    If(HorasRestantes >= 1 && HorasRestantes <= 4, 40000, 0)),
                 If(TotalHoras >= 5 && TotalHoras <= 8, 80000, 
                 If(TotalHoras >= 1 && TotalHoras <= 4, 40000, 0))
                 )
