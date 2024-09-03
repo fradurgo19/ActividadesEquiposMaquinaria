@@ -601,7 +601,7 @@ Resumen As screen:
             Set(TotalHoras, Value(TextInput1.Text) * 2 + Value(Label4.Text));
             
             // Calcular los días completos y horas restantes
-            Set(DiasCompletos, RoundDown(TotalHoras / 9, 0));
+            Set(DiasCompletos, RoundUp(TotalHoras / 9, 0));
             Set(HorasRestantes, Mod(TotalHoras, 9));
             
             // Calcular Hospedaje
