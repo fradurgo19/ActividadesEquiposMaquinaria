@@ -336,8 +336,10 @@ Resumen As screen:
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =48
-        Text: |
-            =Sum(Gallery7.AllItems, Value(Subtitle7_2.Text))
+        Text: |+
+            =
+            Round(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 0)
+            
         Width: =117
         X: =953
         Y: =204
