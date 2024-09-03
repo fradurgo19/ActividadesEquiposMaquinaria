@@ -379,7 +379,7 @@ Features_3 As screen:
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =116
+            Height: =115
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
@@ -387,20 +387,20 @@ Features_3 As screen:
             Visible: =pop1
             Width: =37
             X: =1315.31
-            Y: =109
+            Y: =96
             ZIndex: =18
 
         Rectangle9_13 As rectangle:
             BorderColor: =App.Theme.Colors.Darker40
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =121
+            Height: =120
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop1
             Width: =58
             X: =1304.64
-            Y: =78
+            Y: =65
             ZIndex: =19
 
         Rectangle4_29 As rectangle:
@@ -408,14 +408,14 @@ Features_3 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_29.Fill
             Fill: =Color.SkyBlue
-            Height: =679
+            Height: =676
             HoverFill: =Rectangle4_29.Fill
             PressedFill: =Rectangle4_29.Fill
             TabIndex: =0
             Visible: =pop1
             Width: =445
             X: =920.45
-            Y: =69
+            Y: =56
             ZIndex: =20
 
     Group22 As group:
@@ -501,9 +501,9 @@ Features_3 As screen:
         Size: =15
         Text: ="MOTOR DE GIRO / REDUCTOR DE GIRO"
         Visible: =pop1
-        Width: =290
-        X: =939
-        Y: =75
+        Width: =322
+        X: =929
+        Y: =60
         ZIndex: =47
 
     Group23 As group:
@@ -583,7 +583,7 @@ Features_3 As screen:
         Visible: =pop1
         Width: =42
         X: =1315
-        Y: =79
+        Y: =59
         ZIndex: =48
 
     Group24 As group:
@@ -692,8 +692,8 @@ Features_3 As screen:
         Text: ="Selec Todo"
         Visible: =pop1
         Width: =46
-        X: =1302
-        Y: =125
+        X: =1311
+        Y: =124
         ZIndex: =49
 
     Group25 As group:
@@ -808,8 +808,8 @@ Features_3 As screen:
         Text: ="Borrar Todo"
         Visible: =pop1
         Width: =41
-        X: =1251
-        Y: =125
+        X: =1260
+        Y: =124
         ZIndex: =50
 
     ComboBox1_3 As combobox:
@@ -853,7 +853,7 @@ Features_3 As screen:
         Visible: =pop1
         Width: =103
         X: =1061
-        Y: =152
+        Y: =127
         ZIndex: =51
 
     Group6 As group:
@@ -932,7 +932,7 @@ Features_3 As screen:
         Visible: =pop1
         Width: =42
         X: =1263
-        Y: =81
+        Y: =61
         ZIndex: =52
 
     ComboBox2_1 As combobox:
@@ -972,14 +972,14 @@ Features_3 As screen:
         Visible: =pop1
         Width: =104
         X: =942
-        Y: =149
+        Y: =124
         ZIndex: =53
 
     "Gallery2_2 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
         Fill: =Color.SkyBlue
-        Height: =533
+        Height: =537
         Items: |-
             =Filter(
                 colFilteredEnfriadores, 
@@ -992,7 +992,7 @@ Features_3 As screen:
         Visible: =pop1
         Width: =416
         X: =939
-        Y: =199
+        Y: =185
         ZIndex: =54
 
         Title3_5 As label:
