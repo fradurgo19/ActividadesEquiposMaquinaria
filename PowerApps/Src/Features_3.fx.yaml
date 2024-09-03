@@ -847,7 +847,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredEnfriadores,
+                            colFilteredMotorGiro,
                             field_6 = ComboBox2_1.Selected.Results
                         ),
                         field_7
@@ -969,7 +969,7 @@ Features_3 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        Enfriadores,
+                        colFilteredMotorGiro,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -980,7 +980,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(Enfriadores,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_1.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredMotorGiro,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_1.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop1
@@ -996,7 +996,7 @@ Features_3 As screen:
         Height: =537
         Items: |-
             =Filter(
-                colFilteredEnfriadores, 
+                colFilteredMotorGiro, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_1.Selected.Results && field_7 = ComboBox1_3.Selected.Results 
             )
         Layout: =Layout.Vertical
