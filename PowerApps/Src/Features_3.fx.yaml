@@ -114,7 +114,7 @@ Features_3 As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Lighter
-        Height: =48
+        Height: =44
         HoverBorderColor: =Label2_12.BorderColor
         HoverColor: =Label2_12.Color
         HoverFill: =Label2_12.Fill
@@ -128,8 +128,8 @@ Features_3 As screen:
         Size: =13
         Text: |-
             ="EXCAVADORA: Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
-        Width: =1113
-        X: =250
+        Width: =1281
+        X: =82
         ZIndex: =7
 
     icon11_12 As icon.Add:
@@ -1214,7 +1214,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredMotorGiro,field_6=ComboBox2_2.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_4.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredTanqueHidraulico,field_6=ComboBox2_2.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_4.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
