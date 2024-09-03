@@ -55,36 +55,6 @@ Features_5 As screen:
         X: =58.7
         ZIndex: =3
 
-    Group10_7 As group:
-        Height: =44
-        Width: =44
-        X: =0
-        Y: =0
-        ZIndex: =4
-
-        Rectangle15_10 As rectangle:
-            BorderColor: =App.Theme.Colors.Darker40
-            Fill: =RGBA(62,96,170,0)
-            Height: =44
-            OnSelect: =Navigate(Home, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =58.7
-            ZIndex: =4
-
-        icon1_8 As icon.ChevronLeft:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =32
-            Icon: =Icon.ChevronLeft
-            OnSelect: =Navigate(Features, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =26.68
-            X: =16.01
-            Y: =6
-            ZIndex: =5
-
     Rectangle15_17 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =RGBA(62,96,170,0)
@@ -188,6 +158,17 @@ Features_5 As screen:
         X: =106.72
         Y: =436
         ZIndex: =25
+
+    Image6_6 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =44
+        Image: =Izquierda
+        OnSelect: =Navigate(Features, ScreenTransition.Fade)
+        Width: =68
+        X: =1
+        ZIndex: =26
 
     Group5_2 As group:
         Height: =5
