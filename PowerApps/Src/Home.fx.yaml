@@ -218,15 +218,13 @@ Home As screen:
         Y: =604
         ZIndex: =36
 
-    Image1 As image:
+    Image8 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =50
-        Image: ='puerta-de-salida'
+        Image: ='icons8-salida'
         OnSelect: =Exit()
-        Width: =50
         X: =18
         Y: =18
-        ZIndex: =38
+        ZIndex: =37
 
