@@ -1083,27 +1083,29 @@ Features_2 As screen:
             BorderColor: =App.Theme.Colors.Darker40
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =50
+            Height: =67
             Image: ='icons8-resumen-64'
             OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
-            Width: =50
-            Y: =105
+            Width: =92
+            X: =36
+            Y: =61
             ZIndex: =22
 
         Label4_2 As label:
+            Align: =Align.Center
             BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255, 255, 255, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =46
+            Height: =52
             OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
             Size: =12
             Text: ="Resumen"
-            Width: =97
-            X: =42
-            Y: =108
+            Width: =142
+            X: =16
+            Y: =128
             ZIndex: =23
 
     Group1 As group:
