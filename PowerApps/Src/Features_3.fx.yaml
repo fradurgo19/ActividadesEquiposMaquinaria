@@ -181,7 +181,7 @@ Features_3 As screen:
         Width: =77
         X: =769
         Y: =361
-        ZIndex: =12
+        ZIndex: =11
 
     Label1_12 As label:
         Align: =Align.Center
@@ -199,7 +199,7 @@ Features_3 As screen:
         Width: =167
         X: =831
         Y: =369
-        ZIndex: =13
+        ZIndex: =12
 
     icon11_18 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -212,9 +212,9 @@ Features_3 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
         TabIndex: =0
         Width: =57
-        X: =40
-        Y: =226
-        ZIndex: =14
+        X: =794
+        Y: =242
+        ZIndex: =13
 
     Label1_13 As label:
         Align: =Align.Center
@@ -230,9 +230,9 @@ Features_3 As screen:
         Size: =13.34
         Text: ="Banco de Solenoide"
         Width: =177
-        X: =89
-        Y: =212
-        ZIndex: =15
+        X: =843
+        Y: =228
+        ZIndex: =14
 
     icon11_38 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -248,7 +248,7 @@ Features_3 As screen:
         Width: =57.36
         X: =250
         Y: =407
-        ZIndex: =20
+        ZIndex: =15
 
     Label1_35 As label:
         Align: =Align.Center
@@ -266,7 +266,7 @@ Features_3 As screen:
         Width: =117
         X: =131
         Y: =406
-        ZIndex: =21
+        ZIndex: =16
 
     Image39 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -276,7 +276,7 @@ Features_3 As screen:
         Width: =120
         X: =552
         Y: =106
-        ZIndex: =22
+        ZIndex: =17
 
     icon11_16 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -292,7 +292,7 @@ Features_3 As screen:
         Width: =57.36
         X: =319
         Y: =57
-        ZIndex: =39
+        ZIndex: =30
 
     Label1_11 As label:
         Align: =Align.Center
@@ -309,7 +309,7 @@ Features_3 As screen:
         Width: =194
         X: =381
         Y: =57
-        ZIndex: =40
+        ZIndex: =31
 
     icon11_13 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -325,7 +325,7 @@ Features_3 As screen:
         Width: =57
         X: =592
         Y: =57
-        ZIndex: =41
+        ZIndex: =32
 
     Label1_10 As label:
         Align: =Align.Center
@@ -343,7 +343,7 @@ Features_3 As screen:
         Width: =177
         X: =647
         Y: =58
-        ZIndex: =42
+        ZIndex: =33
 
     Image12_1 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -354,7 +354,7 @@ Features_3 As screen:
         Width: =120
         X: =635
         Y: =327
-        ZIndex: =43
+        ZIndex: =34
 
     Image13_1 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -365,7 +365,7 @@ Features_3 As screen:
         Width: =60
         X: =413
         Y: =319
-        ZIndex: =44
+        ZIndex: =35
 
     Group9 As group:
         Height: =5
@@ -388,7 +388,7 @@ Features_3 As screen:
             Width: =37
             X: =1315.31
             Y: =91
-            ZIndex: =23
+            ZIndex: =18
 
         Rectangle9_13 As rectangle:
             BorderColor: =App.Theme.Colors.Darker40
@@ -401,7 +401,7 @@ Features_3 As screen:
             Width: =58
             X: =1304.64
             Y: =60
-            ZIndex: =24
+            ZIndex: =19
 
         Rectangle4_29 As rectangle:
             BorderColor: =RGBA(255, 255, 255, 255)
@@ -416,7 +416,7 @@ Features_3 As screen:
             Width: =445
             X: =920.45
             Y: =51
-            ZIndex: =25
+            ZIndex: =20
 
         Label8_44 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -441,7 +441,7 @@ Features_3 As screen:
             Width: =278
             X: =933
             Y: =61
-            ZIndex: =26
+            ZIndex: =21
 
         icon12_19 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
@@ -457,7 +457,7 @@ Features_3 As screen:
             Width: =51
             X: =1304
             Y: =64
-            ZIndex: =27
+            ZIndex: =22
 
     Group22 As group:
         Height: =5
@@ -471,15 +471,15 @@ Features_3 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_34.Fill
             Fill: =App.Theme.Colors.Darker30
-            Height: =695
+            Height: =693
             HoverFill: =Rectangle4_34.Fill
             PressedFill: =Rectangle4_34.Fill
             TabIndex: =0
             Visible: =pop2
             Width: =540
             X: =826
-            Y: =49
-            ZIndex: =36
+            Y: =51
+            ZIndex: =27
 
         Label8_52 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -504,7 +504,7 @@ Features_3 As screen:
             Width: =176
             X: =865
             Y: =91
-            ZIndex: =37
+            ZIndex: =28
 
         icon12_25 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
@@ -520,7 +520,7 @@ Features_3 As screen:
             Width: =46
             X: =1310
             Y: =56
-            ZIndex: =38
+            ZIndex: =29
 
     Group23 As group:
         Height: =5
@@ -529,12 +529,27 @@ Features_3 As screen:
         Y: =40
         ZIndex: =47
 
+        Rectangle4_35 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_35.Fill
+            Fill: =App.Theme.Colors.Darker30
+            Height: =674
+            HoverFill: =Rectangle4_35.Fill
+            PressedFill: =Rectangle4_35.Fill
+            TabIndex: =0
+            Visible: =pop3
+            Width: =540
+            X: =826
+            Y: =56
+            ZIndex: =36
+
         Label8_53 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
             Font: =App.Theme.Font
-            Height: =31
+            Height: =37
             HoverBorderColor: =Label8_53.BorderColor
             HoverColor: =Label8_53.Color
             HoverFill: =Label8_53.Fill
@@ -550,40 +565,25 @@ Features_3 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop3
             Width: =176
-            X: =885
-            Y: =158
-            ZIndex: =11
-
-        Rectangle4_35 As rectangle:
-            BorderColor: =RGBA(255, 255, 255, 255)
-            BorderThickness: =5
-            DisabledFill: =Rectangle4_35.Fill
-            Fill: =App.Theme.Colors.Darker30
-            Height: =430
-            HoverFill: =Rectangle4_35.Fill
-            PressedFill: =Rectangle4_35.Fill
-            TabIndex: =0
-            Visible: =pop3
-            Width: =540
-            X: =826
-            Y: =300
-            ZIndex: =45
+            X: =909
+            Y: =81
+            ZIndex: =37
 
         icon12_26 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =31
+            Height: =34
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop3
             Width: =46
-            X: =1290
-            Y: =158
-            ZIndex: =46
+            X: =1240
+            Y: =80
+            ZIndex: =38
 
     Group24 As group:
         Height: =5
@@ -603,9 +603,8 @@ Features_3 As screen:
             TabIndex: =0
             Visible: =pop4
             Width: =524
-            X: =842
-            Y: =45
-            ZIndex: =28
+            Y: =48
+            ZIndex: =43
 
         Label8_54 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -628,9 +627,9 @@ Features_3 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop4
             Width: =305
-            X: =870
-            Y: =80
-            ZIndex: =29
+            X: =28
+            Y: =83
+            ZIndex: =44
 
         Label9_99 As label:
             BorderColor: =App.Theme.Colors.Darker40
@@ -656,25 +655,25 @@ Features_3 As screen:
             Tooltip: ="Seleccione"
             Visible: =pop4
             Width: =262
-            X: =850
-            Y: =182
-            ZIndex: =30
+            X: =8
+            Y: =185
+            ZIndex: =45
 
         icon12_27 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =58
+            Height: =38
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
             TabIndex: =0
             Visible: =pop4
-            Width: =54
-            X: =1301
-            Y: =61
-            ZIndex: =31
+            Width: =42
+            X: =459
+            Y: =64
+            ZIndex: =46
 
     Group25 As group:
         Height: =5
@@ -694,9 +693,8 @@ Features_3 As screen:
             TabIndex: =0
             Visible: =pop5
             Width: =473
-            X: =893
-            Y: =44
-            ZIndex: =16
+            Y: =56
+            ZIndex: =39
 
         Label8_55 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -719,9 +717,9 @@ Features_3 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop5
             Width: =90
-            X: =920
-            Y: =51
-            ZIndex: =17
+            X: =27
+            Y: =63
+            ZIndex: =40
 
         Label9_100 As label:
             BorderColor: =App.Theme.Colors.Darker40
@@ -747,9 +745,9 @@ Features_3 As screen:
             Tooltip: ="Seleccione"
             Visible: =pop5
             Width: =266
-            X: =917
-            Y: =91
-            ZIndex: =18
+            X: =24
+            Y: =103
+            ZIndex: =41
 
         icon12_28 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
@@ -763,9 +761,9 @@ Features_3 As screen:
             TabIndex: =0
             Visible: =pop5
             Width: =24
-            X: =1301
-            Y: =56
-            ZIndex: =19
+            X: =408
+            Y: =68
+            ZIndex: =42
 
     Group6 As group:
         Height: =5
@@ -779,66 +777,38 @@ Features_3 As screen:
             BorderThickness: =5
             DisabledFill: =Rectangle4_61.Fill
             Fill: =App.Theme.Colors.Darker30
-            Height: =132
+            Height: =696
             HoverFill: =Rectangle4_61.Fill
             PressedFill: =Rectangle4_61.Fill
             TabIndex: =0
             Visible: =pop6
             Width: =540
-            X: =294
-            Y: =628
-            ZIndex: =32
+            X: =826
+            Y: =51
+            ZIndex: =23
 
         icon12_57 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(242, 242, 242, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =43
+            Height: =39
             Icon: =Icon.Cancel
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
             Visible: =pop6
-            Width: =41
-            X: =775
-            Y: =639
-            ZIndex: =33
-
-        Label9_121 As label:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =34
-            HoverBorderColor: =Label9_121.BorderColor
-            HoverColor: =Label9_121.Color
-            HoverFill: =Label9_121.Fill
-            OnSelect: |-
-                =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BD78DC54A-B41D-471E-B781-57A17A413898%7D&file=Center%20Joint.xlsx&action=default&mobileredirect=true")
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Label9_121.BorderColor
-            PressedColor: =Label9_121.Color
-            PressedFill: =Label9_121.Fill
-            Size: =14.67
-            Text: ="Center Joint 👆"
-            Tooltip: ="Seleccione"
-            Visible: =pop6
-            Width: =250
-            X: =321
-            Y: =710
-            ZIndex: =34
+            Width: =45
+            X: =1310
+            Y: =75
+            ZIndex: =24
 
         Label8_78 As label:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
             Font: =App.Theme.Font
-            Height: =25
+            Height: =61
             HoverBorderColor: =Label8_78.BorderColor
             HoverColor: =Label8_78.Color
             HoverFill: =Label8_78.Fill
@@ -854,7 +824,7 @@ Features_3 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =pop6
             Width: =106
-            X: =355
-            Y: =650
-            ZIndex: =35
+            X: =895
+            Y: =81
+            ZIndex: =26
 
