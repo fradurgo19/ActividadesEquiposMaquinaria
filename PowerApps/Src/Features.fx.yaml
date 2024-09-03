@@ -1,7 +1,7 @@
 Features As screen:
-    BackgroundImage: =
+    BackgroundImage: ='premium_photo-1661963927439-26e74bee3674-removebg-preview'
     Height: =Max(App.Height, App.DesignHeight)
-    ImagePosition: =ImagePosition.Stretch
+    ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnVisible: |-
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
@@ -92,8 +92,8 @@ Features As screen:
         OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =372
-        Y: =648
+        X: =977
+        Y: =580
         ZIndex: =7
 
     Rectangle15_7 As rectangle:
@@ -443,8 +443,8 @@ Features As screen:
         Text: ="ZONA 1 Motor y Enfriadores"
         Tooltip: ="ZONA 1"
         Width: =109
-        X: =263
-        Y: =648
+        X: =1027
+        Y: =585
         ZIndex: =23
 
     icon9_3 As icon.Add:
@@ -458,8 +458,8 @@ Features As screen:
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =380
-        Y: =472
+        X: =650
+        Y: =396
         ZIndex: =24
 
     Label3_1 As label:
@@ -476,8 +476,8 @@ Features As screen:
             ="ZONA 5: Motores de traslación, Contrapesa y Tornamesa"
         Tooltip: ="ZONA 5"
         Width: =160.08
-        X: =220
-        Y: =463
+        X: =495
+        Y: =391
         ZIndex: =25
 
     icon9_4 As icon.Add:
@@ -491,8 +491,8 @@ Features As screen:
         OnSelect: =Navigate(Features_9, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =258
-        Y: =323
+        X: =281
+        Y: =498
         ZIndex: =26
 
     Label3_2 As label:
@@ -510,8 +510,8 @@ Features As screen:
             Tren de rodaje y Traslación"
         Tooltip: ="ZONA 3"
         Width: =146
-        X: =112
-        Y: =324
+        X: =135
+        Y: =499
         ZIndex: =27
 
     icon9_5 As icon.Add:
@@ -525,8 +525,8 @@ Features As screen:
         OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =430
-        Y: =92
+        X: =677
+        Y: =515
         ZIndex: =28
 
     Label3_3 As label:
@@ -544,8 +544,8 @@ Features As screen:
             Vidrios"
         Tooltip: ="ZONA 9"
         Width: =177.42
-        X: =252
-        Y: =60
+        X: =499
+        Y: =483
         ZIndex: =29
 
     icon9_6 As icon.Add:
@@ -559,8 +559,8 @@ Features As screen:
         OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =677
-        Y: =614
+        X: =1086
+        Y: =444
         ZIndex: =30
 
     Label3_4 As label:
@@ -579,8 +579,8 @@ Features As screen:
             "
         Tooltip: ="ZONA 4"
         Width: =200
-        X: =527
-        Y: =664
+        X: =1136
+        Y: =420
         ZIndex: =31
 
     icon9_7 As icon.Add:
@@ -624,8 +624,8 @@ Features As screen:
         OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =964
-        Y: =543
+        X: =959
+        Y: =263
         ZIndex: =34
 
     Label3_6 As label:
@@ -641,8 +641,8 @@ Features As screen:
         Text: ="ZONA 2 Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
         Tooltip: ="ZONA 2"
         Width: =193.43
-        X: =1026
-        Y: =503
+        X: =1025
+        Y: =226
         ZIndex: =35
 
     icon9_11 As icon.Add:
@@ -656,8 +656,8 @@ Features As screen:
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =780
-        Y: =488
+        X: =804
+        Y: =498
         ZIndex: =38
 
     Label3_8 As label:
@@ -678,8 +678,8 @@ Features As screen:
             válvula de amortiguación piloto"
         Tooltip: ="ZONA 7"
         Width: =189.43
-        X: =780
-        Y: =378
+        X: =804
+        Y: =392
         ZIndex: =39
 
     Group4 As group:
@@ -700,8 +700,8 @@ Features As screen:
             OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
             TabIndex: =0
             Width: =50
-            X: =748
-            Y: =308
+            X: =224
+            Y: =194
             ZIndex: =36
 
         Label3_7 As label:
@@ -718,7 +718,7 @@ Features As screen:
                 ="ZONA 8: Brazos, Balde y Cilindros"
             Tooltip: ="ZONA 8"
             Width: =165.41
-            X: =583
-            Y: =297
+            X: =59
+            Y: =183
             ZIndex: =37
 

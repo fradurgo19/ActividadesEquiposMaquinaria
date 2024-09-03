@@ -9,15 +9,15 @@ Features_3 As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
 
-    Image19 As image:
+    Image23 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =627
-        Image: =Vistasuperios
-        Width: =935
-        X: =206
-        Y: =83
+        Height: =453
+        Image: =Superior
+        Width: =745
+        X: =157
+        Y: =158
         ZIndex: =1
 
     Image6_1 As image:
@@ -30,8 +30,8 @@ Features_3 As screen:
             =
             true
         Width: =151
-        X: =474
-        Y: =284
+        X: =428
+        Y: =300
         ZIndex: =2
 
     Image40 As image:
@@ -41,8 +41,8 @@ Features_3 As screen:
         Height: =159
         Image: ='TanqueCombustible-removebg'
         Width: =183
-        X: =381
-        Y: =112
+        X: =350
+        Y: =81
         ZIndex: =3
 
     Rectangle2_11 As rectangle:
@@ -179,8 +179,8 @@ Features_3 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
         TabIndex: =0
         Width: =77
-        X: =595
-        Y: =373
+        X: =861
+        Y: =323
         ZIndex: =15
 
     Label1_12 As label:
@@ -197,8 +197,8 @@ Features_3 As screen:
         Size: =13.34
         Text: ="Banco de Vávulas"
         Width: =167
-        X: =657
-        Y: =381
+        X: =923
+        Y: =331
         ZIndex: =16
 
     icon11_18 As icon.Add:
@@ -274,8 +274,8 @@ Features_3 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Image: =TamqueHidraulico2
         Width: =120
-        X: =541
-        Y: =138
+        X: =552
+        Y: =106
         ZIndex: =27
 
     Group9 As group:
