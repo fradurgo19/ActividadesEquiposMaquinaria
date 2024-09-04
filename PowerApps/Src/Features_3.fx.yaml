@@ -651,7 +651,7 @@ Features_3 As screen:
             BorderColor: =RGBA(255, 255, 255, 255)
             BorderThickness: =5
             DisabledFill: =Rectangle4_35.Fill
-            Fill: =Color.SandyBrown
+            Fill: =Color.MediumSlateBlue
             Height: =705
             HoverFill: =Rectangle4_35.Fill
             PressedFill: =Rectangle4_35.Fill
@@ -666,6 +666,7 @@ Features_3 As screen:
             Color: =RGBA(255, 255, 255, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+            Fill: =Color.MediumSlateBlue
             Font: =App.Theme.Font
             Height: =39
             HoverBorderColor: =Label8_53.BorderColor
@@ -1409,7 +1410,7 @@ Features_3 As screen:
     "Gallery2_4 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
-        Fill: =Color.SandyBrown
+        Fill: =Color.MediumSlateBlue
         Height: =565
         Items: |-
             =Filter(
