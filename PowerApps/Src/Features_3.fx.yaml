@@ -34,6 +34,13 @@ Features_3 As screen:
                 'Tanque de Combustible',
                 Tipo = "Excavadora"
             )
+        );
+        ClearCollect(
+            colFilteredBancoValvulas,
+            Filter(
+                'Banco de Valvulas',
+                Tipo = "Excavadora"
+            )
         )
     Width: =Max(App.Width, App.DesignWidth)
 
@@ -1758,7 +1765,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredTanqueDeCombustible,
+                            colFilteredBancoValvulas,
                             field_6 = ComboBox2_4.Selected.Results
                         ),
                         field_7
@@ -1817,7 +1824,7 @@ Features_3 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredTanqueDeCombustible,
+                        colFilteredBancoValvulas,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -1828,7 +1835,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredTanqueDeCombustible,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_4.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBancoValvulas,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_4.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
@@ -1844,7 +1851,7 @@ Features_3 As screen:
         Height: =565
         Items: |-
             =Filter(
-                colFilteredTanqueDeCombustible, 
+                colFilteredBancoValvulas, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_4.Selected.Results && field_7 = ComboBox1_6.Selected.Results 
             )
         Layout: =Layout.Vertical
