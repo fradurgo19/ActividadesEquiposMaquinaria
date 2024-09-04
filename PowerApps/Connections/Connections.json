@@ -8,6 +8,12 @@
     "datasets": {
       "https://partequipos2.sharepoint.com/sites/servicioposventa": {
         "dataSources": {
+          "Banco de Solenoide": {
+            "tableName": "1d168242-9b78-45ea-9bae-91b7cbbfe8c1"
+          },
+          "Banco de Valvulas": {
+            "tableName": "7fb15dfd-428f-45d2-80c5-21ca8deda372"
+          },
           "Enfriadores": {
             "tableName": "15d9c6df-877f-45e3-b5f2-014e318175f8"
           },
@@ -31,7 +37,9 @@
       "Enfriadores",
       "Motor de giro y reductor de giro",
       "Tanque Hidráulico",
-      "Tanque de Combustible"
+      "Tanque de Combustible",
+      "Banco de Solenoide",
+      "Banco de Valvulas"
     ],
     "dependencies": {},
     "dependents": [],
