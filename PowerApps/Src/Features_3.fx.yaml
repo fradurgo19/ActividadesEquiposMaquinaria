@@ -2323,7 +2323,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredMotorGiro,
+                            colFilteredCenterJoint,
                             field_6 = ComboBox2_6.Selected.Results
                         ),
                         field_7
@@ -2382,7 +2382,7 @@ Features_3 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredMotorGiro,
+                        colFilteredCenterJoint,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -2393,7 +2393,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredMotorGiro,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_6.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredCenterJoint,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_6.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop6
