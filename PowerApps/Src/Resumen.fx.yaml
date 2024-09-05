@@ -40,7 +40,7 @@ Resumen As screen:
         BorderColor: =App.Theme.Colors.Darker40
         BorderThickness: =1
         Fill: =App.Theme.Colors.Darker30
-        Height: =366
+        Height: =405
         Width: =412
         X: =928
         Y: =284
@@ -59,26 +59,13 @@ Resumen As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledFill: =Rectangle14_2.Fill
         Fill: =App.Theme.Colors.Darker30
-        Height: =105
+        Height: =72
         HoverFill: =Rectangle14_2.Fill
         PressedFill: =Rectangle14_2.Fill
         TabIndex: =0
         Width: =1366
-        Y: =663
+        Y: =696
         ZIndex: =3
-
-    Image3_2 As image:
-        ApplyEXIFOrientation: =false
-        AutoDisableOnSelect: =false
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =68.1428571428571
-        Image: ='Captura de pantalla 2024-01-12 082706'
-        Width: =264.13
-        X: =290.81
-        Y: =678
-        ZIndex: =4
 
     Label2_3 As label:
         Align: =TextPosition.Left
@@ -99,7 +86,7 @@ Resumen As screen:
         Text: ="RESUMEN"
         Width: =121
         X: =50.02
-        Y: =671
+        Y: =689
         ZIndex: =5
 
     Rectangle1_6 As rectangle:
@@ -108,8 +95,8 @@ Resumen As screen:
         Height: =60
         TabIndex: =0
         Width: =2.67
-        X: =258.46
-        Y: =681
+        X: =186
+        Y: =699
         ZIndex: =6
 
     "Gallery7 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -117,7 +104,7 @@ Resumen As screen:
         BorderThickness: =1
         DelayItemLoading: =true
         Fill: =App.Theme.Colors.Darker30
-        Height: =554
+        Height: =593
         Items: |
             =Sort(
                 Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4}),
@@ -475,7 +462,7 @@ Resumen As screen:
         Text: =varTextoLabel8
         Width: =182
         X: =1158
-        Y: =567
+        Y: =603
         ZIndex: =25
 
     TextInput1 As text:
@@ -503,7 +490,7 @@ Resumen As screen:
         Size: =12
         Width: =96
         X: =1048
-        Y: =320
+        Y: =329
         ZIndex: =26
 
     TextInput1_1 As text:
@@ -531,7 +518,7 @@ Resumen As screen:
         Size: =12
         Width: =80
         X: =1252
-        Y: =320
+        Y: =329
         ZIndex: =27
 
     Label9_4 As label:
@@ -549,7 +536,7 @@ Resumen As screen:
         Text: ="Tiempo De Desplazamiento Hrs ( 1 Trayecto)"
         Width: =116
         X: =933
-        Y: =321
+        Y: =330
         ZIndex: =28
 
     Label9_5 As label:
@@ -567,7 +554,7 @@ Resumen As screen:
         Text: ="Kms Recorridos ( 1 Trayecto)"
         Width: =93
         X: =1158
-        Y: =320
+        Y: =329
         ZIndex: =29
 
     Button1 As button:
@@ -625,7 +612,7 @@ Resumen As screen:
         Text: ="Calcular Valor"
         Width: =107
         X: =1214
-        Y: =433
+        Y: =460
         ZIndex: =30
 
     Group3 As group:
@@ -792,7 +779,7 @@ Resumen As screen:
             ="El valor total de desplazamiento ya incluye: trayecto de ida y vuelta y gastos de desplazamiento."
         Width: =412
         X: =928
-        Y: =613
+        Y: =649
         ZIndex: =31
 
     TextCanvas1_1 As Texto:
@@ -894,7 +881,7 @@ Resumen As screen:
         Text: ="Hospedaje"
         Width: =95
         X: =933
-        Y: =473
+        Y: =491
         ZIndex: =39
 
     Label9_8 As label:
@@ -912,7 +899,7 @@ Resumen As screen:
         Text: ="Alimentación"
         Width: =95
         X: =933
-        Y: =511
+        Y: =529
         ZIndex: =40
 
     Label9_9 As label:
@@ -930,7 +917,7 @@ Resumen As screen:
         Text: ="Recorrido"
         Width: =95
         X: =933
-        Y: =394
+        Y: =412
         ZIndex: =42
 
     Label9_12 As label:
@@ -948,7 +935,7 @@ Resumen As screen:
         Text: ="Kms"
         Width: =95
         X: =933
-        Y: =434
+        Y: =452
         ZIndex: =44
 
     Label9_13 As label:
@@ -966,7 +953,7 @@ Resumen As screen:
         Text: ="Total Desplazamiento"
         Width: =151
         X: =1006
-        Y: =567
+        Y: =603
         ZIndex: =45
 
     ButtonCanvas1 As Botón:
@@ -980,7 +967,7 @@ Resumen As screen:
             ="$ " & Text(Valor1,"[$-en-US]#,###")
         Width: =158
         X: =1028
-        Y: =391
+        Y: =409
         ZIndex: =46
 
     ButtonCanvas1_1 As Botón:
@@ -993,7 +980,7 @@ Resumen As screen:
             ="$ " & Text(Valor2,"[$-en-US]#,###")
         Width: =158
         X: =1028
-        Y: =434
+        Y: =452
         ZIndex: =47
 
     ButtonCanvas1_2 As Botón:
@@ -1006,7 +993,7 @@ Resumen As screen:
             ="$ " & Text(Hospedaje,"[$-en-US]#,###")
         Width: =158
         X: =1028
-        Y: =470
+        Y: =488
         ZIndex: =48
 
     ButtonCanvas1_3 As Botón:
@@ -1019,7 +1006,7 @@ Resumen As screen:
             ="$ " & Text(Alimentacion,"[$-en-US]#,###")
         Width: =158
         X: =1028
-        Y: =506
+        Y: =524
         ZIndex: =49
 
     Image7 As image:
