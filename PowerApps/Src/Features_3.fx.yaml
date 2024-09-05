@@ -2248,7 +2248,7 @@ Features_3 As screen:
         Height: =28
         Icon: =Icon.Cancel
         OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false})
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Visible: =pop6
         Width: =42
@@ -2374,7 +2374,7 @@ Features_3 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
-        Height: =34
+        Height: =33
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Solución"
@@ -2398,8 +2398,8 @@ Features_3 As screen:
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop6
-        Width: =104
-        X: =917
+        Width: =115
+        X: =906
         Y: =121
         ZIndex: =107
 
