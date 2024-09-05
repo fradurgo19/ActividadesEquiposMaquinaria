@@ -2323,7 +2323,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredBancoSolenoide,
+                            colFilteredCenterJoint,
                             field_6 = ComboBox2_8.Selected.Results
                         ),
                         field_7
@@ -2336,7 +2336,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoSolenoide,field_6=ComboBox2_8.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_10.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredCenterJoint,field_6=ComboBox2_8.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_10.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -2383,7 +2383,7 @@ Features_3 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        col,
+                        colFilteredCenterJoint,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -2392,8 +2392,9 @@ Features_3 As screen:
             )
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
-        SearchFields: =[""]
-        SearchItems: =[]
+        SearchFields: =["Results"]
+        SearchItems: |-
+            =Search(Filter(ForAll(Distinct(colFilteredCenterJoint,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_8.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop6
@@ -2409,7 +2410,7 @@ Features_3 As screen:
         Height: =565
         Items: |-
             =Filter(
-                colFilteredBancoSolenoide, 
+                colFilteredCenterJoint, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_8.Selected.Results && field_7 = ComboBox1_10.Selected.Results 
             )
         Layout: =Layout.Vertical
