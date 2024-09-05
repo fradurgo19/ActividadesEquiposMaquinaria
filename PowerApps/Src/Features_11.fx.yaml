@@ -1,5 +1,8 @@
 Features_11 As screen:
     BackgroundImage: =
+    Fill: |+
+        =RGBA(255, 255, 255, 1)
+        
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Center
     LoadingSpinnerColor: =App.Theme.Colors.Primary
