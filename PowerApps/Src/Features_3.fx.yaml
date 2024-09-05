@@ -48,6 +48,13 @@ Features_3 As screen:
                 'Banco de Solenoide',
                 Tipo = "Excavadora"
             )
+        );
+        ClearCollect(
+            colFilteredCenterJoint,
+            Filter(
+                'Center Joint',
+                Tipo = "Excavadora"
+            )
         )
     Width: =Max(App.Width, App.DesignWidth)
 
