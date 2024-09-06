@@ -1538,7 +1538,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaHidraulica,field_6=ComboBox2_14.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_16.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaCombustible,field_6=ComboBox2_14.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_16.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
