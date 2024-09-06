@@ -604,7 +604,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredTraslacion,field_6=ComboBox2_11.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_13.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaPiloto,field_6=ComboBox2_11.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_13.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
