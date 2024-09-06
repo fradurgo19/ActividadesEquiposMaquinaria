@@ -1525,7 +1525,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredBombaHidraulica,
+                            colFilteredBombaCombustible,
                             field_6 = ComboBox2_14.Selected.Results
                         ),
                         field_7
@@ -1584,7 +1584,7 @@ Features_11 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredBombaHidraulica,
+                        colFilteredBombaCombustible,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -1595,7 +1595,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBombaHidraulica,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_14.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBombaCombustible,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_14.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop3
@@ -1611,7 +1611,7 @@ Features_11 As screen:
         Height: =546
         Items: |-
             =Filter(
-                colFilteredBombaHidraulica, 
+                colFilteredBombaCombustible, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_14.Selected.Results && field_7 = ComboBox1_16.Selected.Results 
             )
         Layout: =Layout.Vertical
