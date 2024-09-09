@@ -1778,7 +1778,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredBombaCombustible,
+                            colFilteredFiltrosMotor,
                             field_6 = ComboBox2_15.Selected.Results
                         ),
                         field_7
