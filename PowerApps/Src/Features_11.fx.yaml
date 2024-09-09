@@ -351,7 +351,7 @@ Features_11 As screen:
         Size: =12
         Text: ="Resumen"
         Width: =84
-        Y: =109
+        Y: =70
         ZIndex: =29
 
     Image24_3 As image:
@@ -362,7 +362,7 @@ Features_11 As screen:
         Image: ='icons8-estimar'
         OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
         Width: =87
-        Y: =51
+        Y: =112
         ZIndex: =30
 
     Rectangle4_48 As rectangle:
@@ -1707,8 +1707,8 @@ Features_11 As screen:
         TabIndex: =0
         Visible: =pop5
         Width: =42
-        X: =929
-        Y: =72
+        X: =938
+        Y: =75
         ZIndex: =66
 
     ButtonCanvas4_32 As Botón:
@@ -1727,8 +1727,8 @@ Features_11 As screen:
         Text: ="Selec Todo"
         Visible: =pop5
         Width: =46
-        X: =929
-        Y: =145
+        X: =928
+        Y: =130
         ZIndex: =67
 
     ButtonCanvas4_33 As Botón:
@@ -1753,8 +1753,8 @@ Features_11 As screen:
         Text: ="Borrar Todo"
         Visible: =pop5
         Width: =41
-        X: =878
-        Y: =145
+        X: =877
+        Y: =130
         ZIndex: =68
 
     ComboBox1_17 As combobox:
@@ -1791,14 +1791,14 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredFiltrosMotor,field_6=ComboBox2_15.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_17.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaHidraulica,field_6=ComboBox2_15.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_17.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
         Visible: =pop5
         Width: =103
-        X: =696
-        Y: =148
+        X: =678
+        Y: =133
         ZIndex: =69
 
     icon14_38 As icon.Cancel:
@@ -1813,8 +1813,8 @@ Features_11 As screen:
         TabIndex: =0
         Visible: =pop5
         Width: =42
-        X: =877
-        Y: =74
+        X: =886
+        Y: =77
         ZIndex: =70
 
     ComboBox2_15 As combobox:
@@ -1853,14 +1853,14 @@ Features_11 As screen:
         Size: =10
         Visible: =pop5
         Width: =104
-        X: =577
-        Y: =145
+        X: =559
+        Y: =130
         ZIndex: =71
 
     "Gallery2_16 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
-        Fill: =Color.MidnightBlue
+        Fill: =Color.LightSeaGreen
         Height: =546
         Items: |-
             =Filter(
@@ -1870,11 +1870,11 @@ Features_11 As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =95
+        TemplateSize: =82
         Visible: =pop5
         Width: =416
-        X: =563
-        Y: =192
+        X: =562
+        Y: =189
         ZIndex: =72
 
         Title3_33 As label:
@@ -2008,10 +2008,10 @@ Features_11 As screen:
         PressedColor: =Label9_51.Color
         PressedFill: =Label9_51.Fill
         Size: =15
-        Text: ="filtros de motor"
+        Text: ="BOMBA HIDRAULICA"
         Visible: =pop5
-        Width: =303
-        X: =572
-        Y: =70
+        Width: =322
+        X: =563
+        Y: =73
         ZIndex: =73
 

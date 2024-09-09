@@ -169,7 +169,8 @@ Features_9 As screen:
         Size: =12
         Text: ="Resumen"
         Width: =84
-        Y: =109
+        X: =1
+        Y: =82
         ZIndex: =25
 
     Image24_2 As image:
@@ -180,7 +181,8 @@ Features_9 As screen:
         Image: ='icons8-estimar'
         OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
         Width: =87
-        Y: =51
+        X: =1
+        Y: =119
         ZIndex: =26
 
     icon14_25 As icon.Cancel:
