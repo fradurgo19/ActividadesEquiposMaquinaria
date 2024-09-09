@@ -316,7 +316,7 @@ Features_11 As screen:
         BorderColor: =RGBA(255, 255, 255, 255)
         BorderThickness: =5
         DisabledFill: =Rectangle4_49.Fill
-        Fill: =App.Theme.Colors.Darker30
+        Fill: =Color.MidnightBlue
         Height: =688
         HoverFill: =Rectangle4_49.Fill
         PressedFill: =Rectangle4_49.Fill
@@ -1860,7 +1860,7 @@ Features_11 As screen:
     "Gallery2_16 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
-        Fill: =Color.OliveDrab
+        Fill: =Color.MidnightBlue
         Height: =529
         Items: |-
             =Filter(
