@@ -1791,7 +1791,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaCombustible,field_6=ComboBox2_15.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_17.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredFiltrosMotor,field_6=ComboBox2_15.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_17.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -2008,7 +2008,7 @@ Features_11 As screen:
         PressedColor: =Label9_51.Color
         PressedFill: =Label9_51.Fill
         Size: =15
-        Text: ="BOMBA COMBUSTIBLE"
+        Text: ="filtros de motor"
         Visible: =pop5
         Width: =303
         X: =572
