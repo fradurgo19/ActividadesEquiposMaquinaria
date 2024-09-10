@@ -39,6 +39,16 @@ Features_6 As screen:
         )
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image11 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =720
+        Image: ='Schematics-of-the-mini-excavator-removebg-preview'
+        Width: =1366
+        Y: =48
+        ZIndex: =1
+
     Rectangle2_15 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =App.Theme.Colors.Primary
@@ -76,14 +86,15 @@ Features_6 As screen:
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =38
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Width: =56
-        X: =301
-        Y: =266
+        X: =946
+        Y: =400
         ZIndex: =4
 
     Label1_4 As label:
@@ -91,7 +102,7 @@ Features_6 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(197, 242, 63, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =36
@@ -100,8 +111,8 @@ Features_6 As screen:
         Size: =13.34
         Text: ="Stick"
         Width: =107
-        X: =355
-        Y: =268
+        X: =839
+        Y: =401
         ZIndex: =8
 
     icon11_29 As icon.Add:
@@ -109,14 +120,15 @@ Features_6 As screen:
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =38
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
         TabIndex: =0
         Width: =57.36
-        X: =254
-        Y: =551
+        X: =1028
+        Y: =637
         ZIndex: =10
 
     Label1_26 As label:
@@ -124,7 +136,7 @@ Features_6 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(197, 242, 63, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =35
@@ -135,8 +147,8 @@ Features_6 As screen:
             ="Balde
             "
         Width: =129.4
-        X: =117
-        Y: =554
+        X: =897
+        Y: =639
         ZIndex: =11
 
     icon11_30 As icon.Add:
@@ -150,8 +162,8 @@ Features_6 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
         TabIndex: =0
         Width: =49
-        X: =218
-        Y: =385
+        X: =1189
+        Y: =506
         ZIndex: =16
 
     Label1_27 As label:
@@ -159,7 +171,7 @@ Features_6 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(197, 242, 63, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =35
@@ -168,8 +180,8 @@ Features_6 As screen:
         Size: =13.34
         Text: ="Cilindro del Balde"
         Width: =177.42
-        X: =36.02
-        Y: =382
+        X: =1189
+        Y: =468
         ZIndex: =17
 
     icon12_48 As icon.Cancel:
@@ -193,14 +205,15 @@ Features_6 As screen:
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =41
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Width: =47
-        X: =686
-        Y: =102
+        X: =796
+        Y: =158
         ZIndex: =19
 
     Label1_25 As label:
@@ -208,7 +221,7 @@ Features_6 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(197, 242, 63, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =59
@@ -217,8 +230,8 @@ Features_6 As screen:
         Size: =13.34
         Text: ="Cilindro del Boom"
         Width: =136
-        X: =733
-        Y: =97
+        X: =843
+        Y: =153
         ZIndex: =20
 
     icon11_36 As icon.Add:
@@ -232,8 +245,8 @@ Features_6 As screen:
             =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Width: =47
-        X: =188
-        Y: =158
+        X: =1087
+        Y: =322
         ZIndex: =25
 
     Label1_33 As label:
@@ -241,7 +254,7 @@ Features_6 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(197, 242, 63, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =35
@@ -250,8 +263,8 @@ Features_6 As screen:
         Size: =13.34
         Text: ="Cilindro de Stick"
         Width: =162.75
-        X: =25.35
-        Y: =156
+        X: =1138
+        Y: =319
         ZIndex: =26
 
     Rectangle4_33 As rectangle:
@@ -1614,14 +1627,15 @@ Features_6 As screen:
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =35
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             TabIndex: =0
             Width: =50
-            X: =342
-            Y: =133
+            X: =716
+            Y: =319
             ZIndex: =7
 
         Label1_24 As label:
@@ -1629,16 +1643,16 @@ Features_6 As screen:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(197, 242, 63, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =24
+            Height: =46
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
             Size: =13.34
             Text: ="Boom"
-            Width: =89.38
-            X: =400.2
-            Y: =138
+            Width: =114
+            X: =613
+            Y: =309
             ZIndex: =9
 
