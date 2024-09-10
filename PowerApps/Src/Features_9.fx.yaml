@@ -88,14 +88,15 @@ Features_9 As screen:
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =38
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         TabIndex: =0
         Width: =57.36
-        X: =550.94
-        Y: =482
+        X: =607
+        Y: =479
         ZIndex: =13
 
     Label1_18 As label:
@@ -103,7 +104,7 @@ Features_9 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(27, 242, 66, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
         Height: =35
@@ -112,8 +113,8 @@ Features_9 As screen:
         Size: =13.34
         Text: ="TRASLACIÓN"
         Width: =177.42
-        X: =608.3
-        Y: =485
+        X: =664
+        Y: =481
         ZIndex: =14
 
     Rectangle4_42 As rectangle:
@@ -127,8 +128,8 @@ Features_9 As screen:
         TabIndex: =0
         Visible: =pop3
         Width: =463
-        X: =87
-        Y: =59
+        X: =903
+        Y: =44
         ZIndex: =15
 
     Image6_3 As image:
@@ -183,8 +184,8 @@ Features_9 As screen:
         TabIndex: =0
         Visible: =pop3
         Width: =42
-        X: =478
-        Y: =68
+        X: =1294
+        Y: =53
         ZIndex: =27
 
     ButtonCanvas4_20 As Botón:
@@ -203,8 +204,8 @@ Features_9 As screen:
         Text: ="Selec Todo"
         Visible: =pop3
         Width: =46
-        X: =468
-        Y: =123
+        X: =1284
+        Y: =108
         ZIndex: =28
 
     ButtonCanvas4_21 As Botón:
@@ -229,8 +230,8 @@ Features_9 As screen:
         Text: ="Borrar Todo"
         Visible: =pop3
         Width: =41
-        X: =417
-        Y: =123
+        X: =1233
+        Y: =108
         ZIndex: =29
 
     ComboBox1_11 As combobox:
@@ -273,8 +274,8 @@ Features_9 As screen:
         Size: =10
         Visible: =pop3
         Width: =103
-        X: =218
-        Y: =126
+        X: =1034
+        Y: =111
         ZIndex: =30
 
     icon14_26 As icon.Cancel:
@@ -289,8 +290,8 @@ Features_9 As screen:
         TabIndex: =0
         Visible: =pop3
         Width: =42
-        X: =426
-        Y: =70
+        X: =1242
+        Y: =55
         ZIndex: =31
 
     ComboBox2_9 As combobox:
@@ -329,8 +330,8 @@ Features_9 As screen:
         Size: =10
         Visible: =pop3
         Width: =104
-        X: =99
-        Y: =123
+        X: =915
+        Y: =108
         ZIndex: =32
 
     "Gallery2_10 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
@@ -349,8 +350,8 @@ Features_9 As screen:
         TemplateSize: =82
         Visible: =pop3
         Width: =430
-        X: =99
-        Y: =174
+        X: =915
+        Y: =159
         ZIndex: =33
 
         Title3_21 As label:
@@ -487,8 +488,8 @@ Features_9 As screen:
         Text: ="TRASLACION"
         Visible: =pop3
         Width: =322
-        X: =103
-        Y: =66
+        X: =919
+        Y: =51
         ZIndex: =34
 
     Rectangle4_41 As rectangle:
@@ -502,8 +503,8 @@ Features_9 As screen:
         TabIndex: =0
         Visible: =pop1
         Width: =481
-        X: =871
-        Y: =51
+        X: =97
+        Y: =55
         ZIndex: =35
 
     icon14_27 As icon.Cancel:
@@ -519,8 +520,8 @@ Features_9 As screen:
         TabIndex: =0
         Visible: =pop1
         Width: =42
-        X: =1272
-        Y: =61
+        X: =498
+        Y: =65
         ZIndex: =36
 
     ButtonCanvas4_22 As Botón:
@@ -539,8 +540,8 @@ Features_9 As screen:
         Text: ="Selec Todo"
         Visible: =pop1
         Width: =46
-        X: =1262
-        Y: =116
+        X: =488
+        Y: =120
         ZIndex: =37
 
     ButtonCanvas4_23 As Botón:
@@ -565,8 +566,8 @@ Features_9 As screen:
         Text: ="Borrar Todo"
         Visible: =pop1
         Width: =41
-        X: =1211
-        Y: =116
+        X: =437
+        Y: =120
         ZIndex: =38
 
     ComboBox1_12 As combobox:
@@ -609,8 +610,8 @@ Features_9 As screen:
         Size: =10
         Visible: =pop1
         Width: =103
-        X: =1012
-        Y: =119
+        X: =238
+        Y: =123
         ZIndex: =39
 
     icon14_28 As icon.Cancel:
@@ -625,8 +626,8 @@ Features_9 As screen:
         TabIndex: =0
         Visible: =pop1
         Width: =42
-        X: =1220
-        Y: =63
+        X: =446
+        Y: =67
         ZIndex: =40
 
     ComboBox2_10 As combobox:
@@ -665,8 +666,8 @@ Features_9 As screen:
         Size: =10
         Visible: =pop1
         Width: =104
-        X: =893
-        Y: =116
+        X: =119
+        Y: =120
         ZIndex: =41
 
     "Gallery2_11 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
@@ -685,8 +686,8 @@ Features_9 As screen:
         TemplateSize: =82
         Visible: =pop1
         Width: =430
-        X: =893
-        Y: =167
+        X: =119
+        Y: =171
         ZIndex: =42
 
         Title3_23 As label:
@@ -823,8 +824,8 @@ Features_9 As screen:
         Text: ="TREN DE RODAJE"
         Visible: =pop1
         Width: =322
-        X: =897
-        Y: =59
+        X: =123
+        Y: =63
         ZIndex: =43
 
     Group21_1 As group:
@@ -1021,6 +1022,7 @@ Features_9 As screen:
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Height: =43
             Icon: =Icon.Add
             OnSelect: |-
@@ -1036,17 +1038,17 @@ Features_9 As screen:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(27, 242, 66, 1)
+            Fill: =RGBA(255, 255, 255, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =35
+            Height: =39
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
             Size: =13.34
             Text: ="TREN DE RODAJE"
             Width: =190.76
-            X: =964.47
-            Y: =541
+            X: =950
+            Y: =537
             ZIndex: =11
 
     Group19_1 As group:
