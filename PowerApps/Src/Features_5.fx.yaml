@@ -24,6 +24,12 @@ Features_5 As screen:
                 'Válvula Amortiguación Piloto',
                 Tipo = "Excavadora"
             )
+        );
+        ClearCollect(colFilteredBateria,
+            Filter(
+                Bateria,
+                Tipo = "Excavadora"
+            )
         )
     Width: =Max(App.Width, App.DesignWidth)
 
@@ -71,8 +77,8 @@ Features_5 As screen:
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
         TabIndex: =0
         Width: =54.69
-        X: =286
-        Y: =293
+        X: =1134
+        Y: =559
         ZIndex: =3
 
     icon9_12 As icon.Add:
@@ -144,8 +150,8 @@ Features_5 As screen:
         Size: =13
         Text: ="ENFRIADOR ACEITRE HIDRAULICO"
         Width: =201.43
-        X: =85.38
-        Y: =293
+        X: =933
+        Y: =559
         ZIndex: =8
 
     Image6_6 As image:
