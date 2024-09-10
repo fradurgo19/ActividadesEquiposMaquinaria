@@ -312,7 +312,7 @@ Features_5 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredContrapesa,
+                            colFilteredEnfriadores,
                             field_6 = ComboBox2_19.Selected.Results
                         ),
                         field_7
@@ -371,7 +371,7 @@ Features_5 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredContrapesa,
+                        colFilteredEnfriadores,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -382,7 +382,7 @@ Features_5 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredContrapesa,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_19.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredEnfriadores,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_19.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop2
@@ -398,7 +398,7 @@ Features_5 As screen:
         Height: =546
         Items: |-
             =Filter(
-                colFilteredContrapesa, 
+                colFilteredEnfriadores, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_19.Selected.Results && field_7 = ComboBox1_21.Selected.Results 
             )
         Layout: =Layout.Vertical
