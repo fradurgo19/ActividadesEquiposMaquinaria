@@ -1904,36 +1904,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_11.Label9_51.FocusedBorderThickness"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_11.Label9_51.FocusedBorderThickness",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "FocusedBorderThickness",
-                "module": "Features_11",
-                "type": "Features_11.Label9_51"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Features_11.Label9_51.TabIndex"
                 }
               ],
@@ -1958,6 +1928,36 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Features_11.Label9_51.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Features_11.Label9_51.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "Features_11",
+                "type": "Features_11.Label9_51"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -2084,19 +2084,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_11.icon14_37.AccessibleLabel"
+                  "fullyQualifiedName": "Features_11.icon14_38.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_11.icon14_37.AccessibleLabel",
+                  "fullyQualifiedName": "Features_11.icon14_38.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Features_11",
-                "type": "Features_11.icon14_37"
+                "type": "Features_11.icon14_38"
               }
             }
           ],
@@ -2234,19 +2234,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_11.icon14_38.AccessibleLabel"
+                  "fullyQualifiedName": "Features_11.ComboBox2_15.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_11.icon14_38.AccessibleLabel",
+                  "fullyQualifiedName": "Features_11.ComboBox2_15.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Features_11",
-                "type": "Features_11.icon14_38"
+                "type": "Features_11.ComboBox2_15"
               }
             }
           ],
@@ -2384,19 +2384,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_11.ComboBox2_15.AccessibleLabel"
+                  "fullyQualifiedName": "Features_11.Gallery2_16.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_11.ComboBox2_15.AccessibleLabel",
+                  "fullyQualifiedName": "Features_11.Gallery2_16.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "TabIndex",
                 "module": "Features_11",
-                "type": "Features_11.ComboBox2_15"
+                "type": "Features_11.Gallery2_16"
               }
             }
           ],
@@ -2406,8 +2406,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -2534,19 +2534,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_11.ButtonCanvas4_33.AccessibleLabel"
+                  "fullyQualifiedName": "Features_11.ComboBox1_17.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_11.ButtonCanvas4_33.AccessibleLabel",
+                  "fullyQualifiedName": "Features_11.ComboBox1_17.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Features_11",
-                "type": "Features_11.ButtonCanvas4_33"
+                "type": "Features_11.ComboBox1_17"
               }
             }
           ],
@@ -2564,19 +2564,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_11.ButtonCanvas4_32.AccessibleLabel"
+                  "fullyQualifiedName": "Features_11.ButtonCanvas4_33.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_11.ButtonCanvas4_32.AccessibleLabel",
+                  "fullyQualifiedName": "Features_11.ButtonCanvas4_33.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Features_11",
-                "type": "Features_11.ButtonCanvas4_32"
+                "type": "Features_11.ButtonCanvas4_33"
               }
             }
           ],
@@ -2714,19 +2714,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_11.ComboBox1_17.AccessibleLabel"
+                  "fullyQualifiedName": "Features_11.Gallery2_16.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_11.ComboBox1_17.AccessibleLabel",
+                  "fullyQualifiedName": "Features_11.Gallery2_16.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Features_11",
-                "type": "Features_11.ComboBox1_17"
+                "type": "Features_11.Gallery2_16"
               }
             }
           ],
@@ -2864,19 +2864,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_11.Gallery2_16.AccessibleLabel"
+                  "fullyQualifiedName": "Features_11.ButtonCanvas4_32.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_11.Gallery2_16.AccessibleLabel",
+                  "fullyQualifiedName": "Features_11.ButtonCanvas4_32.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Features_11",
-                "type": "Features_11.Gallery2_16"
+                "type": "Features_11.ButtonCanvas4_32"
               }
             }
           ],
@@ -2894,19 +2894,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_11.Gallery2_16.TabIndex"
+                  "fullyQualifiedName": "Features_11.icon14_37.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_11.Gallery2_16.TabIndex",
+                  "fullyQualifiedName": "Features_11.icon14_37.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "TabIndex",
+                "member": "AccessibleLabel",
                 "module": "Features_11",
-                "type": "Features_11.Gallery2_16"
+                "type": "Features_11.icon14_37"
               }
             }
           ],
@@ -2916,8 +2916,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 1
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -3434,19 +3434,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_11.Rectangle4_49.AccessibleLabel"
+                  "fullyQualifiedName": "Features_11.Rectangle4_62.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_11.Rectangle4_49.AccessibleLabel",
+                  "fullyQualifiedName": "Features_11.Rectangle4_62.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Features_11",
-                "type": "Features_11.Rectangle4_49"
+                "type": "Features_11.Rectangle4_62"
               }
             }
           ],
