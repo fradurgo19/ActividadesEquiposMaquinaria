@@ -1276,8 +1276,8 @@ Features_5 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true})
         TabIndex: =0
         Width: =54.69
-        X: =304
-        Y: =665
+        X: =203
+        Y: =611
         ZIndex: =43
 
     Label1_42 As label:
@@ -1292,8 +1292,8 @@ Features_5 As screen:
         Size: =13
         Text: ="BATERIA"
         Width: =201.43
-        X: =103
-        Y: =665
+        X: =2
+        Y: =611
         ZIndex: =44
 
     Rectangle4_71 As rectangle:
@@ -1731,7 +1731,7 @@ Features_5 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredTanqueexpasion,
+                            colFilteredBateria,
                             field_6 = ComboBox2_24.Selected.Results
                         ),
                         field_7
@@ -1790,7 +1790,7 @@ Features_5 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredTanqueexpasion,
+                        colFilteredBateria,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -1801,7 +1801,7 @@ Features_5 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredTanqueexpasion,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_24.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBateria,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_24.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop5
@@ -1817,7 +1817,7 @@ Features_5 As screen:
         Height: =546
         Items: |-
             =Filter(
-                colFilteredTanqueexpasion, 
+                colFilteredBateria, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_24.Selected.Results && field_7 = ComboBox1_26.Selected.Results 
             )
         Layout: =Layout.Vertical
