@@ -107,8 +107,8 @@ Features_4 As screen:
         Height: =329
         Image: ='TORNAMESA-removebg-preview'
         Width: =385
-        X: =450
-        Y: =97
+        X: =445
+        Y: =358
         ZIndex: =18
 
     Image6_5 As image:
@@ -590,7 +590,7 @@ Features_4 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredBombaCombustible,
+                            colFilteredContrapesa,
                             field_6 = ComboBox2_18.Selected.Results
                         ),
                         field_7
@@ -649,7 +649,7 @@ Features_4 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredBombaCombustible,
+                        colFilteredContrapesa,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -660,7 +660,7 @@ Features_4 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBombaCombustible,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_18.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredContrapesa,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_18.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop1
@@ -676,7 +676,7 @@ Features_4 As screen:
         Height: =546
         Items: |-
             =Filter(
-                colFilteredBombaCombustible, 
+                colFilteredContrapesa, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_18.Selected.Results && field_7 = ComboBox1_20.Selected.Results 
             )
         Layout: =Layout.Vertical
@@ -1289,135 +1289,4 @@ Features_4 As screen:
             X: =771.04
             Y: =378
             ZIndex: =15
-
-    Group17_1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =76
-
-        Rectangle4_14 As rectangle:
-            BorderColor: =RGBA(255, 255, 255, 255)
-            BorderThickness: =5
-            DisabledFill: =Rectangle4_14.Fill
-            Fill: =App.Theme.Colors.Darker30
-            Height: =189
-            HoverFill: =Rectangle4_14.Fill
-            PressedFill: =Rectangle4_14.Fill
-            TabIndex: =0
-            Visible: =pop4
-            Width: =660.32
-            X: =633.64
-            Y: =114
-            ZIndex: =9
-
-        Rectangle15_14 As rectangle:
-            BorderColor: =App.Theme.Colors.Darker40
-            Fill: =RGBA(62,96,170,0)
-            Height: =87
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            TabIndex: =0
-            Visible: =pop4
-            Width: =56.03
-            X: =658.99
-            Y: =194
-            ZIndex: =10
-
-        Rectangle8_3 As rectangle:
-            BorderColor: =App.Theme.Colors.Darker40
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =296
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            TabIndex: =0
-            Width: =708.35
-            X: =618.97
-            Y: =4
-            ZIndex: =11
-
-        icon7_3 As icon.Cancel:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(245, 246, 247, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =49
-            Icon: =Icon.Cancel
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            TabIndex: =0
-            Visible: =pop4
-            Width: =82.71
-            X: =1189.91
-            Y: =126
-            ZIndex: =12
-
-        Label8_17 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =54
-            HoverBorderColor: =Label8_17.BorderColor
-            HoverColor: =Label8_17.Color
-            HoverFill: =Label8_17.Fill
-            OnSelect: |-
-                =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2FMotor&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Label8_17.BorderColor
-            PressedColor: =Label8_17.Color
-            PressedFill: =Label8_17.Fill
-            Size: =17.34
-            Text: ="MOTOR"
-            VerticalAlign: =VerticalAlign.Top
-            Visible: =pop4
-            Width: =506.91
-            X: =658.99
-            Y: =227
-            ZIndex: =13
-
-        Label8_16 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =46
-            HoverBorderColor: =Label8_16.BorderColor
-            HoverColor: =Label8_16.Color
-            HoverFill: =Label8_16.Fill
-            OnSelect: =
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Label8_16.BorderColor
-            PressedColor: =Label8_16.Color
-            PressedFill: =Label8_16.Fill
-            Size: =20.01
-            Text: ="ZONA 1"
-            VerticalAlign: =VerticalAlign.Top
-            Visible: =pop4
-            Width: =457.56
-            X: =656.32
-            Y: =129
-            ZIndex: =14
-
-        Image2_2 As image:
-            BorderColor: =App.Theme.Colors.Darker40
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(0, 0, 0, 1)
-            Height: =171
-            Image: ='Captura de pantalla 2024-05-08 171319-fotor-bg-remover-20240508171657'
-            Visible: =pop4
-            Width: =353.51
-            X: =796.39
-            Y: =129
-            ZIndex: =17
 
