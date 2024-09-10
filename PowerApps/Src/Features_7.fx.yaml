@@ -777,7 +777,7 @@ Features_7 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBalde,field_6=ComboBox2_28.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_30.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredCabina,field_6=ComboBox2_28.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_30.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1014,7 +1014,8 @@ Features_7 As screen:
         Size: =12
         Text: ="Resumen"
         Width: =84
-        Y: =45
+        X: =1
+        Y: =102
         ZIndex: =61
 
     Image24_6 As image:
@@ -1025,7 +1026,8 @@ Features_7 As screen:
         Image: ='icons8-estimar'
         OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
         Width: =87
-        Y: =87
+        X: =1
+        Y: =144
         ZIndex: =62
 
     Group11_5 As group:
