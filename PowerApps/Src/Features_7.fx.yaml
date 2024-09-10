@@ -1125,7 +1125,7 @@ Features_7 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredCabina,field_6=ComboBox2_29.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_31.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredJoystick,field_6=ComboBox2_29.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_31.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1342,7 +1342,7 @@ Features_7 As screen:
         PressedColor: =Label9_69.Color
         PressedFill: =Label9_69.Fill
         Size: =15
-        Text: ="CABINA"
+        Text: ="JOYSTICK"
         Visible: =pop2
         Width: =303
         X: =125
