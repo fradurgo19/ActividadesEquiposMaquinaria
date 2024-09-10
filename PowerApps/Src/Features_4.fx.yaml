@@ -267,7 +267,7 @@ Features_4 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaCombustible,field_6=ComboBox2_17.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_19.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredTornamesa,field_6=ComboBox2_17.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_19.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -603,7 +603,7 @@ Features_4 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaCombustible,field_6=ComboBox2_18.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_20.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredContrapesa,field_6=ComboBox2_18.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_20.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
