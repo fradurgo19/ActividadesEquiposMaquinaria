@@ -9,7 +9,7 @@ Features_11 As screen:
     OnHidden: |-
         =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false})
     OnVisible: |-
-        =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});
+        =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false,pop7:false});
         ClearCollect(
             colFilteredBombaPiloto,
             Filter(
@@ -225,7 +225,7 @@ Features_11 As screen:
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         Size: =13.34
-        Text: ="BOMBA COMBUSTIBLE"
+        Text: ="BOMBA TRANSFERENCIA DE COMBUSTIBLE"
         Width: =233
         X: =1092
         Y: =439
