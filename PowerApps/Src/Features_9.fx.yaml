@@ -83,21 +83,6 @@ Features_9 As screen:
         Y: =365
         ZIndex: =6
 
-    Circle2_42 As circle:
-        BorderColor: =RGBA(204, 204, 204, 1)
-        DisabledFill: =Circle2_42.Fill
-        Fill: =RGBA(27, 242, 66, 1)
-        Height: =106.72
-        HoverFill: =Circle2_42.Fill
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
-        PressedFill: =Circle2_42.Fill
-        TabIndex: =0
-        Width: =284.14
-        X: =536.26
-        Y: =462
-        ZIndex: =12
-
     icon11_21 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Darker30
@@ -1030,21 +1015,6 @@ Features_9 As screen:
         X: =40
         Y: =40
         ZIndex: =85
-
-        Circle2_41 As circle:
-            BorderColor: =RGBA(204, 204, 204, 1)
-            DisabledFill: =Circle2_41.Fill
-            Fill: =RGBA(27, 242, 66, 1)
-            Height: =122.73
-            HoverFill: =Circle2_41.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
-            PressedFill: =Circle2_41.Fill
-            TabIndex: =0
-            Width: =288.14
-            X: =893.77
-            Y: =512
-            ZIndex: =4
 
         icon11_19 As icon.Add:
             BorderColor: =App.Theme.Colors.Darker40
