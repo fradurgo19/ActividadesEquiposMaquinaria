@@ -203,7 +203,7 @@ Features_5 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         TabIndex: =0
         Width: =68
-        X: =878
+        X: =885
         Y: =78
         ZIndex: =12
 
@@ -1343,7 +1343,7 @@ Features_5 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredTanqueexpasion,field_6=ComboBox2_22.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_24.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredValvulaAmortiguacionPiloto,field_6=ComboBox2_22.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_24.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
