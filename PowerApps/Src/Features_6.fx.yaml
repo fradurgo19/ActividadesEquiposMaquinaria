@@ -1575,6 +1575,33 @@ Features_6 As screen:
         Y: =73
         ZIndex: =78
 
+    Label4_18 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+        Size: =12
+        Text: ="Resumen"
+        Width: =84
+        Y: =45
+        ZIndex: =79
+
+    Image24_5 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =62
+        Image: ='icons8-estimar'
+        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+        Width: =87
+        Y: =87
+        ZIndex: =80
+
     Group12_2 As group:
         Height: =5
         Width: =5
