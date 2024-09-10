@@ -1744,7 +1744,7 @@ Features_5 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredTanqueexpasion,field_6=ComboBox2_24.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_26.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBateria,field_6=ComboBox2_24.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_26.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
