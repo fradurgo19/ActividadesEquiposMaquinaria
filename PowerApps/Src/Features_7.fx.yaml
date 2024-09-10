@@ -5,27 +5,56 @@ Features_7 As screen:
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnHidden: |-
         =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false})
-    OnVisible: |-
+    OnVisible: |
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});
         ClearCollect(
             colFilteredCabina,
             Filter(
                 'Actividades Cabina',
-                Tipo = "Excavadora",  
-                Solucion = "Servicio externo (tapizado cabina)",
-                Solucion = "Rele (relay) cabina",
-                Solucion = "Interruptor cabina",
-                Solucion = "Harness (arnes, cableado) cabina",
-                Solucion = "Cabina",
-                Solucion = "Soportes de cabina",
-                Solucion = "Puerta de cabina",
-                Solucion = "Vidrio frontal cabina",
-                Solucion = "Vidrio piecero cabina",
-                Solucion = "Vidrios puerta cabina",
-                Solucion = "Vidrio lateral derecho cabina",
-                Solucion = "Vidrio trasero cabina",
-                Solucion = "Pasamanos cabina"
-                
+                Tipo = "Excavadora" &&
+                (
+                    Solucion = "Servicio externo (tapizado cabina)" ||
+                    Solucion = "Rele (relay) cabina" ||
+                    Solucion = "Interruptor cabina" ||
+                    Solucion = "Harness (arnes, cableado) cabina" ||
+                    Solucion = "Cabina" ||
+                    Solucion = "Soportes de cabina" ||
+                    Solucion = "Puerta de cabina" ||
+                    Solucion = "Vidrio frontal cabina" ||
+                    Solucion = "Vidrio piecero cabina" ||
+                    Solucion = "Vidrios puerta cabina" ||
+                    Solucion = "Vidrio lateral derecho cabina" ||
+                    Solucion = "Vidrio trasero cabina" ||
+                    Solucion = "Pasamanos cabina"
+                )
+            )
+        );
+        ClearCollect(
+            colFilteredJoystick,
+            Filter(
+                'Actividades Cabina',
+                Tipo = "Excavadora" &&
+                (
+                    Solucion = "Servicio externo (tapizado cabina)" ||
+                    Solucion = "Rele (relay) cabina" ||
+                    Solucion = "Interruptor cabina" ||
+                    Solucion = "Harness (arnes, cableado) cabina" ||
+                    Solucion = "Cabina" ||
+                    Solucion = "Soportes de cabina" ||
+                    Solucion = "Puerta de cabina" ||
+                    Solucion = "Vidrio frontal cabina" ||
+                    Solucion = "Vidrio piecero cabina" ||
+                    Solucion = "Vidrios puerta cabina" ||
+                    Solucion = "Vidrio lateral derecho cabina" ||
+                    Solucion = "Vidrio trasero cabina" ||
+                    Solucion = "Pasamanos cabina" ||
+                    Solucion = "Vidrio lateral izquierdo" ||
+                    Solucion = "Claraboya" ||
+                    Solucion = "Espejo" ||  
+                    Solucion = "Servicio externo (tapizado cabina)" || 
+                    Solucion = "Servicio externo (reparar carcasas)" ||
+                    Solucion = "GPS" 
+                )
             )
         )
     Width: =Max(App.Width, App.DesignWidth)
