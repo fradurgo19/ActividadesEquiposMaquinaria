@@ -8,29 +8,24 @@ Features_7 As screen:
     OnVisible: |
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});
         ClearCollect(
-            colFilteredCabina,
+            colFilteredJoystick,
             Filter(
                 'Actividades Cabina',
                 Tipo = "Excavadora" &&
                 (
-                    Solucion = "Servicio externo (tapizado cabina)" ||
-                    Solucion = "Rele (relay) cabina" ||
-                    Solucion = "Interruptor cabina" ||
-                    Solucion = "Harness (arnes, cableado) cabina" ||
-                    Solucion = "Cabina" ||
-                    Solucion = "Soportes de cabina" ||
-                    Solucion = "Puerta de cabina" ||
-                    Solucion = "Vidrio frontal cabina" ||
-                    Solucion = "Vidrio piecero cabina" ||
-                    Solucion = "Vidrios puerta cabina" ||
-                    Solucion = "Vidrio lateral derecho cabina" ||
-                    Solucion = "Vidrio trasero cabina" ||
-                    Solucion = "Pasamanos cabina"
+                    Solucion = "Joystick" ||
+                    Solucion = "Mando piloto" ||
+                    Solucion = "Sellos mando piloto" ||
+                    Solucion = "Palancas de tralacion" ||
+                    Solucion = "Pedal" ||
+                    Solucion = "Valvula de pedal" ||
+                    Solucion = "Sellos valvula de pedal" ||
+                    Solucion = "Manipulador joystick (knob, grip)"
                 )
             )
         );
         ClearCollect(
-            colFilteredJoystick,
+            colFilteredCabina,
             Filter(
                 'Actividades Cabina',
                 Tipo = "Excavadora" &&
@@ -56,7 +51,43 @@ Features_7 As screen:
                     Solucion = "GPS" 
                 )
             )
-        )
+        );
+        ClearCollect(
+            colFilteredMonitor,
+            Filter(
+                'Actividades Cabina',
+                Tipo = "Excavadora" &&
+                (
+                    Solucion = "Computador principal" ||
+                    Solucion = "Computador de motor" ||
+                    Solucion = "Convertidor de voltaje" ||
+                    Solucion = "Monitor (display)" ||
+                    Solucion = "Unidad del aire acondicionado" ||
+                    Solucion = "Panel aire acondicionado" ||
+                    Solucion = "Switch de encendido" ||
+                    Solucion = "Motor limpiabrisas" ||
+                    Solucion = "Computador limpiabrisas"||
+                    Solucion = "Radio" ||
+                    Solucion = "Interruptor bloqueo movimientos" ||
+                    Solucion = "Blower aire acondicionado" ||
+                    Solucion = "Evaporador del aire acondicionado" ||
+                    Solucion = "Tapas consola derecha" ||
+                    Solucion = "Tapas consola izquierda"
+                )
+            )
+        );
+        ClearCollect(
+            colFilteredSilla,
+            Filter(
+                'Actividades Cabina',
+                Tipo = "Excavadora" &&
+                (
+                    Solucion = "Servicio externo (tapizado silla)" ||
+                    Solucion = "Servicio externo (reparación silla)" ||
+                    Solucion = "Asiento (silla) operador"
+                )
+            )
+        );
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle2_16 As rectangle:
