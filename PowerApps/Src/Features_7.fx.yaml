@@ -1351,7 +1351,7 @@ Features_7 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredCabina,
+                            colFilteredMonitor,
                             field_6 = ComboBox2_30.Selected.Results
                         ),
                         field_7
@@ -1410,7 +1410,7 @@ Features_7 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredCabina,
+                        colFilteredMonitor,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -1421,7 +1421,7 @@ Features_7 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredCabina,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_30.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredMonitor,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_30.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop6
