@@ -2154,7 +2154,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredFiltrosMotor,
+                            colFilteredBancoSolenoide,
                             field_6 = ComboBox2_23.Selected.Results
                         ),
                         field_7
@@ -2213,7 +2213,7 @@ Features_11 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredFiltrosMotor,
+                        colFilteredBancoSolenoide,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -2224,7 +2224,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredFiltrosMotor,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_23.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_23.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop6
@@ -2240,7 +2240,7 @@ Features_11 As screen:
         Height: =546
         Items: |-
             =Filter(
-                colFilteredFiltrosMotor, 
+                colFilteredBancoSolenoide, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_23.Selected.Results && field_7 = ComboBox1_25.Selected.Results 
             )
         Layout: =Layout.Vertical
