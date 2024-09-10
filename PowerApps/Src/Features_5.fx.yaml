@@ -33,7 +33,7 @@ Features_5 As screen:
         Height: =44
         TabIndex: =0
         Width: =1366
-        ZIndex: =2
+        ZIndex: =1
 
     Label2_10 As label:
         Align: =Align.Center
@@ -57,7 +57,7 @@ Features_5 As screen:
             ="EXCAVADORA: Filtro de aire, enfriadores, baterías, tanque de expansión y válvula de amortiguación piloto"
         Width: =1307.3
         X: =58.7
-        ZIndex: =3
+        ZIndex: =2
 
     icon11_7 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -71,9 +71,9 @@ Features_5 As screen:
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
         TabIndex: =0
         Width: =54.69
-        X: =286.81
-        Y: =303
-        ZIndex: =7
+        X: =286
+        Y: =293
+        ZIndex: =3
 
     icon9_12 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -89,7 +89,7 @@ Features_5 As screen:
         Width: =74.7
         X: =1044.51
         Y: =382
-        ZIndex: =9
+        ZIndex: =4
 
     Rectangle15_17 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
@@ -102,7 +102,7 @@ Features_5 As screen:
         Width: =58.7
         X: =1043.18
         Y: =610
-        ZIndex: =10
+        ZIndex: =5
 
     Rectangle10_4 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
@@ -114,7 +114,7 @@ Features_5 As screen:
         Width: =58.7
         X: =1031.17
         Y: =611
-        ZIndex: =11
+        ZIndex: =6
 
     Label1_2 As label:
         Align: =Align.Center
@@ -130,7 +130,7 @@ Features_5 As screen:
         Width: =176.09
         X: =875.09
         Y: =378
-        ZIndex: =23
+        ZIndex: =7
 
     Label1_23 As label:
         Align: =Align.Center
@@ -146,7 +146,7 @@ Features_5 As screen:
         Width: =201.43
         X: =85.38
         Y: =293
-        ZIndex: =24
+        ZIndex: =8
 
     Image6_6 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -157,7 +157,71 @@ Features_5 As screen:
         OnSelect: =Navigate(Features, ScreenTransition.Fade)
         Width: =68
         X: =1
-        ZIndex: =26
+        ZIndex: =9
+
+    icon11_9 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =48
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
+        TabIndex: =0
+        Width: =54.69
+        X: =320
+        Y: =511
+        ZIndex: =10
+
+    Label1_39 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =89
+        Size: =13
+        Text: ="TANQUE EXPANSION"
+        Width: =201.43
+        X: =119
+        Y: =511
+        ZIndex: =11
+
+    icon9_13 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =45
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
+        TabIndex: =0
+        Width: =68
+        X: =878
+        Y: =78
+        ZIndex: =12
+
+    Label1_7 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =58
+        Size: =13
+        Text: ="VÁLVULA DE AMORTIGUACIÓN PILOTO"
+        Width: =317
+        X: =948
+        Y: =71
+        ZIndex: =13
 
     Rectangle4_66 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 255)
@@ -172,7 +236,7 @@ Features_5 As screen:
         Width: =429
         X: =887
         Y: =52
-        ZIndex: =27
+        ZIndex: =14
 
     icon14_45 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -189,7 +253,7 @@ Features_5 As screen:
         Width: =42
         X: =1259
         Y: =62
-        ZIndex: =28
+        ZIndex: =15
 
     ButtonCanvas4_40 As Botón:
         Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -209,7 +273,7 @@ Features_5 As screen:
         Width: =46
         X: =1259
         Y: =135
-        ZIndex: =29
+        ZIndex: =16
 
     ButtonCanvas4_41 As Botón:
         BasePaletteColor: =
@@ -235,7 +299,7 @@ Features_5 As screen:
         Width: =41
         X: =1208
         Y: =135
-        ZIndex: =30
+        ZIndex: =17
 
     ComboBox1_21 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -279,7 +343,7 @@ Features_5 As screen:
         Width: =103
         X: =1026
         Y: =138
-        ZIndex: =31
+        ZIndex: =18
 
     icon14_46 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -295,7 +359,7 @@ Features_5 As screen:
         Width: =42
         X: =1207
         Y: =64
-        ZIndex: =32
+        ZIndex: =19
 
     ComboBox2_19 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -335,7 +399,7 @@ Features_5 As screen:
         Width: =104
         X: =907
         Y: =135
-        ZIndex: =33
+        ZIndex: =20
 
     "Gallery2_20 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
@@ -355,7 +419,7 @@ Features_5 As screen:
         Width: =416
         X: =893
         Y: =182
-        ZIndex: =34
+        ZIndex: =21
 
         Title3_41 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -493,13 +557,13 @@ Features_5 As screen:
         Width: =303
         X: =902
         Y: =60
-        ZIndex: =35
+        ZIndex: =22
 
     Rectangle4_67 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 255)
         BorderThickness: =5
         DisabledFill: =Rectangle4_67.Fill
-        Fill: =Color.OliveDrab
+        Fill: =Color.YellowGreen
         Height: =696
         HoverFill: =Rectangle4_67.Fill
         PressedFill: =Rectangle4_67.Fill
@@ -508,7 +572,7 @@ Features_5 As screen:
         Width: =429
         X: =285
         Y: =72
-        ZIndex: =36
+        ZIndex: =23
 
     icon14_47 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -525,7 +589,7 @@ Features_5 As screen:
         Width: =42
         X: =657
         Y: =82
-        ZIndex: =37
+        ZIndex: =24
 
     ButtonCanvas4_42 As Botón:
         Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -545,7 +609,7 @@ Features_5 As screen:
         Width: =46
         X: =657
         Y: =155
-        ZIndex: =38
+        ZIndex: =25
 
     ButtonCanvas4_43 As Botón:
         BasePaletteColor: =
@@ -571,7 +635,7 @@ Features_5 As screen:
         Width: =41
         X: =606
         Y: =155
-        ZIndex: =39
+        ZIndex: =26
 
     ComboBox1_22 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -615,7 +679,7 @@ Features_5 As screen:
         Width: =103
         X: =424
         Y: =158
-        ZIndex: =40
+        ZIndex: =27
 
     icon14_48 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -631,7 +695,7 @@ Features_5 As screen:
         Width: =42
         X: =605
         Y: =84
-        ZIndex: =41
+        ZIndex: =28
 
     ComboBox2_20 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -671,12 +735,12 @@ Features_5 As screen:
         Width: =104
         X: =305
         Y: =155
-        ZIndex: =42
+        ZIndex: =29
 
     "Gallery2_21 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
-        Fill: =Color.OliveDrab
+        Fill: =Color.YellowGreen
         Height: =546
         Items: |-
             =Filter(
@@ -691,7 +755,7 @@ Features_5 As screen:
         Width: =416
         X: =291
         Y: =202
-        ZIndex: =43
+        ZIndex: =30
 
         Title3_43 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -824,44 +888,12 @@ Features_5 As screen:
         PressedColor: =Label9_60.Color
         PressedFill: =Label9_60.Fill
         Size: =15
-        Text: ="ENFRIADORES"
+        Text: ="RADIADOR"
         Visible: =pop4
         Width: =303
         X: =300
         Y: =80
-        ZIndex: =44
-
-    icon11_9 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =48
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
-        TabIndex: =0
-        Width: =54.69
-        X: =320
-        Y: =521
-        ZIndex: =45
-
-    Label1_39 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =89
-        Size: =13
-        Text: ="TANQUE EXPANSION"
-        Width: =201.43
-        X: =119
-        Y: =511
-        ZIndex: =46
+        ZIndex: =31
 
     Rectangle4_68 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 255)
@@ -874,9 +906,9 @@ Features_5 As screen:
         TabIndex: =0
         Visible: =pop1
         Width: =429
-        X: =820
-        Y: =44
-        ZIndex: =47
+        X: =779
+        Y: =72
+        ZIndex: =32
 
     icon14_49 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -891,9 +923,9 @@ Features_5 As screen:
         TabIndex: =0
         Visible: =pop1
         Width: =42
-        X: =1192
-        Y: =54
-        ZIndex: =48
+        X: =1142
+        Y: =82
+        ZIndex: =33
 
     ButtonCanvas4_44 As Botón:
         Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -911,9 +943,9 @@ Features_5 As screen:
         Text: ="Selec Todo"
         Visible: =pop1
         Width: =46
-        X: =1192
-        Y: =127
-        ZIndex: =49
+        X: =1142
+        Y: =155
+        ZIndex: =34
 
     ButtonCanvas4_45 As Botón:
         BasePaletteColor: =
@@ -937,9 +969,9 @@ Features_5 As screen:
         Text: ="Borrar Todo"
         Visible: =pop1
         Width: =41
-        X: =1141
-        Y: =127
-        ZIndex: =50
+        X: =1091
+        Y: =155
+        ZIndex: =35
 
     ComboBox1_23 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -981,9 +1013,9 @@ Features_5 As screen:
         Size: =10
         Visible: =pop1
         Width: =103
-        X: =959
-        Y: =130
-        ZIndex: =51
+        X: =909
+        Y: =158
+        ZIndex: =36
 
     icon14_50 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -997,9 +1029,9 @@ Features_5 As screen:
         TabIndex: =0
         Visible: =pop1
         Width: =42
-        X: =1140
-        Y: =56
-        ZIndex: =52
+        X: =1090
+        Y: =84
+        ZIndex: =37
 
     ComboBox2_21 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1037,9 +1069,9 @@ Features_5 As screen:
         Size: =10
         Visible: =pop1
         Width: =104
-        X: =840
-        Y: =127
-        ZIndex: =53
+        X: =790
+        Y: =155
+        ZIndex: =38
 
     "Gallery2_22 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
@@ -1057,9 +1089,9 @@ Features_5 As screen:
         TemplateSize: =82
         Visible: =pop1
         Width: =416
-        X: =826
-        Y: =174
-        ZIndex: =54
+        X: =785
+        Y: =202
+        ZIndex: =39
 
         Title3_45 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -1195,7 +1227,370 @@ Features_5 As screen:
         Text: ="TANQUE EXPANSIÓN"
         Visible: =pop1
         Width: =303
-        X: =835
-        Y: =52
-        ZIndex: =55
+        X: =785
+        Y: =80
+        ZIndex: =40
+
+    Rectangle4_69 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 255)
+        BorderThickness: =5
+        DisabledFill: =Rectangle4_69.Fill
+        Fill: =Color.Wheat
+        Height: =696
+        HoverFill: =Rectangle4_69.Fill
+        PressedFill: =Rectangle4_69.Fill
+        TabIndex: =0
+        Visible: =pop3
+        Width: =429
+        X: =142
+        Y: =62
+        ZIndex: =41
+
+    icon14_51 As icon.Cancel:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(215, 58, 60, 1)
+        Height: =28
+        Icon: =Icon.Cancel
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false})
+        TabIndex: =0
+        Visible: =pop3
+        Width: =42
+        X: =505
+        Y: =72
+        ZIndex: =42
+
+    ButtonCanvas4_46 As Botón:
+        Appearance: ='ButtonCanvas.Appearance'.Secondary
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =9
+        Height: =38
+        OnSelect: |+
+            =ForAll(
+                Gallery2_23.AllItems, 
+                Collect(colAllSelectedItems, ThisRecord)
+            );
+            UpdateContext({ varCheckboxChecked1: !Checkbox1_23.Value });
+            
+        Text: ="Selec Todo"
+        Visible: =pop3
+        Width: =46
+        X: =505
+        Y: =145
+        ZIndex: =43
+
+    ButtonCanvas4_47 As Botón:
+        BasePaletteColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontSize: =9
+        Height: =38
+        OnSelect: |+
+            =ForAll(
+                Gallery2_23.AllItems,
+                RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
+            );
+            
+            UpdateContext({ varCheckboxChecked1: !Checkbox1_23.Value });
+            
+            
+            
+            
+            
+            
+            
+        Text: ="Borrar Todo"
+        Visible: =pop3
+        Width: =41
+        X: =454
+        Y: =145
+        ZIndex: =44
+
+    ComboBox1_24 As combobox:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Results"]
+        Font: =App.Theme.Font
+        Height: =33
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        InputTextPlaceholder: ="Tamaño"
+        Items: |-
+            =Sort(
+                ForAll(
+                    Distinct(
+                        Filter(
+                            colFilteredTanqueexpasion,
+                            field_6 = ComboBox2_22.Selected.Results
+                        ),
+                        field_7
+                    ),
+                    {Results: ThisRecord.Value}
+                ),
+                Results
+            )
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =App.Theme.Colors.Darker30
+        SearchFields: =["Results"]
+        SearchItems: |-
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredTanqueexpasion,field_6=ComboBox2_22.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_24.SearchText,Results)
+        SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
+        Size: =10
+        Visible: =pop3
+        Width: =103
+        X: =272
+        Y: =148
+        ZIndex: =45
+
+    icon14_52 As icon.Cancel:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(52, 152, 47, 1)
+        Height: =28
+        Icon: =Icon.Reset
+        OnSelect: =Reset(ComboBox2_22);Reset(ComboBox1_24)
+        TabIndex: =0
+        Visible: =pop3
+        Width: =42
+        X: =453
+        Y: =74
+        ZIndex: =46
+
+    ComboBox2_22 As combobox:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Results"]
+        Font: =App.Theme.Font
+        Height: =34
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        InputTextPlaceholder: ="Solución"
+        Items: |-
+            =Filter(
+                ForAll(
+                    Distinct(
+                        colFilteredValvulaAmortiguacionPiloto,
+                        field_6
+                    ),
+                    {Results: ThisRecord.Value}
+                ),
+                Results
+            )
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =App.Theme.Colors.Darker30
+        SearchFields: =["Results"]
+        SearchItems: |-
+            =Search(Filter(ForAll(Distinct(colFilteredValvulaAmortiguacionPiloto,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_22.SearchText,Results)
+        SelectionFill: =App.Theme.Colors.Primary
+        Size: =10
+        Visible: =pop3
+        Width: =104
+        X: =153
+        Y: =145
+        ZIndex: =47
+
+    "Gallery2_23 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
+        BorderColor: =App.Theme.Colors.Darker40
+        DelayItemLoading: =true
+        Fill: =Color.Wheat
+        Height: =546
+        Items: |-
+            =Filter(
+                colFilteredTanqueexpasion, 
+                field_5 = "Excavadora" && field_6 = ComboBox2_22.Selected.Results && field_7 = ComboBox1_24.Selected.Results 
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =82
+        Visible: =pop3
+        Width: =416
+        X: =148
+        Y: =192
+        ZIndex: =48
+
+        Title3_47 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =20
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="Codigo: "&ThisItem.Codigo
+            VerticalAlign: =VerticalAlign.Top
+            Width: =104
+            X: =81
+            Y: =55
+            ZIndex: =2
+
+        Subtitle2_23 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =43
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: =ThisItem.Nombre
+            VerticalAlign: =VerticalAlign.Top
+            Width: =398
+            X: =4
+            ZIndex: =3
+
+        Body2_23 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =14
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="ID: "&ThisItem.Id
+            VerticalAlign: =VerticalAlign.Top
+            Width: =53
+            X: =16
+            Y: =55
+            ZIndex: =4
+
+        Separator2_23 As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =5
+
+        Rectangle2_34 As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =App.Theme.Colors.Darker30
+            Height: =Parent.TemplateHeight - Separator2_23.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =6
+
+        Title3_48 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =20
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: =ThisItem.'Codigo Alterno'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =67
+            X: =203
+            Y: =55
+            ZIndex: =7
+
+        Checkbox1_23 As checkbox:
+            BorderColor: =App.Theme.Colors.Darker40
+            CheckboxBorderColor: =App.Theme.Colors.Primary
+            CheckmarkFill: =App.Theme.Colors.Primary
+            Color: =RGBA(0, 0, 0, 1)
+            Default: =varCheckboxChecked1
+            Font: =App.Theme.Font
+            Height: =45
+            HoverColor: =App.Theme.Colors.Darker30
+            OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
+            OnSelect: =Select(Parent)
+            OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
+            Size: =13
+            Text: =
+            Width: =39
+            X: =356
+            Y: =28
+            ZIndex: =8
+
+    Label9_62 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        HoverBorderColor: =Label9_62.BorderColor
+        HoverColor: =Label9_62.Color
+        HoverFill: =Label9_62.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_62.BorderColor
+        PressedColor: =Label9_62.Color
+        PressedFill: =Label9_62.Fill
+        Size: =15
+        Text: ="VÁLVULA AMORTIGUACIÓN PILOTO"
+        Visible: =pop3
+        Width: =303
+        X: =148
+        Y: =70
+        ZIndex: =49
+
+    Label4_17 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =46
+        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+        Size: =12
+        Text: ="Resumen"
+        Width: =84
+        Y: =60
+        ZIndex: =50
+
+    Image24_4 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =62
+        Image: ='icons8-estimar'
+        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+        Width: =87
+        Y: =102
+        ZIndex: =51
 
