@@ -1592,7 +1592,7 @@ Features_7 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredJoystick,field_6=ComboBox2_31.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_33.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredSilla,field_6=ComboBox2_31.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_33.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1987,11 +1987,12 @@ Features_7 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
+            Height: =41
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
             Size: =13.34
-            Text: ="Cabina"
-            Width: =99
+            Text: ="Cabina, Vidrios y Espejos"
+            Width: =175
             X: =1086
             Y: =123
             ZIndex: =39
