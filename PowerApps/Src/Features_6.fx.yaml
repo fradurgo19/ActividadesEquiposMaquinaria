@@ -1351,7 +1351,7 @@ Features_6 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredStick,field_6=ComboBox2_27.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_29.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBalde,field_6=ComboBox2_27.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_29.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
