@@ -1330,7 +1330,7 @@ Features_5 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredTanqueexpasion,
+                            colFilteredValvulaAmortiguacionPiloto,
                             field_6 = ComboBox2_22.Selected.Results
                         ),
                         field_7
@@ -1416,7 +1416,7 @@ Features_5 As screen:
         Height: =546
         Items: |-
             =Filter(
-                colFilteredTanqueexpasion, 
+                colFilteredValvulaAmortiguacionPiloto, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_22.Selected.Results && field_7 = ComboBox1_24.Selected.Results 
             )
         Layout: =Layout.Vertical
