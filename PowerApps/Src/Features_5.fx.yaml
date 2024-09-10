@@ -19,6 +19,12 @@ Features_5 As screen:
                 Tipo = "Excavadora"
             )
         );
+        ClearCollect(colFilteredValvulaAmortiguacionPiloto,
+            Filter(
+                'Válvula Amortiguación Piloto',
+                Tipo = "Excavadora"
+            )
+        )
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle2_9 As rectangle:
