@@ -11,7 +11,21 @@ Features_7 As screen:
             colFilteredCabina,
             Filter(
                 'Actividades Cabina',
-                Tipo = "Excavadora"
+                Tipo = "Excavadora",  
+                Solucion = "Servicio externo (tapizado cabina)",
+                Solucion = "Rele (relay) cabina",
+                Solucion = "Interruptor cabina",
+                Solucion = "Harness (arnes, cableado) cabina",
+                Solucion = "Cabina",
+                Solucion = "Soportes de cabina",
+                Solucion = "Puerta de cabina",
+                Solucion = "Vidrio frontal cabina",
+                Solucion = "Vidrio piecero cabina",
+                Solucion = "Vidrios puerta cabina",
+                Solucion = "Vidrio lateral derecho cabina",
+                Solucion = "Vidrio trasero cabina",
+                Solucion = "Pasamanos cabina"
+                
             )
         )
     Width: =Max(App.Width, App.DesignWidth)
