@@ -107,7 +107,7 @@ Resumen As screen:
         Height: =593
         Items: |
             =Sort(
-                Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4}),
+                Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4, field_8: field_8}),
                 Value.field_0
             )
         Layout: =Layout.Vertical
@@ -115,8 +115,8 @@ Resumen As screen:
         ShowNavigation: =true
         TemplatePadding: =0
         TemplateSize: =57
-        Width: =844
-        X: =53
+        Width: =895
+        X: =19
         Y: =96
         ZIndex: =7
 
@@ -222,7 +222,7 @@ Resumen As screen:
             Icon: =Icon.Trash
             OnSelect: =RemoveIf(colAllSelectedItems, field_0 = ThisItem.Value.field_0)
             Width: =32
-            X: =791
+            X: =863
             Y: =5
             ZIndex: =10
 
@@ -283,9 +283,29 @@ Resumen As screen:
             Text: |
                 =(ThisItem.Value.field_4) * Value(TextInput2.Text)
             Width: =72
-            X: =702
+            X: =691
             Y: =6
             ZIndex: =14
+
+        Subtitle7_3 As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =32
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =11
+            Text: |
+                =ThisItem.Value.field_8
+            Width: =72
+            X: =763
+            Y: =6
+            ZIndex: =15
 
     Label4_1 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -630,11 +650,11 @@ Resumen As screen:
             Fill: =App.Theme.Colors.Darker30
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =28
+            Height: =27
             Size: =10
             Text: ="Id"
-            Width: =48
-            X: =53
+            Width: =55
+            X: =19
             Y: =69
             ZIndex: =10
 
@@ -646,11 +666,11 @@ Resumen As screen:
             Fill: =App.Theme.Colors.Darker30
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =28
+            Height: =27
             Size: =9
             Text: ="Codigo"
-            Width: =71
-            X: =101
+            Width: =82
+            X: =74
             Y: =69
             ZIndex: =11
 
@@ -662,11 +682,11 @@ Resumen As screen:
             Fill: =App.Theme.Colors.Darker30
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =28
+            Height: =27
             Size: =9
             Text: ="Alterno"
-            Width: =62
-            X: =172
+            Width: =71
+            X: =156
             Y: =69
             ZIndex: =12
 
@@ -678,11 +698,11 @@ Resumen As screen:
             Fill: =App.Theme.Colors.Darker30
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =28
+            Height: =27
             Size: =9
             Text: ="Actividad"
-            Width: =382
-            X: =234
+            Width: =369
+            X: =227
             Y: =69
             ZIndex: =13
 
@@ -694,12 +714,12 @@ Resumen As screen:
             Fill: =App.Theme.Colors.Darker30
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =28
+            Height: =27
             Size: =9
             Text: ="Tiempo"
-            Width: =55
-            X: =616
-            Y: =69
+            Width: =60
+            X: =595
+            Y: =70
             ZIndex: =14
 
         Label4_8 As label:
@@ -710,13 +730,13 @@ Resumen As screen:
             Fill: =App.Theme.Colors.Darker30
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =28
+            Height: =27
             Size: =9
             Text: |-
                 ="Eliminar
                 "
             Width: =67
-            X: =830
+            X: =847
             Y: =69
             ZIndex: =15
 
@@ -728,12 +748,12 @@ Resumen As screen:
             Fill: =App.Theme.Colors.Darker30
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =28
+            Height: =27
             Size: =9
             Text: ="Cantidad"
-            Width: =70
-            X: =671
-            Y: =69
+            Width: =66
+            X: =655
+            Y: =70
             ZIndex: =16
 
         Label4_10 As label:
@@ -744,12 +764,12 @@ Resumen As screen:
             Fill: =App.Theme.Colors.Darker30
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =28
+            Height: =27
             Size: =9
             Text: ="Total Tiempo"
-            Width: =89
-            X: =741
-            Y: =69
+            Width: =55
+            X: =721
+            Y: =70
             ZIndex: =17
 
     Button1_1 As button:
@@ -1019,4 +1039,20 @@ Resumen As screen:
         Width: =70
         Y: =2
         ZIndex: =50
+
+    Label4_21 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =App.Theme.Colors.Darker30
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =27
+        Size: =9
+        Text: ="Recurso"
+        Width: =71
+        X: =776
+        Y: =70
+        ZIndex: =51
 
