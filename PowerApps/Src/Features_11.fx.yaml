@@ -457,9 +457,9 @@ Features_11 As screen:
                     Distinct(
                         Filter(
                             colFilteredBombaPiloto,
-                            field_6 = ComboBox2_11.Selected.Results
+                            Solucion = ComboBox2_11.Selected.Results
                         ),
-                        field_7
+                        Tamaño
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -469,7 +469,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaPiloto,field_6=ComboBox2_11.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_13.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaPiloto,Solucion=ComboBox2_11.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_13.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -516,7 +516,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBombaPiloto,
-                        field_6
+                        Solucion
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -526,7 +526,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBombaPiloto,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_11.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBombaPiloto,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_11.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop2
@@ -543,7 +543,7 @@ Features_11 As screen:
         Items: |-
             =Filter(
                 colFilteredBombaPiloto, 
-                field_5 = "Excavadora" && field_6 = ComboBox2_11.Selected.Results && field_7 = ComboBox1_13.Selected.Results 
+                Tipo = "Excavadora" && Solucion = ComboBox2_11.Selected.Results && Tamaño = ComboBox1_13.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -778,9 +778,9 @@ Features_11 As screen:
                     Distinct(
                         Filter(
                             colFilteredFiltroPiloto,
-                            field_6 = ComboBox2_12.Selected.Results
+                            Solucion = ComboBox2_12.Selected.Results
                         ),
-                        field_7
+                        Tamaño
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -790,7 +790,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredFiltroPiloto,field_6=ComboBox2_12.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_14.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredFiltroPiloto,Solucion=ComboBox2_12.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_14.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -837,7 +837,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         colFilteredFiltroPiloto,
-                        field_6
+                        Solucion
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -847,7 +847,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredFiltroPiloto,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_12.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredFiltroPiloto,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_12.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
@@ -864,7 +864,7 @@ Features_11 As screen:
         Items: |-
             =Filter(
                 colFilteredFiltroPiloto, 
-                field_5 = "Excavadora" && field_6 = ComboBox2_12.Selected.Results && field_7 = ComboBox1_14.Selected.Results 
+                Tipo = "Excavadora" && Solucion = ComboBox2_12.Selected.Results && Tamaño = ComboBox1_14.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -1147,9 +1147,9 @@ Features_11 As screen:
                     Distinct(
                         Filter(
                             colFilteredFiltrosMotor,
-                            field_6 = ComboBox2_15.Selected.Results
+                            Solucion = ComboBox2_15.Selected.Results
                         ),
-                        field_7
+                        Tamaño
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1159,7 +1159,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredFiltrosMotor,field_6=ComboBox2_15.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_17.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredFiltrosMotor,Solucion=ComboBox2_15.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_17.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1206,7 +1206,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         colFilteredFiltrosMotor,
-                        field_6
+                        Solucion
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1216,7 +1216,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredFiltrosMotor,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_15.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredFiltrosMotor,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_15.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop5
@@ -1233,7 +1233,7 @@ Features_11 As screen:
         Items: |-
             =Filter(
                 colFilteredFiltrosMotor, 
-                field_5 = "Excavadora" && field_6 = ComboBox2_15.Selected.Results && field_7 = ComboBox1_17.Selected.Results 
+                Tipo = "Excavadora" && Solucion = ComboBox2_15.Selected.Results && Tamaño = ComboBox1_17.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -1483,9 +1483,9 @@ Features_11 As screen:
                     Distinct(
                         Filter(
                             colFilteredBancoSolenoide,
-                            field_6 = ComboBox2_23.Selected.Results
+                            Solucion = ComboBox2_23.Selected.Results
                         ),
-                        field_7
+                        Tamaño
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1495,7 +1495,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoSolenoide,field_6=ComboBox2_23.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_25.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoSolenoide,Solucion=ComboBox2_23.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_25.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1542,7 +1542,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBancoSolenoide,
-                        field_6
+                        Solucion
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1552,7 +1552,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_23.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_23.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop6
@@ -1569,7 +1569,7 @@ Features_11 As screen:
         Items: |-
             =Filter(
                 colFilteredBancoSolenoide, 
-                field_5 = "Excavadora" && field_6 = ComboBox2_23.Selected.Results && field_7 = ComboBox1_25.Selected.Results 
+                Tipo = "Excavadora" && Solucion = ComboBox2_23.Selected.Results && Tamaño = ComboBox1_25.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -1819,9 +1819,9 @@ Features_11 As screen:
                     Distinct(
                         Filter(
                             colFilteredBombaHidraulica,
-                            field_6 = ComboBox2_13.Selected.Results
+                            Solucion = ComboBox2_13.Selected.Results
                         ),
-                        field_7
+                        Tamaño
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1831,7 +1831,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaHidraulica,field_6=ComboBox2_13.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_15.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaHidraulica,Solucion=ComboBox2_13.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_15.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1878,7 +1878,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBombaHidraulica,
-                        field_6
+                        Solucion
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1888,7 +1888,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBombaHidraulica,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_13.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBombaHidraulica,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_13.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop1
@@ -1905,7 +1905,7 @@ Features_11 As screen:
         Items: |-
             =Filter(
                 colFilteredBombaHidraulica, 
-                field_5 = "Excavadora" && field_6 = ComboBox2_13.Selected.Results && field_7 = ComboBox1_15.Selected.Results 
+                Tipo = "Excavadora" && Solucion = ComboBox2_13.Selected.Results && Tamaño = ComboBox1_15.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -2155,9 +2155,9 @@ Features_11 As screen:
                     Distinct(
                         Filter(
                             colFilteredBombaCombustible,
-                            field_6 = ComboBox2_14.Selected.Results
+                            Solucion = ComboBox2_14.Selected.Results
                         ),
-                        field_7
+                        Tamaño
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -2167,7 +2167,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaCombustible,field_6=ComboBox2_14.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_16.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaCombustible,Solucion=ComboBox2_14.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_16.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -2214,7 +2214,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBombaCombustible,
-                        field_6
+                        Solucion
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -2224,7 +2224,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBombaCombustible,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_14.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBombaCombustible,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_14.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop3
@@ -2241,7 +2241,7 @@ Features_11 As screen:
         Items: |-
             =Filter(
                 colFilteredBombaCombustible, 
-                field_5 = "Excavadora" && field_6 = ComboBox2_14.Selected.Results && field_7 = ComboBox1_16.Selected.Results 
+                Tipo = "Excavadora" && Solucion = ComboBox2_14.Selected.Results && Tamaño = ComboBox1_16.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
