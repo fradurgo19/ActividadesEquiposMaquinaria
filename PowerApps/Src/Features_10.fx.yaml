@@ -951,6 +951,28 @@ Features_10 As screen:
         Y: =401
         ZIndex: =64
 
+    TextCanvas3 As Texto:
+        DisplayMode: =DisplayMode.Edit
+        Height: =29
+        Text: |-
+            ="Recurso: "
+        Visible: =pop4
+        Width: =112
+        X: =989
+        Y: =464
+        ZIndex: =65
+
+    TextCanvas3_1 As Texto:
+        DisplayMode: =DisplayMode.Edit
+        Height: =30
+        Text: |-
+            ="Recurso: "
+        Visible: =pop1
+        Width: =112
+        X: =981
+        Y: =525
+        ZIndex: =66
+
     Group4_3 As group:
         Height: =5
         Width: =5
