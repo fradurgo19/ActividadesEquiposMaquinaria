@@ -115,13 +115,13 @@ Features_4 As screen:
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =38
+        Fill: =RGBA(152, 208, 70, 1)
+        Height: =50
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false})
         TabIndex: =0
-        Width: =57.36
+        Width: =50
         X: =1018
         Y: =449
         ZIndex: =20
@@ -821,15 +821,15 @@ Features_4 As screen:
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =48
+        Fill: =RGBA(152, 208, 70, 1)
+        Height: =50
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
         TabIndex: =0
-        Width: =54.69
+        Width: =50
         X: =318
-        Y: =487
+        Y: =473
         ZIndex: =40
 
     Label1_40 As label:
@@ -1213,28 +1213,33 @@ Features_4 As screen:
         Y: =132
         ZIndex: =52
 
-    Group5_1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =75
+    Container1 As groupContainer:
+        DropShadow: =DropShadow.Light
+        Height: =53
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =304
+        X: =68
+        Y: =304
+        ZIndex: =53
 
         icon11_6 As icon.Add:
             BorderColor: =App.Theme.Colors.Darker40
             Color: =App.Theme.Colors.Darker30
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =48
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
             TabIndex: =0
-            Width: =54.69
-            X: =343
-            Y: =347
-            ZIndex: =4
+            Width: =50
+            X: =243
+            Y: =3
+            ZIndex: =1
 
         Label1_22 As label:
             Align: =Align.Center
@@ -1244,13 +1249,13 @@ Features_4 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
-            Height: =74
+            Height: =50
             Size: =13
             Text: ="TORNAMESA"
-            Width: =237.45
-            X: =106
-            Y: =321
-            ZIndex: =16
+            Width: =237
+            X: =6
+            Y: =3
+            ZIndex: =2
 
     Group7_1 As group:
         Height: =5
