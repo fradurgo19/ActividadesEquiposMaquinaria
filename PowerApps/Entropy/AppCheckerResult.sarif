@@ -34617,6 +34617,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.TrendeRodaje"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.TrendeRodaje",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TrendeRodaje",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Zona4BombasHidraulicas"
                 }
               ],

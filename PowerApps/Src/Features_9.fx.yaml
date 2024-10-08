@@ -1,5 +1,5 @@
 Features_9 As screen:
-    BackgroundImage: =Tren
+    BackgroundImage: =
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
@@ -85,18 +85,18 @@ Features_9 As screen:
 
     icon11_21 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
+        Color: =App.Theme.Colors.Lighter80
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =36
+        Fill: =RGBA(152, 208, 70, 1)
+        Height: =50
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         TabIndex: =0
-        Width: =57.36
-        X: =607
-        Y: =481
+        Width: =50
+        X: =361
+        Y: =385
         ZIndex: =13
 
     Label1_18 As label:
@@ -113,8 +113,8 @@ Features_9 As screen:
         Size: =13.34
         Text: ="TRASLACIÓN"
         Width: =177.42
-        X: =664
-        Y: =481
+        X: =418
+        Y: =393
         ZIndex: =14
 
     Rectangle4_42 As rectangle:
@@ -1019,16 +1019,16 @@ Features_9 As screen:
 
         icon11_19 As icon.Add:
             BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
+            Color: =App.Theme.Colors.Lighter80
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =38
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
             Icon: =Icon.Add
             OnSelect: |-
                 =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false})
             TabIndex: =0
-            Width: =49.36
+            Width: =50
             X: =899.11
             Y: =537
             ZIndex: =5
