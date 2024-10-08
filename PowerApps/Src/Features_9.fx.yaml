@@ -23,13 +23,35 @@ Features_9 As screen:
         )
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image22 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =442
+        Image: =Traslacion_1
+        Width: =385
+        X: =226
+        Y: =59
+        ZIndex: =1
+
+    Image21 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =445
+        Image: =TrendeRodaje
+        Width: =551
+        X: =815
+        Y: =44
+        ZIndex: =2
+
     Rectangle2_13 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =App.Theme.Colors.Primary
         Height: =44
         TabIndex: =0
         Width: =1366
-        ZIndex: =1
+        ZIndex: =3
 
     Label2_14 As label:
         Align: =LayoutAlignItems.Center
@@ -51,7 +73,7 @@ Features_9 As screen:
         Size: =18
         Text: ="EXCAVADORA TREN DE RODAJE Y TRASLACIÓN"
         Width: =1366
-        ZIndex: =2
+        ZIndex: =4
 
     icon1_12 As icon.ChevronLeft:
         BorderColor: =App.Theme.Colors.Darker40
@@ -65,7 +87,7 @@ Features_9 As screen:
         Width: =26.68
         X: =179
         Y: =140
-        ZIndex: =3
+        ZIndex: =5
 
     icon12_24 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -81,7 +103,7 @@ Features_9 As screen:
         Width: =51
         X: =1301
         Y: =365
-        ZIndex: =6
+        ZIndex: =7
 
     icon11_21 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -95,8 +117,8 @@ Features_9 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         TabIndex: =0
         Width: =50
-        X: =361
-        Y: =385
+        X: =306
+        Y: =535
         ZIndex: =13
 
     Label1_18 As label:
@@ -113,8 +135,8 @@ Features_9 As screen:
         Size: =13.34
         Text: ="TRASLACIÓN"
         Width: =177.42
-        X: =418
-        Y: =393
+        X: =363
+        Y: =543
         ZIndex: =14
 
     Rectangle4_42 As rectangle:
@@ -604,7 +626,7 @@ Features_9 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredTrenderodaje,field_6=ComboBox2_10.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_12.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredTrenderodaje,field_6=ComboBox2_10.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_12.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -939,7 +961,7 @@ Features_9 As screen:
             Width: =540.26
             X: =361.51
             Y: =44
-            ZIndex: =7
+            ZIndex: =8
 
         Label8_60 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -964,7 +986,7 @@ Features_9 As screen:
             Width: =176.09
             X: =420.21
             Y: =51
-            ZIndex: =8
+            ZIndex: =9
 
         Label9_102 As label:
             BorderColor: =App.Theme.Colors.Darker40
@@ -992,7 +1014,7 @@ Features_9 As screen:
             Width: =260.13
             X: =406.87
             Y: =108
-            ZIndex: =9
+            ZIndex: =10
 
         icon12_33 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
@@ -1008,7 +1030,7 @@ Features_9 As screen:
             Width: =46.69
             X: =825.74
             Y: =51
-            ZIndex: =10
+            ZIndex: =11
 
     Group11_1 As group:
         Height: =5
@@ -1031,7 +1053,7 @@ Features_9 As screen:
             Width: =50
             X: =899.11
             Y: =537
-            ZIndex: =5
+            ZIndex: =6
 
         Label1_14 As label:
             Align: =Align.Center
@@ -1049,7 +1071,7 @@ Features_9 As screen:
             Width: =190.76
             X: =950
             Y: =537
-            ZIndex: =11
+            ZIndex: =12
 
     Group19_1 As group:
         Height: =5
