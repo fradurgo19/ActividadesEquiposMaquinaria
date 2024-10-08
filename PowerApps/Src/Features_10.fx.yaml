@@ -82,8 +82,8 @@ Features_10 As screen:
         PressedFill: =Rectangle4_20.Fill
         TabIndex: =0
         Visible: =pop4
-        Width: =417
-        X: =949
+        Width: =638
+        X: =727
         Y: =64
         ZIndex: =37
 
@@ -126,8 +126,8 @@ Features_10 As screen:
         Text: ="CALENTAMIENTO MOTOR"
         Visible: =pop4
         Width: =292
-        X: =963
-        Y: =75
+        X: =751
+        Y: =72
         ZIndex: =39
 
     icon14_17 As icon.Cancel:
@@ -162,8 +162,8 @@ Features_10 As screen:
         TemplatePadding: =0
         TemplateSize: =137
         Visible: =pop4
-        Width: =416
-        X: =949
+        Width: =609
+        X: =755
         Y: =194
         ZIndex: =41
 
@@ -219,8 +219,8 @@ Features_10 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =363
-            Y: =34
+            X: =559
+            Y: =81
             ZIndex: =8
 
         Title3_68 As label:
@@ -228,7 +228,7 @@ Features_10 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =20
+            Height: =58
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -240,7 +240,7 @@ Features_10 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =120
             X: =4
-            Y: =100
+            Y: =71
             ZIndex: =9
 
         Body2_33 As label:
@@ -248,7 +248,7 @@ Features_10 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =24
+            Height: =46
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -256,10 +256,10 @@ Features_10 As screen:
             PaddingTop: =0
             Size: =10
             Text: |-
-                ="Recurso: "&ThisItem.Recurso
+                ="Diagnostico: "&ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =239
-            Y: =46
+            Width: =605
+            X: =4
             ZIndex: =11
 
         Title3_69 As label:
@@ -267,7 +267,7 @@ Features_10 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =21
+            Height: =58
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -278,8 +278,8 @@ Features_10 As screen:
                 ="Tiempo Horas: "&ThisItem.Tiempo
             VerticalAlign: =VerticalAlign.Top
             Width: =132
-            X: =137
-            Y: =98
+            X: =142
+            Y: =71
             ZIndex: =12
 
     ButtonCanvas4_12 As Botón:
@@ -937,7 +937,7 @@ Features_10 As screen:
         DisplayMode: =DisplayMode.Edit
         Height: =29
         Text: |-
-            ="Recurso: "
+            ="Recurso:"
         Visible: =pop4
         Width: =112
         X: =989
