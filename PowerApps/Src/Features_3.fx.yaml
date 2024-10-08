@@ -214,8 +214,8 @@ Features_3 As screen:
         Size: =13.34
         Text: ="Banco de Vávulas"
         Width: =167
-        X: =813
-        Y: =501
+        X: =833
+        Y: =507
         ZIndex: =12
 
     icon11_18 As icon.Add:
@@ -1589,9 +1589,9 @@ Features_3 As screen:
                     Distinct(
                         Filter(
                             colFilteredBancoValvulas,
-                            Solucion = ComboBox2_4.Selected.Results
+                            field_6 = ComboBox2_4.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1601,7 +1601,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoValvulas,Solucion=ComboBox2_4.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_6.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoValvulas,field_6=ComboBox2_4.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_6.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1648,7 +1648,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBancoValvulas,
-                        Solución
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1658,7 +1658,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBancoValvulas,Solución),{Results:ThisRecord.Value}),Results),ComboBox2_4.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBancoValvulas,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_4.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
@@ -1935,9 +1935,9 @@ Features_3 As screen:
                     Distinct(
                         Filter(
                             colFilteredBancoSolenoide,
-                            Solucion = ComboBox2_7.Selected.Results
+                            field_6 = ComboBox2_7.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1947,7 +1947,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoSolenoide,Solucion=ComboBox2_7.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_9.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoSolenoide,field_6=ComboBox2_7.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_9.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1994,7 +1994,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBancoSolenoide,
-                        Solución
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -2004,7 +2004,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,Solución),{Results:ThisRecord.Value}),Results),ComboBox2_7.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_7.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop5
