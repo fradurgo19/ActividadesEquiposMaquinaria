@@ -1648,7 +1648,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBancoValvulas,
-                        Solucion
+                        Solución
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1658,7 +1658,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBancoValvulas,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_4.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBancoValvulas,Solución),{Results:ThisRecord.Value}),Results),ComboBox2_4.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
@@ -1675,7 +1675,7 @@ Features_3 As screen:
         Items: |-
             =Filter(
                 colFilteredBancoValvulas, 
-                Tipo = "Excavadora" && Solucion = ComboBox2_4.Selected.Results && Tamaño = ComboBox1_6.Selected.Results 
+                Tipo = "Excavadora" && Solución = ComboBox2_4.Selected.Results && Tamaño = ComboBox1_6.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -1994,7 +1994,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBancoSolenoide,
-                        Solucion
+                        Solución
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -2004,7 +2004,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_7.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,Solución),{Results:ThisRecord.Value}),Results),ComboBox2_7.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop5
@@ -2021,7 +2021,7 @@ Features_3 As screen:
         Items: |-
             =Filter(
                 colFilteredBancoSolenoide, 
-                Tipo = "Excavadora" && Solucion = ComboBox2_7.Selected.Results && Tamaño = ComboBox1_9.Selected.Results 
+                Tipo = "Excavadora" && Solución = ComboBox2_7.Selected.Results && Tamaño = ComboBox1_9.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
