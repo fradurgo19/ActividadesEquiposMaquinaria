@@ -54,60 +54,6 @@ Features_11 As screen:
         )
     Width: =Max(App.Width, App.DesignWidth)
 
-    Image10 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =291
-        Image: ='images-removebg-preview'
-        Width: =374.85
-        X: =18.68
-        Y: =145
-        ZIndex: =1
-
-    Image18 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =143
-        Image: ='Filtro_piloto-removebg-preview'
-        Width: =237.45
-        X: =568
-        Y: =509
-        ZIndex: =2
-
-    Image16 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =222
-        Image: ='Bomba-piloto2-1-removebg-preview'
-        Width: =361
-        X: =512
-        ZIndex: =3
-
-    Image15 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =108
-        Image: =
-        Width: =241.45
-        X: =1054
-        Y: =410
-        ZIndex: =4
-
-    Image14 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =195
-        Image: ='Bomba hidraulica'
-        Width: =310.82
-        X: =992.48
-        Y: =62
-        ZIndex: =5
-
     Rectangle2_12 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =App.Theme.Colors.Primary

@@ -947,9 +947,9 @@ Features_3 As screen:
                     Distinct(
                         Filter(
                             colFilteredTanqueHidraulico,
-                            field_6 = ComboBox2_2.Selected.Results
+                            Solucion = ComboBox2_2.Selected.Results
                         ),
-                        field_7
+                        Tamaño
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -959,7 +959,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredTanqueHidraulico,field_6=ComboBox2_2.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_4.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredTanqueHidraulico,Solucion=ComboBox2_2.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_4.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1006,7 +1006,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         colFilteredTanqueHidraulico,
-                        field_6
+                        Solucion
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1016,7 +1016,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredTanqueHidraulico,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_2.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredTanqueHidraulico,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_2.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop2
@@ -1033,7 +1033,7 @@ Features_3 As screen:
         Items: |-
             =Filter(
                 colFilteredTanqueHidraulico, 
-                field_5 = "Excavadora" && field_6 = ComboBox2_2.Selected.Results && field_7 = ComboBox1_4.Selected.Results 
+                Tipo = "Excavadora" && Solucion = ComboBox2_2.Selected.Results && Tamaño = ComboBox1_4.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
