@@ -1,7 +1,7 @@
 Features_2 As screen:
-    BackgroundImage: =
+    BackgroundImage: =Zona1
     Height: =Max(App.Height, App.DesignHeight)
-    ImagePosition: =ImagePosition.Fill
+    ImagePosition: =ImagePosition.Stretch
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnHidden: |
         =UpdateContext(
@@ -477,11 +477,11 @@ Features_2 As screen:
 
     icon9_2 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
+        Color: =App.Theme.Colors.Lighter80
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Height: =35
+        Fill: =RGBA(152, 208, 70, 1)
+        Height: =50
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
@@ -640,10 +640,10 @@ Features_2 As screen:
 
     icon11_8 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
+        Color: =App.Theme.Colors.Lighter80
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(152, 208, 70, 1)
         Height: =50
         Icon: =Icon.Add
         OnSelect: |-
