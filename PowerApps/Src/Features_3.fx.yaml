@@ -92,42 +92,6 @@ Features_3 As screen:
         Y: =58
         ZIndex: =2
 
-    Image23 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =499
-        Image: =Superior
-        Width: =823
-        X: =153
-        Y: =149
-        ZIndex: =3
-
-    Image6_1 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =138
-        Image: ='Giro-fotor-bg-remover-20240509113834'
-        Visible: |-
-            =
-            true
-        Width: =87
-        X: =502
-        Y: =441
-        ZIndex: =4
-
-    Image40 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =159
-        Image: ='TanqueCombustible-removebg'
-        Width: =183
-        X: =350
-        Y: =81
-        ZIndex: =5
-
     Rectangle2_11 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =App.Theme.Colors.Primary
@@ -322,16 +286,6 @@ Features_3 As screen:
         Y: =406
         ZIndex: =16
 
-    Image39 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Image: =TamqueHidraulico2
-        Width: =120
-        X: =552
-        Y: =106
-        ZIndex: =17
-
     Rectangle4_61 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 255)
         BorderThickness: =5
@@ -395,28 +349,6 @@ Features_3 As screen:
         X: =370
         Y: =57
         ZIndex: =28
-
-    Image12_1 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =89
-        Image: ='Control-Valves-fotor-bg-remover-20240509123915'
-        Width: =95
-        X: =578
-        Y: =305
-        ZIndex: =29
-
-    Image13_1 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =62
-        Image: =Solenoide
-        Width: =60
-        X: =413
-        Y: =319
-        ZIndex: =30
 
     Rectangle4_37 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 255)
