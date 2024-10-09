@@ -151,7 +151,7 @@ Features_10 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DelayItemLoading: =true
         Fill: =RGBA(255, 191, 0, 1)
-        Height: =163
+        Height: =148
         Items: |-
             =Filter(
                 'Lista de Actividades Superiores', 
@@ -162,8 +162,8 @@ Features_10 As screen:
         TemplatePadding: =0
         TemplateSize: =137
         Visible: =pop4
-        Width: =609
-        X: =755
+        Width: =624
+        X: =740
         Y: =194
         ZIndex: =41
 
@@ -248,7 +248,7 @@ Features_10 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =46
+            Height: =27
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -258,7 +258,7 @@ Features_10 As screen:
             Text: |-
                 ="Diagnostico: "&ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =605
+            Width: =412
             X: =4
             ZIndex: =11
 
@@ -281,6 +281,26 @@ Features_10 As screen:
             X: =142
             Y: =71
             ZIndex: =12
+
+        Title3_70 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =58
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: |-
+                ="Tipo de Actividad: "&ThisItem.TipodeActividad.Vaule
+            VerticalAlign: =VerticalAlign.Top
+            Width: =132
+            X: =274
+            Y: =5
+            ZIndex: =13
 
     ButtonCanvas4_12 As Botón:
         Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -932,17 +952,6 @@ Features_10 As screen:
         X: =1147
         Y: =401
         ZIndex: =64
-
-    TextCanvas3 As Texto:
-        DisplayMode: =DisplayMode.Edit
-        Height: =29
-        Text: |-
-            ="Recurso:"
-        Visible: =pop4
-        Width: =112
-        X: =989
-        Y: =464
-        ZIndex: =65
 
     TextCanvas3_1 As Texto:
         DisplayMode: =DisplayMode.Edit
