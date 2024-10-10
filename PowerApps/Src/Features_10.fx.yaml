@@ -809,14 +809,14 @@ Features_10 As screen:
 
     Container2 As groupContainer.manualLayoutContainer:
         DropShadow: =DropShadow.Light
-        Height: =397
+        Height: =427
         RadiusBottomLeft: =4
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
         Width: =681
         X: =7
-        Y: =311
+        Y: =281
         ZIndex: =84
 
         Label1_19 As label:
@@ -876,8 +876,8 @@ Features_10 As screen:
             SelectionFill: =App.Theme.Colors.Primary
             Size: =10
             Width: =200
-            X: =281
-            Y: =66
+            X: =231
+            Y: =121
             ZIndex: =2
 
         ComboBox1_42 As combobox:
@@ -916,8 +916,8 @@ Features_10 As screen:
             SelectionFill: =App.Theme.Colors.Primary
             Size: =10
             Width: =200
-            X: =58
-            Y: =66
+            X: =8
+            Y: =121
             ZIndex: =3
 
         icon14_71 As icon.Cancel:
@@ -940,7 +940,7 @@ Features_10 As screen:
             BorderThickness: =2
             DelayItemLoading: =true
             Fill: =RGBA(255, 255, 255, 1)
-            Height: =201
+            Height: =240
             Items: |-
                 =Filter(
                     colParametros, 
@@ -952,7 +952,7 @@ Features_10 As screen:
             TemplateSize: =193
             Width: =663
             X: =8
-            Y: =155
+            Y: =177
             ZIndex: =5
 
             Subtitle2_34 As label:
@@ -1164,8 +1164,8 @@ Features_10 As screen:
         Text: ="PARAMETROS"
         Visible: =pop4
         Width: =292
-        X: =751
-        Y: =351
+        X: =752
+        Y: =324
         ZIndex: =85
 
     Rectangle4_21 As rectangle:
@@ -1924,4 +1924,102 @@ Features_10 As screen:
         X: =752
         Y: =371
         ZIndex: =96
+
+    Label9_42 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        HoverBorderColor: =Label9_42.BorderColor
+        HoverColor: =Label9_42.Color
+        HoverFill: =Label9_42.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_42.BorderColor
+        PressedColor: =Label9_42.Color
+        PressedFill: =Label9_42.Fill
+        Size: =15
+        Text: ="TIPO"
+        Visible: =pop4
+        Width: =201
+        X: =751
+        Y: =362
+        ZIndex: =97
+
+    Label9_53 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        HoverBorderColor: =Label9_53.BorderColor
+        HoverColor: =Label9_53.Color
+        HoverFill: =Label9_53.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_53.BorderColor
+        PressedColor: =Label9_53.Color
+        PressedFill: =Label9_53.Fill
+        Size: =15
+        Text: ="PARAMETRO"
+        Visible: =pop4
+        Width: =190
+        X: =974
+        Y: =362
+        ZIndex: =98
+
+    Label9_54 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        HoverBorderColor: =Label9_54.BorderColor
+        HoverColor: =Label9_54.Color
+        HoverFill: =Label9_54.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_54.BorderColor
+        PressedColor: =Label9_54.Color
+        PressedFill: =Label9_54.Fill
+        Size: =12
+        Text: ="TIPO"
+        Width: =201
+        X: =16
+        Y: =356
+        ZIndex: =99
+
+    Label9_56 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        HoverBorderColor: =Label9_56.BorderColor
+        HoverColor: =Label9_56.Color
+        HoverFill: =Label9_56.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_56.BorderColor
+        PressedColor: =Label9_56.Color
+        PressedFill: =Label9_56.Fill
+        Size: =12
+        Text: ="PARAMETRO"
+        Width: =190
+        X: =239
+        Y: =356
+        ZIndex: =100
 
