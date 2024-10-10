@@ -445,8 +445,8 @@ Features As screen:
             ="ZONA 5: Motores de traslación, Contrapesa y Tornamesa"
         Tooltip: ="ZONA 5"
         Width: =162
-        X: =423
-        Y: =390
+        X: =377
+        Y: =382
         ZIndex: =25
 
     icon9_4 As icon.Add:
@@ -505,16 +505,16 @@ Features As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =82
+        Height: =107
         OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
         Size: =10
         Text: |-
             ="ZONA 9: Cabina Silla, Consolas, Joystick, Monitor, Computadores y Cableados (Harness)
             Vidrios"
         Tooltip: ="ZONA 9"
-        Width: =275
-        X: =334
-        Y: =519
+        Width: =197
+        X: =506
+        Y: =579
         ZIndex: =29
 
     icon9_6 As icon.Add:
