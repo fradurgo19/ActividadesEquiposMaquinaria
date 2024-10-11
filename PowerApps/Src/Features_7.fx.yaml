@@ -1,5 +1,5 @@
 Features_7 As screen:
-    BackgroundImage: =Cabina
+    BackgroundImage: =
     Height: =Max(App.Height, App.DesignHeight)
     ImagePosition: =ImagePosition.Fill
     LoadingSpinnerColor: =App.Theme.Colors.Primary
@@ -90,6 +90,60 @@ Features_7 As screen:
         );
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image11 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =377
+        Image: ='Captura de pantalla 2024-10-11 103044'
+        Width: =317
+        X: =326
+        Y: =391
+        ZIndex: =1
+
+    Image9 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =347
+        Image: ='Captura de pantalla 2024-10-11 102527'
+        Width: =481
+        X: =202
+        Y: =48
+        ZIndex: =2
+
+    Image4 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =340
+        Image: ='Captura de pantalla 2024-10-11 102711'
+        Width: =361
+        X: =1005
+        Y: =428
+        ZIndex: =3
+
+    Image2 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =375
+        Image: ='Captura de pantalla 2024-10-11 102836'
+        Width: =445
+        X: =921
+        Y: =48
+        ZIndex: =4
+
+    Image1 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =373
+        Image: ='Captura de pantalla 2024-10-11 103500'
+        Width: =331
+        Y: =395
+        ZIndex: =5
+
     Rectangle2_16 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =App.Theme.Colors.Primary
@@ -97,7 +151,7 @@ Features_7 As screen:
         TabIndex: =0
         Width: =1365
         X: =1
-        ZIndex: =2
+        ZIndex: =6
 
     Label2_17 As label:
         Align: =LayoutAlignItems.Center
@@ -121,7 +175,23 @@ Features_7 As screen:
             ="EXCAVADORA: Cabina, Silla, Consolas, Joystick, Monitor, Computadores, Cableados (Harness) y Vidrios"
         Width: =1281.96
         X: =82.71
-        ZIndex: =3
+        ZIndex: =7
+
+    icon11_32 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Lighter80
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(152, 208, 70, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
+        TabIndex: =0
+        Width: =50
+        X: =1019
+        Y: =546
+        ZIndex: =8
 
     Rectangle9_18 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
@@ -160,6 +230,57 @@ Features_7 As screen:
         Width: =165.41
         X: =292.14
         Y: =219
+        ZIndex: =10
+
+    icon11_31 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Lighter80
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(152, 208, 70, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
+        TabIndex: =0
+        Width: =50
+        Y: =320
+        ZIndex: =11
+
+    Label1_29 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =42
+        OnSelect: |-
+            =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
+        Size: =13.34
+        Text: ="Silla"
+        Width: =116
+        X: =1069
+        Y: =554
+        ZIndex: =12
+
+    Label1_28 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =45
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
+        Size: =13.34
+        Text: ="Joystick, Palancas y Pedal"
+        Width: =202
+        X: =51
+        Y: =320
         ZIndex: =13
 
     Circle2_53 As circle:
@@ -176,22 +297,7 @@ Features_7 As screen:
         Width: =284.14
         X: =105.38
         Y: =536
-        ZIndex: =23
-
-    icon11_34 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =38
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
-        TabIndex: =0
-        Width: =57.36
-        X: =305.48
-        Y: =556
-        ZIndex: =24
+        ZIndex: =14
 
     Label1_31 As label:
         Align: =Align.Center
@@ -212,23 +318,57 @@ Features_7 As screen:
         Width: =129.4
         X: =164.08
         Y: =558
-        ZIndex: =25
+        ZIndex: =15
+
+    icon11_33 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Lighter80
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(152, 208, 70, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
+        TabIndex: =0
+        Width: =50
+        X: =1036
+        Y: =123
+        ZIndex: =23
+
+    Label1_30 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =50
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
+        Size: =13.34
+        Text: ="Cabina, Vidrios y Espejos"
+        Width: =198
+        X: =1086
+        Y: =123
+        ZIndex: =24
 
     icon11_37 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
+        Color: =App.Theme.Colors.Lighter80
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(152, 208, 70, 1)
         Height: =50
         Icon: =Icon.Add
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:true})
         TabIndex: =0
         Width: =50
-        X: =512
-        Y: =182
-        ZIndex: =45
+        X: =705
+        Y: =49
+        ZIndex: =25
 
     Label1_34 As label:
         Align: =Align.Center
@@ -244,193 +384,9 @@ Features_7 As screen:
         Size: =13.34
         Text: ="Monitor, aire, switch, Radio y tapas consola"
         Width: =262
-        X: =249
-        Y: =182
-        ZIndex: =46
-
-    Group23_3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =47
-
-        Rectangle4_59 As rectangle:
-            BorderColor: =RGBA(255, 255, 255, 255)
-            BorderThickness: =5
-            DisabledFill: =Rectangle4_59.Fill
-            Fill: =App.Theme.Colors.Darker30
-            Height: =116
-            HoverFill: =Rectangle4_59.Fill
-            PressedFill: =Rectangle4_59.Fill
-            TabIndex: =0
-            Visible: =pop3
-            Width: =360.18
-            X: =386.86
-            Y: =577
-            ZIndex: =26
-
-        Label8_76 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Font: =App.Theme.Font
-            Height: =27
-            HoverBorderColor: =Label8_76.BorderColor
-            HoverColor: =Label8_76.Color
-            HoverFill: =Label8_76.Fill
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Label8_76.BorderColor
-            PressedColor: =Label8_76.Color
-            PressedFill: =Label8_76.Fill
-            Size: =18
-            Text: ="ZONA 8"
-            VerticalAlign: =VerticalAlign.Top
-            Visible: =pop3
-            Width: =117.39
-            X: =425.54
-            Y: =584
-            ZIndex: =27
-
-        Label9_119 As label:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =41
-            HoverBorderColor: =Label9_119.BorderColor
-            HoverColor: =Label9_119.Color
-            HoverFill: =Label9_119.Fill
-            OnSelect: |-
-                =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BD49F6ECB-D780-44C2-92C1-A6B3B0425C68%7D&file=balde%20y%20articulaciones%20balde.xlsx&action=default&mobileredirect=true")
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Label9_119.BorderColor
-            PressedColor: =Label9_119.Color
-            PressedFill: =Label9_119.Fill
-            Size: =14.67
-            Text: |-
-                ="Balde
-                "
-            Tooltip: ="Seleccione"
-            Visible: =pop3
-            Width: =256.13
-            X: =404.2
-            Y: =630
-            ZIndex: =28
-
-        icon12_53 As icon.Cancel:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(242, 242, 242, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =27
-            Icon: =Icon.Cancel
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            TabIndex: =0
-            Visible: =pop3
-            Width: =30.68
-            X: =696.34
-            Y: =584
-            ZIndex: =29
-
-    Group24_4 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =48
-
-        Rectangle4_60 As rectangle:
-            BorderColor: =RGBA(255, 255, 255, 255)
-            BorderThickness: =5
-            DisabledFill: =Rectangle4_60.Fill
-            Fill: =App.Theme.Colors.Darker30
-            Height: =124
-            HoverFill: =Rectangle4_60.Fill
-            PressedFill: =Rectangle4_60.Fill
-            TabIndex: =0
-            Visible: =pop4
-            Width: =432.21
-            X: =10.67
-            Y: =480
-            ZIndex: =33
-
-        Label8_77 As label:
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
-            Font: =App.Theme.Font
-            Height: =39
-            HoverBorderColor: =Label8_77.BorderColor
-            HoverColor: =Label8_77.Color
-            HoverFill: =Label8_77.Fill
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Label8_77.BorderColor
-            PressedColor: =Label8_77.Color
-            PressedFill: =Label8_77.Fill
-            Size: =18
-            Text: ="ZONA 8"
-            VerticalAlign: =VerticalAlign.Top
-            Visible: =pop4
-            Width: =240.12
-            X: =53.36
-            Y: =495
-            ZIndex: =34
-
-        Label9_120 As label:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =29
-            HoverBorderColor: =Label9_120.BorderColor
-            HoverColor: =Label9_120.Color
-            HoverFill: =Label9_120.Fill
-            OnSelect: |-
-                =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B1B37490C-FCD5-4130-B602-AD669DCA6351%7D&file=cilindros%20balde.xlsx&action=default&mobileredirect=true")
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            PressedBorderColor: =Label9_120.BorderColor
-            PressedColor: =Label9_120.Color
-            PressedFill: =Label9_120.Fill
-            Size: =14.67
-            Text: ="Cilindros del Balde"
-            Tooltip: ="Seleccione"
-            Visible: =pop4
-            Width: =185.42
-            X: =48.02
-            Y: =562
-            ZIndex: =35
-
-        icon12_54 As icon.Cancel:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(242, 242, 242, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =22
-            Icon: =Icon.Cancel
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-            TabIndex: =0
-            Visible: =pop4
-            Width: =37.35
-            X: =389.52
-            Y: =495
-            ZIndex: =36
+        X: =442
+        Y: =49
+        ZIndex: =26
 
     Image6_8 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -441,7 +397,7 @@ Features_7 As screen:
         OnSelect: =Navigate(Features, ScreenTransition.Fade)
         Width: =68
         X: =1
-        ZIndex: =51
+        ZIndex: =27
 
     Rectangle4_75 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 255)
@@ -456,7 +412,7 @@ Features_7 As screen:
         Width: =429
         X: =164
         Y: =59
-        ZIndex: =52
+        ZIndex: =28
 
     icon14_63 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -473,7 +429,7 @@ Features_7 As screen:
         Width: =42
         X: =527
         Y: =75
-        ZIndex: =53
+        ZIndex: =29
 
     ButtonCanvas4_58 As Botón:
         Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -493,7 +449,7 @@ Features_7 As screen:
         Width: =46
         X: =527
         Y: =148
-        ZIndex: =54
+        ZIndex: =30
 
     ButtonCanvas4_59 As Botón:
         BasePaletteColor: =
@@ -519,7 +475,7 @@ Features_7 As screen:
         Width: =41
         X: =476
         Y: =148
-        ZIndex: =55
+        ZIndex: =31
 
     ComboBox1_30 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -563,7 +519,7 @@ Features_7 As screen:
         Width: =103
         X: =294
         Y: =151
-        ZIndex: =56
+        ZIndex: =32
 
     icon14_64 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -579,7 +535,7 @@ Features_7 As screen:
         Width: =42
         X: =475
         Y: =77
-        ZIndex: =57
+        ZIndex: =33
 
     ComboBox2_28 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -619,7 +575,7 @@ Features_7 As screen:
         Width: =104
         X: =175
         Y: =148
-        ZIndex: =58
+        ZIndex: =34
 
     "Gallery2_29 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
@@ -639,7 +595,7 @@ Features_7 As screen:
         Width: =416
         X: =170
         Y: =195
-        ZIndex: =59
+        ZIndex: =35
 
         Title3_59 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -777,7 +733,7 @@ Features_7 As screen:
         Width: =303
         X: =170
         Y: =73
-        ZIndex: =60
+        ZIndex: =36
 
     Label4_19 As label:
         Align: =Align.Center
@@ -794,7 +750,7 @@ Features_7 As screen:
         Width: =84
         X: =1
         Y: =102
-        ZIndex: =61
+        ZIndex: =37
 
     Image24_6 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -806,7 +762,7 @@ Features_7 As screen:
         Width: =87
         X: =1
         Y: =144
-        ZIndex: =62
+        ZIndex: =38
 
     Rectangle4_76 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 255)
@@ -821,7 +777,7 @@ Features_7 As screen:
         Width: =429
         X: =119
         Y: =59
-        ZIndex: =63
+        ZIndex: =39
 
     icon14_65 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -838,7 +794,7 @@ Features_7 As screen:
         Width: =42
         X: =482
         Y: =75
-        ZIndex: =64
+        ZIndex: =40
 
     ButtonCanvas4_60 As Botón:
         Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -858,7 +814,7 @@ Features_7 As screen:
         Width: =46
         X: =482
         Y: =148
-        ZIndex: =65
+        ZIndex: =41
 
     ButtonCanvas4_61 As Botón:
         BasePaletteColor: =
@@ -884,7 +840,7 @@ Features_7 As screen:
         Width: =41
         X: =431
         Y: =148
-        ZIndex: =66
+        ZIndex: =42
 
     ComboBox1_31 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -928,7 +884,7 @@ Features_7 As screen:
         Width: =103
         X: =249
         Y: =151
-        ZIndex: =67
+        ZIndex: =43
 
     icon14_66 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -944,7 +900,7 @@ Features_7 As screen:
         Width: =42
         X: =430
         Y: =77
-        ZIndex: =68
+        ZIndex: =44
 
     ComboBox2_29 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -984,7 +940,7 @@ Features_7 As screen:
         Width: =104
         X: =130
         Y: =148
-        ZIndex: =69
+        ZIndex: =45
 
     "Gallery2_30 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
@@ -994,7 +950,7 @@ Features_7 As screen:
         Items: |-
             =Filter(
                 colFilteredJoystick, 
-                Tipo = "Excavadora" && field_6 = ComboBox2_29.Selected.Results && field_7 = ComboBox1_31.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_29.Selected.Results && field_7 = ComboBox1_31.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -1004,7 +960,7 @@ Features_7 As screen:
         Width: =416
         X: =125
         Y: =195
-        ZIndex: =70
+        ZIndex: =46
 
         Title3_61 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -1142,7 +1098,7 @@ Features_7 As screen:
         Width: =303
         X: =125
         Y: =73
-        ZIndex: =71
+        ZIndex: =47
 
     Rectangle4_77 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 255)
@@ -1157,7 +1113,98 @@ Features_7 As screen:
         Width: =429
         X: =921
         Y: =59
-        ZIndex: =72
+        ZIndex: =48
+
+    Group24_4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =48
+
+        Rectangle4_60 As rectangle:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_60.Fill
+            Fill: =App.Theme.Colors.Darker30
+            Height: =124
+            HoverFill: =Rectangle4_60.Fill
+            PressedFill: =Rectangle4_60.Fill
+            TabIndex: =0
+            Visible: =pop4
+            Width: =432.21
+            X: =10.67
+            Y: =480
+            ZIndex: =19
+
+        Label8_77 As label:
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+            Font: =App.Theme.Font
+            Height: =39
+            HoverBorderColor: =Label8_77.BorderColor
+            HoverColor: =Label8_77.Color
+            HoverFill: =Label8_77.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label8_77.BorderColor
+            PressedColor: =Label8_77.Color
+            PressedFill: =Label8_77.Fill
+            Size: =18
+            Text: ="ZONA 8"
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =pop4
+            Width: =240.12
+            X: =53.36
+            Y: =495
+            ZIndex: =20
+
+        Label9_120 As label:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Bold
+            Height: =29
+            HoverBorderColor: =Label9_120.BorderColor
+            HoverColor: =Label9_120.Color
+            HoverFill: =Label9_120.Fill
+            OnSelect: |-
+                =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B1B37490C-FCD5-4130-B602-AD669DCA6351%7D&file=cilindros%20balde.xlsx&action=default&mobileredirect=true")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_120.BorderColor
+            PressedColor: =Label9_120.Color
+            PressedFill: =Label9_120.Fill
+            Size: =14.67
+            Text: ="Cilindros del Balde"
+            Tooltip: ="Seleccione"
+            Visible: =pop4
+            Width: =185.42
+            X: =48.02
+            Y: =562
+            ZIndex: =21
+
+        icon12_54 As icon.Cancel:
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(242, 242, 242, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =22
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop4
+            Width: =37.35
+            X: =389.52
+            Y: =495
+            ZIndex: =22
 
     icon14_67 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1174,7 +1221,7 @@ Features_7 As screen:
         Width: =42
         X: =1284
         Y: =75
-        ZIndex: =73
+        ZIndex: =49
 
     ButtonCanvas4_62 As Botón:
         Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -1194,7 +1241,7 @@ Features_7 As screen:
         Width: =46
         X: =1284
         Y: =148
-        ZIndex: =74
+        ZIndex: =50
 
     ButtonCanvas4_63 As Botón:
         BasePaletteColor: =
@@ -1220,7 +1267,7 @@ Features_7 As screen:
         Width: =41
         X: =1233
         Y: =148
-        ZIndex: =75
+        ZIndex: =51
 
     ComboBox1_32 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1264,7 +1311,7 @@ Features_7 As screen:
         Width: =103
         X: =1051
         Y: =151
-        ZIndex: =76
+        ZIndex: =52
 
     icon14_68 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1280,7 +1327,7 @@ Features_7 As screen:
         Width: =42
         X: =1232
         Y: =77
-        ZIndex: =77
+        ZIndex: =53
 
     ComboBox2_30 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1320,7 +1367,7 @@ Features_7 As screen:
         Width: =104
         X: =932
         Y: =148
-        ZIndex: =78
+        ZIndex: =54
 
     "Gallery2_31 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
@@ -1340,7 +1387,7 @@ Features_7 As screen:
         Width: =416
         X: =927
         Y: =195
-        ZIndex: =79
+        ZIndex: =55
 
         Title3_63 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -1478,7 +1525,7 @@ Features_7 As screen:
         Width: =303
         X: =927
         Y: =73
-        ZIndex: =80
+        ZIndex: =56
 
     Rectangle4_78 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 255)
@@ -1493,7 +1540,7 @@ Features_7 As screen:
         Width: =429
         X: =139
         Y: =72
-        ZIndex: =81
+        ZIndex: =57
 
     icon14_69 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1510,7 +1557,7 @@ Features_7 As screen:
         Width: =42
         X: =502
         Y: =88
-        ZIndex: =82
+        ZIndex: =58
 
     ButtonCanvas4_64 As Botón:
         Appearance: ='ButtonCanvas.Appearance'.Secondary
@@ -1530,7 +1577,7 @@ Features_7 As screen:
         Width: =46
         X: =502
         Y: =161
-        ZIndex: =83
+        ZIndex: =59
 
     ButtonCanvas4_65 As Botón:
         BasePaletteColor: =
@@ -1556,7 +1603,7 @@ Features_7 As screen:
         Width: =41
         X: =451
         Y: =161
-        ZIndex: =84
+        ZIndex: =60
 
     ComboBox1_33 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1600,48 +1647,7 @@ Features_7 As screen:
         Width: =103
         X: =269
         Y: =164
-        ZIndex: =85
-
-    Group11_5 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =85
-
-        icon11_32 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =50
-            Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
-            TabIndex: =0
-            Width: =50
-            X: =1019
-            Y: =556
-            ZIndex: =7
-
-        Label1_29 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =42
-            OnSelect: |-
-                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
-            Size: =13.34
-            Text: ="Silla"
-            Width: =116
-            X: =1069
-            Y: =554
-            ZIndex: =21
+        ZIndex: =61
 
     icon14_70 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1657,48 +1663,7 @@ Features_7 As screen:
         Width: =42
         X: =450
         Y: =90
-        ZIndex: =86
-
-    Group12_3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =86
-
-        icon11_31 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =50
-            Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
-            TabIndex: =0
-            Width: =50
-            X: =816
-            Y: =291
-            ZIndex: =15
-
-        Label1_28 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =45
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
-            Size: =13.34
-            Text: ="Joystick, Palancas y Pedal"
-            Width: =202
-            X: =867
-            Y: =291
-            ZIndex: =22
+        ZIndex: =62
 
     ComboBox2_31 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1738,7 +1703,7 @@ Features_7 As screen:
         Width: =104
         X: =150
         Y: =161
-        ZIndex: =87
+        ZIndex: =63
 
     "Gallery2_32 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         BorderColor: =App.Theme.Colors.Darker40
@@ -1758,7 +1723,7 @@ Features_7 As screen:
         Width: =416
         X: =145
         Y: =208
-        ZIndex: =88
+        ZIndex: =64
 
         Title3_65 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -1896,7 +1861,7 @@ Features_7 As screen:
         Width: =303
         X: =145
         Y: =86
-        ZIndex: =89
+        ZIndex: =65
 
     Group18_4 As group:
         Height: =5
@@ -1919,7 +1884,7 @@ Features_7 As screen:
             Width: =284.14
             X: =30.68
             Y: =437
-            ZIndex: =30
+            ZIndex: =16
 
         icon11_35 As icon.Add:
             BorderColor: =App.Theme.Colors.Darker40
@@ -1935,7 +1900,7 @@ Features_7 As screen:
             Width: =57.36
             X: =253.46
             Y: =459
-            ZIndex: =31
+            ZIndex: =17
 
         Label1_32 As label:
             Align: =Align.Center
@@ -1954,46 +1919,5 @@ Features_7 As screen:
             Width: =177.42
             X: =66.7
             Y: =457
-            ZIndex: =32
-
-    Group20_3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =107
-
-        icon11_33 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =50
-            Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
-            TabIndex: =0
-            Width: =50
-            X: =1032.5
-            Y: =123
-            ZIndex: =38
-
-        Label1_30 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =50
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
-            Size: =13.34
-            Text: ="Cabina, Vidrios y Espejos"
-            Width: =198
-            X: =1086
-            Y: =123
-            ZIndex: =39
+            ZIndex: =18
 
