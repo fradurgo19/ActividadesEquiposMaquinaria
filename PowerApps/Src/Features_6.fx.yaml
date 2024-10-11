@@ -616,7 +616,7 @@ Features_6 As screen:
         Items: |-
             =Filter(
                 colFilteredBoom, 
-                Tipo = "Excavadora" && field_6 = ComboBox2_25.Selected.Results && field_7 = ComboBox1_27.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_25.Selected.Results && field_7 = ComboBox1_27.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -659,7 +659,7 @@ Features_6 As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
+            Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
             Width: =428
@@ -738,8 +738,8 @@ Features_6 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =382
-            Y: =59
+            X: =393
+            Y: =64
             ZIndex: =8
 
     Label9_65 As label:
@@ -1172,7 +1172,7 @@ Features_6 As screen:
         Items: |-
             =Filter(
                 colFilteredStick, 
-                Tipo = "Excavadora" && field_6 = ComboBox2_26.Selected.Results && field_7 = ComboBox1_28.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_26.Selected.Results && field_7 = ComboBox1_28.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -1508,7 +1508,7 @@ Features_6 As screen:
         Items: |-
             =Filter(
                 colFilteredBalde, 
-                Tipo = "Excavadora" && field_6 = ComboBox2_27.Selected.Results && field_7 = ComboBox1_29.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_27.Selected.Results && field_7 = ComboBox1_29.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
