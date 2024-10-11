@@ -407,7 +407,7 @@ Features_4 As screen:
         Items: |-
             =Filter(
                 colFilteredTornamesa, 
-                Tipo = "Excavadora" && field_6 = ComboBox2_17.Selected.Results && Tamaño = ComboBox1_19.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_17.Selected.Results && field_7 = ComboBox1_19.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -450,7 +450,7 @@ Features_4 As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
+            Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
             Width: =444
