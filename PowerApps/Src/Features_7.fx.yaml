@@ -1330,7 +1330,7 @@ Features_7 As screen:
         Items: |-
             =Filter(
                 colFilteredMonitor, 
-                Tipo = "Excavadora" && field_6 = ComboBox2_30.Selected.Results && field_7 = ComboBox1_32.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_30.Selected.Results && field_7 = ComboBox1_32.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
