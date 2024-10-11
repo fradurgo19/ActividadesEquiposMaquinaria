@@ -377,7 +377,7 @@ Features_10 As screen:
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
-        Height: =43
+        Height: =44
         IconStyle: ='ButtonCanvas.IconStyle'.Outline
         Layout: ='ButtonCanvas.Layout'.IconAfter
         OnSelect: |+
@@ -389,9 +389,9 @@ Features_10 As screen:
             
         Text: ="Selec Todo"
         Visible: =pop4
-        Width: =46
-        X: =1312
-        Y: =109
+        Width: =33
+        X: =1325
+        Y: =112
         ZIndex: =42
 
     ButtonCanvas4_13 As Botón:
@@ -399,7 +399,7 @@ Features_10 As screen:
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
-        Height: =43
+        Height: =44
         OnSelect: |+
             =ForAll(
                 Gallery2_6.AllItems,
@@ -416,9 +416,9 @@ Features_10 As screen:
             
         Text: ="Borrar Todo"
         Visible: =pop4
-        Width: =41
-        X: =1271
-        Y: =109
+        Width: =29
+        X: =1284
+        Y: =112
         ZIndex: =43
 
     icon9_14 As icon.Add:
@@ -1456,7 +1456,7 @@ Features_10 As screen:
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
-        Height: =43
+        Height: =35
         IconStyle: ='ButtonCanvas.IconStyle'.Outline
         Layout: ='ButtonCanvas.Layout'.IconAfter
         OnSelect: |+
@@ -1468,9 +1468,9 @@ Features_10 As screen:
             
         Text: ="Selec Todo"
         Visible: =pop1
-        Width: =46
-        X: =1313
-        Y: =118
+        Width: =30
+        X: =1328
+        Y: =130
         ZIndex: =90
 
     ButtonCanvas4_15 As Botón:
@@ -1478,7 +1478,7 @@ Features_10 As screen:
         BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         FontSize: =9
-        Height: =43
+        Height: =35
         OnSelect: |+
             =ForAll(
                 Gallery2_7.AllItems,
@@ -1495,9 +1495,9 @@ Features_10 As screen:
             
         Text: ="Borrar Todo"
         Visible: =pop1
-        Width: =41
-        X: =1272
-        Y: =118
+        Width: =26
+        X: =1287
+        Y: =130
         ZIndex: =91
 
     icon14_20 As icon.Cancel:
