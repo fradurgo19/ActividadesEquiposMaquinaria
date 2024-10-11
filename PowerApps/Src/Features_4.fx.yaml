@@ -742,7 +742,7 @@ Features_4 As screen:
         Items: |-
             =Filter(
                 colFilteredContrapesa, 
-                Tipo = "Excavadora" && field_6 = ComboBox2_18.Selected.Results && Tamaño = ComboBox1_20.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_18.Selected.Results && field_7 = ComboBox1_20.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -759,7 +759,7 @@ Features_4 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
+            Height: =54
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -785,7 +785,7 @@ Features_4 As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
+            Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
             Width: =420
@@ -797,7 +797,7 @@ Features_4 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
+            Height: =54
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -835,7 +835,7 @@ Features_4 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
+            Height: =54
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
