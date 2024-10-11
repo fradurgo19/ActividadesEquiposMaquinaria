@@ -364,12 +364,12 @@ Features_9 As screen:
         Items: |-
             =Filter(
                 colFilteredTraslacion, 
-                Tipo = "Excavadora" && field_6 = ComboBox2_9.Selected.Results && Tamaño = ComboBox1_11.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_9.Selected.Results && field_7 = ComboBox1_11.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =82
+        TemplateSize: =114
         Visible: =pop3
         Width: =430
         X: =915
@@ -381,7 +381,7 @@ Features_9 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =20
+            Height: =51
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -407,10 +407,10 @@ Features_9 As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
+            Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =398
+            Width: =426
             X: =4
             ZIndex: =3
 
@@ -419,7 +419,7 @@ Features_9 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =14
+            Height: =51
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -457,7 +457,7 @@ Features_9 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =20
+            Height: =51
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -486,8 +486,8 @@ Features_9 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =356
-            Y: =28
+            X: =391
+            Y: =61
             ZIndex: =8
 
     Label9_45 As label:
