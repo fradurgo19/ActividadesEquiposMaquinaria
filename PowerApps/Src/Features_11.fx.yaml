@@ -1224,7 +1224,7 @@ Features_11 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =32
+            Height: =42
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1250,7 +1250,7 @@ Features_11 As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
+            Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
             Width: =452
@@ -1262,7 +1262,7 @@ Features_11 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =32
+            Height: =42
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1300,7 +1300,7 @@ Features_11 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =32
+            Height: =42
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1329,8 +1329,8 @@ Features_11 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =402
-            Y: =42
+            X: =417
+            Y: =52
             ZIndex: =8
 
     Label9_51 As label:
@@ -1543,12 +1543,12 @@ Features_11 As screen:
         Items: |-
             =Filter(
                 colFilteredBancoSolenoide, 
-                Tipo = "Excavadora" && field_6 = ComboBox2_23.Selected.Results && Tamaño = ComboBox1_25.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_23.Selected.Results && field_7 = ComboBox1_25.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =104
+        TemplateSize: =124
         Visible: =pop6
         Width: =442
         X: =850
@@ -1560,7 +1560,7 @@ Features_11 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
+            Height: =61
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1598,7 +1598,7 @@ Features_11 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =33
+            Height: =41
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1636,7 +1636,7 @@ Features_11 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =33
+            Height: =61
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
