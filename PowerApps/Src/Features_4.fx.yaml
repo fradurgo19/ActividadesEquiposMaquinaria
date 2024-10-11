@@ -1110,7 +1110,7 @@ Features_4 As screen:
         Items: |-
             =Filter(
                 colFilteredTraslacion, 
-                Tipo = "Excavadora" && field_6 = ComboBox2_16.Selected.Results && Tamaño = ComboBox1_18.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_16.Selected.Results && field_7 = ComboBox1_18.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
