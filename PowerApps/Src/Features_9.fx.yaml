@@ -369,9 +369,9 @@ Features_9 As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =114
+        TemplateSize: =121
         Visible: =pop3
-        Width: =430
+        Width: =437
         X: =915
         Y: =159
         ZIndex: =33
@@ -542,8 +542,8 @@ Features_9 As screen:
         TabIndex: =0
         Visible: =pop1
         Width: =42
-        X: =498
-        Y: =65
+        X: =524
+        Y: =64
         ZIndex: =36
 
     ButtonCanvas4_22 As Botón:
@@ -562,8 +562,8 @@ Features_9 As screen:
         Text: ="Selec Todo"
         Visible: =pop1
         Width: =46
-        X: =488
-        Y: =120
+        X: =514
+        Y: =119
         ZIndex: =37
 
     ButtonCanvas4_23 As Botón:
@@ -588,8 +588,8 @@ Features_9 As screen:
         Text: ="Borrar Todo"
         Visible: =pop1
         Width: =41
-        X: =437
-        Y: =120
+        X: =463
+        Y: =119
         ZIndex: =38
 
     ComboBox1_12 As combobox:
@@ -648,8 +648,8 @@ Features_9 As screen:
         TabIndex: =0
         Visible: =pop1
         Width: =42
-        X: =446
-        Y: =67
+        X: =472
+        Y: =66
         ZIndex: =40
 
     ComboBox2_10 As combobox:
@@ -700,12 +700,12 @@ Features_9 As screen:
         Items: |-
             =Filter(
                 colFilteredTrenderodaje, 
-                Tipo = "Excavadora" && field_6 = ComboBox2_10.Selected.Results && Tamaño = ComboBox1_12.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_10.Selected.Results && field_7 = ComboBox1_12.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =82
+        TemplateSize: =107
         Visible: =pop1
         Width: =430
         X: =119
@@ -717,7 +717,7 @@ Features_9 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =20
+            Height: =44
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -743,10 +743,10 @@ Features_9 As screen:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
+            Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =398
+            Width: =426
             X: =4
             ZIndex: =3
 
@@ -755,7 +755,7 @@ Features_9 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =14
+            Height: =52
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -793,7 +793,7 @@ Features_9 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =20
+            Height: =44
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -822,8 +822,8 @@ Features_9 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =356
-            Y: =28
+            X: =391
+            Y: =55
             ZIndex: =8
 
     Label9_46 As label:
