@@ -495,13 +495,13 @@ Features_10 As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =52
+        Height: =24
         OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
         Size: =12
         Text: ="Resumen"
         Width: =87
         X: =7
-        Y: =107
+        Y: =89
         ZIndex: =59
 
     Image24_8 As image:
@@ -512,7 +512,7 @@ Features_10 As screen:
         Image: ='icons8-estimar'
         OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
         Width: =91
-        Y: =49
+        Y: =111
         ZIndex: =60
 
     "Gallery2_33 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
