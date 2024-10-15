@@ -1749,7 +1749,7 @@
       "MetaDataIDKey": "",
       "Name": "ComboBox1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2631,7 +2631,7 @@
       "StyleName": "defaultComboBoxStyle",
       "Type": "ControlInfo"
     },
-    "ComboBox2": {
+    "ComboBox1_7": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "NavigateFields",
@@ -2650,7 +2650,7 @@
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingString": "ComboBoxSample",
           "InvariantPropertyName": "Items",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
@@ -2680,14 +2680,7 @@
         "PressedFill",
         "HoverFill",
         "Font",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "FontWeight",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "FontWeight",
         "X",
         "Y",
         "Width",
@@ -2719,14 +2712,6 @@
           "InvariantPropertyName": "Visible",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "SelectMultiple",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
         }
       ],
       "HasDynamicProperties": false,
@@ -2738,9 +2723,9 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "ComboBox2",
+      "Name": "ComboBox1_7",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 21,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2772,11 +2757,6 @@
           "Category": "Data",
           "PropertyName": "InputTextPlaceholder",
           "RuleProviderType": "User"
-        },
-        {
-          "Category": "Data",
-          "PropertyName": "SelectMultiple",
-          "RuleProviderType": "Unknown"
         },
         {
           "Category": "Design",
@@ -3157,7 +3137,7 @@
       "MetaDataIDKey": "",
       "Name": "Gallery2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4728,7 +4708,7 @@
       "MetaDataIDKey": "",
       "Name": "icon14_6",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5276,7 +5256,7 @@
       "MetaDataIDKey": "",
       "Name": "icon14_8",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 20,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6029,7 +6009,7 @@
       "MetaDataIDKey": "",
       "Name": "Image4_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7505,7 +7485,7 @@
       "MetaDataIDKey": "",
       "Name": "Label4_2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9847,7 +9827,7 @@
       "MetaDataIDKey": "",
       "Name": "Label9_36",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 19,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11400,7 +11380,7 @@
       "MetaDataIDKey": "",
       "Name": "Rectangle4_19",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
