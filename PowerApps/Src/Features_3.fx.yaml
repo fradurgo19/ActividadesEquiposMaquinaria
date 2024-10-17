@@ -240,32 +240,6 @@ Features_3 As screen:
         Y: =46
         ZIndex: =13
 
-    Label9_73 As label:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =App.Theme.Font
-        Height: =35
-        HoverBorderColor: =Label9_73.BorderColor
-        HoverColor: =Label9_73.Color
-        HoverFill: =Label9_73.Fill
-        OnSelect: |-
-            =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2Fbomba%20hidraulica&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        PressedBorderColor: =Label9_73.BorderColor
-        PressedColor: =Label9_73.Color
-        PressedFill: =Label9_73.Fill
-        Size: =13.34
-        Text: ="BOMBA PILOTO"
-        Visible: =pop3
-        Width: =165.41
-        X: =292.14
-        Y: =219
-        ZIndex: =14
-
     Label1_3 As label:
         Align: =Align.Center
         BorderColor: =App.Theme.Colors.Darker40
@@ -609,7 +583,7 @@ Features_3 As screen:
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -627,10 +601,11 @@ Features_3 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredMotorGiro,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_1.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop1
-        Width: =113
-        X: =385
+        Width: =118
+        X: =380
         Y: =164
         ZIndex: =37
 
@@ -1065,7 +1040,7 @@ Features_3 As screen:
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -1083,10 +1058,11 @@ Features_3 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredTanqueHidraulico,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_2.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop2
-        Width: =104
-        X: =897
+        Width: =119
+        X: =882
         Y: =128
         ZIndex: =48
 
@@ -1135,7 +1111,7 @@ Features_3 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =43
+            Height: =41
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1144,7 +1120,7 @@ Features_3 As screen:
             Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =464
+            Width: =447
             X: =4
             ZIndex: =3
 
@@ -1383,7 +1359,7 @@ Features_3 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
-        Height: =34
+        Height: =37
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Sugerencias"
@@ -1404,10 +1380,11 @@ Features_3 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredTanqueDeCombustible,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_3.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop3
-        Width: =104
-        X: =904
+        Width: =116
+        X: =892
         Y: =127
         ZIndex: =56
 
@@ -1423,6 +1400,7 @@ Features_3 As screen:
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
         TemplatePadding: =0
         TemplateSize: =111
         Visible: =pop3
@@ -1672,7 +1650,7 @@ Features_3 As screen:
         Size: =10
         Visible: =pop4
         Width: =103
-        X: =231
+        X: =259
         Y: =123
         ZIndex: =62
 
@@ -1707,7 +1685,7 @@ Features_3 As screen:
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -1725,9 +1703,10 @@ Features_3 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredBancoValvulas,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_4.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop4
-        Width: =104
+        Width: =130
         X: =112
         Y: =120
         ZIndex: =64
@@ -1785,7 +1764,7 @@ Features_3 As screen:
             Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =466
+            Width: =452
             X: =4
             ZIndex: =3
 
@@ -2016,9 +1995,9 @@ Features_3 As screen:
         SelectMultiple: =false
         Size: =10
         Visible: =pop5
-        Width: =103
-        X: =218
-        Y: =126
+        Width: =117
+        X: =240
+        Y: =133
         ZIndex: =71
 
     icon14_22 As icon.Cancel:
@@ -2049,10 +2028,10 @@ Features_3 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
-        Height: =34
+        Height: =33
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -2070,11 +2049,12 @@ Features_3 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_7.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop5
-        Width: =104
+        Width: =117
         X: =99
-        Y: =123
+        Y: =133
         ZIndex: =73
 
     "Gallery2_8 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
@@ -2373,8 +2353,7 @@ Features_3 As screen:
         Height: =33
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
-        IsSearchable: =false
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -2388,9 +2367,11 @@ Features_3 As screen:
             )
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
-        SearchFields: =[""]
-        SearchItems: =[]
+        SearchFields: =["Results"]
+        SearchItems: |-
+            =Search(Filter(ForAll(Distinct(colFilteredCenterJoint,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_8.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop6
         Width: =133
