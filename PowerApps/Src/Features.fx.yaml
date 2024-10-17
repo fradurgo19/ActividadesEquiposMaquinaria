@@ -1,5 +1,5 @@
 Features As screen:
-    BackgroundImage: =Excavator
+    BackgroundImage: =Excavadora1
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnVisible: |-
@@ -61,8 +61,8 @@ Features As screen:
         OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =1048
-        Y: =94
+        X: =1065
+        Y: =73
         ZIndex: =7
 
     Rectangle15_7 As rectangle:
@@ -412,8 +412,8 @@ Features As screen:
         Text: ="ZONA 1 Motor y Enfriadores"
         Tooltip: ="ZONA 1"
         Width: =212
-        X: =1118
-        Y: =123
+        X: =1115
+        Y: =74
         ZIndex: =23
 
     icon9_3 As icon.Add:
@@ -427,8 +427,8 @@ Features As screen:
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =539
-        Y: =344
+        X: =1189
+        Y: =234
         ZIndex: =24
 
     Label3_1 As label:
@@ -445,8 +445,8 @@ Features As screen:
             ="ZONA 5: Motores de traslación, Contrapesa y Tornamesa"
         Tooltip: ="ZONA 5"
         Width: =103
-        X: =389
-        Y: =388
+        X: =1239
+        Y: =232
         ZIndex: =25
 
     icon9_4 As icon.Add:
@@ -460,8 +460,8 @@ Features As screen:
         OnSelect: =Navigate(Features_9, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =1136
-        Y: =278
+        X: =490
+        Y: =553
         ZIndex: =26
 
     Label3_2 As label:
@@ -471,16 +471,16 @@ Features As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =49
+        Height: =83
         OnSelect: =Navigate(Features_9, ScreenTransition.Fade)
         Size: =10
         Text: |-
             ="ZONA 3 y 6:
             Tren de rodaje y Traslación"
         Tooltip: ="ZONA 3"
-        Width: =216
-        X: =1149
-        Y: =229
+        Width: =151
+        X: =490
+        Y: =603
         ZIndex: =27
 
     icon9_5 As icon.Add:
@@ -494,8 +494,8 @@ Features As screen:
         OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =611
-        Y: =523
+        X: =919
+        Y: =603
         ZIndex: =28
 
     Label3_3 As label:
@@ -513,8 +513,8 @@ Features As screen:
             Vidrios"
         Tooltip: ="ZONA 9"
         Width: =197
-        X: =506
-        Y: =579
+        X: =868
+        Y: =653
         ZIndex: =29
 
     icon9_6 As icon.Add:
@@ -528,8 +528,8 @@ Features As screen:
         OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =653
-        Y: =62
+        X: =517
+        Y: =63
         ZIndex: =30
 
     Label3_4 As label:
@@ -547,9 +547,9 @@ Features As screen:
             Bombas hidráulicas, Bomba Piloto, Filtros de motor, Filtro piloto, Banco de solenoides y Bomba transferencia combustible
             "
         Tooltip: ="ZONA 4"
-        Width: =488
-        X: =165
-        Y: =51
+        Width: =376
+        X: =141
+        Y: =58
         ZIndex: =31
 
     icon9_7 As icon.Add:
@@ -564,7 +564,7 @@ Features As screen:
         TabIndex: =0
         Width: =50
         X: =112
-        Y: =217
+        Y: =582
         ZIndex: =32
 
     Label3_5 As label:
@@ -580,7 +580,7 @@ Features As screen:
         Text: ="Diagnostico"
         Tooltip: ="ZONA 6"
         Width: =112
-        Y: =207
+        Y: =572
         ZIndex: =33
 
     icon9_8 As icon.Add:
@@ -594,8 +594,8 @@ Features As screen:
         OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =727
-        Y: =44
+        X: =641
+        Y: =47
         ZIndex: =34
 
     Label3_6 As label:
@@ -605,13 +605,13 @@ Features As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =50
+        Height: =69
         OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
         Size: =9
         Text: ="ZONA 2 Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
         Tooltip: ="ZONA 2"
-        Width: =587
-        X: =779
+        Width: =242
+        X: =750
         Y: =44
         ZIndex: =35
 
@@ -626,8 +626,8 @@ Features As screen:
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =998
-        Y: =535
+        X: =1115
+        Y: =512
         ZIndex: =38
 
     Label3_8 As label:
@@ -647,9 +647,9 @@ Features As screen:
             tanque de expansión
             válvula de amortiguación piloto"
         Tooltip: ="ZONA 7"
-        Width: =287
-        X: =1060
-        Y: =529
+        Width: =182
+        X: =1165
+        Y: =512
         ZIndex: =39
 
     Image6_9 As image:
@@ -681,8 +681,8 @@ Features As screen:
             OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
             TabIndex: =0
             Width: =50
-            X: =177
-            Y: =479
+            X: =133
+            Y: =204
             ZIndex: =36
 
         Label3_7 As label:
@@ -699,6 +699,7 @@ Features As screen:
                 ="ZONA 8: Brazos, Balde y Cilindros"
             Tooltip: ="ZONA 8"
             Width: =165.41
-            Y: =473
+            X: =18
+            Y: =254
             ZIndex: =37
 
