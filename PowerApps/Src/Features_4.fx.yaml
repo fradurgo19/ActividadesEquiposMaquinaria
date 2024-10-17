@@ -74,39 +74,6 @@ Features_4 As screen:
             Y: =3
             ZIndex: =2
 
-    Image29 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =455
-        Image: ='Captura de pantalla 2024-10-08 155902'
-        Width: =404
-        X: =962
-        Y: =52
-        ZIndex: =2
-
-    Image28 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =382
-        Image: ='Captura de pantalla 2024-10-08 155622'
-        Width: =484
-        X: =358
-        Y: =44
-        ZIndex: =3
-
-    Image27 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =295
-        Image: ='Captura de pantalla 2024-10-08 155446'
-        Width: =698
-        X: =203
-        Y: =473
-        ZIndex: =4
-
     Rectangle2_8 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =App.Theme.Colors.Primary
@@ -215,7 +182,7 @@ Features_4 As screen:
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
         Size: =13.34
-        Text: ="TRASLACIÓN"
+        Text: ="MOTOR DE TRASLACIÓN"
         Width: =233
         X: =1011
         Y: =523
@@ -339,7 +306,7 @@ Features_4 As screen:
         Size: =10
         Visible: =pop2
         Width: =103
-        X: =566
+        X: =587
         Y: =160
         ZIndex: =19
 
@@ -374,7 +341,7 @@ Features_4 As screen:
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -394,7 +361,7 @@ Features_4 As screen:
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop2
-        Width: =104
+        Width: =120
         X: =447
         Y: =157
         ZIndex: =21
@@ -1253,7 +1220,7 @@ Features_4 As screen:
         PressedColor: =Label9_52.Color
         PressedFill: =Label9_52.Fill
         Size: =15
-        Text: ="TRASLACIÓN"
+        Text: ="MOTOR DE TRASLACIÓN"
         Visible: =pop3
         Width: =303
         X: =145
