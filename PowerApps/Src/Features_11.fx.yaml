@@ -54,6 +54,17 @@ Features_11 As screen:
         )
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image52 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =330
+        Image: =BombaCombustible
+        Width: =368
+        X: =989
+        Y: =428
+        ZIndex: =1
+
     Image50 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -63,7 +74,7 @@ Features_11 As screen:
         Width: =362
         X: =989
         Y: =105
-        ZIndex: =1
+        ZIndex: =2
 
     Image49 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -74,7 +85,7 @@ Features_11 As screen:
         Width: =400
         X: =163
         Y: =99
-        ZIndex: =2
+        ZIndex: =3
 
     Image48 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -85,17 +96,6 @@ Features_11 As screen:
         Width: =278
         X: =634
         Y: =106
-        ZIndex: =3
-
-    Image25 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =300
-        Image: =Bombadealimnetaciondecombustrioble
-        Width: =298
-        X: =1059
-        Y: =438
         ZIndex: =4
 
     icon11_23 As icon.Add:
