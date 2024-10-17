@@ -98,7 +98,7 @@ Features_2 As screen:
         PressedFill: =Label2_8.Fill
         Size: =18
         Text: |-
-            ="EXCAVADORA: Motor y Radiador"
+            ="EXCAVADORA: ZONA 1: Motor y Enfriador"
         Width: =1366
         ZIndex: =8
 
@@ -300,7 +300,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =41
+            Height: =46
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -309,7 +309,7 @@ Features_2 As screen:
             Size: =10
             Text: =ThisItem.Actividad
             VerticalAlign: =VerticalAlign.Top
-            Width: =443
+            Width: =427
             X: =4
             Y: =5
             ZIndex: =3
@@ -386,7 +386,7 @@ Features_2 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =408
+            X: =392
             Y: =63
             ZIndex: =8
 
@@ -712,7 +712,7 @@ Features_2 As screen:
         Height: =39
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -730,6 +730,7 @@ Features_2 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredEnmotor,field_6),{Results:ThisRecord.Value}),Results),ComboBox1_1.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop4
         Width: =110
@@ -984,7 +985,7 @@ Features_2 As screen:
         Height: =39
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -1002,6 +1003,7 @@ Features_2 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredEnfriadores,field_6),{Results:ThisRecord.Value}),Results),ComboBox1_7.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop1
         Width: =110
