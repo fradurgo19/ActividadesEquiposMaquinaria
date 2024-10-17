@@ -361,9 +361,9 @@ Features_5 As screen:
                     Distinct(
                         Filter(
                             colFilteredEnfriadores,
-                            Solución = ComboBox2_19.Selected.Results
+                            field_6 = ComboBox2_19.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -373,7 +373,7 @@ Features_5 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnfriadores,Solución=ComboBox2_19.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_21.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnfriadores,field_6=ComboBox2_19.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_21.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -420,7 +420,7 @@ Features_5 As screen:
                 ForAll(
                     Distinct(
                         colFilteredEnfriadores,
-                        Solución
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -430,7 +430,7 @@ Features_5 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredEnfriadores,Solución),{Results:ThisRecord.Value}),Results),ComboBox2_19.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredEnfriadores,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_19.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop2
@@ -1761,9 +1761,9 @@ Features_5 As screen:
                     Distinct(
                         Filter(
                             colFilteredEnfriadores,
-                            Solución = ComboBox2_20.Selected.Results
+                            field_6 = ComboBox2_20.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1773,7 +1773,7 @@ Features_5 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnfriadores,Solución=ComboBox2_20.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_22.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnfriadores,field_6=ComboBox2_20.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_22.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1820,7 +1820,7 @@ Features_5 As screen:
                 ForAll(
                     Distinct(
                         colFilteredEnfriadores,
-                        Solución
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1830,7 +1830,7 @@ Features_5 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredEnfriadores,Solución),{Results:ThisRecord.Value}),Results),ComboBox2_20.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredEnfriadores,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_20.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
@@ -1847,7 +1847,7 @@ Features_5 As screen:
         Items: |-
             =Filter(
                 colFilteredEnfriadores, 
-                Tipo = "Excavadora" && Solución = ComboBox2_20.Selected.Results && Tamaño = ComboBox1_22.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_20.Selected.Results && field_7 = ComboBox1_22.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
