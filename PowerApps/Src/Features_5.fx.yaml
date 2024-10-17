@@ -415,6 +415,7 @@ Features_5 As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Solución"
+        IsSearchable: =false
         Items: |-
             =Filter(
                 ForAll(
@@ -429,8 +430,7 @@ Features_5 As screen:
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
-        SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredEnfriadores,Solución),{Results:ThisRecord.Value}),Results),ComboBox2_19.SearchText,Results)
+        SearchItems: =[]
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop2
@@ -1815,6 +1815,7 @@ Features_5 As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Solución"
+        IsSearchable: =false
         Items: |-
             =Filter(
                 ForAll(
@@ -1829,8 +1830,7 @@ Features_5 As screen:
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
-        SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredEnfriadores,Solución),{Results:ThisRecord.Value}),Results),ComboBox2_20.SearchText,Results)
+        SearchItems: =[]
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4

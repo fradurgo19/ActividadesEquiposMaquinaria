@@ -756,8 +756,7 @@ Features_10 As screen:
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
-        SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colParametros,TipodeMaquina=ComboBox1_41.Selected.Results),Descripcion),{Results:ThisRecord.Value}),Results),ComboBox1_39.SearchText,Results)
+        SearchItems: =[]
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
@@ -797,8 +796,7 @@ Features_10 As screen:
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
-        SearchItems: |-
-            =Search(Filter(ForAll(Distinct(Filter(colParametros,TipodeMaquina="EXCAVADORA"),TipodeMaquina),{Results:ThisRecord.Value}),Results),ComboBox1_41.SearchText,Results)
+        SearchItems: =[]
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
@@ -871,8 +869,7 @@ Features_10 As screen:
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =App.Theme.Colors.Darker30
             SearchFields: =["Results"]
-            SearchItems: |-
-                =Search(Sort(ForAll(Distinct(Filter(colParametros,TipodeMaquina=ComboBox1_42.Selected.Results),Descripcion),{Results:ThisRecord.Value}),Results),ComboBox1_40.SearchText,Results)
+            SearchItems: =[]
             SelectionFill: =App.Theme.Colors.Primary
             Size: =10
             Width: =200
@@ -911,8 +908,7 @@ Features_10 As screen:
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =App.Theme.Colors.Darker30
             SearchFields: =["Results"]
-            SearchItems: |-
-                =Search(Filter(ForAll(Distinct(colParametros,TipodeMaquina),{Results:ThisRecord.Value}),Results),ComboBox1_42.SearchText,Results)
+            SearchItems: =[]
             SelectionFill: =App.Theme.Colors.Primary
             Size: =10
             Width: =200
@@ -1849,8 +1845,7 @@ Features_10 As screen:
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
-        SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colParametros,TipodeMaquina=ComboBox1_44.Selected.Results),Descripcion),{Results:ThisRecord.Value}),Results),ComboBox1_43.SearchText,Results)
+        SearchItems: =[]
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop1
@@ -1890,8 +1885,7 @@ Features_10 As screen:
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
-        SearchItems: |-
-            =Search(Filter(ForAll(Distinct(Filter(colParametros,TipodeMaquina="EXCAVADORA"),TipodeMaquina),{Results:ThisRecord.Value}),Results),ComboBox1_44.SearchText,Results)
+        SearchItems: =[]
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop1
