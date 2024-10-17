@@ -23,26 +23,26 @@ Features_9 As screen:
         )
     Width: =Max(App.Width, App.DesignWidth)
 
-    Image22 As image:
+    Image47 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =442
-        Image: =Traslacion_1
-        Width: =385
-        X: =226
-        Y: =59
+        Height: =452
+        Image: =Tren
+        Width: =591
+        X: =775
+        Y: =72
         ZIndex: =1
 
-    Image21 As image:
+    Image44 As image:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =445
-        Image: =TrendeRodaje
-        Width: =551
-        X: =815
-        Y: =44
+        Height: =381
+        Image: =Traslacion_1
+        Width: =451
+        X: =187
+        Y: =128
         ZIndex: =2
 
     Rectangle2_13 As rectangle:
@@ -296,7 +296,7 @@ Features_9 As screen:
         Size: =10
         Visible: =pop3
         Width: =103
-        X: =1034
+        X: =1055
         Y: =111
         ZIndex: =30
 
@@ -331,7 +331,7 @@ Features_9 As screen:
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -349,9 +349,10 @@ Features_9 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredTraslacion,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_9.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop3
-        Width: =104
+        Width: =130
         X: =915
         Y: =108
         ZIndex: =32
@@ -372,8 +373,8 @@ Features_9 As screen:
         TemplateSize: =121
         Visible: =pop3
         Width: =437
-        X: =915
-        Y: =159
+        X: =916
+        Y: =171
         ZIndex: =33
 
         Title3_21 As label:
@@ -632,7 +633,7 @@ Features_9 As screen:
         Size: =10
         Visible: =pop1
         Width: =103
-        X: =238
+        X: =266
         Y: =123
         ZIndex: =39
 
@@ -667,7 +668,7 @@ Features_9 As screen:
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -685,9 +686,10 @@ Features_9 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredTrenderodaje,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_10.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop1
-        Width: =104
+        Width: =130
         X: =119
         Y: =120
         ZIndex: =41
