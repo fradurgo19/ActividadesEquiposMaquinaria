@@ -37,11 +37,7 @@ Features_7 As screen:
                     Solucion = "Cabina" ||
                     Solucion = "Soportes de cabina" ||
                     Solucion = "Puerta de cabina" ||
-                    Solucion = "Vidrio frontal cabina" ||
-                    Solucion = "Vidrio piecero cabina" ||
-                    Solucion = "Vidrios puerta cabina" ||
-                    Solucion = "Vidrio lateral derecho cabina" ||
-                    Solucion = "Vidrio trasero cabina" ||
+                    Solucion = "Vidrios" ||
                     Solucion = "Pasamanos cabina" ||
                     Solucion = "Vidrio lateral izquierdo" ||
                     Solucion = "Claraboya" ||
@@ -58,8 +54,7 @@ Features_7 As screen:
                 'Actividades Cabina',
                 Tipo = "Excavadora" &&
                 (
-                    Solucion = "Computador principal" ||
-                    Solucion = "Computador de motor" ||
+                    Solucion = "Computadores" ||
                     Solucion = "Convertidor de voltaje" ||
                     Solucion = "Monitor (display)" ||
                     Solucion = "Unidad del aire acondicionado" ||
@@ -463,7 +458,7 @@ Features_7 As screen:
         Size: =10
         Visible: =pop5
         Width: =103
-        X: =294
+        X: =301
         Y: =151
         ZIndex: =32
 
@@ -498,7 +493,7 @@ Features_7 As screen:
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -518,7 +513,7 @@ Features_7 As screen:
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop5
-        Width: =104
+        Width: =120
         X: =175
         Y: =148
         ZIndex: =34
