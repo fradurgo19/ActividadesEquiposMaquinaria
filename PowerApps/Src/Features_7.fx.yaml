@@ -80,6 +80,13 @@ Features_7 As screen:
                 'Aire Acondicionado',
                 Tipo = "Excavadora"
             )
+        );
+        ClearCollect(
+            colFiltAireSistemElectri,
+            Filter(
+                'Sistema Eléctrico',
+                Tipo = "Excavadora"
+            )
         )
     Width: =Max(App.Width, App.DesignWidth)
 
@@ -2024,7 +2031,7 @@ Features_7 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredMonitor,
+                            colFiltAireSistemElectri,
                             field_6 = ComboBox2_35.Selected.Results
                         ),
                         field_7
@@ -2037,7 +2044,7 @@ Features_7 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredMonitor,field_6=ComboBox2_35.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_37.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFiltAireSistemElectri,field_6=ComboBox2_35.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_37.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -2083,7 +2090,7 @@ Features_7 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredMonitor,
+                        colFiltAireSistemElectri,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -2094,7 +2101,7 @@ Features_7 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredMonitor,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_35.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFiltAireSistemElectri,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_35.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -2111,7 +2118,7 @@ Features_7 As screen:
         Height: =546
         Items: |-
             =Filter(
-                colFilteredMonitor, 
+                colFiltAireSistemElectri, 
                 field_5 = "Excavadora" && field_6 = ComboBox2_35.Selected.Results && field_7 = ComboBox1_37.Selected.Results 
             )
         Layout: =Layout.Vertical
