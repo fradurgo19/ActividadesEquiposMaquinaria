@@ -938,6 +938,7 @@ Features_5 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredTanqueexpasion,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_21.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop1
         Width: =125
@@ -1337,6 +1338,7 @@ Features_5 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredValvulaAmortiguacionPiloto,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_22.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop3
         Width: =120
@@ -1678,6 +1680,7 @@ Features_5 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredBateria,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_24.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop5
         Width: =120
@@ -2035,6 +2038,7 @@ Features_5 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredFiltrodeaire,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_32.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop6
         Width: =120
@@ -2748,6 +2752,7 @@ Features_5 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFiltereAA,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_34.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop7
         Width: =120
