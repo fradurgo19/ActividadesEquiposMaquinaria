@@ -454,6 +454,166 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Features_5.Gallery2_37.Title3_139.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Features_5.Gallery2_37.Title3_139.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 17,
+                  "charOffset": 27,
+                  "snippet": {
+                    "text": ".'Codigo Alterno'"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Features_5",
+                "type": "Features_5.Gallery2_37.Title3_139"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Codigo Alterno"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Features_5.Gallery2_37.Subtitle2_37.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Features_5.Gallery2_37.Subtitle2_37.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".Nombre"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Features_5",
+                "type": "Features_5.Gallery2_37.Subtitle2_37"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Nombre"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Features_5.Gallery2_37.Body2_38.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Features_5.Gallery2_37.Body2_38.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 3,
+                  "charOffset": 15,
+                  "snippet": {
+                    "text": ".Id"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Features_5",
+                "type": "Features_5.Gallery2_37.Body2_38"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Id"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Features_5.Gallery2_37.Title3_48.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Features_5.Gallery2_37.Title3_48.Text",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 19,
+                  "snippet": {
+                    "text": ".Codigo"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "Features_5",
+                "type": "Features_5.Gallery2_37.Title3_48"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Codigo"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "Features_8.Rectangle2_6.AccessibleLabel"
                 }
               ],
