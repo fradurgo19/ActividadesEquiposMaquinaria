@@ -13,14 +13,11 @@ Features_7 As screen:
                 'Actividades Cabina',
                 Tipo = "Excavadora" &&
                 (
-                    Solucion = "Joystick" ||
-                    Solucion = "Mando piloto" ||
-                    Solucion = "Sellos mando piloto" ||
+                    Solucion = "Mandos pilotos" ||
                     Solucion = "Palancas de tralacion" ||
                     Solucion = "Pedal" ||
                     Solucion = "Valvula de pedal" ||
-                    Solucion = "Sellos valvula de pedal" ||
-                    Solucion = "Manipulador joystick (knob, grip)"
+                    Solucion = "Sellos valvula de pedal" 
                 )
             )
         );
