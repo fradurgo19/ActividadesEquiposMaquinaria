@@ -103,7 +103,7 @@ Features_7 As screen:
         PressedFill: =Label2_17.Fill
         Size: =18.68
         Text: |-
-            ="EXCAVADORA: Cabina, Silla, Consolas, Joystick, Monitor, Computadores, Cableados (Harness) y Vidrios"
+            ="EXCAVADORA: ZONA 9: Cabina, Silla, Consolas, Joystick, Monitor, Computadores, Cableados (Harness) y Vidrios"
         Width: =1281.96
         X: =82.71
         ZIndex: =7
@@ -501,6 +501,7 @@ Features_7 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredCabina,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_28.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop5
         Width: =120
@@ -553,7 +554,7 @@ Features_7 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =43
+            Height: =39
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -562,7 +563,7 @@ Features_7 As screen:
             Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =412
+            Width: =373
             X: =4
             ZIndex: =3
 
@@ -604,25 +605,6 @@ Features_7 As screen:
             Width: =4
             ZIndex: =6
 
-        Title3_60 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =45
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =9
-            Text: =ThisItem.'Codigo Alterno'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =67
-            X: =203
-            Y: =55
-            ZIndex: =7
-
         Checkbox1_29 As checkbox:
             BorderColor: =App.Theme.Colors.Darker40
             CheckboxBorderColor: =App.Theme.Colors.Primary
@@ -638,9 +620,49 @@ Features_7 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =377
-            Y: =55
+            X: =360
+            Y: =49
             ZIndex: =8
+
+        Title3_151 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =48
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =92
+            X: =167
+            Y: =52
+            ZIndex: =9
+
+        Title3_152 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =49
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="Adjuntos: "&ThisItem.Recurso
+            VerticalAlign: =VerticalAlign.Top
+            Width: =75
+            X: =285
+            Y: =53
+            ZIndex: =10
 
     Label9_68 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -813,7 +835,7 @@ Features_7 As screen:
         Size: =10
         Visible: =pop2
         Width: =103
-        X: =249
+        X: =263
         Y: =151
         ZIndex: =43
 
@@ -848,7 +870,7 @@ Features_7 As screen:
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -866,9 +888,10 @@ Features_7 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredJoystick,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_29.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop2
-        Width: =104
+        Width: =120
         X: =130
         Y: =148
         ZIndex: =45
@@ -909,8 +932,8 @@ Features_7 As screen:
                 ="Codigo: "&ThisItem.Codigo
             VerticalAlign: =VerticalAlign.Top
             Width: =104
-            X: =81
-            Y: =55
+            X: =68
+            Y: =45
             ZIndex: =2
 
         Subtitle2_30 As label:
@@ -927,7 +950,7 @@ Features_7 As screen:
             Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =412
+            Width: =361
             X: =4
             ZIndex: =3
 
@@ -936,7 +959,7 @@ Features_7 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =39
+            Height: =48
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -947,8 +970,8 @@ Features_7 As screen:
                 ="ID: "&ThisItem.Id
             VerticalAlign: =VerticalAlign.Top
             Width: =53
-            X: =16
-            Y: =55
+            X: =4
+            Y: =43
             ZIndex: =4
 
         Separator2_30 As rectangle:
@@ -969,25 +992,6 @@ Features_7 As screen:
             Width: =4
             ZIndex: =6
 
-        Title3_62 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =39
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =9
-            Text: =ThisItem.'Codigo Alterno'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =67
-            X: =203
-            Y: =55
-            ZIndex: =7
-
         Checkbox1_30 As checkbox:
             BorderColor: =App.Theme.Colors.Darker40
             CheckboxBorderColor: =App.Theme.Colors.Primary
@@ -1003,9 +1007,49 @@ Features_7 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =377
+            X: =365
             Y: =46
             ZIndex: =8
+
+        Title3_153 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =48
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =92
+            X: =172
+            Y: =43
+            ZIndex: =9
+
+        Title3_154 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =49
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="Adjuntos: "&ThisItem.Recurso
+            VerticalAlign: =VerticalAlign.Top
+            Width: =75
+            X: =290
+            Y: =44
+            ZIndex: =10
 
     Label9_69 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1240,7 +1284,7 @@ Features_7 As screen:
         Size: =10
         Visible: =pop6
         Width: =103
-        X: =1051
+        X: =1065
         Y: =151
         ZIndex: =52
 
@@ -1275,7 +1319,7 @@ Features_7 As screen:
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -1293,9 +1337,10 @@ Features_7 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredMonitor,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_30.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop6
-        Width: =104
+        Width: =120
         X: =932
         Y: =148
         ZIndex: =54
@@ -1354,7 +1399,7 @@ Features_7 As screen:
             Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =412
+            Width: =360
             X: =4
             ZIndex: =3
 
@@ -1396,25 +1441,6 @@ Features_7 As screen:
             Width: =4
             ZIndex: =6
 
-        Title3_64 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =56
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =9
-            Text: =ThisItem.'Codigo Alterno'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =67
-            X: =203
-            Y: =55
-            ZIndex: =7
-
         Checkbox1_31 As checkbox:
             BorderColor: =App.Theme.Colors.Darker40
             CheckboxBorderColor: =App.Theme.Colors.Primary
@@ -1430,9 +1456,49 @@ Features_7 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =377
-            Y: =66
+            X: =364
+            Y: =60
             ZIndex: =8
+
+        Title3_149 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =48
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =92
+            X: =171
+            Y: =43
+            ZIndex: =9
+
+        Title3_150 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =49
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="Adjuntos: "&ThisItem.Recurso
+            VerticalAlign: =VerticalAlign.Top
+            Width: =75
+            X: =289
+            Y: =44
+            ZIndex: =10
 
     Label9_70 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1681,7 +1747,7 @@ Features_7 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =43
+            Height: =44
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1690,7 +1756,7 @@ Features_7 As screen:
             Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =412
+            Width: =388
             X: =4
             ZIndex: =3
 
@@ -1732,25 +1798,6 @@ Features_7 As screen:
             Width: =4
             ZIndex: =6
 
-        Title3_66 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =59
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =9
-            Text: =ThisItem.'Codigo Alterno'
-            VerticalAlign: =VerticalAlign.Top
-            Width: =67
-            X: =203
-            Y: =55
-            ZIndex: =7
-
         Checkbox1_32 As checkbox:
             BorderColor: =App.Theme.Colors.Darker40
             CheckboxBorderColor: =App.Theme.Colors.Primary
@@ -1766,9 +1813,49 @@ Features_7 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =377
+            X: =353
             Y: =69
             ZIndex: =8
+
+        Title3_155 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =48
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =92
+            X: =160
+            Y: =55
+            ZIndex: =9
+
+        Title3_156 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =49
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: |-
+                ="Adjuntos: "&ThisItem.Recurso
+            VerticalAlign: =VerticalAlign.Top
+            Width: =75
+            X: =278
+            Y: =56
+            ZIndex: =10
 
     Label9_71 As label:
         BorderColor: =App.Theme.Colors.Darker40
