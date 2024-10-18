@@ -43,45 +43,12 @@ Features_6 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =595
+        Height: =561
         Image: =Brazo
-        Width: =445
+        Width: =1049
         X: =79
         Y: =84
         ZIndex: =1
-
-    Image35 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =378
-        Image: =CilindrodelBoom
-        Width: =466
-        X: =897
-        Y: =44
-        ZIndex: =2
-
-    Image34 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =275
-        Image: =Cilindrodelbrazo
-        Width: =360
-        X: =989
-        Y: =480
-        ZIndex: =3
-
-    Image33 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =265
-        Image: =Cilindrodelbalde
-        Width: =408
-        X: =528
-        Y: =486
-        ZIndex: =4
 
     Rectangle2_15 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
@@ -143,8 +110,8 @@ Features_6 As screen:
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
         TabIndex: =0
         Width: =50
-        X: =314
-        Y: =95
+        X: =381
+        Y: =93
         ZIndex: =10
 
     Label1_4 As label:
@@ -155,12 +122,12 @@ Features_6 As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
         FontWeight: =FontWeight.Bold
-        Height: =36
+        Height: =38
         OnSelect: |-
             =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
         Size: =13.34
-        Text: ="Stick"
-        Width: =107
+        Text: ="Stick y Cilindros de Stick"
+        Width: =231
         X: =279
         Y: =363
         ZIndex: =11
@@ -177,9 +144,9 @@ Features_6 As screen:
         OnSelect: |-
             =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
         Size: =13.34
-        Text: ="Boom"
-        Width: =114
-        X: =197
+        Text: ="Boom y Cilindros del Boom"
+        Width: =275
+        X: =106
         Y: =97
         ZIndex: =12
 
@@ -212,46 +179,12 @@ Features_6 As screen:
             =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
         Size: =13.34
         Text: |-
-            ="Balde
+            ="Balde y Cilindros del Balde
             "
-        Width: =129.4
+        Width: =240
         X: =383
         Y: =587
         ZIndex: =14
-
-    icon11_30 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Lighter80
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(152, 208, 70, 1)
-        Height: =50
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
-        TabIndex: =0
-        Width: =50
-        X: =699
-        Y: =451
-        ZIndex: =19
-
-    Label1_27 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =35
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
-        Size: =13.34
-        Text: ="Cilindro del Balde"
-        Width: =177.42
-        X: =757
-        Y: =458
-        ZIndex: =20
 
     icon12_48 As icon.Cancel:
         BorderColor: =App.Theme.Colors.Darker40
@@ -268,74 +201,6 @@ Features_6 As screen:
         X: =707.01
         Y: =392
         ZIndex: =21
-
-    icon11_28 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Lighter80
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(152, 208, 70, 1)
-        Height: =50
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
-        TabIndex: =0
-        Width: =50
-        X: =1092
-        Y: =68
-        ZIndex: =22
-
-    Label1_25 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =59
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
-        Size: =13.34
-        Text: ="Cilindro del Boom"
-        Width: =206
-        X: =1144
-        Y: =63
-        ZIndex: =23
-
-    icon11_36 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Lighter80
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(152, 208, 70, 1)
-        Height: =50
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
-        TabIndex: =0
-        Width: =50
-        X: =1136
-        Y: =444
-        ZIndex: =28
-
-    Label1_33 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =35
-        OnSelect: |-
-            =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
-        Size: =13.34
-        Text: ="Cilindro de Stick"
-        Width: =162.75
-        X: =1188
-        Y: =451
-        ZIndex: =29
 
     Rectangle4_33 As rectangle:
         BorderColor: =RGBA(255, 255, 255, 255)
