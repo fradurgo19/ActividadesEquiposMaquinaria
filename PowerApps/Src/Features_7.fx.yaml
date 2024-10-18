@@ -90,60 +90,6 @@ Features_7 As screen:
         );
     Width: =Max(App.Width, App.DesignWidth)
 
-    Image11 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =331
-        Image: ='Captura de pantalla 2024-10-11 103044'
-        Width: =242
-        X: =269
-        Y: =437
-        ZIndex: =1
-
-    Image9 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =347
-        Image: ='Captura de pantalla 2024-10-11 102527'
-        Width: =481
-        X: =365
-        Y: =88
-        ZIndex: =2
-
-    Image4 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =340
-        Image: ='Captura de pantalla 2024-10-11 102711'
-        Width: =361
-        X: =1005
-        Y: =428
-        ZIndex: =3
-
-    Image2 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =375
-        Image: ='Captura de pantalla 2024-10-11 102836'
-        Width: =391
-        X: =975
-        Y: =44
-        ZIndex: =4
-
-    Image1 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =331
-        Image: ='Captura de pantalla 2024-10-11 103500'
-        Width: =269
-        Y: =437
-        ZIndex: =5
-
     Rectangle2_16 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =App.Theme.Colors.Primary
