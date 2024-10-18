@@ -663,6 +663,68 @@ Features As screen:
         X: =4
         ZIndex: =40
 
+    icon9_12 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Lighter80
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(109, 49, 162, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
+        TabIndex: =0
+        Width: =50
+        X: =112
+        Y: =445
+        ZIndex: =41
+
+    Label3_9 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
+        Size: =10
+        Text: ="Aire Acondicionado"
+        Tooltip: ="ZONA 6"
+        Width: =112
+        Y: =435
+        ZIndex: =42
+
+    icon9_16 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Lighter80
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(109, 49, 162, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
+        TabIndex: =0
+        Width: =50
+        X: =112
+        Y: =377
+        ZIndex: =43
+
+    Label3_10 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
+        Size: =10
+        Text: ="Sistema Eléctrico"
+        Tooltip: ="ZONA 6"
+        Width: =112
+        Y: =367
+        ZIndex: =44
+
     Group4 As group:
         Height: =5
         Width: =5
