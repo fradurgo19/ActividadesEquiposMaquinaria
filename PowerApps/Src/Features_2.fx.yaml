@@ -1035,7 +1035,7 @@ Features_2 As screen:
                 ForAll(
                     Distinct(
                         colFilteredEnfriadores,
-                        Solución
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1045,7 +1045,7 @@ Features_2 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredEnfriadores,Solución),{Results:ThisRecord.Value}),Results),ComboBox1_7.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredEnfriadores,field_6),{Results:ThisRecord.Value}),Results),ComboBox1_7.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
