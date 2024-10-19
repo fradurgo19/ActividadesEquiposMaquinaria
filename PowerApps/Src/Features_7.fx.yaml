@@ -1723,7 +1723,7 @@ Features_7 As screen:
         Size: =10
         Visible: =pop1
         Width: =103
-        X: =269
+        X: =296
         Y: =164
         ZIndex: =58
 
@@ -1758,7 +1758,7 @@ Features_7 As screen:
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Solución"
+        InputTextPlaceholder: ="Sugerencias"
         Items: |-
             =Filter(
                 ForAll(
@@ -1776,9 +1776,10 @@ Features_7 As screen:
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredSilla,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_31.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
+        SelectMultiple: =false
         Size: =10
         Visible: =pop1
-        Width: =104
+        Width: =120
         X: =150
         Y: =161
         ZIndex: =60
