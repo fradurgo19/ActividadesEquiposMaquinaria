@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 6,
-                  "charOffset": 38,
+                  "charOffset": 39,
                   "snippet": {
                     "text": "fild_5"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 45,
+                  "charOffset": 46,
                   "snippet": {
                     "text": "="
                   }
@@ -24409,6 +24409,36 @@
           },
           "ruleId": "app-UnusedMediaResources",
           "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Features_10.OnVisible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Features_10.OnVisible",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "OnVisible",
+                "module": "Features_10",
+                "type": "Features_10"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-CollectDelegatableDataSource",
+          "ruleIndex": 10
         },
         {
           "locations": [

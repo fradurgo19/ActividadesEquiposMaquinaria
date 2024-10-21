@@ -8,6 +8,7 @@ Features_10 As screen:
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});
         ClearCollect(colParametros, Parametros);
         ClearCollect(colActividadesSuperiores,'Lista de Actividades Superiores');
+        ClearCollect(colDiagnosticoMotor,Motor);
         
         
     Width: =Max(App.Width, App.DesignWidth)
@@ -586,7 +587,7 @@ Features_10 As screen:
         Height: =192
         Items: |-
             =Filter(
-                colFilteredEnmotor, 
+                colDiagnosticoMotor, 
                  fild_5 = "Excavadora" && Nombre = "CALENTAMIENTO MOTOR"
             )
         Layout: =Layout.Vertical
