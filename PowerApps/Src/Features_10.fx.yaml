@@ -860,7 +860,7 @@ Features_10 As screen:
                                 colParametros,
                                 TipodeMaquina = ComboBox1_42.Selected.Results
                             ),
-                            Descripcion
+                            Modelo
                         ),
                         {Results: ThisRecord.Value}
                     ),
@@ -869,11 +869,12 @@ Features_10 As screen:
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =App.Theme.Colors.Darker30
             SearchFields: =["Results"]
-            SearchItems: =[]
+            SearchItems: |-
+                =Search(Sort(ForAll(Distinct(Filter(colParametros,TipodeMaquina=ComboBox1_42.Selected.Results),Modelo),{Results:ThisRecord.Value}),Results),ComboBox1_40.SearchText,Results)
             SelectionFill: =App.Theme.Colors.Primary
             Size: =10
-            Width: =200
-            X: =231
+            Width: =130
+            X: =190
             Y: =156
             ZIndex: =2
 
@@ -908,10 +909,11 @@ Features_10 As screen:
             PressedColor: =RGBA(255, 255, 255, 1)
             PressedFill: =App.Theme.Colors.Darker30
             SearchFields: =["Results"]
-            SearchItems: =[]
+            SearchItems: |-
+                =Search(Filter(ForAll(Distinct(colParametros,TipodeMaquina),{Results:ThisRecord.Value}),Results),ComboBox1_42.SearchText,Results)
             SelectionFill: =App.Theme.Colors.Primary
             Size: =10
-            Width: =200
+            Width: =154
             X: =8
             Y: =156
             ZIndex: =3
@@ -922,13 +924,13 @@ Features_10 As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Fill: =RGBA(255, 0, 0, 1)
-            Height: =32
+            Height: =34
             Icon: =Icon.Reset
-            OnSelect: =Reset(ComboBox1_42);Reset(ComboBox1_40)
+            OnSelect: =Reset(ComboBox1_42);Reset(ComboBox1_40);Reset(ComboBox1_45)
             TabIndex: =0
             Width: =42
-            X: =603
-            Y: =73
+            X: =630
+            Y: =64
             ZIndex: =4
 
         "Gallery2_34 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
@@ -1138,6 +1140,92 @@ Features_10 As screen:
                 X: =224
                 Y: =124
                 ZIndex: =17
+
+        ComboBox1_45 As combobox:
+            BorderColor: =App.Theme.Colors.Darker40
+            ChevronBackground: =App.Theme.Colors.Primary
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+            ChevronHoverBackground: =App.Theme.Colors.Darker10
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayFields: =["Results"]
+            Font: =App.Theme.Font
+            Height: =39
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =App.Theme.Colors.Lighter70
+            InputTextPlaceholder: ="Parametro"
+            IsSearchable: =false
+            Items: |-
+                =Sort(
+                    ForAll(
+                        Distinct(
+                            Filter(
+                                colParametros,
+                                Modelo = ComboBox1_40.Selected.Results
+                            ),
+                            Item
+                        ),
+                        {Results: ThisRecord.Value}
+                    ),
+                    Results
+                )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =App.Theme.Colors.Darker30
+            SearchFields: =["Results"]
+            SearchItems: |-
+                =Search(Sort(ForAll(Distinct(Filter(colParametros,Modelo=ComboBox1_40.Selected.Results),Item),{Results:ThisRecord.Value}),Results),ComboBox1_45.SearchText,Results)
+            SelectionFill: =App.Theme.Colors.Primary
+            Size: =10
+            Width: =130
+            X: =350
+            Y: =156
+            ZIndex: =6
+
+        ComboBox1_46 As combobox:
+            BorderColor: =App.Theme.Colors.Darker40
+            ChevronBackground: =App.Theme.Colors.Primary
+            ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+            ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+            ChevronHoverBackground: =App.Theme.Colors.Darker10
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            DisplayFields: =["Results"]
+            Font: =App.Theme.Font
+            Height: =39
+            HoverColor: =RGBA(0, 0, 0, 1)
+            HoverFill: =App.Theme.Colors.Lighter70
+            InputTextPlaceholder: ="Parametro"
+            IsSearchable: =false
+            Items: |-
+                =Sort(
+                    ForAll(
+                        Distinct(
+                            Filter(
+                                colParametros,
+                                Item = ComboBox1_45.Selected.Results
+                            ),
+                            Title
+                        ),
+                        {Results: ThisRecord.Value}
+                    ),
+                    Results
+                )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =App.Theme.Colors.Darker30
+            SearchFields: =["Results"]
+            SearchItems: |-
+                =Search(Sort(ForAll(Distinct(Filter(colParametros,Item=ComboBox1_45.Selected.Results),Title),{Results:ThisRecord.Value}),Results),ComboBox1_46.SearchText,Results)
+            SelectionFill: =App.Theme.Colors.Primary
+            Size: =10
+            Width: =130
+            X: =515
+            Y: =156
+            ZIndex: =7
 
     Label9_33 As label:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1987,8 +2075,8 @@ Features_10 As screen:
         PressedColor: =Label9_54.Color
         PressedFill: =Label9_54.Fill
         Size: =12
-        Text: ="TIPO"
-        Width: =201
+        Text: ="TIPO DE MAQUINA"
+        Width: =151
         X: =16
         Y: =389
         ZIndex: =99
@@ -2012,8 +2100,8 @@ Features_10 As screen:
         PressedFill: =Label9_56.Fill
         Size: =12
         Text: ="PARAMETRO"
-        Width: =190
-        X: =239
+        Width: =110
+        X: =529
         Y: =389
         ZIndex: =100
 
@@ -2066,4 +2154,52 @@ Features_10 As screen:
         X: =975
         Y: =382
         ZIndex: =102
+
+    Label9_60 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        HoverBorderColor: =Label9_60.BorderColor
+        HoverColor: =Label9_60.Color
+        HoverFill: =Label9_60.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_60.BorderColor
+        PressedColor: =Label9_60.Color
+        PressedFill: =Label9_60.Fill
+        Size: =12
+        Text: ="MODELO"
+        Width: =124
+        X: =196
+        Y: =389
+        ZIndex: =103
+
+    Label9_80 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =37
+        HoverBorderColor: =Label9_80.BorderColor
+        HoverColor: =Label9_80.Color
+        HoverFill: =Label9_80.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label9_80.BorderColor
+        PressedColor: =Label9_80.Color
+        PressedFill: =Label9_80.Fill
+        Size: =12
+        Text: ="MODELO"
+        Width: =124
+        X: =359
+        Y: =389
+        ZIndex: =104
 

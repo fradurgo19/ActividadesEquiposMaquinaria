@@ -62,7 +62,7 @@ Features As screen:
         TabIndex: =0
         Width: =50
         X: =1065
-        Y: =75
+        Y: =83
         ZIndex: =7
 
     Rectangle15_7 As rectangle:
@@ -405,10 +405,10 @@ Features As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
+        FontWeight: =FontWeight.Semibold
         Height: =47
         OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
-        Size: =10
+        Size: =9
         Text: ="ZONA 1 Motor y Enfriadores"
         Tooltip: ="ZONA 1"
         Width: =212
@@ -437,10 +437,10 @@ Features As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
+        FontWeight: =FontWeight.Semibold
         Height: =108
         OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
-        Size: =10
+        Size: =9
         Text: |-
             ="ZONA 5: Motores de traslación, Contrapesa y Tornamesa"
         Tooltip: ="ZONA 5"
@@ -470,10 +470,10 @@ Features As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
+        FontWeight: =FontWeight.Semibold
         Height: =83
         OnSelect: =Navigate(Features_9, ScreenTransition.Fade)
-        Size: =10
+        Size: =9
         Text: |-
             ="ZONA 3 y 6:
             Tren de rodaje y Traslación"
@@ -504,10 +504,10 @@ Features As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
+        FontWeight: =FontWeight.Semibold
         Height: =107
         OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
-        Size: =10
+        Size: =9
         Text: |-
             ="ZONA 9: Cabina Silla, Consolas, Joystick, Monitor, Computadores y Cableados (Harness)
             Vidrios"
@@ -528,8 +528,8 @@ Features As screen:
         OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =517
-        Y: =63
+        X: =748
+        Y: =55
         ZIndex: =30
 
     Label3_4 As label:
@@ -538,18 +538,18 @@ Features As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =72
+        FontWeight: =FontWeight.Semibold
+        Height: =30
+        LineHeight: =1
         OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
-        Size: =10
+        Size: =9
         Text: |-
-            ="ZONA 4:
-            Bombas hidráulicas, Bomba Piloto, Filtros de motor, Filtro piloto, Banco de solenoides y Bomba transferencia combustible
+            ="ZONA 4: Bombas hidráulicas, Bomba Piloto, Filtros de motor, Filtro piloto, Banco de solenoides y Bomba transferencia combustible
             "
         Tooltip: ="ZONA 4"
-        Width: =376
-        X: =141
-        Y: =58
+        Width: =515
+        X: =851
+        Y: =44
         ZIndex: =31
 
     icon9_7 As icon.Add:
@@ -573,10 +573,10 @@ Features As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
+        FontWeight: =FontWeight.Semibold
         Height: =67
         OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
-        Size: =10
+        Size: =9
         Text: ="Diagnostico"
         Tooltip: ="ZONA 6"
         Width: =112
@@ -594,8 +594,8 @@ Features As screen:
         OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =641
-        Y: =47
+        X: =515
+        Y: =63
         ZIndex: =34
 
     Label3_6 As label:
@@ -604,16 +604,48 @@ Features As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
+        FontWeight: =FontWeight.Semibold
         Height: =69
         OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
         Size: =9
         Text: ="ZONA 2 Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
         Tooltip: ="ZONA 2"
-        Width: =242
-        X: =750
-        Y: =44
+        Width: =272
+        X: =239
+        Y: =63
         ZIndex: =35
+
+    icon9_9 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Lighter80
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(152, 208, 70, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
+        TabIndex: =0
+        Width: =50
+        X: =133
+        Y: =204
+        ZIndex: =36
+
+    Label3_7 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =62
+        OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
+        Size: =9
+        Text: |-
+            ="ZONA 8: Brazos, Balde y Cilindros"
+        Tooltip: ="ZONA 8"
+        Width: =133
+        Y: =194
+        ZIndex: =37
 
     icon9_11 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -636,10 +668,10 @@ Features As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
+        FontWeight: =FontWeight.Semibold
         Height: =110
         OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
-        Size: =10
+        Size: =9
         Text: |-
             ="ZONA 7: Filtro de aire
             enfriadores
@@ -684,10 +716,10 @@ Features As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
+        FontWeight: =FontWeight.Semibold
         Height: =67
         OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
-        Size: =10
+        Size: =9
         Text: ="Aire Acondicionado"
         Tooltip: ="ZONA 6"
         Width: =112
@@ -715,53 +747,13 @@ Features As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
+        FontWeight: =FontWeight.Semibold
         Height: =67
         OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
-        Size: =10
+        Size: =9
         Text: ="Sistema Eléctrico"
         Tooltip: ="ZONA 6"
         Width: =112
         Y: =367
         ZIndex: =44
-
-    Group4 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =97
-
-        icon9_9 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Lighter80
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Fill: =RGBA(152, 208, 70, 1)
-            Height: =50
-            Icon: =Icon.Add
-            OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
-            TabIndex: =0
-            Width: =50
-            X: =133
-            Y: =204
-            ZIndex: =36
-
-        Label3_7 As label:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Height: =62
-            OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
-            Size: =10
-            Text: |-
-                ="ZONA 8: Brazos, Balde y Cilindros"
-            Tooltip: ="ZONA 8"
-            Width: =165.41
-            X: =18
-            Y: =254
-            ZIndex: =37
 
