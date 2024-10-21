@@ -264,32 +264,6 @@ Features_7 As screen:
         Y: =501
         ZIndex: =12
 
-    Label9_76 As label:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =App.Theme.Font
-        Height: =35
-        HoverBorderColor: =Label9_76.BorderColor
-        HoverColor: =Label9_76.Color
-        HoverFill: =Label9_76.Fill
-        OnSelect: |-
-            =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2Fbomba%20hidraulica&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        PressedBorderColor: =Label9_76.BorderColor
-        PressedColor: =Label9_76.Color
-        PressedFill: =Label9_76.Fill
-        Size: =13.34
-        Text: ="BOMBA PILOTO"
-        Visible: =pop3
-        Width: =165.41
-        X: =292.14
-        Y: =219
-        ZIndex: =13
-
     icon11_31 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =App.Theme.Colors.Lighter80
