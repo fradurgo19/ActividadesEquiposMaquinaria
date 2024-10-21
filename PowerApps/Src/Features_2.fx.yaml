@@ -736,7 +736,7 @@ Features_2 As screen:
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Sugerencias"
-        Items: |-
+        Items: |
             =Filter(
                 ForAll(
                     Distinct(
@@ -745,13 +745,13 @@ Features_2 As screen:
                     ),
                     {Results: ThisRecord.Value}
                 ),
-                Results
+                Results <> "Calentamiento motor"
             )
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredEnmotor,field_6),{Results:ThisRecord.Value}),Results),ComboBox1_1.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredEnmotor,field_6),{Results:ThisRecord.Value}),Results<>"Calentamiento motor"),ComboBox1_1.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
