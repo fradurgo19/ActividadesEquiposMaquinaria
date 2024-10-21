@@ -588,7 +588,7 @@ Features_10 As screen:
         Items: |-
             =Filter(
                 colDiagnosticoMotor, 
-                 fild_5 = "Excavadora" && Nombre = "CALENTAMIENTO MOTOR"
+                 field_5 = "Excavadora" && field_6 = "Calentamiento motor"
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
