@@ -812,7 +812,7 @@ Features_10 As screen:
         RadiusBottomRight: =4
         RadiusTopLeft: =4
         RadiusTopRight: =4
-        Width: =681
+        Width: =809
         X: =7
         Y: =281
         ZIndex: =84
@@ -826,11 +826,12 @@ Features_10 As screen:
             Fill: =RGBA(255, 255, 255, 1)
             Font: =App.Theme.Font
             FontWeight: =FontWeight.Bold
+            Height: =42
             OnSelect: |-
                 =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
             Size: =12
             Text: ="PARAMETROS"
-            Width: =662
+            Width: =785
             X: =10
             Y: =10
             ZIndex: =1
@@ -874,7 +875,7 @@ Features_10 As screen:
             SelectionFill: =App.Theme.Colors.Primary
             Size: =10
             Width: =130
-            X: =190
+            X: =203
             Y: =156
             ZIndex: =2
 
@@ -929,8 +930,8 @@ Features_10 As screen:
             OnSelect: =Reset(ComboBox1_42);Reset(ComboBox1_40);Reset(ComboBox1_45);Reset(ComboBox1_46)
             TabIndex: =0
             Width: =42
-            X: =630
-            Y: =64
+            X: =737
+            Y: =68
             ZIndex: =4
 
         "Gallery2_34 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
@@ -948,7 +949,7 @@ Features_10 As screen:
             LoadingSpinner: =LoadingSpinner.Data
             TemplatePadding: =0
             TemplateSize: =193
-            Width: =663
+            Width: =759
             X: =8
             Y: =220
             ZIndex: =5
@@ -958,19 +959,19 @@ Features_10 As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =41
+                Height: =35
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =9
+                Size: =10
                 Text: |-
                     ="Modelo: "&ThisItem.Modelo
                 VerticalAlign: =VerticalAlign.Top
-                Width: =169
-                X: =4
-                Y: =121
+                Width: =198
+                X: =560
+                Y: =6
                 ZIndex: =3
 
             Separator2_34 As rectangle:
@@ -998,8 +999,8 @@ Features_10 As screen:
                 Size: =13
                 Text: =
                 Width: =39
-                X: =557
-                Y: =111
+                X: =697
+                Y: =59
                 ZIndex: =8
 
             Body2_35 As label:
@@ -1007,18 +1008,18 @@ Features_10 As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =35
+                Height: =25
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =10
+                Size: =11
                 Text: |-
-                    ="Parametro: "&ThisItem.Descripcion
+                    ="Parametro: "&ThisItem.Title
                 VerticalAlign: =VerticalAlign.Top
-                Width: =387
-                Y: =8
+                Width: =634
+                Y: =71
                 ZIndex: =11
 
             Title3_77 As label:
@@ -1032,13 +1033,12 @@ Features_10 As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =10
+                Size: =11
                 Text: |-
                     ="Unidad: "&ThisItem.Unidad
                 VerticalAlign: =VerticalAlign.Top
                 Width: =118
-                X: =4
-                Y: =56
+                Y: =119
                 ZIndex: =12
 
             Title3_82 As label:
@@ -1052,13 +1052,12 @@ Features_10 As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =10
+                Size: =11
                 Text: |-
                     ="Tipo: "&ThisItem.Item
                 VerticalAlign: =VerticalAlign.Top
-                Width: =230
-                X: =402
-                Y: =56
+                Width: =254
+                Y: =8
                 ZIndex: =13
 
             Title3_83 As label:
@@ -1072,13 +1071,13 @@ Features_10 As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =10
+                Size: =11
                 Text: |-
                     ="Tipo de Maquina: "&ThisItem.TipodeMaquina
                 VerticalAlign: =VerticalAlign.Top
-                Width: =230
-                X: =402
-                Y: =8
+                Width: =269
+                X: =273
+                Y: =6
                 ZIndex: =14
 
             Title3_84 As label:
@@ -1086,19 +1085,19 @@ Features_10 As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =33
+                Height: =31
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =10
+                Size: =11
                 Text: |-
                     ="Minimo: "&ThisItem.'Rango minimo'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =90
-                X: =136
-                Y: =54
+                Width: =112
+                X: =129
+                Y: =115
                 ZIndex: =15
 
             Title3_85 As label:
@@ -1112,13 +1111,13 @@ Features_10 As screen:
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =10
+                Size: =11
                 Text: |-
                     ="Maximo: "&ThisItem.'Rango maximo'
                 VerticalAlign: =VerticalAlign.Top
                 Width: =120
-                X: =253
-                Y: =54
+                X: =294
+                Y: =115
                 ZIndex: =16
 
             Title3_86 As label:
@@ -1126,19 +1125,19 @@ Features_10 As screen:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
                 FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                Height: =35
+                Height: =64
                 OnSelect: =Select(Parent)
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
                 PaddingTop: =0
-                Size: =10
+                Size: =11
                 Text: |-
                     ="Recurso: "&ThisItem.Recurso
                 VerticalAlign: =VerticalAlign.Top
                 Width: =266
-                X: =224
-                Y: =124
+                X: =493
+                Y: =120
                 ZIndex: =17
 
         ComboBox1_45 As combobox:
@@ -1179,8 +1178,8 @@ Features_10 As screen:
                 =Search(Sort(ForAll(Distinct(Filter(colParametros,Modelo=ComboBox1_40.Selected.Results),Item),{Results:ThisRecord.Value}),Results),ComboBox1_45.SearchText,Results)
             SelectionFill: =App.Theme.Colors.Primary
             Size: =10
-            Width: =130
-            X: =350
+            Width: =204
+            X: =375
             Y: =156
             ZIndex: =6
 
@@ -1222,8 +1221,8 @@ Features_10 As screen:
                 =Search(Sort(ForAll(Distinct(Filter(colParametros,Item=ComboBox1_45.Selected.Results),Title),{Results:ThisRecord.Value}),Results),ComboBox1_46.SearchText,Results)
             SelectionFill: =App.Theme.Colors.Primary
             Size: =10
-            Width: =130
-            X: =515
+            Width: =172
+            X: =607
             Y: =156
             ZIndex: =7
 
@@ -2101,7 +2100,7 @@ Features_10 As screen:
         Size: =12
         Text: ="PARAMETRO"
         Width: =110
-        X: =529
+        X: =619
         Y: =389
         ZIndex: =100
 
@@ -2175,7 +2174,7 @@ Features_10 As screen:
         Size: =12
         Text: ="MODELO"
         Width: =124
-        X: =196
+        X: =216
         Y: =389
         ZIndex: =103
 
@@ -2197,9 +2196,9 @@ Features_10 As screen:
         PressedColor: =Label9_80.Color
         PressedFill: =Label9_80.Fill
         Size: =12
-        Text: ="ITEM"
+        Text: ="TIPO"
         Width: =124
-        X: =359
+        X: =383
         Y: =389
         ZIndex: =104
 
