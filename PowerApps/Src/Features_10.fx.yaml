@@ -586,8 +586,8 @@ Features_10 As screen:
         Height: =192
         Items: |-
             =Filter(
-                'Lista de Actividades Superiores', 
-                TipoDeMaquina = "Excavadora" && Nombre = "CALENTAMIENTO MOTOR"
+                colFilteredEnmotor, 
+                 fild_5 = "Excavadora" && Nombre = "CALENTAMIENTO MOTOR"
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
