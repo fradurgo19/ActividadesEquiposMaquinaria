@@ -46,15 +46,6 @@ Resumen As screen:
         Y: =284
         ZIndex: =1
 
-    Rectangle1 As rectangle:
-        BorderColor: =App.Theme.Colors.Darker40
-        Fill: =App.Theme.Colors.Lighter10
-        Height: =200
-        Width: =412
-        X: =928
-        Y: =72
-        ZIndex: =2
-
     Rectangle14_2 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledFill: =Rectangle14_2.Fill
@@ -99,261 +90,6 @@ Resumen As screen:
         Y: =699
         ZIndex: =6
 
-    "Gallery7 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
-        BorderColor: =App.Theme.Colors.Darker40
-        BorderThickness: =1
-        DelayItemLoading: =true
-        Fill: =App.Theme.Colors.Lighter20
-        Height: =593
-        Items: |
-            =Sort(
-                Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4, Recurso: Recurso,Adjuntos:Adjuntos}),
-                Value.field_0
-            )
-        Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        ShowNavigation: =true
-        TemplatePadding: =0
-        TemplateSize: =57
-        Width: =895
-        X: =19
-        Y: =96
-        ZIndex: =7
-
-        Title10 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =35
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =8
-            Text: =ThisItem.Value.field_2
-            Width: =76
-            X: =46
-            Y: =3
-            ZIndex: =2
-
-        Subtitle7 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =34
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =8
-            Text: =ThisItem.Value.field_0
-            Width: =42
-            X: =4
-            Y: =4
-            ZIndex: =3
-
-        Separator5 As rectangle:
-            BorderColor: =App.Theme.Colors.Darker40
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =8
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - Self.Height
-            ZIndex: =5
-
-        Rectangle4 As rectangle:
-            BorderColor: =App.Theme.Colors.Darker40
-            Fill: =App.Theme.Colors.Darker30
-            Height: =Parent.TemplateHeight - Separator5.Height
-            OnSelect: =Select(Parent)
-            Visible: =ThisItem.IsSelected
-            Width: =4
-            ZIndex: =6
-
-        Title10_1 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =38
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =8
-            Text: =ThisItem.Value.field_3
-            Width: =61
-            X: =134
-            ZIndex: =7
-
-        Title10_2 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =46
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =10
-            Text: =    ThisItem.Value.Title
-            Width: =368
-            X: =197
-            Y: =3
-            ZIndex: =8
-
-        Icon2 As icon.Trash:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =Color.AliceBlue
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =27
-            Icon: =Icon.Trash
-            OnSelect: =RemoveIf(colAllSelectedItems, field_0 = ThisItem.Value.field_0)
-            Width: =32
-            X: =863
-            Y: =5
-            ZIndex: =10
-
-        TextInput2 As text:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            BorderThickness: =2
-            Color: =RGBA(0, 0, 0, 1)
-            Default: ="1"
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            FocusedBorderThickness: =4
-            Font: =App.Theme.Font
-            Height: =28
-            HintText: ="1"
-            HoverBorderColor: =App.Theme.Colors.Darker40
-            HoverColor: =RGBA(0, 0, 0, 1)
-            HoverFill: =App.Theme.Colors.Lighter70
-            OnSelect: =Select(Parent)
-            Size: =11
-            Width: =57
-            X: =634
-            Y: =6
-            ZIndex: =11
-
-        Subtitle7_1 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =38
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11
-            Text: =ThisItem.Value.field_4
-            Width: =57
-            X: =566
-            ZIndex: =13
-
-        Subtitle7_2 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =32
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11
-            Text: |
-                =(ThisItem.Value.field_4) * Value(TextInput2.Text)
-            Width: =72
-            X: =691
-            Y: =6
-            ZIndex: =14
-
-        Subtitle7_3 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11
-            Text: |
-                =ThisItem.Value.Recurso
-            Visible: =false
-            Width: =37
-            X: =800
-            Y: =34
-            ZIndex: =15
-
-        ButtonCanvas2_75 As Botón:
-            BasePaletteColor: =RGBA(156, 220, 79, 1)
-            DisplayMode: =DisplayMode.Edit
-            FontSize: =8
-            Height: =27
-            OnSelect: =Launch(Title3_12.Text)
-            Text: ="IR AL RECURSO"
-            Visible: =!IsBlank(Subtitle7_3.Text)
-            Width: =37
-            X: =800
-            Y: =3
-            ZIndex: =16
-
-        ButtonCanvas2_76 As Botón:
-            BasePaletteColor: =RGBA(249, 83, 109, 1)
-            DisplayMode: =DisplayMode.Edit
-            FontSize: =8
-            Height: =27
-            OnSelect: =Launch(Subtitle7_4.Text)
-            Text: ="IR AL ADJUNTO"
-            Visible: =!IsBlank(Subtitle7_4.Text)
-            Width: =37
-            X: =758
-            Y: =3
-            ZIndex: =17
-
-        Subtitle7_4 As label:
-            Align: =Align.Center
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =8
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =11
-            Text: =ThisItem.Value.Adjuntos
-            Visible: =false
-            Width: =37
-            X: =758
-            Y: =32
-            ZIndex: =18
-
     Label4_1 As label:
         BorderColor: =App.Theme.Colors.Darker40
         Color: =RGBA(0, 0, 0, 1)
@@ -369,111 +105,6 @@ Resumen As screen:
         X: =66
         Y: =4
         ZIndex: =9
-
-    Label4 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(240, 98, 15, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =48
-        Text: |+
-            =RoundUp(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 0)
-            
-        Width: =117
-        X: =953
-        Y: =204
-        ZIndex: =18
-
-    Label4_11 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =App.Theme.Colors.Darker30
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =12
-        Text: ="Total Horas"
-        Width: =117
-        X: =953
-        Y: =177
-        ZIndex: =19
-
-    Label4_12 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(240, 98, 15, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =47
-        Text: |+
-            ="$ " & Text(
-                Sum(
-                    Value(Label4.Text) * 
-                    If(
-                        !IsBlank(ComboBox3.Selected.Opcion),
-                        LookUp(colOpcionesValores, Opcion = ComboBox3.Selected.Opcion).Valor,
-                        0  // Valor predeterminado si no hay ninguna selección
-                    )
-                ),
-                "[$-en-US]#,###"
-            )
-            
-        Width: =155
-        X: =1144
-        Y: =205
-        ZIndex: =20
-
-    Label4_13 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =App.Theme.Colors.Darker30
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =12
-        Text: ="Precio"
-        Width: =155
-        X: =1144
-        Y: =178
-        ZIndex: =21
-
-    ComboBox3 As combobox:
-        BorderColor: =App.Theme.Colors.Darker40
-        ChevronBackground: =App.Theme.Colors.Primary
-        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-        ChevronHoverBackground: =App.Theme.Colors.Darker10
-        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayFields: =["Opcion"]
-        Font: =App.Theme.Font
-        Height: =34
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Tipo de Servicio"
-        Items: =colOpcionesValores.Opcion
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =App.Theme.Colors.Darker30
-        SearchFields: =["Opcion"]
-        SearchItems: =Search(colOpcionesValores.Opcion,ComboBox3.SearchText,Opcion)
-        SelectionFill: =App.Theme.Colors.Primary
-        SelectMultiple: =false
-        Size: =13
-        Width: =184
-        X: =1028
-        Y: =121
-        ZIndex: =22
 
     Button2_2 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -502,18 +133,6 @@ Resumen As screen:
         X: =1066
         Y: =10
         ZIndex: =23
-
-    TextCanvas1 As Texto:
-        DisplayMode: =DisplayMode.Edit
-        FontColor: =RGBA(255, 255, 255, 1)
-        Height: =32
-        Size: =20
-        Text: ="Valor del servicio"
-        Weight: ='TextCanvas.Weight'.Bold
-        Width: =164
-        X: =1048
-        Y: =76
-        ZIndex: =24
 
     Label8 As label:
         Align: =Align.Center
@@ -681,143 +300,6 @@ Resumen As screen:
         X: =1214
         Y: =460
         ZIndex: =30
-
-    Group3 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =30
-
-        Label4_3 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Lighter10
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =10
-            Text: ="Id"
-            Width: =55
-            X: =19
-            Y: =69
-            ZIndex: =10
-
-        Label4_4 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Lighter10
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =9
-            Text: ="Codigo"
-            Width: =82
-            X: =74
-            Y: =69
-            ZIndex: =11
-
-        Label4_5 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Lighter10
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =9
-            Text: ="Alterno"
-            Width: =71
-            X: =156
-            Y: =69
-            ZIndex: =12
-
-        Label4_6 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Lighter10
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =9
-            Text: ="Actividad"
-            Width: =369
-            X: =227
-            Y: =69
-            ZIndex: =13
-
-        Label4_7 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Lighter10
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =9
-            Text: ="Tiempo"
-            Width: =60
-            X: =595
-            Y: =70
-            ZIndex: =14
-
-        Label4_8 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Lighter10
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =9
-            Text: |-
-                ="Eliminar
-                "
-            Width: =67
-            X: =847
-            Y: =69
-            ZIndex: =15
-
-        Label4_9 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Lighter10
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =9
-            Text: ="Cantidad"
-            Width: =66
-            X: =655
-            Y: =70
-            ZIndex: =16
-
-        Label4_10 As label:
-            Align: =Align.Center
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =RGBA(255, 255, 255, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Fill: =App.Theme.Colors.Lighter10
-            Font: =App.Theme.Font
-            FontWeight: =FontWeight.Bold
-            Height: =27
-            Size: =9
-            Text: ="Total Tiempo"
-            Width: =55
-            X: =721
-            Y: =70
-            ZIndex: =17
 
     Button1_1 As button:
         BorderColor: =RGBA(0, 0, 0, 0)
@@ -1087,19 +569,564 @@ Resumen As screen:
         Y: =2
         ZIndex: =50
 
-    Label4_21 As label:
-        Align: =Align.Center
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =App.Theme.Colors.Lighter10
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Bold
-        Height: =27
-        Size: =9
-        Text: ="Recurso"
-        Width: =71
-        X: =776
-        Y: =70
-        ZIndex: =51
+    Container3 As groupContainer.manualLayoutContainer:
+        DropShadow: =DropShadow.Light
+        Height: =305
+        RadiusBottomLeft: =4
+        RadiusBottomRight: =4
+        RadiusTopLeft: =4
+        RadiusTopRight: =4
+        Width: =807
+        X: =40
+        Y: =121
+        ZIndex: =52
+
+        Container4 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Height: =305
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =540
+            ZIndex: =1
+
+            Container5 As groupContainer.manualLayoutContainer:
+                DropShadow: =DropShadow.Light
+                Height: =72
+                RadiusBottomLeft: =4
+                RadiusBottomRight: =4
+                RadiusTopLeft: =4
+                RadiusTopRight: =4
+                Width: =540
+                ZIndex: =1
+
+                Group2 As group:
+                    Height: =5
+                    Width: =5
+                    X: =21
+                    Y: =-460
+                    ZIndex: =10
+
+                    Label4_3 As label:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =App.Theme.Colors.Lighter10
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        Height: =61
+                        Size: =10
+                        Text: ="Id"
+                        Width: =59
+                        ZIndex: =1
+
+                    Label4_4 As label:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =App.Theme.Colors.Lighter10
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        Height: =61
+                        Size: =9
+                        Text: ="Codigo"
+                        Width: =89
+                        X: =59
+                        ZIndex: =2
+
+                    Label4_5 As label:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =App.Theme.Colors.Lighter10
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        Height: =61
+                        Size: =9
+                        Text: ="Alterno"
+                        Width: =77
+                        X: =148
+                        ZIndex: =3
+
+                    Label4_6 As label:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =App.Theme.Colors.Lighter10
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        Height: =61
+                        Size: =9
+                        Text: ="Actividad"
+                        Width: =399
+                        X: =141
+                        ZIndex: =4
+
+                    Label4_7 As label:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =App.Theme.Colors.Lighter10
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        Height: =61
+                        Size: =9
+                        Text: ="Tiempo"
+                        Width: =65
+                        X: =475
+                        Y: =3
+                        ZIndex: =5
+
+                    Label4_8 As label:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =App.Theme.Colors.Lighter10
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        Height: =61
+                        Size: =9
+                        Text: |-
+                            ="Eliminar
+                            "
+                        Width: =72
+                        X: =468
+                        ZIndex: =6
+
+                    Label4_9 As label:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =App.Theme.Colors.Lighter10
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        Height: =61
+                        Size: =9
+                        Text: ="Cantidad"
+                        Width: =71
+                        X: =469
+                        Y: =3
+                        ZIndex: =7
+
+                    Label4_10 As label:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =App.Theme.Colors.Lighter10
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        Height: =61
+                        Size: =9
+                        Text: ="Total Tiempo"
+                        Width: =59
+                        X: =481
+                        Y: =3
+                        ZIndex: =8
+
+                    Label4_21 As label:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Darker40
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =App.Theme.Colors.Lighter10
+                        Font: =App.Theme.Font
+                        FontWeight: =FontWeight.Bold
+                        Height: =53
+                        Size: =9
+                        Text: ="Recurso"
+                        Width: =77
+                        X: =463
+                        ZIndex: =9
+
+            "Gallery7 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+                BorderColor: =App.Theme.Colors.Darker40
+                BorderThickness: =1
+                DelayItemLoading: =true
+                Fill: =App.Theme.Colors.Lighter20
+                Height: =265
+                Items: |
+                    =Sort(
+                        Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4, Recurso: Recurso,Adjuntos:Adjuntos}),
+                        Value.field_0
+                    )
+                Layout: =Layout.Vertical
+                LoadingSpinner: =LoadingSpinner.Data
+                ShowNavigation: =true
+                TemplatePadding: =0
+                TemplateSize: =57
+                Width: =540
+                Y: =40
+                ZIndex: =2
+
+                Title10 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =35
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =8
+                    Text: =ThisItem.Value.field_2
+                    Width: =76
+                    X: =46
+                    Y: =3
+                    ZIndex: =2
+
+                Subtitle7 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =34
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =8
+                    Text: =ThisItem.Value.field_0
+                    Width: =42
+                    X: =4
+                    Y: =4
+                    ZIndex: =3
+
+                Separator5 As rectangle:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =8
+                    OnSelect: =Select(Parent)
+                    Width: =Parent.TemplateWidth
+                    Y: =Parent.TemplateHeight - Self.Height
+                    ZIndex: =5
+
+                Rectangle4 As rectangle:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Fill: =App.Theme.Colors.Darker30
+                    Height: =Parent.TemplateHeight - Separator5.Height
+                    OnSelect: =Select(Parent)
+                    Visible: =ThisItem.IsSelected
+                    Width: =4
+                    ZIndex: =6
+
+                Title10_1 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =38
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =8
+                    Text: =ThisItem.Value.field_3
+                    Width: =61
+                    X: =134
+                    ZIndex: =7
+
+                Title10_2 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =46
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =10
+                    Text: =    ThisItem.Value.Title
+                    Width: =368
+                    X: =197
+                    Y: =3
+                    ZIndex: =8
+
+                Icon2 As icon.Trash:
+                    BorderColor: =App.Theme.Colors.Darker40
+                    Color: =Color.AliceBlue
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =27
+                    Icon: =Icon.Trash
+                    OnSelect: =RemoveIf(colAllSelectedItems, field_0 = ThisItem.Value.field_0)
+                    Width: =32
+                    X: =863
+                    Y: =5
+                    ZIndex: =10
+
+                TextInput2 As text:
+                    Align: =Align.Center
+                    BorderColor: =App.Theme.Colors.Darker40
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: ="1"
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Font: =App.Theme.Font
+                    Height: =28
+                    HintText: ="1"
+                    HoverBorderColor: =App.Theme.Colors.Darker40
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =App.Theme.Colors.Lighter70
+                    OnSelect: =Select(Parent)
+                    Size: =11
+                    Width: =57
+                    X: =634
+                    Y: =6
+                    ZIndex: =11
+
+                Subtitle7_1 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =38
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =11
+                    Text: =ThisItem.Value.field_4
+                    Width: =57
+                    X: =566
+                    ZIndex: =13
+
+                Subtitle7_2 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =32
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =11
+                    Text: |
+                        =(ThisItem.Value.field_4) * Value(TextInput2.Text)
+                    Width: =72
+                    X: =691
+                    Y: =6
+                    ZIndex: =14
+
+                Subtitle7_3 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =11
+                    Text: |
+                        =ThisItem.Value.Recurso
+                    Visible: =false
+                    Width: =37
+                    X: =800
+                    Y: =34
+                    ZIndex: =15
+
+                ButtonCanvas2_75 As Botón:
+                    BasePaletteColor: =RGBA(156, 220, 79, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =8
+                    Height: =27
+                    OnSelect: =Launch(Title3_12.Text)
+                    Text: ="IR AL RECURSO"
+                    Visible: =!IsBlank(Subtitle7_3.Text)
+                    Width: =37
+                    X: =800
+                    Y: =3
+                    ZIndex: =16
+
+                ButtonCanvas2_76 As Botón:
+                    BasePaletteColor: =RGBA(249, 83, 109, 1)
+                    DisplayMode: =DisplayMode.Edit
+                    FontSize: =8
+                    Height: =27
+                    OnSelect: =Launch(Subtitle7_4.Text)
+                    Text: ="IR AL ADJUNTO"
+                    Visible: =!IsBlank(Subtitle7_4.Text)
+                    Width: =37
+                    X: =758
+                    Y: =3
+                    ZIndex: =17
+
+                Subtitle7_4 As label:
+                    Align: =Align.Center
+                    Color: =RGBA(255, 255, 255, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =App.Theme.Font
+                    FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                    Height: =8
+                    OnSelect: =Select(Parent)
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Size: =11
+                    Text: =ThisItem.Value.Adjuntos
+                    Visible: =false
+                    Width: =37
+                    X: =758
+                    Y: =32
+                    ZIndex: =18
+
+        Container6 As groupContainer.manualLayoutContainer:
+            DropShadow: =DropShadow.Light
+            Fill: =RGBA(139, 154, 159, 1)
+            Height: =305
+            RadiusBottomLeft: =4
+            RadiusBottomRight: =4
+            RadiusTopLeft: =4
+            RadiusTopRight: =4
+            Width: =265
+            X: =540
+            ZIndex: =2
+
+            Label4 As label:
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(240, 98, 15, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =48
+                Text: |+
+                    =RoundUp(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 0)
+                    
+                Width: =117
+                X: =148
+                Y: =168
+                ZIndex: =1
+
+            Label4_11 As label:
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =App.Theme.Colors.Darker30
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =27
+                Size: =12
+                Text: ="Total Horas"
+                Width: =117
+                X: =148
+                Y: =141
+                ZIndex: =2
+
+            Label4_12 As label:
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(240, 98, 15, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =47
+                Text: |+
+                    ="$ " & Text(
+                        Sum(
+                            Value(Label4.Text) * 
+                            If(
+                                !IsBlank(ComboBox3.Selected.Opcion),
+                                LookUp(colOpcionesValores, Opcion = ComboBox3.Selected.Opcion).Valor,
+                                0  // Valor predeterminado si no hay ninguna selección
+                            )
+                        ),
+                        "[$-en-US]#,###"
+                    )
+                    
+                Width: =155
+                X: =110
+                Y: =169
+                ZIndex: =3
+
+            Label4_13 As label:
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =App.Theme.Colors.Darker30
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =27
+                Size: =12
+                Text: ="Precio"
+                Width: =155
+                X: =110
+                Y: =142
+                ZIndex: =4
+
+            ComboBox3 As combobox:
+                BorderColor: =App.Theme.Colors.Darker40
+                ChevronBackground: =App.Theme.Colors.Primary
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =App.Theme.Colors.Darker10
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayFields: =["Opcion"]
+                Font: =App.Theme.Font
+                Height: =34
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =App.Theme.Colors.Lighter70
+                InputTextPlaceholder: ="Tipo de Servicio"
+                Items: =colOpcionesValores.Opcion
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =App.Theme.Colors.Darker30
+                SearchFields: =["Opcion"]
+                SearchItems: =Search(colOpcionesValores.Opcion,ComboBox3.SearchText,Opcion)
+                SelectionFill: =App.Theme.Colors.Primary
+                SelectMultiple: =false
+                Size: =13
+                Width: =184
+                X: =75
+                Y: =85
+                ZIndex: =5
+
+            TextCanvas1 As Texto:
+                DisplayMode: =DisplayMode.Edit
+                FontColor: =RGBA(255, 255, 255, 1)
+                Height: =32
+                Size: =20
+                Text: ="Valor del servicio"
+                Weight: ='TextCanvas.Weight'.Bold
+                Width: =164
+                X: =95
+                Y: =40
+                ZIndex: =6
 
