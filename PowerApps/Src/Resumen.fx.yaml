@@ -302,10 +302,23 @@ Resumen As screen:
             Size: =11
             Text: |
                 =ThisItem.Value.field_8
+            Visible: =false
             Width: =72
             X: =763
             Y: =6
             ZIndex: =15
+
+        ButtonCanvas2_75 As Botón:
+            BasePaletteColor: =RGBA(156, 220, 79, 1)
+            DisplayMode: =DisplayMode.Edit
+            Height: =42
+            OnSelect: =Launch(Title3_12.Text)
+            Text: ="IR AL RECURSO"
+            Visible: =!IsBlank(Subtitle7_3.Text)
+            Width: =67
+            X: =779
+            Y: =7
+            ZIndex: =16
 
     Label4_1 As label:
         BorderColor: =App.Theme.Colors.Darker40
