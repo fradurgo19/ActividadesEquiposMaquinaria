@@ -1480,8 +1480,9 @@ Features_10 As screen:
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
         TemplatePadding: =0
-        TemplateSize: =108
+        TemplateSize: =163
         Visible: =pop4
         Width: =531
         X: =825
@@ -1505,7 +1506,7 @@ Features_10 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =99
             X: =79
-            Y: =51
+            Y: =107
             ZIndex: =2
 
         Subtitle2_6 As label:
@@ -1544,7 +1545,7 @@ Features_10 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =62
             X: =6
-            Y: =51
+            Y: =107
             ZIndex: =4
 
         Separator2_6 As rectangle:
@@ -1601,7 +1602,7 @@ Features_10 As screen:
             Visible: =false
             Width: =75
             X: =316
-            Y: =51
+            Y: =107
             ZIndex: =9
 
         Title3_18 As label:
@@ -1621,7 +1622,7 @@ Features_10 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =67
             X: =228
-            Y: =41
+            Y: =97
             ZIndex: =10
 
         ButtonCanvas2_1 As Botón:
@@ -1630,9 +1631,10 @@ Features_10 As screen:
             Height: =42
             OnSelect: =Launch(Title3_12.Text)
             Text: ="IR AL RECURSO"
+            Visible: =!IsBlank(Title3_12.Text)
             Width: =67
-            X: =407
-            Y: =54
+            X: =446
+            Y: =58
             ZIndex: =11
 
         Title3_20 As label:
@@ -1653,6 +1655,38 @@ Features_10 As screen:
             Width: =140
             X: =391
             ZIndex: =12
+
+        Title3_22 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =App.Theme.Font
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =49
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =9
+            Text: =ThisItem.Adjuntos
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =false
+            Width: =75
+            X: =305
+            Y: =58
+            ZIndex: =13
+
+        ButtonCanvas2_2 As Botón:
+            BasePaletteColor: =RGBA(249, 83, 109, 1)
+            DisplayMode: =DisplayMode.Edit
+            Height: =42
+            OnSelect: =Launch(Title3_22.Text)
+            Text: ="IR AL ADJUNTO"
+            Visible: =!IsBlank(Title3_22.Text)
+            Width: =67
+            X: =446
+            Y: =105
+            ZIndex: =14
 
     ButtonCanvas4_12 As Botón:
         Appearance: ='ButtonCanvas.Appearance'.Secondary
