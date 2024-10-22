@@ -1475,7 +1475,7 @@ Features_10 As screen:
         Height: =538
         Items: |-
             =Filter(
-                colFilteredEnmotor, 
+                colDiagnosticoMotor, 
                 field_5 = "Excavadora" && field_6 = ComboBox1_22.Selected.Results && field_7 = ComboBox1_8.Selected.Results 
             )
         Layout: =Layout.Vertical
@@ -1580,8 +1580,8 @@ Features_10 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =492
-            Y: =63
+            X: =474
+            Y: =14
             ZIndex: =8
 
         Title3_12 As label:
@@ -1724,7 +1724,7 @@ Features_10 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredEnmotor,
+                            colDiagnosticoMotor,
                             field_6 = ComboBox1_22.Selected.Results
                         ),
                         field_7
@@ -1743,8 +1743,8 @@ Features_10 As screen:
         Size: =10
         Visible: =pop4
         Width: =103
-        X: =959
-        Y: =100
+        X: =1020
+        Y: =105
         ZIndex: =52
 
     ComboBox1_22 As combobox:
@@ -1759,7 +1759,7 @@ Features_10 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
-        Height: =39
+        Height: =43
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Sugerencias"
@@ -1784,7 +1784,7 @@ Features_10 As screen:
         SelectMultiple: =false
         Size: =10
         Visible: =pop4
-        Width: =110
+        Width: =132
         X: =825
         Y: =100
         ZIndex: =53
