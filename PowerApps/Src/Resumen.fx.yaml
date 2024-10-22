@@ -107,7 +107,7 @@ Resumen As screen:
         Height: =593
         Items: |
             =Sort(
-                Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4, field_8: field_8}),
+                Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4, Recurso: Recurso,Adjuntos:Adjuntos}),
                 Value.field_0
             )
         Layout: =Layout.Vertical
@@ -301,7 +301,7 @@ Resumen As screen:
             PaddingTop: =0
             Size: =11
             Text: |
-                =ThisItem.Value.field_8
+                =ThisItem.Value.Recurso
             Visible: =false
             Width: =72
             X: =763
