@@ -1444,7 +1444,7 @@ Features_10 As screen:
         PressedColor: =Label9_32.Color
         PressedFill: =Label9_32.Fill
         Size: =15
-        Text: ="CALENTAMIENTO DE MOTOR"
+        Text: ="DIAGNOSTICOS"
         Visible: =pop4
         Width: =292
         X: =831
@@ -1807,7 +1807,7 @@ Features_10 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
-        Height: =38
+        Height: =36
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Tamaño"
@@ -1833,7 +1833,7 @@ Features_10 As screen:
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
-        Width: =103
+        Width: =126
         X: =1009
         Y: =101
         ZIndex: =55
