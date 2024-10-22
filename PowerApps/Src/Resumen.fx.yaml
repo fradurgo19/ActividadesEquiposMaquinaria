@@ -193,17 +193,17 @@ Resumen As screen:
 
         Container4 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
-            Height: =322
+            Height: =619
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
-            Width: =982
+            Width: =938
             ZIndex: =1
 
             Container5 As groupContainer.manualLayoutContainer:
                 DropShadow: =DropShadow.Light
-                Height: =72
+                Height: =50
                 RadiusBottomLeft: =4
                 RadiusBottomRight: =4
                 RadiusTopLeft: =4
@@ -229,8 +229,7 @@ Resumen As screen:
                         Height: =50
                         Size: =10
                         Text: ="Id"
-                        Width: =44
-                        Y: =3
+                        Width: =45
                         ZIndex: =1
 
                     Label4_4 As label:
@@ -244,9 +243,8 @@ Resumen As screen:
                         Height: =49
                         Size: =9
                         Text: ="Codigo"
-                        Width: =70
-                        X: =44
-                        Y: =4
+                        Width: =71
+                        X: =45
                         ZIndex: =2
 
                     Label4_5 As label:
@@ -257,12 +255,11 @@ Resumen As screen:
                         Fill: =App.Theme.Colors.Lighter10
                         Font: =App.Theme.Font
                         FontWeight: =FontWeight.Bold
-                        Height: =54
+                        Height: =49
                         Size: =9
                         Text: ="Alterno"
-                        Width: =70
-                        X: =237
-                        Y: =1
+                        Width: =87
+                        X: =116
                         ZIndex: =3
 
                     Label4_6 As label:
@@ -273,12 +270,11 @@ Resumen As screen:
                         Fill: =App.Theme.Colors.Lighter10
                         Font: =App.Theme.Font
                         FontWeight: =FontWeight.Bold
-                        Height: =61
+                        Height: =49
                         Size: =9
                         Text: ="Actividad"
-                        Width: =70
-                        X: =156
-                        Y: =3
+                        Width: =362
+                        X: =203
                         ZIndex: =4
 
                     Label4_7 As label:
@@ -289,11 +285,11 @@ Resumen As screen:
                         Fill: =App.Theme.Colors.Lighter10
                         Font: =App.Theme.Font
                         FontWeight: =FontWeight.Bold
-                        Height: =61
+                        Height: =49
                         Size: =9
                         Text: ="Tiempo"
-                        Width: =118
-                        X: =619
+                        Width: =69
+                        X: =565
                         ZIndex: =5
 
                     Label4_8 As label:
@@ -304,14 +300,13 @@ Resumen As screen:
                         Fill: =App.Theme.Colors.Lighter10
                         Font: =App.Theme.Font
                         FontWeight: =FontWeight.Bold
-                        Height: =61
+                        Height: =49
                         Size: =9
                         Text: |-
                             ="Eliminar
                             "
-                        Width: =130
-                        X: =772
-                        Y: =3
+                        Width: =73
+                        X: =859
                         ZIndex: =6
 
                     Label4_9 As label:
@@ -322,11 +317,11 @@ Resumen As screen:
                         Fill: =App.Theme.Colors.Lighter10
                         Font: =App.Theme.Font
                         FontWeight: =FontWeight.Bold
-                        Height: =61
+                        Height: =49
                         Size: =9
                         Text: ="Cantidad"
-                        Width: =70
-                        X: =526
+                        Width: =71
+                        X: =634
                         ZIndex: =7
 
                     Label4_10 As label:
@@ -337,11 +332,11 @@ Resumen As screen:
                         Fill: =App.Theme.Colors.Lighter10
                         Font: =App.Theme.Font
                         FontWeight: =FontWeight.Bold
-                        Height: =61
+                        Height: =49
                         Size: =9
                         Text: ="Total Tiempo"
-                        Width: =70
-                        X: =426
+                        Width: =89
+                        X: =706
                         ZIndex: =8
 
                     Label4_21 As label:
@@ -352,11 +347,11 @@ Resumen As screen:
                         Fill: =App.Theme.Colors.Lighter10
                         Font: =App.Theme.Font
                         FontWeight: =FontWeight.Bold
-                        Height: =53
+                        Height: =49
                         Size: =9
                         Text: ="Recurso"
-                        Width: =70
-                        X: =326
+                        Width: =71
+                        X: =795
                         ZIndex: =9
 
             "Gallery7 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
@@ -364,7 +359,7 @@ Resumen As screen:
                 BorderThickness: =1
                 DelayItemLoading: =true
                 Fill: =App.Theme.Colors.Lighter20
-                Height: =233
+                Height: =560
                 Items: |
                     =Sort(
                         Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4, Recurso: Recurso,Adjuntos:Adjuntos}),
@@ -375,8 +370,8 @@ Resumen As screen:
                 ShowNavigation: =true
                 TemplatePadding: =0
                 TemplateSize: =57
-                Width: =982
-                Y: =72
+                Width: =932
+                Y: =50
                 ZIndex: =2
 
                 Title10 As label:
@@ -481,8 +476,8 @@ Resumen As screen:
                     Icon: =Icon.Trash
                     OnSelect: =RemoveIf(colAllSelectedItems, field_0 = ThisItem.Value.field_0)
                     Width: =32
-                    X: =863
-                    Y: =5
+                    X: =887
+                    Y: =6
                     ZIndex: =10
 
                 TextInput2 As text:
@@ -504,7 +499,7 @@ Resumen As screen:
                     OnSelect: =Select(Parent)
                     Size: =11
                     Width: =57
-                    X: =634
+                    X: =644
                     Y: =6
                     ZIndex: =11
 
@@ -523,7 +518,7 @@ Resumen As screen:
                     Size: =11
                     Text: =ThisItem.Value.field_4
                     Width: =57
-                    X: =566
+                    X: =576
                     ZIndex: =13
 
                 Subtitle7_2 As label:
@@ -542,8 +537,8 @@ Resumen As screen:
                     Text: |
                         =(ThisItem.Value.field_4) * Value(TextInput2.Text)
                     Width: =72
-                    X: =691
-                    Y: =6
+                    X: =712
+                    Y: =8
                     ZIndex: =14
 
                 Subtitle7_3 As label:
@@ -559,29 +554,27 @@ Resumen As screen:
                     PaddingRight: =0
                     PaddingTop: =0
                     Size: =11
-                    Text: |
-                        =ThisItem.Value.Recurso
-                    Visible: =false
+                    Text: =ThisItem.Value.Recurso
                     Width: =37
                     X: =800
                     Y: =34
                     ZIndex: =15
 
                 ButtonCanvas2_75 As Botón:
-                    BasePaletteColor: =RGBA(156, 220, 79, 1)
+                    BasePaletteColor: =RGBA(8, 222, 8, 1)
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =8
                     Height: =27
-                    OnSelect: =Launch(Title3_12.Text)
+                    OnSelect: =Launch(Subtitle7_3.Text)
                     Text: ="IR AL RECURSO"
                     Visible: =!IsBlank(Subtitle7_3.Text)
                     Width: =37
-                    X: =800
-                    Y: =3
+                    X: =840
+                    Y: =15
                     ZIndex: =16
 
                 ButtonCanvas2_76 As Botón:
-                    BasePaletteColor: =RGBA(249, 83, 109, 1)
+                    BasePaletteColor: =
                     DisplayMode: =DisplayMode.Edit
                     FontSize: =8
                     Height: =27
@@ -589,8 +582,8 @@ Resumen As screen:
                     Text: ="IR AL ADJUNTO"
                     Visible: =!IsBlank(Subtitle7_4.Text)
                     Width: =37
-                    X: =758
-                    Y: =3
+                    X: =794
+                    Y: =13
                     ZIndex: =17
 
                 Subtitle7_4 As label:
@@ -607,7 +600,6 @@ Resumen As screen:
                     PaddingTop: =0
                     Size: =11
                     Text: =ThisItem.Value.Adjuntos
-                    Visible: =false
                     Width: =37
                     X: =758
                     Y: =32
@@ -621,8 +613,8 @@ Resumen As screen:
             RadiusBottomRight: =4
             RadiusTopLeft: =4
             RadiusTopRight: =4
-            Width: =343
-            X: =982
+            Width: =387
+            X: =938
             ZIndex: =2
 
             Label4 As label:
@@ -638,8 +630,8 @@ Resumen As screen:
                     =RoundUp(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 0)
                     
                 Width: =117
-                X: =204
-                Y: =169
+                X: =233
+                Y: =138
                 ZIndex: =1
 
             Label4_11 As label:
@@ -654,8 +646,8 @@ Resumen As screen:
                 Size: =12
                 Text: ="Total Horas"
                 Width: =117
-                X: =204
-                Y: =141
+                X: =233
+                Y: =110
                 ZIndex: =2
 
             Label4_12 As label:
@@ -681,8 +673,8 @@ Resumen As screen:
                     )
                     
                 Width: =155
-                X: =4
-                Y: =168
+                X: =33
+                Y: =137
                 ZIndex: =3
 
             Label4_13 As label:
@@ -697,8 +689,8 @@ Resumen As screen:
                 Size: =12
                 Text: ="Precio"
                 Width: =155
-                X: =4
-                Y: =142
+                X: =33
+                Y: =111
                 ZIndex: =4
 
             ComboBox3 As combobox:
@@ -726,8 +718,8 @@ Resumen As screen:
                 SelectMultiple: =false
                 Size: =13
                 Width: =184
-                X: =75
-                Y: =85
+                X: =104
+                Y: =54
                 ZIndex: =5
 
             TextCanvas1 As Texto:
@@ -738,8 +730,8 @@ Resumen As screen:
                 Text: ="Valor del servicio"
                 Weight: ='TextCanvas.Weight'.Bold
                 Width: =164
-                X: =95
-                Y: =40
+                X: =124
+                Y: =9
                 ZIndex: =6
 
             TextInput1 As text:
@@ -765,7 +757,7 @@ Resumen As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =12
-                Width: =96
+                Width: =84
                 X: =120
                 Y: =258
                 ZIndex: =7
@@ -793,8 +785,8 @@ Resumen As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =12
-                Width: =80
-                X: =263
+                Width: =73
+                X: =305
                 Y: =258
                 ZIndex: =8
 
@@ -809,7 +801,7 @@ Resumen As screen:
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
                 Height: =54
-                Size: =10
+                Size: =9
                 Text: ="Tiempo De Desplazamiento Hrs ( 1 Trayecto)"
                 Width: =116
                 X: =5
@@ -827,10 +819,10 @@ Resumen As screen:
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
                 Height: =55
-                Size: =10
+                Size: =9
                 Text: ="Kms Recorridos ( 1 Trayecto)"
-                Width: =93
-                X: =230
+                Width: =89
+                X: =216
                 Y: =258
                 ZIndex: =10
 
@@ -889,8 +881,8 @@ Resumen As screen:
                 Size: =11
                 Text: ="Calcular Valor"
                 Width: =80
-                X: =263
-                Y: =389
+                X: =284
+                Y: =387
                 ZIndex: =11
 
             Button1_1 As button:
@@ -903,7 +895,7 @@ Resumen As screen:
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =35
+                Height: =37
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
@@ -918,7 +910,8 @@ Resumen As screen:
                 Size: =10
                 Text: |-
                     ="El valor total de desplazamiento ya incluye: trayecto de ida y vuelta y gastos de desplazamiento."
-                Width: =343
+                Width: =382
+                X: =5
                 Y: =578
                 ZIndex: =12
 
@@ -1020,8 +1013,8 @@ Resumen As screen:
                 Size: =10
                 Text: ="Total Desplazamiento"
                 Width: =151
-                X: =10
-                Y: =532
+                X: =33
+                Y: =530
                 ZIndex: =18
 
             ButtonCanvas1 As Botón:
@@ -1090,7 +1083,87 @@ Resumen As screen:
                 Height: =38
                 Text: =varTextoLabel8
                 Width: =165
-                X: =177
-                Y: =530
+                X: =184
+                Y: =528
                 ZIndex: =23
+
+    ButtonCanvas5 As Botón:
+        BasePaletteColor: =RGBA(8, 222, 8, 1)
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Icon: ="Mail"
+        OnSelect: |
+            =Office365Outlook.SendEmailV2(
+                User().Email, 
+                "Actividad" & Gallery7.Selected.Title10_2.Text & "; Codigo: " & Gallery7.Selected.Title10.Text, 
+                "<!DOCTYPE html>
+            <html>
+            <head>
+                <style>
+                    .email-container {
+                        font-family: Arial, sans-serif;
+                        color: #333;
+                        text-align: center;
+                    }
+                    .header {
+                        font-size: 18px;
+                        font-weight: bold;
+                        color: #004d99;
+                    }
+                    .message {
+                        margin: 20px 0;
+                        font-size: 16px;
+                    }
+                    .footer {
+                        margin-top: 30px;
+                        font-size: 14px;
+                        color: #555;
+                    }
+                    .gif-image {
+                        width: 150px;
+                        height: auto;
+                        margin: 20px 0;
+                    }
+                    .icon {
+                        width: 30px;
+                        height: 30px;
+                        vertical-align: middle;
+                    }
+                </style>
+            </head>
+            <body>
+            
+            <div class='email-container'>
+                <h1 class='header'>📄 ¡Revisa el documento adjunto!</h1>
+                <p class='message'>
+                    <img src='https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif' alt='Revisar PDF' class='gif-image' /><br/>
+                    Por favor revise la consulta PDF adjunta en el presente correo.<br/><br/>
+                    <strong>Att:</strong> Power Apps <br/> 
+                    <strong>SERVICIO POSTVENTA PARTEQUIPOS</strong> 
+                </p>
+                <p class='footer'>
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/8/82/Facebook_icon.svg' class='icon' alt='Facebook' /> 
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/5/51/Twitter_icon.svg' class='icon' alt='Twitter' /> 
+                    <img src='https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png' class='icon' alt='Instagram' />
+                </p>
+            </div>
+            
+            </body>
+            </html>", 
+                {
+                    Attachments: [
+                        {
+                            Name: "ConsultaActividades.pdf", 
+                            ContentBytes: PDF(Container3, {ExpandContainers: true})
+                        }
+                    ],
+                    IsHtml: true
+                }
+            );
+            Notify("Documento enviado", NotificationType.Success, 3000)
+        Text: ="Email"
+        Width: =96
+        X: =469
+        Y: =15
+        ZIndex: =12
 
