@@ -1737,50 +1737,6 @@ Features_10 As screen:
         Y: =93
         ZIndex: =51
 
-    ComboBox1_8 As combobox:
-        BorderColor: =App.Theme.Colors.Darker40
-        ChevronBackground: =App.Theme.Colors.Primary
-        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-        ChevronHoverBackground: =App.Theme.Colors.Darker10
-        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        DisplayFields: =["Results"]
-        Font: =App.Theme.Font
-        Height: =38
-        HoverColor: =RGBA(0, 0, 0, 1)
-        HoverFill: =App.Theme.Colors.Lighter70
-        InputTextPlaceholder: ="Tamaño"
-        Items: |-
-            =Sort(
-                ForAll(
-                    Distinct(
-                        Filter(
-                            colDiagnosticoMotor,
-                            field_6 = ComboBox1_22.Selected.Results
-                        ),
-                        field_7
-                    ),
-                    {Results: ThisRecord.Value}
-                ),
-                Results
-            )
-        PressedColor: =RGBA(255, 255, 255, 1)
-        PressedFill: =App.Theme.Colors.Darker30
-        SearchFields: =["Results"]
-        SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnmotor,field_6=ComboBox1_22.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_8.SearchText,Results)
-        SelectionFill: =App.Theme.Colors.Primary
-        SelectMultiple: =false
-        Size: =10
-        Visible: =pop4
-        Width: =103
-        X: =1020
-        Y: =105
-        ZIndex: =52
-
     ComboBox1_22 As combobox:
         BorderColor: =App.Theme.Colors.Darker40
         ChevronBackground: =App.Theme.Colors.Primary
@@ -1831,13 +1787,56 @@ Features_10 As screen:
         Fill: =RGBA(52, 152, 47, 1)
         Height: =32
         Icon: =Icon.Reset
-        OnSelect: =Reset(ComboBox1_22);Reset(ComboBox1_8)
+        OnSelect: =Reset(ComboBox1_22);Reset(ComboBox1_8);
         TabIndex: =0
         Visible: =pop4
         Width: =42
         X: =1256
         Y: =50
         ZIndex: =54
+
+    ComboBox1_8 As combobox:
+        BorderColor: =App.Theme.Colors.Darker40
+        ChevronBackground: =App.Theme.Colors.Primary
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =App.Theme.Colors.Darker10
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayFields: =["Results"]
+        Font: =App.Theme.Font
+        Height: =38
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =App.Theme.Colors.Lighter70
+        InputTextPlaceholder: ="Tamaño"
+        Items: |-
+            =Sort(
+                ForAll(
+                    Distinct(
+                        Filter(
+                            colDiagnosticoMotor,
+                            field_6 = ComboBox1_22.Selected.Results
+                        ),
+                        field_7
+                    ),
+                    {Results: ThisRecord.Value}
+                ),
+                Results
+            )
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =App.Theme.Colors.Darker30
+        SearchFields: =["Results"]
+        SearchItems: |-
+            =Search(Sort(ForAll(Distinct(Filter(colDiagnosticoMotor,field_6=ComboBox1_22.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_8.SearchText,Results)
+        SelectionFill: =App.Theme.Colors.Primary
+        Size: =10
+        Visible: =pop4
+        Width: =103
+        X: =1009
+        Y: =101
+        ZIndex: =55
 
     Group15_2 As group:
         Height: =5
