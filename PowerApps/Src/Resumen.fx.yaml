@@ -835,7 +835,7 @@ Resumen As screen:
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =64
+                Height: =51
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
@@ -880,9 +880,9 @@ Resumen As screen:
                 RadiusTopRight: =100
                 Size: =11
                 Text: ="Calcular Valor"
-                Width: =80
-                X: =284
-                Y: =387
+                Width: =121
+                X: =256
+                Y: =402
                 ZIndex: =11
 
             Button1_1 As button:
@@ -1017,59 +1017,6 @@ Resumen As screen:
                 Y: =530
                 ZIndex: =18
 
-            ButtonCanvas1 As Botón:
-                BasePaletteColor: =RGBA(240, 98, 15, 1)
-                DisplayMode: =DisplayMode.Edit
-                Height: =42
-                Icon: ="Airplane"
-                Layout: ='ButtonCanvas.Layout'.IconBefore
-                OnSelect: =
-                Text: |-
-                    ="$ " & Text(Valor1,"[$-en-US]#,###")
-                Width: =158
-                X: =100
-                Y: =338
-                ZIndex: =19
-
-            ButtonCanvas1_1 As Botón:
-                BasePaletteColor: =RGBA(240, 98, 15, 1)
-                DisplayMode: =DisplayMode.Edit
-                Height: =36
-                Icon: ="ArrowExit"
-                OnSelect: =
-                Text: |-
-                    ="$ " & Text(Valor2,"[$-en-US]#,###")
-                Width: =158
-                X: =100
-                Y: =381
-                ZIndex: =20
-
-            ButtonCanvas1_2 As Botón:
-                BasePaletteColor: =RGBA(240, 98, 15, 1)
-                DisplayMode: =DisplayMode.Edit
-                Height: =36
-                Icon: ="Home"
-                OnSelect: =
-                Text: |-
-                    ="$ " & Text(Hospedaje,"[$-en-US]#,###")
-                Width: =158
-                X: =100
-                Y: =417
-                ZIndex: =21
-
-            ButtonCanvas1_3 As Botón:
-                BasePaletteColor: =RGBA(240, 98, 15, 1)
-                DisplayMode: =DisplayMode.Edit
-                Height: =45
-                Icon: ="ServiceBell"
-                OnSelect: =
-                Text: |-
-                    ="$ " & Text(Alimentacion,"[$-en-US]#,###")
-                Width: =158
-                X: =100
-                Y: =453
-                ZIndex: =22
-
             Label8 As label:
                 Align: =Align.Center
                 BorderThickness: =2
@@ -1086,6 +1033,72 @@ Resumen As screen:
                 X: =184
                 Y: =528
                 ZIndex: =23
+
+            Label4_23 As label:
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(240, 98, 15, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =39
+                Text: |-
+                    ="$ " & Text(Valor1,"[$-en-US]#,###")
+                Width: =125
+                X: =99
+                Y: =341
+                ZIndex: =24
+
+            Label4_24 As label:
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(240, 98, 15, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =38
+                Text: |
+                    ="$ " & Text(Valor2,"[$-en-US]#,###")
+                Width: =125
+                X: =99
+                Y: =381
+                ZIndex: =25
+
+            Label4_25 As label:
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(240, 98, 15, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =37
+                Text: |+
+                    ="$ " & Text(Hospedaje,"[$-en-US]#,###")
+                    
+                Width: =125
+                X: =99
+                Y: =420
+                ZIndex: =26
+
+            Label4_26 As label:
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(240, 98, 15, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =39
+                Text: |+
+                    ="$ " & Text(Alimentacion,"[$-en-US]#,###")
+                    
+                Width: =125
+                X: =99
+                Y: =459
+                ZIndex: =27
 
     ButtonCanvas5 As Botón:
         BasePaletteColor: =RGBA(8, 222, 8, 1)
