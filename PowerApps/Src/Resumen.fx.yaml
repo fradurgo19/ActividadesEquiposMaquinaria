@@ -1185,7 +1185,7 @@ Resumen As screen:
         OnSelect: |
             =Office365Outlook.SendEmailV2(
                 User().Email, 
-                "Actividad" & Gallery7.Selected.Title10_2.Text & "; Codigo: " & Gallery7.Selected.Title10.Text, 
+                "Se genera documento de consulta de Actividad :" & Gallery7.Selected.Title10_2.Text & "; Codigo: " & Gallery7.Selected.Title10.Text, 
                 "<!DOCTYPE html>
             <html>
             <head>
@@ -1244,7 +1244,7 @@ Resumen As screen:
                     Attachments: [
                         {
                             Name: "ConsultaActividades.pdf", 
-                            ContentBytes: PDF(Container3, {ExpandContainers: true})
+                            ContentBytes: PDF(Container4, {ExpandContainers: true})
                         }
                     ],
                     IsHtml: true
