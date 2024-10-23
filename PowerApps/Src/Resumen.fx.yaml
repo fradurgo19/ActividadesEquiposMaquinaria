@@ -1034,10 +1034,10 @@ Resumen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =38
                 Size: =12
-                Text: =varTextoLabel8 + Label4_12.Text
-                Width: =165
-                X: =184
-                Y: =528
+                Text: =varTextoLabel8
+                Width: =118
+                X: =250
+                Y: =343
                 ZIndex: =23
 
             Label4_23 As label:
@@ -1109,6 +1109,24 @@ Resumen As screen:
                 X: =99
                 Y: =459
                 ZIndex: =27
+
+            Label4_27 As label:
+                Align: =Align.Center
+                BorderColor: =App.Theme.Colors.Darker40
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Fill: =RGBA(240, 98, 15, 1)
+                Font: =App.Theme.Font
+                FontWeight: =FontWeight.Bold
+                Height: =39
+                Size: =12
+                Text: |+
+                    =Value(varTextoLabel8) + Value(Label4_12.Text)
+                    
+                Width: =125
+                X: =188
+                Y: =527
+                ZIndex: =28
 
     ButtonCanvas5 As Botón:
         BasePaletteColor: =RGBA(8, 222, 8, 1)
