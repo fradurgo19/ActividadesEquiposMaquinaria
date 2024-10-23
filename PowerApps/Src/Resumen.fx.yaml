@@ -634,8 +634,8 @@ Resumen As screen:
                     =RoundUp(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 0)
                     
                 Width: =117
-                X: =233
-                Y: =138
+                X: =225
+                Y: =93
                 ZIndex: =1
 
             Label4_11 As label:
@@ -650,8 +650,8 @@ Resumen As screen:
                 Size: =12
                 Text: ="Total Horas"
                 Width: =117
-                X: =233
-                Y: =110
+                X: =225
+                Y: =65
                 ZIndex: =2
 
             Label4_12 As label:
@@ -678,8 +678,8 @@ Resumen As screen:
                     )
                     
                 Width: =155
-                X: =33
-                Y: =137
+                X: =25
+                Y: =92
                 ZIndex: =3
 
             Label4_13 As label:
@@ -694,8 +694,8 @@ Resumen As screen:
                 Size: =12
                 Text: ="Precio"
                 Width: =155
-                X: =33
-                Y: =111
+                X: =25
+                Y: =66
                 ZIndex: =4
 
             ComboBox3 As combobox:
@@ -723,8 +723,8 @@ Resumen As screen:
                 SelectMultiple: =false
                 Size: =13
                 Width: =184
-                X: =104
-                Y: =54
+                X: =188
+                Y: =9
                 ZIndex: =5
 
             TextCanvas1 As Texto:
@@ -733,9 +733,9 @@ Resumen As screen:
                 Height: =32
                 Size: =20
                 Text: ="Valor del servicio"
-                Weight: ='TextCanvas.Weight'.Bold
+                Weight: ='TextCanvas.Weight'.Semibold
                 Width: =164
-                X: =124
+                X: =5
                 Y: =9
                 ZIndex: =6
 
@@ -749,7 +749,7 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =55
+                Height: =41
                 HintText: ="Tiempo"
                 HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
@@ -762,9 +762,9 @@ Resumen As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =12
-                Width: =84
-                X: =120
-                Y: =258
+                Width: =90
+                X: =282
+                Y: =198
                 ZIndex: =7
 
             TextInput1_1 As text:
@@ -777,7 +777,7 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =55
+                Height: =41
                 HintText: ="Kms"
                 HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
@@ -790,9 +790,9 @@ Resumen As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =12
-                Width: =73
-                X: =305
-                Y: =258
+                Width: =90
+                X: =282
+                Y: =247
                 ZIndex: =8
 
             Label9_4 As label:
@@ -805,12 +805,12 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =54
+                Height: =41
                 Size: =9
                 Text: ="Tiempo De Desplazamiento Hrs ( 1 Trayecto)"
-                Width: =116
+                Width: =277
                 X: =5
-                Y: =259
+                Y: =198
                 ZIndex: =9
 
             Label9_5 As label:
@@ -823,12 +823,12 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =55
+                Height: =41
                 Size: =9
                 Text: ="Kms Recorridos ( 1 Trayecto)"
-                Width: =89
-                X: =216
-                Y: =258
+                Width: =277
+                X: =5
+                Y: =247
                 ZIndex: =10
 
             Button1 As button:
@@ -926,10 +926,10 @@ Resumen As screen:
                 Height: =32
                 Size: =20
                 Text: ="Desplazamiento"
-                Weight: ='TextCanvas.Weight'.Bold
+                Weight: ='TextCanvas.Weight'.Semibold
                 Width: =164
-                X: =115
-                Y: =217
+                X: =5
+                Y: =160
                 ZIndex: =13
 
             Label9_7 As label:
