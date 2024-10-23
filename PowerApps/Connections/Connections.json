@@ -159,6 +159,9 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "bf75668c-50fe-417d-a391-91cd6fccb008": {
+          "value": "shared_sharepointonline"
+        },
         "workflowDisplayName": {
           "value": "ExportExcel"
         },
@@ -168,6 +171,9 @@
         }
       },
       "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "bf75668c-50fe-417d-a391-91cd6fccb008"
+        },
         "workflowDisplayName": {
           "value": "ExportExcel"
         },
