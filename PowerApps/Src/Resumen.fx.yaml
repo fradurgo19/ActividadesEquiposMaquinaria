@@ -360,7 +360,7 @@ Resumen As screen:
                 BorderThickness: =1
                 DelayItemLoading: =true
                 Fill: =App.Theme.Colors.Lighter20
-                Height: =560
+                Height: =569
                 Items: |
                     =Sort(
                         Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4, Recurso: Recurso,Adjuntos:Adjuntos}),
@@ -610,7 +610,7 @@ Resumen As screen:
 
         Container7 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
-            Fill: =RGBA(214, 221, 224, 1)
+            Fill: =RGBA(139, 154, 159, 1)
             Height: =462
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
@@ -631,7 +631,7 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =41
+                Height: =39
                 HintText: ="Tiempo"
                 HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
@@ -644,9 +644,9 @@ Resumen As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =12
-                Width: =90
-                X: =277
-                Y: =46
+                Width: =78
+                X: =105
+                Y: =122
                 ZIndex: =1
 
             TextInput1_1 As text:
@@ -659,7 +659,7 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =41
+                Height: =39
                 HintText: ="Kms"
                 HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
                 HoverColor: =RGBA(51, 51, 51, 1)
@@ -672,9 +672,9 @@ Resumen As screen:
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
                 Size: =12
-                Width: =90
-                X: =277
-                Y: =95
+                Width: =78
+                X: =305
+                Y: =122
                 ZIndex: =2
 
             Label9_4 As label:
@@ -687,11 +687,12 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =41
+                Height: =55
                 Size: =9
                 Text: ="Tiempo De Desplazamiento Hrs ( 1 Trayecto)"
-                Width: =277
-                Y: =46
+                Width: =100
+                X: =5
+                Y: =114
                 ZIndex: =3
 
             Label9_5 As label:
@@ -704,11 +705,12 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =41
+                Height: =55
                 Size: =9
                 Text: ="Kms Recorridos ( 1 Trayecto)"
-                Width: =277
-                Y: =95
+                Width: =100
+                X: =205
+                Y: =114
                 ZIndex: =4
 
             TextCanvas1_1 As Texto:
@@ -716,7 +718,7 @@ Resumen As screen:
                 FontColor: =RGBA(255, 255, 255, 1)
                 Height: =32
                 Size: =15
-                Text: ="Desplazamiento"
+                Text: ="DESPLAZAMIENTO"
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =164
                 X: =5
@@ -732,7 +734,7 @@ Resumen As screen:
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =55
+                Height: =48
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
@@ -775,11 +777,11 @@ Resumen As screen:
                 RadiusBottomRight: =100
                 RadiusTopLeft: =100
                 RadiusTopRight: =100
-                Size: =11
+                Size: =10
                 Text: ="Calcular Valor"
-                Width: =106
-                X: =261
-                Y: =163
+                Width: =75
+                X: =264
+                Y: =42
                 ZIndex: =6
 
             Label9_7 As label:
@@ -792,12 +794,12 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =37
+                Height: =27
                 Size: =9
                 Text: ="Hospedaje"
-                Width: =95
-                X: =5
-                Y: =225
+                Width: =153
+                X: =29
+                Y: =253
                 ZIndex: =7
 
             Label9_8 As label:
@@ -810,12 +812,12 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =36
+                Height: =27
                 Size: =9
                 Text: ="Alimentación"
-                Width: =95
-                X: =5
-                Y: =263
+                Width: =155
+                X: =206
+                Y: =254
                 ZIndex: =8
 
             Label9_9 As label:
@@ -828,12 +830,12 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =39
+                Height: =27
                 Size: =9
                 Text: ="Recorrido"
-                Width: =95
-                X: =5
-                Y: =146
+                Width: =155
+                X: =27
+                Y: =182
                 ZIndex: =9
 
             Label9_12 As label:
@@ -846,12 +848,12 @@ Resumen As screen:
                 FocusedBorderThickness: =4
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =37
+                Height: =27
                 Size: =9
                 Text: ="Kms"
-                Width: =95
-                X: =5
-                Y: =186
+                Width: =155
+                X: =206
+                Y: =182
                 ZIndex: =10
 
             Label8 As label:
@@ -864,12 +866,12 @@ Resumen As screen:
                 FocusedBorderThickness: =30
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =38
+                Height: =39
                 Size: =12
                 Text: =varTextoLabel8
-                Width: =118
-                X: =249
-                Y: =256
+                Width: =155
+                X: =29
+                Y: =67
                 ZIndex: =11
 
             Label4_23 As label:
@@ -884,9 +886,9 @@ Resumen As screen:
                 Size: =12
                 Text: |-
                     ="$ " & Text(Valor1,"[$-en-US]#,###")
-                Width: =125
-                X: =99
-                Y: =146
+                Width: =155
+                X: =27
+                Y: =209
                 ZIndex: =12
 
             Label4_24 As label:
@@ -897,13 +899,13 @@ Resumen As screen:
                 Fill: =RGBA(240, 98, 15, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
-                Height: =38
+                Height: =39
                 Size: =12
                 Text: |
                     ="$ " & Text(Valor2,"[$-en-US]#,###")
-                Width: =125
-                X: =99
-                Y: =186
+                Width: =155
+                X: =206
+                Y: =209
                 ZIndex: =13
 
             Label4_25 As label:
@@ -914,14 +916,14 @@ Resumen As screen:
                 Fill: =RGBA(240, 98, 15, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
-                Height: =37
+                Height: =39
                 Size: =12
                 Text: |+
                     ="$ " & Text(Hospedaje,"[$-en-US]#,###")
                     
-                Width: =125
-                X: =99
-                Y: =225
+                Width: =155
+                X: =29
+                Y: =281
                 ZIndex: =14
 
             Label4_26 As label:
@@ -932,14 +934,14 @@ Resumen As screen:
                 Fill: =RGBA(240, 98, 15, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
-                Height: =35
+                Height: =39
                 Size: =12
                 Text: |+
                     ="$ " & Text(Alimentacion,"[$-en-US]#,###")
                     
-                Width: =125
-                X: =99
-                Y: =264
+                Width: =155
+                X: =206
+                Y: =281
                 ZIndex: =15
 
             Label4_28 As label:
@@ -950,12 +952,12 @@ Resumen As screen:
                 Fill: =App.Theme.Colors.Darker30
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
-                Height: =31
+                Height: =27
                 Size: =9
-                Text: ="Total Desplazamiento"
-                Width: =118
-                X: =249
-                Y: =225
+                Text: ="Precio de Desplazamiento"
+                Width: =155
+                X: =29
+                Y: =42
                 ZIndex: =16
 
             Button1_1 As button:
@@ -1000,9 +1002,9 @@ Resumen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =36
                 Size: =10
-                Text: ="Total"
-                Width: =82
-                X: =99
+                Text: ="Valor Total"
+                Width: =92
+                X: =75
                 Y: =351
                 ZIndex: =18
 
@@ -1011,17 +1013,17 @@ Resumen As screen:
                 BorderColor: =App.Theme.Colors.Darker40
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                Fill: =RGBA(240, 98, 15, 1)
+                Fill: =RGBA(215, 58, 60, 1)
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
-                Height: =39
+                Height: =36
                 Size: =12
                 Text: |+
                     ="$ " & Text(Value(Substitute(varTextoLabel8, "$", "")) + Value(Substitute(Label4_12.Text, "$", "")), "[$-en-US]#,###")
                     
-                Width: =125
-                X: =183
-                Y: =348
+                Width: =140
+                X: =170
+                Y: =351
                 ZIndex: =19
 
         Container6 As groupContainer.manualLayoutContainer:
@@ -1108,7 +1110,7 @@ Resumen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =27
                 Size: =9
-                Text: ="Precio"
+                Text: ="Precio de  Servicio"
                 Width: =155
                 X: =25
                 Y: =66
@@ -1148,7 +1150,7 @@ Resumen As screen:
                 FontColor: =RGBA(255, 255, 255, 1)
                 Height: =32
                 Size: =15
-                Text: ="Valor del servicio"
+                Text: ="SERVICIO"
                 Weight: ='TextCanvas.Weight'.Semibold
                 Width: =164
                 X: =5
