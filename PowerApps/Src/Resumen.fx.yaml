@@ -627,6 +627,7 @@ Resumen As screen:
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =48
+                Size: =12
                 Text: |+
                     =RoundUp(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 0)
                     
@@ -660,6 +661,7 @@ Resumen As screen:
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =47
+                Size: =12
                 Text: |+
                     ="$ " & Text(
                         Sum(
@@ -1029,6 +1031,7 @@ Resumen As screen:
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
                 Height: =38
+                Size: =12
                 Text: =varTextoLabel8
                 Width: =165
                 X: =184
@@ -1044,6 +1047,7 @@ Resumen As screen:
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =39
+                Size: =12
                 Text: |-
                     ="$ " & Text(Valor1,"[$-en-US]#,###")
                 Width: =125
@@ -1060,6 +1064,7 @@ Resumen As screen:
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =38
+                Size: =12
                 Text: |
                     ="$ " & Text(Valor2,"[$-en-US]#,###")
                 Width: =125
@@ -1076,6 +1081,7 @@ Resumen As screen:
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =37
+                Size: =12
                 Text: |+
                     ="$ " & Text(Hospedaje,"[$-en-US]#,###")
                     
@@ -1093,6 +1099,7 @@ Resumen As screen:
                 Font: =App.Theme.Font
                 FontWeight: =FontWeight.Bold
                 Height: =39
+                Size: =12
                 Text: |+
                     ="$ " & Text(Alimentacion,"[$-en-US]#,###")
                     
