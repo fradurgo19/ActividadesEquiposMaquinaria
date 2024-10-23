@@ -101,7 +101,7 @@ Resumen As screen:
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Fill: =RGBA(87, 235, 168, 1)
+        Fill: =RGBA(68, 207, 242, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
@@ -118,6 +118,7 @@ Resumen As screen:
         RadiusBottomRight: =100
         RadiusTopLeft: =100
         RadiusTopRight: =100
+        Size: =11
         Text: ="Ir a Google Maps"
         Width: =107
         X: =1066
@@ -129,12 +130,12 @@ Resumen As screen:
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =54
+        Height: =43
         Icon: =Icon.Reload
         OnSelect: =Clear(colAllSelectedItems)
-        Width: =49
-        X: =847
-        Y: =4
+        Width: =36
+        X: =903
+        Y: =9
         ZIndex: =7
 
     Icon4 As icon.Reload:
@@ -142,12 +143,12 @@ Resumen As screen:
         Color: =App.Theme.Colors.Darker30
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =52
+        Height: =37
         Icon: =Icon.Reload
         OnSelect: =Reset(ComboBox3);Reset(TextInput1);Reset(TextInput1_1);Set(varTextoLabel8, "Calcular Valor");
-        Width: =56
-        X: =1277
-        Y: =13
+        Width: =49
+        X: =1288
+        Y: =12
         ZIndex: =8
 
     Label9_6 As label:
@@ -834,11 +835,11 @@ Resumen As screen:
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(87, 235, 168, 1)
+                Fill: =RGBA(68, 207, 242, 1)
                 FocusedBorderColor: =ColorFade(Self.Fill, -75%)
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Bold
-                Height: =51
+                Height: =55
                 HoverBorderColor: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(255, 255, 255, 1)
                 HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
@@ -883,7 +884,7 @@ Resumen As screen:
                 RadiusTopRight: =100
                 Size: =11
                 Text: ="Calcular Valor"
-                Width: =121
+                Width: =106
                 X: =256
                 Y: =402
                 ZIndex: =11
