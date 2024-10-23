@@ -611,7 +611,7 @@ Resumen As screen:
         Container7 As groupContainer.manualLayoutContainer:
             DropShadow: =DropShadow.Light
             Fill: =RGBA(139, 154, 159, 1)
-            Height: =462
+            Height: =472
             RadiusBottomLeft: =4
             RadiusBottomRight: =4
             RadiusTopLeft: =4
@@ -622,7 +622,6 @@ Resumen As screen:
             ZIndex: =2
 
             TextInput1 As text:
-                BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
                 Default: =
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -650,7 +649,6 @@ Resumen As screen:
                 ZIndex: =1
 
             TextInput1_1 As text:
-                BorderThickness: =2
                 Color: =RGBA(51, 51, 51, 1)
                 Default: =
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -858,7 +856,7 @@ Resumen As screen:
 
             Label8 As label:
                 Align: =Align.Center
-                BorderThickness: =2
+                BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
@@ -877,6 +875,7 @@ Resumen As screen:
             Label4_23 As label:
                 Align: =Align.Center
                 BorderColor: =App.Theme.Colors.Darker40
+                BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(240, 98, 15, 1)
@@ -894,6 +893,7 @@ Resumen As screen:
             Label4_24 As label:
                 Align: =Align.Center
                 BorderColor: =App.Theme.Colors.Darker40
+                BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(240, 98, 15, 1)
@@ -911,6 +911,7 @@ Resumen As screen:
             Label4_25 As label:
                 Align: =Align.Center
                 BorderColor: =App.Theme.Colors.Darker40
+                BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(240, 98, 15, 1)
@@ -929,6 +930,7 @@ Resumen As screen:
             Label4_26 As label:
                 Align: =Align.Center
                 BorderColor: =App.Theme.Colors.Darker40
+                BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(240, 98, 15, 1)
@@ -946,7 +948,8 @@ Resumen As screen:
 
             Label4_28 As label:
                 Align: =Align.Center
-                BorderColor: =App.Theme.Colors.Darker40
+                BorderColor: =App.Theme.Colors.Lighter80
+                BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =App.Theme.Colors.Darker30
@@ -1010,7 +1013,8 @@ Resumen As screen:
 
             Label4_27 As label:
                 Align: =Align.Center
-                BorderColor: =App.Theme.Colors.Darker40
+                BorderColor: =App.Theme.Colors.Lighter80
+                BorderThickness: =2
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(215, 58, 60, 1)
@@ -1041,6 +1045,7 @@ Resumen As screen:
             Label4 As label:
                 Align: =Align.Center
                 BorderColor: =App.Theme.Colors.Darker40
+                BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(240, 98, 15, 1)
@@ -1058,7 +1063,8 @@ Resumen As screen:
 
             Label4_11 As label:
                 Align: =Align.Center
-                BorderColor: =App.Theme.Colors.Darker40
+                BorderColor: =App.Theme.Colors.Lighter80
+                BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =App.Theme.Colors.Darker30
@@ -1075,6 +1081,7 @@ Resumen As screen:
             Label4_12 As label:
                 Align: =Align.Center
                 BorderColor: =App.Theme.Colors.Darker40
+                BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =RGBA(240, 98, 15, 1)
@@ -1102,7 +1109,8 @@ Resumen As screen:
 
             Label4_13 As label:
                 Align: =Align.Center
-                BorderColor: =App.Theme.Colors.Darker40
+                BorderColor: =App.Theme.Colors.Lighter80
+                BorderThickness: =1
                 Color: =RGBA(255, 255, 255, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Fill: =App.Theme.Colors.Darker30
