@@ -148,7 +148,43 @@
       "Sistema Eléctrico"
     ],
     "dependencies": {},
-    "dependents": [],
+    "dependents": [
+      "dd959bb5-5f64-4dba-adf2-cf7e8a522c3e"
+    ],
     "id": "bf75668c-50fe-417d-a391-91cd6fccb008"
+  },
+  "dd959bb5-5f64-4dba-adf2-cf7e8a522c3e": {
+    "connectionRef": {
+      "displayName": "Flujos lógicos",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1719/1.0.1719.3955/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "ExportExcel"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f7c74483-c425-4ece-bc73-b8c585e61d37"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "ExportExcel"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "f7c74483-c425-4ece-bc73-b8c585e61d37"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ExportExcel"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "bf75668c-50fe-417d-a391-91cd6fccb008"
+    },
+    "dependents": [],
+    "id": "dd959bb5-5f64-4dba-adf2-cf7e8a522c3e"
   }
 }

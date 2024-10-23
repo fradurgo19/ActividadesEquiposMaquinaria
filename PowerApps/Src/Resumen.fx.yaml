@@ -1263,7 +1263,13 @@ Resumen As screen:
         Height: =32
         Icon: ="DocumentAdd"
         OnSelect: |
-            =Set(varcsvFile, JSON(Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4, Recurso: Recurso,Adjuntos:Adjuntos})))
+            =Set(varcsvFile, JSON(Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4, Recurso: Recurso,Adjuntos:Adjuntos})));
+            Set(dowloadurl,
+            ExportExcel.Run(
+                varcsvFile,
+                $"{User().FullName}{Now()}.csv"
+            ).dowloadlink);
+            Launch(dowloadurl)
         Text: ="CSV"
         Width: =96
         X: =606
