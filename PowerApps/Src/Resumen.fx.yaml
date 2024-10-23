@@ -556,6 +556,7 @@ Resumen As screen:
                     PaddingTop: =0
                     Size: =11
                     Text: =ThisItem.Value.Recurso
+                    Visible: =false
                     Width: =37
                     X: =800
                     Y: =34
@@ -1033,7 +1034,7 @@ Resumen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =38
                 Size: =12
-                Text: =varTextoLabel8
+                Text: =varTextoLabel8 + Label4_12.Text
                 Width: =165
                 X: =184
                 Y: =528
