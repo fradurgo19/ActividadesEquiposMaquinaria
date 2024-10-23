@@ -1016,9 +1016,9 @@ Resumen As screen:
                 FontWeight: =FontWeight.Bold
                 Height: =36
                 Size: =10
-                Text: ="Total Desplazamiento"
-                Width: =151
-                X: =33
+                Text: ="Total"
+                Width: =82
+                X: =104
                 Y: =530
                 ZIndex: =18
 
@@ -1121,7 +1121,7 @@ Resumen As screen:
                 Height: =39
                 Size: =12
                 Text: |+
-                    =Value(varTextoLabel8) + Value(Label4_12.Text)
+                    ="$ " & Text(Value(Substitute(varTextoLabel8, "$", "")) + Value(Substitute(Label4_12.Text, "$", "")), "[$-en-US]#,###")
                     
                 Width: =125
                 X: =188
