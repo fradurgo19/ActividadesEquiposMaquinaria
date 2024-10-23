@@ -1257,3 +1257,16 @@ Resumen As screen:
         Y: =15
         ZIndex: =12
 
+    ButtonCanvas5_1 As Botón:
+        BasePaletteColor: =RGBA(8, 222, 8, 1)
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Icon: ="DocumentAdd"
+        OnSelect: |
+            =Set(varcsvFile, JSON(Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4, Recurso: Recurso,Adjuntos:Adjuntos})))
+        Text: ="CSV"
+        Width: =96
+        X: =606
+        Y: =17
+        ZIndex: =13
+
