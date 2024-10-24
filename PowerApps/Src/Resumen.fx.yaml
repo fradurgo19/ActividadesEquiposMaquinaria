@@ -1286,7 +1286,9 @@ Resumen As screen:
                 varcsvFile,
                 $"{User().FullName}{Now()}.csv"
             ).dowloadlink);
-            Launch(dowloadurl)
+            Launch(dowloadurl);
+            
+            Notify("Documento Descargado", NotificationType.Success, 3000)
         Text: ="CSV"
         Width: =96
         X: =606
