@@ -1267,7 +1267,7 @@ Resumen As screen:
             ForAll(Gallery7.AllItems As GalItems,
                 Collect(colgalrecord,
                     {
-                        ID: GalItems.Subtitle7.Text,           // Asegúrate de usar .Text si es un control
+                        ID: GalItems.Subtitle7.Text,           
                         Actividad: GalItems.Title10_2.Text,
                         Codigo: GalItems.Title10.Text,
                         CodigoAlterno: GalItems.Title10_1.Text,
