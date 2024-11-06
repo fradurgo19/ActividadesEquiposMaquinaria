@@ -751,11 +751,11 @@ Resumen As screen:
                     
                     // Calcular Alimentacion
                     Set(Alimentacion, 
-                        If(TotalHoras >= 9, DiasCompletos * 160000 + 
-                            If(HorasRestantes >= 5 && HorasRestantes <= 8, 80000, 
-                            If(HorasRestantes >= 1 && HorasRestantes <= 4, 40000, 0)),
-                        If(TotalHoras >= 5 && TotalHoras <= 8, 80000, 
-                        If(TotalHoras >= 1 && TotalHoras <= 4, 40000, 0))
+                        If(TotalHoras >= 9, DiasCompletos * 100000 + 
+                            If(HorasRestantes >= 5 && HorasRestantes <= 8, 50000, 
+                            If(HorasRestantes >= 1 && HorasRestantes <= 4, 25000, 0)),
+                        If(TotalHoras >= 5 && TotalHoras <= 8, 50000, 
+                        If(TotalHoras >= 1 && TotalHoras <= 4, 25000, 0))
                         )
                     );
                     
