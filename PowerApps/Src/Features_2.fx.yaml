@@ -589,8 +589,8 @@ Features_2 As screen:
         Size: =12
         Text: ="Resumen"
         Width: =87
-        X: =8
-        Y: =106
+        X: =68
+        Y: =47
         ZIndex: =19
 
     Label9_24 As label:
@@ -1492,12 +1492,12 @@ Features_2 As screen:
         BorderColor: =App.Theme.Colors.Darker40
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =515
-        Image: =Gallery2_1.Selected.Recurso
+        Height: =472
+        Image: =Gallery2.Selected.Recurso
         OnSelect: =Set(HoverImage22, true);Set(HoverImage22, false)
         Visible: =HoverImage22
         Width: =679
         X: =675
-        Y: =96
+        Y: =138
         ZIndex: =44
 
