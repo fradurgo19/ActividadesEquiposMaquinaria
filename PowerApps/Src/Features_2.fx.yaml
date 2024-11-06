@@ -319,6 +319,7 @@ Features_2 As screen:
         Subtitle2 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(214, 221, 224, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =46
@@ -416,7 +417,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =59
+            Height: =42
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -427,8 +428,8 @@ Features_2 As screen:
                 ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
             VerticalAlign: =VerticalAlign.Top
             Width: =67
-            X: =228
-            Y: =41
+            X: =213
+            Y: =54
             ZIndex: =10
 
         ButtonCanvas2_3 As Botón:
@@ -924,6 +925,7 @@ Features_2 As screen:
         Subtitle2_1 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(214, 221, 224, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =47
@@ -1085,7 +1087,7 @@ Features_2 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =59
+            Height: =47
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1093,12 +1095,23 @@ Features_2 As screen:
             PaddingTop: =0
             Size: =9
             Text: |-
-                ="Imagen: "&ThisItem.Recurso
+                ="Comentario: "&ThisItem.Diagnostico
             VerticalAlign: =VerticalAlign.Top
-            Width: =88
-            X: =338
-            Y: =54
+            Width: =143
+            X: =423
             ZIndex: =13
+
+        Image11 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =56
+            Image: =Gallery2_1.Selected.Recurso
+            OnSelect: =Select(Parent)
+            Width: =62
+            X: =436
+            Y: =52
+            ZIndex: =14
 
     Image24 As image:
         BorderColor: =App.Theme.Colors.Darker40
@@ -1168,12 +1181,12 @@ Features_2 As screen:
         DisplayMode: =DisplayMode.Edit
         Height: =32
         OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop10:true})
+            =UpdateContext({pop10:true})
         Text: ="Buscar"
         Visible: =true
         Width: =96
-        X: =487
-        Y: =62
+        X: =467
+        Y: =64
         ZIndex: =40
 
     Rectangle4_22 As rectangle:
@@ -1187,7 +1200,7 @@ Features_2 As screen:
         TabIndex: =0
         Visible: =pop10
         Width: =424
-        X: =619
+        X: =930
         Y: =138
         ZIndex: =41
 
@@ -1204,7 +1217,7 @@ Features_2 As screen:
         TabIndex: =0
         Visible: =pop10
         Width: =42
-        X: =967
+        X: =1278
         Y: =148
         ZIndex: =43
 
@@ -1220,7 +1233,7 @@ Features_2 As screen:
         TabIndex: =0
         Visible: =pop10
         Width: =42
-        X: =915
+        X: =1226
         Y: =150
         ZIndex: =47
 
@@ -1240,7 +1253,7 @@ Features_2 As screen:
         TemplateSize: =122
         Visible: =pop10
         Width: =390
-        X: =631
+        X: =942
         Y: =260
         ZIndex: =48
 
@@ -1409,7 +1422,15 @@ Features_2 As screen:
         Placeholder: ="Buscar Codigo"
         Visible: =pop10
         Width: =320
-        X: =642
+        X: =953
         Y: =208
         ZIndex: =50
+
+    Image10 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        X: =40
+        Y: =40
+        ZIndex: =51
 
