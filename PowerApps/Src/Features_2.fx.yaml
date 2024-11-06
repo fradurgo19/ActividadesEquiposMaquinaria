@@ -410,25 +410,6 @@ Features_2 As screen:
             Y: =61
             ZIndex: =8
 
-        Title3_4 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =App.Theme.Font
-            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =49
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =9
-            Text: =ThisItem.Adjuntos
-            VerticalAlign: =VerticalAlign.Top
-            Width: =75
-            X: =316
-            Y: =51
-            ZIndex: =9
-
         Title3_14 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -448,19 +429,6 @@ Features_2 As screen:
             X: =218
             Y: =63
             ZIndex: =10
-
-        ButtonCanvas2_4 As Botón:
-            BasePaletteColor: =
-            DisplayMode: =DisplayMode.Edit
-            FontSize: =9
-            Height: =34
-            OnSelect: =Launch(Title3_4.Text)
-            Text: ="IR AL ADJUNTO"
-            Visible: =!IsBlank(Title3_4.Text)
-            Width: =45
-            X: =316
-            Y: =51
-            ZIndex: =13
 
         Title3_96 As label:
             Color: =RGBA(0, 0, 0, 1)
