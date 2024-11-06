@@ -284,7 +284,7 @@ Features_2 As screen:
         Items: |-
             =Filter(
                 colFilteredEnmotor, 
-                field_5 = "Excavadora" && field_6 = ComboBox1_1.Selected.Results && field_7 = ComboBox1.Selected.Results 
+                Tipo = "Excavadora" && Solucion = ComboBox1_1.Selected.Results && Tamaño = ComboBox1.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -614,7 +614,7 @@ Features_2 As screen:
         PressedFill: =Rectangle4_19.Fill
         TabIndex: =0
         Visible: =pop1
-        Width: =603
+        Width: =691
         Y: =138
         ZIndex: =25
 
@@ -744,9 +744,9 @@ Features_2 As screen:
                     Distinct(
                         Filter(
                             colFilteredEnmotor,
-                            field_6 = ComboBox1_1.Selected.Results
+                            Solucion = ComboBox1_1.Selected.Results
                         ),
-                        field_7
+                        Tamaño
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -756,7 +756,7 @@ Features_2 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnmotor,field_6=ComboBox1_1.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnmotor,Solucion=ComboBox1_1.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
@@ -786,7 +786,7 @@ Features_2 As screen:
                 ForAll(
                     Distinct(
                         colFilteredEnmotor,
-                        field_6
+                        Solucion
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -796,7 +796,7 @@ Features_2 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredEnmotor,field_6),{Results:ThisRecord.Value}),Results<>"Calentamiento motor"),ComboBox1_1.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredEnmotor,Solucion),{Results:ThisRecord.Value}),Results<>"Calentamiento motor"),ComboBox1_1.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -897,7 +897,7 @@ Features_2 As screen:
         TemplatePadding: =0
         TemplateSize: =122
         Visible: =pop1
-        Width: =574
+        Width: =654
         X: =12
         Y: =235
         ZIndex: =36
@@ -1062,11 +1062,11 @@ Features_2 As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =9
-            Text: =ThisItem.Recurso
+            Text: =ThisItem.Adjuntos
             VerticalAlign: =VerticalAlign.Top
             Width: =75
-            X: =285
-            Y: =47
+            X: =288
+            Y: =53
             ZIndex: =11
 
         ButtonCanvas2_6 As Botón:
@@ -1097,7 +1097,7 @@ Features_2 As screen:
             Text: |-
                 ="Comentario: "&ThisItem.Diagnostico
             VerticalAlign: =VerticalAlign.Top
-            Width: =143
+            Width: =231
             X: =423
             ZIndex: =13
 
@@ -1108,10 +1108,22 @@ Features_2 As screen:
             Height: =56
             Image: =Gallery2_1.Selected.Recurso
             OnSelect: =Set(HoverImage21, true)
-            Width: =61
-            X: =426
+            Width: =80
+            X: =407
             Y: =55
             ZIndex: =14
+
+        ButtonCanvas2_79 As Botón:
+            BasePaletteColor: =RGBA(156, 220, 79, 1)
+            DisplayMode: =DisplayMode.Edit
+            Height: =42
+            OnSelect: =Launch(Title3_26.Text)
+            Text: ="IR AL RECURSO"
+            Visible: =!IsBlank(Title3_12.Text)
+            Width: =67
+            X: =566
+            Y: =10
+            ZIndex: =15
 
     Image24 As image:
         BorderColor: =App.Theme.Colors.Darker40
