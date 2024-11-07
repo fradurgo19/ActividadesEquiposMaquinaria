@@ -8414,19 +8414,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_2.Gallery2.ButtonCanvas2_80.AccessibleLabel"
+                  "fullyQualifiedName": "Features_2.Gallery2_1.ButtonCanvas2_81.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_2.Gallery2.ButtonCanvas2_80.AccessibleLabel",
+                  "fullyQualifiedName": "Features_2.Gallery2_1.ButtonCanvas2_81.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Features_2",
-                "type": "Features_2.Gallery2.ButtonCanvas2_80"
+                "type": "Features_2.Gallery2_1.ButtonCanvas2_81"
               }
             }
           ],
@@ -8744,79 +8744,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_2.Gallery2_1.ButtonCanvas2_6.AccessibleLabel"
+                  "fullyQualifiedName": "Features_2.Gallery2.ButtonCanvas2_82.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_2.Gallery2_1.ButtonCanvas2_6.AccessibleLabel",
+                  "fullyQualifiedName": "Features_2.Gallery2.ButtonCanvas2_82.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Features_2",
-                "type": "Features_2.Gallery2_1.ButtonCanvas2_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_2.Gallery2_1.ButtonCanvas2_5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_2.Gallery2_1.ButtonCanvas2_5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Features_2",
-                "type": "Features_2.Gallery2_1.ButtonCanvas2_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_2.Gallery2_1.ButtonCanvas2_79.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_2.Gallery2_1.ButtonCanvas2_79.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Features_2",
-                "type": "Features_2.Gallery2_1.ButtonCanvas2_79"
+                "type": "Features_2.Gallery2.ButtonCanvas2_82"
               }
             }
           ],
@@ -26383,66 +26323,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_2.Gallery2.ButtonCanvas2_80.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_2.Gallery2.ButtonCanvas2_80.Visible",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "Features_2",
-                "type": "Features_2.Gallery2.ButtonCanvas2_80"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_2.Gallery2_1.ButtonCanvas2_79.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_2.Gallery2_1.ButtonCanvas2_79.Visible",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "Features_2",
-                "type": "Features_2.Gallery2_1.ButtonCanvas2_79"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Features_5"
                 }
               ],
@@ -26465,7 +26345,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -26494,7 +26374,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -26643,7 +26523,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -26672,7 +26552,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -26827,23 +26707,6 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "Un límite de filas de datos superior a 500 puede dar lugar a una aplicación más lenta al ejecutar consultas que no son delegables, ya que la aplicación tendrá que procesar todas las filas, en lugar de ejecutar la consulta en el servidor."
-              }
-            },
-            {
-              "id": "app-InefficientDelayLoading",
-              "messageStrings": {
-                "issue": {
-                  "text": "Retraso de carga ineficiente"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Use variables, colecciones y contexto de navegación para compartir el estado entre pantallas en su lugar."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "Los controles que hacen referencia a controles en otras pantallas pueden ralentizar la carga y la navegación de la aplicación. Al hacer esto, puede que se fuerce a la aplicación a cargar las otras pantallas de inmediato, en lugar de esperar hasta que el usuario navegue a esa pantalla."
               }
             },
             {
