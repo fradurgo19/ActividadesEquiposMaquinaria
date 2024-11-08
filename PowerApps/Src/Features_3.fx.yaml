@@ -656,9 +656,9 @@ Features_3 As screen:
             )
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
-        SearchFields: =[""]
+        SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredMotorGiro,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_1.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredMotorGiro,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_1.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1784,9 +1784,9 @@ Features_3 As screen:
                     Distinct(
                         Filter(
                             colFilteredBancoValvulas,
-                            Solucion = ComboBox2_4.Selected.Results
+                            field_6 = ComboBox2_4.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1796,7 +1796,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoValvulas,Solucion=ComboBox2_4.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_6.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoValvulas,field_6=ComboBox2_4.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_6.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1834,6 +1834,7 @@ Features_3 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
+        FontWeight: =FontWeight.Lighter
         Height: =34
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
@@ -1843,7 +1844,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBancoValvulas,
-                        Solucion
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1853,7 +1854,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBancoValvulas,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_4.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBancoValvulas,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_4.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1871,7 +1872,7 @@ Features_3 As screen:
         Items: |-
             =Filter(
                 colFilteredBancoValvulas, 
-                Tipo = "Excavadora" && Solucion = ComboBox2_4.Selected.Results && Tamaño = ComboBox1_6.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_4.Selected.Results && field_7 = ComboBox1_6.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -2187,9 +2188,9 @@ Features_3 As screen:
                     Distinct(
                         Filter(
                             colFilteredBancoSolenoide,
-                            Solucion = ComboBox2_7.Selected.Results
+                            field_6 = ComboBox2_7.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -2199,7 +2200,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoSolenoide,Solucion=ComboBox2_7.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_9.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoSolenoide,field_6=ComboBox2_7.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_9.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -2237,6 +2238,7 @@ Features_3 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
+        FontWeight: =FontWeight.Lighter
         Height: =33
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
@@ -2246,7 +2248,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBancoSolenoide,
-                        Solucion
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -2256,7 +2258,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_7.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_7.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -2274,7 +2276,7 @@ Features_3 As screen:
         Items: |-
             =Filter(
                 colFilteredBancoSolenoide, 
-                Tipo = "Excavadora" && Solucion = ComboBox2_7.Selected.Results && Tamaño = ComboBox1_9.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_7.Selected.Results && field_7 = ComboBox1_9.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
