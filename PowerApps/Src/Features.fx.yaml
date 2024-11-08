@@ -2,46 +2,8 @@ Features As screen:
     BackgroundImage: =Excavadora1
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnVisible: |
-        =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false});
-        ClearCollect(
-            ColeccionUnificada,
-            colFilteredEnfriadores,
-            colFilteredEnmotor,
-            colFilteredMotorGiro,
-            colFilteredTanqueHidraulico,
-            colFilteredTanqueDeCombustible,
-            colFilteredBancoValvulas,
-            colFilteredBancoSolenoide,
-            colFilteredCenterJoint,
-            colFilteredTraslacion,
-            colFilteredTrenderodaje,
-            colFilteredBombaPiloto,
-            colFilteredFiltroPiloto,
-            colFilteredBombaHidraulica,
-            colFilteredBombaCombustible,
-            colFilteredFiltrosMotor,
-            colFilteredBancoSolenoide,
-            colFilteredTraslacion,
-            colFilteredTornamesa,
-            colFilteredContrapesa,
-            colFilteredEnfriadores,
-            colFilteredTanqueexpasion,
-            colFilteredValvulaAmortiguacionPiloto,
-            colFilteredBateria,
-            colFilteredFiltrodeaire,
-            colFiltereEnfriadorCombustible,
-            colFiltereAA,
-            colFilteredBoom,
-            colFilteredStick,
-            colFilteredBalde,
-            colFilteredJoystick,
-            colFilteredCabina,
-            colFilteredMonitor,
-            colFilteredSilla,
-            colFiltAireAcondicionado,
-            colFiltAireSistemElectri
-        )
+    OnVisible: |-
+        =UpdateContext({pop1: false ,pop2: false ,pop3: false ,pop4: false });ClearCollect(ColeccionUnificada,colFilteredEnfriadores,colFilteredEnmotor,colFilteredMotorGiro,colFilteredTanqueHidraulico,colFilteredTanqueDeCombustible,colFilteredBancoValvulas,colFilteredBancoSolenoide,colFilteredCenterJoint,colFilteredTraslacion,colFilteredTrenderodaje,colFilteredBombaPiloto,colFilteredFiltroPiloto,colFilteredBombaHidraulica,colFilteredBombaCombustible,colFilteredFiltrosMotor,colFilteredBancoSolenoide,colFilteredTraslacion,colFilteredTornamesa,colFilteredContrapesa,colFilteredEnfriadores,colFilteredTanqueexpasion,colFilteredValvulaAmortiguacionPiloto,colFilteredBateria,colFilteredFiltrodeaire,colFiltereEnfriadorCombustible,colFiltereAA,colFilteredBoom,colFilteredStick,colFilteredBalde,colFilteredJoystick,colFilteredCabina,colFilteredMonitor,colFilteredSilla,colFiltAireAcondicionado,colFiltAireSistemElectri)
     Width: =Max(App.Width, App.DesignWidth)
 
     Rectangle2_2 As rectangle:

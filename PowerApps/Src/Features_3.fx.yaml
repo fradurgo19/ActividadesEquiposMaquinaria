@@ -55,7 +55,9 @@ Features_3 As screen:
                 'Center Joint',
                 Tipo = "Excavadora"
             )
-        )
+        );
+        
+        ClearCollect(ColeccionUnificada,colFilteredEnfriadores,colFilteredEnmotor,colFilteredMotorGiro,colFilteredTanqueHidraulico,colFilteredTanqueDeCombustible,colFilteredBancoValvulas,colFilteredBancoSolenoide,colFilteredCenterJoint,colFilteredTraslacion,colFilteredTrenderodaje,colFilteredBombaPiloto,colFilteredFiltroPiloto,colFilteredBombaHidraulica,colFilteredBombaCombustible,colFilteredFiltrosMotor,colFilteredBancoSolenoide,colFilteredTraslacion,colFilteredTornamesa,colFilteredContrapesa,colFilteredEnfriadores,colFilteredTanqueexpasion,colFilteredValvulaAmortiguacionPiloto,colFilteredBateria,colFilteredFiltrodeaire,colFiltereEnfriadorCombustible,colFiltereAA,colFilteredBoom,colFilteredStick,colFilteredBalde,colFilteredJoystick,colFilteredCabina,colFilteredMonitor,colFilteredSilla,colFiltAireAcondicionado,colFiltAireSistemElectri)
     Width: =Max(App.Width, App.DesignWidth)
 
     Image42 As image:
@@ -2919,12 +2921,13 @@ Features_3 As screen:
     ButtonCanvas1_1 As Botón:
         BasePaletteColor: =RGBA(8, 222, 8, 1)
         DisplayMode: =DisplayMode.Edit
-        Height: =38
+        FontSize: =11
+        Height: =58
         OnSelect: |-
             =UpdateContext({pop10:true})
         Text: ="Buscar por codigo"
         Visible: =true
-        Width: =96
+        Width: =49
         X: =5
         Y: =269
         ZIndex: =89
@@ -2953,7 +2956,7 @@ Features_3 As screen:
         Height: =26
         Icon: =Icon.Cancel
         OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop10:false})
+            =UpdateContext({pop10:false})
         TabIndex: =0
         Visible: =pop10
         Width: =42
@@ -2985,7 +2988,7 @@ Features_3 As screen:
         Items: |-
             =Filter(
                 ColeccionUnificada,
-                !IsBlank(TextInputCanvas1.Value) && TextInputCanvas1.Value in field_2
+                !IsBlank(TextInputCanvas1_1.Value) && TextInputCanvas1_1.Value in field_2
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -3151,6 +3154,7 @@ Features_3 As screen:
             ZIndex: =12
 
     "TextInputCanvas1_1 As 'Entrada de texto'":
+        BasePaletteColor: =
         DisplayMode: =DisplayMode.Edit
         Height: =28
         Placeholder: ="Buscar Codigo"

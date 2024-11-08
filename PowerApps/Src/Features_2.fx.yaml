@@ -1162,14 +1162,15 @@ Features_2 As screen:
     ButtonCanvas1 As Botón:
         BasePaletteColor: =RGBA(8, 222, 8, 1)
         DisplayMode: =DisplayMode.Edit
-        Height: =32
+        FontSize: =11
+        Height: =49
         OnSelect: |-
             =UpdateContext({pop10:true})
-        Text: ="Buscar"
+        Text: ="Buscar por codigo"
         Visible: =true
-        Width: =96
-        X: =291
-        Y: =50
+        Width: =49
+        X: =253
+        Y: =53
         ZIndex: =37
 
     Rectangle4_22 As rectangle:
@@ -1196,7 +1197,7 @@ Features_2 As screen:
         Height: =26
         Icon: =Icon.Cancel
         OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop10:false})
+            =UpdateContext({pop10:false})
         TabIndex: =0
         Visible: =pop10
         Width: =42
