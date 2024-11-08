@@ -14,434 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 46,
-                  "snippet": {
-                    "text": "Solucion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "SearchItems",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox2_25"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Solucion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 21,
-                  "snippet": {
-                    "text": "Distinct"
-                  }
-                }
-              },
-              "properties": {
-                "member": "SearchItems",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox2_25"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Distinct"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 84,
-                  "snippet": {
-                    "text": "Results"
-                  }
-                }
-              },
-              "properties": {
-                "member": "SearchItems",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox2_25"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadType",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 7,
-                  "snippet": {
-                    "text": "Filter"
-                  }
-                }
-              },
-              "properties": {
-                "member": "SearchItems",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox2_25"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 85,
-                  "charOffset": 7,
-                  "snippet": {
-                    "text": "Filter(ForAll(Distinct(colFilteredBoom;Solucion);{Results:ThisRecord.Value});Results)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "SearchItems",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox2_25"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrSearchWrongTableType",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 117,
-                  "snippet": {
-                    "text": "Results"
-                  }
-                }
-              },
-              "properties": {
-                "member": "SearchItems",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox2_25"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrSearchWrongType",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.SearchItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Search"
-                  }
-                }
-              },
-              "properties": {
-                "member": "SearchItems",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox2_25"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Search"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 79,
-                  "snippet": {
-                    "text": "Solucion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox2_25"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Solucion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 28,
-                  "snippet": {
-                    "text": "Distinct"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox2_25"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Distinct"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 146,
-                  "snippet": {
-                    "text": "Results"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox2_25"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadType",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox2_25.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Filter"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox2_25"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Features_6.ComboBox2_27.SearchItems"
                 }
               ],
@@ -864,168 +436,6 @@
           },
           "ruleId": "app-ErrInvalidArgs-Func",
           "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox1_27.SearchItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox1_27.SearchItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 51,
-                  "snippet": {
-                    "text": "Solucion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "SearchItems",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox1_27"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Solucion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox1_27.SearchItems"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox1_27.SearchItems",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 59,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "SearchItems",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox1_27"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "ObjNull"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox1_27.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox1_27.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 105,
-                  "snippet": {
-                    "text": "Solucion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox1_27"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Solucion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.ComboBox1_27.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.ComboBox1_27.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 114,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Features_6",
-                "type": "Features_6.ComboBox1_27"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "ObjNull"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1763,87 +1173,6 @@
                 "member": "Items",
                 "module": "Features_6",
                 "type": "Features_6.ComboBox1_28"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "ObjNull"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.Gallery2_26.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.Gallery2_26.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 57,
-                  "snippet": {
-                    "text": "Solucion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Features_6",
-                "type": "Features_6.Gallery2_26"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Solucion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Features_6.Gallery2_26.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Features_6.Gallery2_26.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 66,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "Features_6",
-                "type": "Features_6.Gallery2_26"
               }
             }
           ],
@@ -10980,19 +10309,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_6.Gallery2_26.ButtonCanvas2_56.AccessibleLabel"
+                  "fullyQualifiedName": "Features_6.Gallery2_26.Image11_26.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_6.Gallery2_26.ButtonCanvas2_56.AccessibleLabel",
+                  "fullyQualifiedName": "Features_6.Gallery2_26.Image11_26.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Features_6",
-                "type": "Features_6.Gallery2_26.ButtonCanvas2_56"
+                "type": "Features_6.Gallery2_26.Image11_26"
               }
             }
           ],
@@ -11010,19 +10339,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Features_6.Gallery2_26.ButtonCanvas2_55.AccessibleLabel"
+                  "fullyQualifiedName": "Features_6.Gallery2_26.ButtonCanvas2_32.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Features_6.Gallery2_26.ButtonCanvas2_55.AccessibleLabel",
+                  "fullyQualifiedName": "Features_6.Gallery2_26.ButtonCanvas2_32.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Features_6",
-                "type": "Features_6.Gallery2_26.ButtonCanvas2_55"
+                "type": "Features_6.Gallery2_26.ButtonCanvas2_32"
               }
             }
           ],
@@ -33120,6 +32449,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Features_6.Gallery2_26.Image11_26.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Features_6.Gallery2_26.Image11_26.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "Features_6",
+                "type": "Features_6.Gallery2_26.Image11_26"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varCheckboxChecked"
                 }
               ],
@@ -33161,6 +32520,36 @@
               },
               "properties": {
                 "member": "varResetCheckbox",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.HoverImage47"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.HoverImage47",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "HoverImage47",
                 "module": "App",
                 "type": "App"
               }
