@@ -1247,8 +1247,8 @@ Features_5 As screen:
         PressedFill: =Rectangle4_71.Fill
         TabIndex: =0
         Visible: =pop5
-        Width: =525
-        X: =785
+        Width: =691
+        X: =674
         Y: =72
         ZIndex: =46
 
@@ -1262,7 +1262,7 @@ Features_5 As screen:
         PressedFill: =Rectangle4_69.Fill
         TabIndex: =0
         Visible: =pop3
-        Width: =471
+        Width: =691
         X: =99
         Y: =62
         ZIndex: =47
@@ -1280,8 +1280,8 @@ Features_5 As screen:
         TabIndex: =0
         Visible: =pop3
         Width: =42
-        X: =505
-        Y: =72
+        X: =733
+        Y: =70
         ZIndex: =48
 
     ButtonCanvas4_46 As Botón:
@@ -1300,8 +1300,8 @@ Features_5 As screen:
         Text: ="Selec Todo"
         Visible: =pop3
         Width: =46
-        X: =505
-        Y: =145
+        X: =729
+        Y: =128
         ZIndex: =49
 
     ButtonCanvas4_47 As Botón:
@@ -1326,8 +1326,8 @@ Features_5 As screen:
         Text: ="Borrar Todo"
         Visible: =pop3
         Width: =41
-        X: =454
-        Y: =145
+        X: =678
+        Y: =128
         ZIndex: =50
 
     ComboBox1_24 As combobox:
@@ -1352,9 +1352,9 @@ Features_5 As screen:
                     Distinct(
                         Filter(
                             colFilteredValvulaAmortiguacionPiloto,
-                            Solucion = ComboBox2_22.Selected.Results
+                            field_6 = ComboBox2_22.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1364,14 +1364,14 @@ Features_5 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredValvulaAmortiguacionPiloto,Solucion=ComboBox2_22.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_24.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredValvulaAmortiguacionPiloto,field_6=ComboBox2_22.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_24.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
         Visible: =pop3
         Width: =103
-        X: =242
-        Y: =148
+        X: =343
+        Y: =133
         ZIndex: =51
 
     icon14_52 As icon.Cancel:
@@ -1386,8 +1386,8 @@ Features_5 As screen:
         TabIndex: =0
         Visible: =pop3
         Width: =42
-        X: =453
-        Y: =74
+        X: =681
+        Y: =72
         ZIndex: =52
 
     ComboBox2_22 As combobox:
@@ -1411,7 +1411,7 @@ Features_5 As screen:
                 ForAll(
                     Distinct(
                         colFilteredValvulaAmortiguacionPiloto,
-                        Solucion
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1421,14 +1421,14 @@ Features_5 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredValvulaAmortiguacionPiloto,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_22.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredValvulaAmortiguacionPiloto,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_22.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
         Visible: =pop3
-        Width: =120
-        X: =111
-        Y: =145
+        Width: =229
+        X: =107
+        Y: =130
         ZIndex: =53
 
     "Gallery2_23 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
@@ -1439,14 +1439,14 @@ Features_5 As screen:
         Items: |-
             =Filter(
                 colFilteredValvulaAmortiguacionPiloto, 
-                Tipo = "Excavadora" && Solucion = ComboBox2_22.Selected.Results && Tamaño = ComboBox1_24.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_22.Selected.Results && field_7 = ComboBox1_24.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =103
+        TemplateSize: =130
         Visible: =pop3
-        Width: =454
+        Width: =665
         X: =110
         Y: =192
         ZIndex: =54
@@ -1467,16 +1467,17 @@ Features_5 As screen:
                 ="Codigo: "&ThisItem.Codigo
             VerticalAlign: =VerticalAlign.Top
             Width: =104
-            X: =81
-            Y: =50
+            X: =79
+            Y: =77
             ZIndex: =2
 
         Subtitle2_23 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(214, 221, 224, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =43
+            Height: =65
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1485,7 +1486,7 @@ Features_5 As screen:
             Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =386
+            Width: =353
             X: =4
             ZIndex: =3
 
@@ -1504,8 +1505,8 @@ Features_5 As screen:
                 ="ID: "&ThisItem.Id
             VerticalAlign: =VerticalAlign.Top
             Width: =53
-            X: =16
-            Y: =55
+            X: =14
+            Y: =82
             ZIndex: =4
 
         Separator2_23 As rectangle:
@@ -1541,8 +1542,8 @@ Features_5 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =405
-            Y: =50
+            X: =626
+            Y: =77
             ZIndex: =8
 
         Title3_131 As label:
@@ -1550,7 +1551,7 @@ Features_5 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =48
+            Height: =37
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1561,16 +1562,29 @@ Features_5 As screen:
                 ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
             VerticalAlign: =VerticalAlign.Top
             Width: =92
-            X: =185
-            Y: =44
+            X: =183
+            Y: =82
             ZIndex: =9
 
-        Title3_118 As label:
+        ButtonCanvas2_27 As Botón:
+            BasePaletteColor: =
+            DisplayMode: =DisplayMode.Edit
+            FontSize: =9
+            Height: =40
+            OnSelect: =Launch(Title3_203.Text)
+            Text: ="IR AL RECURSO"
+            Visible: =!IsBlank(Title3_203.Text)
+            Width: =61
+            X: =533
+            Y: =74
+            ZIndex: =10
+
+        Title3_203 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =49
+            Height: =44
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1580,55 +1594,42 @@ Features_5 As screen:
             Text: =ThisItem.Adjuntos
             VerticalAlign: =VerticalAlign.Top
             Visible: =false
-            Width: =75
-            X: =270
-            Y: =38
-            ZIndex: =10
-
-        ButtonCanvas2_45 As Botón:
-            BasePaletteColor: =
-            DisplayMode: =DisplayMode.Edit
-            FontSize: =9
-            Height: =34
-            OnSelect: =Launch(Title3_120.Text)
-            Text: ="IR AL RECURSO"
-            Visible: =!IsBlank(Title3_120.Text)
-            Width: =45
-            X: =345
-            Y: =58
+            Width: =60
+            X: =297
+            Y: =78
             ZIndex: =11
 
-        Title3_120 As label:
+        Title3_204 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(214, 221, 224, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =49
+            Height: =62
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =9
-            Text: =ThisItem.Recurso
+            Size: =10
+            Text: |-
+                ="Comentario: "&ThisItem.Diagnostico
             VerticalAlign: =VerticalAlign.Top
-            Visible: =false
-            Width: =75
-            X: =249
-            Y: =38
+            Width: =285
+            X: =370
+            Y: =3
             ZIndex: =12
 
-        ButtonCanvas2_46 As Botón:
-            BasePaletteColor: =
-            DisplayMode: =DisplayMode.Edit
-            FontSize: =9
-            Height: =34
-            OnSelect: =Launch(Title3_118.Text)
-            Text: ="IR AL ADJUNTO"
-            Visible: =!IsBlank(Title3_118.Text)
-            Width: =45
-            X: =285
-            Y: =58
+        Image11_21 As image:
+            BorderColor: =App.Theme.Colors.Darker40
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =51
+            Image: =Gallery2_23.Selected.Recurso
+            OnSelect: =Set(HoverImage42, true)
+            Width: =80
+            X: =420
+            Y: =71
             ZIndex: =13
 
     Label9_62 As label:
@@ -1650,7 +1651,7 @@ Features_5 As screen:
         Size: =15
         Text: ="VÁLVULA AMORTIGUACIÓN PILOTO"
         Visible: =pop3
-        Width: =303
+        Width: =370
         X: =106
         Y: =70
         ZIndex: =55
@@ -1668,8 +1669,8 @@ Features_5 As screen:
         TabIndex: =0
         Visible: =pop5
         Width: =42
-        X: =1253
-        Y: =88
+        X: =1312
+        Y: =79
         ZIndex: =56
 
     ButtonCanvas4_50 As Botón:
@@ -1688,8 +1689,8 @@ Features_5 As screen:
         Text: ="Selec Todo"
         Visible: =pop5
         Width: =46
-        X: =1253
-        Y: =161
+        X: =1312
+        Y: =152
         ZIndex: =57
 
     ButtonCanvas4_51 As Botón:
@@ -1714,8 +1715,8 @@ Features_5 As screen:
         Text: ="Borrar Todo"
         Visible: =pop5
         Width: =41
-        X: =1202
-        Y: =161
+        X: =1261
+        Y: =152
         ZIndex: =58
 
     ComboBox1_26 As combobox:
@@ -1740,9 +1741,9 @@ Features_5 As screen:
                     Distinct(
                         Filter(
                             colFilteredBateria,
-                            Solucion = ComboBox2_24.Selected.Results
+                            field_6 = ComboBox2_24.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1752,14 +1753,14 @@ Features_5 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBateria,Solucion=ComboBox2_24.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_26.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBateria,field_6=ComboBox2_24.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_26.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
         Visible: =pop5
         Width: =103
-        X: =927
-        Y: =164
+        X: =818
+        Y: =160
         ZIndex: =59
 
     icon14_56 As icon.Cancel:
@@ -1774,8 +1775,8 @@ Features_5 As screen:
         TabIndex: =0
         Visible: =pop5
         Width: =42
-        X: =1201
-        Y: =90
+        X: =1260
+        Y: =81
         ZIndex: =60
 
     ComboBox2_24 As combobox:
@@ -1799,7 +1800,7 @@ Features_5 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBateria,
-                        Solucion
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1815,8 +1816,8 @@ Features_5 As screen:
         Size: =10
         Visible: =pop5
         Width: =120
-        X: =796
-        Y: =161
+        X: =687
+        Y: =157
         ZIndex: =61
 
     "Gallery2_25 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
@@ -1827,15 +1828,15 @@ Features_5 As screen:
         Items: |-
             =Filter(
                 colFilteredBateria, 
-                Tipo = "Excavadora" && Solucion = ComboBox2_24.Selected.Results && Tamaño = ComboBox1_26.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_24.Selected.Results && field_7 = ComboBox1_26.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =105
+        TemplateSize: =130
         Visible: =pop5
-        Width: =511
-        X: =791
+        Width: =667
+        X: =687
         Y: =208
         ZIndex: =62
 
@@ -1855,13 +1856,14 @@ Features_5 As screen:
                 ="Codigo: "&ThisItem.Codigo
             VerticalAlign: =VerticalAlign.Top
             Width: =104
-            X: =81
-            Y: =55
+            X: =73
+            Y: =79
             ZIndex: =2
 
         Subtitle2_25 As label:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(214, 221, 224, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
             Height: =43
@@ -1873,7 +1875,7 @@ Features_5 As screen:
             Size: =10
             Text: =ThisItem.Nombre
             VerticalAlign: =VerticalAlign.Top
-            Width: =373
+            Width: =334
             X: =4
             ZIndex: =3
 
@@ -1893,8 +1895,8 @@ Features_5 As screen:
                 ="ID: "&ThisItem.Id
             VerticalAlign: =VerticalAlign.Top
             Width: =53
-            X: =16
-            Y: =55
+            X: =8
+            Y: =79
             ZIndex: =4
 
         Separator2_25 As rectangle:
@@ -1930,8 +1932,8 @@ Features_5 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =459
-            Y: =47
+            X: =628
+            Y: =51
             ZIndex: =8
 
         Title3_133 As label:
@@ -1939,7 +1941,7 @@ Features_5 As screen:
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =48
+            Height: =43
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -1950,8 +1952,8 @@ Features_5 As screen:
                 ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
             VerticalAlign: =VerticalAlign.Top
             Width: =92
-            X: =171
-            Y: =44
+            X: =181
+            Y: =79
             ZIndex: =9
 
         Title3_122 As label:
@@ -2040,8 +2042,8 @@ Features_5 As screen:
         Text: ="BATERIA"
         Visible: =pop5
         Width: =303
-        X: =791
-        Y: =86
+        X: =682
+        Y: =82
         ZIndex: =63
 
     Rectangle4_79 As rectangle:
@@ -2377,8 +2379,8 @@ Features_5 As screen:
             VerticalAlign: =VerticalAlign.Top
             Visible: =false
             Width: =60
-            X: =298
-            Y: =58
+            X: =304
+            Y: =75
             ZIndex: =11
 
         Title3_202 As label:
@@ -2410,7 +2412,7 @@ Features_5 As screen:
             OnSelect: =Set(HoverImage41, true)
             Width: =80
             X: =427
-            Y: =74
+            Y: =68
             ZIndex: =13
 
     Label9_73 As label:
@@ -3272,4 +3274,17 @@ Features_5 As screen:
         X: =181
         Y: =387
         ZIndex: =92
+
+    Image13_21 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =371
+        Image: =Gallery2_23.Selected.Recurso
+        OnSelect: =Set(HoverImage42, true);Set(HoverImage42, false)
+        Visible: =HoverImage42
+        Width: =672
+        X: =107
+        Y: =377
+        ZIndex: =93
 
