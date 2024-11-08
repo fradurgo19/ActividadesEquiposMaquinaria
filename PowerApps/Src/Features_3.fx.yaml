@@ -589,9 +589,9 @@ Features_3 As screen:
                     Distinct(
                         Filter(
                             colFilteredMotorGiro,
-                            Solucion = ComboBox2_1.Selected.Results
+                            field_6 = ComboBox2_1.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -601,7 +601,7 @@ Features_3 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredMotorGiro,Solucion=ComboBox2_1.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_3.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredMotorGiro,field_6=ComboBox2_1.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_3.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -648,7 +648,7 @@ Features_3 As screen:
                 ForAll(
                     Distinct(
                         colFilteredMotorGiro,
-                        Solucion
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -656,7 +656,7 @@ Features_3 As screen:
             )
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =App.Theme.Colors.Darker30
-        SearchFields: =["Results"]
+        SearchFields: =[""]
         SearchItems: |-
             =Search(Filter(ForAll(Distinct(colFilteredMotorGiro,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_1.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
@@ -676,7 +676,7 @@ Features_3 As screen:
         Items: |-
             =Filter(
                 colFilteredMotorGiro, 
-                Tipo = "Excavadora" && Solucion = ComboBox2_1.Selected.Results && Tamaño = ComboBox1_3.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_1.Selected.Results && field_7 = ComboBox1_3.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
