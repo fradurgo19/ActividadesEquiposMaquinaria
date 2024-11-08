@@ -527,7 +527,7 @@ Features_5 As screen:
         Size: =10
         Visible: =pop2
         Width: =107
-        X: =273
+        X: =334
         Y: =139
         ZIndex: =30
 
@@ -583,7 +583,7 @@ Features_5 As screen:
         SelectMultiple: =false
         Size: =10
         Visible: =pop2
-        Width: =126
+        Width: =197
         X: =120
         Y: =136
         ZIndex: =32
@@ -780,8 +780,8 @@ Features_5 As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledFill: =RGBA(244, 244, 244, 1)
             Height: =51
-            Image: =Gallery2_39.Selected.Recurso
-            OnSelect: =Set(HoverImage45, true)
+            Image: =Gallery2_20.Selected.Recurso
+            OnSelect: =Set(HoverImage46, true)
             Width: =80
             X: =417
             Y: =73
@@ -3323,4 +3323,17 @@ Features_5 As screen:
         X: =107
         Y: =325
         ZIndex: =96
+
+    Image13_25 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =371
+        Image: =Gallery2_20.Selected.Recurso
+        OnSelect: =Set(HoverImage46, true);Set(HoverImage46, false)
+        Visible: =HoverImage46
+        Width: =672
+        X: =109
+        Y: =308
+        ZIndex: =97
 
