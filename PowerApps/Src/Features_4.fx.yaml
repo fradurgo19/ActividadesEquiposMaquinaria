@@ -633,9 +633,9 @@ Features_4 As screen:
         PressedFill: =Rectangle4_65.Fill
         TabIndex: =0
         Visible: =pop1
-        Width: =496
-        X: =820
-        Y: =52
+        Width: =691
+        X: =675
+        Y: =57
         ZIndex: =24
 
     icon14_43 As icon.Cancel:
@@ -651,7 +651,7 @@ Features_4 As screen:
         TabIndex: =0
         Visible: =pop1
         Width: =42
-        X: =1259
+        X: =1309
         Y: =62
         ZIndex: =25
 
@@ -671,7 +671,7 @@ Features_4 As screen:
         Text: ="Selec Todo"
         Visible: =pop1
         Width: =46
-        X: =1259
+        X: =1309
         Y: =135
         ZIndex: =26
 
@@ -697,7 +697,7 @@ Features_4 As screen:
         Text: ="Borrar Todo"
         Visible: =pop1
         Width: =41
-        X: =1208
+        X: =1258
         Y: =135
         ZIndex: =27
 
@@ -723,9 +723,9 @@ Features_4 As screen:
                     Distinct(
                         Filter(
                             colFilteredContrapesa,
-                            Solucion = ComboBox2_18.Selected.Results
+                            field_6 = ComboBox2_18.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -735,14 +735,14 @@ Features_4 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredContrapesa,Solucion=ComboBox2_18.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_20.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredContrapesa,field_6=ComboBox2_18.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_20.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
         Visible: =pop1
         Width: =103
-        X: =1002
-        Y: =136
+        X: =852
+        Y: =132
         ZIndex: =28
 
     icon14_44 As icon.Cancel:
@@ -757,7 +757,7 @@ Features_4 As screen:
         TabIndex: =0
         Visible: =pop1
         Width: =42
-        X: =1207
+        X: =1257
         Y: =64
         ZIndex: =29
 
@@ -782,7 +782,7 @@ Features_4 As screen:
                 ForAll(
                     Distinct(
                         colFilteredContrapesa,
-                        Solucion
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -792,14 +792,14 @@ Features_4 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredContrapesa,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_18.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredContrapesa,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_18.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
         Visible: =pop1
         Width: =136
-        X: =836
-        Y: =135
+        X: =686
+        Y: =131
         ZIndex: =30
 
     "Gallery2_19 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
@@ -810,15 +810,15 @@ Features_4 As screen:
         Items: |-
             =Filter(
                 colFilteredContrapesa, 
-                Tipo = "Excavadora" && Solucion = ComboBox2_18.Selected.Results && Tamaño = ComboBox1_20.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_18.Selected.Results && field_7 = ComboBox1_20.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =117
         Visible: =pop1
-        Width: =479
-        X: =830
+        Width: =669
+        X: =686
         Y: =182
         ZIndex: =31
 
@@ -1023,8 +1023,8 @@ Features_4 As screen:
         Text: ="CONTRAPESA"
         Visible: =pop1
         Width: =303
-        X: =831
-        Y: =60
+        X: =684
+        Y: =68
         ZIndex: =32
 
     icon11_10 As icon.Add:
