@@ -1283,9 +1283,9 @@ Features_11 As screen:
                     Distinct(
                         Filter(
                             colFilteredBancoSolenoide,
-                            Solucion = ComboBox2_23.Selected.Results
+                            field_6 = ComboBox2_23.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1295,7 +1295,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoSolenoide,Solucion=ComboBox2_23.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_25.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBancoSolenoide,field_6=ComboBox2_23.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_25.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -1342,7 +1342,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBancoSolenoide,
-                        Solucion
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1352,7 +1352,7 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_23.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBancoSolenoide,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_23.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
