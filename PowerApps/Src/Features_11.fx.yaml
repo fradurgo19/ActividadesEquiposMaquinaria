@@ -1984,7 +1984,7 @@ Features_11 As screen:
         PressedFill: =Rectangle4_50.Fill
         TabIndex: =0
         Visible: =pop3
-        Width: =499
+        Width: =691
         X: =104
         Y: =56
         ZIndex: =60
@@ -2002,8 +2002,8 @@ Features_11 As screen:
         TabIndex: =0
         Visible: =pop3
         Width: =42
-        X: =537
-        Y: =66
+        X: =734
+        Y: =68
         ZIndex: =61
 
     ButtonCanvas4_30 As Botón:
@@ -2022,8 +2022,8 @@ Features_11 As screen:
         Text: ="Selec Todo"
         Visible: =pop3
         Width: =46
-        X: =537
-        Y: =139
+        X: =734
+        Y: =141
         ZIndex: =62
 
     ButtonCanvas4_31 As Botón:
@@ -2048,8 +2048,8 @@ Features_11 As screen:
         Text: ="Borrar Todo"
         Visible: =pop3
         Width: =41
-        X: =486
-        Y: =139
+        X: =683
+        Y: =141
         ZIndex: =63
 
     ComboBox1_16 As combobox:
@@ -2074,9 +2074,9 @@ Features_11 As screen:
                     Distinct(
                         Filter(
                             colFilteredBombaCombustible,
-                            Solucion = ComboBox2_14.Selected.Results
+                            field_6 = ComboBox2_14.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -2086,14 +2086,14 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaCombustible,Solucion=ComboBox2_14.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_16.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaCombustible,field_6=ComboBox2_14.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_16.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
         Visible: =pop3
         Width: =103
-        X: =250
-        Y: =142
+        X: =299
+        Y: =143
         ZIndex: =64
 
     icon14_36 As icon.Cancel:
@@ -2108,8 +2108,8 @@ Features_11 As screen:
         TabIndex: =0
         Visible: =pop3
         Width: =42
-        X: =485
-        Y: =68
+        X: =682
+        Y: =70
         ZIndex: =65
 
     ComboBox2_14 As combobox:
@@ -2124,7 +2124,7 @@ Features_11 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
-        Height: =34
+        Height: =35
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Sugerencias"
@@ -2133,7 +2133,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBombaCombustible,
-                        Solucion
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -2148,7 +2148,7 @@ Features_11 As screen:
         SelectMultiple: =false
         Size: =10
         Visible: =pop3
-        Width: =120
+        Width: =145
         X: =117
         Y: =139
         ZIndex: =66
@@ -2161,14 +2161,14 @@ Features_11 As screen:
         Items: |-
             =Filter(
                 colFilteredBombaCombustible, 
-                Tipo = "Excavadora" && Solucion = ComboBox2_14.Selected.Results && Tamaño = ComboBox1_16.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_14.Selected.Results && field_7 = ComboBox1_16.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
         TemplateSize: =101
         Visible: =pop3
-        Width: =477
+        Width: =670
         X: =117
         Y: =186
         ZIndex: =67
