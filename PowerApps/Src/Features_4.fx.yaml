@@ -1351,8 +1351,8 @@ Features_4 As screen:
             Size: =13
             Text: =
             Width: =39
-            X: =633
-            Y: =66
+            X: =622
+            Y: =74
             ZIndex: =8
 
         ButtonCanvas2_39 As Botón:
@@ -1397,8 +1397,8 @@ Features_4 As screen:
             Text: ="IR AL RECURSO"
             Visible: =!IsBlank(Title3_197.Text)
             Width: =61
-            X: =490
-            Y: =65
+            X: =538
+            Y: =74
             ZIndex: =13
 
         Title3_197 As label:
@@ -1531,6 +1531,19 @@ Features_4 As screen:
         X: =679
         Y: =312
         ZIndex: =47
+
+    Image13_18 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =371
+        Image: =Gallery2_17.Selected.Recurso
+        OnSelect: =Set(HoverImage39, true);Set(HoverImage39, false)
+        Visible: =HoverImage39
+        Width: =672
+        X: =139
+        Y: =312
+        ZIndex: =48
 
     Group7_1 As group:
         Height: =5
