@@ -1679,9 +1679,9 @@ Features_11 As screen:
                     Distinct(
                         Filter(
                             colFilteredBombaHidraulica,
-                            Solucion = ComboBox2_13.Selected.Results
+                            field_6 = ComboBox2_13.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1691,14 +1691,14 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaHidraulica,Solucion=ComboBox2_13.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_15.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredBombaHidraulica,field_6=ComboBox2_13.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_15.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
         Visible: =pop1
         Width: =103
-        X: =232
-        Y: =123
+        X: =293
+        Y: =124
         ZIndex: =55
 
     icon14_34 As icon.Cancel:
@@ -1729,7 +1729,7 @@ Features_11 As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         DisplayFields: =["Results"]
         Font: =App.Theme.Font
-        Height: =34
+        Height: =37
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =App.Theme.Colors.Lighter70
         InputTextPlaceholder: ="Sugerencias"
@@ -1738,7 +1738,7 @@ Features_11 As screen:
                 ForAll(
                     Distinct(
                         colFilteredBombaHidraulica,
-                        Solucion
+                        field_6
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1748,12 +1748,12 @@ Features_11 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredBombaHidraulica,Solucion),{Results:ThisRecord.Value}),Results),ComboBox2_13.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredBombaHidraulica,field_6),{Results:ThisRecord.Value}),Results),ComboBox2_13.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
         Visible: =pop1
-        Width: =120
+        Width: =157
         X: =99
         Y: =120
         ZIndex: =57
@@ -1766,7 +1766,7 @@ Features_11 As screen:
         Items: |-
             =Filter(
                 colFilteredBombaHidraulica, 
-                Tipo = "Excavadora" && Solucion = ComboBox2_13.Selected.Results && Tamaño = ComboBox1_15.Selected.Results 
+                field_5 = "Excavadora" && field_6 = ComboBox2_13.Selected.Results && field_7 = ComboBox1_15.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
