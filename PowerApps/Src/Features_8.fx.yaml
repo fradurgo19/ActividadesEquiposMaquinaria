@@ -1,47 +1,10 @@
 Features_8 As screen:
-    BackgroundImage: =
+    BackgroundImage: =Retrocargador
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =App.Theme.Colors.Primary
     OnVisible: |-
         =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
     Width: =Max(App.Width, App.DesignWidth)
-
-    Group26_1 As group:
-        Height: =80
-        Width: =80
-        X: =617
-        Y: =320
-        ZIndex: =1
-
-        Circle2_6 As circle:
-            BorderColor: =RGBA(204, 204, 204, 1)
-            DisabledFill: =Circle2_6.Fill
-            Fill: =App.Theme.Colors.Lighter70
-            Height: =106.72
-            HoverFill: =Circle2_6.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
-            PressedFill: =Circle2_6.Fill
-            TabIndex: =0
-            Width: =106.72
-            X: =823.07
-            Y: =320
-            ZIndex: =24
-
-        icon11_2 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =55
-            Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
-            TabIndex: =0
-            Width: =73.37
-            X: =839
-            Y: =348
-            ZIndex: =25
 
     Group10_4 As group:
         Height: =44
@@ -72,80 +35,6 @@ Features_8 As screen:
             X: =16.01
             Y: =6
             ZIndex: =23
-
-    Group24_1 As group:
-        Height: =80
-        Width: =80
-        X: =36
-        Y: =319
-        ZIndex: =5
-
-        Circle2_5 As circle:
-            BorderColor: =RGBA(133, 133, 133, 1)
-            DisabledFill: =Circle2_5.Fill
-            Fill: =App.Theme.Colors.Lighter70
-            Height: =106.72
-            HoverFill: =Circle2_5.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-            PressedFill: =Circle2_5.Fill
-            TabIndex: =0
-            Width: =106.72
-            X: =1104.54
-            Y: =292
-            ZIndex: =26
-
-        icon9_1 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =55
-            Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true})
-            TabIndex: =0
-            Width: =73.37
-            X: =1121.88
-            Y: =315
-            ZIndex: =27
-
-    Group28_1 As group:
-        Height: =80
-        Width: =80
-        X: =761
-        Y: =612
-        ZIndex: =7
-
-        Circle2_7 As circle:
-            BorderColor: =RGBA(204, 204, 204, 1)
-            DisabledFill: =Circle2_7.Fill
-            Fill: =App.Theme.Colors.Lighter70
-            Height: =106.72
-            HoverFill: =Circle2_7.Fill
-            OnSelect: |-
-                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
-            PressedFill: =Circle2_7.Fill
-            TabIndex: =0
-            Width: =106.72
-            X: =1015.16
-            Y: =612
-            ZIndex: =31
-
-        icon11_3 As icon.Add:
-            BorderColor: =App.Theme.Colors.Darker40
-            Color: =App.Theme.Colors.Darker30
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =55
-            Icon: =Icon.Add
-            OnSelect: |-
-                =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false})
-            TabIndex: =0
-            Width: =73.37
-            X: =1031
-            Y: =637
-            ZIndex: =32
 
     Group8_2 As group:
         Height: =212.61538461538498
@@ -291,36 +180,6 @@ Features_8 As screen:
         Width: =1366
         ZIndex: =16
 
-    Circle2_4 As circle:
-        BorderColor: =RGBA(204, 204, 204, 1)
-        DisabledFill: =Circle2_4.Fill
-        Fill: =App.Theme.Colors.Lighter70
-        Height: =106.72
-        HoverFill: =Circle2_4.Fill
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
-        PressedFill: =Circle2_4.Fill
-        TabIndex: =0
-        Width: =106.72
-        X: =401
-        Y: =284
-        ZIndex: =28
-
-    icon10_1 As icon.Add:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =55
-        Icon: =Icon.Add
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false})
-        TabIndex: =0
-        Width: =73.37
-        X: =417.54
-        Y: =311
-        ZIndex: =30
-
     Rectangle15_8 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =RGBA(62,96,170,0)
@@ -345,6 +204,21 @@ Features_8 As screen:
         X: =764.37
         Y: =387
         ZIndex: =34
+
+    icon9_17 As icon.Add:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Lighter80
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(152, 208, 70, 1)
+        Height: =50
+        Icon: =Icon.Add
+        OnSelect: =Navigate(Features_12, ScreenTransition.Fade)
+        TabIndex: =0
+        Width: =50
+        X: =122
+        Y: =563
+        ZIndex: =59
 
     Group4_1 As group:
         Height: =5
@@ -435,4 +309,21 @@ Features_8 As screen:
             X: =1052.51
             Y: =199
             ZIndex: =58
+
+    Label3_11 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
+        Size: =9
+        Text: ="ZONA 1 Motor y Enfriadores"
+        Tooltip: ="ZONA 1"
+        Width: =212
+        X: =172
+        Y: =558
+        ZIndex: =60
 
