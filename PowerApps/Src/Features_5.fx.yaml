@@ -3412,7 +3412,7 @@ Features_5 As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =80
+        TemplateSize: =100
         Visible: =pop10
         Width: =390
         X: =52
@@ -3437,7 +3437,7 @@ Features_5 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =104
             X: =87
-            Y: =41
+            Y: =65
             ZIndex: =2
 
         Subtitle2_43 As label:
@@ -3446,7 +3446,7 @@ Features_5 As screen:
             Fill: =RGBA(214, 221, 224, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =34
+            Height: =52
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -3476,7 +3476,7 @@ Features_5 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =53
             X: =14
-            Y: =44
+            Y: =68
             ZIndex: =4
 
         Separator2_43 As rectangle:
@@ -3504,7 +3504,7 @@ Features_5 As screen:
             Text: =
             Width: =48
             X: =342
-            Y: =36
+            Y: =52
             ZIndex: =8
 
         Title3_124 As label:
@@ -3513,7 +3513,7 @@ Features_5 As screen:
             Fill: =RGBA(214, 221, 224, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =34
+            Height: =52
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -3582,4 +3582,17 @@ Features_5 As screen:
         X: =61
         Y: =521
         ZIndex: =103
+
+    Icon1_5 As icon.Search:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =26
+        Icon: =Icon.Search
+        Visible: =pop10
+        Width: =33
+        X: =273
+        Y: =522
+        ZIndex: =104
 

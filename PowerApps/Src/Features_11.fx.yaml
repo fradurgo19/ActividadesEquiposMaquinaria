@@ -2927,7 +2927,7 @@ Features_11 As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =80
+        TemplateSize: =100
         Visible: =pop10
         Width: =390
         X: =52
@@ -2952,7 +2952,7 @@ Features_11 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =104
             X: =87
-            Y: =41
+            Y: =57
             ZIndex: =2
 
         Subtitle2_36 As label:
@@ -2961,7 +2961,6 @@ Features_11 As screen:
             Fill: =RGBA(214, 221, 224, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =34
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -2991,7 +2990,7 @@ Features_11 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =53
             X: =14
-            Y: =44
+            Y: =60
             ZIndex: =4
 
         Separator2_36 As rectangle:
@@ -3019,7 +3018,7 @@ Features_11 As screen:
             Text: =
             Width: =48
             X: =342
-            Y: =36
+            Y: =58
             ZIndex: =8
 
         Title3_112 As label:
@@ -3028,7 +3027,7 @@ Features_11 As screen:
             Fill: =RGBA(214, 221, 224, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =34
+            Height: =60
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -3097,4 +3096,17 @@ Features_11 As screen:
         X: =61
         Y: =521
         ZIndex: =90
+
+    Icon1_4 As icon.Search:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =26
+        Icon: =Icon.Search
+        Visible: =pop10
+        Width: =33
+        X: =273
+        Y: =523
+        ZIndex: =91
 
