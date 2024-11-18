@@ -2993,7 +2993,7 @@ Features_3 As screen:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
-        TemplateSize: =80
+        TemplateSize: =100
         Visible: =pop10
         Width: =390
         X: =13
@@ -3018,7 +3018,7 @@ Features_3 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =104
             X: =87
-            Y: =41
+            Y: =65
             ZIndex: =2
 
         Subtitle2_33 As label:
@@ -3027,7 +3027,7 @@ Features_3 As screen:
             Fill: =RGBA(214, 221, 224, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =34
+            Height: =51
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
@@ -3057,7 +3057,7 @@ Features_3 As screen:
             VerticalAlign: =VerticalAlign.Top
             Width: =53
             X: =14
-            Y: =44
+            Y: =68
             ZIndex: =4
 
         Separator2_33 As rectangle:
@@ -3085,7 +3085,7 @@ Features_3 As screen:
             Text: =
             Width: =48
             X: =342
-            Y: =36
+            Y: =52
             ZIndex: =8
 
         Title3_94 As label:
@@ -3094,7 +3094,7 @@ Features_3 As screen:
             Fill: =RGBA(214, 221, 224, 1)
             Font: =App.Theme.Font
             FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-            Height: =34
+            Height: =52
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingLeft: =0
