@@ -178,7 +178,7 @@ Features_8 As screen:
         PressedColor: =Label2_6.Color
         PressedFill: =Label2_6.Fill
         Size: =18
-        Text: ="MINICARGADOR"
+        Text: ="RETROCARGADORA"
         Width: =1366
         ZIndex: =16
 
@@ -328,15 +328,4 @@ Features_8 As screen:
         X: =298
         Y: =519
         ZIndex: =60
-
-    Icon5 As icon.ArrowLeft:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =App.Theme.Colors.Darker30
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Icon: =Icon.ArrowLeft
-        Width: =269
-        X: =480
-        Y: =510
-        ZIndex: =61
 
