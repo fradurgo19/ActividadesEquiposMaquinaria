@@ -562,19 +562,6 @@ Resumen As screen:
                     Y: =34
                     ZIndex: =15
 
-                ButtonCanvas2_75 As Botón:
-                    BasePaletteColor: =RGBA(8, 222, 8, 1)
-                    DisplayMode: =DisplayMode.Edit
-                    FontSize: =8
-                    Height: =23
-                    OnSelect: =Launch(Subtitle7_3.Text)
-                    Text: ="IR AL RECURSO"
-                    Visible: =!IsBlank(Subtitle7_3.Text)
-                    Width: =37
-                    X: =840
-                    Y: =15
-                    ZIndex: =16
-
                 ButtonCanvas2_76 As Botón:
                     BasePaletteColor: =RGBA(8, 222, 8, 1)
                     DisplayMode: =DisplayMode.Edit
