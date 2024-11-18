@@ -218,8 +218,8 @@ Features_8 As screen:
         OnSelect: =Navigate(Features_12, ScreenTransition.Fade)
         TabIndex: =0
         Width: =50
-        X: =122
-        Y: =563
+        X: =248
+        Y: =524
         ZIndex: =59
 
     Group4_1 As group:
@@ -322,10 +322,21 @@ Features_8 As screen:
         Height: =47
         OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
         Size: =9
-        Text: ="ZONA 1 Motor y Enfriadores"
+        Text: ="ZONA 1 Motor, Enfriadores y Filtro de aire"
         Tooltip: ="ZONA 1"
         Width: =212
-        X: =172
-        Y: =558
+        X: =298
+        Y: =519
         ZIndex: =60
+
+    Icon5 As icon.ArrowLeft:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =App.Theme.Colors.Darker30
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Icon: =Icon.ArrowLeft
+        Width: =269
+        X: =480
+        Y: =510
+        ZIndex: =61
 
