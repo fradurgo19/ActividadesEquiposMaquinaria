@@ -8,6 +8,62 @@ Features_8 As screen:
         ClearCollect(ColeccionUnificada,colFilteredEnfriadores,colFilteredEnmotor,colFilteredMotorGiro,colFilteredTanqueHidraulico,colFilteredTanqueDeCombustible,colFilteredBancoValvulas,colFilteredBancoSolenoide,colFilteredCenterJoint,colFilteredTraslacion,colFilteredTrenderodaje,colFilteredBombaPiloto,colFilteredFiltroPiloto,colFilteredBombaHidraulica,colFilteredBombaCombustible,colFilteredFiltrosMotor,colFilteredBancoSolenoide,colFilteredTraslacion,colFilteredTornamesa,colFilteredContrapesa,colFilteredEnfriadores,colFilteredTanqueexpasion,colFilteredValvulaAmortiguacionPiloto,colFilteredBateria,colFilteredFiltrodeaire,colFiltereEnfriadorCombustible,colFiltereAA,colFilteredBoom,colFilteredStick,colFilteredBalde,colFilteredJoystick,colFilteredCabina,colFilteredMonitor,colFilteredSilla,colFiltAireAcondicionado,colFiltAireSistemElectri,colFilteredEnmotorRetro)
     Width: =Max(App.Width, App.DesignWidth)
 
+    Image14 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =313
+        Image: |-
+            ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M0%20896h1920v128H0V896z%27%20fill%3D%27%23d13438%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+        Width: =343
+        X: =382
+        Y: =392
+        ZIndex: =1
+
+    Rectangle2_6 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =App.Theme.Colors.Primary
+        Height: =44
+        TabIndex: =0
+        Width: =1366
+        ZIndex: =2
+
+    Image4_4 As image:
+        ApplyEXIFOrientation: =false
+        AutoDisableOnSelect: =false
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Image: =x
+        OnSelect: =Navigate(Home,ScreenTransition.Fade)
+        Width: =33.35
+        X: =1065.85
+        Y: =106
+        ZIndex: =3
+
+    Label2_6 As label:
+        Align: =LayoutAlignItems.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Lighter
+        Height: =44
+        HoverBorderColor: =Label2_6.BorderColor
+        HoverColor: =Label2_6.Color
+        HoverFill: =Label2_6.Fill
+        PaddingBottom: =0
+        PaddingLeft: =0
+        PaddingRight: =0
+        PaddingTop: =0
+        PressedBorderColor: =Label2_6.BorderColor
+        PressedColor: =Label2_6.Color
+        PressedFill: =Label2_6.Fill
+        Size: =18
+        Text: ="RETROCARGADORA"
+        Width: =1366
+        ZIndex: =4
+
     Group10_4 As group:
         Height: =44
         Width: =44
@@ -22,7 +78,7 @@ Features_8 As screen:
             OnSelect: =Navigate(Home, ScreenTransition.Fade)
             TabIndex: =0
             Width: =58.7
-            ZIndex: =22
+            ZIndex: =5
 
         icon1_5 As icon.ChevronLeft:
             BorderColor: =App.Theme.Colors.Darker40
@@ -36,7 +92,32 @@ Features_8 As screen:
             Width: =26.68
             X: =16.01
             Y: =6
-            ZIndex: =23
+            ZIndex: =6
+
+    Rectangle15_8 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(62,96,170,0)
+        Height: =44
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+        TabIndex: =0
+        Visible: =pop2
+        Width: =58.7
+        X: =776.38
+        Y: =386
+        ZIndex: =7
+
+    Rectangle10_1 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =44
+        OnSelect: |-
+            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+        TabIndex: =0
+        Width: =58.7
+        X: =764.37
+        Y: =387
+        ZIndex: =8
 
     Group8_2 As group:
         Height: =212.61538461538498
@@ -58,7 +139,7 @@ Features_8 As screen:
             Width: =388.19
             X: =465.04
             Y: =346.1469879518089
-            ZIndex: =47
+            ZIndex: =13
 
         Label9_3 As label:
             BorderColor: =App.Theme.Colors.Darker40
@@ -82,7 +163,7 @@ Features_8 As screen:
             Width: =283.2
             X: =510.97
             Y: =435.31425172252193
-            ZIndex: =48
+            ZIndex: =14
 
         Label8_3 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -107,7 +188,7 @@ Features_8 As screen:
             Width: =298.75
             X: =507.79
             Y: =373.8612736660939
-            ZIndex: =49
+            ZIndex: =15
 
         Rectangle9_2 As rectangle:
             BorderColor: =App.Theme.Colors.Darker40
@@ -120,7 +201,7 @@ Features_8 As screen:
             Width: =58.7
             X: =791.13
             Y: =348.33380113862193
-            ZIndex: =50
+            ZIndex: =16
 
         icon12_3 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
@@ -136,76 +217,7 @@ Features_8 As screen:
             Width: =37.35
             X: =809.73
             Y: =356.33380113862193
-            ZIndex: =51
-
-    Rectangle2_6 As rectangle:
-        BorderColor: =App.Theme.Colors.Darker40
-        Fill: =App.Theme.Colors.Primary
-        Height: =44
-        TabIndex: =0
-        Width: =1366
-        ZIndex: =14
-
-    Image4_4 As image:
-        ApplyEXIFOrientation: =false
-        AutoDisableOnSelect: =false
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =25
-        Image: =x
-        OnSelect: =Navigate(Home,ScreenTransition.Fade)
-        Width: =33.35
-        X: =1065.85
-        Y: =106
-        ZIndex: =15
-
-    Label2_6 As label:
-        Align: =LayoutAlignItems.Center
-        Color: =RGBA(255, 255, 255, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Lighter
-        Height: =44
-        HoverBorderColor: =Label2_6.BorderColor
-        HoverColor: =Label2_6.Color
-        HoverFill: =Label2_6.Fill
-        PaddingBottom: =0
-        PaddingLeft: =0
-        PaddingRight: =0
-        PaddingTop: =0
-        PressedBorderColor: =Label2_6.BorderColor
-        PressedColor: =Label2_6.Color
-        PressedFill: =Label2_6.Fill
-        Size: =18
-        Text: ="RETROCARGADORA"
-        Width: =1366
-        ZIndex: =16
-
-    Rectangle15_8 As rectangle:
-        BorderColor: =App.Theme.Colors.Darker40
-        Fill: =RGBA(62,96,170,0)
-        Height: =44
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-        TabIndex: =0
-        Visible: =pop2
-        Width: =58.7
-        X: =776.38
-        Y: =386
-        ZIndex: =33
-
-    Rectangle10_1 As rectangle:
-        BorderColor: =App.Theme.Colors.Darker40
-        Fill: =RGBA(0, 0, 0, 0)
-        Height: =44
-        OnSelect: |-
-            =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
-        TabIndex: =0
-        Width: =58.7
-        X: =764.37
-        Y: =387
-        ZIndex: =34
+            ZIndex: =17
 
     icon9_17 As icon.Add:
         BorderColor: =App.Theme.Colors.Darker40
@@ -220,7 +232,24 @@ Features_8 As screen:
         Width: =50
         X: =248
         Y: =524
-        ZIndex: =59
+        ZIndex: =19
+
+    Label3_11 As label:
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Semibold
+        Height: =47
+        OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
+        Size: =9
+        Text: ="ZONA 1 Motor, Enfriadores y Filtro de aire"
+        Tooltip: ="ZONA 1"
+        Width: =212
+        X: =298
+        Y: =519
+        ZIndex: =20
 
     Group4_1 As group:
         Height: =5
@@ -242,7 +271,7 @@ Features_8 As screen:
             Width: =312.15
             X: =1011.16
             Y: =179
-            ZIndex: =40
+            ZIndex: =9
 
         Rectangle15_11 As rectangle:
             BorderColor: =App.Theme.Colors.Darker40
@@ -255,7 +284,7 @@ Features_8 As screen:
             Width: =26.68
             X: =1023.17
             Y: =225
-            ZIndex: =43
+            ZIndex: =10
 
         Rectangle8_1 As rectangle:
             BorderColor: =App.Theme.Colors.Darker40
@@ -267,7 +296,7 @@ Features_8 As screen:
             Width: =334.83
             X: =1004.49
             Y: =179
-            ZIndex: =44
+            ZIndex: =11
 
         icon7_1 As icon.Cancel:
             BorderColor: =App.Theme.Colors.Darker40
@@ -283,7 +312,7 @@ Features_8 As screen:
             Width: =57.36
             X: =1256.61
             Y: =186
-            ZIndex: =45
+            ZIndex: =12
 
         Label8_9 As label:
             Color: =RGBA(255, 255, 255, 1)
@@ -310,22 +339,5 @@ Features_8 As screen:
             Width: =216.11
             X: =1052.51
             Y: =199
-            ZIndex: =58
-
-    Label3_11 As label:
-        BorderColor: =App.Theme.Colors.Darker40
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(255, 255, 255, 1)
-        Font: =App.Theme.Font
-        FontWeight: =FontWeight.Semibold
-        Height: =47
-        OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
-        Size: =9
-        Text: ="ZONA 1 Motor, Enfriadores y Filtro de aire"
-        Tooltip: ="ZONA 1"
-        Width: =212
-        X: =298
-        Y: =519
-        ZIndex: =60
+            ZIndex: =18
 
