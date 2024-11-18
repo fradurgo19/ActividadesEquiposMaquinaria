@@ -304,7 +304,7 @@ Features_12 As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =10
-            Text: =ThisItem.Adjuntos
+            Text: =ThisItem.Title
             VerticalAlign: =VerticalAlign.Top
             Width: =403
             X: =4
@@ -326,6 +326,7 @@ Features_12 As screen:
             Size: =10
             Text: |-
                 ="Comentario: "&ThisItem.Diagnostico
+            Underline: =true
             VerticalAlign: =VerticalAlign.Top
             Width: =231
             X: =432
@@ -727,7 +728,7 @@ Features_12 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnmotor,field_6=ComboBox1_43.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_44.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnmotorRetro,field_6=ComboBox1_43.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_44.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
@@ -814,10 +815,10 @@ Features_12 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            Enfriadores,
-                            Solución = ComboBox1_47.Selected.Results
+                            colFilteredEnfriadoresRetro,
+                            field_6 = ComboBox1_47.Selected.Results
                         ),
-                        Tamaño
+                        field_7
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -827,7 +828,7 @@ Features_12 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(Enfriadores,Solución=ComboBox1_47.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_48.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnfriadoresRetro,field_6=ComboBox1_47.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_48.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -860,8 +861,8 @@ Features_12 As screen:
         Height: =521
         Items: |-
             =Filter(
-                colFilteredEnfriadores, 
-                field_5 = "Excavadora" && field_6 = ComboBox1_47.Selected.Results && field_7 = ComboBox1_48.Selected.Results 
+                colFilteredEnfriadoresRetro, 
+                field_5 = "Retrocargadora" && field_6 = ComboBox1_47.Selected.Results && field_7 = ComboBox1_48.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -1116,7 +1117,7 @@ Features_12 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredEnfriadores,
+                        colFilteredEnfriadoresRetro,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -1127,7 +1128,7 @@ Features_12 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredEnfriadores,field_6),{Results:ThisRecord.Value}),Results),ComboBox1_47.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredEnfriadoresRetro,field_6),{Results:ThisRecord.Value}),Results),ComboBox1_47.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
