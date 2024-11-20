@@ -9,18 +9,6 @@ Features_8 As screen:
         ClearCollect(ColeccionUnificada,colFilteredEnfriadores,colFilteredEnmotor,colFilteredMotorGiro,colFilteredTanqueHidraulico,colFilteredTanqueDeCombustible,colFilteredBancoValvulas,colFilteredBancoSolenoide,colFilteredCenterJoint,colFilteredTraslacion,colFilteredTrenderodaje,colFilteredBombaPiloto,colFilteredFiltroPiloto,colFilteredBombaHidraulica,colFilteredBombaCombustible,colFilteredFiltrosMotor,colFilteredBancoSolenoide,colFilteredTraslacion,colFilteredTornamesa,colFilteredContrapesa,colFilteredEnfriadores,colFilteredTanqueexpasion,colFilteredValvulaAmortiguacionPiloto,colFilteredBateria,colFilteredFiltrodeaire,colFiltereEnfriadorCombustible,colFiltereAA,colFilteredBoom,colFilteredStick,colFilteredBalde,colFilteredJoystick,colFilteredCabina,colFilteredMonitor,colFilteredSilla,colFiltAireAcondicionado,colFiltAireSistemElectri,colFilteredEnmotorRetro)
     Width: =Max(App.Width, App.DesignWidth)
 
-    Image14 As image:
-        BorderColor: =App.Theme.Colors.Darker40
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =214
-        Image: |-
-            ="data:image/svg+xml;utf8, %3Csvg%20%20viewBox%3D%270%200%202048%202048%27%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%3E%3Cpath%20d%3D%27M0%20896h1920v128H0V896z%27%20fill%3D%27%23d13438%27%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
-        Width: =322
-        X: =419
-        Y: =435
-        ZIndex: =1
-
     Rectangle2_6 As rectangle:
         BorderColor: =App.Theme.Colors.Darker40
         Fill: =App.Theme.Colors.Primary
@@ -251,6 +239,43 @@ Features_8 As screen:
         X: =298
         Y: =519
         ZIndex: =20
+
+    Label4_31 As label:
+        Align: =Align.Center
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Font: =App.Theme.Font
+        FontWeight: =FontWeight.Bold
+        Height: =52
+        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+        Size: =12
+        Text: ="Resumen"
+        Width: =93
+        X: =58
+        Y: =67
+        ZIndex: =21
+
+    Image24_11 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =62
+        Image: ='icons8-estimar'
+        OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+        Width: =95
+        Y: =67
+        ZIndex: =22
+
+    Rectangle1 As rectangle:
+        BorderColor: =App.Theme.Colors.Darker40
+        Fill: =Color.Green
+        Height: =5
+        Width: =169
+        X: =507
+        Y: =524
+        ZIndex: =23
 
     Group4_1 As group:
         Height: =5
