@@ -87,7 +87,9 @@ Features_7 As screen:
                 'Sistema Eléctrico',
                 Tipo = "Excavadora"
             )
-        )
+        );
+        
+        ClearCollect(ColeccionUnificada,colFilteredEnfriadores,colFilteredEnmotor,colFilteredMotorGiro,colFilteredTanqueHidraulico,colFilteredTanqueDeCombustible,colFilteredBancoValvulas,colFilteredBancoSolenoide,colFilteredCenterJoint,colFilteredTraslacion,colFilteredTrenderodaje,colFilteredBombaPiloto,colFilteredFiltroPiloto,colFilteredBombaHidraulica,colFilteredBombaCombustible,colFilteredFiltrosMotor,colFilteredBancoSolenoide,colFilteredTraslacion,colFilteredTornamesa,colFilteredContrapesa,colFilteredEnfriadores,colFilteredTanqueexpasion,colFilteredValvulaAmortiguacionPiloto,colFilteredBateria,colFilteredFiltrodeaire,colFiltereEnfriadorCombustible,colFiltereAA,colFilteredBoom,colFilteredStick,colFilteredBalde,colFilteredJoystick,colFilteredCabina,colFilteredMonitor,colFilteredSilla,colFiltAireAcondicionado,colFiltAireSistemElectri)
     Width: =Max(App.Width, App.DesignWidth)
 
     Image9 As image:
