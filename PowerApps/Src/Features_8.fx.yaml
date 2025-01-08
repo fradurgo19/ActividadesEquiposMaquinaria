@@ -257,6 +257,19 @@ Features_8 As screen:
         Width: =68
         ZIndex: =24
 
+    ButtonCanvas6_2 As Botón:
+        BasePaletteColor: =RGBA(249, 83, 109, 1)
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Icon: ="Warning"
+        OnSelect: |-
+            =Launch("https://teams.microsoft.com/l/channel/19%3A3894b5acefed4f70b842dcbffaa4336b%40thread.tacv2/Soporte%20Actividades%20Mantenimiento%20Maquinaria?groupId=31f2e519-640f-4cee-856f-e4ae247c0e5a")
+        Text: ="Soporte"
+        Width: =96
+        X: =45
+        Y: =710
+        ZIndex: =25
+
     Group4_1 As group:
         Height: =5
         Width: =5
