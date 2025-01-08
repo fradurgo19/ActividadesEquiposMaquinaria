@@ -249,8 +249,9 @@ Home As screen:
         Text: |-
             ="Versión: " & App.StudioVersion & ": Se agregan actividades adicionales tren de rodaje."
         VerticalAlign: =VerticalAlign.Top
-        Width: =276
-        X: =1090
+        Width: =154
+        X: =1211
+        Y: =54
         ZIndex: =38
 
     Label1_52 As label:
@@ -274,8 +275,8 @@ Home As screen:
         Text: |-
             ="Última actualización: " & Text(LookUp('Tren de Rodaje', ID = Max('Tren de Rodaje', ID)).Modificado, "[$-es-ES]dd/mm/yyyy")
         VerticalAlign: =VerticalAlign.Top
-        Width: =276
-        X: =1090
-        Y: =48
+        Width: =155
+        X: =1211
+        Y: =6
         ZIndex: =39
 
