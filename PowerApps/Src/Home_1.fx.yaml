@@ -3,7 +3,17 @@ Home_1 As screen:
     Fill: =Color.White
     Height: =Max(App.Height, App.DesignHeight)
     LoadingSpinnerColor: =App.Theme.Colors.Primary
-    OnVisible: =Clear(colAllSelectedItems)
+    OnVisible: |-
+        =Clear(colAllSelectedItems);
+        Patch(
+            ActividadIniciodeApp, 
+            Defaults(ActividadIniciodeApp),
+            {
+                'UserID ': User().Email, 
+                'Timestamp ': DateAdd(Now(), -5, TimeUnit.Hours),     
+                'AppName ': "Actividades Mtto Maquinaria" 
+            }
+        )
     Width: =Max(App.Width, App.DesignWidth)
 
     Image15_1 As image:
