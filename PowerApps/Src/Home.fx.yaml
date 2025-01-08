@@ -276,7 +276,20 @@ Home As screen:
             ="Última actualización: " & Text(LookUp('Tren de Rodaje', ID = Max('Tren de Rodaje', ID)).Modificado, "[$-es-ES]dd/mm/yyyy")
         VerticalAlign: =VerticalAlign.Top
         Width: =155
-        X: =1211
+        X: =1131
         Y: =6
         ZIndex: =39
+
+    ButtonCanvas6 As Botón:
+        BasePaletteColor: =RGBA(227, 106, 244, 1)
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Icon: ="Warning"
+        OnSelect: |-
+            =Launch("https://teams.microsoft.com/l/channel/19%3A3894b5acefed4f70b842dcbffaa4336b%40thread.tacv2/Soporte%20Actividades%20Mantenimiento%20Maquinaria?groupId=31f2e519-640f-4cee-856f-e4ae247c0e5a")
+        Text: ="Soporte"
+        Width: =96
+        X: =1252
+        Y: =134
+        ZIndex: =40
 
