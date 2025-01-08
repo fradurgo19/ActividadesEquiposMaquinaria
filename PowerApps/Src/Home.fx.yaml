@@ -228,3 +228,52 @@ Home As screen:
         Y: =18
         ZIndex: =37
 
+    Label1_51 As label:
+        Align: =TextPosition.Left
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =48
+        HoverBorderColor: =Label1_51.BorderColor
+        HoverColor: =Label1_51.Color
+        HoverFill: =Label1_51.Fill
+        OnSelect: =
+        PaddingLeft: =15
+        PaddingRight: =20.01
+        PressedBorderColor: =Label1_51.BorderColor
+        PressedColor: =Label1_51.Color
+        PressedFill: =Label1_51.Fill
+        Size: =9
+        Text: |-
+            ="Versión: " & App.StudioVersion & ": Se agregan actividades tren de rodaje faltantes."
+        VerticalAlign: =VerticalAlign.Top
+        Width: =276
+        X: =1090
+        ZIndex: =38
+
+    Label1_52 As label:
+        Align: =TextPosition.Left
+        BorderColor: =App.Theme.Colors.Darker40
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =App.Theme.Font
+        Height: =48
+        HoverBorderColor: =Label1_52.BorderColor
+        HoverColor: =Label1_52.Color
+        HoverFill: =Label1_52.Fill
+        OnSelect: =
+        PaddingLeft: =15
+        PaddingRight: =20.01
+        PressedBorderColor: =Label1_52.BorderColor
+        PressedColor: =Label1_52.Color
+        PressedFill: =Label1_52.Fill
+        Size: =9
+        Text: |-
+            ="Última actualización: " & Text(LookUp('Tren de Rodaje', ID = Max('Tren de Rodaje', ID)).Modificado, "[$-es-ES]dd/mm/yyyy")
+        VerticalAlign: =VerticalAlign.Top
+        Width: =276
+        X: =1090
+        Y: =48
+        ZIndex: =39
+
