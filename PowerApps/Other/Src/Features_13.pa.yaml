@@ -658,6 +658,7 @@ Screens:
                   Size: =9
                   Text: =ThisItem.Adjuntos
                   VerticalAlign: =VerticalAlign.Top
+                  Visible: =false
                   Width: =75
                   X: =329
                   Y: =55
@@ -824,6 +825,7 @@ Screens:
               )
             PressedColor: =RGBA(255, 255, 255, 1)
             SearchFields: =["Results"]
+            SelectMultiple: =false
             SelectionColor: =RGBA(255, 255, 255, 1)
             Size: =10
             Visible: =pop4
@@ -871,3 +873,13 @@ Screens:
             Width: =42
             X: =1241
             Y: =50
+      - Image13_37:
+          Control: Image@2.2.3
+          Properties:
+            Height: =393
+            Image: =Gallery2_51.Selected.Recurso
+            OnSelect: =Set(HoverImage22, true);Set(HoverImage22, false)
+            Visible: =HoverImage22
+            Width: =672
+            X: =669
+            Y: =266
