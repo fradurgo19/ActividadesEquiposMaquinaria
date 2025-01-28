@@ -603,8 +603,8 @@ Features_13 As screen:
         Height: =538
         Items: |-
             =Filter(
-                colFilteredEnmotorRetro, 
-                field_5 = "Retrocargadora" && field_6 = ComboBox1_50.Selected.Results && field_7 = ComboBox1_49.Selected.Results 
+                colMartillo, 
+                field_5 = "Martillo" && field_6 = ComboBox1_50.Selected.Results && field_7 = ComboBox1_49.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -861,7 +861,7 @@ Features_13 As screen:
                 ForAll(
                     Distinct(
                         Filter(
-                            colFilteredEnmotorRetro,
+                            colMartillo,
                             field_6 = ComboBox1_50.Selected.Results
                         ),
                         field_7
@@ -874,7 +874,7 @@ Features_13 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnmotorRetro,field_6=ComboBox1_50.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_49.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colMartillo,field_6=ComboBox1_50.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_49.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
@@ -903,7 +903,7 @@ Features_13 As screen:
             =Filter(
                 ForAll(
                     Distinct(
-                        colFilteredEnmotorRetro,
+                        colMartillo,
                         field_6
                     ),
                     {Results: ThisRecord.Value}
@@ -914,7 +914,7 @@ Features_13 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredEnmotorRetro,field_6),{Results:ThisRecord.Value}),Results),ComboBox1_50.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colMartillo,field_6),{Results:ThisRecord.Value}),Results),ComboBox1_50.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10

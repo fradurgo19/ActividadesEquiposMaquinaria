@@ -596,8 +596,8 @@ Screens:
             Height: =538
             Items: |-
               =Filter(
-                  colFilteredEnmotorRetro, 
-                  field_5 = "Retrocargadora" && field_6 = ComboBox1_50.Selected.Results && field_7 = ComboBox1_49.Selected.Results 
+                  colMartillo, 
+                  field_5 = "Martillo" && field_6 = ComboBox1_50.Selected.Results && field_7 = ComboBox1_49.Selected.Results 
               )
             ShowNavigation: =true
             TemplateSize: =120
@@ -813,7 +813,7 @@ Screens:
                   ForAll(
                       Distinct(
                           Filter(
-                              colFilteredEnmotorRetro,
+                              colMartillo,
                               field_6 = ComboBox1_50.Selected.Results
                           ),
                           field_7
@@ -842,7 +842,7 @@ Screens:
               =Filter(
                   ForAll(
                       Distinct(
-                          colFilteredEnmotorRetro,
+                          colMartillo,
                           field_6
                       ),
                       {Results: ThisRecord.Value}
