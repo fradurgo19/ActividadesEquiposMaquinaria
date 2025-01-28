@@ -1,0 +1,2624 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Features_3:
+    Properties:
+      Fill: =RGBA(255, 255, 255, 1)
+      Height: =Max(App.Height, App.DesignHeight)
+      ImagePosition: =ImagePosition.Fill
+      OnHidden: |-
+        =UpdateContext({pop1: false, pop2: false, pop3: false, pop4: false,pop5: false,pop6: false})
+      OnVisible: |-
+        =UpdateContext(
+            {
+                pop1: false,
+                pop2: false,
+                pop3: false,
+                pop4: false
+            }
+        );
+        ClearCollect(
+            colFilteredMotorGiro,
+            Filter(
+                'Motor de giro y reductor de giro',
+                Tipo = "Excavadora"
+            )
+        );
+        ClearCollect(
+            colFilteredTanqueHidraulico,
+            Filter(
+                'Tanque Hidráulico',
+                Tipo = "Excavadora"
+            )
+        );
+        ClearCollect(
+            colFilteredTanqueDeCombustible,
+            Filter(
+                'Tanque de Combustible',
+                Tipo = "Excavadora"
+            )
+        );
+        ClearCollect(
+            colFilteredBancoValvulas,
+            Filter(
+                'Banco de Valvulas',
+                Tipo = "Excavadora"
+            )
+        );
+        ClearCollect(
+            colFilteredBancoSolenoide,
+            Filter(
+                'Banco de Solenoide',
+                Tipo = "Excavadora"
+            )
+        );
+        ClearCollect(
+            colFilteredCenterJoint,
+            Filter(
+                'Center Joint',
+                Tipo = "Excavadora"
+            )
+        );
+
+        ClearCollect(ColeccionUnificada,colFilteredEnfriadores,colFilteredEnmotor,colFilteredMotorGiro,colFilteredTanqueHidraulico,colFilteredTanqueDeCombustible,colFilteredBancoValvulas,colFilteredBancoSolenoide,colFilteredCenterJoint,colFilteredTraslacion,colFilteredTrenderodaje,colFilteredBombaPiloto,colFilteredFiltroPiloto,colFilteredBombaHidraulica,colFilteredBombaCombustible,colFilteredFiltrosMotor,colFilteredBancoSolenoide,colFilteredTraslacion,colFilteredTornamesa,colFilteredContrapesa,colFilteredEnfriadores,colFilteredTanqueexpasion,colFilteredValvulaAmortiguacionPiloto,colFilteredBateria,colFilteredFiltrodeaire,colFiltereEnfriadorCombustible,colFiltereAA,colFilteredBoom,colFilteredStick,colFilteredBalde,colFilteredJoystick,colFilteredCabina,colFilteredMonitor,colFilteredSilla,colFiltAireAcondicionado,colFiltAireSistemElectri)
+      Width: =Max(App.Width, App.DesignWidth)
+    Children:
+      - Image42:
+          Control: Image@2.2.3
+          Properties:
+            Height: =286
+            Image: =BancoValvulas
+            Width: =314
+            X: =1050
+            Y: =482
+      - Image40:
+          Control: Image@2.2.3
+          Properties:
+            Height: =273
+            Image: =BancoSolenoide
+            Width: =376
+            X: =586
+            Y: =477
+      - Image41:
+          Control: Image@2.2.3
+          Properties:
+            Height: =262
+            Image: =Center
+            Width: =388
+            X: =151
+            Y: =485
+      - Image39:
+          Control: Image@2.2.3
+          Properties:
+            Height: =321
+            Image: =MotorReductor
+            Width: =296
+            X: =1005
+            Y: =95
+      - Image38:
+          Control: Image@2.2.3
+          Properties:
+            Height: =272
+            Image: =TanqueCombustible
+            Width: =315
+            X: =203
+            Y: =132
+      - Image36:
+          Control: Image@2.2.3
+          Properties:
+            Height: =322
+            Image: =TanqueAceiteHidrau
+            Width: =289
+            X: =582
+            Y: =106
+      - icon11_16:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop5:false,pop6:false})
+            TabIndex: =0
+            Width: =50
+            X: =218
+            Y: =57
+      - Label1_11:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =34
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:true,pop4:false,pop6:false})
+            Size: =13.34
+            Text: ="Tanque Combustible"
+            Width: =222
+            X: =272
+            Y: =64
+      - icon11_13:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
+            TabIndex: =0
+            Width: =50
+            X: =592
+            Y: =46
+      - Label1_10:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            OnSelect: =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false,pop5:false,pop6:false})
+            Size: =13.34
+            Text: ="Tanque Hidraulico"
+            Width: =196
+            X: =642
+            Y: =58
+      - Rectangle2_11:
+          Control: Rectangle@2.3.0
+          Properties:
+            Height: =44
+            TabIndex: =0
+            Width: =1366
+      - Label2_12:
+          Control: Label@2.5.1
+          Properties:
+            Align: =LayoutAlignItems.Center
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Lighter
+            Height: =44
+            HoverBorderColor: =Label2_12.BorderColor
+            HoverColor: =Label2_12.Color
+            HoverFill: =Label2_12.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label2_12.BorderColor
+            PressedColor: =Label2_12.Color
+            PressedFill: =Label2_12.Fill
+            Text: |-
+              ="EXCAVADORA: ZONA 2: Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
+            Width: =1281
+            X: =82
+      - icon11_12:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
+            TabIndex: =0
+            Width: =50
+            X: =1301
+            Y: =46
+      - Label1_3:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =37
+            OnSelect: '=UpdateContext({pop1:true,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false}) '
+            Size: =13.34
+            Text: ="Motor de Giro/ Reductor de Giro"
+            Width: =322
+            X: =979
+            Y: =52
+      - icon11_17:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
+            TabIndex: =0
+            Width: =50
+            X: =1291
+            Y: =428
+      - Label1_12:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =31
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:true,pop5:false,pop6:false})
+            Size: =13.34
+            Text: ="Banco de Vávulas"
+            Width: =167
+            X: =1124
+            Y: =439
+      - icon11_18:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
+            TabIndex: =0
+            Width: =50
+            X: =597
+            Y: =432
+      - Label1_13:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =31
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:true,pop6:false})
+            Size: =13.34
+            Text: ="Banco de Solenoide"
+            Width: =227
+            X: =649
+            Y: =443
+      - icon11_38:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
+            TabIndex: =0
+            Width: =50
+            X: =224
+            Y: =435
+      - Label1_35:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop6:true})
+            Size: =13.34
+            Text: ="Center Joint"
+            Width: =143
+            X: =278
+            Y: =442
+      - icon12_20:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(242, 242, 242, 1)
+            Height: =115
+            Icon: =Icon.Cancel
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop1
+            Width: =47
+            X: =791
+            Y: =132
+      - Rectangle9_13:
+          Control: Rectangle@2.3.0
+          Properties:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =120
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop1
+            Width: =75
+            X: =776
+            Y: =101
+      - Rectangle4_29:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_29.Fill
+            Fill: =Color.SkyBlue
+            Height: =676
+            HoverFill: =Rectangle4_29.Fill
+            PressedFill: =Rectangle4_29.Fill
+            TabIndex: =0
+            Visible: =pop1
+            Width: =691
+            X: =112
+            Y: =53
+      - Rectangle4_61:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_61.Fill
+            Fill: =Color.Khaki
+            Height: =696
+            HoverFill: =Rectangle4_61.Fill
+            PressedFill: =Rectangle4_61.Fill
+            TabIndex: =0
+            Visible: =pop6
+            Width: =683
+            X: =675
+            Y: =52
+      - Rectangle4_34:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_34.Fill
+            Fill: =Color.LimeGreen
+            Height: =693
+            HoverFill: =Rectangle4_34.Fill
+            PressedFill: =Rectangle4_34.Fill
+            TabIndex: =0
+            Visible: =pop2
+            Width: =691
+            X: =92
+            Y: =48
+      - Rectangle4_35:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_35.Fill
+            Fill: =RGBA(161, 145, 250, 1)
+            Height: =705
+            HoverFill: =Rectangle4_35.Fill
+            PressedFill: =Rectangle4_35.Fill
+            TabIndex: =0
+            Visible: =pop3
+            Width: =691
+            X: =675
+            Y: =53
+      - Rectangle4_37:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_37.Fill
+            Fill: =Color.DarkOrange
+            Height: =694
+            HoverFill: =Rectangle4_37.Fill
+            PressedFill: =Rectangle4_37.Fill
+            TabIndex: =0
+            Visible: =pop5
+            Width: =691
+            X: =82
+            Y: =56
+      - Rectangle4_36:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_36.Fill
+            Fill: =Color.OrangeRed
+            Height: =699
+            HoverFill: =Rectangle4_36.Fill
+            PressedFill: =Rectangle4_36.Fill
+            TabIndex: =0
+            Visible: =pop4
+            Width: =691
+            X: =104
+            Y: =48
+      - Label9_37:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =38
+            HoverBorderColor: =Label9_37.BorderColor
+            HoverColor: =Label9_37.Color
+            HoverFill: =Label9_37.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_37.BorderColor
+            PressedColor: =Label9_37.Color
+            PressedFill: =Label9_37.Fill
+            Size: =15
+            Text: ="MOTOR DE GIRO / REDUCTOR DE GIRO"
+            Visible: =pop1
+            Width: =445
+            X: =123
+            Y: =57
+      - icon14_9:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(215, 58, 60, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop1
+            Width: =45
+            X: =743
+            Y: =62
+      - ButtonCanvas4_4:
+          Control: Button@0.0.44
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Secondary
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_2.AllItems, 
+                  Collect(colAllSelectedItems, ThisRecord)
+              );
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_2.Value });
+
+            Text: ="Selec Todo"
+            Visible: =pop1
+            Width: =50
+            X: =738
+            Y: =127
+      - ButtonCanvas4_5:
+          Control: Button@0.0.44
+          Properties:
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_2.AllItems,
+                  RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
+              );
+
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_2.Value });
+
+
+
+
+
+
+
+            Text: ="Borrar Todo"
+            Visible: =pop1
+            Width: =44
+            X: =688
+            Y: =127
+      - ComboBox1_3:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            Height: =33
+            InputTextPlaceholder: ="Tamaño"
+            Items: |-
+              =Sort(
+                  ForAll(
+                      Distinct(
+                          Filter(
+                              colFilteredMotorGiro,
+                              field_6 = ComboBox2_1.Selected.Results
+                          ),
+                          field_7
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop1
+            Width: =112
+            X: =261
+            Y: =127
+      - icon14_10:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(52, 152, 47, 1)
+            Height: =28
+            Icon: =Icon.Reset
+            OnSelect: =Reset(ComboBox2_1);Reset(ComboBox1_3)
+            TabIndex: =0
+            Visible: =pop1
+            Width: =45
+            X: =691
+            Y: =64
+      - ComboBox2_1:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            Height: =34
+            InputTextPlaceholder: ="Sugerencias"
+            Items: |-
+              =Filter(
+                  ForAll(
+                      Distinct(
+                          colFilteredMotorGiro,
+                          field_6
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop1
+            Width: =118
+            X: =123
+            Y: =125
+      - Gallery2_2:
+          Control: Gallery@2.15.0
+          Variant: BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0
+          Properties:
+            Fill: =Color.SkyBlue
+            Height: =537
+            Items: |-
+              =Filter(
+                  colFilteredMotorGiro, 
+                  field_5 = "Excavadora" && field_6 = ComboBox2_1.Selected.Results && field_7 = ComboBox1_3.Selected.Results 
+              )
+            TemplateSize: =123
+            Visible: =pop1
+            Width: =664
+            X: =132
+            Y: =182
+          Children:
+            - Title3_5:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =44
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo: "&ThisItem.Codigo
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =120
+                  X: =68
+                  Y: =70
+            - Subtitle2_2:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =60
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: =ThisItem.Nombre
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =414
+                  X: =4
+            - Body2_2:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =44
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="ID: "&ThisItem.Id
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =53
+                  X: =4
+                  Y: =70
+            - Separator2_2:
+                Control: Rectangle@2.3.0
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Height: =8
+                  OnSelect: =Select(Parent)
+                  Width: =Parent.TemplateWidth
+                  Y: =Parent.TemplateHeight - Self.Height
+            - Title3_6:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =44
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =85
+                  X: =203
+                  Y: =70
+            - Checkbox1_2:
+                Control: Classic/CheckBox@2.1.0
+                Properties:
+                  Default: =varCheckboxChecked1
+                  Height: =44
+                  OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
+                  OnSelect: =Select(Parent)
+                  OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
+                  Text: =
+                  Width: =45
+                  X: =606
+                  Y: =70
+            - ButtonCanvas2_10:
+                Control: Button@0.0.44
+                Properties:
+                  FontSize: =9
+                  Height: =39
+                  OnSelect: =Launch(Title3_169.Text)
+                  Text: ="IR AL RECURSO"
+                  Visible: =!IsBlank(Title3_169.Text)
+                  Width: =61
+                  X: =529
+                  Y: =71
+            - Title3_169:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =49
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: =ThisItem.Adjuntos
+                  VerticalAlign: =VerticalAlign.Top
+                  Visible: =false
+                  Width: =108
+                  X: =277
+                  Y: =61
+            - Title3_170:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =60
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: |-
+                    ="Comentario: "&ThisItem.Diagnostico
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =231
+                  X: =425
+            - Image11_4:
+                Control: Image@2.2.3
+                Properties:
+                  Height: =42
+                  Image: =Gallery2_2.Selected.Recurso
+                  OnSelect: =Set(HoverImage25, true)
+                  Width: =89
+                  X: =425
+                  Y: =72
+      - Label4_14:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =33
+            OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+            Size: =12
+            Text: ="Resumen"
+            Width: =82
+            Y: =74
+      - Image24_1:
+          Control: Image@2.2.3
+          Properties:
+            Height: =38
+            Image: ='icons8-estimar'
+            OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+            Width: =72
+            X: =5
+            Y: =105
+      - Image6_2:
+          Control: Image@2.2.3
+          Properties:
+            Height: =44
+            Image: =Izquierda
+            OnSelect: =Navigate(Features, ScreenTransition.Fade)
+            Width: =68
+      - Label9_38:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =Label9_38.BorderColor
+            HoverColor: =Label9_38.Color
+            HoverFill: =Label9_38.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_38.BorderColor
+            PressedColor: =Label9_38.Color
+            PressedFill: =Label9_38.Fill
+            Size: =15
+            Text: ="TANQUE HIDRAULICO"
+            Visible: =pop2
+            Width: =322
+            X: =108
+            Y: =67
+      - icon14_11:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(215, 58, 60, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop2
+            Width: =42
+            X: =728
+            Y: =62
+      - ButtonCanvas4_6:
+          Control: Button@0.0.44
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Secondary
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_3.AllItems, 
+                  Collect(colAllSelectedItems, ThisRecord)
+              );
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_3.Value });
+
+            Text: ="Selec Todo"
+            Visible: =pop2
+            Width: =46
+            X: =718
+            Y: =133
+      - ButtonCanvas4_7:
+          Control: Button@0.0.44
+          Properties:
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_3.AllItems,
+                  RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
+              );
+
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_3.Value });
+
+
+
+
+
+
+
+            Text: ="Borrar Todo"
+            Visible: =pop2
+            Width: =41
+            X: =667
+            Y: =133
+      - ComboBox1_4:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            Height: =33
+            InputTextPlaceholder: ="Tamaño"
+            Items: |-
+              =Sort(
+                  ForAll(
+                      Distinct(
+                          Filter(
+                              colFilteredTanqueHidraulico,
+                              Solucion = ComboBox2_2.Selected.Results
+                          ),
+                          Tamaño
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop2
+            Width: =103
+            X: =251
+            Y: =141
+      - icon14_12:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(52, 152, 47, 1)
+            Height: =28
+            Icon: =Icon.Reset
+            OnSelect: =Reset(ComboBox2_2);Reset(ComboBox1_4)
+            TabIndex: =0
+            Visible: =pop2
+            Width: =42
+            X: =676
+            Y: =64
+      - ComboBox2_2:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            Height: =34
+            InputTextPlaceholder: ="Sugerencias"
+            Items: |-
+              =Filter(
+                  ForAll(
+                      Distinct(
+                          colFilteredTanqueHidraulico,
+                          Solucion
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop2
+            Width: =119
+            X: =102
+            Y: =141
+      - Gallery2_3:
+          Control: Gallery@2.15.0
+          Variant: BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0
+          Properties:
+            Fill: =Color.LimeGreen
+            Height: =545
+            Items: |-
+              =Filter(
+                  colFilteredTanqueHidraulico, 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_2.Selected.Results && Tamaño = ComboBox1_4.Selected.Results 
+              )
+            TemplateSize: =123
+            Visible: =pop2
+            Width: =668
+            X: =108
+            Y: =190
+          Children:
+            - Title3_7:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =45
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo: "&ThisItem.Codigo
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =104
+                  X: =78
+                  Y: =70
+            - Subtitle2_3:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =41
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: =ThisItem.Nombre
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =407
+                  X: =4
+            - Body2_3:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =45
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="ID: "&ThisItem.Id
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =53
+                  X: =4
+                  Y: =68
+            - Separator2_3:
+                Control: Rectangle@2.3.0
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Height: =8
+                  OnSelect: =Select(Parent)
+                  Width: =Parent.TemplateWidth
+                  Y: =Parent.TemplateHeight - Self.Height
+            - Rectangle2_4:
+                Control: Rectangle@2.3.0
+                Properties:
+                  Fill: =App.Theme.Colors.Darker30
+                  Height: =Parent.TemplateHeight - Separator2_3.Height
+                  OnSelect: =Select(Parent)
+                  Visible: =ThisItem.IsSelected
+                  Width: =4
+            - Title3_8:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =45
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =94
+                  X: =203
+                  Y: =68
+            - Checkbox1_3:
+                Control: Classic/CheckBox@2.1.0
+                Properties:
+                  Default: =varCheckboxChecked1
+                  Height: =47
+                  OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
+                  OnSelect: =Select(Parent)
+                  OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
+                  Text: =
+                  Width: =36
+                  X: =611
+                  Y: =66
+            - ButtonCanvas2_9:
+                Control: Button@0.0.44
+                Properties:
+                  FontSize: =9
+                  Height: =39
+                  OnSelect: =Launch(Title3_30.Text)
+                  Text: ="IR AL RECURSO"
+                  Visible: =!IsBlank(Title3_30.Text)
+                  Width: =92
+                  X: =503
+                  Y: =66
+            - Title3_30:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =49
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: =ThisItem.Adjuntos
+                  VerticalAlign: =VerticalAlign.Top
+                  Visible: =false
+                  Width: =75
+                  X: =307
+                  Y: =51
+            - Title3_168:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =54
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: |-
+                    ="Comentario: "&ThisItem.Diagnostico
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =231
+                  X: =428
+            - Image11_3:
+                Control: Image@2.2.3
+                Properties:
+                  Height: =51
+                  Image: =Gallery2_3.Selected.Recurso
+                  OnSelect: =Set(HoverImage24, true)
+                  Width: =96
+                  X: =411
+                  Y: =62
+      - Label9_39:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =Label9_39.BorderColor
+            HoverColor: =Label9_39.Color
+            HoverFill: =Label9_39.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_39.BorderColor
+            PressedColor: =Label9_39.Color
+            PressedFill: =Label9_39.Fill
+            Size: =15
+            Text: ="TANQUE DE COMBUSTIBLE"
+            Visible: =pop3
+            Width: =322
+            X: =691
+            Y: =69
+      - icon14_13:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(215, 58, 60, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop3
+            Width: =42
+            X: =1316
+            Y: =69
+      - ButtonCanvas4_8:
+          Control: Button@0.0.44
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Secondary
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_4.AllItems, 
+                  Collect(colAllSelectedItems, ThisRecord)
+              );
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_4.Value });
+
+            Text: ="Selec Todo"
+            Visible: =pop3
+            Width: =46
+            X: =1306
+            Y: =124
+      - ButtonCanvas4_9:
+          Control: Button@0.0.44
+          Properties:
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_4.AllItems,
+                  RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
+              );
+
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_4.Value });
+
+
+
+
+
+
+
+            Text: ="Borrar Todo"
+            Visible: =pop3
+            Width: =41
+            X: =1255
+            Y: =124
+      - ComboBox1_5:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            Height: =33
+            InputTextPlaceholder: ="Tamaño"
+            Items: |-
+              =Sort(
+                  ForAll(
+                      Distinct(
+                          Filter(
+                              colFilteredTanqueDeCombustible,
+                              Solucion = ComboBox2_3.Selected.Results
+                          ),
+                          Tamaño
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop3
+            Width: =103
+            X: =815
+            Y: =133
+      - icon14_14:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(52, 152, 47, 1)
+            Height: =28
+            Icon: =Icon.Reset
+            OnSelect: =Reset(ComboBox2_3);Reset(ComboBox1_5)
+            TabIndex: =0
+            Visible: =pop3
+            Width: =42
+            X: =1264
+            Y: =71
+      - ComboBox2_3:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            Height: =37
+            InputTextPlaceholder: ="Sugerencias"
+            Items: |-
+              =Filter(
+                  ForAll(
+                      Distinct(
+                          colFilteredTanqueDeCombustible,
+                          Solucion
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop3
+            Width: =116
+            X: =684
+            Y: =130
+      - Gallery2_4:
+          Control: Gallery@2.15.0
+          Variant: BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0
+          Properties:
+            Fill: =RGBA(161, 145, 250, 0.22)
+            Height: =565
+            Items: |-
+              =Filter(
+                  colFilteredTanqueDeCombustible, 
+                  field_5 = "Excavadora" && field_6 = ComboBox2_3.Selected.Results && field_7 = ComboBox1_5.Selected.Results 
+              )
+            ShowNavigation: =true
+            TemplateSize: =124
+            Visible: =pop3
+            Width: =671
+            X: =684
+            Y: =185
+          Children:
+            - Title3_9:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =48
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo: "&ThisItem.Codigo
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =104
+                  X: =84
+                  Y: =65
+            - Subtitle2_4:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =54
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: =ThisItem.Nombre
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =421
+                  X: =4
+            - Body2_4:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =48
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="ID: "&ThisItem.Id
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =53
+                  X: =17
+                  Y: =65
+            - Separator2_4:
+                Control: Rectangle@2.3.0
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Height: =8
+                  OnSelect: =Select(Parent)
+                  Width: =Parent.TemplateWidth
+                  Y: =Parent.TemplateHeight - Self.Height
+            - Rectangle2_5:
+                Control: Rectangle@2.3.0
+                Properties:
+                  Fill: =App.Theme.Colors.Darker30
+                  Height: =Parent.TemplateHeight - Separator2_4.Height
+                  OnSelect: =Select(Parent)
+                  Visible: =ThisItem.IsSelected
+                  Width: =4
+            - Title3_10:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =48
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =92
+                  X: =203
+                  Y: =68
+            - Checkbox1_4:
+                Control: Classic/CheckBox@2.1.0
+                Properties:
+                  Default: =varCheckboxChecked1
+                  Height: =45
+                  OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
+                  OnSelect: =Select(Parent)
+                  OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
+                  Text: =
+                  Width: =39
+                  X: =619
+                  Y: =56
+            - Title3_99:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =54
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: |-
+                    ="Comentario: "&ThisItem.Diagnostico
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =231
+                  X: =430
+            - Image11_2:
+                Control: Image@2.2.3
+                Properties:
+                  Height: =51
+                  Image: =Gallery2_4.Selected.Recurso
+                  OnSelect: =Set(HoverImage23, true)
+                  Width: =96
+                  X: =430
+                  Y: =63
+            - Title3_167:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =34
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: =ThisItem.Adjuntos
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =75
+                  X: =331
+                  Y: =67
+            - ButtonCanvas2_83:
+                Control: Button@0.0.44
+                Properties:
+                  FontSize: =9
+                  Height: =43
+                  OnSelect: =Launch(Title3_167.Text)
+                  Text: ="IR AL RECURSO"
+                  Visible: =!IsBlank(Title3_167.Text)
+                  Width: =55
+                  X: =545
+                  Y: =65
+      - Label9_40:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =Label9_40.BorderColor
+            HoverColor: =Label9_40.Color
+            HoverFill: =Label9_40.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_40.BorderColor
+            PressedColor: =Label9_40.Color
+            PressedFill: =Label9_40.Fill
+            Size: =15
+            Text: ="TANQUE DE COMBUSTIBLE"
+            Visible: =pop4
+            Width: =322
+            X: =928
+            Y: =78
+      - icon14_15:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(215, 58, 60, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop4
+            Width: =42
+            X: =743
+            Y: =65
+      - ButtonCanvas4_10:
+          Control: Button@0.0.44
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Secondary
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_5.AllItems, 
+                  Collect(colAllSelectedItems, ThisRecord)
+              );
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_5.Value });
+
+            Text: ="Selec Todo"
+            Visible: =pop4
+            Width: =46
+            X: =733
+            Y: =115
+      - ButtonCanvas4_11:
+          Control: Button@0.0.44
+          Properties:
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_5.AllItems,
+                  RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
+              );
+
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_5.Value });
+
+
+
+
+
+
+
+            Text: ="Borrar Todo"
+            Visible: =pop4
+            Width: =41
+            X: =682
+            Y: =115
+      - ComboBox1_6:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            Height: =33
+            InputTextPlaceholder: ="Tamaño"
+            Items: |-
+              =Sort(
+                  ForAll(
+                      Distinct(
+                          Filter(
+                              colFilteredBancoValvulas,
+                              field_6 = ComboBox2_4.Selected.Results
+                          ),
+                          field_7
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop4
+            Width: =103
+            X: =259
+            Y: =123
+      - icon14_16:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(52, 152, 47, 1)
+            Height: =28
+            Icon: =Icon.Reset
+            OnSelect: =Reset(ComboBox2_4);Reset(ComboBox1_6)
+            TabIndex: =0
+            Visible: =pop4
+            Width: =42
+            X: =691
+            Y: =67
+      - ComboBox2_4:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            FontWeight: =FontWeight.Lighter
+            Height: =34
+            InputTextPlaceholder: ="Sugerencias"
+            Items: |-
+              =Filter(
+                  ForAll(
+                      Distinct(
+                          colFilteredBancoValvulas,
+                          field_6
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop4
+            Width: =130
+            X: =112
+            Y: =120
+      - Gallery2_5:
+          Control: Gallery@2.15.0
+          Variant: BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0
+          Properties:
+            Fill: =Color.OrangeRed
+            Height: =565
+            Items: |-
+              =Filter(
+                  colFilteredBancoValvulas, 
+                  field_5 = "Excavadora" && field_6 = ComboBox2_4.Selected.Results && field_7 = ComboBox1_6.Selected.Results 
+              )
+            TemplateSize: =132
+            Visible: =pop4
+            Width: =676
+            X: =112
+            Y: =171
+          Children:
+            - Title3_11:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =30
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo: "&ThisItem.Codigo
+                  VerticalAlign: =VerticalAlign.Top
+                  X: =57
+                  Y: =82
+            - Subtitle2_5:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =62
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: =ThisItem.Nombre
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =407
+                  X: =4
+            - Body2_5:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =32
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="ID: "&ThisItem.Id
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =53
+                  X: =4
+                  Y: =80
+            - Separator2_5:
+                Control: Rectangle@2.3.0
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Height: =8
+                  OnSelect: =Select(Parent)
+                  Width: =Parent.TemplateWidth
+                  Y: =Parent.TemplateHeight - Self.Height
+            - Checkbox1_5:
+                Control: Classic/CheckBox@2.1.0
+                Properties:
+                  Default: =varCheckboxChecked1
+                  Height: =45
+                  OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
+                  OnSelect: =Select(Parent)
+                  OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
+                  Text: =
+                  Width: =39
+                  X: =615
+                  Y: =74
+            - Title3_107:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =34
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =105
+                  X: =207
+                  Y: =82
+            - ButtonCanvas2_13:
+                Control: Button@0.0.44
+                Properties:
+                  FontSize: =9
+                  Height: =40
+                  OnSelect: =Launch(Title3_175.Text)
+                  Text: ="IR AL RECURSO"
+                  Visible: =!IsBlank(Title3_175.Text)
+                  Width: =61
+                  X: =540
+                  Y: =79
+            - Title3_175:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =44
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: =ThisItem.Adjuntos
+                  VerticalAlign: =VerticalAlign.Top
+                  Visible: =false
+                  Width: =60
+                  X: =381
+                  Y: =72
+            - Title3_176:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =65
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: |-
+                    ="Comentario: "&ThisItem.Diagnostico
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =231
+                  X: =423
+            - Image11_7:
+                Control: Image@2.2.3
+                Properties:
+                  Height: =51
+                  Image: =Gallery2_5.Selected.Recurso
+                  OnSelect: =Set(HoverImage28, true)
+                  Width: =80
+                  X: =447
+                  Y: =71
+      - Label9_41:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =Label9_41.BorderColor
+            HoverColor: =Label9_41.Color
+            HoverFill: =Label9_41.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_41.BorderColor
+            PressedColor: =Label9_41.Color
+            PressedFill: =Label9_41.Fill
+            Size: =15
+            Text: ="BANCO DE VALVULAS"
+            Visible: =pop4
+            Width: =322
+            X: =116
+            Y: =63
+      - Label9_43:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =Label9_43.BorderColor
+            HoverColor: =Label9_43.Color
+            HoverFill: =Label9_43.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_43.BorderColor
+            PressedColor: =Label9_43.Color
+            PressedFill: =Label9_43.Fill
+            Size: =15
+            Text: ="CENTER JOINT"
+            Visible: =pop6
+            Width: =322
+            X: =681
+            Y: =59
+      - icon14_21:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(215, 58, 60, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false})
+            TabIndex: =0
+            Visible: =pop5
+            Width: =42
+            X: =719
+            Y: =66
+      - ButtonCanvas4_16:
+          Control: Button@0.0.44
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Secondary
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_8.AllItems, 
+                  Collect(colAllSelectedItems, ThisRecord)
+              );
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_8.Value });
+
+            Text: ="Selec Todo"
+            Visible: =pop5
+            Width: =46
+            X: =709
+            Y: =121
+      - ButtonCanvas4_17:
+          Control: Button@0.0.44
+          Properties:
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_8.AllItems,
+                  RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
+              );
+
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_8.Value });
+
+
+
+
+
+
+
+            Text: ="Borrar Todo"
+            Visible: =pop5
+            Width: =41
+            X: =658
+            Y: =121
+      - ComboBox1_9:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            Height: =33
+            InputTextPlaceholder: ="Tamaño"
+            Items: |-
+              =Sort(
+                  ForAll(
+                      Distinct(
+                          Filter(
+                              colFilteredBancoSolenoide,
+                              field_6 = ComboBox2_7.Selected.Results
+                          ),
+                          field_7
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop5
+            Width: =117
+            X: =240
+            Y: =133
+      - icon14_22:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(52, 152, 47, 1)
+            Height: =28
+            Icon: =Icon.Reset
+            OnSelect: =Reset(ComboBox2_7);Reset(ComboBox1_9)
+            TabIndex: =0
+            Visible: =pop5
+            Width: =42
+            X: =667
+            Y: =68
+      - ComboBox2_7:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            FontWeight: =FontWeight.Lighter
+            Height: =33
+            InputTextPlaceholder: ="Sugerencias"
+            Items: |-
+              =Filter(
+                  ForAll(
+                      Distinct(
+                          colFilteredBancoSolenoide,
+                          field_6
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop5
+            Width: =117
+            X: =99
+            Y: =133
+      - Gallery2_8:
+          Control: Gallery@2.15.0
+          Variant: BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0
+          Properties:
+            Fill: =Color.DarkOrange
+            Height: =565
+            Items: |-
+              =Filter(
+                  colFilteredBancoSolenoide, 
+                  field_5 = "Excavadora" && field_6 = ComboBox2_7.Selected.Results && field_7 = ComboBox1_9.Selected.Results 
+              )
+            TemplateSize: =114
+            Visible: =pop5
+            Width: =665
+            X: =99
+            Y: =174
+          Children:
+            - Title3_17:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =24
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo: "&ThisItem.Codigo
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =140
+                  X: =78
+                  Y: =80
+            - Subtitle2_8:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =52
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: =ThisItem.Nombre
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =398
+                  X: =4
+            - Body2_8:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =24
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="ID: "&ThisItem.Id
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =53
+                  X: =16
+                  Y: =80
+            - Separator2_8:
+                Control: Rectangle@2.3.0
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Height: =8
+                  OnSelect: =Select(Parent)
+                  Width: =Parent.TemplateWidth
+                  Y: =Parent.TemplateHeight - Self.Height
+            - Checkbox1_8:
+                Control: Classic/CheckBox@2.1.0
+                Properties:
+                  Default: =varCheckboxChecked1
+                  Height: =45
+                  OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
+                  OnSelect: =Select(Parent)
+                  OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
+                  Text: =
+                  Width: =39
+                  X: =612
+                  Y: =62
+            - Title3_105:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =38
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =94
+                  X: =222
+                  Y: =65
+            - ButtonCanvas2_12:
+                Control: Button@0.0.44
+                Properties:
+                  FontSize: =9
+                  Height: =40
+                  OnSelect: =Launch(Title3_173.Text)
+                  Text: ="IR AL RECURSO"
+                  Visible: =!IsBlank(Title3_173.Text)
+                  Width: =61
+                  X: =524
+                  Y: =66
+            - Title3_173:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =44
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: =ThisItem.Adjuntos
+                  VerticalAlign: =VerticalAlign.Top
+                  Visible: =false
+                  Width: =60
+                  X: =380
+                  Y: =62
+            - Title3_174:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =52
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: |-
+                    ="Comentario: "&ThisItem.Diagnostico
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =231
+                  X: =420
+            - Image11_6:
+                Control: Image@2.2.3
+                Properties:
+                  Height: =41
+                  Image: =Gallery2_8.Selected.Recurso
+                  OnSelect: =Set(HoverImage27, true)
+                  Width: =80
+                  X: =420
+                  Y: =65
+      - Label9_44:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =Label9_44.BorderColor
+            HoverColor: =Label9_44.Color
+            HoverFill: =Label9_44.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_44.BorderColor
+            PressedColor: =Label9_44.Color
+            PressedFill: =Label9_44.Fill
+            Size: =15
+            Text: ="BANCO DE SOLENOIDE"
+            Visible: =pop5
+            Width: =322
+            X: =103
+            Y: =66
+      - icon14_23:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(215, 58, 60, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false,pop5:false,pop6:false})
+            TabIndex: =0
+            Visible: =pop6
+            Width: =42
+            X: =1309
+            Y: =59
+      - ButtonCanvas4_18:
+          Control: Button@0.0.44
+          Properties:
+            Appearance: ='ButtonCanvas.Appearance'.Secondary
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_9.AllItems, 
+                  Collect(colAllSelectedItems, ThisRecord)
+              );
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_9.Value });
+
+            Text: ="Selec Todo"
+            Visible: =pop6
+            Width: =46
+            X: =1299
+            Y: =114
+      - ButtonCanvas4_19:
+          Control: Button@0.0.44
+          Properties:
+            FontSize: =9
+            Height: =38
+            OnSelect: |+
+              =ForAll(
+                  Gallery2_9.AllItems,
+                  RemoveIf(colAllSelectedItems, ID = ThisRecord.ID)
+              );
+
+              UpdateContext({ varCheckboxChecked1: !Checkbox1_9.Value });
+
+
+
+
+
+
+
+            Text: ="Borrar Todo"
+            Visible: =pop6
+            Width: =41
+            X: =1248
+            Y: =114
+      - ComboBox1_10:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            Height: =33
+            InputTextPlaceholder: ="Tamaño"
+            Items: |-
+              =Sort(
+                  ForAll(
+                      Distinct(
+                          Filter(
+                              colFilteredCenterJoint,
+                              field_6 = ComboBox2_8.Selected.Results
+                          ),
+                          field_7
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop6
+            Width: =103
+            X: =844
+            Y: =123
+      - icon14_24:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(52, 152, 47, 1)
+            Height: =28
+            Icon: =Icon.Reset
+            OnSelect: =Reset(ComboBox2_8);Reset(ComboBox1_10)
+            TabIndex: =0
+            Visible: =pop6
+            Width: =42
+            X: =1257
+            Y: =61
+      - ComboBox2_8:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Results"]
+            Height: =33
+            InputTextPlaceholder: ="Sugerencias"
+            Items: |-
+              =Filter(
+                  ForAll(
+                      Distinct(
+                          colFilteredCenterJoint,
+                          field_6
+                      ),
+                      {Results: ThisRecord.Value}
+                  ),
+                  Results
+              )
+            PressedColor: =RGBA(255, 255, 255, 1)
+            SearchFields: =["Results"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            Size: =10
+            Visible: =pop6
+            Width: =133
+            X: =689
+            Y: =123
+      - Gallery2_9:
+          Control: Gallery@2.15.0
+          Variant: BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0
+          Properties:
+            Fill: =Color.Khaki
+            Height: =565
+            Items: |-
+              =Filter(
+                  colFilteredCenterJoint, 
+                  field_5 = "Excavadora" && field_6 = ComboBox2_8.Selected.Results && field_7 = ComboBox1_10.Selected.Results 
+              )
+            TemplateSize: =126
+            Visible: =pop6
+            Width: =677
+            X: =681
+            Y: =172
+          Children:
+            - Title3_19:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo: "&ThisItem.Codigo
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =104
+                  X: =76
+                  Y: =73
+            - Subtitle2_9:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =56
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: =ThisItem.Nombre
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =438
+                  X: =4
+            - Body2_9:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="ID: "&ThisItem.Id
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =53
+                  X: =4
+                  Y: =73
+            - Separator2_9:
+                Control: Rectangle@2.3.0
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Height: =8
+                  OnSelect: =Select(Parent)
+                  Width: =Parent.TemplateWidth
+                  Y: =Parent.TemplateHeight - Self.Height
+            - Checkbox1_9:
+                Control: Classic/CheckBox@2.1.0
+                Properties:
+                  Default: =varCheckboxChecked1
+                  Height: =45
+                  OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
+                  OnSelect: =Select(Parent)
+                  OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
+                  Text: =
+                  Width: =39
+                  X: =626
+                  Y: =73
+            - Title3_103:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =48
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo Alterno: "&ThisItem.'Codigo Alterno'
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =92
+                  X: =197
+                  Y: =69
+            - ButtonCanvas2_11:
+                Control: Button@0.0.44
+                Properties:
+                  FontSize: =9
+                  Height: =40
+                  OnSelect: =Launch(Title3_171.Text)
+                  Text: ="IR AL RECURSO"
+                  Visible: =!IsBlank(Title3_171.Text)
+                  Width: =61
+                  X: =550
+                  Y: =73
+            - Title3_171:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =44
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: =ThisItem.Adjuntos
+                  VerticalAlign: =VerticalAlign.Top
+                  Visible: =false
+                  Width: =60
+                  X: =346
+                  Y: =61
+            - Title3_172:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =61
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =10
+                  Text: |-
+                    ="Comentario: "&ThisItem.Diagnostico
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =231
+                  X: =446
+            - Image11_5:
+                Control: Image@2.2.3
+                Properties:
+                  Height: =41
+                  Image: =Gallery2_9.Selected.Recurso
+                  OnSelect: =Set(HoverImage26, true)
+                  Width: =89
+                  X: =446
+                  Y: =72
+      - Image13_2:
+          Control: Image@2.2.3
+          Properties:
+            Height: =472
+            Image: =Gallery2_4.Selected.Recurso
+            OnSelect: =Set(HoverImage23, true);Set(HoverImage23, false)
+            Visible: =HoverImage23
+            Width: =679
+            X: =673
+            Y: =185
+      - Image13_3:
+          Control: Image@2.2.3
+          Properties:
+            Height: =472
+            Image: =Gallery2_3.Selected.Recurso
+            OnSelect: =Set(HoverImage24, true);Set(HoverImage24, false)
+            Visible: =HoverImage24
+            Width: =660
+            X: =123
+            Y: =204
+      - Image13_4:
+          Control: Image@2.2.3
+          Properties:
+            Height: =389
+            Image: =Gallery2_2.Selected.Recurso
+            OnSelect: =Set(HoverImage25, true);Set(HoverImage25, false)
+            Visible: =HoverImage25
+            Width: =621
+            X: =143
+            Y: =307
+      - Image13_5:
+          Control: Image@2.2.3
+          Properties:
+            Height: =389
+            Image: =Gallery2_9.Selected.Recurso
+            OnSelect: =Set(HoverImage26, true);Set(HoverImage26, false)
+            Visible: =HoverImage26
+            Width: =621
+            X: =163
+            Y: =327
+      - Image13_6:
+          Control: Image@2.2.3
+          Properties:
+            Height: =415
+            Image: =Gallery2_8.Selected.Recurso
+            OnSelect: =Set(HoverImage27, true);Set(HoverImage27, false)
+            Visible: =HoverImage27
+            Width: =672
+            X: =92
+            Y: =281
+      - Image13_7:
+          Control: Image@2.2.3
+          Properties:
+            Height: =402
+            Image: =Gallery2_5.Selected.Recurso
+            OnSelect: =Set(HoverImage28, true);Set(HoverImage28, false)
+            Visible: =HoverImage28
+            Width: =672
+            X: =111
+            Y: =307
+      - ButtonCanvas1_1:
+          Control: Button@0.0.44
+          Properties:
+            BasePaletteColor: =RGBA(8, 222, 8, 1)
+            FontSize: =11
+            Height: =58
+            OnSelect: =UpdateContext({pop10:true})
+            Text: ="Buscar por codigo"
+            Width: =49
+            X: =5
+            Y: =269
+      - Rectangle4_23:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_23.Fill
+            Fill: =RGBA(214, 221, 224, 1)
+            Height: =216
+            HoverFill: =Rectangle4_23.Fill
+            PressedFill: =Rectangle4_23.Fill
+            TabIndex: =0
+            Visible: =pop10
+            Width: =424
+            X: =1
+            Y: =513
+      - icon14_82:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(215, 58, 60, 1)
+            Height: =26
+            Icon: =Icon.Cancel
+            OnSelect: =UpdateContext({pop10:false})
+            TabIndex: =0
+            Visible: =pop10
+            Width: =42
+            X: =361
+            Y: =525
+      - icon14_83:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(52, 152, 47, 1)
+            Height: =26
+            Icon: =Icon.Reset
+            OnSelect: =Reset(TextInputCanvas1_1)
+            TabIndex: =0
+            Visible: =pop10
+            Width: =42
+            X: =309
+            Y: =527
+      - Gallery2_33:
+          Control: Gallery@2.15.0
+          Variant: BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0
+          Properties:
+            Fill: =RGBA(214, 221, 224, 1)
+            Height: =127
+            Items: |-
+              =Filter(
+                  ColeccionUnificada,
+                  !IsBlank(TextInputCanvas1_1.Value) && TextInputCanvas1_1.Value in field_2
+              )
+            TemplateSize: =100
+            Visible: =pop10
+            Width: =390
+            X: =13
+            Y: =583
+          Children:
+            - Title3_101:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =33
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo: "&ThisItem.field_2
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =104
+                  X: =87
+                  Y: =65
+            - Subtitle2_33:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =51
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: =ThisItem.Title
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =232
+                  X: =3
+            - Body2_34:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =19
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="ID: "&ThisItem.field_0
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =53
+                  X: =14
+                  Y: =68
+            - Separator2_33:
+                Control: Rectangle@2.3.0
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Height: =4
+                  OnSelect: =Select(Parent)
+                  Width: =390
+                  Y: =Parent.TemplateHeight - Self.Height
+            - Checkbox1_33:
+                Control: Classic/CheckBox@2.1.0
+                Properties:
+                  Default: =varCheckboxChecked1
+                  Height: =42
+                  OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
+                  OnSelect: =Select(Parent)
+                  OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
+                  Text: =
+                  Width: =48
+                  X: =342
+                  Y: =52
+            - Title3_94:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =52
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Comentario: "&ThisItem.Diagnostico
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =142
+                  X: =248
+            - Image11_36:
+                Control: Image@2.2.3
+                Properties:
+                  Height: =34
+                  Image: =Gallery2_1.Selected.Recurso
+                  OnSelect: =Set(HoverImage21, true)
+                  Width: =67
+                  X: =204
+                  Y: =40
+            - ButtonCanvas2_85:
+                Control: Button@0.0.44
+                Properties:
+                  FontSize: =9
+                  Height: =38
+                  OnSelect: =Launch(Title3_26.Text)
+                  Text: ="IR AL RECURSO"
+                  Visible: =!IsBlank(Title3_26.Text)
+                  Width: =42
+                  X: =288
+                  Y: =36
+            - Title3_102:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =49
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: =ThisItem.Recurso
+                  VerticalAlign: =VerticalAlign.Top
+                  Visible: =false
+                  Width: =42
+                  X: =162
+                  Y: =31
+      - TextInputCanvas1_1:
+          Control: TextInput@0.0.53
+          Properties:
+            Height: =28
+            Placeholder: ="Buscar Codigo"
+            Visible: =pop10
+            Width: =252
+            X: =22
+            Y: =525
+      - Icon1_2:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Height: =26
+            Icon: =Icon.Search
+            Visible: =pop10
+            Width: =33
+            X: =241
+            Y: =525

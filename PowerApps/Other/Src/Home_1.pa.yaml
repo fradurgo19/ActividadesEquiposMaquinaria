@@ -1,0 +1,169 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Home_1:
+    Properties:
+      Height: =Max(App.Height, App.DesignHeight)
+      OnVisible: |-
+        =Clear(colAllSelectedItems);
+        Patch(
+            ActividadIniciodeApp, 
+            Defaults(ActividadIniciodeApp),
+            {
+                'UserID ': User().Email, 
+                'Timestamp ': DateAdd(Now(), -5, TimeUnit.Hours),     
+                'AppName ': "Actividades Mtto Maquinaria" 
+            }
+        )
+      Width: =Max(App.Width, App.DesignWidth)
+    Children:
+      - Image15_1:
+          Control: Image@2.2.3
+          Properties:
+            Height: =536
+            Image: =Cargar
+            Visible: =varCargar
+            Width: =1366
+      - Rectangle14_1:
+          Control: Rectangle@2.3.0
+          Properties:
+            DisabledFill: =Rectangle14_1.Fill
+            Fill: =App.Theme.Colors.Darker30
+            Height: =232
+            HoverFill: =Rectangle14_1.Fill
+            PressedFill: =Rectangle14_1.Fill
+            TabIndex: =0
+            Width: =1366
+            Y: =536
+      - Image3_1:
+          Control: Image@2.2.3
+          Properties:
+            ApplyEXIFOrientation: =false
+            AutoDisableOnSelect: =false
+            Height: =68.1428571428571
+            Image: ='Captura de pantalla 2024-01-12 082706'
+            Width: =264.13
+            X: =290.81
+            Y: =670.333333333334
+      - Label2_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =TextPosition.Left
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Lighter
+            Height: =77
+            HoverBorderColor: =Label2_1.BorderColor
+            HoverColor: =Label2_1.Color
+            HoverFill: =Label2_1.Fill
+            PaddingRight: =6.67
+            PaddingTop: =6.67
+            PressedBorderColor: =Label2_1.BorderColor
+            PressedColor: =Label2_1.Color
+            PressedFill: =Label2_1.Fill
+            Size: =18
+            Text: ="TEMPARIO"
+            Width: =184.09
+            X: =50.02
+            Y: =663.5
+      - Label1_38:
+          Control: Label@2.5.1
+          Properties:
+            Align: =TextPosition.Left
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =129
+            HoverBorderColor: =Label1_38.BorderColor
+            HoverColor: =Label1_38.Color
+            HoverFill: =Label1_38.Fill
+            OnSelect: =
+            PaddingLeft: =15
+            PaddingRight: =20.01
+            PressedBorderColor: =Label1_38.BorderColor
+            PressedColor: =Label1_38.Color
+            PressedFill: =Label1_38.Fill
+            Size: =16
+            Text: "=\"\U0001F527 Actividades de Mantenimiento/Reparación de Maquinarias es tu herramienta esencial para el mantenimiento y reparación de máquinas. Navega por las partes de la maquinaria, selecciona componentes específicos y accede a actividades detalladas de reparación o instalación con solo un clic.\""
+            VerticalAlign: =VerticalAlign.Top
+            Width: =777.38
+            X: =571.95
+            Y: =576
+      - Rectangle1_5:
+          Control: Rectangle@2.3.0
+          Properties:
+            Height: =60
+            TabIndex: =0
+            Width: =2.67
+            X: =258.46
+            Y: =673
+      - BienvenidaFondo_2:
+          Control: Rectangle@2.3.0
+          Group: GroupBackground_7
+          Properties:
+            BorderColor: =RGBA(51, 51, 51, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderColor: =BienvenidaFondo_2.BorderColor
+            Height: =62
+            Width: =1366
+      - Bienvenida_2:
+          Control: Label@2.5.1
+          Group: GroupBackground_7
+          Properties:
+            BorderColor: =RGBA(51, 51, 51, 1)
+            FocusedBorderColor: =Bienvenida_2.BorderColor
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =26
+            HoverBorderColor: =Bienvenida_2.BorderColor
+            HoverColor: =Bienvenida_2.Color
+            HoverFill: =Bienvenida_2.Fill
+            LineHeight: =0
+            PressedBorderColor: =Bienvenida_2.BorderColor
+            PressedColor: =Bienvenida_2.Color
+            PressedFill: =Bienvenida_2.Fill
+            Size: =18
+            Text: ="Actividades Maquinaria"
+            Width: =350
+            X: =54
+            Y: =12
+      - Label1_36:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =76
+            Size: =30
+            Text: ="Bienvenido a la App"
+            Width: =640
+            X: =352
+            Y: =91
+      - ButtonCanvas3:
+          Control: Button@0.0.44
+          Properties:
+            AccessibleLabel: ="Ingresar"
+            BasePaletteColor: =RGBA(249, 83, 109, 1)
+            Height: =80
+            OnSelect: =Set(varCargar, true);Set(varTiempo, true)
+            Text: ="Ingresar"
+            Width: =208
+            X: =568
+            Y: =415
+      - Timer1:
+          Control: Timer@2.1.0
+          Properties:
+            AutoStart: =varTiempo
+            Color: =RGBA(255, 255, 255, 1)
+            Duration: =5000
+            Height: =70
+            HoverColor: =RGBA(255, 255, 255, 1)
+            OnTimerEnd: =Set(varCargar,false);Navigate(Home,ScreenTransition.Fade)
+            Visible: =false
+            Width: =280
+            X: =945
+            Y: =360

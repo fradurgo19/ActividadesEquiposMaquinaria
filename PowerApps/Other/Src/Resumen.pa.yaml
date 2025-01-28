@@ -1,0 +1,1356 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Resumen:
+    Properties:
+      Height: =Max(App.Height, App.DesignHeight)
+      OnVisible: |+
+        =ClearCollect(
+            colOpcionesValores,
+            { Opcion: "Mtto Correctivo", Valor: 145000 },
+            { Opcion: "Diagnostico", Valor: 145000 },
+            { Opcion: "Servicio Express / Mineria", Valor: 165000 },
+            { Opcion: "Reparación de componentes", Valor: 110000 }
+        );
+        ClearCollect(
+            colResultado, 
+            {
+                Total: "$ " & Text(
+                    Sum(
+                        Value(Label4.Text) * 
+                        If(
+                            !IsBlank(ComboBox3.Selected.Opcion),
+                            LookUp(colOpcionesValores, Opcion = ComboBox3.Selected.Opcion).Valor,
+                            0  // Valor predeterminado si no hay ninguna selección
+                        )
+                    ),
+                    "[$-en-US]#,###"
+                )
+            }
+        );
+
+
+        Label8.Text = Concat(colResultado, Total, ", ")
+
+
+
+      Width: =Max(App.Width, App.DesignWidth)
+    Children:
+      - Rectangle14_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            DisabledFill: =Rectangle14_2.Fill
+            Fill: =App.Theme.Colors.Darker30
+            Height: =72
+            HoverFill: =Rectangle14_2.Fill
+            PressedFill: =Rectangle14_2.Fill
+            TabIndex: =0
+            Width: =1366
+            Y: =696
+      - Label2_3:
+          Control: Label@2.5.1
+          Properties:
+            Align: =TextPosition.Left
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Lighter
+            Height: =77
+            HoverBorderColor: =Label2_3.BorderColor
+            HoverColor: =Label2_3.Color
+            HoverFill: =Label2_3.Fill
+            PaddingRight: =6.67
+            PaddingTop: =6.67
+            PressedBorderColor: =Label2_3.BorderColor
+            PressedColor: =Label2_3.Color
+            PressedFill: =Label2_3.Fill
+            Size: =18
+            Text: ="RESUMEN"
+            Width: =121
+            X: =50.02
+            Y: =689
+      - Rectangle1_6:
+          Control: Rectangle@2.3.0
+          Properties:
+            Height: =60
+            TabIndex: =0
+            Width: =2.67
+            X: =186
+            Y: =699
+      - Label4_1:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =46
+            OnSelect: =Back()
+            Size: =12
+            Text: ="Atras"
+            Width: =73
+            X: =66
+            Y: =4
+      - Button2_2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(68, 207, 242, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            Height: =48
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
+            OnSelect: =Launch("https://www.google.com/maps/dir//Colombia/@5.6449184,-76.81555,6z/data=!4m9!4m8!1m0!1m5!1m1!1s0x8e15a43aae1594a3:0x9a0d9a04eff2a340!2m2!1d-74.297333!2d4.570868!3e0?entry=ttu")
+            PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+            RadiusBottomLeft: =100
+            RadiusBottomRight: =100
+            RadiusTopLeft: =100
+            RadiusTopRight: =100
+            Size: =11
+            Text: ="Ir a Google Maps"
+            Width: =107
+            X: =1066
+            Y: =10
+      - Icon3:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Height: =43
+            Icon: =Icon.Reload
+            OnSelect: =Clear(colAllSelectedItems)
+            Width: =36
+            X: =903
+            Y: =9
+      - Icon4:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Height: =37
+            Icon: =Icon.Reload
+            OnSelect: =Reset(ComboBox3);Reset(TextInput1);Reset(TextInput1_1);Set(varTextoLabel8, "Calcular Valor");
+            Width: =49
+            X: =1288
+            Y: =12
+      - Label9_6:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =2
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =App.Theme.Colors.Darker30
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =42
+            Size: =12
+            Text: ="Servicio y Desplazamiento"
+            Visible: =false
+            Width: =220
+            X: =928
+            Y: =598
+      - Image7:
+          Control: Image@2.2.3
+          Properties:
+            Height: =57
+            Image: =Avtivi
+            OnSelect: =Back()
+            Width: =70
+            Y: =2
+      - Container3:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Height: =624
+            Width: =1326
+            X: =40
+            Y: =65
+          Children:
+            - Container4:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =619
+                  Width: =938
+                Children:
+                  - Container5:
+                      Control: GroupContainer@1.3.0
+                      Variant: ManualLayout
+                      Properties:
+                        Height: =50
+                        Width: =932
+                      Children:
+                        - Label4_3:
+                            Control: Label@2.5.1
+                            Group: Group2
+                            Properties:
+                              Align: =Align.Center
+                              Color: =RGBA(255, 255, 255, 1)
+                              Fill: =App.Theme.Colors.Lighter10
+                              FontWeight: =FontWeight.Bold
+                              Height: =50
+                              Size: =10
+                              Text: ="Id"
+                              Width: =45
+                        - Label4_4:
+                            Control: Label@2.5.1
+                            Group: Group2
+                            Properties:
+                              Align: =Align.Center
+                              Color: =RGBA(255, 255, 255, 1)
+                              Fill: =App.Theme.Colors.Lighter10
+                              FontWeight: =FontWeight.Bold
+                              Height: =49
+                              Size: =9
+                              Text: ="Codigo"
+                              Width: =71
+                              X: =45
+                        - Label4_5:
+                            Control: Label@2.5.1
+                            Group: Group2
+                            Properties:
+                              Align: =Align.Center
+                              Color: =RGBA(255, 255, 255, 1)
+                              Fill: =App.Theme.Colors.Lighter10
+                              FontWeight: =FontWeight.Bold
+                              Height: =49
+                              Size: =9
+                              Text: ="Alterno"
+                              Width: =87
+                              X: =116
+                        - Label4_6:
+                            Control: Label@2.5.1
+                            Group: Group2
+                            Properties:
+                              Align: =Align.Center
+                              Color: =RGBA(255, 255, 255, 1)
+                              Fill: =App.Theme.Colors.Lighter10
+                              FontWeight: =FontWeight.Bold
+                              Height: =49
+                              Size: =9
+                              Text: ="Actividad"
+                              Width: =362
+                              X: =203
+                        - Label4_7:
+                            Control: Label@2.5.1
+                            Group: Group2
+                            Properties:
+                              Align: =Align.Center
+                              Color: =RGBA(255, 255, 255, 1)
+                              Fill: =App.Theme.Colors.Lighter10
+                              FontWeight: =FontWeight.Bold
+                              Height: =49
+                              Size: =9
+                              Text: ="Tiempo"
+                              Width: =69
+                              X: =565
+                        - Label4_8:
+                            Control: Label@2.5.1
+                            Group: Group2
+                            Properties:
+                              Align: =Align.Center
+                              Color: =RGBA(255, 255, 255, 1)
+                              Fill: =App.Theme.Colors.Lighter10
+                              FontWeight: =FontWeight.Bold
+                              Height: =49
+                              Size: =9
+                              Text: |-
+                                ="Eliminar
+                                "
+                              Width: =73
+                              X: =859
+                        - Label4_9:
+                            Control: Label@2.5.1
+                            Group: Group2
+                            Properties:
+                              Align: =Align.Center
+                              Color: =RGBA(255, 255, 255, 1)
+                              Fill: =App.Theme.Colors.Lighter10
+                              FontWeight: =FontWeight.Bold
+                              Height: =49
+                              Size: =9
+                              Text: ="Cantidad"
+                              Width: =71
+                              X: =634
+                        - Label4_10:
+                            Control: Label@2.5.1
+                            Group: Group2
+                            Properties:
+                              Align: =Align.Center
+                              Color: =RGBA(255, 255, 255, 1)
+                              Fill: =App.Theme.Colors.Lighter10
+                              FontWeight: =FontWeight.Bold
+                              Height: =49
+                              Size: =9
+                              Text: ="Total Tiempo"
+                              Width: =89
+                              X: =706
+                        - Label4_21:
+                            Control: Label@2.5.1
+                            Group: Group2
+                            Properties:
+                              Align: =Align.Center
+                              Color: =RGBA(255, 255, 255, 1)
+                              Fill: =App.Theme.Colors.Lighter10
+                              FontWeight: =FontWeight.Bold
+                              Height: =49
+                              Size: =9
+                              Text: ="Recurso"
+                              Width: =71
+                              X: =795
+                  - Gallery7:
+                      Control: Gallery@2.15.0
+                      Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
+                      Properties:
+                        BorderThickness: =1
+                        Fill: =App.Theme.Colors.Lighter20
+                        Height: =569
+                        Items: |
+                          =Sort(
+                              Distinct(colAllSelectedItems, {Title: Title, field_0: field_0, field_2: field_2, field_3: field_3, field_4: field_4, Recurso: Recurso,Adjuntos:Adjuntos}),
+                              Value.field_0
+                          )
+                        ShowNavigation: =true
+                        TemplateSize: =57
+                        Width: =932
+                        Y: =50
+                      Children:
+                        - Title10:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 255, 255, 1)
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =35
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =8
+                              Text: =ThisItem.Value.field_2
+                              Width: =76
+                              X: =46
+                              Y: =3
+                        - Subtitle7:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 255, 255, 1)
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =34
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =8
+                              Text: =ThisItem.Value.field_0
+                              Width: =42
+                              X: =4
+                              Y: =4
+                        - Separator5:
+                            Control: Rectangle@2.3.0
+                            Properties:
+                              Fill: =RGBA(255, 255, 255, 1)
+                              Height: =8
+                              OnSelect: =Select(Parent)
+                              Width: =Parent.TemplateWidth
+                              Y: =Parent.TemplateHeight - Self.Height
+                        - Rectangle4:
+                            Control: Rectangle@2.3.0
+                            Properties:
+                              Fill: =App.Theme.Colors.Darker30
+                              Height: =Parent.TemplateHeight - Separator5.Height
+                              OnSelect: =Select(Parent)
+                              Visible: =ThisItem.IsSelected
+                              Width: =4
+                        - Title10_1:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 255, 255, 1)
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =38
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =8
+                              Text: =ThisItem.Value.field_3
+                              Width: =61
+                              X: =134
+                        - Title10_2:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 255, 255, 1)
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =46
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =10
+                              Text: =ThisItem.Value.Title
+                              Width: =368
+                              X: =197
+                              Y: =3
+                        - Icon2:
+                            Control: Classic/Icon@2.5.0
+                            Properties:
+                              Color: =Color.AliceBlue
+                              Height: =27
+                              Icon: =Icon.Trash
+                              OnSelect: =RemoveIf(colAllSelectedItems, field_0 = ThisItem.Value.field_0)
+                              Width: =32
+                              X: =887
+                              Y: =6
+                        - TextInput2:
+                            Control: Classic/TextInput@2.3.2
+                            Properties:
+                              Align: =Align.Center
+                              Default: ="1"
+                              Height: =28
+                              HintText: ="1"
+                              OnSelect: =Select(Parent)
+                              Size: =11
+                              Width: =57
+                              X: =644
+                              Y: =6
+                        - Subtitle7_1:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 255, 255, 1)
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =38
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =11
+                              Text: =ThisItem.Value.field_4
+                              Width: =57
+                              X: =576
+                        - Subtitle7_2:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 255, 255, 1)
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =32
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =11
+                              Text: |
+                                =(ThisItem.Value.field_4) * Value(TextInput2.Text)
+                              Width: =72
+                              X: =712
+                              Y: =8
+                        - Subtitle7_3:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 255, 255, 1)
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =8
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =11
+                              Text: =ThisItem.Value.Recurso
+                              Visible: =false
+                              Width: =37
+                              X: =800
+                              Y: =34
+                        - ButtonCanvas2_76:
+                            Control: Button@0.0.44
+                            Properties:
+                              BasePaletteColor: =RGBA(8, 222, 8, 1)
+                              FontSize: =8
+                              Height: =26
+                              OnSelect: =Launch(Subtitle7_4.Text)
+                              Text: ="IR AL ADJUNTO"
+                              Visible: =!IsBlank(Subtitle7_4.Text)
+                              Width: =48
+                              X: =800
+                              Y: =12
+                        - Subtitle7_4:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 255, 255, 1)
+                              FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                              Height: =32
+                              OnSelect: =Select(Parent)
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =11
+                              Text: =ThisItem.Value.Adjuntos
+                              Visible: =false
+                              Width: =37
+                              X: =758
+                              Y: =8
+            - Container7:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Fill: =RGBA(139, 154, 159, 1)
+                  Height: =472
+                  Width: =387
+                  X: =938
+                  Y: =152
+                Children:
+                  - TextInput1:
+                      Control: Classic/TextInput@2.3.2
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(51, 51, 51, 1)
+                        Default: =
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =39
+                        HintText: ="Tiempo"
+                        HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+                        HoverColor: =RGBA(51, 51, 51, 1)
+                        HoverFill: =RGBA(255, 255, 255, 1)
+                        PressedBorderColor: =RGBA(105, 121, 126, 1)
+                        PressedColor: =RGBA(51, 51, 51, 1)
+                        PressedFill: =RGBA(255, 255, 255, 1)
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =12
+                        Width: =78
+                        X: =105
+                        Y: =122
+                  - TextInput1_1:
+                      Control: Classic/TextInput@2.3.2
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(51, 51, 51, 1)
+                        Default: =
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =39
+                        HintText: ="Kms"
+                        HoverBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+                        HoverColor: =RGBA(51, 51, 51, 1)
+                        HoverFill: =RGBA(255, 255, 255, 1)
+                        PressedBorderColor: =RGBA(105, 121, 126, 1)
+                        PressedColor: =RGBA(51, 51, 51, 1)
+                        PressedFill: =RGBA(255, 255, 255, 1)
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Size: =12
+                        Width: =78
+                        X: =305
+                        Y: =122
+                  - Label9_4:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =App.Theme.Colors.Darker30
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =39
+                        Size: =8
+                        Text: ="Tiempo De Desplazamiento Hrs ( 1 Trayecto)"
+                        Width: =100
+                        X: =5
+                        Y: =122
+                  - Label9_5:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =App.Theme.Colors.Darker30
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =39
+                        Size: =8
+                        Text: ="Kms Recorridos ( 1 Trayecto)"
+                        Width: =100
+                        X: =205
+                        Y: =122
+                  - TextCanvas1_1:
+                      Control: Text@0.0.50
+                      Properties:
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Size: =15
+                        Text: ="DESPLAZAMIENTO"
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =164
+                        X: =5
+                        Y: =2
+                  - Button1:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =RGBA(68, 207, 242, 1)
+                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =48
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
+                        OnSelect: |+
+                          =// Calcular las variables basadas en las entradas del usuario
+                          Set(Valor1, Value(TextInput1.Text) * 2 * 65000);
+                          Set(Valor2, Value(TextInput1_1.Text) * 2 * 1600);
+                          Set(TotalHoras, Value(TextInput1.Text) * 2 + Value(Label4.Text));
+
+                          // Calcular los días completos y horas restantes
+                          Set(DiasCompletos, Int(TotalHoras / 9));
+                          Set(HorasRestantes, Mod(TotalHoras, 9));
+
+                          // Calcular Hospedaje
+                          Set(Hospedaje, DiasCompletos * 100000);
+
+                          // Calcular Alimentacion
+                          Set(Alimentacion, 
+                              If(TotalHoras >= 9, DiasCompletos * 80000 + 
+                                  If(HorasRestantes >= 5 && HorasRestantes <= 8, 40000, 
+                                  If(HorasRestantes >= 1 && HorasRestantes <= 4, 20000, 0)),
+                              If(TotalHoras >= 5 && TotalHoras <= 8, 40000, 
+                              If(TotalHoras >= 1 && TotalHoras <= 4, 20000, 0))
+                              )
+                          );
+
+                          // Suma total de desplazamiento
+                          Set(TotalDesplazamiento, Valor1 + Valor2 + Hospedaje + Alimentacion);
+
+                          // Mostrar el resultado en Label8 con formato
+                          Label8.Text = Text(TotalDesplazamiento, "[$-es-ES]$ #,###");
+
+                          Set(varTextoLabel8, Text(TotalDesplazamiento, "[$-es-ES]$ #.###"));
+
+
+                        PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+                        RadiusBottomLeft: =100
+                        RadiusBottomRight: =100
+                        RadiusTopLeft: =100
+                        RadiusTopRight: =100
+                        Size: =10
+                        Text: ="Calcular Valor"
+                        Width: =75
+                        X: =264
+                        Y: =42
+                  - Label9_7:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =App.Theme.Colors.Darker30
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =27
+                        Size: =9
+                        Text: ="Hospedaje"
+                        Width: =153
+                        X: =29
+                        Y: =253
+                  - Label9_8:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =App.Theme.Colors.Darker30
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =27
+                        Size: =9
+                        Text: ="Alimentación"
+                        Width: =155
+                        X: =206
+                        Y: =254
+                  - Label9_9:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =App.Theme.Colors.Darker30
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =27
+                        Size: =9
+                        Text: ="Recorrido"
+                        Width: =155
+                        X: =27
+                        Y: =182
+                  - Label9_12:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =App.Theme.Colors.Darker30
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =27
+                        Size: =9
+                        Text: ="Kms"
+                        Width: =155
+                        X: =206
+                        Y: =182
+                  - Label8:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =RGBA(240, 98, 15, 1)
+                        FocusedBorderThickness: =30
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =39
+                        Size: =12
+                        Text: =varTextoLabel8
+                        Width: =160
+                        X: =29
+                        Y: =67
+                  - Label4_23:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        Fill: =RGBA(240, 98, 15, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =39
+                        Size: =12
+                        Text: ="$ " & Text(Valor1,"[$-en-US]#,###")
+                        Width: =155
+                        X: =27
+                        Y: =209
+                  - Label4_24:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        Fill: =RGBA(240, 98, 15, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =39
+                        Size: =12
+                        Text: |
+                          ="$ " & Text(Valor2,"[$-en-US]#,###")
+                        Width: =155
+                        X: =206
+                        Y: =209
+                  - Label4_25:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        Fill: =RGBA(240, 98, 15, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =39
+                        Size: =12
+                        Text: |+
+                          ="$ " & Text(Hospedaje,"[$-en-US]#,###")
+
+                        Width: =155
+                        X: =29
+                        Y: =281
+                  - Label4_26:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        Fill: =RGBA(240, 98, 15, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =39
+                        Size: =12
+                        Text: |+
+                          ="$ " & Text(Alimentacion,"[$-en-US]#,###")
+
+                        Width: =155
+                        X: =206
+                        Y: =281
+                  - Label4_28:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Lighter80
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        Fill: =App.Theme.Colors.Darker30
+                        FontWeight: =FontWeight.Bold
+                        Height: =27
+                        Size: =9
+                        Text: ="Precio de Desplazamiento"
+                        Width: =160
+                        X: =29
+                        Y: =42
+                  - Button1_1:
+                      Control: Classic/Button@2.2.0
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 0)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =RGBA(255, 255, 0, 1)
+                        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =37
+                        HoverBorderColor: =RGBA(0, 0, 0, 0)
+                        HoverColor: =RGBA(255, 255, 255, 1)
+                        HoverFill: =ColorFade(RGBA(105, 121, 126, 1), -10%)
+                        OnSelect: =
+                        PressedBorderColor: =ColorFade(RGBA(105, 121, 126, 1), -50%)
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =ColorFade(RGBA(105, 121, 126, 1), -30%)
+                        RadiusBottomLeft: =100
+                        RadiusBottomRight: =100
+                        RadiusTopLeft: =100
+                        RadiusTopRight: =100
+                        Size: =10
+                        Text: |-
+                          ="El valor total de desplazamiento ya incluye: trayecto de ida y vuelta y gastos de desplazamiento."
+                        Width: =382
+                        X: =5
+                        Y: =430
+                  - Label9_13:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(255, 255, 255, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                        Fill: =App.Theme.Colors.Darker30
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =36
+                        Size: =10
+                        Text: ="Valor Total"
+                        Width: =92
+                        X: =78
+                        Y: =377
+                  - Label4_27:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Lighter80
+                        BorderThickness: =2
+                        Color: =RGBA(255, 255, 255, 1)
+                        Fill: =RGBA(215, 58, 60, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =36
+                        Size: =12
+                        Text: |+
+                          ="$ " & Text(Value(Substitute(varTextoLabel8, "$", "")) + Value(Substitute(Label4_12.Text, "$", "")), "[$-en-US]#,###")
+
+                        Width: =140
+                        X: =173
+                        Y: =377
+                  - TextCanvas1_2:
+                      Control: Text@0.0.50
+                      Properties:
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Height: =31
+                        Size: =15
+                        Text: ="SERVICIO Y DESPLAZAMIENTO"
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =227
+                        X: =3
+                        Y: =329
+            - Container6:
+                Control: GroupContainer@1.3.0
+                Variant: ManualLayout
+                Properties:
+                  Fill: =RGBA(139, 154, 159, 1)
+                  Height: =152
+                  Width: =387
+                  X: =938
+                Children:
+                  - Label4:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        Fill: =RGBA(240, 98, 15, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =39
+                        Size: =12
+                        Text: |+
+                          =RoundUp(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 0)
+
+                        Width: =117
+                        X: =225
+                        Y: =93
+                  - Label4_11:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Lighter80
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        Fill: =App.Theme.Colors.Darker30
+                        FontWeight: =FontWeight.Bold
+                        Height: =27
+                        Size: =10
+                        Text: ="Total Horas"
+                        Width: =117
+                        X: =225
+                        Y: =65
+                  - Label4_12:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        Fill: =RGBA(240, 98, 15, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =39
+                        Size: =12
+                        Text: |+
+                          ="$ " & Text(
+                              Sum(
+                                  Value(Label4.Text) * 
+                                  If(
+                                      !IsBlank(ComboBox3.Selected.Opcion),
+                                      LookUp(colOpcionesValores, Opcion = ComboBox3.Selected.Opcion).Valor,
+                                      0  // Valor predeterminado si no hay ninguna selección
+                                  )
+                              ),
+                              "[$-en-US]#,###"
+                          )
+
+                        Width: =160
+                        X: =25
+                        Y: =92
+                  - Label4_13:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =App.Theme.Colors.Lighter80
+                        BorderThickness: =1
+                        Color: =RGBA(255, 255, 255, 1)
+                        Fill: =App.Theme.Colors.Darker30
+                        FontWeight: =FontWeight.Bold
+                        Height: =27
+                        Size: =9
+                        Text: ="Precio de  Servicio"
+                        Width: =160
+                        X: =25
+                        Y: =66
+                  - ComboBox3:
+                      Control: Classic/ComboBox@2.4.0
+                      Properties:
+                        ChevronFill: =RGBA(255, 255, 255, 1)
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        DisplayFields: =["Opcion"]
+                        Height: =34
+                        InputTextPlaceholder: ="Tipo de Servicio"
+                        Items: =colOpcionesValores.Opcion
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        SearchFields: =["Opcion"]
+                        SelectMultiple: =false
+                        SelectionColor: =RGBA(255, 255, 255, 1)
+                        Size: =12
+                        Width: =184
+                        X: =188
+                        Y: =9
+                  - TextCanvas1:
+                      Control: Text@0.0.50
+                      Properties:
+                        FontColor: =RGBA(255, 255, 255, 1)
+                        Size: =15
+                        Text: ="SERVICIO"
+                        Weight: ='TextCanvas.Weight'.Semibold
+                        Width: =164
+                        X: =5
+                        Y: =9
+      - ButtonCanvas5:
+          Control: Button@0.0.44
+          Properties:
+            BasePaletteColor: =RGBA(8, 222, 8, 1)
+            Icon: ="Mail"
+            OnSelect: |
+              =Office365Outlook.SendEmailV2(
+                  User().Email, 
+                  "Se genera documento de consulta de Actividad :" & Gallery7.Selected.Title10_2.Text & "; Codigo: " & Gallery7.Selected.Title10.Text, 
+                  "<!DOCTYPE html>
+              <html>
+              <head>
+                  <style>
+                      .email-container {
+                          font-family: Arial, sans-serif;
+                          color: #333;
+                          text-align: center;
+                      }
+                      .header {
+                          font-size: 18px;
+                          font-weight: bold;
+                          color: #004d99;
+                      }
+                      .message {
+                          margin: 20px 0;
+                          font-size: 16px;
+                      }
+                      .footer {
+                          margin-top: 30px;
+                          font-size: 14px;
+                          color: #555;
+                      }
+                      .gif-image {
+                          width: 150px;
+                          height: auto;
+                          margin: 20px 0;
+                      }
+                      .icon {
+                          width: 30px;
+                          height: 30px;
+                          vertical-align: middle;
+                      }
+                  </style>
+              </head>
+              <body>
+
+              <div class='email-container'>
+                  <h1 class='header'>📄 ¡Revisa el documento adjunto!</h1>
+                  <p class='message'>
+                      <img src='https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif' alt='Revisar PDF' class='gif-image' /><br/>
+                      Por favor revise la consulta PDF adjunta en el presente correo.<br/><br/>
+                      <strong>Att:</strong> Power Apps <br/> 
+                      <strong>SERVICIO POSTVENTA PARTEQUIPOS</strong> 
+                  </p>
+                  <p class='footer'>
+                      <img src='https://upload.wikimedia.org/wikipedia/commons/8/82/Facebook_icon.svg' class='icon' alt='Facebook' /> 
+                      <img src='https://upload.wikimedia.org/wikipedia/commons/5/51/Twitter_icon.svg' class='icon' alt='Twitter' /> 
+                      <img src='https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png' class='icon' alt='Instagram' />
+                  </p>
+              </div>
+
+              </body>
+              </html>", 
+                  {
+                      Attachments: [
+                          {
+                              Name: "ConsultaActividades.pdf", 
+                              ContentBytes: PDF(Container3, {ExpandContainers: true})
+                          }
+                      ],
+                      IsHtml: true
+                  }
+              );
+              Notify("Documento enviado", NotificationType.Success, 3000)
+            Text: ="Email"
+            X: =469
+            Y: =15
+      - ButtonCanvas5_1:
+          Control: Button@0.0.44
+          Properties:
+            BasePaletteColor: =RGBA(5, 102, 178, 1)
+            Icon: ="DocumentAdd"
+            OnSelect: |
+              =Clear(colgalrecord);
+              ForAll(Gallery7.AllItems As GalItems,
+                  Collect(colgalrecord,
+                      {
+                          ID: GalItems.Subtitle7.Text,           
+                          Actividad: GalItems.Title10_2.Text,
+                          Codigo: GalItems.Title10.Text,
+                          CodigoAlterno: GalItems.Title10_1.Text,
+                          Tiempo: GalItems.Subtitle7_1.Text,
+                          Cantidad: GalItems.TextInput2.Text,
+                          TiempoTotal: GalItems.Subtitle7_2.Text
+                      }
+                  )
+              );
+
+
+              Set(varcsvFile, JSON(colgalrecord));
+
+              Set(dowloadurl,
+              ExportExcel.Run(
+                  varcsvFile,
+                  $"{User().FullName}{Now()}.csv"
+              ).dowloadlink);
+              Launch(dowloadurl);
+
+              Notify("Documento Descargado", NotificationType.Success, 3000)
+            Text: ="CSV"
+            X: =606
+            Y: =17
+      - ButtonCanvas1_8:
+          Control: Button@0.0.44
+          Properties:
+            BasePaletteColor: =RGBA(8, 222, 8, 1)
+            FontSize: =11
+            Height: =54
+            OnSelect: =UpdateContext({pop10:true})
+            Text: ="Buscar por codigo"
+            Width: =56
+            X: =230
+            Y: =12
+      - Rectangle4_32:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_32.Fill
+            Fill: =RGBA(214, 221, 224, 1)
+            Height: =216
+            HoverFill: =Rectangle4_32.Fill
+            PressedFill: =Rectangle4_32.Fill
+            TabIndex: =0
+            Visible: =pop10
+            Width: =424
+            X: =50
+            Y: =358
+      - icon14_96:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(215, 58, 60, 1)
+            Height: =26
+            Icon: =Icon.Cancel
+            OnSelect: =UpdateContext({pop10:false})
+            TabIndex: =0
+            Visible: =pop10
+            Width: =42
+            X: =410
+            Y: =370
+      - icon14_97:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(52, 152, 47, 1)
+            Height: =26
+            Icon: =Icon.Reset
+            OnSelect: =Reset(TextInputCanvas1_8)
+            TabIndex: =0
+            Visible: =pop10
+            Width: =42
+            X: =358
+            Y: =372
+      - Gallery2_46:
+          Control: Gallery@2.15.0
+          Variant: BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0
+          Properties:
+            Fill: =RGBA(214, 221, 224, 1)
+            Height: =127
+            Items: |-
+              =Filter(
+                  ColeccionUnificada,
+                  !IsBlank(TextInputCanvas1_8.Value) && TextInputCanvas1_8.Value in field_2
+              )
+            TemplateSize: =100
+            Visible: =pop10
+            Width: =390
+            X: =62
+            Y: =428
+          Children:
+            - Title3_144:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =33
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Codigo: "&ThisItem.field_2
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =104
+                  X: =87
+                  Y: =65
+            - Subtitle2_46:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =65
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: =ThisItem.Title
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =232
+                  X: =3
+            - Body2_47:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =19
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="ID: "&ThisItem.field_0
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =53
+                  X: =14
+                  Y: =68
+            - Separator2_46:
+                Control: Rectangle@2.3.0
+                Properties:
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Height: =4
+                  OnSelect: =Select(Parent)
+                  Width: =390
+                  Y: =Parent.TemplateHeight - Self.Height
+            - Checkbox1_46:
+                Control: Classic/CheckBox@2.1.0
+                Properties:
+                  Default: =varCheckboxChecked1
+                  Height: =42
+                  OnCheck: =Collect(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, true)
+                  OnSelect: =Select(Parent)
+                  OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
+                  Text: =
+                  Width: =48
+                  X: =342
+                  Y: =36
+            - Title3_142:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Fill: =RGBA(214, 221, 224, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =34
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: |-
+                    ="Comentario: "&ThisItem.Diagnostico
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =142
+                  X: =248
+            - Image11_43:
+                Control: Image@2.2.3
+                Properties:
+                  Height: =34
+                  Image: =Gallery2_1.Selected.Recurso
+                  OnSelect: =Set(HoverImage21, true)
+                  Width: =67
+                  X: =204
+                  Y: =40
+            - ButtonCanvas2_92:
+                Control: Button@0.0.44
+                Properties:
+                  FontSize: =9
+                  Height: =38
+                  OnSelect: =Launch(Title3_26.Text)
+                  Text: ="IR AL RECURSO"
+                  Visible: =!IsBlank(Title3_26.Text)
+                  Width: =42
+                  X: =288
+                  Y: =36
+            - Title3_146:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =49
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =9
+                  Text: =ThisItem.Recurso
+                  VerticalAlign: =VerticalAlign.Top
+                  Visible: =false
+                  Width: =42
+                  X: =162
+                  Y: =31
+      - TextInputCanvas1_8:
+          Control: TextInput@0.0.53
+          Properties:
+            Height: =28
+            Placeholder: ="Buscar Codigo"
+            Visible: =pop10
+            Width: =252
+            X: =71
+            Y: =370
+      - Icon1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Height: =26
+            Icon: =Icon.Search
+            Visible: =pop10
+            Width: =33
+            X: =290
+            Y: =372

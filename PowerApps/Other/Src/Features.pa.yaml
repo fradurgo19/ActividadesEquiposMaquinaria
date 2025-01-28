@@ -1,0 +1,670 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Features:
+    Properties:
+      BackgroundImage: =Excavadora1
+      Fill: =RGBA(255, 255, 255, 1)
+      Height: =Max(App.Height, App.DesignHeight)
+      OnVisible: |-
+        =UpdateContext({pop1: false ,pop2: false ,pop3: false ,pop4: false });ClearCollect(ColeccionUnificada,colFilteredEnfriadores,colFilteredEnmotor,colFilteredMotorGiro,colFilteredTanqueHidraulico,colFilteredTanqueDeCombustible,colFilteredBancoValvulas,colFilteredBancoSolenoide,colFilteredCenterJoint,colFilteredTraslacion,colFilteredTrenderodaje,colFilteredBombaPiloto,colFilteredFiltroPiloto,colFilteredBombaHidraulica,colFilteredBombaCombustible,colFilteredFiltrosMotor,colFilteredBancoSolenoide,colFilteredTraslacion,colFilteredTornamesa,colFilteredContrapesa,colFilteredEnfriadores,colFilteredTanqueexpasion,colFilteredValvulaAmortiguacionPiloto,colFilteredBateria,colFilteredFiltrodeaire,colFiltereEnfriadorCombustible,colFiltereAA,colFilteredBoom,colFilteredStick,colFilteredBalde,colFilteredJoystick,colFilteredCabina,colFilteredMonitor,colFilteredSilla,colFiltAireAcondicionado,colFiltAireSistemElectri)
+      Width: =Max(App.Width, App.DesignWidth)
+    Children:
+      - Rectangle2_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            Height: =44
+            TabIndex: =0
+            Width: =1366
+      - Image4_3:
+          Control: Image@2.2.3
+          Properties:
+            ApplyEXIFOrientation: =false
+            AutoDisableOnSelect: =false
+            Height: =25
+            Image: =x
+            OnSelect: =Navigate(Home,ScreenTransition.Fade)
+            Width: =33.35
+            X: =1065.85
+            Y: =106
+      - Label2_2:
+          Control: Label@2.5.1
+          Properties:
+            Align: =LayoutAlignItems.Center
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Lighter
+            Height: =44
+            HoverBorderColor: =Label2_2.BorderColor
+            HoverColor: =Label2_2.Color
+            HoverFill: =Label2_2.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label2_2.BorderColor
+            PressedColor: =Label2_2.Color
+            PressedFill: =Label2_2.Fill
+            Size: =18
+            Text: ="EXCAVADORA"
+            Width: =1366
+      - icon9:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =50
+            X: =1065
+            Y: =77
+      - Rectangle15_7:
+          Control: Rectangle@2.3.0
+          Properties:
+            Fill: =RGBA(62,96,170,0)
+            Height: =55
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop2
+            Width: =58.7
+            X: =453.55
+            Y: =441
+      - Rectangle10:
+          Control: Rectangle@2.3.0
+          Properties:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =55
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Width: =58.7
+            X: =441.55
+            Y: =442
+      - Rectangle4_2:
+          Control: Rectangle@2.3.0
+          Group: Group8
+          Properties:
+            BorderColor: =RGBA(255, 255, 255, 255)
+            BorderThickness: =5
+            DisabledFill: =Rectangle4_2.Fill
+            Fill: =App.Theme.Colors.Darker30
+            Height: =212
+            HoverFill: =Rectangle4_2.Fill
+            PressedFill: =Rectangle4_2.Fill
+            TabIndex: =0
+            Visible: =pop3
+            Width: =501.58
+            X: =252.12
+            Y: =103
+      - Label9_2:
+          Control: Label@2.5.1
+          Group: Group8
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =35
+            HoverBorderColor: =Label9_2.BorderColor
+            HoverColor: =Label9_2.Color
+            HoverFill: =Label9_2.Fill
+            OnSelect: =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2Fbomba%20hidraulica&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_2.BorderColor
+            PressedColor: =Label9_2.Color
+            PressedFill: =Label9_2.Fill
+            Size: =13.34
+            Text: ="BOMBA HIDRAULICA"
+            Visible: =pop3
+            Width: =165.41
+            X: =292.14
+            Y: =172
+      - Label8_2:
+          Control: Label@2.5.1
+          Group: Group8
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+            Height: =34
+            HoverBorderColor: =Label8_2.BorderColor
+            HoverColor: =Label8_2.Color
+            HoverFill: =Label8_2.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label8_2.BorderColor
+            PressedColor: =Label8_2.Color
+            PressedFill: =Label8_2.Fill
+            Size: =17.34
+            Text: ="ZONA 4"
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =pop3
+            Width: =189.43
+            X: =321.49
+            Y: =130
+      - Rectangle9:
+          Control: Rectangle@2.3.0
+          Group: Group8
+          Properties:
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =44
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop3
+            Width: =74.7
+            X: =676.33
+            Y: =105
+      - icon12:
+          Control: Classic/Icon@2.5.0
+          Group: Group8
+          Properties:
+            Color: =RGBA(242, 242, 242, 1)
+            Height: =28
+            Icon: =Icon.Cancel
+            OnSelect: =UpdateContext({pop1:false,pop2:false,pop3:false,pop4:false})
+            TabIndex: =0
+            Visible: =pop3
+            Width: =48.02
+            X: =700.34
+            Y: =113
+      - Label9_10:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =Label9_10.BorderColor
+            HoverColor: =Label9_10.Color
+            HoverFill: =Label9_10.Fill
+            OnSelect: =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2FBanco%20de%20valvulas&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_10.BorderColor
+            PressedColor: =Label9_10.Color
+            PressedFill: =Label9_10.Fill
+            Size: =12.01
+            Text: ="BANCO DE VALVULAS"
+            Visible: =pop1
+            Width: =201.43
+            X: =569.61
+            Y: =646
+      - Label9_11:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            HoverBorderColor: =Label9_11.BorderColor
+            HoverColor: =Label9_11.Color
+            HoverFill: =Label9_11.Fill
+            OnSelect: =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2Fbanco%20de%20solenoides&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_11.BorderColor
+            PressedColor: =Label9_11.Color
+            PressedFill: =Label9_11.Fill
+            Size: =12.01
+            Text: ="BANCO DE SOLENOIDES"
+            Visible: =pop1
+            Width: =201.43
+            X: =572.28
+            Y: =694
+      - Label8_12:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =If(false,DisplayMode.Disabled,DisplayMode.Edit)
+            Height: =48
+            HoverBorderColor: =Label8_12.BorderColor
+            HoverColor: =Label8_12.Color
+            HoverFill: =Label8_12.Fill
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label8_12.BorderColor
+            PressedColor: =Label8_12.Color
+            PressedFill: =Label8_12.Fill
+            Size: =17.34
+            Text: ="Zona 6 (izquierda)"
+            VerticalAlign: =VerticalAlign.Top
+            Visible: =pop2
+            Width: =157.41
+            X: =341.5
+            Y: =422
+      - Label9_14:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =50
+            HoverBorderColor: =Label9_14.BorderColor
+            HoverColor: =Label9_14.Color
+            HoverFill: =Label9_14.Fill
+            OnSelect: =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BD3A726DE-865E-4CEF-A67B-41AE85143179%7D&file=traslacion.xlsx&action=default&mobileredirect=true")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_14.BorderColor
+            PressedColor: =Label9_14.Color
+            PressedFill: =Label9_14.Fill
+            Size: =13.34
+            Text: ="TRASLACION"
+            Visible: =pop2
+            Width: =149.41
+            X: =160.08
+            Y: =572
+      - Label9_15:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =50
+            HoverBorderColor: =Label9_15.BorderColor
+            HoverColor: =Label9_15.Color
+            HoverFill: =Label9_15.Fill
+            OnSelect: =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7B135E99F2-6E81-4AE6-8C53-70945A94D5F7%7D&file=tren%20de%20rodaje.xlsx&action=default&mobileredirect=true")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_15.BorderColor
+            PressedColor: =Label9_15.Color
+            PressedFill: =Label9_15.Fill
+            Size: =13.34
+            Text: ="TREN DE RODAJE"
+            Visible: =pop2
+            Width: =149.41
+            X: =368.18
+            Y: =497
+      - Label9_16:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =50
+            HoverBorderColor: =Label9_16.BorderColor
+            HoverColor: =Label9_16.Color
+            HoverFill: =Label9_16.Fill
+            OnSelect: =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BD3A726DE-865E-4CEF-A67B-41AE85143179%7D&file=traslacion.xlsx&action=default&mobileredirect=true")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_16.BorderColor
+            PressedColor: =Label9_16.Color
+            PressedFill: =Label9_16.Fill
+            Size: =13.34
+            Text: ="TRASLACION"
+            Visible: =pop2
+            Width: =149.41
+            X: =373.52
+            Y: =578
+      - Label9_17:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =35
+            HoverBorderColor: =Label9_17.BorderColor
+            HoverColor: =Label9_17.Color
+            HoverFill: =Label9_17.Fill
+            OnSelect: =Launch("https://partequipos2-my.sharepoint.com/personal/analista_mantenimiento_partequipos_com//_layouts/15/onedrive.aspx?id=%2Fsites%2Fservicioposventa%2FShared%20Documents%2FTemparios%2FExcavadoras%2Fbomba%20hidraulica&listurl=https%3A%2F%2Fpartequipos2%2Esharepoint%2Ecom%2Fsites%2Fservicioposventa%2FShared%20Documents&viewid=1b8baf37%2De789%2D4753%2Da603%2Dc2c94e736ee7&view=0")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_17.BorderColor
+            PressedColor: =Label9_17.Color
+            PressedFill: =Label9_17.Fill
+            Size: =13.34
+            Text: ="BOMBA PILOTO"
+            Visible: =pop3
+            Width: =165.41
+            X: =292.14
+            Y: =219
+      - Label9_18:
+          Control: Label@2.5.1
+          Properties:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =35
+            HoverBorderColor: =Label9_18.BorderColor
+            HoverColor: =Label9_18.Color
+            HoverFill: =Label9_18.Fill
+            OnSelect: =Launch("https://partequipos2.sharepoint.com/:x:/r/sites/servicioposventa/_layouts/15/Doc.aspx?sourcedoc=%7BC83920C3-FF3E-430B-8431-8D65492C4F85%7D&file=banco%20de%20solenoides.xlsx&action=default&mobileredirect=true")
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            PressedBorderColor: =Label9_18.BorderColor
+            PressedColor: =Label9_18.Color
+            PressedFill: =Label9_18.Fill
+            Size: =13.34
+            Text: ="BANCO DE SOLENOIDES"
+            Visible: =pop3
+            Width: =165.41
+            X: =517.59
+            Y: =172
+      - Label3:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =47
+            OnSelect: =Navigate(Features_2, ScreenTransition.Fade)
+            Size: =9
+            Text: ="ZONA 1 Motor y Enfriadores"
+            Tooltip: ="ZONA 1"
+            Width: =212
+            X: =1115
+            Y: =74
+      - icon9_3:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =50
+            X: =1188
+            Y: =234
+      - Label3_1:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =108
+            OnSelect: =Navigate(Features_4, ScreenTransition.Fade)
+            Size: =9
+            Text: |-
+              ="ZONA 5: Motores de traslación, Contrapesa y Tornamesa"
+            Tooltip: ="ZONA 5"
+            Width: =108
+            X: =1239
+            Y: =211
+      - icon9_4:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_9, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =50
+            X: =490
+            Y: =553
+      - Label3_2:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =83
+            OnSelect: =Navigate(Features_9, ScreenTransition.Fade)
+            Size: =9
+            Text: |-
+              ="ZONA 3 y 6:
+              Tren de rodaje y Traslación"
+            Tooltip: ="ZONA 3"
+            Width: =151
+            X: =490
+            Y: =603
+      - icon9_5:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =50
+            X: =919
+            Y: =603
+      - Label3_3:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =107
+            OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
+            Size: =9
+            Text: |-
+              ="ZONA 9: Cabina Silla, Consolas, Joystick, Monitor, Computadores y Cableados (Harness)
+              Vidrios"
+            Tooltip: ="ZONA 9"
+            Width: =197
+            X: =868
+            Y: =653
+      - icon9_6:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =50
+            X: =748
+            Y: =55
+      - Label3_4:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            LineHeight: =1
+            OnSelect: =Navigate(Features_11, ScreenTransition.Fade)
+            Size: =9
+            Text: |-
+              ="ZONA 4: Bombas hidráulicas, Bomba Piloto, Filtros de motor, Filtro piloto, Banco de solenoides y Bomba transferencia combustible
+              "
+            Tooltip: ="ZONA 4"
+            Width: =515
+            X: =851
+            Y: =44
+      - icon9_7:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(255, 191, 0, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =50
+            X: =112
+            Y: =582
+      - Label3_5:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =67
+            OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
+            Size: =9
+            Text: ="Diagnostico"
+            Tooltip: ="ZONA 6"
+            Width: =112
+            Y: =572
+      - icon9_8:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =50
+            X: =518
+            Y: =66
+      - Label3_6:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =69
+            OnSelect: =Navigate(Features_3, ScreenTransition.Fade)
+            Size: =9
+            Text: ="ZONA 2 Tanque hidráulico Tanque de combustible, Banco de válvulas, Banco de Solenoides, Motor y reductor de giro, Center Joint, Bomba de tanqueo y caja de herramientas"
+            Tooltip: ="ZONA 2"
+            Width: =272
+            X: =239
+            Y: =63
+      - icon9_9:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =50
+            X: =133
+            Y: =204
+      - Label3_7:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =62
+            OnSelect: =Navigate(Features_6, ScreenTransition.Fade)
+            Size: =9
+            Text: |-
+              ="ZONA 8: Brazos, Balde y Cilindros"
+            Tooltip: ="ZONA 8"
+            Width: =133
+            Y: =194
+      - icon9_11:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(152, 208, 70, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =50
+            X: =1110
+            Y: =512
+      - Label3_8:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =110
+            OnSelect: =Navigate(Features_5, ScreenTransition.Fade)
+            Size: =9
+            Text: |-
+              ="ZONA 7: Filtro de aire
+              enfriadores
+              baterías
+              tanque de expansión
+              válvula de amortiguación piloto"
+            Tooltip: ="ZONA 7"
+            Width: =182
+            X: =1165
+            Y: =503
+      - Image6_9:
+          Control: Image@2.2.3
+          Properties:
+            Height: =44
+            Image: =Izquierda
+            OnSelect: =Navigate(Home, ScreenTransition.Fade)
+            Width: =68
+            X: =4
+      - icon9_12:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(109, 49, 162, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =50
+            X: =112
+            Y: =445
+      - Label3_9:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =67
+            OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
+            Size: =9
+            Text: ="Aire Acondicionado"
+            Tooltip: ="ZONA 6"
+            Width: =112
+            Y: =435
+      - icon9_16:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            Color: =App.Theme.Colors.Lighter80
+            Fill: =RGBA(109, 49, 162, 1)
+            Height: =50
+            Icon: =Icon.Add
+            OnSelect: =Navigate(Features_7, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =50
+            X: =112
+            Y: =377
+      - Label3_10:
+          Control: Label@2.5.1
+          Properties:
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =67
+            OnSelect: =Navigate(Features_10, ScreenTransition.Fade)
+            Size: =9
+            Text: ="Sistema Eléctrico"
+            Tooltip: ="ZONA 6"
+            Width: =112
+            Y: =367
+      - Label4_30:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            Fill: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Bold
+            Height: =52
+            OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+            Size: =12
+            Text: ="Resumen"
+            Width: =87
+            X: =64
+            Y: =67
+      - Image24_10:
+          Control: Image@2.2.3
+          Properties:
+            Height: =62
+            Image: ='icons8-estimar'
+            OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+            Width: =91
+            X: =4
+            Y: =67
+      - ButtonCanvas6_1:
+          Control: Button@0.0.44
+          Properties:
+            BasePaletteColor: =RGBA(249, 83, 109, 1)
+            Icon: ="Warning"
+            OnSelect: =Launch("https://teams.microsoft.com/l/channel/19%3A3894b5acefed4f70b842dcbffaa4336b%40thread.tacv2/Soporte%20Actividades%20Mantenimiento%20Maquinaria?groupId=31f2e519-640f-4cee-856f-e4ae247c0e5a")
+            Text: ="Soporte"
+            X: =37
+            Y: =686

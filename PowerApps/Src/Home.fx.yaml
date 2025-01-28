@@ -112,7 +112,7 @@ Home As screen:
         Color: =RGBA(255, 255, 255, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         Font: =App.Theme.Font
-        Height: =164
+        Height: =82
         HoverBorderColor: =Label1_8.BorderColor
         HoverColor: =Label1_8.Color
         HoverFill: =Label1_8.Fill
@@ -122,14 +122,14 @@ Home As screen:
         PressedBorderColor: =Label1_8.BorderColor
         PressedColor: =Label1_8.Color
         PressedFill: =Label1_8.Fill
-        Size: =16
+        Size: =13
         Text: |-
             ="🚀 Navegación Rápida: Encuentra la parte exacta que necesitas sin esfuerzo.🎯 Selección Precisa: Profundiza en los componentes y subcomponentes específicos. 📈 Aumenta tu Eficiencia: Ahorra tiempo identificando rápidamente las piezas y comprendiendo las tareas.
             🖱️ Interfaz Intuitiva: Diseñada para que cualquier usuario pueda utilizarla fácilmente."
         VerticalAlign: =VerticalAlign.Top
         Width: =777.38
         X: =571.95
-        Y: =588
+        Y: =670
         ZIndex: =13
 
     Rectangle1_4 As rectangle:
@@ -214,7 +214,7 @@ Home As screen:
         Height: =48
         Image: ='hacer-clic1'
         Width: =68
-        X: =381
+        X: =391
         Y: =604
         ZIndex: =36
 
@@ -292,4 +292,69 @@ Home As screen:
         X: =1252
         Y: =134
         ZIndex: =40
+
+    Group32_2 As group:
+        Height: =162.78573172432993
+        Width: =162.78573172433
+        X: =20
+        Y: =20
+        ZIndex: =41
+
+        Circle3_3 As circle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =RGBA(255, 255, 255, .2)
+            Height: =153
+            TabIndex: =0
+            Width: =217
+            X: =574
+            Y: =520
+            ZIndex: =42
+
+        Circle1_3 As circle:
+            BorderColor: =RGBA(242, 242, 242, 1)
+            Fill: =App.Theme.Colors.Primary
+            Height: =136
+            OnSelect: =Navigate(Features_8, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =193
+            X: =586
+            Y: =528
+            ZIndex: =43
+
+        Label1_25 As label:
+            Align: =LayoutAlignItems.Center
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 45, 179,0)
+            Font: =App.Theme.Font
+            FontWeight: =FontWeight.Lighter
+            Height: =58
+            HoverBorderColor: =Label1_25.BorderColor
+            HoverColor: =Label1_25.Color
+            HoverFill: =Label1_25.Fill
+            OnSelect: =Navigate(Features_13, ScreenTransition.Fade)
+            PaddingLeft: =15
+            PaddingRight: =20.01
+            PaddingTop: =6.67
+            PressedBorderColor: =Label1_25.BorderColor
+            PressedColor: =Label1_25.Color
+            PressedFill: =Label1_25.Fill
+            Size: =21.34
+            Text: ="Martillo"
+            Width: =228
+            X: =582
+            Y: =561
+            ZIndex: =44
+
+    Image5_2 As image:
+        BorderColor: =App.Theme.Colors.Darker40
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =48
+        Image: ='hacer-clic1'
+        Width: =68
+        X: =651
+        Y: =611
+        ZIndex: =45
 

@@ -1,0 +1,313 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Home:
+    Properties:
+      BackgroundImage: =excavator4
+      Height: =Max(App.Height, App.DesignHeight)
+      Width: =Max(App.Width, App.DesignWidth)
+    Children:
+      - Rectangle14:
+          Control: Rectangle@2.3.0
+          Properties:
+            DisabledFill: =Rectangle14.Fill
+            Fill: =App.Theme.Colors.Darker30
+            Height: =232
+            HoverFill: =Rectangle14.Fill
+            PressedFill: =Rectangle14.Fill
+            TabIndex: =0
+            Width: =1366
+            Y: =536
+      - Image3:
+          Control: Image@2.2.3
+          Properties:
+            ApplyEXIFOrientation: =false
+            AutoDisableOnSelect: =false
+            Height: =68.1428571428571
+            Image: ='Captura de pantalla 2024-01-12 082706'
+            Width: =264.13
+            X: =290.81
+            Y: =670.333333333334
+      - Label2:
+          Control: Label@2.5.1
+          Properties:
+            Align: =TextPosition.Left
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            FontWeight: =FontWeight.Lighter
+            Height: =77
+            HoverBorderColor: =Label2.BorderColor
+            HoverColor: =Label2.Color
+            HoverFill: =Label2.Fill
+            PaddingRight: =6.67
+            PaddingTop: =6.67
+            PressedBorderColor: =Label2.BorderColor
+            PressedColor: =Label2.Color
+            PressedFill: =Label2.Fill
+            Size: =18
+            Text: ="TEMPARIO"
+            Width: =184.09
+            X: =50.02
+            Y: =663.5
+      - Label1_8:
+          Control: Label@2.5.1
+          Properties:
+            Align: =TextPosition.Left
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =82
+            HoverBorderColor: =Label1_8.BorderColor
+            HoverColor: =Label1_8.Color
+            HoverFill: =Label1_8.Fill
+            OnSelect: =
+            PaddingLeft: =15
+            PaddingRight: =20.01
+            PressedBorderColor: =Label1_8.BorderColor
+            PressedColor: =Label1_8.Color
+            PressedFill: =Label1_8.Fill
+            Text: |-
+              ="🚀 Navegación Rápida: Encuentra la parte exacta que necesitas sin esfuerzo.🎯 Selección Precisa: Profundiza en los componentes y subcomponentes específicos. 📈 Aumenta tu Eficiencia: Ahorra tiempo identificando rápidamente las piezas y comprendiendo las tareas.
+              🖱️ Interfaz Intuitiva: Diseñada para que cualquier usuario pueda utilizarla fácilmente."
+            VerticalAlign: =VerticalAlign.Top
+            Width: =777.38
+            X: =571.95
+            Y: =670
+      - Rectangle1_4:
+          Control: Rectangle@2.3.0
+          Properties:
+            Height: =60
+            TabIndex: =0
+            Width: =2.67
+            X: =258.46
+            Y: =673
+      - Circle3_1:
+          Control: Circle@2.3.0
+          Group: Group32
+          Properties:
+            Fill: =RGBA(255, 255, 255, .2)
+            Height: =169
+            TabIndex: =0
+            Width: =217
+            X: =44
+            Y: =494
+      - Circle1_1:
+          Control: Circle@2.3.0
+          Group: Group32
+          Properties:
+            BorderColor: =RGBA(242, 242, 242, 1)
+            Height: =149
+            OnSelect: =Navigate(Features, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =193
+            X: =57
+            Y: =505
+      - Label1_5:
+          Control: Label@2.5.1
+          Group: Group32
+          Properties:
+            Align: =LayoutAlignItems.Center
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 45, 179,0)
+            FontWeight: =FontWeight.Lighter
+            Height: =79
+            HoverBorderColor: =Label1_5.BorderColor
+            HoverColor: =Label1_5.Color
+            HoverFill: =Label1_5.Fill
+            OnSelect: =Navigate(Features, ScreenTransition.Fade)
+            PaddingLeft: =15
+            PaddingRight: =20.01
+            PaddingTop: =6.67
+            PressedBorderColor: =Label1_5.BorderColor
+            PressedColor: =Label1_5.Color
+            PressedFill: =Label1_5.Fill
+            Size: =21.34
+            Text: ="Excavadora"
+            Width: =215
+            X: =46
+            Y: =540
+      - Circle3_2:
+          Control: Circle@2.3.0
+          Group: Group32_1
+          Properties:
+            Fill: =RGBA(255, 255, 255, .2)
+            Height: =153
+            TabIndex: =0
+            Width: =217
+            X: =302
+            Y: =510
+      - Circle1_2:
+          Control: Circle@2.3.0
+          Group: Group32_1
+          Properties:
+            BorderColor: =RGBA(242, 242, 242, 1)
+            Height: =136
+            OnSelect: =Navigate(Features_8, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =193
+            X: =314
+            Y: =516
+      - Label1_6:
+          Control: Label@2.5.1
+          Group: Group32_1
+          Properties:
+            Align: =LayoutAlignItems.Center
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 45, 179,0)
+            FontWeight: =FontWeight.Lighter
+            Height: =58
+            HoverBorderColor: =Label1_6.BorderColor
+            HoverColor: =Label1_6.Color
+            HoverFill: =Label1_6.Fill
+            OnSelect: =Navigate(Features_8, ScreenTransition.Fade)
+            PaddingLeft: =15
+            PaddingRight: =20.01
+            PaddingTop: =6.67
+            PressedBorderColor: =Label1_6.BorderColor
+            PressedColor: =Label1_6.Color
+            PressedFill: =Label1_6.Fill
+            Size: =21.34
+            Text: ="Retrocargadora"
+            Width: =228
+            X: =304
+            Y: =553
+      - Image5:
+          Control: Image@2.2.3
+          Properties:
+            Height: =48
+            Image: ='hacer-clic1'
+            Width: =68
+            X: =118
+            Y: =604
+      - Image5_1:
+          Control: Image@2.2.3
+          Properties:
+            Height: =48
+            Image: ='hacer-clic1'
+            Width: =68
+            X: =391
+            Y: =604
+      - Image8:
+          Control: Image@2.2.3
+          Properties:
+            Image: ='icons8-salida'
+            OnSelect: =Exit()
+            X: =18
+            Y: =18
+      - Label1_51:
+          Control: Label@2.5.1
+          Properties:
+            Align: =TextPosition.Left
+            FontWeight: =FontWeight.Semibold
+            Height: =48
+            HoverBorderColor: =Label1_51.BorderColor
+            HoverColor: =Label1_51.Color
+            HoverFill: =Label1_51.Fill
+            OnSelect: =
+            PaddingLeft: =15
+            PaddingRight: =20.01
+            PressedBorderColor: =Label1_51.BorderColor
+            PressedColor: =Label1_51.Color
+            PressedFill: =Label1_51.Fill
+            Size: =9
+            Text: |-
+              ="Versión: " & App.StudioVersion & ": Se agregan actividades adicionales tren de rodaje excavadora."
+            VerticalAlign: =VerticalAlign.Top
+            Width: =247
+            X: =1117
+            Y: =54
+      - Label1_52:
+          Control: Label@2.5.1
+          Properties:
+            Align: =TextPosition.Left
+            FontWeight: =FontWeight.Semibold
+            Height: =48
+            HoverBorderColor: =Label1_52.BorderColor
+            HoverColor: =Label1_52.Color
+            HoverFill: =Label1_52.Fill
+            OnSelect: =
+            PaddingLeft: =15
+            PaddingRight: =20.01
+            PressedBorderColor: =Label1_52.BorderColor
+            PressedColor: =Label1_52.Color
+            PressedFill: =Label1_52.Fill
+            Size: =9
+            Text: |-
+              ="Última actualización: " & Text(LookUp('Tren de Rodaje', ID = Max('Tren de Rodaje', ID)).Modificado, "[$-es-ES]dd/mm/yyyy")
+            VerticalAlign: =VerticalAlign.Top
+            Width: =155
+            X: =1131
+            Y: =6
+      - ButtonCanvas6:
+          Control: Button@0.0.44
+          Properties:
+            BasePaletteColor: =RGBA(249, 83, 109, 1)
+            Icon: ="Warning"
+            OnSelect: =Launch("https://teams.microsoft.com/l/channel/19%3A3894b5acefed4f70b842dcbffaa4336b%40thread.tacv2/Soporte%20Actividades%20Mantenimiento%20Maquinaria?groupId=31f2e519-640f-4cee-856f-e4ae247c0e5a")
+            Text: ="Soporte"
+            X: =1252
+            Y: =134
+      - Circle3_3:
+          Control: Circle@2.3.0
+          Group: Group32_2
+          Properties:
+            Fill: =RGBA(255, 255, 255, .2)
+            Height: =153
+            TabIndex: =0
+            Width: =217
+            X: =574
+            Y: =520
+      - Circle1_3:
+          Control: Circle@2.3.0
+          Group: Group32_2
+          Properties:
+            BorderColor: =RGBA(242, 242, 242, 1)
+            Height: =136
+            OnSelect: =Navigate(Features_8, ScreenTransition.Fade)
+            TabIndex: =0
+            Width: =193
+            X: =586
+            Y: =528
+      - Label1_25:
+          Control: Label@2.5.1
+          Group: Group32_2
+          Properties:
+            Align: =LayoutAlignItems.Center
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 45, 179,0)
+            FontWeight: =FontWeight.Lighter
+            Height: =58
+            HoverBorderColor: =Label1_25.BorderColor
+            HoverColor: =Label1_25.Color
+            HoverFill: =Label1_25.Fill
+            OnSelect: =Navigate(Features_13, ScreenTransition.Fade)
+            PaddingLeft: =15
+            PaddingRight: =20.01
+            PaddingTop: =6.67
+            PressedBorderColor: =Label1_25.BorderColor
+            PressedColor: =Label1_25.Color
+            PressedFill: =Label1_25.Fill
+            Size: =21.34
+            Text: ="Martillo"
+            Width: =228
+            X: =582
+            Y: =561
+      - Image5_2:
+          Control: Image@2.2.3
+          Properties:
+            Height: =48
+            Image: ='hacer-clic1'
+            Width: =68
+            X: =651
+            Y: =611
