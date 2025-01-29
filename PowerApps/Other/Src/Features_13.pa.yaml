@@ -878,6 +878,7 @@ Screens:
           Properties:
             Height: =393
             Image: =Gallery2_51.Selected.Recurso
+            ImagePosition: =ImagePosition.Stretch
             OnSelect: =Set(HoverImage22, true);Set(HoverImage22, false)
             Visible: =HoverImage22
             Width: =672
