@@ -705,7 +705,7 @@ Features_13 As screen:
             DisabledFill: =RGBA(244, 244, 244, 1)
             Height: =51
             Image: =Gallery2_51.Selected.Recurso
-            OnSelect: =Set(HoverImage22, true)
+            OnSelect: =Set(HoverImage61, true)
             Width: =96
             X: =432
             Y: =61
@@ -949,8 +949,8 @@ Features_13 As screen:
         Height: =393
         Image: =Gallery2_51.Selected.Recurso
         ImagePosition: =ImagePosition.Stretch
-        OnSelect: =Set(HoverImage22, true);Set(HoverImage22, false)
-        Visible: =HoverImage22
+        OnSelect: =Set(HoverImage61, true);Set(HoverImage61, false)
+        Visible: =HoverImage61
         Width: =672
         X: =669
         Y: =266
