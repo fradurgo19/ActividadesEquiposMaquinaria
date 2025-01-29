@@ -72,14 +72,6 @@ Screens:
             Image: =Izquierda
             OnSelect: =Navigate(Home, ScreenTransition.Fade)
             Width: =68
-      - Image24_12:
-          Control: Image@2.2.3
-          Properties:
-            Height: =62
-            Image: ='icons8-estimar'
-            OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
-            Width: =95
-            Y: =67
       - Label4_32:
           Control: Label@2.5.1
           Properties:
@@ -91,7 +83,15 @@ Screens:
             Size: =12
             Text: ="Resumen"
             Width: =93
-            X: =58
+            X: =63
+            Y: =72
+      - Image24_12:
+          Control: Image@2.2.3
+          Properties:
+            Height: =62
+            Image: ='icons8-estimar'
+            OnSelect: =Navigate(Resumen, ScreenTransition.Fade)
+            Width: =95
             Y: =67
       - Image4_8:
           Control: Image@2.2.3
