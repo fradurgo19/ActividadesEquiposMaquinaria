@@ -125,7 +125,7 @@ Screens:
                   Items: |-
                     =Filter(
                         colParametros, 
-                        TipodeMaquina = ComboBox1_42.Selected.Results && Modelo = ComboBox1_40.Selected.Results && Item = ComboBox1_45.Selected.Results && Title = ComboBox1_46.Selected.Results
+                        TipodeMaquina = ComboBox1_42.Selected.Results && Modelo = ComboBox1_40.Selected.Results && Item = ComboBox1_45.Selected.Results && Título = ComboBox1_46.Selected.Results
                     )
                   TemplateSize: =193
                   Width: =759
@@ -184,7 +184,7 @@ Screens:
                         PaddingTop: =0
                         Size: =11
                         Text: |-
-                          ="Parametro: "&ThisItem.Title
+                          ="Parametro: "&ThisItem.Título
                         VerticalAlign: =VerticalAlign.Top
                         Width: =254
                         Y: =71
@@ -351,7 +351,7 @@ Screens:
                                     colParametros,
                                     Item = ComboBox1_45.Selected.Results
                                 ),
-                                Title
+                                Título
                             ),
                             {Results: ThisRecord.Value}
                         ),
@@ -745,7 +745,7 @@ Screens:
             Items: |-
               =Filter(
                   colDiagnosticoMotor, 
-                  field_5 = "Excavadora" && field_6 = ComboBox1_22.Selected.Results && field_7 = ComboBox1_8.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox1_22.Selected.Results && Tamaño = ComboBox1_8.Selected.Results 
               )
             ShowNavigation: =true
             TemplateSize: =163
@@ -986,7 +986,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colDiagnosticoMotor,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1029,9 +1029,9 @@ Screens:
                       Distinct(
                           Filter(
                               colDiagnosticoMotor,
-                              field_6 = ComboBox1_22.Selected.Results
+                              Solucion = ComboBox1_22.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1104,7 +1104,7 @@ Screens:
             Items: |-
               =Filter(
                   colDiagnosticoMotor, 
-                  field_5 = "Excavadora" && field_6 = ComboBox1_39.Selected.Results && field_7 = ComboBox1_41.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox1_39.Selected.Results && Tamaño = ComboBox1_41.Selected.Results 
               )
             ShowNavigation: =true
             TemplateSize: =163
@@ -1345,7 +1345,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colDiagnosticoMotor,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1388,9 +1388,9 @@ Screens:
                       Distinct(
                           Filter(
                               colDiagnosticoMotor,
-                              field_6 = ComboBox1_39.Selected.Results
+                              Solucion = ComboBox1_39.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),

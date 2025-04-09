@@ -501,9 +501,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredTraslacion,
-                              field_6 = ComboBox2_9.Selected.Results
+                              Solucion = ComboBox2_9.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -544,7 +544,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredTraslacion,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -568,7 +568,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredTraslacion, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_9.Selected.Results && field_7 = ComboBox1_11.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_9.Selected.Results && Tamaño = ComboBox1_11.Selected.Results 
               )
             TemplateSize: =121
             Visible: =pop3
@@ -828,9 +828,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredTrenderodaje,
-                              field_6 = ComboBox2_10.Selected.Results
+                              Solucion = ComboBox2_10.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -871,7 +871,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredTrenderodaje,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -896,7 +896,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredTrenderodaje, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_10.Selected.Results && field_7 = ComboBox1_12.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_10.Selected.Results && Tamaño = ComboBox1_12.Selected.Results 
               )
             ShowNavigation: =true
             TemplateSize: =143

@@ -525,9 +525,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredBoom,
-                              field_6 = ComboBox2_25.Selected.Results
+                              Solucion = ComboBox2_25.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -568,7 +568,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredBoom,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -592,7 +592,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredBoom, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_25.Selected.Results && field_7 = ComboBox1_27.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_25.Selected.Results && Tamaño = ComboBox1_27.Selected.Results 
               )
             TemplateSize: =130
             Visible: =pop2
@@ -852,9 +852,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredStick,
-                              field_6 = ComboBox2_26.Selected.Results
+                              Solucion = ComboBox2_26.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -895,7 +895,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredStick,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -919,7 +919,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredStick, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_26.Selected.Results && field_7 = ComboBox1_28.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_26.Selected.Results && Tamaño = ComboBox1_28.Selected.Results 
               )
             TemplateSize: =130
             Visible: =pop1
@@ -1187,9 +1187,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredBalde,
-                              field_6 = ComboBox2_27.Selected.Results
+                              Solucion = ComboBox2_27.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1230,7 +1230,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredBalde,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1254,7 +1254,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredBalde, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_27.Selected.Results && field_7 = ComboBox1_29.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_27.Selected.Results && Tamaño = ComboBox1_29.Selected.Results 
               )
             TemplateSize: =130
             Visible: =pop4

@@ -249,7 +249,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredEnmotorRetro, 
-                  field_5 = "Retrocargadora" && field_6 = ComboBox1_43.Selected.Results && field_7 = ComboBox1_44.Selected.Results 
+                  Tipo = "Retrocargadora" && Solucion = ComboBox1_43.Selected.Results && Tamaño = ComboBox1_44.Selected.Results 
               )
             ShowNavigation: =true
             TemplateSize: =120
@@ -271,7 +271,7 @@ Screens:
                   PaddingRight: =0
                   PaddingTop: =0
                   Size: =10
-                  Text: =ThisItem.Title
+                  Text: =ThisItem.Actividad
                   VerticalAlign: =VerticalAlign.Top
                   Width: =403
                   X: =4
@@ -618,9 +618,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredEnmotorRetro,
-                              field_6 = ComboBox1_43.Selected.Results
+                              Solucion = ComboBox1_43.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -647,7 +647,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredEnmotorRetro,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -689,9 +689,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredEnfriadoresRetro,
-                              field_6 = ComboBox1_47.Selected.Results
+                              Solución = ComboBox1_47.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -728,7 +728,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredEnfriadoresRetro, 
-                  field_5 = "Retrocargadora" && field_6 = ComboBox1_47.Selected.Results && field_7 = ComboBox1_48.Selected.Results 
+                  Tipo = "Retrocargadora" && Solución = ComboBox1_47.Selected.Results && Tamaño = ComboBox1_48.Selected.Results 
               )
             ShowNavigation: =true
             TemplateSize: =122
@@ -938,7 +938,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredEnfriadoresRetro,
-                          field_6
+                          Solución
                       ),
                       {Results: ThisRecord.Value}
                   ),

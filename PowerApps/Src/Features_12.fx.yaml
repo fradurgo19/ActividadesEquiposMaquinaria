@@ -278,7 +278,7 @@ Features_12 As screen:
         Items: |-
             =Filter(
                 colFilteredEnmotorRetro, 
-                field_5 = "Retrocargadora" && field_6 = ComboBox1_43.Selected.Results && field_7 = ComboBox1_44.Selected.Results 
+                Tipo = "Retrocargadora" && Solucion = ComboBox1_43.Selected.Results && Tamaño = ComboBox1_44.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -304,7 +304,7 @@ Features_12 As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =10
-            Text: =ThisItem.Title
+            Text: =ThisItem.Actividad
             VerticalAlign: =VerticalAlign.Top
             Width: =403
             X: =4
@@ -716,9 +716,9 @@ Features_12 As screen:
                     Distinct(
                         Filter(
                             colFilteredEnmotorRetro,
-                            field_6 = ComboBox1_43.Selected.Results
+                            Solucion = ComboBox1_43.Selected.Results
                         ),
-                        field_7
+                        Tamaño
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -728,7 +728,7 @@ Features_12 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnmotorRetro,field_6=ComboBox1_43.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_44.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnmotorRetro,Solucion=ComboBox1_43.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_44.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         Size: =10
         Visible: =pop4
@@ -758,7 +758,7 @@ Features_12 As screen:
                 ForAll(
                     Distinct(
                         colFilteredEnmotorRetro,
-                        field_6
+                        Solucion
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -768,7 +768,7 @@ Features_12 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredEnmotorRetro,field_6),{Results:ThisRecord.Value}),Results),ComboBox1_43.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredEnmotorRetro,Solucion),{Results:ThisRecord.Value}),Results),ComboBox1_43.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -816,9 +816,9 @@ Features_12 As screen:
                     Distinct(
                         Filter(
                             colFilteredEnfriadoresRetro,
-                            field_6 = ComboBox1_47.Selected.Results
+                            Solución = ComboBox1_47.Selected.Results
                         ),
-                        field_7
+                        Tamaño
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -828,7 +828,7 @@ Features_12 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnfriadoresRetro,field_6=ComboBox1_47.Selected.Results),field_7),{Results:ThisRecord.Value}),Results),ComboBox1_48.SearchText,Results)
+            =Search(Sort(ForAll(Distinct(Filter(colFilteredEnfriadoresRetro,Solución=ComboBox1_47.Selected.Results),Tamaño),{Results:ThisRecord.Value}),Results),ComboBox1_48.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10
@@ -862,7 +862,7 @@ Features_12 As screen:
         Items: |-
             =Filter(
                 colFilteredEnfriadoresRetro, 
-                field_5 = "Retrocargadora" && field_6 = ComboBox1_47.Selected.Results && field_7 = ComboBox1_48.Selected.Results 
+                Tipo = "Retrocargadora" && Solución = ComboBox1_47.Selected.Results && Tamaño = ComboBox1_48.Selected.Results 
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -1118,7 +1118,7 @@ Features_12 As screen:
                 ForAll(
                     Distinct(
                         colFilteredEnfriadoresRetro,
-                        field_6
+                        Solución
                     ),
                     {Results: ThisRecord.Value}
                 ),
@@ -1128,7 +1128,7 @@ Features_12 As screen:
         PressedFill: =App.Theme.Colors.Darker30
         SearchFields: =["Results"]
         SearchItems: |-
-            =Search(Filter(ForAll(Distinct(colFilteredEnfriadoresRetro,field_6),{Results:ThisRecord.Value}),Results),ComboBox1_47.SearchText,Results)
+            =Search(Filter(ForAll(Distinct(colFilteredEnfriadoresRetro,Solución),{Results:ThisRecord.Value}),Results),ComboBox1_47.SearchText,Results)
         SelectionFill: =App.Theme.Colors.Primary
         SelectMultiple: =false
         Size: =10

@@ -64,6 +64,38 @@ Screens:
             Width: =316
             X: =432
             Y: =461
+      - Container1:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Height: =53
+            Width: =304
+            X: =68
+            Y: =304
+          Children:
+            - icon11_6:
+                Control: Classic/Icon@2.5.0
+                Properties:
+                  Color: =App.Theme.Colors.Lighter80
+                  Fill: =RGBA(152, 208, 70, 1)
+                  Height: =50
+                  Icon: =Icon.Add
+                  OnSelect: =UpdateContext({pop1:false,pop2:true,pop3:false,pop4:false})
+                  TabIndex: =0
+                  Width: =50
+                  X: =243
+                  Y: =3
+            - Label1_22:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  Fill: =RGBA(255, 255, 255, 1)
+                  FontWeight: =FontWeight.Bold
+                  Height: =50
+                  Text: ="TORNAMESA"
+                  Width: =237
+                  X: =6
+                  Y: =3
       - Rectangle2_8:
           Control: Rectangle@2.3.0
           Properties:
@@ -265,9 +297,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredTornamesa,
-                              field_6 = ComboBox2_17.Selected.Results
+                              Solucion = ComboBox2_17.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -308,7 +340,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredTornamesa,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -332,7 +364,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredTornamesa, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_17.Selected.Results && field_7 = ComboBox1_19.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_17.Selected.Results && Tamaño = ComboBox1_19.Selected.Results 
               )
             TemplateSize: =130
             Visible: =pop2
@@ -598,9 +630,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredContrapesa,
-                              field_6 = ComboBox2_18.Selected.Results
+                              Solucion = ComboBox2_18.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -641,7 +673,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredContrapesa,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -665,7 +697,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredContrapesa, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_18.Selected.Results && field_7 = ComboBox1_20.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_18.Selected.Results && Tamaño = ComboBox1_20.Selected.Results 
               )
             TemplateSize: =130
             Visible: =pop1
@@ -948,9 +980,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredTraslacion,
-                              field_6 = ComboBox2_16.Selected.Results
+                              Solucion = ComboBox2_16.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -991,7 +1023,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredTraslacion,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1014,7 +1046,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredTraslacion, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_16.Selected.Results && field_7 = ComboBox1_18.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_16.Selected.Results && Tamaño = ComboBox1_18.Selected.Results 
               )
             TemplateSize: =130
             Visible: =pop3

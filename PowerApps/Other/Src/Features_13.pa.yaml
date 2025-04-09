@@ -597,7 +597,7 @@ Screens:
             Items: |-
               =Filter(
                   colMartillo, 
-                  field_5 = "Martillo" && field_6 = ComboBox1_50.Selected.Results && field_7 = ComboBox1_49.Selected.Results 
+                  Tipo = "Martillo" && Solucion = ComboBox1_50.Selected.Results && Tamaño = ComboBox1_49.Selected.Results 
               )
             ShowNavigation: =true
             TemplateSize: =120
@@ -619,7 +619,7 @@ Screens:
                   PaddingRight: =0
                   PaddingTop: =0
                   Size: =10
-                  Text: =ThisItem.Title
+                  Text: =ThisItem.Actividad
                   VerticalAlign: =VerticalAlign.Top
                   Width: =403
                   X: =4
@@ -815,9 +815,9 @@ Screens:
                       Distinct(
                           Filter(
                               colMartillo,
-                              field_6 = ComboBox1_50.Selected.Results
+                              Solucion = ComboBox1_50.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -845,7 +845,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colMartillo,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),

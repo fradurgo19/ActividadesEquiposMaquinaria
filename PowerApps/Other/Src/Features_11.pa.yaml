@@ -377,9 +377,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredBombaPiloto,
-                              field_6 = ComboBox2_11.Selected.Results
+                              Solucion = ComboBox2_11.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -420,7 +420,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredBombaPiloto,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -444,7 +444,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredBombaPiloto, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_11.Selected.Results && field_7 = ComboBox1_13.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_11.Selected.Results && Tamaño = ComboBox1_13.Selected.Results 
               )
             TemplateSize: =129
             Visible: =pop2
@@ -728,9 +728,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredFiltrosMotor,
-                              field_6 = ComboBox2_15.Selected.Results
+                              Solucion = ComboBox2_15.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -771,7 +771,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredFiltrosMotor,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -795,7 +795,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredFiltrosMotor, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_15.Selected.Results && field_7 = ComboBox1_17.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_15.Selected.Results && Tamaño = ComboBox1_17.Selected.Results 
               )
             TemplateSize: =130
             Visible: =pop5
@@ -1055,9 +1055,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredBancoSolenoide,
-                              field_6 = ComboBox2_23.Selected.Results
+                              Solucion = ComboBox2_23.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1098,7 +1098,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredBancoSolenoide,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1122,7 +1122,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredBancoSolenoide, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_23.Selected.Results && field_7 = ComboBox1_25.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_23.Selected.Results && Tamaño = ComboBox1_25.Selected.Results 
               )
             TemplateSize: =130
             Visible: =pop6
@@ -1383,9 +1383,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredBombaHidraulica,
-                              field_6 = ComboBox2_13.Selected.Results
+                              Solucion = ComboBox2_13.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1426,7 +1426,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredBombaHidraulica,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1450,7 +1450,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredBombaHidraulica, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_13.Selected.Results && field_7 = ComboBox1_15.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_13.Selected.Results && Tamaño = ComboBox1_15.Selected.Results 
               )
             TemplateSize: =130
             Visible: =pop1
@@ -1710,9 +1710,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredBombaCombustible,
-                              field_6 = ComboBox2_14.Selected.Results
+                              Solucion = ComboBox2_14.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1753,7 +1753,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredBombaCombustible,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -1777,7 +1777,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredBombaCombustible, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_14.Selected.Results && field_7 = ComboBox1_16.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_14.Selected.Results && Tamaño = ComboBox1_16.Selected.Results 
               )
             TemplateSize: =130
             Visible: =pop3
@@ -2037,9 +2037,9 @@ Screens:
                       Distinct(
                           Filter(
                               colFilteredFiltroPiloto,
-                              field_6 = ComboBox2_12.Selected.Results
+                              Solucion = ComboBox2_12.Selected.Results
                           ),
-                          field_7
+                          Tamaño
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -2080,7 +2080,7 @@ Screens:
                   ForAll(
                       Distinct(
                           colFilteredFiltroPiloto,
-                          field_6
+                          Solucion
                       ),
                       {Results: ThisRecord.Value}
                   ),
@@ -2104,7 +2104,7 @@ Screens:
             Items: |-
               =Filter(
                   colFilteredFiltroPiloto, 
-                  field_5 = "Excavadora" && field_6 = ComboBox2_12.Selected.Results && field_7 = ComboBox1_14.Selected.Results 
+                  Tipo = "Excavadora" && Solucion = ComboBox2_12.Selected.Results && Tamaño = ComboBox1_14.Selected.Results 
               )
             TemplateSize: =144
             Visible: =pop4
