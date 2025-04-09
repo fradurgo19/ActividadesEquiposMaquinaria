@@ -2922,7 +2922,8 @@ Features_11 As screen:
         Items: |-
             =Filter(
                 ColeccionUnificada,
-                !IsBlank(TextInputCanvas1_3.Value) && TextInputCanvas1_3.Value in field_2
+                !IsBlank(TextInputCanvas1_3.Value) && TextInputCanvas1_3.Value in field_2 ||
+                !IsBlank(TextInputCanvas1_3.Value) && TextInputCanvas1_3.Value in Title
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data

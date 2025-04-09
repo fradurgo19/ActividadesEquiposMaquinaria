@@ -2410,7 +2410,8 @@ Screens:
             Items: |-
               =Filter(
                   ColeccionUnificada,
-                  !IsBlank(TextInputCanvas1_3.Value) && TextInputCanvas1_3.Value in field_2
+                  !IsBlank(TextInputCanvas1_3.Value) && TextInputCanvas1_3.Value in field_2 ||
+                  !IsBlank(TextInputCanvas1_3.Value) && TextInputCanvas1_3.Value in Title
               )
             TemplateSize: =100
             Visible: =pop10
