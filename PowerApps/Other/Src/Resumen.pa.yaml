@@ -17,7 +17,8 @@ Screens:
             { Opcion: "Mtto Correctivo", Valor: 145000 },
             { Opcion: "Diagnostico", Valor: 145000 },
             { Opcion: "Servicio Express / Mineria", Valor: 165000 },
-            { Opcion: "Reparación de componentes", Valor: 110000 }
+            { Opcion: "Reparación de componentes", Valor: 110000 },
+            { Opcion: "Soldadura", Valor: 110000 }
         );
         ClearCollect(
             colResultado, 
