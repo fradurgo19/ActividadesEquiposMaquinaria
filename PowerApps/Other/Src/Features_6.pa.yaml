@@ -1549,8 +1549,8 @@ Screens:
             Items: |+
               =Filter(
                   ColeccionUnificada,
-                  !IsBlank(TextInputCanvas1_6.Value) && TextInputCanvas1_6.Value in field_2 &&
-                  IsBlank(TextInputCanvas1_6.Value) && TextInputCanvas1_6.Value in Title
+                  !IsBlank(TextInputCanvas1_6.Value) && TextInputCanvas1_6.Value in field_2 ||
+                  !IsBlank(TextInputCanvas1_6.Value) && TextInputCanvas1_6.Value in Title
               )
 
 
