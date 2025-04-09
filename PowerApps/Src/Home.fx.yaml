@@ -272,8 +272,17 @@ Home As screen:
         PressedColor: =Label1_52.Color
         PressedFill: =Label1_52.Fill
         Size: =9
-        Text: |-
-            ="Última actualización: " & Text(LookUp('Boom y articulaciones', ID = Max('Boom y articulaciones', ID)).Modificado, "[$-es-ES]dd/mm/yyyy")
+        Text: |
+            =/*"Última actualización: " & Text(LookUp('Boom y articulaciones'; ID = Max('Boom y articulaciones'; ID)).Modificado; "[$-es-ES]dd/mm/yyyy")*/
+            
+            
+            
+            "Última actualización: " & Text(
+                First(
+                    SortByColumns('Boom y articulaciones', "Created", "Descending")
+                ).Creado,
+                "[$-es-ES]dd/mm/yyyy"
+            )
         VerticalAlign: =VerticalAlign.Top
         Width: =155
         X: =1131
