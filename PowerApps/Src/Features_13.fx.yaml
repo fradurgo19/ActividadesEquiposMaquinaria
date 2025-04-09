@@ -313,12 +313,12 @@ Features_13 As screen:
         DelayItemLoading: =true
         Fill: =RGBA(214, 221, 224, 1)
         Height: =127
-        Items: |+
+        Items: |
             =Filter(
                 ColeccionUnificada,
-                !IsBlank(TextInputCanvas1_10.Value) && TextInputCanvas1_10.Value in field_2
+                !IsBlank(TextInputCanvas1_10.Value) && TextInputCanvas1_10.Value in field_2 ||
+                !IsBlank(TextInputCanvas1_10.Value) && TextInputCanvas1_10.Value in Title
             )
-            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         TemplatePadding: =0
