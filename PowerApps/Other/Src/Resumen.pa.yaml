@@ -1004,8 +1004,10 @@ Screens:
                   - ComboBox3:
                       Control: Classic/ComboBox@2.4.0
                       Properties:
+                        ChevronDisabledBackground: =RGBA(180, 214, 250, 1)
+                        ChevronDisabledFill: =RGBA(180, 214, 250, 1)
                         ChevronFill: =RGBA(255, 255, 255, 1)
-                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        ChevronHoverFill: =RGBA(180, 214, 250, 1)
                         DisplayFields: =["Opcion"]
                         Height: =34
                         InputTextPlaceholder: ="Tipo de Servicio"
