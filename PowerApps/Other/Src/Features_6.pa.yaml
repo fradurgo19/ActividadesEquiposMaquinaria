@@ -1546,11 +1546,14 @@ Screens:
           Properties:
             Fill: =RGBA(214, 221, 224, 1)
             Height: =127
-            Items: |-
+            Items: |+
               =Filter(
                   ColeccionUnificada,
-                  !IsBlank(TextInputCanvas1_6.Value) && TextInputCanvas1_6.Value in field_2
+                  !IsBlank(TextInputCanvas1_6.Value) && TextInputCanvas1_6.Value in field_2 &&
+                  IsBlank(TextInputCanvas1_6.Value) && TextInputCanvas1_6.Value in Title
               )
+
+
             TemplateSize: =100
             Visible: =pop10
             Width: =390
