@@ -463,8 +463,10 @@ Screens:
                               PaddingRight: =0
                               PaddingTop: =0
                               Size: =11
-                              Text: |
-                                =(ThisItem.Value.field_4) * Value(TextInput2.Text)
+                              Text: |+
+                                =RoundUp(ThisItem.Value.field_4 * Value(TextInput2.Text), 0)
+
+
                               Width: =72
                               X: =712
                               Y: =8
@@ -587,7 +589,7 @@ Screens:
                         BorderThickness: =2
                         Color: =RGBA(255, 255, 255, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        Fill: =App.Theme.Colors.Darker30
+                        Fill: =Color.Orange
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
@@ -604,7 +606,7 @@ Screens:
                         BorderThickness: =2
                         Color: =RGBA(255, 255, 255, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
-                        Fill: =App.Theme.Colors.Darker30
+                        Fill: =Color.Orange
                         FocusedBorderThickness: =4
                         Font: =Font.'Segoe UI'
                         FontWeight: =FontWeight.Bold
