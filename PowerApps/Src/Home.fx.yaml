@@ -273,7 +273,7 @@ Home As screen:
         PressedFill: =Label1_52.Fill
         Size: =9
         Text: |-
-            ="Última actualización: " & Text(LookUp('Tren de Rodaje', ID = Max('Tren de Rodaje', ID)).Modificado, "[$-es-ES]dd/mm/yyyy")
+            ="Última actualización: " & Text(LookUp('Tren de Rodaje', ID = Max('Boom y articulaciones', ID)).Modificado, "[$-es-ES]dd/mm/yyyy")
         VerticalAlign: =VerticalAlign.Top
         Width: =155
         X: =1131
