@@ -36,7 +36,9 @@ Features_6 As screen:
                 'Balde y articulaciones',
                 Tipo = "Excavadora"
             )
-        )
+        );
+        
+        ClearCollect(ColeccionUnificada,colFilteredEnfriadores,colFilteredEnmotor,colFilteredMotorGiro,colFilteredTanqueHidraulico,colFilteredTanqueDeCombustible,colFilteredBancoValvulas,colFilteredBancoSolenoide,colFilteredCenterJoint,colFilteredTraslacion,colFilteredTrenderodaje,colFilteredBombaPiloto,colFilteredFiltroPiloto,colFilteredBombaHidraulica,colFilteredBombaCombustible,colFilteredFiltrosMotor,colFilteredBancoSolenoide,colFilteredTraslacion,colFilteredTornamesa,colFilteredContrapesa,colFilteredEnfriadores,colFilteredTanqueexpasion,colFilteredValvulaAmortiguacionPiloto,colFilteredBateria,colFilteredFiltrodeaire,colFiltereEnfriadorCombustible,colFiltereAA,colFilteredBoom,colFilteredStick,colFilteredBalde,colFilteredJoystick,colFilteredCabina,colFilteredMonitor,colFilteredSilla,colFiltAireAcondicionado,colFiltAireSistemElectri)
     Width: =Max(App.Width, App.DesignWidth)
 
     Image31 As image:
