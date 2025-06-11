@@ -28,7 +28,7 @@ Screens:
       Width: =Max(App.Width, App.DesignWidth)
     Children:
       - ButtonCanvas6_3:
-          Control: Button@0.0.44
+          Control: Button@0.0.45
           Properties:
             BasePaletteColor: =RGBA(249, 83, 109, 1)
             Icon: ="Warning"
@@ -296,7 +296,7 @@ Screens:
             X: =239
             Y: =515
       - ButtonCanvas1_10:
-          Control: Button@0.0.44
+          Control: Button@0.0.45
           Properties:
             BasePaletteColor: =RGBA(8, 222, 8, 1)
             FontSize: =11
@@ -418,7 +418,7 @@ Screens:
                   X: =162
                   Y: =34
             - ButtonCanvas2_96:
-                Control: Button@0.0.44
+                Control: Button@0.0.45
                 Properties:
                   FontSize: =9
                   Height: =38
@@ -495,7 +495,7 @@ Screens:
                   Width: =390
                   Y: =Parent.TemplateHeight - Self.Height
       - TextInputCanvas1_10:
-          Control: TextInput@0.0.53
+          Control: TextInput@0.0.54
           Properties:
             Height: =28
             Placeholder: ="Buscar Codigo"
@@ -737,7 +737,7 @@ Screens:
                   X: =218
                   Y: =63
             - ButtonCanvas2_97:
-                Control: Button@0.0.44
+                Control: Button@0.0.45
                 Properties:
                   FontSize: =9
                   Height: =43
@@ -756,7 +756,7 @@ Screens:
                   Width: =Parent.TemplateWidth
                   Y: =Parent.TemplateHeight - Self.Height
       - ButtonCanvas4_78:
-          Control: Button@0.0.44
+          Control: Button@0.0.45
           Properties:
             Appearance: ='ButtonCanvas.Appearance'.Secondary
             FontSize: =9
@@ -776,7 +776,7 @@ Screens:
             X: =1295
             Y: =94
       - ButtonCanvas4_79:
-          Control: Button@0.0.44
+          Control: Button@0.0.45
           Properties:
             Appearance: ='ButtonCanvas.Appearance'.Primary
             FontSize: =9

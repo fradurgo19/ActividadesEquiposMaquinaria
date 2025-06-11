@@ -537,7 +537,7 @@ Resumen As screen:
                     PaddingTop: =0
                     Size: =11
                     Text: |+
-                        =RoundUp(ThisItem.Value.field_4 * Value(TextInput2.Text), 0)
+                        =Round(ThisItem.Value.field_4 * Value(TextInput2.Text), 2)
                         
                         
                     Width: =72
@@ -1056,7 +1056,7 @@ Resumen As screen:
                 Height: =39
                 Size: =12
                 Text: |+
-                    =RoundUp(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 0)
+                    =Round(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 2)
                     
                 Width: =117
                 X: =225

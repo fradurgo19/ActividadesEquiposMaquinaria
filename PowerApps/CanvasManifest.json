@@ -5,7 +5,7 @@
       "DataflowAnalysisEnabled": true,
       "DataflowAnalysisFlagStateToggledByUser": true
     },
-    "DocVersion": "1.345",
+    "DocVersion": "1.346",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.4.0"
   },
@@ -33,7 +33,6 @@
       "delayloadscreens": true,
       "disablebehaviorreturntypecheck": false,
       "disablecdsfileandlargeimage": false,
-      "disabledeferloadingunusedscreenswithstartscreen": false,
       "disablefallbacktopayamlv2": false,
       "disableloadcomponentdefinitionsondemand": false,
       "disableruntimepolicies": false,
@@ -79,6 +78,7 @@
       "offlineprofilegenerationemitscolumns": false,
       "onegrid": false,
       "optimizedforteamsmeeting": false,
+      "optimizestartscreenpublishedappload": true,
       "packagemodernruntime": false,
       "pdffunction": true,
       "powerfxdecimal": false,

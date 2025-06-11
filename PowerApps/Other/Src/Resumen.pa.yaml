@@ -464,7 +464,7 @@ Screens:
                               PaddingTop: =0
                               Size: =11
                               Text: |+
-                                =RoundUp(ThisItem.Value.field_4 * Value(TextInput2.Text), 0)
+                                =Round(ThisItem.Value.field_4 * Value(TextInput2.Text), 2)
 
 
                               Width: =72
@@ -490,7 +490,7 @@ Screens:
                               X: =800
                               Y: =34
                         - ButtonCanvas2_76:
-                            Control: Button@0.0.44
+                            Control: Button@0.0.45
                             Properties:
                               BasePaletteColor: =RGBA(8, 222, 8, 1)
                               FontSize: =8
@@ -617,7 +617,7 @@ Screens:
                         X: =205
                         Y: =122
                   - TextCanvas1_1:
-                      Control: Text@0.0.50
+                      Control: Text@0.0.51
                       Properties:
                         FontColor: =RGBA(255, 255, 255, 1)
                         Size: =15
@@ -909,7 +909,7 @@ Screens:
                         X: =173
                         Y: =377
                   - TextCanvas1_2:
-                      Control: Text@0.0.50
+                      Control: Text@0.0.51
                       Properties:
                         FontColor: =RGBA(255, 255, 255, 1)
                         Height: =31
@@ -939,7 +939,7 @@ Screens:
                         Height: =39
                         Size: =12
                         Text: |+
-                          =RoundUp(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 0)
+                          =Round(Sum(Gallery7.AllItems, Value(Subtitle7_2.Text)), 2)
 
                         Width: =117
                         X: =225
@@ -1020,7 +1020,7 @@ Screens:
                         X: =188
                         Y: =9
                   - TextCanvas1:
-                      Control: Text@0.0.50
+                      Control: Text@0.0.51
                       Properties:
                         FontColor: =RGBA(255, 255, 255, 1)
                         Size: =15
@@ -1030,7 +1030,7 @@ Screens:
                         X: =5
                         Y: =9
       - ButtonCanvas5:
-          Control: Button@0.0.44
+          Control: Button@0.0.45
           Properties:
             BasePaletteColor: =RGBA(8, 222, 8, 1)
             Icon: ="Mail"
@@ -1107,7 +1107,7 @@ Screens:
             X: =469
             Y: =15
       - ButtonCanvas5_1:
-          Control: Button@0.0.44
+          Control: Button@0.0.45
           Properties:
             BasePaletteColor: =RGBA(5, 102, 178, 1)
             Icon: ="DocumentAdd"
@@ -1142,7 +1142,7 @@ Screens:
             X: =606
             Y: =17
       - ButtonCanvas1_8:
-          Control: Button@0.0.44
+          Control: Button@0.0.45
           Properties:
             BasePaletteColor: =RGBA(8, 222, 8, 1)
             FontSize: =11
@@ -1313,7 +1313,7 @@ Screens:
                   X: =204
                   Y: =40
             - ButtonCanvas2_92:
-                Control: Button@0.0.44
+                Control: Button@0.0.45
                 Properties:
                   FontSize: =9
                   Height: =38
@@ -1342,7 +1342,7 @@ Screens:
                   X: =162
                   Y: =31
       - TextInputCanvas1_8:
-          Control: TextInput@0.0.53
+          Control: TextInput@0.0.54
           Properties:
             Height: =28
             Placeholder: ="Buscar Codigo"
