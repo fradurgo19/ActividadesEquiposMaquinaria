@@ -168,8 +168,8 @@ Screens:
                         OnUncheck: =Remove(colAllSelectedItems, ThisItem);Set(varCheckboxChecked, false)
                         Text: =
                         Width: =39
-                        X: =697
-                        Y: =59
+                        X: =719
+                        Y: =60
                   - Body2_35:
                       Control: Label@2.5.1
                       Properties:
@@ -185,7 +185,7 @@ Screens:
                         Text: |-
                           ="Parametro: "&ThisItem.Título
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =254
+                        Width: =154
                         Y: =71
                   - Title3_77:
                       Control: Label@2.5.1
@@ -203,8 +203,8 @@ Screens:
                           ="Unidad: "&ThisItem.Unidad
                         VerticalAlign: =VerticalAlign.Top
                         Width: =118
-                        X: =268
-                        Y: =69
+                        X: =167
+                        Y: =70
                   - Title3_82:
                       Control: Label@2.5.1
                       Properties:
@@ -256,8 +256,8 @@ Screens:
                           ="Minimo: "&ThisItem.'Rango minimo'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =112
-                        X: =397
-                        Y: =65
+                        X: =298
+                        Y: =71
                   - Title3_85:
                       Control: Label@2.5.1
                       Properties:
@@ -274,8 +274,8 @@ Screens:
                           ="Maximo: "&ThisItem.'Rango maximo'
                         VerticalAlign: =VerticalAlign.Top
                         Width: =120
-                        X: =562
-                        Y: =65
+                        X: =431
+                        Y: =71
                   - Title3_86:
                       Control: Label@2.5.1
                       Properties:
@@ -303,6 +303,24 @@ Screens:
                         Width: =126
                         X: =571
                         Y: =124
+                  - Title3_165:
+                      Control: Label@2.5.1
+                      Properties:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                        Height: =31
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =11
+                        Text: |-
+                          ="Límite: "&ThisItem.'Rango limite permitido'
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =120
+                        X: =571
+                        Y: =70
             - ComboBox1_45:
                 Control: Classic/ComboBox@2.4.0
                 Properties:
