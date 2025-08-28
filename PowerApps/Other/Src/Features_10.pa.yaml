@@ -173,6 +173,7 @@ Screens:
                   - Body2_35:
                       Control: Label@2.5.1
                       Properties:
+                        Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =96
@@ -190,6 +191,7 @@ Screens:
                   - Title3_77:
                       Control: Label@2.5.1
                       Properties:
+                        Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =33
@@ -202,7 +204,7 @@ Screens:
                         Text: |-
                           ="Unidad: "&ThisItem.Unidad
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =118
+                        Width: =145
                         X: =167
                         Y: =70
                   - Title3_82:
@@ -243,6 +245,7 @@ Screens:
                   - Title3_84:
                       Control: Label@2.5.1
                       Properties:
+                        Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =31
@@ -255,12 +258,13 @@ Screens:
                         Text: |-
                           ="Minimo: "&ThisItem.'Rango minimo'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =112
+                        Width: =138
                         X: =298
                         Y: =71
                   - Title3_85:
                       Control: Label@2.5.1
                       Properties:
+                        Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =31
@@ -273,7 +277,7 @@ Screens:
                         Text: |-
                           ="Maximo: "&ThisItem.'Rango maximo'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =120
+                        Width: =148
                         X: =431
                         Y: =71
                   - Title3_86:
@@ -306,6 +310,7 @@ Screens:
                   - Title3_165:
                       Control: Label@2.5.1
                       Properties:
+                        Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
                         FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
                         Height: =31
@@ -318,7 +323,7 @@ Screens:
                         Text: |-
                           ="Límite: "&ThisItem.'Rango limite permitido'
                         VerticalAlign: =VerticalAlign.Top
-                        Width: =120
+                        Width: =148
                         X: =571
                         Y: =70
             - ComboBox1_45:

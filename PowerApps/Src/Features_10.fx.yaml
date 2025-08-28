@@ -212,6 +212,7 @@ Features_10 As screen:
                 ZIndex: =8
 
             Body2_35 As label:
+                Align: =Align.Center
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
@@ -231,6 +232,7 @@ Features_10 As screen:
                 ZIndex: =11
 
             Title3_77 As label:
+                Align: =Align.Center
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
@@ -245,7 +247,7 @@ Features_10 As screen:
                 Text: |-
                     ="Unidad: "&ThisItem.Unidad
                 VerticalAlign: =VerticalAlign.Top
-                Width: =118
+                Width: =145
                 X: =167
                 Y: =70
                 ZIndex: =12
@@ -290,6 +292,7 @@ Features_10 As screen:
                 ZIndex: =14
 
             Title3_84 As label:
+                Align: =Align.Center
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
@@ -304,12 +307,13 @@ Features_10 As screen:
                 Text: |-
                     ="Minimo: "&ThisItem.'Rango minimo'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =112
+                Width: =138
                 X: =298
                 Y: =71
                 ZIndex: =15
 
             Title3_85 As label:
+                Align: =Align.Center
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
@@ -324,7 +328,7 @@ Features_10 As screen:
                 Text: |-
                     ="Maximo: "&ThisItem.'Rango maximo'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =120
+                Width: =148
                 X: =431
                 Y: =71
                 ZIndex: =16
@@ -360,6 +364,7 @@ Features_10 As screen:
                 ZIndex: =18
 
             Title3_165 As label:
+                Align: =Align.Center
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =App.Theme.Font
@@ -374,7 +379,7 @@ Features_10 As screen:
                 Text: |-
                     ="Límite: "&ThisItem.'Rango limite permitido'
                 VerticalAlign: =VerticalAlign.Top
-                Width: =120
+                Width: =148
                 X: =571
                 Y: =70
                 ZIndex: =19
